@@ -11,6 +11,7 @@
 	var/obj/item/organ/internal/neural_lace/lace
 	var/mob/living/voice/voicemob
 	var/obj/effect/overlay/hologram
+	var/mutable_appearance/original_appearance //so we can restore the look of the person we summoned from the dead.
 
 /obj/machinery/soulcrypt/examine(mob/user)
 	. = ..()
@@ -54,6 +55,7 @@
 		to_chat(user, SPAN_NOTICE("It seems that the dead do not wish to speak."))
 		return
 	icon_state = "holopad-B1"
+	original_appearance = dead_mind.current.appearance
 	voicemob = new(src) //Create our new voicemob.
 	voicemob.SC = src
 	voicemob.name = dead_mind.name
@@ -76,7 +78,9 @@
 
 /obj/machinery/soulcrypt/proc/end_holo()
 	QDEL_NULL(hologram)
-	voicemob.ghostize()
+	var/mob/observer/ghost/ghost = voicemob.ghostize()
+	ghost.appearance = original_appearance
+	original_appearance = null
 	QDEL_NULL(voicemob)
 	icon_state = "holopad-B0"
 	update_use_power(POWER_USE_IDLE)
