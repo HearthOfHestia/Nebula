@@ -1,16 +1,16 @@
 /obj/machinery/soulcrypt
-    name = "soulcrypt"
-    desc = "An advanced computer which can simulate the conciousness of any sentient being - provided a neural lace is inserted."
-    icon = 'icons/obj/machines/holopad.dmi'
-    icon_state = "holopad-B0"
-    idle_power_usage = 1000
-    active_power_usage = 25000
+	name = "soulcrypt"
+	desc = "An advanced computer which can simulate the conciousness of any sentient being - provided a neural lace is inserted."
+	icon = 'icons/obj/machines/holopad.dmi'
+	icon_state = "holopad-B0"
+	idle_power_usage = 1000
+	active_power_usage = 25000
 
-    var/summoning_dead = FALSE
+	var/summoning_dead = FALSE
 
-    var/obj/item/organ/internal/neural_lace/lace
-    var/mob/living/voice/voicemob
-    var/obj/effect/overlay/hologram
+	var/obj/item/organ/internal/neural_lace/lace
+	var/mob/living/voice/voicemob
+	var/obj/effect/overlay/hologram
 
 /obj/machinery/soulcrypt/examine(mob/user)
 	. = ..()
@@ -18,15 +18,15 @@
 		to_chat(user, SPAN_NOTICE("A neural lace is inserted."))
 
 /obj/machinery/soulcrypt/attackby(var/obj/item/I, var/mob/user)
-    . = ..()
-    if(istype(I, /obj/item/organ/internal/neural_lace))
-        if(user.unEquip(I) && !lace)
-            to_chat(user, SPAN_NOTICE("You insert [I] into [src]."))
-            I.forceMove(src)
-            lace = I
+	. = ..()
+	if(istype(I, /obj/item/organ/internal/neural_lace))
+		if(user.unEquip(I) && !lace)
+			to_chat(user, SPAN_NOTICE("You insert [I] into [src]."))
+			I.forceMove(src)
+			lace = I
 			create_holo(user)
-        else
-            to_chat(user, SPAN_WARNING("There's already a neural lace inserted."))
+		else
+			to_chat(user, SPAN_WARNING("There's already a neural lace inserted."))
 
 /obj/machinery/soulcrypt/physical_attack_hand(var/mob/user)
 	. = ..()
