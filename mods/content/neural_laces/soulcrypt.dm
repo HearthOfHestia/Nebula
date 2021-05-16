@@ -56,15 +56,18 @@
 	icon_state = "holopad-B1"
 	voicemob = new(src) //Create our new voicemob.
 	voicemob.SC = src
+	voicemob.name = dead_mind.name
+	voicemob.voice_name = dead_mind.name
 	if(dead_mind)
 		dead_mind.transfer_to(voicemob) //Shove the dead mind into the voice mob.
 	to_chat(voicemob, SPAN_NOTICE("You are dead. This much is clear, as your conciousness comes into being within a simulated reality. Your emotions are blunted and your memory hazy - you do not remember the direct events leading to your death."))
 	//Now, let's create our hologram.
 	hologram = new(get_turf(src))
+	hologram.name = dead_mind.name
 	if(lace.MA)
-		hologram.overlays += getHologramIcon(getFlatIcon(lace.MA))
+		hologram.overlays += getHologramIcon(getFlatIcon(lace.MA), noDecolor = TRUE)
 	else //For some reason the lace that's been inserted in us lacks a mutable appearance and therefore we can't generate an icon for it. Fall back to default.
-		hologram.overlays += getHologramIcon(icon(lace.icon, lace.icon_state))
+		hologram.overlays += getHologramIcon(icon(lace.icon, lace.icon_state), noDecolor = TRUE)
 	update_use_power(POWER_USE_ACTIVE)
 	summoning_dead = TRUE
 
