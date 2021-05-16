@@ -58,6 +58,9 @@
 	voicemob.SC = src
 	voicemob.name = dead_mind.name
 	voicemob.voice_name = dead_mind.name
+	voicemob.languages = lace.languages.Copy()
+	if(lace.default_language)
+		voicemob.default_language = lace.default_language
 	if(dead_mind)
 		dead_mind.transfer_to(voicemob) //Shove the dead mind into the voice mob.
 	to_chat(voicemob, SPAN_NOTICE("You are dead. This much is clear, as your conciousness comes into being within a simulated reality. Your emotions are blunted and your memory hazy - you do not remember the direct events leading to your death."))
