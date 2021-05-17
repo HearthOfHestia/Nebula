@@ -1,7 +1,5 @@
 
 /mob/living/carbon/human/proc/create_lace()
-	set waitfor=0
-	sleep(10)
 	internal_organs_by_name[BP_NEURAL_LACE] = new /obj/item/organ/internal/neural_lace(src,1)
 	to_chat(src, SPAN_NOTICE("You feel a faint sense of vertigo as your neural lace boots."))
 
@@ -12,7 +10,6 @@
 	icon_state = "neural_lace_off"
 	organ_tag = BP_NEURAL_LACE
 	status = ORGAN_PROSTHETIC
-	vital = 1
 	origin_tech = "{'biotech':4,'materials':4,'magnets':2,'programming':2}"
 	relative_size = 25
 
@@ -79,11 +76,10 @@
 			overwrite()
 	sleep(-1)
 	do_backup()
-	to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
-	owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
-	relacetime = world.time
-	if(world.time >= relacetime + 30 MINUTES)
-		to_chat(owner, SPAN_NOTICE("You feel like you have recovered slightly from your ordeal, still wouldn't make a habit of dying."))
+	if(!backup_inviable())
+		to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
+		owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
+		relacetime = world.time
 	return 1
 
 /obj/item/organ/internal/neural_lace/removed()
@@ -106,7 +102,8 @@
 	to_chat(owner, SPAN_NOTICE("Consciousness slowly creeps over you as your new body awakens."))
 
 /obj/item/organ/internal/neural_lace/proc/summon_dead()
-	var/response = alert(find_dead_player(ownerckey, 1), "Your neural backup has been placed into a soulcrypt. Do you wish to speak to the living?", "Soulcrypt", "Yes", "No")
-	prompting = FALSE
-	if(src && response == "Yes")
-		return backup
+	if(!backup_inviable())
+		var/response = alert(find_dead_player(ownerckey, 1), "Your neural backup has been placed into a soulcrypt. Do you wish to speak to the living?", "Soulcrypt", "Yes", "No")
+		prompting = FALSE
+		if(src && response == "Yes")
+			return backup

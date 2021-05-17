@@ -5,4 +5,6 @@
 #include "lace.dm"
 #include "voice_mob.dm"
 #include "soulcrypt.dm"
+#include "loadout.dm"
 #endif
+
