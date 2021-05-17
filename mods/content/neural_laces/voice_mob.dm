@@ -5,9 +5,9 @@
 	var/obj/machinery/soulcrypt/SC
 
 /mob/living/voice/Destroy()
-    . = ..()
-    if(SC)
-        SC = null
+	. = ..()
+	if(SC)
+		SC = null
 
 /mob/living/voice/verb/hang_up()
 	set name = "End Resurrection"
