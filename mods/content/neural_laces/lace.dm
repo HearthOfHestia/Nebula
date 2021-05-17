@@ -55,8 +55,8 @@
 			ownerckey = owner.ckey
 		MA = new(owner)
 
-/obj/item/organ/internal/neural_lace/New()
-	..()
+/obj/item/organ/internal/neural_lace/Initialize()
+	. = ..()
 	do_backup()
 	robotize()
 
