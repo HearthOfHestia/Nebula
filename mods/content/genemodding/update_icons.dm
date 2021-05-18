@@ -12,7 +12,7 @@
 			icon_key = "\ref[tail_style][tail_color]"
 	else
 		icon_key = any2ref(tail_style)
-	var/icon/tail_icon = tail_icon_cache[icon_key]
+	var/icon/tail_icon = global.tail_icon_cache[icon_key]
 	if(!tail_icon)
 		tail_icon = icon(tail_style.icon, tail_style.icon_state)
 		if(tail_style.do_colouration)
@@ -22,6 +22,6 @@
 			overlay.Blend(tail_color_extra, tail_style.blend)
 			tail_icon.Blend(overlay, ICON_OVERLAY)
 			qdel(overlay)
-		tail_icon_cache[icon_key] = tail_icon
+		global.tail_icon_cache[icon_key] = tail_icon
 
 	return tail_icon

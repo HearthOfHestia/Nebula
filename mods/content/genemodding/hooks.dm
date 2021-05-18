@@ -5,11 +5,11 @@ var/global/list/ear_styles_list = list()	//stores /datum/sprite_accessory/ears i
 	//Tails.
 	for(var/path in subtypesof(/datum/sprite_accessory/tail))
 		var/datum/sprite_accessory/tail/H = new path()
-		tail_styles_list[H.name] = H
+		global.tail_styles_list[H.name] = H
 
 	//Ears.
 	for(var/path in subtypesof(/datum/sprite_accessory/ears))
 		var/datum/sprite_accessory/ears/H = new path()
-		ear_styles_list[H.name] = H
+		global.ear_styles_list[H.name] = H
 
 	return TRUE

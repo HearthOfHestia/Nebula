@@ -2,35 +2,31 @@
 	. += "<h2>Genemod Selection</h2>"
 
 	var/ear_display = "Normal"
-	if(pref.ear_style && (pref.ear_style in ear_styles_list))
-		var/datum/sprite_accessory/ears/instance = ear_styles_list[pref.ear_style]
-		ear_display = instance.name
-
+	var/datum/sprite_accessory/ears/ear = (pref.ear_style in global.ear_styles_list) ? global.ear_styles_list[pref.ear_style] : null
+	if(ear)
+		ear_display = ear.name
 	else if(pref.ear_style)
 		ear_display = "REQUIRES UPDATE"
 	. += "<b>Ears</b><br>"
 	. += " Style: <a href='?src=\ref[src];ear_style=1'>[ear_display]</a><br>"
-	if(ear_styles_list[pref.ear_style])
-		var/datum/sprite_accessory/ears/ear = ear_styles_list[pref.ear_style]
+	if(ear)
 		if (ear.do_colouration)
 			. += "<a href='?src=\ref[src];ear_color=1'>Change Color</a> <font face='fixedsys' size='3' color='[pref.ear_color]'><table style='display:inline;' bgcolor='[pref.ear_color]'><tr><td>__</td></tr></table> </font><br>"
 		if (ear.extra_overlay)
 			. += "<a href='?src=\ref[src];ear_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.ear_color_extra]'><table style='display:inline;' bgcolor='[pref.ear_color_extra]'><tr><td>__</td></tr></table> </font><br>"
 
 	var/tail_display = "Normal"
-	if(pref.tail_style && (pref.tail_style in tail_styles_list))
-		var/datum/sprite_accessory/tail/instance = tail_styles_list[pref.tail_style]
-		tail_display = instance.name
+	var/datum/sprite_accessory/tail/tails = (pref.tail_style in global.tail_styles_list) ? global.tail_styles_list[pref.tail_style] : null
+	if(tails)
+		tail_display = tails.name
 	else if(pref.tail_style)
 		tail_display = "REQUIRES UPDATE"
 	. += "<b>Tail</b><br>"
 	. += " Style: <a href='?src=\ref[src];tail_style=1'>[tail_display]</a><br>"
 
-	if(tail_styles_list[pref.tail_style])
-		var/datum/sprite_accessory/tail/T = tail_styles_list[pref.tail_style]
-		if (T.do_colouration)
-			. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='[pref.tail_color]'><table style='display:inline;' bgcolor='[pref.tail_color]'><tr><td>__</td></tr></table> </font><br>"
-		if (T.extra_overlay)
+	if (tails?.do_colouration)
+		. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='[pref.tail_color]'><table style='display:inline;' bgcolor='[pref.tail_color]'><tr><td>__</td></tr></table> </font><br>"
+		if (tails.extra_overlay) // only show the secondary color prompt if we can change color to begin with
 			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.tail_color_extra]'><table style='display:inline;' bgcolor='[pref.tail_color_extra]'><tr><td>__</td></tr></table> </font><br>"
 
 /datum/category_item/player_setup_item/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
@@ -40,8 +36,8 @@
 	else if(href_list["ear_style"])
 		// Construct the list of names allowed for this user.
 		var/list/pretty_ear_styles = list("Normal" = null)
-		for(var/path in ear_styles_list)
-			var/datum/sprite_accessory/ears/instance = ear_styles_list[path]
+		for(var/path in global.ear_styles_list)
+			var/datum/sprite_accessory/ears/instance = global.ear_styles_list[path]
 			pretty_ear_styles[instance.name] = path
 
 		// Present choice to user
@@ -68,8 +64,8 @@
 	else if(href_list["tail_style"])
 		// Construct the list of names allowed for this user.
 		var/list/pretty_tail_styles = list("Normal" = null)
-		for(var/path in tail_styles_list)
-			var/datum/sprite_accessory/tail/instance = tail_styles_list[path]
+		for(var/path in global.tail_styles_list)
+			var/datum/sprite_accessory/tail/instance = global.tail_styles_list[path]
 			pretty_tail_styles[instance.name] = path
 
 		// Present choice to user

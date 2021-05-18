@@ -39,15 +39,15 @@
 	pref.tail_color =		pref.tail_color			|| COLOR_BLACK
 	pref.tail_color_extra =	pref.tail_color_extra	|| COLOR_BLACK
 	if(pref.ear_style)
-		pref.ear_style	= sanitize_inlist(pref.ear_style, ear_styles_list, initial(pref.ear_style))
+		pref.ear_style	= sanitize_inlist(pref.ear_style, global.ear_styles_list, initial(pref.ear_style))
 	if(pref.tail_style)
-		pref.tail_style	= sanitize_inlist(pref.tail_style, tail_styles_list, initial(pref.tail_style))
+		pref.tail_style	= sanitize_inlist(pref.tail_style, global.tail_styles_list, initial(pref.tail_style))
 
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 	..()
-	character.ear_style		= ear_styles_list[ear_style]
+	character.ear_style		= global.ear_styles_list[ear_style]
 	character.ear_color		= ear_color
 	character.ear_color_extra	= ear_color_extra
-	character.tail_style		= tail_styles_list[tail_style]
+	character.tail_style		= global.tail_styles_list[tail_style]
 	character.tail_color		= tail_color
 	character.tail_color_extra	= tail_color_extra
