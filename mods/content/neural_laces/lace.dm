@@ -95,7 +95,7 @@
 			to_chat(owner, SPAN_DANGER("You fight off the invading tendrils of another mind, holding onto your own body!"))
 			return
 		owner.ghostize() // Remove the previous owner to avoid their client getting reset.
-	backup.active = 1
+	backup.active = TRUE
 	backup.transfer_to(owner)
 	if(default_language) owner.default_language = default_language
 	owner.languages = languages.Copy()

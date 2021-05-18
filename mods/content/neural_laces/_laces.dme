@@ -1,6 +1,6 @@
 #ifndef MODPACK_LACES
 #define MODPACK_LACES
-#include "_laces.dm"
+#include "laces.dm"
 #include "_defines.dm"
 #include "lace.dm"
 #include "voice_mob.dm"
