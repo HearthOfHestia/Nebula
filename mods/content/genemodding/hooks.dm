@@ -1,5 +1,5 @@
-var/list/tail_styles_list = list()	//stores /datum/sprite_accessory/ indexed by name
-var/list/ear_styles_list = list()	//stores /datum/sprite_accessory/ears indexed by name
+var/global/list/tail_styles_list = list()	//stores /datum/sprite_accessory/ indexed by name
+var/global/list/ear_styles_list = list()	//stores /datum/sprite_accessory/ears indexed by name
 
 /hook/startup/proc/init_ears_tails_datums()
 	//Tails.

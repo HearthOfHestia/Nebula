@@ -1,14 +1,26 @@
+var/global/list/ear_icon_cache = list() //key is "\ref[ear_style]", if colorable plus "[ear_color]" and potentially "[ear_color_extra]"
 /obj/item/organ/external/head/get_hair_icon()
 	var/image/res = ..()
 	if(!owner.ear_style || (owner.head?.flags_inv & BLOCKHEADHAIR))
 		return res
-	var/icon/ears_icon = new/icon("icon" = owner.ear_style.icon, "icon_state" = owner.ear_style.icon_state)
-	if(owner.ear_style.do_colouration)
-		ears_icon.Blend(owner.ear_color, owner.ear_style.blend)
-	if(owner.ear_style.extra_overlay)
-		var/icon/overlay = new/icon("icon" = owner.ear_style.icon, "icon_state" = owner.ear_style.extra_overlay)
-		overlay.Blend(owner.ear_color_extra, owner.ear_style.blend)
-		ears_icon.Blend(overlay, ICON_OVERLAY)
-		qdel(overlay)
+	var/icon_key
+	if(tail_style.do_colouration)
+		if(tail_style.extra_overlay)
+			icon_key = "\ref[tail_style][tail_color][tail_color_extra]"
+		else
+			icon_key = "\ref[tail_style][tail_color]"
+	else
+		icon_key = any2ref(tail_style)
+	var/icon/ears_icon = ear_icon_cache[icon_key]
+	if(!ears_icon)
+		ears_icon = icon(owner.ear_style.icon, owner.ear_style.icon_state)
+		if(owner.ear_style.do_colouration)
+			ears_icon.Blend(owner.ear_color, owner.ear_style.blend)
+		if(owner.ear_style.extra_overlay)
+			var/icon/overlay = icon(owner.ear_style.icon, owner.ear_style.extra_overlay)
+			overlay.Blend(owner.ear_color_extra, owner.ear_style.blend)
+			ears_icon.Blend(overlay, ICON_OVERLAY)
+			qdel(overlay)
+		ear_icon_cache[icon_key] = ears_icon
 	res.overlays |= ears_icon
 	return res

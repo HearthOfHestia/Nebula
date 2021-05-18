@@ -6,7 +6,10 @@
 	// If you do
 	var/icon_key
 	if(tail_style.do_colouration)
-		icon_key = "\ref[tail_style][tail_color][tail_color_extra]"
+		if(tail_style.extra_overlay)
+			icon_key = "\ref[tail_style][tail_color][tail_color_extra]"
+		else
+			icon_key = "\ref[tail_style][tail_color]"
 	else
 		icon_key = any2ref(tail_style)
 	var/icon/tail_icon = tail_icon_cache[icon_key]
