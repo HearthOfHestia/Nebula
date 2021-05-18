@@ -6,6 +6,7 @@
 	#include "../../mods/content/mundane.dm"
 	#include "../../mods/content/bigpharma/_bigpharma.dme"
 	#include "../../mods/content/corporate/_corporate.dme"
+	#include "../../mods/content/genemodding/_genemodding.dme"
 	#include "../../mods/content/government/_government.dme"
 	#include "../../mods/content/modern_earth/_modern_earth.dme"
 	#include "../../mods/content/mouse_highlights/_mouse_highlight.dme"
