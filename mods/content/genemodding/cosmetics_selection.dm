@@ -1,4 +1,4 @@
-/datum/category_item/player_setup_item/cosmetics/content(var/mob/user)
+/datum/category_item/player_setup_item/physical/cosmetics/content(var/mob/user)
 	. += "<h2>Genemod Selection</h2>"
 
 	var/ear_display = "Normal"
@@ -29,7 +29,7 @@
 		if (tails.extra_overlay) // only show the secondary color prompt if we can change color to begin with
 			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.tail_color_extra]'><table style='display:inline;' bgcolor='[pref.tail_color_extra]'><tr><td>__</td></tr></table> </font><br>"
 
-/datum/category_item/player_setup_item/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
+/datum/category_item/player_setup_item/physical/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(!CanUseTopic(user))
 		return TOPIC_NOACTION
 
