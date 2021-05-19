@@ -1,7 +1,5 @@
 #if !defined(USING_MAP_DATUM)
 
-	#include "../../mods/content/neural_laces/_laces.dme"
-
 	#include "example_areas.dm"
 	#include "example_shuttles.dm"
 	#include "example_unit_testing.dm"
