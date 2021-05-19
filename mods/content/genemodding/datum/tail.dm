@@ -103,14 +103,6 @@
 	icon_state = "spadetail-black"
 	blend = ICON_ADD
 
-/datum/sprite_accessory/tail/snag
-	name = "xenomorph tail 1"
-	icon_state = "snag"
-
-/datum/sprite_accessory/tail/xenotail
-	name = "xenomorph tail 2"
-	icon_state = "xenotail"
-
 /datum/sprite_accessory/tail/eboop
 	name = "EGN mech tail (dual color)"
 	icon_state = "eboop"
