@@ -1,15 +1,10 @@
-/datum/map/example
-	name = "Example"
-	full_name = "The Example"
-	path = "example"
+/datum/map/hearth
+	name = "Hearth"
+	full_name = "Hearth of Hestia"
+	path = "hearth"
 
-	lobby_screens = list(
-		'maps/example/example_lobby.png'
-	)
-
-	lobby_tracks = list(
-		/decl/music_track/absconditus
-	)
+	lobby_screens = list('maps/hearth/lobby.png')
+	lobby_tracks = list(/decl/music_track/absconditus)
 
 	station_levels = list(1, 2, 3)
 	contact_levels = list(1, 2, 3)
