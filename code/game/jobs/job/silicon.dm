@@ -15,7 +15,7 @@
 	hud_icon = "hudblank"
 	skill_points = 0
 	no_skill_buffs = TRUE
-	guestbanned = 1	
+	guestbanned = 1
 	not_random_selectable = 1
 
 /datum/job/ai/equip(var/mob/living/carbon/human/H)
@@ -28,7 +28,7 @@
 /datum/job/ai/handle_variant_join(var/mob/living/carbon/human/H, var/alt_title)
 	return H
 
-/datum/job/ai/do_spawn_special(var/mob/living/character, var/mob/new_player/new_player_mob)
+/datum/job/ai/do_spawn_special(var/mob/living/character, var/mob/new_player/new_player_mob, var/latejoin)
 	character = character.AIize(move=0) // AIize the character, but don't move them yet
 
 	// is_available for AI checks that there is an empty core available in this list
@@ -39,7 +39,8 @@
 	var/mob/living/silicon/ai/A = character
 	A.on_mob_init()
 
-	new_player_mob.AnnounceCyborg(character, title, "has been downloaded to the empty core in \the [character.loc.loc]")
+	if(latejoin)
+		new_player_mob.AnnounceCyborg(character, title, "has been downloaded to the empty core in \the [get_area(character)]")
 	SSticker.mode.handle_latejoin(character)
 
 	qdel(C)
@@ -61,7 +62,7 @@
 	hud_icon = "hudblank"
 	skill_points = 0
 	no_skill_buffs = TRUE
-	guestbanned = 1	
+	guestbanned = 1
 	not_random_selectable = 1
 
 /datum/job/cyborg/handle_variant_join(var/mob/living/carbon/human/H, var/alt_title)

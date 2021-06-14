@@ -334,7 +334,7 @@
 	var/decl/pronouns/G = user.get_pronouns()
 
 	user.visible_message( \
-		SPAN_NOTICE("\The [user]'s eyes glow blue as [G.he] freezes in place, absolutely motionless."), \
+		SPAN_NOTICE("\The [user]'s eyes glow blue as [G.he] freeze[G.s] in place, absolutely motionless."), \
 		SPAN_OCCULT("The shadow that is your spirit separates itself from your body. You are now in the realm beyond. While this is a great sight, being here strains your mind and body. Hurry..."), \
 		SPAN_NOTICE("You hear only complete silence for a moment."))
 
@@ -539,7 +539,7 @@
 	var/use
 	use = min(charges, user.species.blood_volume - user.vessel.total_volume)
 	if(use > 0)
-		user.vessel.add_reagent(user.species.blood_reagent, use)
+		user.adjust_blood(use)
 		charges -= use
 		statuses += "you regain lost blood"
 		if(!charges)
@@ -717,7 +717,7 @@
 
 	var/decl/pronouns/G = target.get_pronouns()
 	target.visible_message( \
-		SPAN_OCCULT("\The [target]'s eyes glow with a faint red as [G.he] stands up, slowly starting to breathe again."), \
+		SPAN_OCCULT("\The [target]'s eyes glow with a faint red as [G.he] stand[G.s] up, slowly starting to breathe again."), \
 		SPAN_OCCULT("Life... I'm alive again..."), \
 		"You hear a flowing liquid.")
 
