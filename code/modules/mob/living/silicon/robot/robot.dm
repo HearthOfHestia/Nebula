@@ -143,6 +143,9 @@
 
 	add_robot_verbs()
 
+	// Disables lay down verb for robots due they're can't lay down and it cause some movement, vision issues.
+	verbs -= /mob/living/verb/lay_down
+
 	hud_list[HEALTH_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudblank")
 	hud_list[STATUS_HUD]      = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealth100")
 	hud_list[LIFE_HUD]        = new /image/hud_overlay('icons/mob/hud.dmi', src, "hudhealth100")
@@ -1070,7 +1073,7 @@
 				var/time = time2text(world.realtime,"hh:mm:ss")
 				global.lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
 				var/decl/pronouns/G = user.get_pronouns(ignore_coverings = TRUE)
-				set_zeroth_law("Only [user.real_name] and people [G.he] designates as being such are operatives.")
+				set_zeroth_law("Only [user.real_name] and people [G.he] designate[G.s] as being such are operatives.")
 				SetLockdown(0)
 				. = 1
 				spawn()

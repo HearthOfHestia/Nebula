@@ -26,6 +26,7 @@
 	var/force_layer
 	var/req_CO2_moles    = 1.0// Moles of CO2 required for photosynthesis.
 	var/hydrotray_only
+	var/base_seed_value = 5 // Used when generating price.
 
 /datum/seed/New()
 
@@ -69,6 +70,20 @@
 	update_growth_stages()
 
 	uid = "[sequential_id(/datum/seed/)]"
+
+// TODO integrate other traits.
+/datum/seed/proc/get_monetary_value()
+	. = 1
+	// Positives!
+	. += 3 * set_trait(TRAIT_HARVEST_REPEAT)
+	. += 3 * set_trait(TRAIT_PRODUCES_POWER)
+	. += 5 * get_trait(TRAIT_CARNIVOROUS)
+	. += 5 * get_trait(TRAIT_PARASITE)
+	. += 5 * get_trait(TRAIT_TELEPORTING)
+	// Negatives!
+	. -= 2 * get_trait(TRAIT_STINGS)
+	. -= 2 * get_trait(TRAIT_EXPLOSIVE)
+	. = max(1, round(. * base_seed_value))
 
 /datum/seed/proc/get_trait(var/trait)
 	return traits["[trait]"]
@@ -460,6 +475,7 @@
 
 	if(additional_chems)
 		var/list/banned_chems = list(
+			/decl/material/placeholder,
 			/decl/material/liquid/adminordrazine,
 			/decl/material/liquid/nutriment,
 			/decl/material/liquid/weedkiller
