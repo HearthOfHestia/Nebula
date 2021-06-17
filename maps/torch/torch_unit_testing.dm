@@ -6,7 +6,7 @@
 	apc_test_exempt_areas = list(
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/preserverance/maintenance = NO_SCRUBBER|NO_VENT,
+		/area/perseverance/maintenance = NO_SCRUBBER|NO_VENT,
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
 		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
@@ -61,7 +61,7 @@
 	)
 
 	area_coherency_test_exempt_areas = list(
-		/area/preserverance/airlock,
+		/area/perseverance/airlock,
 		/area/centcom/control,
 		/area/endeavour_exterior,
 		/area/space

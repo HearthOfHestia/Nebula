@@ -18,7 +18,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "ad" = (
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -370,7 +370,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "aN" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -2361,7 +2361,7 @@
 "ec" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "ed" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -2705,18 +2705,18 @@
 /area/bridge/meeting_room)
 "eH" = (
 /obj/machinery/computer/ship/helm{
-	req_access = list(list("ACCESS_TORCH_PRESERVERANCE_HELM"))
+	req_access = list(list("ACCESS_TORCH_PERSEVERANCE_HELM"))
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "eI" = (
-/obj/machinery/computer/shuttle_control/explore/preserverance,
+/obj/machinery/computer/shuttle_control/explore/perseverance,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "eJ" = (
 /obj/machinery/computer/ship/sensors,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "eK" = (
 /obj/item/radio/intercom{
 	dir = 1;
@@ -3056,25 +3056,25 @@
 "fm" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "fn" = (
 /obj/machinery/button/blast_door{
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters Control";
 	pixel_x = -32
 	},
 /obj/machinery/turretid/stun{
 	enabled = 0;
-	name = "Preserverance point defense control";
+	name = "Perseverance point defense control";
 	pixel_x = 32;
-	req_access = list("ACCESS_TORCH_PRESERVERANCE_HELM")
+	req_access = list("ACCESS_TORCH_PERSEVERANCE_HELM")
 	},
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1;
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "fo" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3287,13 +3287,13 @@
 	},
 /obj/machinery/computer/ship/engines,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "fK" = (
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "fL" = (
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Cockpit";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Cockpit";
 	dir = 8
 	},
 /obj/machinery/computer/modular/preset/cardslot/command,
@@ -3302,7 +3302,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "fM" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -3466,7 +3466,7 @@
 	icon_state = "map"
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "fY" = (
 /obj/effect/floor_decal/corner/red/half,
 /obj/machinery/vending/coffee{
@@ -3615,7 +3615,7 @@
 	pixel_y = -26
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "gp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3625,7 +3625,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "gq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -3642,7 +3642,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "gr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3657,14 +3657,14 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "gs" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
 /obj/structure/table/steel_reinforced,
 /obj/random/toolbox,
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 4;
 	name = "east bump";
 	pixel_x = 24
@@ -3675,7 +3675,7 @@
 	},
 /obj/item/radio,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "gv" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 8;
@@ -3701,7 +3701,7 @@
 "gw" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "gz" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/maintenance/bridge/aftstarboard)
@@ -3819,12 +3819,12 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/airless,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "ha" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "hb" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Cockpit"
@@ -3837,7 +3837,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "hc" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/porta_turret{
@@ -3846,7 +3846,7 @@
 	lethal = 1
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "hi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/rack{
@@ -4000,19 +4000,19 @@
 	name = "plastic table frame"
 	},
 /obj/machinery/microwave,
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Crew Compartment";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Crew Compartment";
 	dir = 2
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "hM" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/random/snack,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "hN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4030,9 +4030,9 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "hO" = (
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -4043,7 +4043,7 @@
 	},
 /obj/structure/bed/chair/shuttle/blue,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "hV" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/sol{
@@ -4232,13 +4232,13 @@
 	icon_state = "shower"
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "iu" = (
 /obj/structure/hygiene/toilet{
 	pixel_y = 12
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "iv" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -4249,7 +4249,7 @@
 	pixel_x = -21
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "iw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4259,14 +4259,14 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "ix" = (
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 4;
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "iy" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -4278,26 +4278,26 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "iz" = (
 /obj/machinery/door/blast/regular/open{
 	density = 0;
 	icon_state = "pdoor0";
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters";
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "iA" = (
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 8;
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "iB" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -4309,8 +4309,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
 "iC" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/bridge/foreport)
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/machinery/atmospherics/valve/shutoff,
+/turf/simulated/floor/tiled,
+/area/hallway/primary/bridge/fore)
 "iI" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -4414,8 +4418,14 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "iW" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/bridge/forestarboard)
+/obj/effect/floor_decal/corner/blue{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/bridge/fore)
 "iX" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4488,13 +4498,13 @@
 	icon_state = "handrail"
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "jf" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "jg" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/alarm{
@@ -4503,7 +4513,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "jh" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -4514,7 +4524,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "jj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4524,7 +4534,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "jk" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -4536,9 +4546,9 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "jl" = (
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 8;
 	name = "west bump";
 	pixel_x = -24
@@ -4555,7 +4565,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "jw" = (
 /obj/effect/floor_decal/corner/blue,
 /turf/simulated/floor/tiled/dark,
@@ -4777,7 +4787,7 @@
 	pixel_y = -26
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "kc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4785,7 +4795,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	name = "south bump";
 	pixel_y = -28
 	},
@@ -4794,7 +4804,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "ke" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4811,7 +4821,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "kf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -4825,7 +4835,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "kg" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -4847,7 +4857,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "kh" = (
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1;
@@ -4858,7 +4868,7 @@
 	pixel_x = 26
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "ki" = (
 /obj/item/radio/intercom{
 	dir = 4;
@@ -4874,7 +4884,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "kv" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -5086,7 +5096,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "kX" = (
 /obj/machinery/light_switch{
 	pixel_x = -23;
@@ -5133,7 +5143,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "lq" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -5343,7 +5353,7 @@
 	},
 /obj/machinery/door/airlock/glass/command{
 	id_tag = null;
-	name = "Preserverance Dock";
+	name = "Perseverance Dock";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
@@ -5366,13 +5376,13 @@
 /area/hallway/primary/bridge/aft)
 "lR" = (
 /obj/machinery/airlock_sensor{
-	id_tag = "preserverance_shuttle_dock_sensor";
+	id_tag = "perseverance_shuttle_dock_sensor";
 	pixel_x = 0;
 	pixel_y = 24
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
-	id_tag = "preserverance_shuttle_dock_pump"
+	id_tag = "perseverance_shuttle_dock_pump"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -5428,7 +5438,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "lZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5445,7 +5455,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "mb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -5469,7 +5479,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "mc" = (
 /obj/structure/cable/green,
 /obj/machinery/door/firedoor,
@@ -5494,7 +5504,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/wall/titanium,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "mz" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -5786,8 +5796,8 @@
 /area/bridge)
 "ni" = (
 /obj/machinery/atmospherics/pipe/manifold/visible,
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Docking Port";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Docking Port";
 	dir = 1
 	},
 /obj/structure/cable{
@@ -5802,7 +5812,7 @@
 	},
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "nj" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
@@ -5813,7 +5823,7 @@
 	icon_state = "warning"
 	},
 /obj/machinery/button/access/interior{
-	id_tag = "preserverance_shuttle";
+	id_tag = "perseverance_shuttle";
 	name = "interior access button";
 	pixel_x = -24;
 	pixel_y = -24;
@@ -5829,14 +5839,14 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "nl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
 	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "nm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -5851,15 +5861,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/effect/overmap/visitable/ship/landable/preserverance,
+/obj/effect/overmap/visitable/ship/landable/perseverance,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "nn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "no" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -5873,7 +5883,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "np" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -5886,10 +5896,10 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "nq" = (
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Seating";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Seating";
 	dir = 1
 	},
 /obj/structure/bed/chair/shuttle/blue{
@@ -5897,7 +5907,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "nr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10;
@@ -6170,15 +6180,6 @@
 /obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/aux_eva)
-"oq" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
 "ox" = (
 /obj/structure/cable/green,
 /obj/structure/cable/green{
@@ -6355,7 +6356,7 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "oW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -6370,7 +6371,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/radio,
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pa" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/emcloset,
@@ -6379,7 +6380,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/alarm{
@@ -6388,7 +6389,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pc" = (
 /obj/machinery/recharge_station,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -6398,7 +6399,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pd" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -6406,7 +6407,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pe" = (
 /obj/structure/lattice,
 /obj/machinery/light/navigation/delay5,
@@ -6422,20 +6423,20 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "ph" = (
 /obj/structure/handrail{
 	dir = 8;
 	icon_state = "handrail"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pi" = (
 /obj/machinery/sleeper{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "pj" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/cyan{
@@ -6444,19 +6445,19 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "pk" = (
 /obj/machinery/bodyscanner{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "pl" = (
 /obj/machinery/body_scanconsole{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "py" = (
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 1
@@ -6590,7 +6591,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pT" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6604,7 +6605,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pU" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6616,7 +6617,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "pW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6624,8 +6625,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Aft Passageway";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Aft Passageway";
 	dir = 1
 	},
 /obj/structure/cable{
@@ -6644,7 +6645,7 @@
 	pixel_y = -22
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6670,7 +6671,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pY" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -6692,7 +6693,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "pZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6714,7 +6715,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "qa" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4;
@@ -6730,7 +6731,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "qc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -6744,16 +6745,16 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "qd" = (
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "qe" = (
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "qf" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -6981,7 +6982,7 @@
 	pixel_x = -21
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "qE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6991,7 +6992,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "qF" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -7003,7 +7004,7 @@
 	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "qH" = (
 /obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
@@ -7013,7 +7014,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "qO" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
@@ -7258,18 +7259,18 @@
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "rw" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Storage";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Storage";
 	dir = 1
 	},
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 4;
 	name = "east bump";
 	pixel_x = 24
@@ -7279,14 +7280,14 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "rx" = (
 /obj/machinery/atmospherics/unary/tank/air{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "ry" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -7302,7 +7303,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "rz" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -7329,8 +7330,8 @@
 "rE" = (
 /obj/structure/table/standard,
 /obj/item/defibrillator/loaded,
-/obj/machinery/camera/network/preserverance{
-	c_tag = "Preserverance - Infirmary";
+/obj/machinery/camera/network/perseverance{
+	c_tag = "Perseverance - Infirmary";
 	dir = 8
 	},
 /obj/machinery/firealarm{
@@ -7338,7 +7339,7 @@
 	pixel_x = 26
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "rI" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 8;
@@ -7586,7 +7587,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "so" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
@@ -7600,7 +7601,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "st" = (
 /obj/structure/hygiene/sink{
 	dir = 8;
@@ -7608,14 +7609,14 @@
 	pixel_x = -12;
 	pixel_y = 2
 	},
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 8;
 	name = "west bump";
 	pixel_x = -24
 	},
 /obj/structure/cable/cyan,
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "su" = (
 /obj/structure/table/standard,
 /obj/item/clothing/gloves/latex,
@@ -7625,7 +7626,7 @@
 	pixel_x = 21
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "sw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -7790,7 +7791,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "sV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -7804,7 +7805,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "sW" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -7814,7 +7815,7 @@
 	pixel_x = 21
 	},
 /obj/structure/handrail,
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -7824,7 +7825,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "sY" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
 /obj/item/radio/intercom{
@@ -7833,7 +7834,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "ta" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
@@ -7876,7 +7877,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "td" = (
 /obj/machinery/power/port_gen/pacman{
 	anchored = 1;
@@ -7888,7 +7889,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "te" = (
 /obj/structure/closet/medical_wall{
 	pixel_x = -32
@@ -7904,7 +7905,7 @@
 /obj/random/medical,
 /obj/random/firstaid,
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "tf" = (
 /obj/structure/table/standard,
 /obj/item/chems/spray/antiseptic,
@@ -7913,7 +7914,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "tg" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/maintenance/bridge/foreport)
@@ -8110,18 +8111,18 @@
 	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "tJ" = (
 /obj/structure/table/rack,
 /obj/random/solgov,
 /obj/random/solgov,
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "tK" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/guncabinet/sidearm/small,
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "tL" = (
 /obj/structure/shuttle/engine/heater,
 /obj/structure/window/reinforced{
@@ -8133,21 +8134,21 @@
 	icon_state = "map"
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "tM" = (
 /obj/structure/table/standard,
 /obj/item/stack/medical/advanced/bruise_pack,
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "tN" = (
 /obj/machinery/optable,
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "tO" = (
 /obj/structure/table/standard,
 /obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "tR" = (
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/wood/walnut,
@@ -8209,9 +8210,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
-"uc" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/bridge/aftport)
 "ud" = (
 /obj/structure/bed/chair/padded/blue{
 	dir = 8;
@@ -8417,7 +8415,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "ux" = (
 /obj/effect/paint_stripe/command,
 /obj/effect/paint_stripe/command,
@@ -8722,7 +8720,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "vp" = (
 /obj/structure/bed/chair/padded/blue{
 	dir = 8;
@@ -9203,7 +9201,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "ws" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -9825,7 +9823,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "xR" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow{
@@ -9973,7 +9971,7 @@
 "yk" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/titanium,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "yl" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -9990,7 +9988,7 @@
 	pixel_y = 0
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "yw" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -10111,7 +10109,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "zf" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 4;
@@ -10379,7 +10377,7 @@
 /obj/structure/cable,
 /obj/random_multi/single_item/boombox,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Ad" = (
 /obj/structure/bed/chair/office/comfy/blue{
 	dir = 8;
@@ -10404,13 +10402,13 @@
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters";
 	opacity = 0
 	},
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "Ah" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1;
@@ -10614,7 +10612,7 @@
 /area/bridge/hallway/port)
 "AN" = (
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "AR" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -10631,7 +10629,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/wall/titanium,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "AX" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -10657,11 +10655,11 @@
 /area/crew_quarters/heads/office/ce)
 "Bc" = (
 /obj/machinery/power/smes/buildable/preset/torch/shuttle{
-	RCon_tag = "Shuttle - Preserverance"
+	RCon_tag = "Shuttle - Perseverance"
 	},
 /obj/structure/cable/cyan,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Bd" = (
 /obj/machinery/portable_atmospherics/powered/pump/filled,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -10770,7 +10768,7 @@
 "BO" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "BR" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin{
@@ -10827,7 +10825,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Cb" = (
-/obj/effect/shuttle_landmark/torch/deck1/preserverance{
+/obj/effect/shuttle_landmark/torch/deck1/perseverance{
 	name = "B-Deck, Fore Starboard"
 	},
 /turf/space,
@@ -10843,7 +10841,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Cd" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/green{
@@ -10896,7 +10894,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "Ch" = (
 /obj/structure/bed/chair/comfy/captain{
 	color = "#666666";
@@ -11017,13 +11015,13 @@
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters";
 	opacity = 0
 	},
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "CE" = (
 /obj/structure/table/glass,
 /obj/effect/floor_decal/corner/blue/mono,
@@ -11136,7 +11134,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "Dc" = (
 /obj/machinery/light/small,
 /obj/structure/catwalk,
@@ -11146,7 +11144,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Dd" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -11227,7 +11225,7 @@
 /area/bridge/storage)
 "Dw" = (
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Dx" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -11272,7 +11270,7 @@
 "DR" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/head)
+/area/perseverance/head)
 "DY" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -11421,7 +11419,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/wall/titanium,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "EE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11429,7 +11427,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/power/apc/shuttle/preserverance{
+/obj/machinery/power/apc/shuttle/perseverance{
 	name = "south bump";
 	pixel_y = -28
 	},
@@ -11438,7 +11436,7 @@
 	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "EJ" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1;
@@ -11499,11 +11497,11 @@
 "Fc" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 4;
-	id_tag = "preserverance_shuttle_pump_out_external"
+	id_tag = "perseverance_shuttle_pump_out_external"
 	},
 /obj/machinery/airlock_sensor{
 	dir = 4;
-	id_tag = "preserverance_shuttle_sensor_external";
+	id_tag = "perseverance_shuttle_sensor_external";
 	pixel_x = 25;
 	pixel_y = -6
 	},
@@ -11512,13 +11510,13 @@
 	icon_state = "handrail"
 	},
 /obj/machinery/button/access/exterior{
-	id_tag = "preserverance_shuttle";
+	id_tag = "perseverance_shuttle";
 	name = "exterior access button";
 	pixel_x = 23;
 	pixel_y = 6
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Ff" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -11614,7 +11612,7 @@
 "FK" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "FL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -11679,7 +11677,7 @@
 	},
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/head)
+/area/perseverance/head)
 "Ge" = (
 /obj/machinery/firealarm{
 	dir = 1;
@@ -11903,7 +11901,7 @@
 "Hg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
-	id_tag = "preserverance_shuttle_pump_out_internal"
+	id_tag = "perseverance_shuttle_pump_out_internal"
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -11919,7 +11917,7 @@
 	icon_state = "techfloor_edges"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Hh" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -12205,14 +12203,14 @@
 /obj/machinery/door/blast/regular/open{
 	density = 0;
 	icon_state = "pdoor0";
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters";
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "Id" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12432,7 +12430,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/wall/titanium,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "IK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/hatch/maintenance,
@@ -12457,7 +12455,7 @@
 	icon_state = "map"
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "IO" = (
 /obj/structure/bed/chair/comfy/green,
 /turf/simulated/floor/carpet,
@@ -12546,7 +12544,7 @@
 "Jg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 2;
-	id_tag = "preserverance_shuttle_pump"
+	id_tag = "perseverance_shuttle_pump"
 	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
@@ -12557,7 +12555,7 @@
 	icon_state = "techfloor_edges"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Jh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12618,16 +12616,13 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
-/area/preserverance/storage)
-"JB" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/bridge/aftstarboard)
+/area/perseverance/storage)
 "JE" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "JF" = (
 /obj/structure/grille,
 /obj/structure/railing/mapped{
@@ -12646,7 +12641,7 @@
 /area/maintenance/bridge/forestarboard)
 "JV" = (
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "Ka" = (
 /obj/structure/cable/green,
 /obj/effect/wallframe_spawn/reinforced/polarized{
@@ -12666,7 +12661,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Kd" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -12822,7 +12817,7 @@
 /obj/machinery/portable_atmospherics/canister/empty,
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "KP" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -12908,7 +12903,7 @@
 	icon_state = "intact"
 	},
 /obj/machinery/airlock_sensor{
-	id_tag = "preserverance_shuttle_sensor";
+	id_tag = "perseverance_shuttle_sensor";
 	pixel_x = 0;
 	pixel_y = -24
 	},
@@ -12918,7 +12913,7 @@
 	},
 /obj/effect/floor_decal/techfloor,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Lh" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -12950,7 +12945,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Lj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -12973,9 +12968,6 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
-"Lm" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/substation/bridge)
 "Lr" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13082,10 +13074,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
 /turf/simulated/floor/airless,
-/area/preserverance/maintenance)
-"LR" = (
-/turf/simulated/floor/reinforced/airless,
-/area/hallway/primary/bridge/aft)
+/area/perseverance/maintenance)
 "Ma" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -13106,14 +13095,14 @@
 "Mc" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
-	id_tag = "preserverance_shuttle";
+	id_tag = "perseverance_shuttle";
 	pixel_y = 24;
 	req_access = list("ACCESS_TORCH_CREW");
-	tag_exterior_sensor = "preserverance_shuttle_sensor_external"
+	tag_exterior_sensor = "perseverance_shuttle_sensor_external"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 2;
-	id_tag = "preserverance_shuttle_pump"
+	id_tag = "perseverance_shuttle_pump"
 	},
 /obj/structure/handrail,
 /obj/effect/floor_decal/techfloor{
@@ -13121,7 +13110,7 @@
 	icon_state = "techfloor_edges"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Mf" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
 /obj/item/folder/envelope/captain,
@@ -13193,7 +13182,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "Mz" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/crew_quarters/heads/office/co)
@@ -13213,7 +13202,7 @@
 	icon_state = "shuttle_chair_preview"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "MV" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -13251,7 +13240,7 @@
 	pixel_y = -28
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Nd" = (
 /obj/structure/cable/green{
 	d2 = 8;
@@ -13476,7 +13465,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Oc" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -13591,7 +13580,7 @@
 	},
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Om" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -13603,13 +13592,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bridgecheck)
-"Oq" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 9
-	},
-/obj/machinery/atmospherics/valve/shutoff,
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
 "Os" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -13679,7 +13661,7 @@
 /obj/machinery/shipsensors,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/airless,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "Pb" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Passenger Seating"
@@ -13697,7 +13679,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "Pc" = (
 /obj/structure/cable{
 	d2 = 2;
@@ -13819,7 +13801,7 @@
 	pixel_y = -26
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "PP" = (
 /obj/machinery/firealarm{
 	dir = 4;
@@ -13831,11 +13813,11 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "Qb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/shuttle_landmark/torch/hangar/preserverance,
+/obj/effect/shuttle_landmark/torch/hangar/perseverance,
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -13844,7 +13826,7 @@
 	},
 /obj/machinery/hologram/holopad/longrange,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Qc" = (
 /obj/machinery/door/airlock/glass/command{
 	name = "Auxiliary E.V.A.";
@@ -14036,7 +14018,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "QE" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -14049,7 +14031,7 @@
 "QF" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "QK" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/hatch/maintenance,
@@ -14065,7 +14047,7 @@
 "QL" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "QN" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -14160,7 +14142,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "Rd" = (
 /obj/machinery/hologram/holopad,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -14370,7 +14352,7 @@
 "RH" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/titanium,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "RK" = (
 /obj/machinery/firealarm{
 	dir = 2;
@@ -14448,7 +14430,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/preserverance/storage)
+/area/perseverance/storage)
 "Sd" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/flashlight/lamp,
@@ -14489,14 +14471,14 @@
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	dir = 8;
 	display_name = "Bridge Deck Dock";
-	id_tag = "preserverance_shuttle_dock_airlock";
+	id_tag = "perseverance_shuttle_dock_airlock";
 	pixel_x = 24;
 	pixel_y = 24;
 	req_access = list(list("ACCESS_BRIDGE","ACCESS_TORCH_CREW"));
-	tag_airpump = "preserverance_shuttle_dock_pump";
-	tag_chamber_sensor = "preserverance_shuttle_dock_sensor";
-	tag_exterior_door = "preserverance_shuttle_dock_outer";
-	tag_interior_door = "preserverance_shuttle_dock_inner"
+	tag_airpump = "perseverance_shuttle_dock_pump";
+	tag_chamber_sensor = "perseverance_shuttle_dock_sensor";
+	tag_exterior_door = "perseverance_shuttle_dock_outer";
+	tag_interior_door = "perseverance_shuttle_dock_inner"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -14544,20 +14526,20 @@
 	},
 /obj/machinery/cryopod,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/preserverance/passenger)
+/area/perseverance/passenger)
 "SA" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/machinery/door/blast/regular/open{
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "preserverance_shutters";
+	id_tag = "perseverance_shutters";
 	name = "Protective Shutters";
 	opacity = 0
 	},
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/cockpit)
+/area/perseverance/cockpit)
 "SB" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/tape/random,
@@ -14631,7 +14613,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "SU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -14681,7 +14663,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "Tc" = (
 /obj/structure/cable/yellow{
 	d1 = 4;
@@ -14746,7 +14728,7 @@
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
 	icon_state = "closed";
-	id_tag = "preserverance_shuttle_dock_inner";
+	id_tag = "perseverance_shuttle_dock_inner";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list("ACCESS_TORCH_CREW")
@@ -14943,7 +14925,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Uc" = (
 /obj/machinery/photocopier/faxmachine/torch{
 	department = "Torch - Corporate Liasion"
@@ -14993,7 +14975,7 @@
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
 	icon_state = "closed";
-	id_tag = "preserverance_shuttle_dock_outer";
+	id_tag = "perseverance_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list("ACCESS_TORCH_CREW")
@@ -15141,7 +15123,7 @@
 	icon_state = "intact"
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/medical)
+/area/perseverance/medical)
 "UX" = (
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/carpet/blue,
@@ -15155,7 +15137,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/obj/machinery/power/apc/hyper/shuttle/preserverance{
+/obj/machinery/power/apc/hyper/shuttle/perseverance{
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -15172,7 +15154,7 @@
 	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Vc" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/wood/walnut,
@@ -15204,9 +15186,9 @@
 	autoset_access = 0;
 	density = 1;
 	icon_state = "closed";
-	id_tag = "preserverance_shuttle_outer";
+	id_tag = "perseverance_shuttle_outer";
 	locked = 1;
-	name = "Preserverance External Access";
+	name = "Perseverance External Access";
 	req_access = list("ACCESS_TORCH_CREW")
 	},
 /obj/machinery/shield_diffuser,
@@ -15217,7 +15199,7 @@
 	pixel_x = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Vh" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/random_multi/single_item/runtime,
@@ -15289,10 +15271,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/airless,
-/area/preserverance/secure_storage)
-"Vt" = (
-/turf/simulated/floor/reinforced/airless,
-/area/maintenance/auxsolarbridge)
+/area/perseverance/secure_storage)
 "Vw" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
@@ -15431,7 +15410,7 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Wd" = (
 /obj/machinery/computer/modular/preset/cardslot/command{
 	dir = 8;
@@ -15476,9 +15455,9 @@
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
 	icon_state = "closed";
-	id_tag = "preserverance_shuttle_inner";
+	id_tag = "perseverance_shuttle_inner";
 	locked = 1;
-	name = "Preserverance External Access";
+	name = "Perseverance External Access";
 	req_access = list("ACCESS_TORCH_CREW")
 	},
 /obj/structure/cable{
@@ -15488,7 +15467,7 @@
 	pixel_x = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "Wh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -15536,7 +15515,7 @@
 "Ws" = (
 /obj/effect/paint/red,
 /turf/simulated/wall/titanium,
-/area/preserverance/secure_storage)
+/area/perseverance/secure_storage)
 "Wv" = (
 /obj/structure/closet/secure_closet/bridgeofficer,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -15545,7 +15524,7 @@
 "Ww" = (
 /obj/effect/paint/hull,
 /turf/simulated/wall/titanium,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "WK" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -15624,7 +15603,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Xe" = (
 /obj/structure/bed/chair/comfy/blue,
 /turf/simulated/floor/carpet/blue2,
@@ -15748,7 +15727,7 @@
 /obj/effect/wallframe_spawn/reinforced/titanium,
 /obj/effect/paint/hull,
 /turf/simulated/floor/plating,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "XJ" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -15832,7 +15811,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Yd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -16067,7 +16046,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/mess)
+/area/perseverance/mess)
 "Zb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /obj/structure/cable{
@@ -16077,7 +16056,7 @@
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "Ze" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -16154,7 +16133,7 @@
 	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/freezer,
-/area/preserverance/head)
+/area/perseverance/head)
 "Zs" = (
 /obj/machinery/computer/account_database,
 /obj/machinery/recharger/wallcharger{
@@ -16202,14 +16181,14 @@
 	},
 /obj/structure/handrail,
 /turf/simulated/floor/tiled/dark,
-/area/preserverance/airlock)
+/area/perseverance/airlock)
 "ZB" = (
 /obj/effect/paint/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
 	},
 /turf/simulated/wall/titanium,
-/area/preserverance/maintenance)
+/area/perseverance/maintenance)
 "ZD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -23628,7 +23607,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 af
 af
@@ -23670,7 +23649,7 @@ uy
 uy
 tg
 tg
-iC
+ad
 aa
 aa
 aa
@@ -23830,7 +23809,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 af
 VB
@@ -23872,7 +23851,7 @@ Av
 uy
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -24032,7 +24011,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 KB
 VB
@@ -24074,7 +24053,7 @@ DQ
 xx
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -24234,7 +24213,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 XB
 VB
@@ -24276,7 +24255,7 @@ mT
 ND
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -24436,7 +24415,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 DI
 VB
@@ -24478,7 +24457,7 @@ CV
 zP
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -24638,7 +24617,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 aj
 VB
@@ -24680,7 +24659,7 @@ dG
 SG
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -24840,7 +24819,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 TA
 VB
@@ -24882,7 +24861,7 @@ dG
 Cx
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -25042,7 +25021,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 at
 VB
@@ -25084,7 +25063,7 @@ SV
 uy
 uy
 tg
-iC
+ad
 aa
 aa
 aa
@@ -25244,7 +25223,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 al
 aA
@@ -25286,7 +25265,7 @@ jc
 bH
 aK
 tg
-iC
+ad
 aa
 aa
 aa
@@ -25446,7 +25425,7 @@ aa
 aa
 aa
 aa
-iW
+ad
 af
 am
 ay
@@ -25488,7 +25467,7 @@ lT
 Ht
 aK
 tg
-iC
+ad
 aa
 aa
 aa
@@ -25647,8 +25626,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 YI
 VB
@@ -25690,8 +25669,8 @@ aK
 aK
 aK
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -25849,8 +25828,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 an
 VB
@@ -25892,8 +25871,8 @@ xc
 xc
 xc
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -26051,8 +26030,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 aj
 VB
@@ -26094,8 +26073,8 @@ Ji
 KZ
 Ma
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -26253,8 +26232,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 ao
 VB
@@ -26296,8 +26275,8 @@ ti
 rT
 Ma
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -26455,8 +26434,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 aj
 VB
@@ -26498,8 +26477,8 @@ ti
 oB
 Ma
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -26657,8 +26636,8 @@ aa
 aa
 aa
 ad
-iW
-iW
+ad
+ad
 af
 aj
 VB
@@ -26700,8 +26679,8 @@ xe
 WX
 Ma
 tg
-iC
-iC
+ad
+ad
 ad
 aa
 aa
@@ -26859,8 +26838,8 @@ aa
 aa
 ad
 ad
-iW
-iW
+ad
+ad
 af
 aj
 VB
@@ -26902,8 +26881,8 @@ ti
 xy
 xc
 tg
-iC
-iC
+ad
+ad
 ad
 ad
 aa
@@ -27061,8 +27040,8 @@ aa
 aa
 ad
 ad
-iW
-iW
+ad
+ad
 af
 aj
 VB
@@ -27104,8 +27083,8 @@ ti
 XW
 xE
 tg
-iC
-iC
+ad
+ad
 ad
 ad
 aa
@@ -27263,8 +27242,8 @@ aa
 aa
 ad
 ad
-iW
-iW
+ad
+ad
 af
 VB
 VB
@@ -27272,7 +27251,7 @@ Xr
 bb
 AR
 bU
-Oq
+iC
 df
 lx
 bT
@@ -27295,7 +27274,7 @@ rb
 rV
 jR
 WK
-oq
+iW
 uK
 Jb
 AR
@@ -27306,8 +27285,8 @@ oB
 xz
 xF
 tg
-iC
-iC
+ad
+ad
 ad
 ad
 aa
@@ -27465,8 +27444,8 @@ aa
 aa
 ad
 ad
-iW
-iW
+ad
+ad
 af
 ap
 aD
@@ -27508,8 +27487,8 @@ UE
 lW
 oB
 tg
-iC
-iC
+ad
+ad
 ad
 ad
 aa
@@ -27667,8 +27646,8 @@ aa
 aa
 ad
 ad
-iW
-iW
+ad
+ad
 af
 aq
 aE
@@ -27710,8 +27689,8 @@ oB
 xj
 xJ
 tg
-iC
-iC
+ad
+ad
 ad
 ad
 aa
@@ -27869,8 +27848,8 @@ aa
 aa
 aa
 ad
-iW
-iW
+ad
+ad
 af
 YI
 aE
@@ -27912,8 +27891,8 @@ NW
 gP
 NW
 tg
-iC
-iC
+ad
+ad
 ad
 aa
 aa
@@ -28071,8 +28050,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 ar
 aE
@@ -28114,8 +28093,8 @@ GI
 BG
 xK
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -28273,8 +28252,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 as
 aE
@@ -28316,8 +28295,8 @@ Ma
 Xq
 Fz
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -28475,8 +28454,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 at
 aE
@@ -28518,8 +28497,8 @@ Ma
 Xq
 Fz
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -28677,8 +28656,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 JT
 aE
@@ -28720,8 +28699,8 @@ Ma
 Xq
 Fz
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -28879,8 +28858,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 af
 aF
@@ -28922,8 +28901,8 @@ xr
 xB
 tg
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -29082,8 +29061,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 af
 aj
@@ -29123,8 +29102,8 @@ Lr
 vs
 tg
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -29285,8 +29264,8 @@ aa
 aa
 aa
 aa
-iW
-iW
+ad
+ad
 af
 al
 bi
@@ -29324,8 +29303,8 @@ vv
 xj
 xs
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -29487,8 +29466,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 gz
 aQ
 bx
@@ -29526,8 +29505,8 @@ vv
 xk
 xc
 tg
-iC
-iC
+ad
+ad
 aa
 aa
 aa
@@ -29689,8 +29668,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 gz
 cb
 bx
@@ -29728,8 +29707,8 @@ TX
 xl
 xt
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -29891,8 +29870,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 gz
 fd
 gh
@@ -29930,8 +29909,8 @@ TX
 xl
 xt
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -30093,8 +30072,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 gz
 cc
 bx
@@ -30132,8 +30111,8 @@ TX
 xl
 CN
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -30296,7 +30275,7 @@ aa
 aa
 aa
 aa
-JB
+ad
 gz
 cd
 bx
@@ -30333,8 +30312,8 @@ wN
 TX
 xm
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -30498,7 +30477,7 @@ aa
 aa
 aa
 aa
-JB
+ad
 gz
 aR
 bx
@@ -30535,8 +30514,8 @@ Jo
 YN
 xl
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -30700,7 +30679,7 @@ aa
 aa
 aa
 aa
-JB
+ad
 gz
 aS
 bx
@@ -30737,8 +30716,8 @@ TX
 TX
 xn
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -30901,8 +30880,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 gz
 gz
 bB
@@ -30940,8 +30919,8 @@ wY
 Cn
 CN
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -31102,8 +31081,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 dY
 dY
 dY
@@ -31143,8 +31122,8 @@ Km
 yy
 CN
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -31304,8 +31283,8 @@ aa
 aa
 aa
 aa
-JB
-JB
+ad
+ad
 dY
 Eb
 vd
@@ -31345,8 +31324,8 @@ LM
 yy
 wP
 CN
-uc
-uc
+ad
+ad
 aa
 aa
 aa
@@ -31506,8 +31485,8 @@ aa
 aa
 aa
 ad
-JB
-JB
+ad
+ad
 dY
 Jc
 fe
@@ -31547,8 +31526,8 @@ XJ
 xv
 xD
 CN
-uc
-uc
+ad
+ad
 ad
 aa
 aa
@@ -31708,9 +31687,9 @@ aa
 aa
 aa
 ad
-JB
-JB
-gz
+ad
+ad
+dY
 dY
 dY
 dY
@@ -31749,8 +31728,8 @@ xo
 CN
 CN
 CN
-uc
-uc
+ad
+ad
 ad
 aa
 aa
@@ -31912,10 +31891,10 @@ aa
 ad
 ad
 ad
-JB
-JB
-gz
-gz
+ad
+ad
+dY
+dY
 bD
 cf
 cK
@@ -31949,8 +31928,8 @@ wT
 dV
 CN
 CN
-uc
-uc
+ad
+ad
 ad
 ad
 ad
@@ -32116,16 +32095,16 @@ ad
 ad
 ad
 ad
-JB
-JB
+ad
+ad
 bD
 tb
 cL
 dv
 bD
-JB
-JB
-JB
+ad
+ad
+ad
 gz
 DN
 xg
@@ -32149,8 +32128,8 @@ vI
 wo
 wU
 dV
-uc
-uc
+ad
+ad
 ad
 ad
 ad
@@ -32319,13 +32298,13 @@ ad
 ad
 ad
 ad
-JB
+ad
 bD
 ch
 cM
 dw
 bD
-JB
+ad
 ad
 ad
 gn
@@ -32351,7 +32330,7 @@ vJ
 wp
 wV
 dV
-uc
+ad
 ad
 ad
 ad
@@ -32521,13 +32500,13 @@ ad
 ad
 ad
 ad
-JB
+ad
 bD
 bD
 cN
 bD
 bD
-JB
+ad
 ad
 ad
 ad
@@ -32553,7 +32532,7 @@ dV
 wq
 wW
 dV
-uc
+ad
 ad
 ad
 ad
@@ -32724,11 +32703,11 @@ ad
 ad
 ad
 ad
-Lm
+ad
 bD
 bD
 bD
-Lm
+ad
 ad
 ad
 ad
@@ -32927,9 +32906,9 @@ ad
 ad
 ad
 ad
-Lm
-Lm
-Lm
+ad
+ad
+ad
 ad
 ad
 ad
@@ -33136,11 +33115,11 @@ ad
 ad
 ad
 ad
-LR
-LR
-LR
-LR
-LR
+ad
+ad
+ad
+ad
+ad
 DN
 DN
 Tg
@@ -33338,25 +33317,25 @@ ad
 ad
 ad
 ad
-LR
-LR
-LR
-LR
-LR
-LR
+ad
+ad
+ad
+ad
+ad
+ad
 DN
 lR
 DN
-LR
-LR
-LR
-LR
-LR
-LR
-LR
-LR
-LR
-Vt
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
+ad
 vK
 cP
 ah

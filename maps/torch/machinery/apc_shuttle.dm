@@ -13,8 +13,8 @@
 /obj/machinery/power/apc/high/shuttle/spirit
 	req_access = list(list(access_engine_equip, access_expedition_shuttle_helm))
 
-/obj/machinery/power/apc/shuttle/preserverance
-	req_access = list(list(access_engine_equip, access_preserverance_helm))
+/obj/machinery/power/apc/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))
 
-/obj/machinery/power/apc/hyper/shuttle/preserverance
-	req_access = list(list(access_engine_equip, access_preserverance_helm))
+/obj/machinery/power/apc/hyper/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))

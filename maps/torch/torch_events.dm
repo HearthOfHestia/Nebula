@@ -19,7 +19,7 @@
 /datum/event/prison_break/station
 	eventDept = "Local"
 	areaName = list("Brig","Supply Warehouse","Xenobiology","Engineering Hard Storage")
-	areaType = list(/area/security/prison, /area/security/brig, /area/quartermaster/storage, /area/rnd/xenobiology, /area/engineering/hardstorage)
+	areaType = list(/area/security/brig, /area/quartermaster/storage, /area/rnd/xenobiology, /area/engineering/hardstorage)
 	areaNotType = list(/area/rnd/xenobiology/xenoflora, /area/rnd/xenobiology/xenoflora_storage, /area/quartermaster/storage/upper)
 
 /datum/event/prison_break/warehouse

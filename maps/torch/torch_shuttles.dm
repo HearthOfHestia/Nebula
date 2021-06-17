@@ -411,44 +411,44 @@ TORCH_ESCAPE_POD(17)
 	name = "In transit"
 	landmark_tag = "nav_transit_opportunity"
 
-/datum/shuttle/autodock/overmap/preserverance
-	name = "Preserverance"
+/datum/shuttle/autodock/overmap/perseverance
+	name = "Perseverance"
 	move_time = 60
-	shuttle_area = list(/area/preserverance/cockpit, /area/preserverance/maintenance, /area/preserverance/storage, /area/preserverance/secure_storage, /area/preserverance/mess, /area/preserverance/passenger, /area/preserverance/medical, /area/preserverance/head, /area/preserverance/airlock)
-	current_location = "nav_hangar_preserverance"
-	landmark_transition = "nav_transit_preserverance"
-	dock_target = "preserverance_shuttle"
+	shuttle_area = list(/area/perseverance/cockpit, /area/perseverance/maintenance, /area/perseverance/storage, /area/perseverance/secure_storage, /area/perseverance/mess, /area/perseverance/passenger, /area/perseverance/medical, /area/perseverance/head, /area/perseverance/airlock)
+	current_location = "nav_hangar_perseverance"
+	landmark_transition = "nav_transit_perseverance"
+	dock_target = "perseverance_shuttle"
 	range = 2
-	logging_home_tag = "nav_hangar_preserverance"
-	logging_access = access_preserverance_helm
+	logging_home_tag = "nav_hangar_perseverance"
+	logging_access = access_perseverance_helm
 	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
 
-/obj/effect/shuttle_landmark/torch/hangar/preserverance
-	name = "Preserverance Hangar"
-	landmark_tag = "nav_hangar_preserverance"
-	docking_controller = "preserverance_shuttle_dock_airlock"
+/obj/effect/shuttle_landmark/torch/hangar/perseverance
+	name = "Perseverance Hangar"
+	landmark_tag = "nav_hangar_perseverance"
+	docking_controller = "perseverance_shuttle_dock_airlock"
 	base_turf = /turf/simulated/floor/reinforced/airless
 
-/obj/effect/shuttle_landmark/torch/deck1/preserverance
+/obj/effect/shuttle_landmark/torch/deck1/perseverance
 	name = "Space near Forth Deck"
-	landmark_tag = "nav_deck1_preserverance"
+	landmark_tag = "nav_deck1_perseverance"
 
-/obj/effect/shuttle_landmark/torch/deck2/preserverance
+/obj/effect/shuttle_landmark/torch/deck2/perseverance
 	name = "Space near Third Deck"
-	landmark_tag = "nav_deck2_preserverance"
+	landmark_tag = "nav_deck2_perseverance"
 
-/obj/effect/shuttle_landmark/torch/deck3/preserverance
+/obj/effect/shuttle_landmark/torch/deck3/perseverance
 	name = "Space near Second Deck"
-	landmark_tag = "nav_deck3_preserverance"
+	landmark_tag = "nav_deck3_perseverance"
 
-/obj/effect/shuttle_landmark/torch/deck4/preserverance
+/obj/effect/shuttle_landmark/torch/deck4/perseverance
 	name = "Space near First Deck"
-	landmark_tag = "nav_deck4_preserverance"
+	landmark_tag = "nav_deck4_perseverance"
 
-/obj/effect/shuttle_landmark/torch/deck5/preserverance
+/obj/effect/shuttle_landmark/torch/deck5/perseverance
 	name = "Space near Bridge"
-	landmark_tag = "nav_bridge_preserverance"
+	landmark_tag = "nav_bridge_perseverance"
 
-/obj/effect/shuttle_landmark/transit/torch/preserverance
+/obj/effect/shuttle_landmark/transit/torch/perseverance
 	name = "In transit"
-	landmark_tag = "nav_transit_preserverance"
+	landmark_tag = "nav_transit_perseverance"

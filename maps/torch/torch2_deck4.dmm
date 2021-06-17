@@ -38,12 +38,23 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/maintenance/fourthdeck/forestarboard)
 "al" = (
-/obj/structure/sign/warning/docking_area{
-	dir = 1;
-	icon_state = "securearea"
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
-/turf/space,
-/area/maintenance/fourthdeck/forestarboard)
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "am" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/fourthdeck/center)
@@ -344,7 +355,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
 "bn" = (
-/obj/effect/shuttle_landmark/torch/deck5/preserverance{
+/obj/effect/shuttle_landmark/torch/deck5/perseverance{
 	name = "4th Deck, Aft"
 	},
 /turf/space,
@@ -924,8 +935,12 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
 "dg" = (
-/turf/space,
-/area/maintenance/fourthdeck/starboard)
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fourthdeck/port)
 "dh" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 2;
@@ -1451,9 +1466,6 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/port)
-"eU" = (
-/turf/space,
-/area/maintenance/fourthdeck/forestarboard)
 "eV" = (
 /obj/structure/closet/crate,
 /obj/random/maintenance/solgov,
@@ -2352,9 +2364,6 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/storage/primary)
-"hN" = (
-/turf/space,
-/area/crew_quarters/commissary)
 "hO" = (
 /obj/structure/table/rack,
 /obj/random/tech_supply,
@@ -5029,9 +5038,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"rX" = (
-/turf/space,
-/area/vacant/monitoring)
 "sd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/catwalk_plated/dark,
@@ -5041,9 +5047,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
-"se" = (
-/turf/space,
-/area/maintenance/fourthdeck/foreport)
 "sf" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -6749,9 +6752,6 @@
 "wt" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/waterstore)
-"wu" = (
-/turf/space,
-/area/maintenance/fourthdeck/aft)
 "wx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
@@ -6972,9 +6972,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/eva)
-"xg" = (
-/turf/space,
-/area/maintenance/fourthdeck/port)
 "xi" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7084,24 +7081,6 @@
 /obj/random/maintenance/solgov/clean,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
-"xH" = (
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/port)
 "xL" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -7935,9 +7914,6 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/office)
-"Az" = (
-/turf/space,
-/area/storage/auxillary/starboard)
 "AC" = (
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -8117,9 +8093,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"Bx" = (
-/turf/space,
-/area/storage/auxillary/port)
 "By" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/door/blast/regular/escape_pod,
@@ -10192,9 +10165,6 @@
 /obj/effect/wallframe_spawn/no_grille,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
-"IW" = (
-/turf/simulated/floor/shuttle_ceiling,
-/area/maintenance/fourthdeck/aft)
 "IX" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 8
@@ -10312,10 +10282,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/fourthdeck/aft)
-"JB" = (
-/obj/structure/sign/warning/docking_area,
-/turf/space,
-/area/maintenance/fourthdeck/foreport)
 "JD" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -11935,9 +11901,6 @@
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/commissary)
-"Oi" = (
-/turf/space,
-/area/eva)
 "Oj" = (
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -13311,13 +13274,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"Sb" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/port)
 "Sd" = (
 /obj/effect/paint_stripe/common,
 /turf/simulated/wall/prepainted,
@@ -25692,7 +25648,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -25714,7 +25670,7 @@ Dd
 Dd
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -25894,7 +25850,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -25916,7 +25872,7 @@ MS
 Nz
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -26096,7 +26052,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -26118,7 +26074,7 @@ Wu
 Vp
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -26298,7 +26254,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -26320,7 +26276,7 @@ Iq
 Rv
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -26500,7 +26456,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -26522,7 +26478,7 @@ Yb
 Fe
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -26702,7 +26658,7 @@ Gt
 Gt
 Gt
 Gt
-Oi
+Gt
 zj
 zj
 zj
@@ -26724,7 +26680,7 @@ Dd
 Dd
 Dd
 zj
-Oi
+Gt
 Gt
 Gt
 Gt
@@ -26904,7 +26860,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 iZ
@@ -26926,7 +26882,7 @@ BL
 CN
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -27106,7 +27062,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 ja
@@ -27128,7 +27084,7 @@ uT
 BM
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -27307,7 +27263,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 hO
@@ -27331,7 +27287,7 @@ CO
 DL
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -27508,7 +27464,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 gY
@@ -27534,7 +27490,7 @@ DM
 EE
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -27709,7 +27665,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 fY
@@ -27737,7 +27693,7 @@ EF
 Fl
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -27910,7 +27866,7 @@ Gt
 Gt
 Gt
 Gt
-Az
+Gt
 RQ
 RQ
 fi
@@ -27939,8 +27895,8 @@ EG
 Fm
 FY
 BK
-Bx
-Bx
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -28142,7 +28098,7 @@ AH
 AH
 BK
 BK
-Bx
+Gt
 Gt
 Gt
 Gt
@@ -28920,7 +28876,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 XH
 XS
@@ -28950,7 +28906,7 @@ CV
 Gb
 GC
 Hp
-rX
+Gt
 Gt
 Gt
 Gt
@@ -29122,7 +29078,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 VS
 PN
@@ -29152,7 +29108,7 @@ lE
 Gc
 GD
 Hp
-rX
+Gt
 Gt
 Gt
 Gt
@@ -29324,7 +29280,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 LZ
 Ku
@@ -29354,7 +29310,7 @@ Fp
 Gd
 GE
 Hp
-rX
+Gt
 Gt
 Gt
 Gt
@@ -29526,7 +29482,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 OQ
 fo
@@ -29556,7 +29512,7 @@ Fq
 Ge
 GF
 Hp
-rX
+Gt
 Gt
 Gt
 Gt
@@ -29728,7 +29684,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 lY
 fp
@@ -29758,7 +29714,7 @@ Fr
 BV
 BV
 Hp
-rX
+Gt
 Gt
 Gt
 Gt
@@ -29930,7 +29886,7 @@ Gt
 Gt
 Gt
 Gt
-hN
+Gt
 PM
 vF
 vF
@@ -29960,7 +29916,7 @@ Fs
 GG
 GG
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -30132,7 +30088,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 LK
 fq
@@ -30162,7 +30118,7 @@ Ft
 CY
 CY
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -30334,7 +30290,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 kQ
 er
@@ -30364,7 +30320,7 @@ EM
 Gg
 GI
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -30536,7 +30492,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 uL
 er
@@ -30566,7 +30522,7 @@ Dc
 Dc
 Dc
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -30738,7 +30694,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 YW
 KF
@@ -30768,7 +30724,7 @@ Pi
 ZW
 Oy
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -30940,7 +30896,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 kQ
 KF
@@ -30970,7 +30926,7 @@ DQ
 DQ
 hx
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -31142,7 +31098,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 kQ
 KF
@@ -31172,7 +31128,7 @@ PH
 DQ
 Sp
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -31344,7 +31300,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 kQ
 RA
@@ -31374,7 +31330,7 @@ Dc
 Dc
 Dc
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -31545,7 +31501,7 @@ Gt
 Gt
 Gt
 Gt
-al
+Gt
 ak
 ak
 kQ
@@ -31576,8 +31532,8 @@ OS
 zS
 zS
 DT
-se
-JB
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -31745,8 +31701,8 @@ Gt
 Gt
 Gt
 Gt
-eU
-eU
+Gt
+Gt
 ak
 ak
 ak
@@ -31779,9 +31735,9 @@ Og
 Og
 DT
 DT
-se
-se
-se
+Gt
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -31945,8 +31901,8 @@ Gt
 Gt
 Gt
 Gt
-eU
-eU
+Gt
+Gt
 ak
 ak
 ak
@@ -31984,8 +31940,8 @@ DT
 DT
 DT
 DT
-se
-se
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -32146,8 +32102,8 @@ Gt
 Gt
 Gt
 Gt
-eU
-eU
+Gt
+Gt
 ak
 ak
 bS
@@ -32187,8 +32143,8 @@ OM
 IL
 DT
 DT
-se
-se
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -32348,7 +32304,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 ak
 ZG
@@ -32390,7 +32346,7 @@ XB
 Or
 DT
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -32550,7 +32506,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 SR
 Xs
@@ -32592,7 +32548,7 @@ Ra
 MZ
 Ze
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -32752,7 +32708,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 UB
 LW
@@ -32794,7 +32750,7 @@ IM
 LO
 Pu
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -32954,7 +32910,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 er
 bt
@@ -32996,7 +32952,7 @@ Db
 PR
 mL
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -33156,7 +33112,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 Va
 Po
@@ -33198,7 +33154,7 @@ IN
 Rk
 QJ
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -33358,7 +33314,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 Rs
 Mt
@@ -33400,7 +33356,7 @@ Nr
 Pp
 Pk
 DT
-se
+Gt
 Gt
 Gt
 Gt
@@ -33560,7 +33516,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 Os
 ep
@@ -33762,7 +33718,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 NU
 bu
@@ -33964,7 +33920,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 aS
 bv
@@ -34166,7 +34122,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 er
 er
@@ -34368,7 +34324,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 rr
 er
@@ -34570,7 +34526,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 aV
 er
@@ -34772,7 +34728,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 aU
 er
@@ -34814,7 +34770,7 @@ rt
 QR
 Ni
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -34974,7 +34930,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 cw
 er
@@ -35016,7 +34972,7 @@ Ss
 RI
 cY
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -35176,7 +35132,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 bN
 bw
@@ -35218,7 +35174,7 @@ IT
 gX
 Mq
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -35378,7 +35334,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 bN
 bw
@@ -35420,7 +35376,7 @@ IT
 Cy
 LG
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -35580,7 +35536,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 bN
 bw
@@ -35622,7 +35578,7 @@ IT
 VY
 LG
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -35782,7 +35738,7 @@ Gt
 Gt
 Gt
 Gt
-eU
+Gt
 ak
 er
 er
@@ -35824,7 +35780,7 @@ Ss
 wT
 IT
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -35984,7 +35940,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 MH
 Sm
@@ -36026,7 +35982,7 @@ XL
 PU
 KK
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -36186,7 +36142,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 Zg
 Nq
@@ -36228,7 +36184,7 @@ ok
 Js
 Kw
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -36387,7 +36343,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 aq
 Qs
@@ -36430,8 +36386,8 @@ Tg
 sh
 RS
 GT
-xg
-xg
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -36589,7 +36545,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 aq
 rk
@@ -36632,8 +36588,8 @@ IX
 sh
 RS
 GT
-xg
-xg
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -36791,7 +36747,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 aq
 qn
@@ -36835,7 +36791,7 @@ sh
 RS
 GT
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -36993,7 +36949,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 YN
@@ -37037,7 +36993,7 @@ sh
 JL
 rG
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -37195,7 +37151,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 iA
@@ -37239,7 +37195,7 @@ sh
 JL
 LC
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -37397,7 +37353,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 iC
@@ -37441,7 +37397,7 @@ sh
 JL
 rn
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -37599,7 +37555,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 Ui
@@ -37643,7 +37599,7 @@ sh
 JL
 WY
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -37801,7 +37757,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 be
@@ -37845,7 +37801,7 @@ sh
 JM
 GW
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -38003,7 +37959,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 bc
@@ -38047,7 +38003,7 @@ Vt
 rs
 Kb
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -38205,7 +38161,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 oD
@@ -38249,7 +38205,7 @@ Ni
 JL
 Kc
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -38407,7 +38363,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YN
 YN
@@ -38451,7 +38407,7 @@ Ni
 WA
 TW
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -38609,7 +38565,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 dA
 jz
@@ -38653,7 +38609,7 @@ Ni
 xL
 Kd
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -38811,7 +38767,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 LV
 Wz
@@ -38855,7 +38811,7 @@ Ni
 WN
 Xw
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -39013,7 +38969,7 @@ Gt
 Gt
 Gt
 Gt
-dg
+Gt
 aq
 YY
 Lj
@@ -39054,10 +39010,10 @@ ju
 Yf
 zx
 Ni
-xH
-Sb
+al
+dg
 GT
-xg
+Gt
 Gt
 Gt
 Gt
@@ -42447,8 +42403,8 @@ Gt
 Gt
 Gt
 Gt
-wu
-wu
+Gt
+Gt
 Vr
 Nt
 Nx
@@ -42491,7 +42447,7 @@ TD
 Ur
 Vr
 Vr
-wu
+Gt
 Gt
 Gt
 Gt
@@ -42649,8 +42605,8 @@ Gt
 Gt
 Gt
 Gt
-wu
-wu
+Gt
+Gt
 Vr
 Vr
 Vr
@@ -42692,8 +42648,8 @@ Vj
 Vr
 Vr
 Vr
-wu
-wu
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -42852,9 +42808,9 @@ Gt
 Gt
 Gt
 Gt
-wu
-wu
-wu
+Gt
+Gt
+Gt
 Vr
 Vr
 Vr
@@ -42892,9 +42848,9 @@ Vr
 Vr
 Vr
 Vr
-wu
-wu
-wu
+Gt
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -43055,47 +43011,47 @@ Gt
 Gt
 Gt
 Gt
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
 Gt
 Gt
 Gt
@@ -43258,45 +43214,45 @@ Gt
 Gt
 Gt
 Gt
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-IW
-wu
-wu
-wu
-wu
-wu
-wu
-wu
-wu
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+OW
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
+Gt
 Gt
 Gt
 Gt

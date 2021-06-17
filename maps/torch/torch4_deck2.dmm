@@ -6281,15 +6281,6 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/elevator)
-"nR" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/maintenance/seconddeck/forestarboard)
 "nS" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -7236,7 +7227,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "qu" = (
-/obj/effect/shuttle_landmark/torch/deck3/preserverance{
+/obj/effect/shuttle_landmark/torch/deck3/perseverance{
 	name = "2nd Deck, Aft Port"
 	},
 /turf/space,
@@ -8719,8 +8710,14 @@
 /turf/space,
 /area/space)
 "tU" = (
-/turf/space,
-/area/maintenance/seconddeck/central)
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "tV" = (
 /obj/machinery/atmospherics/unary/outlet_injector{
 	dir = 8;
@@ -11337,9 +11334,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
-"Bz" = (
-/turf/space,
-/area/maintenance/seconddeck/foreport)
 "BA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -12121,9 +12115,6 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
-"Dp" = (
-/turf/space,
-/area/maintenance/incinerator)
 "Dq" = (
 /obj/machinery/constructable_frame/computerframe,
 /turf/simulated/floor/tiled/techfloor,
@@ -13313,9 +13304,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/prototype/engine)
-"Gk" = (
-/turf/space,
-/area/maintenance/seconddeck/forestarboard)
 "Gl" = (
 /obj/structure/sign/warning/compressed_gas{
 	dir = 1;
@@ -13381,9 +13369,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
-"Gp" = (
-/turf/space,
-/area/engineering/fuelbay)
 "Gs" = (
 /obj/structure/cable{
 	d1 = 2;
@@ -15860,9 +15845,6 @@
 "Oo" = (
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/engineering/fuelbay)
-"Oq" = (
-/turf/space,
-/area/maintenance/seconddeck/aftstarboard)
 "Os" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -17591,9 +17573,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
-"TR" = (
-/turf/space,
-/area/storage/tech)
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -17829,9 +17808,6 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
-"US" = (
-/turf/space,
-/area/medical/morgue)
 "UU" = (
 /obj/structure/sign/warning/nosmoking_1,
 /obj/effect/paint_stripe/engineering,
@@ -28715,7 +28691,7 @@ aa
 aa
 aa
 aa
-Gk
+aa
 JX
 VT
 VT
@@ -28741,7 +28717,7 @@ Vr
 Vr
 Vr
 Wp
-Bz
+aa
 aa
 aa
 aa
@@ -28916,8 +28892,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 PP
 PP
@@ -28943,8 +28919,8 @@ MQ
 MQ
 MQ
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -29118,8 +29094,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 fU
@@ -29145,8 +29121,8 @@ Wl
 vt
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -29320,8 +29296,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 xe
@@ -29347,8 +29323,8 @@ wl
 Sl
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -29522,8 +29498,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gG
@@ -29549,8 +29525,8 @@ RP
 xW
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -29724,8 +29700,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gH
@@ -29751,8 +29727,8 @@ Pq
 xX
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -29926,8 +29902,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 WC
@@ -29953,8 +29929,8 @@ OO
 hw
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -30128,8 +30104,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gH
@@ -30155,8 +30131,8 @@ Pq
 xX
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -30330,8 +30306,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gI
@@ -30357,8 +30333,8 @@ xf
 xY
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -30532,8 +30508,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gJ
@@ -30559,8 +30535,8 @@ xg
 xZ
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -30734,8 +30710,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gK
@@ -30761,8 +30737,8 @@ wo
 wo
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -30936,8 +30912,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 fU
 gL
@@ -30963,8 +30939,8 @@ wp
 wp
 vt
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -31138,8 +31114,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 JX
@@ -31165,8 +31141,8 @@ Wp
 Wp
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -31339,8 +31315,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 iR
@@ -31368,8 +31344,8 @@ xh
 ya
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -31540,8 +31516,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 fd
@@ -31571,8 +31547,8 @@ pi
 pi
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -31741,8 +31717,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 ex
@@ -31774,8 +31750,8 @@ pi
 pi
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -31943,8 +31919,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 cH
 bE
@@ -31976,8 +31952,8 @@ zA
 pi
 Be
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -32145,7 +32121,7 @@ aa
 aa
 aa
 aa
-Gk
+aa
 JX
 JX
 Hz
@@ -32178,8 +32154,8 @@ nc
 GZ
 Bf
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -32346,8 +32322,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 dO
@@ -32381,8 +32357,8 @@ pi
 pi
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -32547,8 +32523,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 wR
@@ -32584,8 +32560,8 @@ pi
 pi
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -32749,8 +32725,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 Po
 dr
@@ -32786,8 +32762,8 @@ yg
 pi
 Cm
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -32951,8 +32927,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 cG
 ds
@@ -34001,7 +33977,7 @@ EU
 EU
 OM
 OM
-Dp
+aa
 aa
 aa
 aa
@@ -34161,8 +34137,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 bG
 RO
@@ -34202,8 +34178,8 @@ Cp
 CS
 Dq
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -34363,8 +34339,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 Lt
 vH
@@ -34404,8 +34380,8 @@ sv
 sv
 Dr
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -34564,8 +34540,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 JX
 bI
@@ -34607,8 +34583,8 @@ yi
 lr
 Wp
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -34766,8 +34742,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 bc
 PO
@@ -34809,8 +34785,8 @@ pi
 pi
 pi
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -34968,8 +34944,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 NW
 vR
@@ -35011,8 +34987,8 @@ CT
 Bk
 pi
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -35170,8 +35146,8 @@ aa
 aa
 aa
 aa
-Gk
-Gk
+aa
+aa
 JX
 Zr
 wx
@@ -35213,8 +35189,8 @@ CU
 mT
 pi
 Wp
-Bz
-Bz
+aa
+aa
 aa
 aa
 aa
@@ -35372,13 +35348,13 @@ af
 af
 af
 af
-Gk
-Gk
+aa
+aa
 JX
 bd
 xr
 EY
-nR
+tU
 Fa
 dS
 eC
@@ -35415,8 +35391,8 @@ CV
 mT
 pi
 Wp
-Bz
-Bz
+aa
+aa
 af
 af
 af
@@ -35575,7 +35551,7 @@ aa
 aa
 ag
 aa
-tU
+aa
 aC
 bf
 bf
@@ -35777,7 +35753,7 @@ aj
 ak
 aq
 aa
-tU
+aa
 aC
 Wa
 bJ
@@ -35979,7 +35955,7 @@ aj
 al
 aq
 ag
-tU
+aa
 aC
 bh
 VX
@@ -40624,7 +40600,7 @@ af
 eg
 jW
 ln
-TR
+aa
 PC
 aM
 br
@@ -40825,8 +40801,8 @@ aa
 aa
 jv
 aa
-TR
-TR
+aa
+aa
 PC
 aN
 sN
@@ -41027,8 +41003,8 @@ aa
 aa
 aa
 aa
-TR
-TR
+aa
+aa
 PC
 aO
 Yu
@@ -41229,8 +41205,8 @@ aa
 aa
 aa
 aa
-TR
-TR
+aa
+aa
 PC
 aP
 uz
@@ -41431,8 +41407,8 @@ aa
 aa
 aa
 aa
-TR
-TR
+aa
+aa
 PC
 cw
 cw
@@ -41633,8 +41609,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 as
 Xr
@@ -41835,8 +41811,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 oK
 oK
@@ -42037,8 +42013,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aH
 aW
@@ -42239,8 +42215,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -42441,8 +42417,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -42643,8 +42619,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -42689,7 +42665,7 @@ Qo
 Ro
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -42845,8 +42821,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -42891,7 +42867,7 @@ Oo
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -43047,8 +43023,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aT
 oK
@@ -43093,7 +43069,7 @@ Oo
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -43249,8 +43225,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aS
 oK
@@ -43295,7 +43271,7 @@ Oo
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -43451,8 +43427,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -43497,7 +43473,7 @@ Oo
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -43653,8 +43629,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 Xr
@@ -43699,7 +43675,7 @@ Oo
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -43855,8 +43831,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 aU
 by
@@ -43901,7 +43877,7 @@ Fp
 Oo
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -44057,8 +44033,8 @@ aa
 aa
 aa
 aa
-US
-US
+aa
+aa
 GW
 cC
 cC
@@ -44103,7 +44079,7 @@ Fp
 Fp
 JF
 JF
-Gp
+aa
 aa
 aa
 aa
@@ -44260,7 +44236,7 @@ aa
 aa
 aa
 aa
-Oq
+aa
 IE
 IE
 bC
@@ -44463,7 +44439,7 @@ aa
 aa
 aa
 ag
-Oq
+aa
 IE
 IE
 cc
@@ -44665,8 +44641,8 @@ aa
 aa
 aa
 ag
-Oq
-Oq
+aa
+aa
 IE
 IE
 cE
@@ -44868,8 +44844,8 @@ aa
 aa
 ag
 aa
-Oq
-Oq
+aa
+aa
 IE
 IE
 RJ
@@ -45070,9 +45046,9 @@ aa
 aa
 ag
 aa
-Oq
-Oq
-Oq
+aa
+aa
+aa
 IE
 IE
 ax
@@ -45273,9 +45249,9 @@ aa
 ag
 aa
 aa
-Oq
-Oq
-Oq
+aa
+aa
+aa
 IE
 IE
 ax
@@ -45477,7 +45453,7 @@ ag
 aa
 aa
 aa
-Oq
+aa
 IE
 IE
 IE

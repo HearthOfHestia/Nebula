@@ -19,16 +19,16 @@
 	desc = "Spirit Helm"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_preserverance = "ACCESS_TORCH_PRESERVERANCE" //78
-/datum/access/preserverance
-	id = access_preserverance
-	desc = "Preserverance"
+/var/const/access_perseverance = "ACCESS_TORCH_PERSEVERANCE" //78
+/datum/access/perseverance
+	id = access_perseverance
+	desc = "Perseverance"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_preserverance_helm = "ACCESS_TORCH_PRESERVERANCE_HELM" //79
-/datum/access/preserverance_helm
-	id = access_preserverance_helm
-	desc = "Preserverance Helm"
+/var/const/access_perseverance_helm = "ACCESS_TORCH_PERSEVERANCE_HELM" //79
+/datum/access/perseverance_helm
+	id = access_perseverance_helm
+	desc = "Perseverance Helm"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_solgov_crew = "ACCESS_TORCH_CREW" //80

@@ -365,46 +365,46 @@
 /area/exploration_shuttle/airlock
 	name = "\improper Spirit - Airlock Compartment"
 
-//Preserverance
+//Perseverance
 
-/area/preserverance
-	name = "\improper ISEO Preserverance"
+/area/perseverance
+	name = "\improper ISEO Perseverance"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/preserverance/cockpit
-	name = "\improper ISEO Preserverance - Cockpit"
-	req_access = list(access_preserverance)
+/area/perseverance/cockpit
+	name = "\improper ISEO Perseverance - Cockpit"
+	req_access = list(access_perseverance)
 
-/area/preserverance/maintenance
-	name = "\improper ISEO Preserverance - Maintenance"
+/area/perseverance/maintenance
+	name = "\improper ISEO Perseverance - Maintenance"
 	req_access = list(access_solgov_crew)
 
-/area/preserverance/storage
-	name = "\improper ISEO Preserverance - Storage"
+/area/perseverance/storage
+	name = "\improper ISEO Perseverance - Storage"
 	req_access = list(access_solgov_crew)
 
-/area/preserverance/secure_storage
-	name = "\improper ISEO Preserverance - Secure Storage"
-	req_access = list(access_preserverance)
+/area/perseverance/secure_storage
+	name = "\improper ISEO Perseverance - Secure Storage"
+	req_access = list(access_perseverance)
 
-/area/preserverance/mess
-	name = "\improper ISEO Preserverance - Mess Hall"
+/area/perseverance/mess
+	name = "\improper ISEO Perseverance - Mess Hall"
 
-/area/preserverance/passenger
-	name = "\improper ISEO Preserverance - Passenger Compartment"
+/area/perseverance/passenger
+	name = "\improper ISEO Perseverance - Passenger Compartment"
 
-/area/preserverance/medical
-	name = "\improper ISEO Preserverance - Medical"
+/area/perseverance/medical
+	name = "\improper ISEO Perseverance - Medical"
 
-/area/preserverance/head
-	name = "\improper ISEO Preserverance - Head"
+/area/perseverance/head
+	name = "\improper ISEO Perseverance - Head"
 
-/area/preserverance/airlock
-	name = "\improper ISEO Preserverance - Airlock Compartment"
+/area/perseverance/airlock
+	name = "\improper ISEO Perseverance - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
 //Opportunity

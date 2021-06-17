@@ -9,7 +9,7 @@
 	initial_restricted_waypoints = list(
 		"Spirit" = list("nav_hangar_spirit"), 	//can't have random shuttles popping inside the ship
 		"Opportunity" = list("nav_hangar_opportunity"),
-		"Preserverance" = list("nav_hangar_preserverance"),
+		"Perseverance" = list("nav_hangar_perseverance"),
 		"Trichoptera" = list("nav_trichoptera_altdock"), //restricts Trichoptera specific docking waypoint on deck 4 portside
 		"Skrellian Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
 		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
@@ -27,7 +27,7 @@
 		"nav_ert_deck5",
 		"nav_bridge_spirit",
 		"nav_bridge_opportunity",
-		"nav_bridge_preserverance",
+		"nav_bridge_perseverance",
 
 		//start First Deck
 		"nav_merc_deck1",
@@ -36,7 +36,7 @@
 		"nav_ert_deck4",
 		"nav_deck4_spirit",
 		"nav_deck4_opportunity",
-		"nav_deck4_preserverance",
+		"nav_deck4_perseverance",
 
 		//start Second Deck
 		"nav_merc_deck2",
@@ -45,7 +45,7 @@
 		"nav_ert_deck3",
 		"nav_deck3_spirit",
 		"nav_deck3_opportunity",
-		"nav_deck3_preserverance",
+		"nav_deck3_perseverance",
 
 		//start Third Deck
 		"nav_merc_deck3",
@@ -54,7 +54,7 @@
 		"nav_ert_deck2",
 		"nav_deck2_spirit",
 		"nav_deck2_opportunity",
-		"nav_deck2_preserverance",
+		"nav_deck2_perseverance",
 
 		//start Forth Deck
 		"nav_merc_deck4",
@@ -63,7 +63,7 @@
 		"nav_ert_deck1",
 		"nav_deck1_spirit",
 		"nav_deck1_opportunity",
-		"nav_deck1_preserverance",
+		"nav_deck1_perseverance",
 
 		//start Hanger Deck
 		"nav_merc_hanger",
@@ -89,10 +89,10 @@
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_SMALL
 
-/obj/effect/overmap/visitable/ship/landable/preserverance
-	name = "Preserverance"
-	desc = "A PM-24 modular transport, broadcasting ISEO codes and the callsign \"Endeavour-1 Preserverance\"."
-	shuttle = "Preserverance"
+/obj/effect/overmap/visitable/ship/landable/perseverance
+	name = "Perseverance"
+	desc = "A PM-24 modular transport, broadcasting ISEO codes and the callsign \"Endeavour-1 Perseverance\"."
+	shuttle = "Perseverance"
 	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
@@ -110,10 +110,10 @@
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
 
-/obj/machinery/computer/shuttle_control/explore/preserverance
-	name = "Preserverance control console"
-	shuttle_tag = "Preserverance"
-	req_access = list(access_preserverance_helm)
+/obj/machinery/computer/shuttle_control/explore/perseverance
+	name = "Perseverance control console"
+	shuttle_tag = "Perseverance"
+	req_access = list(access_perseverance_helm)
 
 /obj/machinery/computer/shuttle_control/explore/exploration_shuttle
 	name = "Spirit control console"

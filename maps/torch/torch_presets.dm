@@ -1,4 +1,4 @@
-var/const/NETWORK_PRESERVERANCE      = "Preserverance"
+var/const/NETWORK_PERSEVERANCE      = "Perseverance"
 var/const/NETWORK_BRIDGE      = "Bridge"
 var/const/NETWORK_SPIRIT     = "Spirit"
 var/const/NETWORK_EXPEDITION  = "Expedition"
@@ -15,8 +15,8 @@ var/const/NETWORK_CURIOSITY  = "Curiosity"
 
 /datum/map/torch/get_network_access(var/network)
 	switch(network)
-		if(NETWORK_PRESERVERANCE)
-			return access_preserverance
+		if(NETWORK_PERSEVERANCE)
+			return access_perseverance
 		if(NETWORK_BRIDGE)
 			return access_heads
 		if(NETWORK_SPIRIT)
@@ -53,7 +53,7 @@ var/const/NETWORK_CURIOSITY  = "Curiosity"
 		NETWORK_EXPEDITION,
 		NETWORK_EXPLO,
 		NETWORK_HANGAR,
-		NETWORK_PRESERVERANCE,
+		NETWORK_PERSEVERANCE,
 		NETWORK_SPIRIT,
 		NETWORK_POD,
 		NETWORK_CURIOSITY,
@@ -70,8 +70,8 @@ var/const/NETWORK_CURIOSITY  = "Curiosity"
 //
 
 // Networks
-/obj/machinery/camera/network/preserverance
-	network = list(NETWORK_PRESERVERANCE)
+/obj/machinery/camera/network/perseverance
+	network = list(NETWORK_PERSEVERANCE)
 
 /obj/machinery/camera/network/bridge
 	network = list(NETWORK_BRIDGE)
