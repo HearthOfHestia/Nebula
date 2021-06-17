@@ -1250,15 +1250,15 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
-	},
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -2025,9 +2025,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -2037,6 +2034,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "dT" = (
@@ -4033,7 +4031,7 @@
 "ig" = (
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -4281,6 +4279,9 @@
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/valve/shutoff{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -4599,7 +4600,7 @@
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
@@ -4802,7 +4803,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 10
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -6280,6 +6281,15 @@
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/elevator)
+"nR" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
 "nS" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -8092,9 +8102,8 @@
 /area/engineering/engine_room)
 "sq" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -9672,9 +9681,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "wK" = (
@@ -12786,7 +12793,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -12795,6 +12801,9 @@
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -12820,6 +12829,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Fb" = (
@@ -13785,9 +13795,6 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/valve/shutoff{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "HE" = (
@@ -13911,7 +13918,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -14579,10 +14586,6 @@
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
 "Ke" = (
-/obj/machinery/camera/network/engine{
-	c_tag = "Engine - Core Interior";
-	dir = 8
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
@@ -14765,7 +14768,7 @@
 /obj/machinery/meter,
 /obj/machinery/light,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -15738,10 +15741,10 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 8
-	},
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Of" = (
@@ -17746,6 +17749,10 @@
 /obj/machinery/atmospherics/valve/digital{
 	name = "TEG bypass valve"
 	},
+/obj/machinery/camera/network/engine{
+	c_tag = "Engine Room - Center";
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "Up" = (
@@ -18362,9 +18369,6 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -19280,8 +19284,8 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
@@ -35374,7 +35378,7 @@ JX
 bd
 xr
 EY
-EY
+nR
 Fa
 dS
 eC

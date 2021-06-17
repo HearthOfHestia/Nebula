@@ -99,6 +99,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "am" = (
@@ -157,7 +158,7 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 6;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -211,7 +212,7 @@
 "ax" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/portable_atmospherics/powered/pump,
 /turf/simulated/floor/tiled/white/monotile,
@@ -219,7 +220,7 @@
 "ay" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/table/standard,
 /obj/random/tool,
@@ -363,10 +364,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -392,7 +393,7 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -459,7 +460,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/meter,
 /obj/effect/paint/silver,
@@ -664,7 +665,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/sparker{
 	id_tag = "toxlab";
@@ -836,7 +837,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
@@ -852,7 +853,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
@@ -962,7 +963,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/fore)
@@ -1081,7 +1082,7 @@
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/valve/open{
@@ -1340,7 +1341,7 @@
 /obj/effect/shuttle_landmark/torch/hangar/opportunity,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -1698,7 +1699,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1719,7 +1720,7 @@
 "dj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -2122,7 +2123,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -2617,7 +2618,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -2702,6 +2703,11 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
+"fs" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/valve/shutoff,
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "fu" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3011,7 +3017,7 @@
 "gk" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/door/airlock/external{
 	autoset_access = 0;
@@ -3185,7 +3191,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
@@ -3242,6 +3248,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "gZ" = (
@@ -6420,7 +6429,7 @@
 /obj/machinery/door/airlock/maintenance,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftport)
@@ -6493,7 +6502,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -6513,7 +6522,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /obj/machinery/alarm{
@@ -6540,7 +6549,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -6568,7 +6577,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
@@ -6964,13 +6973,15 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "pe" = (
@@ -7182,7 +7193,7 @@
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 6;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
@@ -7204,7 +7215,7 @@
 "pD" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/random/trash,
 /turf/simulated/floor/plating,
@@ -7452,6 +7463,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "qd" = (
@@ -7657,7 +7669,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fifthdeck/aft)
@@ -8875,7 +8887,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/rnd/canister)
@@ -8893,7 +8905,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8912,7 +8924,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8920,7 +8932,7 @@
 "ti" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8932,7 +8944,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/rnd/canister)
@@ -8948,7 +8960,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -9079,12 +9091,14 @@
 "tx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/catwalk,
+/obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "ty" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/random/junk,
 /obj/structure/catwalk,
+/obj/machinery/meter,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "tz" = (
@@ -9507,7 +9521,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
 "uv" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/random/trash,
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -9517,11 +9530,10 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/meter,
+/obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "uw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
@@ -9530,7 +9542,7 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/meter,
+/obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "ux" = (
@@ -9924,7 +9936,7 @@
 "vC" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10269,7 +10281,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1;
@@ -10485,7 +10497,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "xS" = (
@@ -10580,7 +10591,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
@@ -10735,7 +10746,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -10793,7 +10804,7 @@
 "yO" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/toxins)
@@ -10968,7 +10979,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/isolation)
@@ -11043,7 +11054,7 @@
 "zH" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/isolation)
@@ -11068,7 +11079,7 @@
 "zP" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/white/monotile,
@@ -11196,7 +11207,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -11720,7 +11731,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -11805,7 +11816,7 @@
 "CG" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/toxins)
@@ -11836,7 +11847,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -12003,7 +12014,7 @@
 "Do" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/cable/cyan{
 	d1 = 2;
@@ -12237,9 +12248,6 @@
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 4;
 	target_pressure = 15000
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -12558,7 +12566,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -12568,7 +12576,6 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -12955,7 +12962,7 @@
 "Ha" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
 /obj/structure/cable/cyan{
@@ -13051,7 +13058,7 @@
 "Hr" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -13199,7 +13206,7 @@
 	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -13214,7 +13221,6 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1"
@@ -13279,7 +13285,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/portable_atmospherics/powered/scrubber/huge/stationary,
 /turf/simulated/floor/tiled/white/monotile,
@@ -13589,7 +13595,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/effect/paint/silver,
 /obj/effect/paint_stripe/science,
@@ -13910,7 +13916,7 @@
 "Kj" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
@@ -14032,12 +14038,12 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -14111,7 +14117,7 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
@@ -14273,7 +14279,7 @@
 "Lu" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/isolation)
@@ -14341,7 +14347,7 @@
 "LG" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/effect/paint/silver,
 /obj/effect/paint_stripe/science,
@@ -14405,7 +14411,7 @@
 "LU" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/shuttle/curiosity/toxins)
@@ -14438,12 +14444,12 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/shuttle/curiosity/security)
 "Mc" = (
-/obj/machinery/atmospherics/valve/shutoff,
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/atmospherics/valve/shutoff,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "Mg" = (
@@ -14986,7 +14992,7 @@
 "NZ" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15004,7 +15010,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -15809,7 +15815,7 @@
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -15843,7 +15849,7 @@
 "Rp" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15883,7 +15889,7 @@
 "Rx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -16099,7 +16105,7 @@
 "Su" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -16391,7 +16397,7 @@
 "Tu" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -16458,7 +16464,7 @@
 "TF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -16838,6 +16844,19 @@
 /obj/structure/railing/mapped,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Vi" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
 "Vk" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
@@ -16951,7 +16970,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "curiositycell2";
@@ -16969,7 +16988,7 @@
 "VF" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white/monotile,
@@ -16991,7 +17010,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fifthdeck/aftstarboard)
@@ -17138,9 +17157,6 @@
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -17410,7 +17426,7 @@
 "XB" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -17446,7 +17462,7 @@
 "XH" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -17636,7 +17652,7 @@
 "Yp" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/white,
@@ -17699,7 +17715,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -17990,7 +18006,7 @@
 "Zu" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/light/small{
 	dir = 4;
@@ -18025,7 +18041,7 @@
 "ZB" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 6;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/portable_atmospherics/canister,
 /obj/machinery/alarm{
@@ -32966,7 +32982,7 @@ Xi
 an
 an
 aL
-mh
+fs
 qc
 gU
 ce
@@ -39228,7 +39244,7 @@ Vr
 ZG
 KI
 al
-Cq
+Vi
 jv
 Cq
 Cq

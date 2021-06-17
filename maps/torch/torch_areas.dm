@@ -17,11 +17,6 @@
 	icon_state = "brig"
 	req_access = list(access_brig)
 
-/area/security/prison
-	name = "\improper Security - Prison Wing"
-	icon_state = "sec_prison"
-	req_access = list(access_brig)
-
 //Fifth Deck (Z-0)
 /area/hallway/primary/fifthdeck/fore
 	name = "\improper Fifth Deck Fore Hallway"
