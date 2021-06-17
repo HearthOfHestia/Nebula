@@ -10563,10 +10563,6 @@
 	},
 /turf/space,
 /area/space)
-"Kq" = (
-/obj/effect/landmark/test/space_turf,
-/turf/space,
-/area/space)
 "Ks" = (
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/commissary)
@@ -38880,7 +38876,7 @@ Gt
 Gt
 Gt
 Gt
-Kq
+Gt
 Gt
 Gt
 Gt
