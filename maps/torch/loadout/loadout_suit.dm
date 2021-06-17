@@ -83,6 +83,7 @@
 	display_name = "winter coat, DAIS"
 	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/rd)
 	allowed_branches = CIVILIAN_BRANCHES
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
 
 /datum/gear/suit/coat
 	allowed_branches = CIVILIAN_BRANCHES

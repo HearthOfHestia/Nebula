@@ -171,7 +171,6 @@ TORCH_ESCAPE_POD(17)
 	shuttle_area = /area/shuttle/transport1/centcom
 	dock_target = "centcom_shuttle"
 	waypoint_offsite = "nav_ferry_start"
-	waypoint_station = "nav_ferry_out"
 
 /obj/effect/shuttle_landmark/ferry/start
 	name = "Centcom"

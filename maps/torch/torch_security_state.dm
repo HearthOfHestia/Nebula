@@ -23,6 +23,7 @@
 
 /decl/security_level/default/torchdept
 	icon = 'maps/torch/icons/security_state.dmi'
+	alarm_appearance = /datum/alarm_appearance/green
 
 /decl/security_level/default/torchdept/code_green
 	name = "code green"

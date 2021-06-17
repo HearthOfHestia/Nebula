@@ -9543,15 +9543,15 @@
 "aFl" = (
 /obj/structure/table/rack,
 /obj/random/maintenance/solgov,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -9758,8 +9758,7 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aGx" = (
@@ -9897,13 +9896,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo/aux)
 "aHh" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
-	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -15964,6 +15962,11 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
+"cVl" = (
+/obj/machinery/atmospherics/valve/shutoff,
+/obj/structure/railing/mapped,
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralport)
 "cWb" = (
 /obj/structure/closet/wardrobe/medic_torch,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -20555,6 +20558,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/security/locker)
+"jCK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/firstdeck/centralport)
 "jCM" = (
 /obj/effect/paint_stripe/medical,
 /turf/simulated/wall/prepainted,
@@ -20845,10 +20854,10 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "jXp" = (
-/obj/machinery/door/airlock/civilian{
-	name = "Emergency Storage"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
 	},
-/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralport)
 "jYb" = (
@@ -49929,8 +49938,8 @@ ayg
 azm
 auN
 auN
-aJS
-aJS
+jCK
+cVl
 jXp
 aJS
 ehT

@@ -70,12 +70,7 @@
 		"nav_ninja_hanger",
 		"nav_skipjack_hanger",
 		"nav_ert_hanger",
-
-		"nav_skrellscoutsh_altdock",
-		"nav_trichoptera_altdock",
-		"nav_skrellscout_dock",
-		"nav_ert_dock",
-		"nav_verne_5",
+		"nav_skrellscoutsh_altdock"
 	)
 
 /obj/effect/overmap/visitable/ship/landable/exploration_shuttle

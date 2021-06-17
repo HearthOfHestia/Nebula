@@ -23,6 +23,7 @@
 
 /datum/gear/uniform/harness
 	allowed_branches = null
+	path = /obj/item/clothing/under/harness
 
 // Patches
 /datum/gear/accessory/cultex_patch

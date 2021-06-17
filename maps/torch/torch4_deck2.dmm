@@ -9325,6 +9325,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
+/obj/effect/landmark/latejoin/cyborg,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "vB" = (
@@ -16704,6 +16705,13 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
+"QY" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/landmark/latejoin/cyborg,
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/drone_fabrication)
 "Rb" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4;
@@ -18164,6 +18172,7 @@
 	dir = 4;
 	level = 2
 	},
+/obj/effect/landmark/latejoin/cyborg,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "Wl" = (
@@ -33751,7 +33760,7 @@ qv
 Zj
 tk
 Nq
-tk
+QY
 Wk
 vA
 qv
