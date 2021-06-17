@@ -3,6 +3,7 @@ Synthetic
 ********/
 
 /datum/job/cyborg
+	department_types = list(/decl/department/miscellaneous)
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "your laws"
@@ -12,6 +13,7 @@ Synthetic
 	)
 
 /datum/job/ai
+	department_types = list(/decl/department/miscellaneous)
 	minimal_player_age = 7
 	total_positions = 0
 	spawn_positions = 0
@@ -30,6 +32,7 @@ Civilian
 	supervisors = "the Executive Officer"
 	economic_power = 6
 	announced = FALSE
+	department_types = list(/decl/department/civilian)
 	alt_titles = list(
 		"Journalist" = /decl/hierarchy/outfit/job/torch/passenger/passenger/journalist,
 		"Historian",

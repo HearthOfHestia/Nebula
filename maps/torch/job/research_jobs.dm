@@ -46,6 +46,7 @@
 	total_positions = 6
 	spawn_positions = 6
 	supervisors = "the Chief Science Officer"
+	department_types = list(/decl/department/science)
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 45

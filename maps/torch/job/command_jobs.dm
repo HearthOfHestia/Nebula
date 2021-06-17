@@ -9,6 +9,7 @@
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
 	)
+	department_types = list(/decl/department/command)
 	allowed_ranks = list(
 		/datum/mil_rank/ec/o6
 	)
@@ -108,6 +109,7 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
+	department_types = list(/decl/department/command, /decl/department/science)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps
@@ -158,6 +160,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
+	department_types = list(/decl/department/command, /decl/department/medical)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cmo/fleet
@@ -204,6 +207,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
 	minimal_player_age = 14
+	department_types = list(/decl/department/command/, /decl/department/engineering)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
@@ -269,6 +273,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
+	department_types = list(/decl/department/command, /decl/department/security)
 	allowed_branches = list(
 		/datum/mil_branch/expeditionary_corps,
 		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/command/cos/fleet
@@ -317,6 +322,7 @@
 	selection_color = "#2f2f7f"
 	economic_power = 16
 	minimal_player_age = 0
+	department_types = list(/decl/department/command)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/representative
 	allowed_branches = list(/datum/mil_branch/solgov)
 	allowed_ranks = list(/datum/mil_rank/sol/gov)
@@ -346,6 +352,7 @@
 	minimal_player_age = 14
 	economic_power = 11
 	minimum_character_age = list(SPECIES_HUMAN = 35)
+	department_types = list(/decl/department/command)
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/sea/fleet
 	allowed_branches = list(
@@ -394,6 +401,7 @@
 	minimal_player_age = 0
 	economic_power = 8
 	minimum_character_age = list(SPECIES_HUMAN = 22)
+	department_types = list(/decl/department/command)
 	ideal_character_age = 24
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	allowed_branches = list(

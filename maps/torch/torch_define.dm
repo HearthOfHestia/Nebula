@@ -14,6 +14,7 @@
 
 	allowed_spawns = list("Cryogenic Storage", "Cyborg Storage")
 	default_spawn = "Cryogenic Storage"
+	default_job_type = /datum/job/assistant
 
 	station_name  = "\improper ISEO Endeavour"
 	station_short = "\improper Endeavour"

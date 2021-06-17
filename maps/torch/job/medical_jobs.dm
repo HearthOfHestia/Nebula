@@ -92,6 +92,7 @@
 	supervisors = "Physicians and the Chief Medical Officer"
 	economic_power = 7
 	minimum_character_age = list(SPECIES_HUMAN = 19)
+	department_types = list(/decl/department/medical)
 	ideal_character_age = 40
 	minimal_player_age = 0
 	alt_titles = list(
@@ -134,6 +135,7 @@
 
 /datum/job/medical_trainee
 	title = "Trainee Medical Technician"
+	department_types = list(/decl/department/medical)
 	department_types = list(/decl/department/medical)
 	total_positions = 1
 	spawn_positions = 1
@@ -219,6 +221,7 @@
 	ideal_character_age = 40
 	economic_power = 5
 	minimum_character_age = list(SPECIES_HUMAN = 24)
+	department_types = list(/decl/department/medical)
 	minimal_player_age = 0
 	supervisors = "the Chief Medical Officer"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/counselor
