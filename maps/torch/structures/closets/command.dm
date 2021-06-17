@@ -116,7 +116,7 @@
 	return list(
 		/obj/item/radio,
 		/obj/item/pen,
-		/obj/item/tape/random,
+		/obj/item/magnetic_tape/random,
 		/obj/item/taperecorder,
 		/obj/item/flash,
 		/obj/item/megaphone,

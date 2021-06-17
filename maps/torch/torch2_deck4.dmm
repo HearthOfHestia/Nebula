@@ -223,7 +223,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "aU" = (
-/obj/item/tape/random,
+/obj/item/magnetic_tape/random,
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)

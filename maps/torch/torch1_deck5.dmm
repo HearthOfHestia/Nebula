@@ -2388,7 +2388,7 @@
 	rcon_setting = 2
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/maintenance/firstdeck/forestarboard)
+/area/exploration_shuttle/airlock)
 "eB" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/external_air{
 	dir = 1;

@@ -33,7 +33,7 @@
 		/obj/item/solbanner,
 		/obj/item/solbanner,
 		/obj/item/radio,
-		/obj/item/tape/random,
+		/obj/item/magnetic_tape/random,
 		/obj/item/gps,
 		/obj/item/pinpointer/radio,
 		/obj/item/radio/beacon,

@@ -149,7 +149,7 @@
 		/obj/item/chems/spray/pepper,
 		/obj/item/taperoll/police,
 		/obj/item/clothing/accessory/storage/vest/black,
-		/obj/item/tape/random = 3,
+		/obj/item/magnetic_tape/random = 3,
 		/obj/item/clothing/glasses/sunglasses/sechud/toggle,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
 		/obj/item/holowarrant,
