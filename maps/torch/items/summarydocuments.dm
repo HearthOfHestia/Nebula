@@ -402,19 +402,19 @@
 
 /obj/item/documents/generic/explo/pathfinderproblems
 	name = "pathfinder protocol reminder"
-	desc = "A \"confidential\" memo sent from the Executive Officer to the pathfinder reminding them that, yes, their pilot is there to fly the Charon, not them, and that, yes, they should ensure that the exploration shotgun is only used by trained personnel. The final bit is very tersely-written, advising them to stop explorers from looking directly into the barrel."
+	desc = "A \"confidential\" memo sent from the Executive Officer to the pathfinder reminding them that, yes, their pilot is there to fly the Spirit, not them, and that, yes, they should ensure that the exploration shotgun is only used by trained personnel. The final bit is very tersely-written, advising them to stop explorers from looking directly into the barrel."
 
 /obj/item/documents/generic/explo/hangarproc
 	name = "don't force the fucking airlock"
-	desc = "An \"internal use only\" memo written by the senior engineer with a string of strongly worded expletives seemingly redacted from the final text directed toward the pathfinder to follow proper hangar atmospheric containment procedure for the Charon."
+	desc = "An \"internal use only\" memo written by the senior engineer with a string of strongly worded expletives seemingly redacted from the final text directed toward the pathfinder to follow proper hangar atmospheric containment procedure for the Spirit."
 
 /obj/item/documents/generic/explo/oldshuttle
 	name = "shuttle replacement issues"
-	desc = "An \"internal use only\", long winded rant riddled with spelling errors lamenting the loss of the \"Calypso,\" whatever that may be, claiming it to be a much better shuttle than the Charon. It further grieves the loss of the crew microwave."
+	desc = "An \"internal use only\", long winded rant riddled with spelling errors lamenting the loss of the \"Spirit,\" whatever that may be, claiming it to be a much better shuttle than the Spirit. It further grieves the loss of the crew microwave."
 
-/obj/item/documents/generic/explo/charonsafety
+/obj/item/documents/generic/explo/spiritsafety
 	name = "fuel safety report"
-	desc = "Some \"internal use only\" reports about personnel smoking near the atmospherics holding area aboard the SEV Charon. The atmospherics holding area aboard the Charon is declared a no-smoking area, as indicated by the sign. Attached is a brief incident report with a contracted pilot. The report ends with large-font writing stating the next person found smoking near the fueling port will be demoted to sanitation tech for the rest of their deployment."
+	desc = "Some \"internal use only\" reports about personnel smoking near the atmospherics holding area aboard the SEV Spirit. The atmospherics holding area aboard the Spirit is declared a no-smoking area, as indicated by the sign. Attached is a brief incident report with a contracted pilot. The report ends with large-font writing stating the next person found smoking near the fueling port will be demoted to sanitation tech for the rest of their deployment."
 
 /obj/item/documents/generic/explo/survivors
 	name = "interactions with survivors"
@@ -422,7 +422,7 @@
 
 /obj/item/documents/generic/explo/cigarettes
 	name = "cigarettes with helmets"
-	desc = "Some \"internal use only\" reports detailing the extreme hazards of attempting to smoke a cigarette while wearing a spaceproof helmet, citing many incidents of suffocation and subsequent death as well as pointing out the presence of a \"No Smoking\" sign onboard the Charon and the likely flammability of many exoplanets. It concludes with a recommendation to smoke only in designated breakrooms aboard the SEV Torch and not when wearing a helmet."
+	desc = "Some \"internal use only\" reports detailing the extreme hazards of attempting to smoke a cigarette while wearing a spaceproof helmet, citing many incidents of suffocation and subsequent death as well as pointing out the presence of a \"No Smoking\" sign onboard the Spirit and the likely flammability of many exoplanets. It concludes with a recommendation to smoke only in designated breakrooms aboard the SEV Torch and not when wearing a helmet."
 
 /obj/item/documents/generic/explo/documentplease
 	name = "on documentation of sites"
@@ -438,7 +438,7 @@
 
 /obj/item/documents/generic/sci/annoyingtheft
 	name = "abuse of access to tools memo"
-	desc = "An \"internal use only\" memo sent from the Chief Science Officer to the pathfinder reminding them that the access to the Petrov is not to be abused, further asking that the pathfinder crack down on any explorers looting equipment from the Petrov for their \"missions\". It ends with a note that they have their own equipment that they should be using instead."
+	desc = "An \"internal use only\" memo sent from the Chief Science Officer to the pathfinder reminding them that the access to the Curiosity is not to be abused, further asking that the pathfinder crack down on any explorers looting equipment from the Curiosity for their \"missions\". It ends with a note that they have their own equipment that they should be using instead."
 
 /obj/item/documents/generic/sci/toxinsfire
 	name = "toxin development memo"
@@ -452,9 +452,9 @@
 	name = "chatroom log"
 	desc = "Someone drew a big laughing face over this, but you can still read the contents. \"What do you guys want the most?\" \"I wish we had our own security sometimes.\""
 
-/obj/item/document/generic/sci/petrov
-	name = "\improper Petrov map"
-	desc = "It's a portable map of the Petrov. Someone wrote over it in big letters: \"What the fuck is the Petrov?\", and it's now unusable."
+/obj/item/document/generic/sci/curiosity
+	name = "\improper Curiosity map"
+	desc = "It's a portable map of the Curiosity. Someone wrote over it in big letters: \"What the fuck is the Curiosity?\", and it's now unusable."
 
 /obj/item/documents/generic/sci/fuckingdoors
 	name = "windoor guide"

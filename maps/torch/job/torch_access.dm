@@ -7,28 +7,28 @@
 	desc = "Hangar Deck"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_guppy_helm = "ACCESS_TORCH_GUP_HELM" //76
-/datum/access/guppy_helm
-	id = access_guppy_helm
+/var/const/access_opportunity_helm = "ACCESS_TORCH_GUP_HELM" //76
+/datum/access/opportunity_helm
+	id = access_opportunity_helm
 	desc = "General Utility Pod Helm"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_expedition_shuttle_helm = "ACCESS_EXPLO_HELM" //77
 /datum/access/exploration_shuttle_helm
 	id = access_expedition_shuttle_helm
-	desc = "Charon Helm"
+	desc = "Spirit Helm"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_aquila = "ACCESS_TORCH_AQUILA" //78
-/datum/access/aquila
-	id = access_aquila
-	desc = "Aquila"
+/var/const/access_preserverance = "ACCESS_TORCH_PRESERVERANCE" //78
+/datum/access/preserverance
+	id = access_preserverance
+	desc = "Preserverance"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_aquila_helm = "ACCESS_TORCH_AQUILA_HELM" //79
-/datum/access/aquila_helm
-	id = access_aquila_helm
-	desc = "Aquila Helm"
+/var/const/access_preserverance_helm = "ACCESS_TORCH_PRESERVERANCE_HELM" //79
+/datum/access/preserverance_helm
+	id = access_preserverance_helm
+	desc = "Preserverance Helm"
 	region = ACCESS_REGION_GENERAL
 
 /var/const/access_solgov_crew = "ACCESS_TORCH_CREW" //80
@@ -78,12 +78,12 @@
 /var/const/access_expedition_shuttle = "ACCESS_TORCH_EXPLO" //88
 /datum/access/exploration_shuttle
 	id = access_expedition_shuttle
-	desc = "Charon"
+	desc = "Spirit"
 	region = ACCESS_REGION_GENERAL
 
-/var/const/access_guppy = "ACCESS_TORCH_GUP" //89
-/datum/access/guppy
-	id = access_guppy
+/var/const/access_opportunity = "ACCESS_TORCH_GUP" //89
+/datum/access/opportunity
+	id = access_opportunity
 	desc = "General Utility Pod"
 	region = ACCESS_REGION_GENERAL
 
@@ -154,60 +154,60 @@
 	region = ACCESS_REGION_COMMAND
 
 /*************
-* NRV Petrov *
+* NRV Curiosity *
 *************/
-/var/const/access_petrov = "ACCESS_TORCH_PETROV" //200
-/datum/access/petrov
-	id = access_petrov
-	desc = "Petrov"
+/var/const/access_curiosity = "ACCESS_TORCH_CURIOSITY" //200
+/datum/access/curiosity
+	id = access_curiosity
+	desc = "Curiosity"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_helm = "ACCESS_TORCH_PETROV_HELM" //201
-/datum/access/petrov_helm
-	id = access_petrov_helm
-	desc = "Petrov Helm"
+/var/const/access_curiosity_helm = "ACCESS_TORCH_CURIOSITY_HELM" //201
+/datum/access/curiosity_helm
+	id = access_curiosity_helm
+	desc = "Curiosity Helm"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_analysis = "ACCESS_TORCH_PETROV_ANALYSIS" //202
-/datum/access/petrov_analysis
-	id = access_petrov_analysis
-	desc = "Petrov Analysis Lab"
+/var/const/access_curiosity_analysis = "ACCESS_TORCH_CURIOSITY_ANALYSIS" //202
+/datum/access/curiosity_analysis
+	id = access_curiosity_analysis
+	desc = "Curiosity Analysis Lab"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_phoron = "ACCESS_TORCH_PETROV_PHORON" //203
-/datum/access/petrov_phoron
-	id = access_petrov_phoron
-	desc = "Petrov Phoron Sublimation Lab"
+/var/const/access_curiosity_phoron = "ACCESS_TORCH_CURIOSITY_PHORON" //203
+/datum/access/curiosity_phoron
+	id = access_curiosity_phoron
+	desc = "Curiosity Phoron Sublimation Lab"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_toxins = "ACCESS_TORCH_PETROV_TOXINS" //204
-/datum/access/petrov_toxins
-	id = access_petrov_toxins
-	desc = "Petrov Toxins Lab"
+/var/const/access_curiosity_toxins = "ACCESS_TORCH_CURIOSITY_TOXINS" //204
+/datum/access/curiosity_toxins
+	id = access_curiosity_toxins
+	desc = "Curiosity Toxins Lab"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_chemistry = "ACCESS_TORCH_PETROV_CHEMISTRY" //205
-/datum/access/petrov_chemistry
-	id = access_petrov_chemistry
-	desc = "Petrov Chemistry Lab"
+/var/const/access_curiosity_chemistry = "ACCESS_TORCH_CURIOSITY_CHEMISTRY" //205
+/datum/access/curiosity_chemistry
+	id = access_curiosity_chemistry
+	desc = "Curiosity Chemistry Lab"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_rd = "ACCESS_TORCH_PETROV_RD" //206
-/datum/access/petrov_rd
-	id = access_petrov_rd
-	desc = "Petrov Chief Science Officer's Office"
+/var/const/access_curiosity_rd = "ACCESS_TORCH_CURIOSITY_RD" //206
+/datum/access/curiosity_rd
+	id = access_curiosity_rd
+	desc = "Curiosity Chief Science Officer's Office"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_security = "ACCESS_TORCH_PETROV_SEC" //207
-/datum/access/petrov_security
-	id = access_petrov_security
-	desc = "Petrov Security Office"
+/var/const/access_curiosity_security = "ACCESS_TORCH_CURIOSITY_SEC" //207
+/datum/access/curiosity_security
+	id = access_curiosity_security
+	desc = "Curiosity Security Office"
 	region = ACCESS_REGION_NT
 
-/var/const/access_petrov_maint = "ACCESS_TORCH_PETROV_MAINT" //208
-/datum/access/petrov_maint
-	id = access_petrov_maint
-	desc = "Petrov Maintenance"
+/var/const/access_curiosity_maint = "ACCESS_TORCH_CURIOSITY_MAINT" //208
+/datum/access/curiosity_maint
+	id = access_curiosity_maint
+	desc = "Curiosity Maintenance"
 	region = ACCESS_REGION_NT
 
 /var/const/access_torch_helm = "ACCESS_TORCH_HELM"

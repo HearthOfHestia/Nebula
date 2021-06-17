@@ -127,7 +127,7 @@
 /turf/space/infinity,
 /area/space)
 "yk" = (
-/obj/effect/shuttle_landmark/transit/torch/aquila,
+/obj/effect/shuttle_landmark/transit/torch/preserverance,
 /turf/space/transit/north,
 /area/space)
 "zt" = (
@@ -265,7 +265,7 @@
 /turf/space,
 /area/space)
 "VK" = (
-/obj/effect/shuttle_landmark/transit/torch/guppy,
+/obj/effect/shuttle_landmark/transit/torch/opportunity,
 /turf/space/transit/north,
 /area/space)
 "VO" = (

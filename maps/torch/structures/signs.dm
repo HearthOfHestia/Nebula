@@ -1,13 +1,13 @@
 /obj/structure/sign/dedicationplaque
-	name = "\improper SEV Torch dedication plaque"
+	name = "\improper ISEO Endeavour dedication plaque"
 	icon_state = "lightplaque"
 
 /obj/structure/sign/dedicationplaque/Initialize()
 	. = ..()
-	desc = "S.E.V. Torch - Mako Class - Sol Expeditionary Corps Registry 95519 - Shiva Fleet Yards, Mars - First Vessel To Bear The Name - Launched [using_map.game_year-5] - Sol Central Government - 'Never was anything great achieved without danger.'"
+	desc = "I.S.E.O Endeavour - Endeavour Class - ISEO Ship Registry 251 - Armstrong Orbital Yards, Luna - First Vessel To Bear The Name - Launched [using_map.game_year-5] - International Stellar Exploration Organization - 'Non est ad astra mollis e terris via - There is no soft way from the Earth to the Stars.'"
 
 /obj/structure/sign/ecplaque
-	name = "\improper Expeditionary Directives"
+	name = "\improper ISEO Directives"
 	desc = "A plaque with Expeditionary Corps logo etched in it."
 	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
 	icon_state = "ecplaque"
@@ -52,27 +52,29 @@
 	else
 		..()
 
-/obj/effect/floor_decal/scglogo
-	alpha = 230
-	icon = 'maps/torch/icons/obj/solgov_floor.dmi'
+/obj/effect/floor_decal/iseologo
+	icon = 'maps/torch/icons/obj/iseo_floor.dmi'
 	icon_state = "center"
 
-/obj/structure/sign/solgov
-	name = "\improper SolGov Seal"
+/obj/structure/sign/iseo
+	name = "\improper ISEO Seal"
 	desc = "A sign which signifies who this vessel belongs to."
-	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
-	icon_state = "solgovseal"
+	icon = 'maps/torch/icons/obj/iseo-decals.dmi'
+	icon_state = "iseoseal"
 
-/obj/structure/sign/double/solgovflag
-	name = "Sol Central Government Flag"
-	desc = "The flag of the Sol Central Government, a symbol of many things to many people."
-	icon = 'maps/torch/icons/obj/solgov-decals.dmi'
+/obj/structure/sign/double/iseoflag
+	name = "ISEO Flag"
+	desc = "The flag of the ISEO, a symbol of many things to many people."
+	icon = 'maps/torch/icons/obj/iseo-decals.dmi'
 
-/obj/structure/sign/double/solgovflag/left
-	icon_state = "solgovflag-left"
+/obj/structure/sign/double/iseoflag/left
+	icon_state = "iseoflag_left"
 
-/obj/structure/sign/double/solgovflag/right
-	icon_state = "solgovflag-right"
+/obj/structure/sign/double/iseoflag/center
+	icon_state = "iseoflag_middle"
+
+/obj/structure/sign/double/iseoflag/right
+	icon_state = "iseoflag_right"
 
 /obj/structure/sign/floorplaque
 	name = "\improper commemorative plaque"

@@ -28,8 +28,9 @@
 
 
 /decl/special_role/loyalists
-
-
+	name = "Loyalist"
+	name_plural = "Loyalists"
+	faction_name = "Loyalist"
 	victory_text = "The Torch is free of the mutineers, although the cost has yet to be discovered in full."
 	loss_text = "The mutineers have won; the Torch will never be the same."
 

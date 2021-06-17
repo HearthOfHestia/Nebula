@@ -5,12 +5,12 @@
 	lift_size_y = 4
 
 	areas_to_use = list(
-		/area/turbolift/torch_ground,
-		/area/turbolift/torch_first,
-		/area/turbolift/torch_second,
-		/area/turbolift/torch_third,
-		/area/turbolift/torch_fourth,
-		/area/turbolift/torch_top
+		/area/turbolift/endeavour_ground,
+		/area/turbolift/endeavour_first,
+		/area/turbolift/endeavour_second,
+		/area/turbolift/endeavour_third,
+		/area/turbolift/endeavour_fourth,
+		/area/turbolift/endeavour_top
 		)
 
 

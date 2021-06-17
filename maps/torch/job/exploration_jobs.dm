@@ -27,9 +27,9 @@
 
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm,
-		access_guppy, access_hangar, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
-		access_petrov_toxins, access_petrov_chemistry, access_petrov_maint, access_tox, access_tox_storage, access_research,
+		access_opportunity_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm,
+		access_opportunity, access_hangar, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
+		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_maint, access_tox, access_tox_storage, access_research,
 		access_xenobiology, access_xenoarch, access_torch_fax, access_radio_comm, access_radio_exp, access_radio_sci
 	)
 
@@ -37,7 +37,7 @@
 							 /datum/computer_file/program/reports)
 
 /datum/job/pathfinder/get_description_blurb()
-	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the EC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot Charon if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
+	return "You are the Pathfinder. Your duty is to organize and lead the expeditions to away sites, carrying out the EC's Primary Mission. You command Explorers. You make sure that expedition has the supplies and personnel it needs. You can pilot Spirit if nobody else provides a pilot. Once on the away mission, your duty is to ensure that anything of scientific interest is brought back to the ship and passed to the relevant research lab."
 
 /datum/job/nt_pilot
 	title = "Shuttle Pilot"
@@ -64,8 +64,8 @@
 	)
 
 	access = list(
-		access_mining_office, access_petrov, access_petrov_helm, access_petrov_maint, access_mining_station,
-		access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm,
+		access_mining_office, access_curiosity, access_curiosity_helm, access_curiosity_maint, access_mining_station,
+		access_expedition_shuttle, access_expedition_shuttle_helm, access_opportunity, access_hangar, access_opportunity_helm,
 		access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer, access_research,
 		access_radio_exp, access_radio_sci, access_radio_sup
 	)
@@ -100,8 +100,8 @@
 
 	access = list(
 		access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar,
-		access_petrov, access_petrov_maint, access_research, access_radio_exp
+		access_opportunity_helm, access_solgov_crew, access_expedition_shuttle, access_opportunity, access_hangar,
+		access_curiosity, access_curiosity_maint, access_research, access_radio_exp
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)

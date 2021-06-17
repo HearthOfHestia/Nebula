@@ -1,7 +1,7 @@
-/datum/map/torch
+/datum/map/Endeavour
 
 	base_floor_type = /turf/simulated/floor/reinforced/airless
-	base_floor_area = /area/torchexterior
+	base_floor_area = /area/endeavour_exterior
 
 //Ported areas that do not exist in Nebula Base.
 /area/rnd/xenobiology/xenoflora
@@ -297,7 +297,7 @@
 	icon_state = "shuttle"
 	name = "\improper Transport Shuttle Centcom"
 
-//torch large pods
+//Endeavour large pods
 /area/shuttle/escape_pod6/station
 	name = "Escape Pod One"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -322,7 +322,7 @@
 	name = "Escape Pod Six"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-//torch small pods
+//Endeavour small pods
 /area/shuttle/escape_pod12/station
 	name = "Escape Pod Seven"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
@@ -343,163 +343,163 @@
 	name = "Escape Pod Twelve"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
-//Charon
+//Spirit
 
 /area/exploration_shuttle/
-	name = "\improper Charon"
+	name = "\improper Spirit"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/plating
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 /area/exploration_shuttle/cockpit
-	name = "\improper Charon - Cockpit"
+	name = "\improper Spirit - Cockpit"
 	req_access = list(access_expedition_shuttle)
 
 /area/exploration_shuttle/atmos
-	name = "\improper Charon - Atmos Compartment"
+	name = "\improper Spirit - Atmos Compartment"
 
 /area/exploration_shuttle/power
-	name = "\improper Charon - Power Compartment"
+	name = "\improper Spirit - Power Compartment"
 
 /area/exploration_shuttle/crew
-	name = "\improper Charon - Crew Compartment"
+	name = "\improper Spirit - Crew Compartment"
 
 /area/exploration_shuttle/cargo
-	name = "\improper Charon - Cargo Bay"
+	name = "\improper Spirit - Cargo Bay"
 
 /area/exploration_shuttle/airlock
-	name = "\improper Charon - Airlock Compartment"
+	name = "\improper Spirit - Airlock Compartment"
 
-//Aquila
+//Preserverance
 
-/area/aquila
-	name = "\improper SEV Aquila"
+/area/preserverance
+	name = "\improper ISEO Preserverance"
 	icon_state = "shuttlered"
 	base_turf = /turf/simulated/floor/reinforced/airless
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/aquila/cockpit
-	name = "\improper SEV Aquila - Cockpit"
-	req_access = list(access_aquila)
+/area/preserverance/cockpit
+	name = "\improper ISEO Preserverance - Cockpit"
+	req_access = list(access_preserverance)
 
-/area/aquila/maintenance
-	name = "\improper SEV Aquila - Maintenance"
+/area/preserverance/maintenance
+	name = "\improper ISEO Preserverance - Maintenance"
 	req_access = list(access_solgov_crew)
 
-/area/aquila/storage
-	name = "\improper SEV Aquila - Storage"
+/area/preserverance/storage
+	name = "\improper ISEO Preserverance - Storage"
 	req_access = list(access_solgov_crew)
 
-/area/aquila/secure_storage
-	name = "\improper SEV Aquila - Secure Storage"
-	req_access = list(access_aquila)
+/area/preserverance/secure_storage
+	name = "\improper ISEO Preserverance - Secure Storage"
+	req_access = list(access_preserverance)
 
-/area/aquila/mess
-	name = "\improper SEV Aquila - Mess Hall"
+/area/preserverance/mess
+	name = "\improper ISEO Preserverance - Mess Hall"
 
-/area/aquila/passenger
-	name = "\improper SEV Aquila - Passenger Compartment"
+/area/preserverance/passenger
+	name = "\improper ISEO Preserverance - Passenger Compartment"
 
-/area/aquila/medical
-	name = "\improper SEV Aquila - Medical"
+/area/preserverance/medical
+	name = "\improper ISEO Preserverance - Medical"
 
-/area/aquila/head
-	name = "\improper SEV Aquila - Head"
+/area/preserverance/head
+	name = "\improper ISEO Preserverance - Head"
 
-/area/aquila/airlock
-	name = "\improper SEV Aquila - Airlock Compartment"
+/area/preserverance/airlock
+	name = "\improper ISEO Preserverance - Airlock Compartment"
 	req_access = list(access_solgov_crew)
 
-//Guppy
+//Opportunity
 
-/area/guppy_hangar/start
-	name = "\improper Guppy"
+/area/opportunity_hangar/start
+	name = "\improper Opportunity"
 	icon_state = "shuttlered"
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	req_access = list(access_guppy)
+	req_access = list(access_opportunity)
 
 
-//Petrov
+//Curiosity
 
-/area/shuttle/petrov
-	name = "\improper SRV Petrov"
+/area/shuttle/curiosity
+	name = "\improper SRV Curiosity"
 	requires_power = 1
 	dynamic_lighting = 1
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	req_access = list(access_petrov)
+	req_access = list(access_curiosity)
 
-/area/shuttle/petrov/cell1
-	name = "\improper SRV Petrov - Isolation Cell 1"
+/area/shuttle/curiosity/cell1
+	name = "\improper SRV Curiosity - Isolation Cell 1"
 	icon_state = "shuttle"
-/area/shuttle/petrov/cell2
-	name = "\improper SRV Petrov - Isolation Cell 2"
+/area/shuttle/curiosity/cell2
+	name = "\improper SRV Curiosity - Isolation Cell 2"
 	icon_state = "shuttlegrn"
-/area/shuttle/petrov/cell3
-	name = "\improper SRV Petrov - Isolation Cell 3"
+/area/shuttle/curiosity/cell3
+	name = "\improper SRV Curiosity - Isolation Cell 3"
 	icon_state = "shuttle"
 
-/area/shuttle/petrov/hallwaya
-	name = "\improper SRV Petrov - Lower Hallway"
+/area/shuttle/curiosity/hallwaya
+	name = "\improper SRV Curiosity - Lower Hallway"
 	icon_state = "hallA"
 
-/area/shuttle/petrov/security
-	name = "\improper SRV Petrov - Security Office"
+/area/shuttle/curiosity/security
+	name = "\improper SRV Curiosity - Security Office"
 	icon_state = "checkpoint1"
-	req_access = list(access_petrov_security)
+	req_access = list(access_curiosity_security)
 
-/area/shuttle/petrov/rd
+/area/shuttle/curiosity/rd
 	icon_state = "heads_rd"
-	name = "\improper SRV Petrov - CSO's Office"
+	name = "\improper SRV Curiosity - CSO's Office"
 	icon_state = "head_quarters"
-	req_access = list(access_petrov_rd)
+	req_access = list(access_curiosity_rd)
 
-/area/shuttle/petrov/cockpit
-	name = "\improper SRV Petrov - Cockpit"
+/area/shuttle/curiosity/cockpit
+	name = "\improper SRV Curiosity - Cockpit"
 	icon_state = "shuttlered"
-	req_access = list(access_petrov_helm)
+	req_access = list(access_curiosity_helm)
 
-/area/shuttle/petrov/maint
-	name = "\improper SRV Petrov - Maintenance"
+/area/shuttle/curiosity/maint
+	name = "\improper SRV Curiosity - Maintenance"
 	icon_state = "engine"
-	req_access = list(access_petrov_maint)
+	req_access = list(access_curiosity_maint)
 
-/area/shuttle/petrov/analysis
-	name = "\improper SRV Petrov - Analysis Lab"
+/area/shuttle/curiosity/analysis
+	name = "\improper SRV Curiosity - Analysis Lab"
 	icon_state = "devlab"
-	req_access = list(access_petrov_analysis)
+	req_access = list(access_curiosity_analysis)
 
-/area/shuttle/petrov/toxins
-	name = "\improper SRV Petrov - Toxins Lab"
+/area/shuttle/curiosity/toxins
+	name = "\improper SRV Curiosity - Toxins Lab"
 	icon_state = "toxstorage"
-	req_access = list(access_petrov_toxins)
+	req_access = list(access_curiosity_toxins)
 
-/area/shuttle/petrov/rnd
-	name = "\improper SRV Petrov - Fabricator Lab"
+/area/shuttle/curiosity/rnd
+	name = "\improper SRV Curiosity - Fabricator Lab"
 	icon_state = "devlab"
 
-/area/shuttle/petrov/isolation
-	name = "\improper SRV Petrov - Isolation Lab"
+/area/shuttle/curiosity/isolation
+	name = "\improper SRV Curiosity - Isolation Lab"
 	icon_state = "xeno_lab"
 
-/area/shuttle/petrov/phoron
-	name = "\improper SRV Petrov - Sublimation Lab"
+/area/shuttle/curiosity/phoron
+	name = "\improper SRV Curiosity - Sublimation Lab"
 	icon_state = "toxstorage"
-	req_access = list(access_petrov_phoron)
+	req_access = list(access_curiosity_phoron)
 
-/area/shuttle/petrov/custodial
-	name = "\improper SRV Petrov - Custodial"
+/area/shuttle/curiosity/custodial
+	name = "\improper SRV Curiosity - Custodial"
 	icon_state = "decontamination"
 
-/area/shuttle/petrov/equipment
-	name = "\improper SRV Petrov - Equipment Storage"
+/area/shuttle/curiosity/equipment
+	name = "\improper SRV Curiosity - Equipment Storage"
 	icon_state = "locker"
 
-/area/shuttle/petrov/eva
-	name = "\improper SRV Petrov - EVA Storage"
+/area/shuttle/curiosity/eva
+	name = "\improper SRV Curiosity - EVA Storage"
 	icon_state = "locker"
 
 //Turbolift
@@ -558,37 +558,37 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
 // Elevator areas.
-/area/turbolift/torch_top
+/area/turbolift/endeavour_top
 	name = "lift (bridge)"
 	lift_floor_label = "Bridge"
 	lift_floor_name = "Bridge"
 	lift_announce_str = "Arriving at Command Deck: Bridge. Meeting Room. Command Offices. Auxiliary Hangar. Auxiliary EVA."
 
-/area/turbolift/torch_fourth
+/area/turbolift/endeavour_fourth
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
 	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
 
-/area/turbolift/torch_third
+/area/turbolift/endeavour_third
 	name = "lift (second deck)"
 	lift_floor_label = "Deck 2"
 	lift_floor_name = "Maintenance Deck"
 	lift_announce_str = "Arriving at Maintenance Deck: Engineering. Atmospherics. Storage."
 
-/area/turbolift/torch_second
+/area/turbolift/endeavour_second
 	name = "lift (third deck)"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Habitation Deck"
 	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Officer's Mess. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym."
 
-/area/turbolift/torch_first
+/area/turbolift/endeavour_first
 	name = "lift (fourth deck)"
 	lift_floor_label = "Deck 4"
 	lift_floor_name = "Supply Deck"
 	lift_announce_str = "Arriving at Supply Deck: EVA. Docking Ports. Pathfinder's Office. Cargo Storage. Supply Office. Laundry. Sanitation."
 
-/area/turbolift/torch_ground
+/area/turbolift/endeavour_ground
 	name = "lift (fifth deck)"
 	lift_floor_label = "Deck 5"
 	lift_floor_name = "Hangar Deck"
@@ -1233,7 +1233,7 @@
 // Command
 
 /area/bridge
-	name = "\improper SEV Torch Bridge"
+	name = "\improper ISEO Endeavour Bridge"
 	icon_state = "bridge"
 	req_access = list(access_bridge)
 
@@ -1272,7 +1272,7 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip)
 
-/area/torchexterior
+/area/endeavour_exterior
 	name = "\improper Exterior Reinforcements"
 	icon_state = "maint_exterior"
 	area_flags = AREA_FLAG_EXTERNAL

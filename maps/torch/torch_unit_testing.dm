@@ -6,7 +6,7 @@
 	apc_test_exempt_areas = list(
 		/area/space = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/exoplanet = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/aquila/maintenance = NO_SCRUBBER|NO_VENT,
+		/area/preserverance/maintenance = NO_SCRUBBER|NO_VENT,
 		/area/engineering/atmos/storage = NO_SCRUBBER|NO_VENT,
 		/area/engineering/auxpower = NO_SCRUBBER|NO_VENT,
 		/area/engineering/engine_smes = NO_SCRUBBER|NO_VENT,
@@ -18,7 +18,7 @@
 		/area/maintenance/auxsolarbridge = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/auxsolarport = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/auxsolarstarboard = NO_SCRUBBER|NO_VENT,
-		/area/torchexterior = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/endeavour_exterior = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance/firstdeck/foreport = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/firstdeck/forestarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/incinerator = NO_SCRUBBER,
@@ -31,8 +31,8 @@
 		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/merchant = NO_SCRUBBER|NO_APC,
-		/area/shuttle/petrov = 0,
-		/area/shuttle/petrov/maint = NO_SCRUBBER|NO_VENT,
+		/area/shuttle/curiosity = 0,
+		/area/shuttle/curiosity/maint = NO_SCRUBBER|NO_VENT,
 		/area/shuttle/escape_pod6/station = NO_SCRUBBER|NO_APC|NO_VENT,
 		/area/shuttle/escape_pod7/station = NO_SCRUBBER|NO_APC|NO_VENT,
 		/area/shuttle/escape_pod8/station = NO_SCRUBBER|NO_APC|NO_VENT,
@@ -61,9 +61,9 @@
 	)
 
 	area_coherency_test_exempt_areas = list(
-		/area/aquila/airlock,
+		/area/preserverance/airlock,
 		/area/centcom/control,
-		/area/torchexterior,
+		/area/endeavour_exterior,
 		/area/space
 	)
 

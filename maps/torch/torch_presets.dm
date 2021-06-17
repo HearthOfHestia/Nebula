@@ -1,6 +1,6 @@
-var/const/NETWORK_AQUILA      = "Aquila"
+var/const/NETWORK_PRESERVERANCE      = "Preserverance"
 var/const/NETWORK_BRIDGE      = "Bridge"
-var/const/NETWORK_CALYPSO     = "Charon"
+var/const/NETWORK_SPIRIT     = "Spirit"
 var/const/NETWORK_EXPEDITION  = "Expedition"
 var/const/NETWORK_FIRST_DECK  = "First Deck"
 var/const/NETWORK_FOURTH_DECK = "Fourth Deck"
@@ -11,26 +11,26 @@ var/const/NETWORK_HANGAR      = "Hangar"
 var/const/NETWORK_EXPLO       = "Exploration"
 var/const/NETWORK_THIRD_DECK  = "Third Deck"
 var/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
-var/const/NETWORK_NANOTRASEN  = "Petrov"
+var/const/NETWORK_CURIOSITY  = "Curiosity"
 
 /datum/map/torch/get_network_access(var/network)
 	switch(network)
-		if(NETWORK_AQUILA)
-			return access_aquila
+		if(NETWORK_PRESERVERANCE)
+			return access_preserverance
 		if(NETWORK_BRIDGE)
 			return access_heads
-		if(NETWORK_CALYPSO)
+		if(NETWORK_SPIRIT)
 			return access_expedition_shuttle
 		if(NETWORK_POD)
-			return access_guppy
+			return access_opportunity
 		if(NETWORK_SUPPLY)
 			return access_mailsorting
 		if(NETWORK_HANGAR)
 			return access_hangar
 		if(NETWORK_EXPLO)
 			return access_explorer
-		if(NETWORK_NANOTRASEN)
-			return access_petrov_security
+		if(NETWORK_CURIOSITY)
+			return access_curiosity_security
 	return get_shared_network_access(network) || ..()
 
 /datum/map/torch
@@ -53,10 +53,10 @@ var/const/NETWORK_NANOTRASEN  = "Petrov"
 		NETWORK_EXPEDITION,
 		NETWORK_EXPLO,
 		NETWORK_HANGAR,
-		NETWORK_AQUILA,
-		NETWORK_CALYPSO,
+		NETWORK_PRESERVERANCE,
+		NETWORK_SPIRIT,
 		NETWORK_POD,
-		NETWORK_NANOTRASEN,
+		NETWORK_CURIOSITY,
 		NETWORK_ALARM_ATMOS,
 		NETWORK_ALARM_CAMERA,
 		NETWORK_ALARM_FIRE,
@@ -70,14 +70,14 @@ var/const/NETWORK_NANOTRASEN  = "Petrov"
 //
 
 // Networks
-/obj/machinery/camera/network/aquila
-	network = list(NETWORK_AQUILA)
+/obj/machinery/camera/network/preserverance
+	network = list(NETWORK_PRESERVERANCE)
 
 /obj/machinery/camera/network/bridge
 	network = list(NETWORK_BRIDGE)
 
 /obj/machinery/camera/network/exploration_shuttle
-	network = list(NETWORK_CALYPSO)
+	network = list(NETWORK_SPIRIT)
 
 /obj/machinery/camera/network/expedition
 	network = list(NETWORK_EXPEDITION)
@@ -122,7 +122,7 @@ var/const/NETWORK_NANOTRASEN  = "Petrov"
 	network = list(NETWORK_ENGINEERING_OUTPOST)
 
 /obj/machinery/camera/network/nanotrasen
-	network = list(NETWORK_NANOTRASEN)
+	network = list(NETWORK_CURIOSITY)
 
 // Motion
 /obj/machinery/camera/motion/engineering_outpost
@@ -215,26 +215,26 @@ var/const/HAIL_FREQ = 1463
 		num2text(HAIL_FREQ)  = list(),
 	)
 
-/decl/stock_part_preset/radio/receiver/vent_pump/guppy
+/decl/stock_part_preset/radio/receiver/vent_pump/opportunity
 	frequency = 1431
 
-/decl/stock_part_preset/radio/event_transmitter/vent_pump/guppy
+/decl/stock_part_preset/radio/event_transmitter/vent_pump/opportunity
 	frequency = 1431
 
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/guppy
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity
 	stock_part_presets = list(
-		/decl/stock_part_preset/radio/receiver/vent_pump/guppy = 1,
-		/decl/stock_part_preset/radio/event_transmitter/vent_pump/guppy = 1
+		/decl/stock_part_preset/radio/receiver/vent_pump/opportunity = 1,
+		/decl/stock_part_preset/radio/event_transmitter/vent_pump/opportunity = 1
 	)
 
-/decl/stock_part_preset/radio/receiver/vent_scrubber/guppy
+/decl/stock_part_preset/radio/receiver/vent_scrubber/opportunity
 	frequency = 1431
 
-/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/guppy
+/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/opportunity
 	frequency = 1431
 
-/obj/machinery/atmospherics/unary/vent_scrubber/guppy
+/obj/machinery/atmospherics/unary/vent_scrubber/opportunity
 	stock_part_presets = list(
-		/decl/stock_part_preset/radio/receiver/vent_scrubber/guppy = 1,
-		/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/guppy = 1
+		/decl/stock_part_preset/radio/receiver/vent_scrubber/opportunity = 1,
+		/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/opportunity = 1
 	)
