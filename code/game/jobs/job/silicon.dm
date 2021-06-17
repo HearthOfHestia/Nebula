@@ -15,7 +15,7 @@
 	hud_icon = "hudblank"
 	skill_points = 0
 	no_skill_buffs = TRUE
-	guestbanned = 1	
+	guestbanned = 1
 	not_random_selectable = 1
 
 /datum/job/ai/equip(var/mob/living/carbon/human/H)
@@ -62,7 +62,7 @@
 	hud_icon = "hudblank"
 	skill_points = 0
 	no_skill_buffs = TRUE
-	guestbanned = 1	
+	guestbanned = 1
 	not_random_selectable = 1
 
 /datum/job/cyborg/handle_variant_join(var/mob/living/carbon/human/H, var/alt_title)
