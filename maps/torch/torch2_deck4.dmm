@@ -7404,7 +7404,6 @@
 /area/hallway/primary/fourthdeck/aft)
 "yD" = (
 /obj/machinery/hologram/holopad,
-/obj/effect/landmark/test/safe_turf,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
