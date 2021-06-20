@@ -14,9 +14,9 @@
 	alert_text = "[using_map.full_name] is on a collision course with an ultradense asteroid field. Estimated time until impact is: [meteor_grace_period / 1200] MINUTES. Emegency random jump procedure initiated."
 	start_text = "Asteroid field imminent. All hands brace for multiple impacts. May %DEITY_NAME% be with you."
 
-	using_map.shuttle_called_message = "Attention all hands: Emergency Bluespace Drive spool up initiated. It will be ready for jump in %ETA%."
-	using_map.shuttle_docked_message = "Attention all hands: Bluespace Drive spooled up. Emergency bluespace jump in %ETD%."
-	using_map.shuttle_leaving_dock = "Attention all hands: Emergency bluespace jump initiated, emerging in %ETA%."
+	using_map.shuttle_called_message = "Attention all hands: Emergency Superluminal Drive spool up initiated. It will be ready for jump in %ETA%."
+	using_map.shuttle_docked_message = "Attention all hands: Superluminal Drive spooled up. Emergency bluespace jump in %ETD%."
+	using_map.shuttle_leaving_dock = "Attention all hands: Emergency superluminal jump initiated, emerging in %ETA%."
 
 /datum/game_mode/meteor/on_meteor_warn()
 	..()

@@ -14,10 +14,10 @@
 		"Research Supervisor")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	allowed_branches = list(
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
+		/datum/mil_rank/sc/s2
 	)
 
 	access = list(
@@ -70,13 +70,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/government,
+		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+		/datum/mil_rank/sc/s1,
+		/datum/mil_rank/civ/civ = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
+		/datum/mil_rank/government/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
 	)
 
 	access = list(
@@ -110,14 +110,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/solgov,
-		/datum/mil_branch/expeditionary_corps
+		/datum/mil_branch/government,
+		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5,
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
-		/datum/mil_rank/sol/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
+		/datum/mil_rank/sc/t1,
+		/datum/mil_rank/civ/civ = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
+		/datum/mil_rank/government/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,

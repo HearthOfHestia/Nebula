@@ -700,7 +700,7 @@
 	req_access = list(access_engine, access_engine_equip)
 
 /area/engineering/bluespace
-	name = "Bluespace Drive Containment"
+	name = "Superluminal Drive Containment"
 	icon_state = "engineering"
 	color = COLOR_BLUE_LIGHT
 	req_access = list(list(access_engine_equip, access_heads), access_engine, access_maint_tunnels)
@@ -1003,6 +1003,25 @@
 /area/tcommsat/storage
 	name = "\improper Telecoms Storage"
 	icon_state = "tcomsatstore"
+
+/area/tcommsat/network_relay
+	icon_state = "tcomsatstore"
+
+/area/tcommsat/network_relay/bridge
+	name = "\improper Bridge Deck Network Relay"
+
+/area/tcommsat/network_relay/d1
+	name = "\improper First Deck Network Relay"
+
+/area/tcommsat/network_relay/d2
+	name = "\improper Second Deck Network Relay"
+
+/area/tcommsat/network_relay/d4
+	name = "\improper Fourth Deck Network Relay"
+
+/area/tcommsat/network_relay/d5
+	name = "\improper Fifth Deck Network Relay"
+
 
 // Borg Upload
 

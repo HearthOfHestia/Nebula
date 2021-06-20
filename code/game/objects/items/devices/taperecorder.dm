@@ -49,7 +49,7 @@
 		maintenance = !maintenance
 		to_chat(user, "<span class='notice'>You [maintenance ? "open" : "secure"] the lid.</span>")
 		return
-	if(istype(I, /obj/item/tape))
+	if(istype(I, /obj/item/magnetic_tape))
 		if(mytape)
 			to_chat(user, "<span class='notice'>There's already a tape inside.</span>")
 			return

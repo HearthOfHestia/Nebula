@@ -36,7 +36,7 @@
 	#include "torch_turfs.dm"
 	#include "torch_unit_testing.dm"
 	#include "torch_wall_types.dm"
-	#include "torch_wall_stripes.dm"
+	#include "torch_paint.dm"
 
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"
@@ -134,6 +134,7 @@
 	#include "machinery/faxmachine.dm"
 	#include "machinery/keycard authentication.dm"
 	#include "machinery/suit_storage.dm"
+	#include "machinery/network_equipment.dm"
 
 	#include "robot/module_flying_surveyor.dm"
 
@@ -161,6 +162,17 @@
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/~defines.dm"
+
+	//begin HEARTH
+	#include "items\hearth_clothing\uniforms_iseo.dm"
+	#include "items\hearth_clothing\uniforms_espatier.dm"
+	#include "items\hearth_clothing\suits_iseo.dm"
+	#include "items\hearth_clothing\suits_espatier.dm"
+	#include "items\hearth_clothing\hats_iseo.dm"
+	#include "items\hearth_clothing\hats_espatier.dm"
+	#include "items\hearth_clothing\attachments.dm"
+	#include "items\hearth_clothing\armor.dm"
+	//end HEARTH
 
 	#include "torch1_deck5.dmm"
 	#include "torch2_deck4.dmm"

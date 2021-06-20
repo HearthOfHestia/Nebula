@@ -71,7 +71,7 @@
 	display_name = "labcoat, Expeditionary Corps"
 	path = /obj/item/clothing/suit/storage/toggle/labcoat/science/ec
 	allowed_roles = DOCTOR_ROLES
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_
 
 /datum/gear/suit/labcoat_ec_cso
 	display_name = "labcoat, chief science officer, Expeditionary Corps"
@@ -128,4 +128,4 @@
 	display_name = "Agent's jacket"
 	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
 	allowed_roles = list(/datum/job/detective)
-	allowed_branches = list(/datum/mil_branch/solgov)
+	allowed_branches = list(/datum/mil_branch/government)

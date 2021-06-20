@@ -10,9 +10,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_
 	allowed_ranks = list(
-		/datum/mil_rank/ec/o1
+		/datum/mil_rank/sc/s2
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
@@ -52,15 +52,13 @@
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/expeditionary_corps = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
-		/datum/mil_branch/fleet = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/fleet
+		/datum/mil_branch/espatier_corps,
+		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/exploration/pilot,
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/civ/contractor = /decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot,
-		/datum/mil_rank/ec/e7,
-		/datum/mil_rank/fleet/e6,
-		/datum/mil_rank/fleet/e7
+		/datum/mil_rank/sc/s2,
+		/datum/mil_rank/espatier/o2,
+		/datum/mil_rank/espatier/o3
 	)
 
 	access = list(
@@ -85,11 +83,15 @@
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/exploration/explorer
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_branches = list(
+		/datum/mil_branch/iseo_issc,
+		/datum/mil_branch/espatier_corps
+	)
 
 	allowed_ranks = list(
-		/datum/mil_rank/ec/e3,
-		/datum/mil_rank/ec/e5
+		/datum/mil_rank/sc/t1,
+		/datum/mil_rank/espatier/e2,
+		/datum/mil_rank/espatier/e3
 	)
 	min_skill = list(   SKILL_EVA = SKILL_BASIC)
 

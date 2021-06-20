@@ -21,3 +21,6 @@
 
 /obj/effect/paint_stripe/common
 	color = COMMS_COLOR_COMMON
+
+/obj/effect/paint/tan
+	color = COLOR_BEIGE

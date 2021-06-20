@@ -2,10 +2,6 @@
 "aa" = (
 /turf/space,
 /area/space)
-"ab" = (
-/obj/effect/landmark,
-/turf/space,
-/area/space)
 "ac" = (
 /obj/structure/table/steel,
 /obj/item/pen/fancy,
@@ -112,10 +108,10 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/maintenance/fifthdeck/fore)
 "ao" = (
-/obj/effect/paint/red,
 /obj/structure/sign/warning/hot_exhaust{
 	dir = 1
 	},
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/opportunity_hangar/start)
 "ap" = (
@@ -481,17 +477,13 @@
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
-"aY" = (
-/obj/effect/paint/red,
-/turf/simulated/wall/titanium,
-/area/opportunity_hangar/start)
 "aZ" = (
 /obj/machinery/atmospherics/unary/engine,
 /turf/simulated/floor/plating,
 /area/opportunity_hangar/start)
 "ba" = (
 /obj/structure/fuel_port,
-/obj/effect/paint/red,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/opportunity_hangar/start)
 "bb" = (
@@ -527,7 +519,7 @@
 /obj/machinery/light/spot{
 	pixel_y = 32
 	},
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cockpit)
 "bg" = (
@@ -540,18 +532,18 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/cockpit)
 "bh" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cockpit)
 "bi" = (
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "bj" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/crew)
 "bk" = (
@@ -564,7 +556,7 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/crew)
 "bl" = (
@@ -620,7 +612,7 @@
 /obj/machinery/light/spot{
 	pixel_y = 32
 	},
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/crew)
 "bp" = (
@@ -711,7 +703,7 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/cockpit)
 "bw" = (
@@ -731,7 +723,7 @@
 /area/exploration_shuttle/cockpit)
 "bz" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/cockpit)
 "bA" = (
@@ -1048,7 +1040,7 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/crew)
 "cd" = (
@@ -1118,7 +1110,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
 "cj" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/opportunity_hangar/start)
 "cl" = (
@@ -1266,7 +1258,7 @@
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
 "cw" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/airlock)
 "cy" = (
@@ -1315,7 +1307,7 @@
 /area/exploration_shuttle/crew)
 "cE" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/crew)
 "cF" = (
@@ -1402,7 +1394,7 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/airlock)
 "cK" = (
@@ -1461,7 +1453,7 @@
 /area/exploration_shuttle/airlock)
 "cN" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/airlock)
 "cO" = (
@@ -1932,10 +1924,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
-"dK" = (
-/obj/effect/paint/hull,
-/turf/simulated/wall/titanium,
-/area/exploration_shuttle/cargo)
 "dL" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -2046,9 +2034,6 @@
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /obj/effect/floor_decal/industrial/outline,
-/obj/machinery/atmospherics/pipe/simple/hidden/universal{
-	dir = 4
-	},
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -2150,7 +2135,7 @@
 /area/quartermaster/hangar)
 "ef" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/opportunity_hangar/start)
 "eg" = (
@@ -2342,7 +2327,7 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "ew" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/atmos)
 "ey" = (
@@ -2418,7 +2403,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/power)
 "eF" = (
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/power)
 "eH" = (
@@ -2610,6 +2595,11 @@
 	name = "east bump";
 	pixel_x = 24
 	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "fl" = (
@@ -2707,12 +2697,12 @@
 	opacity = 0
 	},
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/power)
 "fz" = (
@@ -2753,7 +2743,6 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/curiosity/isolation)
 "fF" = (
-/obj/effect/paint/red,
 /turf/simulated/wall/titanium,
 /area/shuttle/curiosity/isolation)
 "fG" = (
@@ -3010,7 +2999,7 @@
 /area/exploration_shuttle/cargo)
 "go" = (
 /obj/structure/fuel_port,
-/obj/effect/paint/red,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "gp" = (
@@ -3071,12 +3060,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
 "gx" = (
-/obj/effect/paint/red,
+/obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "gy" = (
-/obj/effect/paint/red,
 /obj/structure/sign/warning/hot_exhaust,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "gz" = (
@@ -8656,20 +8645,24 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
-"sw" = (
-/obj/structure/reagent_dispensers/watertank,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
 "sx" = (
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
+/obj/effect/paint_stripe/engineering,
+/turf/simulated/wall/r_wall/prepainted,
+/area/tcommsat/network_relay/d5)
 "sz" = (
-/obj/structure/reagent_dispensers/fueltank,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/alarm/server{
+	dir = 4;
+	pixel_x = -22;
+	pixel_y = 0;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
+/obj/machinery/network/relay/endeavour,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
+/area/tcommsat/network_relay/d5)
 "sA" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -10628,7 +10621,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "yv" = (
 /obj/effect/wallframe_spawn/reinforced/titanium,
-/obj/effect/paint/hull,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/exploration_shuttle/cargo)
 "yx" = (
@@ -11887,7 +11880,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/quartermaster/shuttlefuel)
 "Dc" = (
-/obj/effect/paint/hull,
 /obj/machinery/button/blast_door{
 	id_tag = "opportunity_hatch";
 	name = "Rear Hatch Control";
@@ -11895,6 +11887,7 @@
 	pixel_y = 0;
 	req_access = list("ACCESS_TORCH_GUP")
 	},
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/opportunity_hangar/start)
 "Dd" = (
@@ -12178,7 +12171,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "DQ" = (
-/obj/effect/paint/red,
 /turf/simulated/wall/titanium,
 /area/shuttle/curiosity/custodial)
 "DT" = (
@@ -12510,6 +12502,15 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
+"Fa" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname/engineering,
+/turf/simulated/floor/tiled/techfloor,
+/area/tcommsat/network_relay/d5)
 "Fd" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/equipment)
@@ -13358,8 +13359,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "Io" = (
-/obj/effect/paint/hull,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Iq" = (
@@ -14361,6 +14362,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/curiosity/cell2)
+"LS" = (
+/obj/effect/paint/tan,
+/turf/simulated/wall/titanium,
+/area/exploration_shuttle/cargo)
 "LT" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -14496,6 +14501,10 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/curiosity/cell1)
+"Mp" = (
+/obj/effect/paint/silver,
+/turf/simulated/wall/titanium,
+/area/opportunity_hangar/start)
 "Mr" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -14503,8 +14512,8 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/curiosity/security)
 "Ms" = (
-/obj/effect/paint/hull,
 /obj/structure/sign/iseo,
+/obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Mt" = (
@@ -14812,10 +14821,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Nw" = (
-/obj/effect/paint/hull,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Ny" = (
@@ -15922,6 +15931,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/reinforced,
 /area/shuttle/curiosity/cell2)
+"RK" = (
+/obj/effect/paint/sun,
+/turf/simulated/wall/titanium,
+/area/exploration_shuttle/cargo)
 "RN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/artifact_scanpad,
@@ -17079,6 +17092,10 @@
 	},
 /turf/space,
 /area/space)
+"Wf" = (
+/obj/effect/paint/sun,
+/turf/simulated/wall/titanium,
+/area/opportunity_hangar/start)
 "Wg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -17093,10 +17110,6 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
-"Wl" = (
-/obj/effect/paint/silver,
-/turf/simulated/wall/titanium,
-/area/shuttle/curiosity/isolation)
 "Wn" = (
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/hallwaya)
@@ -17335,11 +17348,11 @@
 /turf/simulated/floor/tiled/white,
 /area/shuttle/curiosity/equipment)
 "Xt" = (
-/obj/effect/paint/hull,
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
 	},
+/obj/effect/paint/silver,
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cargo)
 "Xx" = (
@@ -30951,7 +30964,7 @@ aa
 aa
 aa
 aa
-ab
+aa
 aa
 aa
 aa
@@ -33959,9 +33972,9 @@ bi
 bi
 Gz
 Xt
-dK
-dK
-dK
+RK
+RK
+gx
 Ms
 bi
 bi
@@ -34159,13 +34172,13 @@ ew
 ew
 ew
 ew
-dK
+gx
 Nw
 eX
 fm
 fI
-dK
-gx
+LS
+LS
 bi
 fS
 aX
@@ -34361,13 +34374,13 @@ dT
 eg
 Ja
 Ar
-dK
+LS
 zx
 eY
 fn
 fJ
 xu
-gx
+LS
 gy
 fS
 aX
@@ -34563,7 +34576,7 @@ dU
 eh
 eq
 Nl
-dK
+LS
 Mk
 eZ
 fo
@@ -34967,13 +34980,13 @@ dW
 ea
 PA
 ez
-dK
+LS
 Id
 fb
 fq
-gx
-gx
-gx
+LS
+LS
+LS
 gy
 fS
 oO
@@ -35169,7 +35182,7 @@ ew
 HC
 ew
 ew
-dK
+LS
 bm
 fb
 fr
@@ -35577,9 +35590,9 @@ eQ
 fd
 aR
 ed
-gx
-gx
-gx
+LS
+LS
+LS
 gy
 fS
 Bm
@@ -35775,7 +35788,7 @@ eF
 fu
 eF
 eF
-dK
+LS
 AE
 BX
 VR
@@ -35977,7 +35990,7 @@ eb
 em
 Vb
 eE
-dK
+LS
 IV
 fe
 JD
@@ -36179,13 +36192,13 @@ Ky
 en
 le
 Dr
-dK
+LS
 yM
 ff
 fn
 fQ
 OZ
-gx
+LS
 gy
 fS
 nR
@@ -36381,12 +36394,12 @@ eF
 fy
 eF
 eF
-dK
-dK
+gx
+gx
 fx
 fN
 fR
-dK
+LS
 go
 bi
 fS
@@ -36584,10 +36597,10 @@ UW
 bi
 bi
 xJ
-dK
-dK
-dK
-dK
+gx
+RK
+RK
+gx
 Ms
 bi
 bi
@@ -37377,14 +37390,14 @@ ie
 aJ
 kd
 ee
-aY
-aY
+cj
+cj
 bG
 Cm
-cj
-cj
-cj
-cj
+Mp
+Wf
+Wf
+Mp
 cj
 sK
 bi
@@ -37580,7 +37593,7 @@ aJ
 aX
 ee
 ao
-aY
+cj
 bH
 cf
 cj
@@ -38388,13 +38401,13 @@ lS
 kd
 ee
 ba
-aY
+cj
 bL
 Dc
-cj
-cj
-cj
-cj
+Mp
+Wf
+Wf
+Mp
 cj
 cj
 cj
@@ -38584,9 +38597,9 @@ ZG
 aH
 Um
 Ea
-sw
-sw
-lS
+sx
+sx
+sx
 oI
 eH
 eT
@@ -38788,16 +38801,16 @@ Um
 Ea
 sx
 sz
-lS
-aX
-aX
-aX
-aX
-aX
-kT
-aX
-aX
-aX
+Fa
+HY
+HY
+HY
+HY
+HY
+kV
+HY
+HY
+HY
 fj
 kV
 oL
@@ -38988,9 +39001,9 @@ ZG
 aH
 Um
 Ea
-Ut
-Ut
-lS
+sx
+sx
+sx
 aJ
 Qn
 Qn
@@ -48905,9 +48918,9 @@ Uq
 az
 bs
 Rt
-Wl
-Wl
-Wl
+wy
+wy
+wy
 za
 za
 Ax
@@ -49107,8 +49120,8 @@ aq
 yf
 LU
 Rt
-Wl
-Wl
+wy
+wy
 fF
 fF
 fF

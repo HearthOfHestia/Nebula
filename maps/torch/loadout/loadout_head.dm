@@ -2,7 +2,7 @@
 	display_name = "SolGov beret selection"
 	description = "A beret denoting service in an organization within SolGov."
 	path = /obj/item/clothing/head/beret/solgov
-	allowed_branches = SOLGOV_BRANCHES
+	allowed_branches = ISEO_BRANCHES
 
 /datum/gear/head/solberet/New()
 	..()
@@ -25,25 +25,24 @@
 /datum/gear/head/solhat
 	display_name = "sol central government hat"
 	path = /obj/item/clothing/head/soft/solgov
-	allowed_branches = SOLGOV_BRANCHES
+	allowed_branches = ISEO_BRANCHES
 
 /datum/gear/head/fleetcover
 	display_name = "fleet utilty cover"
 	path = /obj/item/clothing/head/solgov/utility/fleet
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
 /datum/gear/head/fleetcap
 	display_name = "fleet cap"
 	path = /obj/item/clothing/head/soft/solgov/fleet
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
 /datum/gear/head/echat
 	display_name = "EC cap"
 	path = /obj/item/clothing/head/soft/solgov/expedition
 	cost = 0
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 
 /datum/gear/head/surgical
 	allowed_roles = STERILE_ROLES
@@ -89,7 +88,7 @@
 	display_name = "Fleet branch beret selection"
 	description = "A beret denoting service in one of the fleets within the SCG Fleet."
 	path = /obj/item/clothing/head/beret/solgov/fleet/branch
-	allowed_branches = list(/datum/mil_branch/fleet)
+	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
 /datum/gear/head/fleetberet/New()
 	..()
@@ -105,7 +104,7 @@
 	display_name = "EC sections beret selection"
 	description = "A beret denoting service in one of the branches within the SCG EC."
 	path = /obj/item/clothing/head/beret/solgov/expedition/branch
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	allowed_
 
 /datum/gear/head/ECberet/New()
 	..()
