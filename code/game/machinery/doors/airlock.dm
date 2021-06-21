@@ -9,11 +9,6 @@
 #define AIRLOCK_DENY	5
 #define AIRLOCK_EMAG	6
 
-#define AIRLOCK_PAINTABLE 1
-#define AIRLOCK_STRIPABLE 2
-#define AIRLOCK_DETAILABLE 4
-#define AIRLOCK_WINDOW_PAINTABLE 8
-
 var/global/list/airlock_overlays = list()
 
 /obj/machinery/door/airlock
@@ -70,7 +65,7 @@ var/global/list/airlock_overlays = list()
 	//The variables below determine what color the airlock and decorative stripes will be -Cakey
 	var/airlock_type = "Standard"
 	var/static/list/airlock_icon_cache = list()
-	var/paintable = AIRLOCK_PAINTABLE|AIRLOCK_STRIPABLE|AIRLOCK_WINDOW_PAINTABLE
+	var/paintable = PAINT_PAINTABLE|PAINT_STRIPABLE|PAINT_WINDOW_PAINTABLE
 	var/door_color = null
 	var/stripe_color = null
 	var/symbol_color = null
@@ -160,10 +155,10 @@ About the new airlock wires panel:
 	return wires.IsIndexCut(wireIndex)
 
 /obj/machinery/door/airlock/proc/canAIControl()
-	return ((src.aiControlDisabled!=1) && (!src.isAllPowerLoss()));
+	return (!QDELETED(src) && (src.aiControlDisabled!=1) && (!src.isAllPowerLoss()))
 
 /obj/machinery/door/airlock/proc/canAIHack()
-	return ((src.aiControlDisabled==1) && (!hackProof) && (!src.isAllPowerLoss()));
+	return (!QDELETED(src) && (src.aiControlDisabled==1) && (!hackProof) && (!src.isAllPowerLoss()))
 
 /obj/machinery/door/airlock/proc/arePowerSystemsOn()
 	if (stat & (NOPOWER|BROKEN))
@@ -898,7 +893,7 @@ About the new airlock wires panel:
 	return ..()
 
 /obj/machinery/door/airlock/can_open(var/forced=0)
-	if(brace)
+	if(QDELETED(src) || brace)
 		return 0
 
 	if(!forced)
@@ -910,7 +905,7 @@ About the new airlock wires panel:
 	return ..()
 
 /obj/machinery/door/airlock/can_close(var/forced=0)
-	if(locked || welded)
+	if(QDELETED(src) || locked || welded)
 		return 0
 
 	if(!forced)
@@ -1007,7 +1002,7 @@ About the new airlock wires panel:
 		queue_icon_update()
 
 	if (glass)
-		paintable |= AIRLOCK_WINDOW_PAINTABLE
+		paintable |= PAINT_WINDOW_PAINTABLE
 		if (!window_color)
 			var/decl/material/window = get_window_material()
 			window_color = window.color
