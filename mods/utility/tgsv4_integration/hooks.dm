@@ -1,3 +1,4 @@
+#ifdef UTILITY_TGSV4
 /hook/startup/proc/tgs_on_world_start()
 	world.TgsNew()
 
@@ -6,3 +7,4 @@
 
 /hook/shutdown/proc/tgs_on_shutdown()
 	world.TgsReboot()
+#endif
