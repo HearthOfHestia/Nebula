@@ -3,4 +3,7 @@
 #include "tgs.dm"
 #include "tgs/includes.dm"
 #include "hooks.dm"
+#include "webhook_defines.dm"
+#include "chat_commands.dm"
+#include "tgs2webhook_manifest.dm"
 #endif
