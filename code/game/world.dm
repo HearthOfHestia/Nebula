@@ -123,7 +123,9 @@ var/global/world_topic_last = world.timeofday
 	* The following topic calls are available without a comms secret.
 	* * * * * * * */
 	//HEARTH edit start
+	#ifdef UTILITY_TGSV4
 	var/tgs_topic_return = TgsTopic(args[1]); if(tgs_topic_return) return tgs_topic_return
+	#endif
 	//HEARTH edit end
 
 	if (T == "ping")
