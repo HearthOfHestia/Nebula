@@ -3,6 +3,9 @@
 	base_floor_type = /turf/simulated/floor/reinforced/airless
 	base_floor_area = /area/endeavour_exterior
 
+/area/hallway
+	area_flags = AREA_FLAG_HALLWAY
+
 //Ported areas that do not exist in Nebula Base.
 /area/rnd/xenobiology/xenoflora
 	name = "\improper Xenoflora Lab"
@@ -317,6 +320,14 @@
 	name = "Escape Pod Six"
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
 
+/area/shuttle/escape_pod18/station
+	name = "Escape Pod Thirteen"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
+/area/shuttle/escape_pod19/station
+	name = "Escape Pod Fourteen"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED | AREA_FLAG_IS_NOT_PERSISTENT
+
 //Endeavour small pods
 /area/shuttle/escape_pod12/station
 	name = "Escape Pod Seven"
@@ -417,84 +428,31 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_opportunity)
 
+/area/rnd/xenoarch
+	req_access = list(access_research, access_xenoarch)
 
-//Curiosity
-
-/area/shuttle/curiosity
-	name = "\improper SRV Curiosity"
-	requires_power = 1
-	dynamic_lighting = 1
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-	req_access = list(access_curiosity)
-
-/area/shuttle/curiosity/cell1
-	name = "\improper SRV Curiosity - Isolation Cell 1"
-	icon_state = "shuttle"
-/area/shuttle/curiosity/cell2
-	name = "\improper SRV Curiosity - Isolation Cell 2"
-	icon_state = "shuttlegrn"
-/area/shuttle/curiosity/cell3
-	name = "\improper SRV Curiosity - Isolation Cell 3"
+/area/rnd/xenoarch/cell1
+	name = "\improper Isolation Cell 1"
 	icon_state = "shuttle"
 
-/area/shuttle/curiosity/hallwaya
-	name = "\improper SRV Curiosity - Lower Hallway"
-	icon_state = "hallA"
+/area/rnd/xenoarch/cell2
+	name = "\improper Isolation Cell 2"
+	icon_state = "shuttle"
 
-/area/shuttle/curiosity/security
-	name = "\improper SRV Curiosity - Security Office"
-	icon_state = "checkpoint1"
-	req_access = list(access_curiosity_security)
+/area/rnd/xenoarch/cell3
+	name = "\improper Isolation Cell 3"
+	icon_state = "shuttle"
 
-/area/shuttle/curiosity/rd
-	icon_state = "heads_rd"
-	name = "\improper SRV Curiosity - CSO's Office"
-	icon_state = "head_quarters"
-	req_access = list(access_curiosity_rd)
-
-/area/shuttle/curiosity/cockpit
-	name = "\improper SRV Curiosity - Cockpit"
-	icon_state = "shuttlered"
-	req_access = list(access_curiosity_helm)
-
-/area/shuttle/curiosity/maint
-	name = "\improper SRV Curiosity - Maintenance"
-	icon_state = "engine"
-	req_access = list(access_curiosity_maint)
-
-/area/shuttle/curiosity/analysis
-	name = "\improper SRV Curiosity - Analysis Lab"
-	icon_state = "devlab"
-	req_access = list(access_curiosity_analysis)
-
-/area/shuttle/curiosity/toxins
-	name = "\improper SRV Curiosity - Toxins Lab"
-	icon_state = "toxstorage"
-	req_access = list(access_curiosity_toxins)
-
-/area/shuttle/curiosity/rnd
-	name = "\improper SRV Curiosity - Fabricator Lab"
+/area/rnd/xenoarch/analysis
+	name = "\improper Analysis Lab"
 	icon_state = "devlab"
 
-/area/shuttle/curiosity/isolation
-	name = "\improper SRV Curiosity - Isolation Lab"
-	icon_state = "xeno_lab"
-
-/area/shuttle/curiosity/phoron
-	name = "\improper SRV Curiosity - Sublimation Lab"
-	icon_state = "toxstorage"
-	req_access = list(access_curiosity_phoron)
-
-/area/shuttle/curiosity/custodial
-	name = "\improper SRV Curiosity - Custodial"
-	icon_state = "decontamination"
-
-/area/shuttle/curiosity/equipment
-	name = "\improper SRV Curiosity - Equipment Storage"
+/area/rnd/xenoarch/equipment
+	name = "Xenoarcheology Equipment Storage"
 	icon_state = "locker"
 
-/area/shuttle/curiosity/eva
-	name = "\improper SRV Curiosity - EVA Storage"
+/area/rnd/xenoarch/anom_storage
+	name = "Xenoarcheology Anomaly Storage"
 	icon_state = "locker"
 
 //Turbolift
@@ -713,6 +671,12 @@
 
 /area/engineering/auxpower
 	name = "\improper Auxiliary Power Storage"
+	icon_state = "engine_smes"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(access_engine_equip)
+
+/area/engineering/auxpowergen
+	name = "\improper Auxiliary Power Generation"
 	icon_state = "engine_smes"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip)
@@ -1294,6 +1258,24 @@
 	turf_initializer = /decl/turf_initializer/maintenance/space
 	req_access = list(access_external_airlocks, access_maint_tunnels)
 
+/area/bridge/ai
+	req_access = list(access_ai_upload)
+	ambience = list('sound/ambience/ambimalf.ogg')
+	sound_env = SMALL_ENCLOSED
+
+/area/bridge/ai/ai
+	name = "\improper AI Chamber"
+	icon_state = "ai_chamber"
+
+/area/bridge/ai/ai_upload
+	name = "\improper AI Upload Chamber"
+	icon_state = "ai_upload"
+
+/area/bridge/ai/ai_upload_foyer
+	name = "\improper AI Upload Access"
+	icon_state = "ai_foyer"
+
+
 // CentCom
 
 /area/centcom/control
@@ -1371,6 +1353,11 @@
 	name = "Technical Storage"
 	icon_state = "storage"
 	req_access = list(access_tech_storage)
+
+/area/storage/emergency
+	name = "Primary Emergency Storage"
+	icon_state = "storage"
+	req_access = list(access_heads)
 
 /area/storage/tools
 	name = "Auxiliary Tool Storage"
@@ -1611,6 +1598,25 @@
 
 /area/janitor/storage
 	name = "\improper Custodial Storage Closet"
+
+/area/crew_quarters/sleep/dorms
+	icon_state = "Sleep"
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+
+/area/crew_quarters/sleep/dorms/hallway
+	name = "\improper Dormitory Hallway"
+
+/area/crew_quarters/sleep/dorms/one
+	name = "\improper Cabin One"
+
+/area/crew_quarters/sleep/dorms/two
+	name = "\improper Cabin Two"
+
+/area/crew_quarters/sleep/dorms/three
+	name = "\improper Cabin Three"
+
+/area/crew_quarters/sleep/dorms/four
+	name = "\improper Cabin Four"
 
 // Tcomm
 /area/tcommsat/

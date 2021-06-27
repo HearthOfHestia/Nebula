@@ -48,31 +48,8 @@ TORCH_ESCAPE_POD(13)
 TORCH_ESCAPE_POD(15)
 TORCH_ESCAPE_POD(16)
 TORCH_ESCAPE_POD(17)
-
-//Curiosity
-
-/datum/shuttle/autodock/ferry/curiosity
-	name = "Curiosity"
-	warmup_time = 10
-	dock_target = "curiosity_shuttle_airlock"
-	waypoint_station = "nav_curiosity_start"
-	waypoint_offsite = "nav_curiosity_out"
-	logging_home_tag = "nav_curiosity_start"
-	logging_access = access_curiosity_helm
-	ceiling_type = /turf/simulated/floor/shuttle_ceiling
-
-/datum/shuttle/autodock/ferry/curiosity/New(_name, var/obj/effect/shuttle_landmark/initial_location)
-	shuttle_area = subtypesof(/area/shuttle/curiosity)
-	..()
-
-/obj/effect/shuttle_landmark/curiosity/start
-	name = "First Deck"
-	landmark_tag = "nav_curiosity_start"
-	docking_controller = "curiosity_shuttle_dock_airlock"
-
-/obj/effect/shuttle_landmark/curiosity/out
-	name = "Space near the ship"
-	landmark_tag = "nav_curiosity_out"
+TORCH_ESCAPE_POD(18)
+TORCH_ESCAPE_POD(19)
 
 //Ninja Shuttle.
 /datum/shuttle/autodock/multi/antag/ninja

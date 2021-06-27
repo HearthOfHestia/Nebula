@@ -28,8 +28,6 @@
 		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/merchant = NO_SCRUBBER|NO_APC,
-		/area/shuttle/curiosity = 0,
-		/area/shuttle/curiosity/maint = NO_SCRUBBER|NO_VENT,
 		/area/shuttle/escape_pod6/station = NO_SCRUBBER|NO_APC|NO_VENT,
 		/area/shuttle/escape_pod7/station = NO_SCRUBBER|NO_APC|NO_VENT,
 		/area/shuttle/escape_pod8/station = NO_SCRUBBER|NO_APC|NO_VENT,

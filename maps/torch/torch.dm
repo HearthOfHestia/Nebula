@@ -37,6 +37,9 @@
 	#include "torch_unit_testing.dm"
 	#include "torch_wall_types.dm"
 	#include "torch_paint.dm"
+	#include "torch_floor_decals.dm"
+	#include "torch_cyclers.dm"
+	#include "machinery\rtg.dm"
 
 	#include "datums/uniforms.dm"
 	#include "datums/uniforms_expedition.dm"

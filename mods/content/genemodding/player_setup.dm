@@ -46,3 +46,5 @@
 	character.tail_style		= global.tail_styles_list[tail_style]
 	character.tail_color		= tail_color
 	character.tail_color_extra	= tail_color_extra
+	if(character.mind)
+		mind.ooc_notes = pref.ooc_notes

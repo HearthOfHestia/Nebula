@@ -2,25 +2,28 @@
 	color = COMMS_COLOR_ENGINEER
 
 /obj/effect/paint_stripe/medical
-	color = COMMS_COLOR_MEDICAL
+	color = COLOR_PALE_BLUE_GRAY
 
 /obj/effect/paint_stripe/security
-	color = COMMS_COLOR_SECURITY 
+	color = COLOR_MAROON
 
 /obj/effect/paint_stripe/command
-	color = COMMS_COLOR_COMMAND 
+	color = COMMS_COLOR_COMMAND
 
 /obj/effect/paint_stripe/science
 	color = "#68099e"
 
 /obj/effect/paint_stripe/supply
-	color = COMMS_COLOR_SUPPLY
+	color = COLOR_DARK_BROWN
 
 /obj/effect/paint_stripe/service
 	color = COMMS_COLOR_SERVICE
 
 /obj/effect/paint_stripe/common
-	color = COMMS_COLOR_COMMON
+	color = COLOR_BOTTLE_GREEN
 
 /obj/effect/paint/tan
 	color = COLOR_BEIGE
+
+/obj/effect/paint/eggshell
+	color = COLOR_EGGSHELL 
