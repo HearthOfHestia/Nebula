@@ -112,7 +112,7 @@ var/global/world_topic_last = world.timeofday
 	var/list/throttle = global.world_topic_throttle[addr]
 	if (!throttle)
 		global.world_topic_throttle[addr] = throttle = list(0, null)
-	else if (!global.localhost_addresses[addr] && throttle[1] && throttle[1] > world.timeofday + THROTTLE_MAX_BURST)
+	else if (throttle[1] && throttle[1] > world.timeofday + THROTTLE_MAX_BURST)
 		return throttle[2] ? "Throttled ([throttle[2]])" : "Throttled"
 
 	var/base_throttle = max(throttle[1], world.timeofday)
@@ -122,11 +122,6 @@ var/global/world_topic_last = world.timeofday
 	* Public Topic Calls
 	* The following topic calls are available without a comms secret.
 	* * * * * * * */
-	//HEARTH edit start
-	#ifdef UTILITY_TGSV4
-	var/tgs_topic_return = TgsTopic(args[1]); if(tgs_topic_return) return tgs_topic_return
-	#endif
-	//HEARTH edit end
 
 	if (T == "ping")
 		var/x = 1

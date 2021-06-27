@@ -31,7 +31,7 @@
 #define TGS_PROTECT_DATUM(Path)
 
 /// Display an announcement `message` from the server to all players.
-#define TGS_WORLD_ANNOUNCE(message)
+#define TGS_WORLD_ANNOUNCE(message) to_chat(world, "<span class='boldannounce'>[html_encode(##message)]</span>")
 
 /// Notify current in-game administrators of a string `event`.
 #define TGS_NOTIFY_ADMINS(event) log_and_message_admins(message)
@@ -46,7 +46,7 @@
 #define TGS_ERROR_LOG(message) log_error(message)
 
 /// Get the number of connected /clients.
-#define TGS_CLIENT_COUNT
+#define TGS_CLIENT_COUNT global.clients.len
 
 #endif
 
