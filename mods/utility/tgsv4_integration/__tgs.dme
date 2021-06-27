@@ -6,4 +6,5 @@
 #include "webhook_defines.dm"
 #include "chat_commands.dm"
 #include "tgs2webhook_manifest.dm"
+#include "decls.dm"
 #endif
