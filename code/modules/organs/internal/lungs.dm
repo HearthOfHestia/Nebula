@@ -56,7 +56,6 @@
 /obj/item/organ/internal/lungs/set_dna(var/datum/dna/new_dna)
 	..()
 	sync_breath_types()
-	max_pressure_diff = species.max_pressure_diff
 
 /obj/item/organ/internal/lungs/replaced()
 	..()
@@ -66,10 +65,18 @@
  *  Set these lungs' breath types based on the lungs' species
  */
 /obj/item/organ/internal/lungs/proc/sync_breath_types()
-	min_breath_pressure = species.breath_pressure
-	breath_type = species.breath_type ? species.breath_type : /decl/material/gas/oxygen
-	poison_types = species.poison_types ? species.poison_types : list(/decl/material/gas/chlorine = TRUE)
-	exhale_type = species.exhale_type ? species.exhale_type : /decl/material/gas/carbon_dioxide
+	if(species)
+		max_pressure_diff =   species.max_pressure_diff
+		min_breath_pressure = species.breath_pressure
+		breath_type =         species.breath_type  || /decl/material/gas/oxygen
+		poison_types =        species.poison_types || list(/decl/material/gas/chlorine = TRUE)
+		exhale_type =         species.exhale_type  || /decl/material/gas/carbon_dioxide
+	else
+		max_pressure_diff =   initial(max_pressure_diff)
+		min_breath_pressure = initial(min_breath_pressure)
+		breath_type =         /decl/material/gas/oxygen
+		poison_types =        list(/decl/material/gas/chlorine = TRUE)
+		exhale_type =         /decl/material/gas/carbon_dioxide
 
 /obj/item/organ/internal/lungs/Process()
 	..()
@@ -168,14 +175,16 @@
 	// Not enough to breathe
 	if(inhale_efficiency < 1)
 		if(prob(20) && active_breathing)
-			if(inhale_efficiency < 0.8)
+			if(inhale_efficiency < 0.6)
 				owner.emote("gasp")
 			else if(prob(20))
 				to_chat(owner, SPAN_WARNING("It's hard to breathe..."))
-		breath_fail_ratio = 1 - inhale_efficiency
+		breath_fail_ratio = Clamp(0,(1 - inhale_efficiency + breath_fail_ratio)/2,1)
 		failed_inhale = 1
 	else
-		breath_fail_ratio = 0
+		if(breath_fail_ratio && prob(20))
+			to_chat(owner, SPAN_NOTICE("It gets easier to breathe."))
+		breath_fail_ratio = Clamp(0,breath_fail_ratio-0.05,1)
 
 	owner.oxygen_alert = failed_inhale * 2
 
