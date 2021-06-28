@@ -28,6 +28,7 @@
 	W.write("tail_color", pref.tail_color)
 	W.write("tail_color_extra", pref.tail_color_extra)
 
+
 /datum/category_item/player_setup_item/physical/cosmetics/sanitize_character()
 	pref.ear_color =		pref.ear_color			|| COLOR_BLACK
 	pref.ear_color_extra =	pref.ear_color_extra	|| COLOR_BLACK
@@ -46,5 +47,3 @@
 	character.tail_style		= global.tail_styles_list[tail_style]
 	character.tail_color		= tail_color
 	character.tail_color_extra	= tail_color_extra
-	if(character.mind)
-		mind.ooc_notes = pref.ooc_notes
