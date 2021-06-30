@@ -79,8 +79,6 @@
 
 		handle_stamina()
 
-		handle_medical_side_effects()
-
 	if(!handle_some_updates())
 		return											//We go ahead and process them 5 times for HUD images and other stuff though.
 
@@ -569,7 +567,7 @@
 			adjustHalLoss(-3)
 
 			if(prob(2) && is_asystole() && isSynthetic())
-				visible_message("<b>[src]</b> [pick("emits low pitched whirr","beeps urgently")]")
+				visible_message("<b>[src]</b> [pick("emits low pitched whirr","beeps urgently")].")
 		//CONSCIOUS
 		else
 			set_stat(CONSCIOUS)
@@ -1039,7 +1037,7 @@
 			E.take_external_damage(burn = round(species_heat_mod * log(10, (burn_temperature + 10)), 0.1), used_weapon = "fire")
 
 /mob/living/carbon/human/rejuvenate()
-	restore_blood()
+	reset_blood()
 	full_prosthetic = null
 	shock_stage = 0
 	..()

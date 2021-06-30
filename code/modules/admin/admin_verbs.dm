@@ -209,7 +209,9 @@ var/global/list/admin_verbs_debug = list(
 	/client/proc/verb_adjust_tank_bomb_severity,
 	/client/proc/force_ghost_trap_trigger,
 	/client/proc/spawn_quantum_mechanic,
-	/client/proc/spawn_exoplanet
+	/client/proc/spawn_exoplanet,
+	/client/proc/print_cargo_prices,
+	/client/proc/resend_nanoui_templates
 	)
 
 var/global/list/admin_verbs_paranoid_debug = list(
