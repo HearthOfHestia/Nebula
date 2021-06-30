@@ -30,7 +30,7 @@
 
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 	..()
-	addtimer(CALLBACK(src, .proc/copy_ooc_notes), 5 SECONDS)
+	addtimer(CALLBACK(src, .proc/copy_ooc_notes), 2 SECONDS)
 
 /datum/preferences/proc/copy_ooc_notes()
 	for(var/datum/mind/M in SSticker.minds) //Need to iterate minds, unfortunately.
