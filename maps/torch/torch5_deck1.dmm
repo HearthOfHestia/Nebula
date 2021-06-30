@@ -17487,13 +17487,13 @@
 /turf/simulated/floor/plating,
 /area/security/bo)
 "hRj" = (
-/obj/machinery/suit_cycler/science,
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
 	},
+/obj/machinery/suit_cycler/excavation/prepared,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
 "hRS" = (
@@ -25104,7 +25104,7 @@
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)
 "rxK" = (
-/obj/machinery/suit_cycler/science,
+/obj/machinery/suit_cycler/excavation/prepared,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
 "ryb" = (

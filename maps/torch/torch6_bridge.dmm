@@ -557,12 +557,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/rd)
-"bk" = (
-/obj/effect/floor_decal/corner/white/full,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/command,
-/turf/simulated/floor/tiled/dark,
-/area/aux_eva)
 "bl" = (
 /obj/structure/table/woodentable_reinforced/walnut,
 /obj/item/sticky_pad/random,
@@ -9750,12 +9744,6 @@
 /obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/xo)
-"yi" = (
-/obj/effect/floor_decal/corner/red/full,
-/obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/security/alt,
-/turf/simulated/floor/tiled/dark,
-/area/aux_eva)
 "yl" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -9992,13 +9980,12 @@
 /turf/simulated/floor/plating,
 /area/space)
 "zz" = (
-/obj/effect/floor_decal/corner/white/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/command,
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
+/obj/machinery/suit_cycler/command/prepared,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "zC" = (
@@ -10453,13 +10440,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "Bp" = (
-/obj/effect/floor_decal/corner/red/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/security/alt,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/machinery/suit_cycler/command/prepared,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "Bs" = (
@@ -10709,15 +10695,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "Ci" = (
-/obj/effect/floor_decal/corner/paleblue/diagonal{
-	dir = 4;
-	icon_state = "corner_white_diagonal"
-	},
-/obj/effect/floor_decal/corner/paleblue/diagonal,
+/obj/machinery/suit_cycler/command/prepared,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/medical/alt/sol,
 /turf/simulated/floor/tiled/dark,
-/area/aux_eva)
+/area/space)
 "Ck" = (
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10;
@@ -12300,9 +12281,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "IW" = (
-/obj/effect/floor_decal/corner/yellow/full,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/atmos/alt/sol,
+/obj/machinery/suit_cycler/command/prepared,
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "IX" = (
@@ -31943,7 +31923,7 @@ Qh
 Xh
 di
 qi
-yi
+IW
 Bp
 Ci
 on
@@ -32751,7 +32731,7 @@ Th
 Dq
 Uh
 fH
-bk
+IW
 zz
 IW
 on

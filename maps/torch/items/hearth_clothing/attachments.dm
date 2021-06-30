@@ -233,33 +233,60 @@
 /obj/item/clothing/accessory/department/espatier/service
 	color = "#6eaa2c"
 
-/obj/item/clothing/accessory/department/espatier/service
-	name = "service jacket department stripes"
-	desc = "A set of colored, velcro-backed strips intended to attach to an espatier service jacket."
+/obj/item/clothing/accessory/department/espatier/jackettags
+	name = "espatier jacket department stripes"
+	desc = "A set of colored, velcro-backed strips intended to attach to an espatier jacket."
 	icon = 'maps/torch/icons/converted_icons/accessories/service_jacket_tags_espatier.dmi'
 
-/obj/item/clothing/accessory/department/espatier/service/engineering
+/obj/item/clothing/accessory/department/espatier/jackettags/engineering
 	color = "#ff7f00"
 
-/obj/item/clothing/accessory/department/espatier/service/security
+/obj/item/clothing/accessory/department/espatier/jackettags/security
 	color = "#bf0000"
 
-/obj/item/clothing/accessory/department/espatier/service/command
+/obj/item/clothing/accessory/department/espatier/jackettags/command
 	color = "#e5ea4f"
 
-/obj/item/clothing/accessory/department/espatier/service/supply
+/obj/item/clothing/accessory/department/espatier/jackettags/supply
 	color = "#bb9042"
 
-/obj/item/clothing/accessory/department/espatier/service/exploration
+/obj/item/clothing/accessory/department/espatier/jackettags/exploration
 	color = "#68099e"
 
-/obj/item/clothing/accessory/department/espatier/service/medical
+/obj/item/clothing/accessory/department/espatier/jackettags/medical
 	color = "#4c9ce4"
 
-/obj/item/clothing/accessory/department/espatier/service/service
+/obj/item/clothing/accessory/department/espatier/jackettags/service
 	color = "#6eaa2c"
 
-/obj/item/clothing/accessory/department/espatier/service/command
+//ISEO Jacket Tags
+/obj/item/clothing/accessory/department/iseo/jackettags
+	name = "iseo jacket department stripes"
+	desc = "A set of colored, velcro-backed strips intended to attach to an ISEO jacket."
+	icon = 'maps/torch/icons/converted_icons/accessories/iseo_jacket_tags.dmi'
+
+/obj/item/clothing/accessory/department/iseo/jackettags/engineering
+	color = "#ff7f00"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/security
+	color = "#bf0000"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/command
+	color = "#e5ea4f"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/supply
+	color = "#bb9042"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/exploration
+	color = "#68099e"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/medical
+	color = "#4c9ce4"
+
+/obj/item/clothing/accessory/department/iseo/jackettags/service
+	color = "#6eaa2c"
+
+/obj/item/clothing/accessory/department/espatier/jackettags/command
 	name = "service jacket command pips"
 	desc = "A set of gold pips intended to attach to an espatier service jacket."
 	icon = 'maps/torch/icons/converted_icons/accessories/service_jacket_tags_command_espatier.dmi'

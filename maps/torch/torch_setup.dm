@@ -5,15 +5,15 @@
 
 /datum/map/torch/get_map_info()
 	. = list()
-	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", an Expeditionary Corps starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
-	. +=  "The vessel is staffed with a mix of SCG government personnel and hired contractors."
-	. +=  "This area of space is uncharted, away from SCG territory. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
+	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", an ISEO Starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
+	. +=  "The vessel is staffed with a mix of ISEO Personnel, and military personnel under the command of the ISEO."
+	. +=  "This area of space is uncharted, far, far away from Sol. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
 	var/obj/effect/overmap/visitable/ship/torch = SSshuttle.ship_by_type(/obj/effect/overmap/visitable/ship/torch)
 
-	var/welcome_text = "<center><img src = sollogo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = iseologo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[torch ? system_name() : "Unknown"]</b><br /><br>"
 
@@ -21,7 +21,7 @@
 		var/list/space_things = list()
 		welcome_text += "Current Coordinates:<br /><b>[torch.x]:[torch.y]</b><br /><br>"
 		welcome_text += "Next system targeted for jump:<br /><b>[generate_system_name()]</b><br /><br>"
-		welcome_text += "Travel time to Sol:<br /><b>[rand(15,45)] days</b><br /><br>"
+		welcome_text += "Travel time to Sol:<br /><b>[rand(65,78)] days</b><br /><br>"
 		welcome_text += "Time since last port visit:<br /><b>[rand(60,180)] days</b><br /><hr>"
 		welcome_text += "Scan results show the following points of interest:<br />"
 

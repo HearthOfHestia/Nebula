@@ -42,8 +42,6 @@
 	#include "machinery\rtg.dm"
 
 	#include "datums/uniforms.dm"
-	#include "datums/uniforms_expedition.dm"
-	#include "datums/uniforms_fleet.dm"
 	#include "datums/game_modes/torch_traitor.dm"
 	#include "datums/game_modes/torch_revolution.dm"
 	#include "datums/game_modes/torch_siege.dm"
@@ -79,7 +77,6 @@
 	#include "items/manuals.dm"
 	#include "items/stamps.dm"
 	#include "items/uniform_vendor.dm"
-	#include "items/rigs.dm"
 	#include "items/solbanner.dm"
 	#include "items/explo_shotgun.dm"
 	#include "items/mecha.dm"
@@ -103,6 +100,8 @@
 	#include "items/weapon/storage/wallets.dm"
 
 	#include "items/unsorted_missing.dm"
+
+	#include "items/hearth_spacesuits.dm"
 
 	#include "job/torch_access.dm"
 	#include "job/torch_jobs.dm"
@@ -129,9 +128,6 @@
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
 	#include "job/outfits/unused_outfits.dm"
-
-	//#include "language/human/euro.dm"
-	//#include "language/human/misc/spacer.dm"
 
 	#include "machinery/apc_shuttle.dm"
 	#include "machinery/faxmachine.dm"
@@ -175,6 +171,7 @@
 	#include "items\hearth_clothing\hats_espatier.dm"
 	#include "items\hearth_clothing\attachments.dm"
 	#include "items\hearth_clothing\armor.dm"
+	#include "items\clothing_bags.dm"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"

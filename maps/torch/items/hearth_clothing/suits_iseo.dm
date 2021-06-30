@@ -1,3 +1,33 @@
+// 
+// Utility
+// 
+
+/obj/item/clothing/suit/iseo/utility
+	name = "utility jacket"
+	desc = "A rugged, navy blue jacket for casual wear."
+	icon = 'maps/torch/icons/converted_icons/suits/iseo_jacket.dmi'
+
+/obj/item/clothing/suit/iseo/utility/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/engineering)
+
+/obj/item/clothing/suit/iseo/utility/security
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/security)
+
+/obj/item/clothing/suit/iseo/utility/medical
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/medical)
+
+/obj/item/clothing/suit/iseo/utility/command
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/command)
+
+/obj/item/clothing/suit/iseo/utility/science
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/exploration)
+
+/obj/item/clothing/suit/iseo/utility/service
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/service)
+
+/obj/item/clothing/suit/iseo/utility/supply
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/jackettags/supply)
+
 //
 // Service
 //
@@ -36,6 +66,6 @@
 	desc = "A dark navy blue dress jacket, typically used in formal occasions. Fitted for both sexes. This one has gold highlights."
 	icon = 'maps/torch/icons/converted_icons/suits/suit_dress_command_iseo.dmi'
 
-/obj/item/clothing/suit/iseo/dress/command
+/obj/item/clothing/suit/iseo/dress/flag
 	desc = "A dark navy blue dress jacket, typically used in formal occasions. Fitted for both sexes. This one has red highlights."
 	icon = 'maps/torch/icons/converted_icons/suits/suit_dress_flag_iseo.dmi'

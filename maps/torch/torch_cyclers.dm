@@ -27,3 +27,21 @@
 	suit = /obj/item/clothing/suit/space/void/mining
 	helmet = /obj/item/clothing/head/helmet/space/void/mining
 	boots = /obj/item/clothing/shoes/magboots
+
+/obj/machinery/suit_cycler/command/prepared
+	buildable = FALSE
+	suit = /obj/item/clothing/suit/space/void/command
+	helmet = /obj/item/clothing/head/helmet/space/void/command
+	boots = /obj/item/clothing/shoes/magboots
+
+/obj/machinery/suit_cycler/excavation/prepared
+	buildable = FALSE
+	suit = /obj/item/clothing/suit/space/void/excavation
+	helmet = /obj/item/clothing/head/helmet/space/void/excavation
+	boots = /obj/item/clothing/shoes/magboots
+
+/obj/machinery/suit_cycler/exploration/prepared
+	buildable = FALSE
+	suit = /obj/item/clothing/suit/space/void/excavation
+	helmet = /obj/item/clothing/head/helmet/space/void/excavation
+	boots = /obj/item/clothing/shoes/magboots

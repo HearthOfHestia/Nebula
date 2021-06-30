@@ -5781,6 +5781,7 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_cycler/excavation/prepared,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/eva)
 "tK" = (
@@ -11962,6 +11963,7 @@
 /area/maintenance/fourthdeck/forestarboard)
 "Od" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_cycler/excavation/prepared,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/eva)
 "Oe" = (

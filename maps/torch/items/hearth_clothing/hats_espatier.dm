@@ -22,8 +22,8 @@
 // 
 
 /obj/item/clothing/head/espatier/garrison_cap
-	name = "white garrison cap"
-	desc = "A white garrison cap, typically used in semi-formal situations."
+	name = "green garrison cap"
+	desc = "A green garrison cap, typically used in semi-formal situations."
 	icon = 'maps/torch/icons/converted_icons/head/garrison_cap_espatier.dmi'
 
 // 
@@ -32,11 +32,11 @@
 
 /obj/item/clothing/head/espatier/wheel_cap
 	name = "wheel cap"
-	desc = "A white wheel cap, typically used in formal occasions."
+	desc = "A green wheel cap, typically used in formal occasions."
 	icon = 'maps/torch/icons/converted_icons/head/wheel_cap_espatier.dmi'
 
 /obj/item/clothing/head/espatier/wheel_cap/command
-	desc = "A white wheel cap, typically used in formal occasions. This one has gold highlights."
+	desc = "A green wheel cap, typically used in formal occasions. This one has gold highlights."
 	icon = 'maps/torch/icons/converted_icons/head/wheel_cap_command_espatier.dmi'
 
 // 
@@ -82,3 +82,7 @@
 	name = "black exploration beret"
 	desc = "A plain black beret, typically used as a fashion statement with semi-formal uniforms or casual use. This one has a purple-colored insignia on it."
 	icon = 'maps/torch/icons/converted_icons/head/berets/beret_exploration_espatier.dmi'
+
+/obj/item/clothing/head/beret/espatier
+	name = "dress beret"
+	color = COLOR_BLACK

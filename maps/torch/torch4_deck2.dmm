@@ -424,8 +424,8 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "aY" = (
-/obj/machinery/suit_cycler/science,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/suit_cycler/excavation/prepared,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "aZ" = (
@@ -2675,6 +2675,9 @@
 "fw" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/random_multi/single_item/punitelly,
+/obj/machinery/light/small{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/forestarboard)
 "fx" = (
@@ -2682,13 +2685,11 @@
 	icon_state = "mirror_broke";
 	pixel_x = 28
 	},
-/obj/structure/hygiene/sink{
-	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 5
+/obj/effect/floor_decal/corner/yellow/diagonal,
+/obj/structure/hygiene/toilet{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/forestarboard)
 "fy" = (
 /obj/structure/table/steel,
@@ -2729,21 +2730,17 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "fB" = (
-/obj/effect/floor_decal/corner/yellow/diagonal,
-/obj/machinery/alarm{
-	dir = 1;
-	pixel_y = -22
+/obj/machinery/door/airlock/civilian{
+	name = "Auxiliary Head"
 	},
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/forestarboard)
+"fC" = (
 /obj/effect/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
-/turf/simulated/floor/tiled/freezer,
-/area/maintenance/seconddeck/forestarboard)
-"fC" = (
-/obj/machinery/vending/lavatory,
-/obj/effect/floor_decal/corner/yellow/diagonal,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fD" = (
 /obj/structure/table/steel,
@@ -6024,6 +6021,10 @@
 /area/maintenance/seconddeck/aftport)
 "no" = (
 /obj/machinery/ftl_shunt/core,
+/obj/structure/cable/cyan{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/bluegrid,
 /area/engineering/bluespace)
 "np" = (
@@ -6453,17 +6454,15 @@
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "oq" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/hygiene/shower{
-	pixel_y = 24
-	},
 /obj/structure/hygiene/shower{
 	pixel_y = 24
 	},
 /obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/yellow/diagonal,
+/turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/forestarboard)
 "or" = (
 /obj/effect/floor_decal/industrial/warning/corner,
@@ -8100,7 +8099,7 @@
 "rS" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/airlock/glass/civilian{
+/obj/machinery/door/airlock/glass/engineering{
 	name = "Ladderwell"
 	},
 /turf/simulated/floor/tiled/monotile,
@@ -16640,6 +16639,11 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/bluespace)
 "NZ" = (
@@ -18558,7 +18562,6 @@
 /area/rnd/xenobiology)
 "SQ" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
-/obj/random/junk,
 /obj/structure/hygiene/toilet,
 /turf/simulated/floor/tiled/freezer,
 /area/maintenance/seconddeck/forestarboard)
@@ -19516,13 +19519,6 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/seconddeck/fore)
-"Wi" = (
-/obj/effect/floor_decal/corner/yellow/diagonal,
-/obj/machinery/door/airlock/civilian{
-	name = "Shower"
-	},
-/turf/simulated/floor/tiled/freezer,
-/area/maintenance/seconddeck/forestarboard)
 "Wj" = (
 /obj/machinery/embedded_controller/radio/airlock/access_controller{
 	dir = 1;
@@ -36566,7 +36562,7 @@ bd
 hM
 bd
 bd
-bd
+fC
 bd
 bI
 ZS
@@ -36766,7 +36762,7 @@ Pf
 DH
 be
 sV
-sV
+fB
 sV
 fv
 sV
@@ -36971,7 +36967,7 @@ XP
 oq
 sV
 fw
-fB
+sV
 bI
 fR
 gm
@@ -37171,9 +37167,9 @@ vO
 jq
 XP
 SQ
-Wi
+ce
 fx
-fC
+sV
 bI
 fV
 xj

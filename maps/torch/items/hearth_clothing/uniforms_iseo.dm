@@ -16,6 +16,27 @@
 	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_iseo.dmi'
 
+/obj/item/clothing/under/iseo/utility/command
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/command)
+
+/obj/item/clothing/under/iseo/utility/security
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/security)
+
+/obj/item/clothing/under/iseo/utility/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/engineering)
+
+/obj/item/clothing/under/iseo/utility/supply
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/supply)
+
+/obj/item/clothing/under/iseo/utility/science
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/exploration)
+
+/obj/item/clothing/under/iseo/utility/medical
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/medical)
+
+/obj/item/clothing/under/iseo/utility/service
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/service)
+
 /obj/item/clothing/under/iseo/utility/alt
 	name = "combat fatigues"
 	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant. Typically used in hostile enviroments."

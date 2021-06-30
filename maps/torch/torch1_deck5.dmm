@@ -3949,7 +3949,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "jE" = (
-/obj/machinery/suit_cycler/exploration,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
 	dir = 2;
@@ -3963,6 +3962,7 @@
 	dir = 4;
 	icon_state = "camera"
 	},
+/obj/machinery/suit_cycler/exploration/prepared,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "jF" = (
@@ -4311,8 +4311,8 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "ko" = (
-/obj/machinery/suit_cycler/exploration,
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/suit_cycler/exploration/prepared,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kp" = (
@@ -4559,7 +4559,6 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kM" = (
-/obj/machinery/suit_cycler/exploration,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	dir = 4;
@@ -4567,12 +4566,13 @@
 	pixel_x = -32;
 	pixel_y = 0
 	},
+/obj/machinery/suit_cycler/exploration/prepared,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kP" = (
-/obj/machinery/suit_cycler/exploration,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
+/obj/machinery/suit_cycler/exploration/prepared,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kQ" = (
@@ -4591,6 +4591,7 @@
 /obj/item/clothing/mask/gas/half,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
+/obj/item/rig/exploration/equipped,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kR" = (

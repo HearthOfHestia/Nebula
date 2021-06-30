@@ -29,65 +29,63 @@
 	var/dress_gloves = null
 	var/dress_extra = null
 
-/decl/hierarchy/mil_uniform/ec
-	name = "Master EC outfit"
-	hierarchy_type = /decl/hierarchy/mil_uniform/ec
+/decl/hierarchy/mil_uniform/iseo
+	name = "Master ISEO outfit"
+	hierarchy_type = /decl/hierarchy/mil_uniform/iseo
 	
 
-	pt_under = /obj/item/clothing/under/solgov/pt/expeditionary
+	pt_under = /obj/item/clothing/under/iseo/pt
 	pt_shoes = /obj/item/clothing/shoes/color/black
 
-	utility_under = /obj/item/clothing/under/solgov/utility/expeditionary
+	utility_under = /obj/item/clothing/under/iseo/utility
 	utility_shoes = /obj/item/clothing/shoes/jackboots/duty
-	utility_hat = /obj/item/clothing/head/soft/solgov/expedition
+	utility_hat = /obj/item/clothing/head/iseo/utility
 	utility_extra = list(
-		/obj/item/clothing/head/beret/solgov/expedition,
-		/obj/item/clothing/head/ushanka/solgov,
-		/obj/item/clothing/suit/storage/hooded/wintercoat/solgov//,
-		///obj/item/clothing/shoes/jackboots/unathi
+		/obj/item/clothing/head/iseo/beret
 	)
-	service_under = /obj/item/clothing/under/solgov/service/expeditionary
-	service_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt
-	service_over = /obj/item/clothing/suit/storage/solgov/service/expeditionary
+	service_under = /obj/item/clothing/under/iseo/service/uniform
+	service_skirt = /obj/item/clothing/under/iseo/service/skirt
+	service_over = /obj/item/clothing/suit/iseo/service
 	service_shoes = /obj/item/clothing/shoes/dress
-	service_hat = /obj/item/clothing/head/solgov/service/expedition
+	service_hat = /obj/item/clothing/head/iseo/garrison_cap
 
-	dress_under = /obj/item/clothing/under/solgov/service/expeditionary
-	dress_skirt = /obj/item/clothing/under/solgov/service/expeditionary/skirt
-	dress_over = /obj/item/clothing/suit/storage/solgov/dress/expedition
+	dress_under = /obj/item/clothing/under/iseo/service/uniform
+	dress_skirt = /obj/item/clothing/under/iseo/service/skirt
+	dress_over = /obj/item/clothing/suit/iseo/dress
 	dress_shoes = /obj/item/clothing/shoes/dress
-	dress_hat = /obj/item/clothing/head/solgov/service/expedition
+	dress_hat = /obj/item/clothing/head/iseo/wheel_cap
 	dress_gloves = /obj/item/clothing/gloves/color/white
 
-	dress_extra = list(/obj/item/clothing/accessory/solgov/ec_scarf)
-
-/decl/hierarchy/mil_uniform/fleet
-	name = "Master fleet outfit"
-	hierarchy_type = /decl/hierarchy/mil_uniform/fleet
+/decl/hierarchy/mil_uniform/espatier
+	name = "Master Espatier outfit"
+	hierarchy_type = /decl/hierarchy/mil_uniform/espatier
 
 
-	pt_under = /obj/item/clothing/under/solgov/pt/fleet
+	pt_under = /obj/item/clothing/under/espatier/pt
 	pt_shoes = /obj/item/clothing/shoes/color/black
 
-	utility_under = /obj/item/clothing/under/solgov/utility/fleet
+	utility_under = /obj/item/clothing/under/espatier/utility
 	utility_shoes = /obj/item/clothing/shoes/jackboots/duty
-	utility_hat = /obj/item/clothing/head/solgov/utility/fleet
-	utility_extra = list(/obj/item/clothing/head/beret/solgov/fleet, /obj/item/clothing/head/ushanka/solgov/fleet, /obj/item/clothing/suit/storage/hooded/wintercoat/solgov/fleet,/obj/item/clothing/head/soft/solgov/fleet)
+	utility_hat = /obj/item/clothing/head/espatier/utility
+	utility_extra = list(
+		/obj/item/clothing/head/espatier/beret,
+		/obj/item/clothing/suit/espatier/jacket
+		)
 
-	service_under = /obj/item/clothing/under/solgov/service/fleet
-	service_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
+	service_under = /obj/item/clothing/under/espatier/service/uniform
+	service_skirt = /obj/item/clothing/under/espatier/service/skirt
 	service_over = null
 	service_shoes = /obj/item/clothing/shoes/dress
-	service_hat = /obj/item/clothing/head/solgov/dress/fleet/garrison
+	service_hat = /obj/item/clothing/head/espatier/garrison_cap
 
-	dress_under = /obj/item/clothing/under/solgov/service/fleet
-	dress_skirt = /obj/item/clothing/under/solgov/service/fleet/skirt
-	dress_over = /obj/item/clothing/suit/dress/solgov/fleet/sailor
+	dress_under = /obj/item/clothing/under/espatier/dress/uniform
+	dress_skirt = /obj/item/clothing/under/espatier/dress/skirt
+	dress_over = /obj/item/clothing/suit/espatier/dress
 	dress_shoes = /obj/item/clothing/shoes/dress
-	dress_hat = /obj/item/clothing/head/solgov/dress/fleet
+	dress_hat = /obj/item/clothing/head/espatier/wheel_cap
 	dress_gloves = /obj/item/clothing/gloves/color/white
 
-	dress_extra = list(/obj/item/clothing/head/beret/solgov/fleet/dress)
+	dress_extra = list(/obj/item/clothing/head/beret/espatier)
 
 /decl/hierarchy/mil_uniform/civilian
 	name = "Master civilian outfit"		//Basically just here for the rent-a-tux, ahem, I mean... dress uniform.

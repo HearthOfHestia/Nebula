@@ -85,3 +85,7 @@
 	name = "navy exploration beret"
 	desc = "A plain navy blue beret, typically used as a fashion statement with semi-formal uniforms or casual use. This one has a purple-colored insignia on it."
 	icon = 'maps/torch/icons/converted_icons/head/berets/beret_exploration_iseo.dmi'
+
+/obj/item/clothing/head/beret/iseo
+	name = "dress beret"
+	color = COLOR_WHITE

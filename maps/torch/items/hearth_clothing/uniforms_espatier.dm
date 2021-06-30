@@ -14,6 +14,27 @@
 	desc = "A set of green fatigues made from sturdy, durable synthetic fibers. Mildly flash and stain resistant. Tailored for forested climates."
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_green_espatiers.dmi'
 
+/obj/item/clothing/under/espatier/utility/command
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/command)
+
+/obj/item/clothing/under/espatier/utility/security
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/security)
+
+/obj/item/clothing/under/espatier/utility/medical
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/medical)
+
+/obj/item/clothing/under/espatier/utility/engineering
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/engineering)
+
+/obj/item/clothing/under/espatier/utility/supply
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/supply)
+
+/obj/item/clothing/under/espatier/utility/service
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/service)
+
+/obj/item/clothing/under/espatier/utility/science
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/exploration)
+
 /obj/item/clothing/under/iseo/utility/alt
 	name = "tan utility fatigues"
 	desc = "A set of tan fatigues made from sturdy, durable synthetic fibers. Mildly flash and stain resistant. Tailored for arid climates."
