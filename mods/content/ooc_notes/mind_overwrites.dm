@@ -1,2 +1,2 @@
 /datum/mind
-    var/ooc_notes
+	var/ooc_notes

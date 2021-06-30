@@ -30,5 +30,9 @@
 
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 	..()
-	if(character.mind)
-		character.mind.ooc_notes = ooc_notes
+	addtimer(CALLBACK(src, .proc/copy_ooc_notes), 5 SECONDS)
+
+/datum/preferences/proc/copy_ooc_notes()
+	for(var/datum/mind/M in SSticker.minds) //Need to iterate minds, unfortunately.
+		if(lowertext(M.key) == client_ckey)
+			M.ooc_notes = ooc_notes
