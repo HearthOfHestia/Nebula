@@ -51,6 +51,7 @@ Civilian
 		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/civ/contractor
 	)
+	selection_color = "#254c25"
 
 /datum/job/merchant
 	title = "Merchant"
@@ -81,3 +82,4 @@ Civilian
 	skill_points = 24
 	required_language = null
 	give_psionic_implant_on_join = FALSE
+	selection_color = "#254c25"

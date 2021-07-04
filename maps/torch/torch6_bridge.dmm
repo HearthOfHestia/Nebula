@@ -1172,14 +1172,8 @@
 /area/crew_quarters/heads/office/xo)
 "cp" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 8;
-	pixel_y = -3
-	},
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "cq" = (
@@ -3478,7 +3472,7 @@
 	req_access = list("ACCESS_MAINT")
 	},
 /turf/simulated/floor/reinforced/airless,
-/area/space)
+/area/hallway/primary/bridge/aft)
 "go" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -5052,14 +5046,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -5;
-	pixel_y = 5
-	},
 /obj/random_multi/single_item/summarydocuments/sol,
 /obj/random_multi/single_item/summarydocuments/sup,
 /obj/random_multi/single_item/summarydocuments/med,
 /obj/structure/network_cable,
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
 /turf/simulated/floor/tiled/dark,
 /area/bridge)
 "lu" = (
@@ -8473,11 +8464,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 11;
-	pixel_y = 1
-	},
-/obj/item/tableflag,
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "uT" = (
@@ -8903,9 +8890,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
 "wg" = (
-/obj/item/tableflag{
-	pixel_x = 4
-	},
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10;
 	icon_state = "corner_white"
@@ -9070,6 +9054,10 @@
 	id_tag = "solar_bridge_outer";
 	locked = 1;
 	name = "Engineering External Access"
+	},
+/obj/machinery/button/access/exterior{
+	id_tag = "solar_bridge_airlock";
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/bridge/aftport)
@@ -10439,6 +10427,9 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
+"Bl" = (
+/turf/simulated/floor/reinforced/airless,
+/area/hallway/primary/bridge/aft)
 "Bp" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
@@ -11310,16 +11301,13 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 3;
-	pixel_y = 0
-	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
 	icon_state = "1-4"
 	},
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/office/co)
 "Fn" = (
@@ -13222,7 +13210,6 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "NN" = (
-/obj/item/tableflag,
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -32313,7 +32300,7 @@ bD
 ad
 ad
 ad
-ad
+Bl
 gV
 hJ
 hJ
@@ -32515,7 +32502,7 @@ ad
 ad
 ad
 ad
-ad
+Bl
 gX
 hK
 is

@@ -11,7 +11,7 @@
 	department_types = list(/decl/department/security)
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps,
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/security/brig_chief/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t4,
@@ -40,6 +40,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	selection_color = COMMS_COLOR_SECURITY
 
 /datum/job/detective
 	title = "Forensic Technician"
@@ -58,15 +59,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/contractor,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/espatier/e4,
-		/datum/mil_rank/espatier/e5,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/espatier/e5
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -91,6 +90,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	selection_color = COMMS_COLOR_SECURITY
 
 /datum/job/officer
 	title = "Master at Arms"
@@ -106,7 +106,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/security/maa
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/security/maa/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t2,
@@ -137,3 +137,4 @@
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
+	selection_color = COMMS_COLOR_SECURITY

@@ -428,6 +428,14 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 	req_access = list(access_opportunity)
 
+/area/curiosity_hangar/start
+	name = "\improper Curiosity"
+	icon_state = "shuttlered"
+	requires_power = 1
+	dynamic_lighting = 1
+	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
+	req_access = list(access_curiosity)
+
 /area/rnd/xenoarch
 	req_access = list(access_research, access_xenoarch)
 
@@ -642,7 +650,7 @@
 
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
-	name = "\improper Command - SCGR's Office"
+	name = "\improper Command - NCR's Office"
 	req_access = list(access_representative)
 
 /area/crew_quarters/heads/office/sea

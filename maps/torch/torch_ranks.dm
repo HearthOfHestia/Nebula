@@ -239,7 +239,15 @@
 		/datum/mil_rank/government/scientist
 	)
 
-/datum/mil_rank/grade()
+/datum/mil_rank/sc/grade()
+	. = ..()
+	if(!sort_order)
+		return ""
+	if(sort_order <= 10)
+		return "T[sort_order]"
+	return "S[sort_order - 10]"
+
+/datum/mil_rank/espatier/grade()
 	. = ..()
 	if(!sort_order)
 		return ""

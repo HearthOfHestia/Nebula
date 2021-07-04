@@ -172,6 +172,12 @@
 	#include "items\hearth_clothing\attachments.dm"
 	#include "items\hearth_clothing\armor.dm"
 	#include "items\clothing_bags.dm"
+	#include "datums\license_decls.dm"
+	#include "datums\music\heard_of_a_place.dm"
+	#include "datums\music\ram_it_up_their_snout.dm"
+	#include "datums\music\nearest_starbase.dm"
+	#include "datums\music\lonely_satelite.dm"
+	#include "datums\music\into_hyperspace.dm"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"

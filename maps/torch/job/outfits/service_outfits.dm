@@ -6,57 +6,57 @@
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Torch")
 	uniform = /obj/item/clothing/under/janitor
 	shoes = /obj/item/clothing/shoes/color/black
-	//id_types = list(/obj/item/card/id/torch/crew/service/janitor)
+	id_type = /obj/item/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/torch/crew/service/janitor/ec
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
+/decl/hierarchy/outfit/job/torch/crew/service/janitor/iseo
+	name = OUTFIT_JOB_NAME("Sanitation Technician - ISEO")
+	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew/service/janitor)
+	id_type = /obj/item/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/torch/crew/service/janitor/fleet
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
+/decl/hierarchy/outfit/job/torch/crew/service/janitor/espatier
+	name = OUTFIT_JOB_NAME("Sanitation Technician - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook
 	name = OUTFIT_JOB_NAME("Cook - Torch")
 	uniform = /obj/item/clothing/under/chef
 	shoes = /obj/item/clothing/shoes/color/black
-	//id_types = list(/obj/item/card/id/torch/crew/service/chef)
+	id_type = /obj/item/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/torch/crew/service/cook/ec
-	name = OUTFIT_JOB_NAME("Cook - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/service
+/decl/hierarchy/outfit/job/torch/crew/service/cook/iseo
+	name = OUTFIT_JOB_NAME("Cook - ISEO")
+	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew/service/chef)
+	id_type = /obj/item/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/torch/crew/service/cook/fleet
-	name = OUTFIT_JOB_NAME("Cook - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
+/decl/hierarchy/outfit/job/torch/crew/service/cook/espatier
+	name = OUTFIT_JOB_NAME("Cook - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/crew/service/bartender
 	name = OUTFIT_JOB_NAME("Bartender - Torch")
 	uniform = /obj/item/clothing/under/bartender
 	shoes = /obj/item/clothing/shoes/dress
-	//id_types = list(/obj/item/card/id/torch/contractor/service/bartender)
+	id_type = /obj/item/card/id/torch/contractor/service/bartender
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	name = OUTFIT_JOB_NAME("Crewman")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary
+	uniform = /obj/item/clothing/under/iseo/utility
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew)
+	id_type = /obj/item/card/id/torch/crew
 	pda_type = /obj/item/modular_computer/pda
 
-/decl/hierarchy/outfit/job/torch/crew/service/crewman/fleet
-	name = OUTFIT_JOB_NAME("Crewman - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet
+/decl/hierarchy/outfit/job/torch/crew/service/crewman/espatier
+	name = OUTFIT_JOB_NAME("Crewman - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor
@@ -66,14 +66,14 @@
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	name = OUTFIT_JOB_NAME("Chaplain - Torch")
 	uniform = /obj/item/clothing/under/chaplain
-	//id_types = list(/obj/item/card/id/torch/crew/service/chaplain)
+	id_type = /obj/item/card/id/torch/crew/service/chaplain
 
-/decl/hierarchy/outfit/job/torch/crew/service/chaplain/ec
-	name = OUTFIT_JOB_NAME("Chaplain - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/service
+/decl/hierarchy/outfit/job/torch/crew/service/chaplain/iseo
+	name = OUTFIT_JOB_NAME("Chaplain - ISEO")
+	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
-/decl/hierarchy/outfit/job/torch/crew/service/chaplain/fleet
-	name = OUTFIT_JOB_NAME("Chaplain - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/service
+/decl/hierarchy/outfit/job/torch/crew/service/chaplain/espatier
+	name = OUTFIT_JOB_NAME("Chaplain - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty

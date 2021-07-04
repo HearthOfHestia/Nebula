@@ -21,13 +21,13 @@
 	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/security)
 
 /obj/item/clothing/under/espatier/utility/medical
-	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/medical)
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/medical, /obj/item/clothing/accessory/armband/medblue)
 
 /obj/item/clothing/under/espatier/utility/engineering
-	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/engineering)
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/engineering, /obj/item/clothing/accessory/armband/engine)
 
 /obj/item/clothing/under/espatier/utility/supply
-	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/supply)
+	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/supply, /obj/item/clothing/accessory/armband/cargo)
 
 /obj/item/clothing/under/espatier/utility/service
 	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/service)

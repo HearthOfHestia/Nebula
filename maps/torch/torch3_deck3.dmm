@@ -2421,8 +2421,8 @@
 /area/crew_quarters/mess)
 "fz" = (
 /obj/structure/sign/poster,
-/obj/effect/paint_stripe/common,
 /obj/effect/paint/eggshell,
+/obj/effect/paint_stripe/common,
 /turf/simulated/wall/map_preset/tan,
 /area/crew_quarters/head)
 "fB" = (

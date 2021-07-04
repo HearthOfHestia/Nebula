@@ -13,39 +13,33 @@
 
 /obj/item/clothing/under/iseo/utility
 	name = "utility fatigues"
-	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
+	desc = "A set of black fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_iseo.dmi'
 
 /obj/item/clothing/under/iseo/utility/command
+	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
+	icon = 'maps/torch/icons/converted_icons/under/under_utility_iseo_command.dmi'
 	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/command)
 
 /obj/item/clothing/under/iseo/utility/security
 	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/security)
 
 /obj/item/clothing/under/iseo/utility/engineering
-	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/engineering)
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/engineering, /obj/item/clothing/accessory/armband/engine)
 
 /obj/item/clothing/under/iseo/utility/supply
-	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/supply)
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/supply, /obj/item/clothing/accessory/armband/cargo)
 
 /obj/item/clothing/under/iseo/utility/science
 	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/exploration)
 
 /obj/item/clothing/under/iseo/utility/medical
-	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/medical)
+	desc = "A set of white fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Very stain resistant - and sterile."
+	icon = 'maps/torch/icons/converted_icons/under/under_utility_iseo_medical.dmi'
+	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/medical, /obj/item/clothing/accessory/armband/medblue)
 
 /obj/item/clothing/under/iseo/utility/service
 	starting_accessories = list(/obj/item/clothing/accessory/department/iseo/service)
-
-/obj/item/clothing/under/iseo/utility/alt
-	name = "combat fatigues"
-	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant. Typically used in hostile enviroments."
-	icon = 'maps/torch/icons/converted_icons/under/under_utility_alt_iseo.dmi'
-
-/obj/item/clothing/under/iseo/utility/alt2
-	name = "black utility fatigues"
-	desc = "A set of black fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
-	icon = 'maps/torch/icons/converted_icons/under/under_utility_alt_2_iseo.dmi'
 
 //
 // Service

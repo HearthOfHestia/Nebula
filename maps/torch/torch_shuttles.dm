@@ -285,18 +285,20 @@ TORCH_ESCAPE_POD(19)
 	location = 1
 	warmup_time = 10
 	shuttle_area = /area/supply/dock
+	dock_target = "supply_shuttle"
 	waypoint_offsite = "nav_cargo_start"
 	waypoint_station = "nav_cargo_station"
 
 /obj/effect/shuttle_landmark/supply/centcom
 	name = "Offsite"
+	docking_controller = "cargo_bay_centcom"
 	landmark_tag = "nav_cargo_start"
 
 /obj/effect/shuttle_landmark/supply/station
 	name = "Hangar"
 	landmark_tag = "nav_cargo_station"
-	base_area = /area/quartermaster/hangar
-	base_turf = /turf/simulated/floor/plating
+	docking_controller = "endeavour_dock"
+	base_turf = /turf/simulated/floor/reinforced/airless
 
 /datum/shuttle/autodock/overmap/exploration_shuttle
 	name = "Spirit"
@@ -428,3 +430,34 @@ TORCH_ESCAPE_POD(19)
 /obj/effect/shuttle_landmark/transit/torch/perseverance
 	name = "In transit"
 	landmark_tag = "nav_transit_perseverance"
+
+/datum/shuttle/autodock/overmap/curiosity
+	name = "Curiosity"
+	warmup_time = 5
+	move_time = 30
+	shuttle_area = /area/curiosity_hangar/start
+	dock_target ="curiosity"
+	current_location = "nav_hangar_curiosity"
+	landmark_transition = "nav_transit_curiosity"
+	sound_takeoff = 'sound/effects/rocket.ogg'
+	sound_landing = 'sound/effects/rocket_backwards.ogg'
+	fuel_consumption = 2
+	logging_home_tag = "nav_hangar_curiosity"
+	logging_access = access_curiosity_helm
+	skill_needed = SKILL_NONE
+	ceiling_type = /turf/simulated/floor/shuttle_ceiling/torch
+
+/obj/effect/shuttle_landmark/torch/hangar/curiosity
+	name = "Curiosity Hangar"
+	landmark_tag = "nav_hangar_curiosity"
+	base_turf = /turf/simulated/floor/plating
+	base_area = /area/quartermaster/hangar
+
+/obj/effect/shuttle_landmark/torch/transit/curiosity
+	name = "Curiosity Transit Point"
+	landmark_tag = "nav_transit_curiosity"
+
+/obj/effect/shuttle_landmark/torch/deck2/perseverance
+	name = "Space near Third Deck"
+	landmark_tag = "nav_deck2_perseverance"
+

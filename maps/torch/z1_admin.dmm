@@ -2541,14 +2541,6 @@
 	name = "plating"
 	},
 /area/centcom/suppy)
-"atS" = (
-/turf/unsimulated/wall{
-	desc = "That looks like it doesn't open easily.";
-	icon = 'icons/obj/doors/rapid_pdoor.dmi';
-	icon_state = "pdoor1";
-	name = "Shuttle Bay Blast Door"
-	},
-/area/centcom/suppy)
 "atU" = (
 /obj/structure/shuttle/engine/propulsion{
 	dir = 8;
@@ -2659,17 +2651,16 @@
 	},
 /area/centcom/living)
 "auo" = (
-/obj/effect/paint/silver,
-/turf/simulated/wall/r_titanium,
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "supply_shuttle_hatch"
+	},
+/turf/simulated/floor/plating,
 /area/supply/dock)
 "auq" = (
-/obj/structure/shuttle/engine/heater{
-	dir = 1;
-	icon_state = "heater"
+/obj/machinery/light/spot{
+	dir = 1
 	},
-/obj/structure/window/reinforced,
-/obj/effect/paint/silver,
-/turf/simulated/wall/r_titanium,
+/turf/simulated/floor/plating,
 /area/supply/dock)
 "aus" = (
 /obj/effect/decal/cleanable/blood,
@@ -2689,19 +2680,12 @@
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
 "auw" = (
-/obj/machinery/button/blast_door{
-	id_tag = "supply_shuttle";
-	name = "Supply Drone Shutter Control";
-	pixel_x = 0;
-	pixel_y = 0
-	},
 /obj/effect/paint/silver,
+/obj/effect/paint_stripe/supply,
 /turf/simulated/wall/r_titanium,
 /area/supply/dock)
 "auy" = (
-/obj/machinery/light/spot{
-	dir = 1
-	},
+/obj/machinery/light/spot,
 /turf/simulated/floor/plating,
 /area/supply/dock)
 "auz" = (
@@ -2786,11 +2770,8 @@
 	},
 /area/centcom/living)
 "auQ" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/blast/shutters{
-	dir = 4;
-	id_tag = "supply_shuttle";
-	name = "Supply Drone Shutters"
+/obj/structure/shuttle/engine/propulsion{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/supply/dock)
@@ -2833,7 +2814,11 @@
 	},
 /area/centcom/living)
 "auX" = (
-/obj/effect/shuttle_landmark/supply/centcom,
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	id_tag = "supply_shuttle";
+	pixel_y = 24;
+	tag_door = "supply_shuttle_hatch"
+	},
 /turf/simulated/floor/plating,
 /area/supply/dock)
 "auY" = (
@@ -3020,18 +3005,6 @@
 	icon_state = "white"
 	},
 /area/centcom/living)
-"avB" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	health = 1e+006
-	},
-/obj/structure/showcase{
-	desc = "A self-contained autopilot that controls supply drones.";
-	icon_state = "comm_server";
-	name = "Supply Drone Virtual Intelligence"
-	},
-/turf/simulated/floor/plating,
-/area/supply/dock)
 "avD" = (
 /obj/structure/lattice,
 /turf/space,
@@ -11469,6 +11442,15 @@
 	icon_state = "wood_broken4"
 	},
 /area/holodeck/source_temple)
+"gUm" = (
+/obj/machinery/door/airlock/external{
+	id_tag = "centcommcargo"
+	},
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/centcom/living)
 "hzB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11550,9 +11532,8 @@
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_cafe)
 "jlA" = (
-/obj/machinery/light/spot,
-/turf/simulated/floor/plating,
-/area/supply/dock)
+/turf/space,
+/area/centcom/suppy)
 "joZ" = (
 /obj/structure/fountain/mundane{
 	alpha = 204;
@@ -11809,6 +11790,10 @@
 	},
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_volleyball)
+"ohA" = (
+/obj/effect/shuttle_landmark/supply/centcom,
+/turf/simulated/floor/plating,
+/area/supply/dock)
 "olJ" = (
 /obj/effect/floor_decal/beach{
 	dir = 4;
@@ -11949,11 +11934,16 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
 "rxE" = (
-/obj/structure/shuttle/engine/propulsion{
-	dir = 1
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	id_tag = "cargo_bay_centcom";
+	pixel_y = 24;
+	tag_door = "centcommcargo"
 	},
-/turf/simulated/floor/plating,
-/area/supply/dock)
+/turf/unsimulated/floor{
+	icon_state = "plating";
+	name = "plating"
+	},
+/area/centcom/living)
 "rIb" = (
 /obj/structure/table/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
@@ -25998,7 +25988,7 @@ aab
 aab
 aab
 ath
-aub
+rxE
 aub
 ath
 auP
@@ -26200,8 +26190,8 @@ aab
 aab
 atx
 ath
-aua
-aua
+aub
+aub
 atx
 atx
 atx
@@ -26399,14 +26389,14 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-atR
-atR
-atR
-atR
-atR
+aaa
+aaa
+aaa
+gUm
+gUm
+aaa
+aaa
+aaa
 atR
 atR
 atR
@@ -26601,19 +26591,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-atR
-auo
-auw
-auQ
-auQ
+aaa
 auQ
 auw
 auo
-atR
-atR
+auo
+auw
+auQ
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -26803,19 +26793,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-rxE
-auo
+aaa
+auw
+auw
 auz
 auz
-auz
-auz
-auz
-auo
-auo
-atR
+auw
+auw
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -27005,19 +26995,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-rxE
+aaa
+auw
 auq
+auz
+auz
 auy
-auz
-auz
-auz
+auw
+aaa
 jlA
-auo
-auo
-atR
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -27207,19 +27197,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-rxE
-auq
-auz
-auz
+aaa
+auw
 auX
 auz
 auz
-avB
-auo
-atR
+auz
+auw
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -27409,19 +27399,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-rxE
-auo
+aaa
+auw
 auz
 auz
 auz
 auz
-auz
-auo
-auo
-atR
+auw
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -27611,19 +27601,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-atR
-auo
+aaa
 auw
-auQ
-auQ
-auQ
+auz
+ohA
+auz
+auz
 auw
-auo
-atR
-atR
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -27813,19 +27803,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atR
-atR
-atR
-atR
-atR
-atR
-atR
-atR
-atR
-atR
-atR
+aaa
+auw
+auz
+auz
+auz
+auz
+auw
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -28015,19 +28005,19 @@ aab
 aab
 aab
 aab
-aab
-atx
-atS
-atS
-atS
-atS
-atS
-atS
-atS
-atS
-atS
-atS
-atS
+aaa
+auw
+auz
+auz
+auz
+auz
+auw
+aaa
+jlA
+jlA
+jlA
+jlA
+jlA
 atx
 aab
 aab
@@ -28217,14 +28207,14 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aaa
+auw
+auz
+auz
+auz
+auz
+auw
+aaa
 aab
 aab
 aab
@@ -28419,14 +28409,14 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aaa
+auw
+auq
+auz
+auz
+auy
+auw
+aaa
 aab
 aab
 aab
@@ -28621,14 +28611,14 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aaa
+auw
+auw
+auw
+auw
+auw
+auw
+aaa
 aab
 aab
 aab
@@ -28823,14 +28813,14 @@ aab
 aab
 aab
 aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
-aab
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aab
 aab
 aab

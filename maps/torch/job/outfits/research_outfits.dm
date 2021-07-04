@@ -1,27 +1,27 @@
 /decl/hierarchy/outfit/job/torch/crew/research
 	name = OUTFIT_JOB_NAME("Research Assistant - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/research
+	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew/research)
+	id_type = /obj/item/card/id/torch/crew/research
 	pda_type = /obj/item/modular_computer/pda/science
 	l_ear = /obj/item/radio/headset/torchnanotrasen
 
 /decl/hierarchy/outfit/job/torch/crew/research/cso
 	name = OUTFIT_JOB_NAME("Chief Science Officer - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
+	uniform = /obj/item/clothing/under/iseo/utility/science
 	l_ear = /obj/item/radio/headset/heads/torchntdirector
-	//id_types = list(/obj/item/card/id/torch/silver/research)
+	id_type = /obj/item/card/id/torch/silver/research
 	pda_type = /obj/item/modular_computer/pda/heads/rd
 
 /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	name = OUTFIT_JOB_NAME("Senior Scientist - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
-	//id_types = list(/obj/item/card/id/torch/crew/research/senior_scientist)
+	uniform = /obj/item/clothing/under/iseo/utility/science
+	id_type = /obj/item/card/id/torch/crew/research/senior_scientist
 
 /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Expeditionary Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/officer/research
-	//id_types = list(/obj/item/card/id/torch/crew/research/scientist)
+	uniform = /obj/item/clothing/under/iseo/utility/science
+	id_type = /obj/item/card/id/torch/crew/research/scientist
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	name = OUTFIT_JOB_NAME("Research Assistant - SCG")

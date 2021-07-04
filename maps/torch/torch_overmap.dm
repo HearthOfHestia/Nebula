@@ -17,6 +17,7 @@
 		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),
 		"ITV Spiritus" = list("nav_hangar_gantry_torch_three"),
 		"SRV Venerable Catfish" = list("nav_verne_5"), //docking location for verne shuttle
+		"Curiosity" = list("nav_hangar_curiosity")
 	)
 
 	initial_generic_waypoints = list(
@@ -96,8 +97,19 @@
 
 /obj/effect/overmap/visitable/ship/landable/opportunity
 	name = "Opportunity"
-	desc = "An SSE-U3 utility pod, broadcasting ISEO codes and the callsign \"Torch-3 Opportunity\"."
+	desc = "An SSE-U3 utility pod, broadcasting ISEO codes and the callsign \"Endeavour-3 Opportunity\"."
 	shuttle = "Opportunity"
+	max_speed = 1/(3 SECONDS)
+	burn_delay = 2 SECONDS
+	vessel_mass = 3000 //very inefficient pod
+	fore_dir = SOUTH
+	skill_needed = SKILL_BASIC
+	vessel_size = SHIP_SIZE_TINY
+
+/obj/effect/overmap/visitable/ship/landable/curiosity
+	name = "Curiosity"
+	desc = "A C.A.M.P.E.R.V.A.N Pod broadcasting ISEO codes and the callsign \"Endeavour-5 Curiosity\"."
+	shuttle = "Curiosity"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
 	vessel_mass = 3000 //very inefficient pod
@@ -119,6 +131,11 @@
 	name = "Opportunity control console"
 	shuttle_tag = "Opportunity"
 	req_access = list(access_opportunity_helm)
+
+/obj/machinery/computer/shuttle_control/explore/curiosity
+	name = "Curiosity control console"
+	shuttle_tag = "Curiosity"
+	req_access = list(access_curiosity_helm)
 
 /*
 /obj/effect/overmap/visitable/ship/torch/Initialize()

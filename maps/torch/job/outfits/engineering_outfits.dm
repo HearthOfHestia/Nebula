@@ -10,52 +10,52 @@
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	name = OUTFIT_JOB_NAME("Senior Engineer")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
+	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew/engineering/senior)
+	id_type = /obj/item/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 
-/decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/fleet
-	name = OUTFIT_JOB_NAME("Senior Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
+/decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/espatier
+	name = OUTFIT_JOB_NAME("Senior Engineer - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Engineer - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
+	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/crew/engineering)
+	id_type = /obj/item/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 
-/decl/hierarchy/outfit/job/torch/crew/engineering/engineer/fleet
-	name = OUTFIT_JOB_NAME("Engineer - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
+/decl/hierarchy/outfit/job/torch/crew/engineering/engineer/espatier
+	name = OUTFIT_JOB_NAME("Engineer - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	name = OUTFIT_JOB_NAME("Engineering Assistant")
 	uniform = /obj/item/clothing/under/engineer
 	shoes = /obj/item/clothing/shoes/workboots
-	//id_types = list(/obj/item/card/id/torch/contractor/engineering)
+	id_type = /obj/item/card/id/torch/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	name = OUTFIT_JOB_NAME("Roboticist - Contractor")
 	uniform = /obj/item/clothing/under/roboticist
 	shoes = /obj/item/clothing/shoes/color/black
-	//id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
+	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
 
-/decl/hierarchy/outfit/job/torch/crew/engineering/roboticistec
+/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/iseo
 	name = OUTFIT_JOB_NAME("Roboticist - Torch")
-	uniform = /obj/item/clothing/under/solgov/utility/expeditionary/engineering
+	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	//id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
+	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
 
-/decl/hierarchy/outfit/job/torch/crew/engineering/roboticistfleet
-	name = OUTFIT_JOB_NAME("Roboticist - Fleet")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/engineering
-	//id_types = list(/obj/item/card/id/torch/contractor/engineering/roboticist)
+/decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/espatier
+	name = OUTFIT_JOB_NAME("Roboticist - Espatier")
+	uniform = /obj/item/clothing/under/espatier/utility/engineering
+	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	pda_type = /obj/item/modular_computer/pda/roboticist

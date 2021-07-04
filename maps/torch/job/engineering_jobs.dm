@@ -4,7 +4,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief Engineer"
-	selection_color = "#5b4d20"
+	selection_color = COMMS_COLOR_ENGINEER
 	economic_power = 7
 	minimal_player_age = 3
 	minimum_character_age = list(SPECIES_HUMAN = 27)
@@ -13,7 +13,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t4,
@@ -56,6 +56,7 @@
 	supervisors = "the Chief Engineer"
 	economic_power = 5
 	minimal_player_age = 0
+	selection_color = COMMS_COLOR_ENGINEER
 	minimum_character_age = list(SPECIES_HUMAN = 19)
 	department_types = list(/decl/department/engineering)
 	ideal_character_age = 30
@@ -68,7 +69,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
@@ -116,14 +117,14 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Chief Engineer and Engineering Personnel"
-	selection_color = "#5b4d20"
+	selection_color = COMMS_COLOR_ENGINEER
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
@@ -172,14 +173,14 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	department_types = list(/decl/department/engineering, /decl/department/science)
 	supervisors = "the Chief Engineer."
-	selection_color = "#5b4d20"
+	selection_color = COMMS_COLOR_ENGINEER
 	economic_power = 6
 	alt_titles = list(
 		"Mechsuit Technician")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	allowed_branches = list(
-		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticistec,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/iseo_issc,
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s2,

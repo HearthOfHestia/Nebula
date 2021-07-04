@@ -7,22 +7,20 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Chief Medical Officer"
-	selection_color = "#013d3b"
+	selection_color = COMMS_COLOR_MEDICAL
 	economic_power = 10
 	alt_titles = list(
 		"Surgeon")
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
+		/datum/mil_branch/espatier_corps
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s2,
 		/datum/mil_rank/sc/s3,
 		/datum/mil_rank/espatier/o2,
 		/datum/mil_rank/espatier/o3,
-		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -58,13 +56,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/senior
+		/datum/mil_branch/espatier_corps
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s1,
 		/datum/mil_rank/espatier/o1,
-		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -85,6 +81,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
+	selection_color = COMMS_COLOR_MEDICAL
 
 /datum/job/doctor
 	title = "Medical Technician"
@@ -102,15 +99,13 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps,
-		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/medical/contractor
+		/datum/mil_branch/espatier_corps
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/espatier/e3,
-		/datum/mil_rank/espatier/e4,
-		/datum/mil_rank/civ/contractor
+		/datum/mil_rank/espatier/e4
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC,
@@ -131,6 +126,7 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 	skill_points = 22
+	selection_color = COMMS_COLOR_MEDICAL
 
 /datum/job/medical_trainee
 	title = "Trainee Medical Technician"
@@ -139,7 +135,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Medical personnel, and the Chief Medical Officer"
-	selection_color = "#013d3b"
+	selection_color = COMMS_COLOR_MEDICAL
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	alt_titles = list(
@@ -186,12 +182,12 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief Medical Officer, the Corporate Liaison and Medical Personnel"
-	selection_color = "#013d3b"
+	selection_color = COMMS_COLOR_MEDICAL
 	economic_power = 4
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 30
 	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/contractor/chemist
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/chemist
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
@@ -232,7 +228,7 @@
 	)
 
 	allowed_branches = list(
-		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/ec,
+		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(

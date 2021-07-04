@@ -40,6 +40,7 @@
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
+	selection_color = "#633d63"
 
 /datum/job/scientist
 	title = "Scientist"
@@ -69,14 +70,10 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/government,
 		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s1,
-		/datum/mil_rank/civ/civ = /decl/hierarchy/outfit/job/torch/passenger/research/scientist,
-		/datum/mil_rank/government/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/scientist/solgov
+		/datum/mil_rank/sc/s1
 	)
 
 	access = list(
@@ -89,6 +86,7 @@
 
 	minimal_access = list()
 	skill_points = 20
+	selection_color = "#633d63"
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
@@ -109,14 +107,10 @@
 
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research
 	allowed_branches = list(
-		/datum/mil_branch/civilian,
-		/datum/mil_branch/government,
 		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/t1,
-		/datum/mil_rank/civ/civ = /decl/hierarchy/outfit/job/torch/passenger/research/assist,
-		/datum/mil_rank/government/scientist = /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
+		/datum/mil_rank/sc/t1
 	)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,

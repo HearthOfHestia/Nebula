@@ -39,6 +39,7 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
+	selection_color = COMMS_COLOR_SUPPLY
 
 /datum/job/cargo_tech
 	title = "Deck Technician"
@@ -78,6 +79,7 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
+	selection_color = COMMS_COLOR_SUPPLY
 
 /datum/job/mining
 	title = "Prospector"
@@ -109,3 +111,4 @@
 	)
 
 	minimal_access = list()
+	selection_color = COMMS_COLOR_SUPPLY

@@ -11,8 +11,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/chaplain/ec,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/chaplain/iseo,
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/service/chaplain/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -29,6 +29,7 @@
 	)
 
 	minimal_access = list()
+	selection_color = COMMS_COLOR_SERVICE
 
 /datum/job/janitor
 	title = "Sanitation Technician"
@@ -43,8 +44,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/janitor
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/janitor/ec,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/janitor/iseo,
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/service/janitor/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -63,6 +64,7 @@
 	)
 
 	minimal_access = list()
+	selection_color = COMMS_COLOR_SERVICE
 
 /datum/job/chef
 	title = "Cook"
@@ -78,8 +80,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/cook
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
-		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/cook/ec,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/service/cook/iseo,
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/service/cook/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
@@ -101,11 +103,12 @@
 	)
 
 	minimal_access = list()
+	selection_color = COMMS_COLOR_SERVICE
 
 /datum/job/bartender
 	title = "Bartender"
 	department_types = list(/decl/department/service)
-	supervisors = "the Executive Officer and the Corporate Liaison"
+	supervisors = "the Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
@@ -123,19 +126,20 @@
 	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC)
+	selection_color = COMMS_COLOR_SERVICE
 
 /datum/job/crew
 	title = "Crewman"
 	department_types = list(/decl/department/service)
 	total_positions = 5
 	spawn_positions = 5
-	supervisors = "the Executive Officer and SolGov Personnel"
+	supervisors = "the Executive Officer and ISEO Personnel"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/crewman
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/espatier
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/espatier/e3,
@@ -149,3 +153,4 @@
 		access_maint_tunnels, access_emergency_storage,
 		access_solgov_crew, access_radio_serv
 	)
+	selection_color = COMMS_COLOR_SERVICE

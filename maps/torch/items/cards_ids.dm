@@ -2,7 +2,7 @@
 
 /obj/item/card/id/torch
 	name = "identification card"
-	desc = "An identification card issued to personnel aboard the SEV Torch."
+	desc = "An identification card issued to personnel aboard the ISEO Endeavour."
 
 /obj/item/card/id/torch/silver
 	desc = "A silver identification card belonging to heads of staff."
@@ -18,13 +18,13 @@
 
 // SolGov Crew and Contractors
 /obj/item/card/id/torch/crew
-	desc = "An identification card issued to SolGov crewmembers aboard the SEV Torch."
+	desc = "An identification card issued to SolGov crewmembers aboard the ISEO Endeavour."
 	color = "#d3e3e1"
 	color = "#ccecff"
 
 
 /obj/item/card/id/torch/contractor
-	desc = "An identification card issued to private contractors aboard the SEV Torch."
+	desc = "An identification card issued to private contractors aboard the ISEO Endeavour."
 	color = COLOR_GRAY80
 
 
@@ -141,12 +141,6 @@
 
 /obj/item/card/id/torch/passenger/research/senior_scientist
 	extra_details = list("onegoldstripe")
-
-/obj/item/card/id/torch/passenger/research/nt_pilot
-
-/obj/item/card/id/torch/passenger/research/scientist
-
-/obj/item/card/id/torch/passenger/research/mining
 
 /obj/item/card/id/torch/passenger/corporate
 	color = COLOR_BOTTLE_GREEN
