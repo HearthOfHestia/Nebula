@@ -557,10 +557,6 @@
 	base_turf = /turf/simulated/floor
 
 // Command
-/area/command/conference
-	name = "Briefing Room"
-	icon_state = "head_quarters"
-	sound_env = MEDIUM_SOFTFLOOR
 
 /area/command/captainmess
 	name = "Officer's Mess"
@@ -578,19 +574,6 @@
 	icon_state = "head_quarters"
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_pilot)
-
-/area/command/armoury
-	name = "\improper Emergency Armory"
-	icon_state = "Warden"
-	req_access = list(list(access_bridge, access_emergency_armory))
-
-/area/command/armoury/access
-	name = "\improper Emergency Armory - Access"
-
-/area/command/armoury/tactical
-	name = "\improper Emergency Armory - Tactical"
-	icon_state = "Tactical"
-	req_access = list(access_emergency_armory)
 
 /area/command/disperser
 	name = "\improper Obstruction Field Disperser"
@@ -742,10 +725,6 @@
 /area/vacant/cargo
 	name = "\improper Requisitions Office"
 	icon_state = "quart"
-
-/area/vacant/brig
-	name = "\improper Permanent Brig"
-	icon_state = "brig"
 
 /area/vacant/bar
 	name = "\improper Hidden Bar"
@@ -964,10 +943,6 @@
 	name = "\improper Computer Lab"
 	icon_state = "conference"
 
-/area/holocontrol
-	name = "\improper Holodeck Control"
-	icon_state = "Holodeck"
-
 /area/hydroponics/storage
 	name = "\improper Hydroponics Storage"
 
@@ -1032,10 +1007,6 @@
 
 /area/security/evidence
 	name = "\improper Security - Evidence Storage"
-	icon_state = "security"
-
-/area/security/processing
-	name = "\improper Security - Processing"
 	icon_state = "security"
 
 /area/security/questioning
@@ -1156,20 +1127,12 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_engine_equip)
 
-/area/shield/bridge
-	name = "\improper Bridge Shield Generator"
-
 // Misc
 /area/teleporter
 	name = "\improper Teleporter"
 	icon_state = "teleporter"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_teleporter)
-
-/area/maintenance/auxsolarbridge
-	name = "Solar Maintenance - Bridge"
-	icon_state = "SolarcontrolS"
-	sound_env = SMALL_ENCLOSED
 
 /area/solar/bridge
 	name = "\improper Bridge Solar Array"
@@ -1307,19 +1270,6 @@
 /area/centcom/test
 	name = "\improper Centcom Testing Facility"
 
-// Solars
-/area/maintenance/auxsolarport
-	name = "Solar Maintenance - Port"
-	icon_state = "SolarcontrolP"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip, access_maint_tunnels)
-
-/area/maintenance/auxsolarstarboard
-	name = "Solar Maintenance - Starboard"
-	icon_state = "SolarcontrolS"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip, access_maint_tunnels)
-
 /area/solar
 	area_flags = AREA_FLAG_EXTERNAL
 	requires_power = 1
@@ -1341,11 +1291,6 @@
 /area/maintenance/disposal
 	name = "Waste Disposal"
 	icon_state = "disposal"
-
-/area/maintenance/incinerator
-	name = "\improper Incinerator"
-	icon_state = "disposal"
-	req_access = list(list(access_engine, access_medical, access_cargo))
 
 /area/maintenance/waterstore
 	name = "\improper Cistern"
@@ -1379,9 +1324,6 @@
 	dynamic_lighting = 0
 	sound_env = LARGE_ENCLOSED
 	//area_flags = AREA_FLAG_NO_MODIFY
-
-/area/holodeck/alphadeck
-	name = "\improper Holodeck Alpha"
 
 /area/holodeck/source_plating
 	name = "\improper Holodeck - Off"

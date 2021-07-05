@@ -12,13 +12,9 @@
 		/area/hallway/primary/seconddeck/center = NO_SCRUBBER|NO_VENT,
 		/area/holodeck = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarbridge = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarport = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/auxsolarstarboard = NO_SCRUBBER|NO_VENT,
 		/area/endeavour_exterior = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/maintenance/firstdeck/foreport = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/firstdeck/forestarboard = NO_SCRUBBER|NO_VENT,
-		/area/maintenance/incinerator = NO_SCRUBBER,
 		/area/maintenance/disposal = NO_SCRUBBER,
 		/area/maintenance/seconddeck/aftport = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/seconddeck/forestarboard = NO_SCRUBBER|NO_VENT,
@@ -46,7 +42,6 @@
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant/bar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
-		/area/vacant/brig = NO_SCRUBBER|NO_VENT,
 		/area/vacant/prototype/control = 0,
 		/area/vacant/prototype/engine = 0,
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
@@ -56,7 +51,11 @@
 		/area/tcommsat/network_relay/d1 = NO_SCRUBBER|NO_VENT,
 		/area/tcommsat/network_relay/d2 = NO_SCRUBBER|NO_VENT,
 		/area/tcommsat/network_relay/d4 = NO_SCRUBBER|NO_VENT,
-		/area/tcommsat/network_relay/bridge = NO_SCRUBBER|NO_VENT
+		/area/tcommsat/network_relay/bridge = NO_SCRUBBER|NO_VENT,
+		/area/curiosity_hangar/start = NO_SCRUBBER,
+		/area/opportunity_hangar/start = NO_SCRUBBER,
+		/area/engineering/auxpowergen = NO_SCRUBBER|NO_VENT,
+		/area/storage/emergency = 0,
 	)
 
 	area_coherency_test_exempt_areas = list(

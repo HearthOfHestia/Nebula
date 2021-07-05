@@ -320,7 +320,7 @@
 "aW" = (
 /obj/effect/paint_stripe/engineering,
 /turf/simulated/wall/r_wall/map_preset/tan,
-/area/maintenance/fifthdeck/aftstarboard)
+/area/tcommsat/network_relay/d5)
 "aX" = (
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
@@ -609,7 +609,7 @@
 	},
 /obj/machinery/door/airlock/autoname/engineering,
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
+/area/tcommsat/network_relay/d5)
 "bL" = (
 /obj/structure/sign/warning/hot_exhaust{
 	dir = 1
@@ -3790,9 +3790,7 @@
 	tag_door = "endeavour_dock_door"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/quartermaster/storage{
-	dir = 1
-	})
+/area/quartermaster/storage)
 "jq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/floodlight,
@@ -11139,7 +11137,7 @@
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/maintenance/fifthdeck/aftstarboard)
+/area/tcommsat/network_relay/d5)
 "ET" = (
 /obj/structure/closet/medical_wall{
 	pixel_x = 0;
@@ -14342,6 +14340,20 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/wall/prepainted,
 /area/maintenance/fifthdeck/fore)
+"Zk" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/aftstarboard)
 "Zl" = (
 /obj/item/radio/intercom{
 	pixel_y = 26
@@ -40216,7 +40228,7 @@ ZG
 aW
 ER
 bK
-La
+Zk
 ZG
 ZG
 ZG

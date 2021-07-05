@@ -1415,9 +1415,7 @@
 	icon_state = "techfloor_corners"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/hardstorage{
-	icon_state = "r_window"
-	})
+/area/engineering/hardstorage)
 "dt" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -10913,11 +10911,6 @@
 /obj/structure/bed/chair/pew/mahogany,
 /turf/simulated/floor/tiled/dark,
 /area/chapel/main)
-"zv" = (
-/obj/effect/paint/eggshell,
-/obj/effect/paint_stripe/common,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/crew_quarters/sleep/bunk)
 "zx" = (
 /obj/machinery/power/apc{
 	dir = 2;
@@ -36164,12 +36157,12 @@ nN
 Xn
 sj
 wV
-zv
-zv
-zv
-zv
-zv
-zv
+uP
+uP
+uP
+uP
+uP
+uP
 uP
 vU
 vU
