@@ -53,6 +53,10 @@
 		/area/vacant/infirmary = NO_SCRUBBER|NO_VENT,
 		/area/vacant/monitoring = NO_SCRUBBER|NO_VENT,
 		/area/vacant/mess = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/tcommsat/network_relay/d1 = NO_SCRUBBER|NO_VENT,
+		/area/tcommsat/network_relay/d2 = NO_SCRUBBER|NO_VENT,
+		/area/tcommsat/network_relay/d4 = NO_SCRUBBER|NO_VENT,
+		/area/tcommsat/network_relay/bridge = NO_SCRUBBER|NO_VENT
 	)
 
 	area_coherency_test_exempt_areas = list(

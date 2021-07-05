@@ -79,12 +79,6 @@
 	allowed_roles = list(/datum/job/rd)
 */
 
-/datum/gear/suit/wintercoat_dais
-	display_name = "winter coat, DAIS"
-	allowed_roles = list(/datum/job/engineer, /datum/job/roboticist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/senior_scientist, /datum/job/rd)
-	allowed_branches = CIVILIAN_BRANCHES
-	path = /obj/item/clothing/suit/storage/hooded/wintercoat/dais
-
 /datum/gear/suit/coat
 	allowed_branches = CIVILIAN_BRANCHES
 
@@ -98,7 +92,6 @@
 	allowed_roles = CASUAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/*
 /datum/gear/tactical/pcarrier
 	display_name = "black plate carrier"
 	path = /obj/item/clothing/suit/armor/pcarrier
@@ -106,10 +99,10 @@
 	slot = slot_wear_suit_str
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/tactical/pcarrier/navy
-	display_name = "navy blue plate carrier"
-	path = /obj/item/clothing/suit/armor/pcarrier/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+/datum/gear/tactical/pcarrier/blue
+	display_name = "blue plate carrier"
+	path = /obj/item/clothing/suit/armor/pcarrier/blue
+	allowed_branches = list(/datum/mil_branch/iseo_issc, /datum/mil_branch/espatier_corps)
 
 /datum/gear/tactical/pcarrier/misc
 	display_name = "miscellaneous plate carrier selection"
@@ -122,10 +115,4 @@
 	armors["green plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/green
 	armors["tan plate carrier"] = /obj/item/clothing/suit/armor/pcarrier/tan
 	gear_tweaks += new/datum/gear_tweak/path(armors)
-*/
 
-/datum/gear/suit/sfp
-	display_name = "Agent's jacket"
-	path = /obj/item/clothing/suit/storage/toggle/agent_jacket
-	allowed_roles = list(/datum/job/detective)
-	allowed_branches = list(/datum/mil_branch/government)

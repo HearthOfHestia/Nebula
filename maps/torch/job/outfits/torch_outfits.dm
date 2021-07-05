@@ -23,4 +23,3 @@
 /decl/hierarchy/outfit/job/torch/passenger
 	name = OUTFIT_JOB_NAME("Torch Passenger")
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/passenger
-	uniform = /obj/item/clothing/under/solgov/utility

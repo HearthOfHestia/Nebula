@@ -3849,7 +3849,7 @@
 	},
 /obj/structure/lattice,
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "if" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -4319,7 +4319,7 @@
 	},
 /obj/structure/lattice,
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "jk" = (
 /obj/machinery/door/airlock/external{
 	icon_state = "closed";
@@ -5585,7 +5585,7 @@
 /obj/machinery/atmospherics/valve/shutoff{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/plating,
 /area/engineering/engine_room)
 "mq" = (
 /obj/machinery/door/blast/shutters{
@@ -6584,7 +6584,7 @@
 	icon_state = "securearea"
 	},
 /turf/simulated/wall/r_wall/map_preset/tan,
-/area/space)
+/area/endeavour_exterior)
 "oI" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -6796,7 +6796,7 @@
 	dir = 1
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "pv" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8350,7 +8350,7 @@
 	dir = 9
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "sE" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/landmark{
@@ -8848,7 +8848,6 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/suit_cycler/atmos/alt/sol,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -8927,7 +8926,7 @@
 	dir = 4
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "tU" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -9050,6 +9049,11 @@
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
+"um" = (
+/obj/structure/lattice,
+/obj/structure/grille,
+/turf/space,
+/area/endeavour_exterior)
 "un" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
@@ -10596,7 +10600,7 @@
 	},
 /obj/structure/lattice,
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "yv" = (
 /obj/structure/table/steel,
 /obj/random/tank,
@@ -11652,7 +11656,7 @@
 	dir = 1
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "AS" = (
 /obj/structure/window/reinforced{
 	dir = 4
@@ -14760,6 +14764,10 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/engineering/engine_room)
+"IG" = (
+/obj/structure/lattice,
+/turf/space,
+/area/endeavour_exterior)
 "II" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/effect/floor_decal/techfloor{
@@ -15193,7 +15201,7 @@
 	},
 /obj/structure/lattice,
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "JN" = (
 /obj/item/stool/padded,
 /obj/machinery/power/apc{
@@ -15603,7 +15611,7 @@
 "Le" = (
 /obj/machinery/atmospherics/binary/pump/on{
 	dir = 4;
-	target_pressure = 15000
+	target_pressure = 101
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
@@ -16982,7 +16990,7 @@
 /area/hallway/primary/seconddeck)
 "OL" = (
 /obj/machinery/camera/network/engineering{
-	c_tag = "Engineering - Bluespace Drive";
+	c_tag = "Engineering - Superluminal Drive";
 	dir = 4
 	},
 /obj/machinery/alarm{
@@ -17583,7 +17591,7 @@
 "Qn" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_east = 2;
-	tag_south = 8;
+	tag_south = 7;
 	tag_west = 1
 	},
 /obj/effect/engine_setup/filter,
@@ -18638,7 +18646,7 @@
 	dir = 10
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "Tb" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan{
 	dir = 1
@@ -19142,6 +19150,9 @@
 	},
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/rnd/xenobiology)
+"UK" = (
+/turf/space,
+/area/endeavour_exterior)
 "UL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -19550,7 +19561,7 @@
 /area/storage/tech)
 "Wn" = (
 /obj/machinery/atmospherics/omni/filter{
-	tag_east = 8;
+	tag_east = 7;
 	tag_north = 1;
 	tag_west = 2
 	},
@@ -20418,7 +20429,7 @@
 	dir = 4
 	},
 /turf/space,
-/area/space)
+/area/endeavour_exterior)
 "YP" = (
 /obj/machinery/door/window/southright{
 	dir = 1;
@@ -49466,13 +49477,13 @@ jj
 jj
 YL
 YL
-Hb
-ag
-Hb
+UK
+IG
+UK
 ky
-Hb
-ag
-Hb
+UK
+IG
+UK
 YL
 YL
 jj
@@ -49668,13 +49679,13 @@ jj
 jj
 jj
 jj
-ag
-ag
-ag
+IG
+IG
+IG
 lk
-ag
-ag
-ag
+IG
+IG
+IG
 jj
 jj
 jj
@@ -49870,13 +49881,13 @@ jj
 jj
 YL
 YL
-Hb
-ag
-Hb
+UK
+IG
+UK
 lk
-Hb
-ag
-Hb
+UK
+IG
+UK
 YL
 YL
 jj
@@ -50072,13 +50083,13 @@ yu
 JM
 Ta
 sD
-Hb
-ag
-Hb
+UK
+IG
+UK
 ky
-Hb
-ag
-Hb
+UK
+IG
+UK
 Ta
 sD
 yu
@@ -50275,11 +50286,11 @@ fT
 fT
 fT
 fT
-ag
-Hb
+IG
+UK
 lk
-Hb
-ag
+UK
+IG
 fT
 fT
 fT
@@ -50477,11 +50488,11 @@ Hb
 ag
 af
 af
-ag
-ag
+IG
+IG
 lk
-ag
-ag
+IG
+IG
 af
 af
 ag
@@ -50679,11 +50690,11 @@ Hb
 ag
 ag
 af
-af
+um
 oH
 ky
 oH
-af
+um
 af
 ag
 ag

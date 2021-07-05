@@ -84,18 +84,7 @@
 
 	#include "items/clothing/ec_skillbadges.dm"
 	#include "items/clothing/solgov-accessory.dm"
-	#include "items/clothing/solgov-armor.dm"
-	#include "items/clothing/solgov-feet.dm"
-	#include "items/clothing/solgov-hands.dm"
 	#include "items/clothing/solgov-head.dm"
-	#include "items/clothing/solgov-suit.dm"
-	#include "items/clothing/solgov-under.dm"
-	#include "items/clothing/terran-accessory.dm"
-	#include "items/clothing/terran-feet.dm"
-	#include "items/clothing/terran-hands.dm"
-	#include "items/clothing/terran-head.dm"
-	#include "items/clothing/terran-suit.dm"
-	#include "items/clothing/terran-under.dm"
 
 	#include "items/weapon/storage/wallets.dm"
 
@@ -127,12 +116,10 @@
 	#include "job/outfits/security_outfits.dm"
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
-	#include "job/outfits/unused_outfits.dm"
 
 	#include "machinery/apc_shuttle.dm"
 	#include "machinery/faxmachine.dm"
 	#include "machinery/keycard authentication.dm"
-	#include "machinery/suit_storage.dm"
 	#include "machinery/network_equipment.dm"
 
 	#include "robot/module_flying_surveyor.dm"
@@ -171,6 +158,7 @@
 	#include "items\hearth_clothing\hats_espatier.dm"
 	#include "items\hearth_clothing\attachments.dm"
 	#include "items\hearth_clothing\armor.dm"
+	#include "items\hearth_clothing\gloves.dm"
 	#include "items\clothing_bags.dm"
 	#include "datums\license_decls.dm"
 	#include "datums\music\heard_of_a_place.dm"

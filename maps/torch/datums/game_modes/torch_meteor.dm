@@ -33,9 +33,9 @@
 		if((get_z(H) in using_map.station_levels) && !(H.stat & BROKEN))
 			nav_status = TRUE
 	var/bsd_status = FALSE
-	var/area/A = locate(/area/engineering/bluespace) in world
-	if(A && A.powered(EQUIP)) //There's no actual machines to check
-		bsd_status = TRUE
+	for(var/obj/machinery/ftl_shunt/core/C in SSmachines.machinery)
+		if((get_z(C) in using_map.station_levels) && !(C.stat & (BROKEN|NOPOWER)))
+			nav_status = TRUE
 
 	to_world("<h3>Damage report</h3>")
 	if(eng_status)
@@ -47,9 +47,9 @@
 	else
 		to_world("<span class='bad'>The navigation systems were lost on [using_map.full_name].</span>")
 	if(bsd_status)
-		to_world("<span class='good'>Bluespace drive stayed powered.</span>")
+		to_world("<span class='good'>The Superluminal drive stayed powered.</span>")
 	else
-		to_world("<span class='bad'>Bluespace drive lost power during the jump, causing dangerous anomalies in the local time-space.</span>")
+		to_world("<span class='bad'>The Superluminal drive lost power during the jump, causing dangerous anomalies in the local time-space.</span>")
 
 
 //Bluespace jump but ignoring cooldowns and done at roundstart basically

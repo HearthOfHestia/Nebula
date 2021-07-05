@@ -37,7 +37,7 @@
 		/obj/item/magnetic_tape/random = 3,
 		/obj/item/storage/secure/briefcase,
 		/obj/item/clothing/shoes/dress,
-		/obj/item/clothing/under/rank/internalaffairs/plain,
+		/obj/item/clothing/under/internalaffairs/plain,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
@@ -66,7 +66,7 @@
 		/obj/item/storage/secure/briefcase,
 		/obj/item/clothing/shoes/dress,
 		/obj/item/gun/energy/gun/small/secure/corporate,
-		/obj/item/clothing/under/rank/internalaffairs/plain,
+		/obj/item/clothing/under/internalaffairs,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/gloves/color/black,
 		/obj/item/clothing/glasses/sunglasses/big,
@@ -95,7 +95,7 @@
 		/obj/item/storage/secure/briefcase,
 		/obj/item/radio/headset/headset_com,
 		/obj/item/clothing/shoes/dress,
-		/obj/item/clothing/under/rank/internalaffairs/plain/solgov,
+		/obj/item/clothing/under/internalaffairs/plain,
 		/obj/item/clothing/suit/storage/toggle/suit/black,
 		/obj/item/clothing/glasses/sunglasses/big,
 		/obj/item/storage/belt/general,
@@ -157,6 +157,6 @@
 /obj/structure/closet/secure_closet/guncabinet/PPE/WillContain()
 	return list(
 		/obj/item/gun/energy/gun/small/secure = 3,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command = 3,
+		/obj/item/clothing/suit/armor/vest/government/command = 3,
 		/obj/item/clothing/head/helmet/solgov/command = 3
 	)

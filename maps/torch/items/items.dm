@@ -3,8 +3,8 @@ Random item spawning
 *******************/
 
 /obj/random/solgov
-	name = "random solgov equipment"
-	desc = "This is a random piece of solgov equipment or clothing."
+	name = "random iseo equipment"
+	desc = "This is a random piece of iseo equipment or clothing."
 	icon = 'maps/torch/icons/obj/obj_head_solgov.dmi'
 	icon_state = "solsoft"
 
@@ -13,11 +13,11 @@ Random item spawning
 				/obj/item/clothing/head/soft/solgov/expedition = 2,
 				/obj/item/clothing/head/soft/solgov/fleet = 4,
 				/obj/item/clothing/head/helmet/solgov = 1,
-				/obj/item/clothing/suit/storage/vest/solgov = 2,
-				/obj/item/clothing/under/solgov/utility = 5,
-				/obj/item/clothing/under/solgov/utility/fleet = 3,
-				/obj/item/clothing/under/solgov/pt/expeditionary = 4,
-				/obj/item/clothing/under/solgov/pt/fleet = 4
+				/obj/item/clothing/suit/armor/vest/government/sec = 2,
+				/obj/item/clothing/under/iseo/utility = 5,
+				/obj/item/clothing/under/espatier/utility = 3,
+				/obj/item/clothing/under/espatier/pt = 4,
+				/obj/item/clothing/under/iseo/pt= 4
 				)
 
 /obj/random/maintenance/solgov

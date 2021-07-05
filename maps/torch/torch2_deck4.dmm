@@ -1177,7 +1177,7 @@
 "dU" = (
 /obj/structure/ladder,
 /obj/structure/catwalk,
-/turf/simulated/floor/tiled/techmaint,
+/turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "dY" = (
 /obj/structure/table/rack,
@@ -15352,6 +15352,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/forestarboard)
 "Xm" = (
@@ -35431,7 +35432,7 @@ bN
 ZH
 fg
 Mm
-dU
+QX
 Mp
 Un
 XM
@@ -35633,7 +35634,7 @@ bN
 bN
 bN
 bZ
-dU
+QX
 Mp
 fd
 cq

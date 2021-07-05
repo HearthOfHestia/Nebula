@@ -7,9 +7,9 @@
 	//base = TRUE
 
 	initial_restricted_waypoints = list(
-		"Spirit" = list("nav_hangar_spirit"), 	//can't have random shuttles popping inside the ship
-		"Opportunity" = list("nav_hangar_opportunity"),
-		"Perseverance" = list("nav_hangar_perseverance"),
+		/datum/shuttle/autodock/overmap/exploration_shuttle = list("nav_hangar_spirit"), 	//can't have random shuttles popping inside the ship
+		/datum/shuttle/autodock/overmap/opportunity = list("nav_hangar_opportunity"),
+		/datum/shuttle/autodock/overmap/perseverance = list("nav_hangar_perseverance"),
 		"Trichoptera" = list("nav_trichoptera_altdock"), //restricts Trichoptera specific docking waypoint on deck 4 portside
 		"Skrellian Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
 		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
@@ -17,7 +17,7 @@
 		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),
 		"ITV Spiritus" = list("nav_hangar_gantry_torch_three"),
 		"SRV Venerable Catfish" = list("nav_verne_5"), //docking location for verne shuttle
-		"Curiosity" = list("nav_hangar_curiosity")
+		/datum/shuttle/autodock/overmap/curiosity = list("nav_hangar_curiosity")
 	)
 
 	initial_generic_waypoints = list(
@@ -149,8 +149,8 @@
 */
 
 /obj/effect/overmap/visitable/sector/residue
-	name = "Bluespace Residue"
-	desc = "Trace radiation emanating from this sector is consistent with the aftermath of a bluespace jump."
+	name = "Space-time Distortion"
+	desc = "Trace radiation emanating from this sector is consistent with the aftermath of a superluminal jump."
 	icon_state = "event"
 	sector_flags = OVERMAP_SECTOR_KNOWN
 	

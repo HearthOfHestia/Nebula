@@ -1,18 +1,9 @@
 /decl/hierarchy/supply_pack/security
 	name = "Security"
 
-/decl/hierarchy/supply_pack/security/lightarmorsol
-	name = "Armor - SCG light"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/light/sol = 4,
-					/obj/item/clothing/head/helmet/solgov =4)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure
-	containername = "\improper SolGov light armor crate"
-	access = access_security
-
 /decl/hierarchy/supply_pack/security/secarmor
 	name = "Armor - Security"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/security = 2,
+	contains = list(/obj/item/clothing/suit/armor/vest/government/sec = 2,
 					/obj/item/clothing/head/helmet/solgov/security =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
@@ -21,7 +12,7 @@
 
 /decl/hierarchy/supply_pack/security/solarmor
 	name = "Armor - Peacekeeper"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/blue/sol = 2,
+	contains = list(/obj/item/clothing/suit/armor/vest/government/peacekeeper = 2,
 					/obj/item/clothing/head/helmet/solgov =2)
 	cost = 30
 	containertype = /obj/structure/closet/crate/secure
@@ -30,7 +21,7 @@
 
 /decl/hierarchy/supply_pack/security/comarmor
 	name = "Armor - Command"
-	contains = list(/obj/item/clothing/suit/armor/pcarrier/medium/command = 2,
+	contains = list(/obj/item/clothing/suit/armor/vest/government/command = 2,
 					/obj/item/clothing/head/helmet/solgov/command =2)
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
@@ -174,7 +165,7 @@
 					/obj/item/clothing/accessory/storage/vest/black,
 					/obj/item/megaphone,
 					/obj/item/clothing/gloves/thick,
-					/obj/item/clothing/gloves/thick/duty/solgov/sec,
+					/obj/item/clothing/gloves/duty/sec,
 					/obj/item/holowarrant,
 					/obj/item/flashlight/maglight,
 					/obj/item/storage/belt/security)

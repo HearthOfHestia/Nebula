@@ -106,7 +106,7 @@
 /decl/hierarchy/outfit/job/torch/crew/representative
 	name = OUTFIT_JOB_NAME("SolGov Representative")
 	l_ear = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/rank/internalaffairs/plain/solgov
+	uniform = /obj/item/clothing/under/internalaffairs
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/dress
 	id_type = list(/obj/item/card/id/torch/crew/representative)
@@ -114,7 +114,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/espatier
 	name = OUTFIT_JOB_NAME("Senior Enlisted Advisor - Espatier Corps")
-	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
+	uniform = /obj/item/clothing/under/espatier/utility/command
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	l_ear = /obj/item/radio/headset/sea
 	id_type = list(/obj/item/card/id/torch/crew/sea)

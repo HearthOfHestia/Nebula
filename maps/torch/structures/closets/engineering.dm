@@ -56,7 +56,7 @@
 		/obj/item/crowbar/brace_jack,
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/welding/superior,
-		/obj/item/clothing/suit/armor/pcarrier/medium/command,
+		/obj/item/clothing/suit/armor/vest/government/command,
 		/obj/item/clothing/head/helmet/solgov/command,
 		/obj/item/clipboard,
 		/obj/item/holowarrant,

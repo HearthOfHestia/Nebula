@@ -19,7 +19,7 @@
 		/decl/music_track/misanthropic_corridors,
 		/decl/music_track/voidsent,
 		/decl/music_track/astrometrics/riuts,
-		/decl/music_track/astrometrics/hyperspace,
+		/decl/music_track/astrometrics,
 		/decl/music_track/astrometrics/starbase,
 		/decl/music_track/astrometrics/a_place,
 		/decl/music_track/lonely_satellite

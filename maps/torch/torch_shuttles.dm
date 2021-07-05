@@ -353,6 +353,7 @@ TORCH_ESCAPE_POD(19)
 	landmark_transition = "nav_transit_opportunity"
 	sound_takeoff = 'sound/effects/rocket.ogg'
 	sound_landing = 'sound/effects/rocket_backwards.ogg'
+	dock_target = "opportunity_shuttle"
 	fuel_consumption = 2
 	logging_home_tag = "nav_hangar_opportunity"
 	logging_access = access_opportunity_helm

@@ -1,4 +1,4 @@
-/decl/music_track/astrometrics/hyperspace
+/decl/music_track/astrometrics
 	title = "Into Hyperspace"
 	album = "Into Hyperspace"
 	artist = "Astrometrics"

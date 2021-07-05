@@ -4,7 +4,7 @@
 
 /datum/gear/uniform/utility
 	display_name = "Contractor Utility Uniform"
-	path = /obj/item/clothing/under/solgov/utility
+	path = /obj/item/clothing/under/iseo/utility
 
 /datum/gear/uniform/shortjumpskirt
 	allowed_roles = CASUAL_ROLES
