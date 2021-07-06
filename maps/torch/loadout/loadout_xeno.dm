@@ -24,12 +24,3 @@
 /datum/gear/uniform/harness
 	allowed_branches = null
 	path = /obj/item/clothing/under/harness
-
-// Patches
-/datum/gear/accessory/cultex_patch
-	display_name = "Cultural Exchange patch"
-	path = /obj/item/clothing/accessory/solgov/cultex_patch
-	description = "A shoulder patch representing the Expeditionary Corps."
-	allowed_
-	//whitelisted = list(SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_IPC)
-	sort_category = "Xenowear"

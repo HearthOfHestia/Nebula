@@ -35,7 +35,6 @@
 /decl/hierarchy/outfit/job/torch/ert
 	name = OUTFIT_JOB_NAME("ERT - Torch")
 	uniform = /obj/item/clothing/under/iseo/utility/security
-	head = /obj/item/clothing/head/beret/solgov/fleet
 	gloves = /obj/item/clothing/gloves/thick
 	id_type = /obj/item/card/id/centcom/ERT
 	pda_type = /obj/item/modular_computer/pda/ert
@@ -45,4 +44,3 @@
 /decl/hierarchy/outfit/job/torch/ert/leader
 	name = OUTFIT_JOB_NAME("ERT Leader - Torch")
 	uniform = /obj/item/clothing/under/iseo/utility/security
-	head = /obj/item/clothing/head/beret/solgov/fleet/command

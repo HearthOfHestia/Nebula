@@ -34,46 +34,9 @@
 	solminors["instructor ribbon"] = /obj/item/clothing/accessory/ribbon/solgov/instructor
 	gear_tweaks += new/datum/gear_tweak/path(solminors)
 
-/datum/gear/accessory/tags
-	display_name = "dog tags"
-	path = /obj/item/clothing/accessory/badge/solgov/tags
-	custom_setup_proc = /obj/item/clothing/accessory/badge/solgov/tags/proc/loadout_setup
-
-/datum/gear/accessory/ec_scarf
-	display_name = "Expeditionary Corps scarf"
-	path = /obj/item/clothing/accessory/solgov/ec_scarf
-	description = "A section-specific scarf for Expeditionary Corps uniforms."
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_
-
-/datum/gear/accessory/ec_patch
-	display_name = "Expeditionary Corps patch"
-	path = /obj/item/clothing/accessory/solgov/ec_patch
-	description = "A shoulder patch representing the Expeditionary Corps."
-	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_
-
-/datum/gear/accessory/torch_patch
-	display_name = "Torch mission patch"
-	path = /obj/item/clothing/accessory/solgov/torch_patch
-	description = "A shoulder patch representing the SEV Torch and its mission. Given to all the oddjobs pulled from various branches to work on the Torch."
-
-/datum/gear/accessory/pilot_pin
-	display_name = "pilot's qualification pin"
-	path = /obj/item/clothing/accessory/solgov/specialty/pilot
-	allowed_skills = list(SKILL_PILOT = SKILL_ADEPT)
-	allowed_branches = list(
-		/datum/mil_branch/iseo_issc
-	)
-
-/datum/gear/accessory/fleetpatch
-	display_name = "fleet patch"
-	path = /obj/item/clothing/accessory/solgov/fleet_patch
-	flags = GEAR_HAS_TYPE_SELECTION
-
 /datum/gear/accessory/armband_ma
 	display_name = "master at arms brassard"
-	path = /obj/item/clothing/accessory/armband/solgov/ma
+	path = /obj/item/clothing/accessory/armband/ma
 	allowed_roles = SECURITY_ROLES
 
 /datum/gear/accessory/armband_security

@@ -1930,6 +1930,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/central)
 "ea" = (
@@ -5198,6 +5199,7 @@
 /area/hallway/primary/seconddeck/center)
 "ls" = (
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
 "lt" = (
@@ -8204,6 +8206,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engine_monitoring)
+"sj" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/maintenance/seconddeck/foreport)
 "sk" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/firstaid/toxin,
@@ -8407,6 +8414,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/aftstarboard)
 "sJ" = (
@@ -8728,6 +8736,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/aftstarboard)
 "ty" = (
@@ -9290,6 +9299,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/foreport)
 "uQ" = (
@@ -12979,6 +12989,7 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "Ep" = (
@@ -15632,6 +15643,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "Lg" = (
@@ -33126,7 +33138,7 @@ sv
 sv
 sv
 uN
-uf
+sj
 xi
 pi
 pi
@@ -35960,7 +35972,7 @@ yh
 sv
 zK
 QX
-uf
+sj
 Bj
 Bj
 Bj

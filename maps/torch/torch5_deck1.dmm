@@ -1412,6 +1412,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/catwalk,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/aftstarboard)
 "adz" = (
@@ -2337,6 +2338,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
+/obj/random/torchcloset,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "aeS" = (
@@ -2967,10 +2969,10 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/random/obstruction,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "afU" = (
@@ -4565,6 +4567,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "ajh" = (
@@ -5511,6 +5514,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralstarboard)
 "ans" = (
@@ -9766,6 +9770,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/foreport)
 "aKU" = (
@@ -9839,13 +9844,13 @@
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/glasses/tacgoggles,
 /obj/item/clothing/suit/armor/vest/government/command,
-/obj/item/clothing/head/helmet/solgov,
+/obj/item/clothing/head/helmet/iseo/peacekeeper,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
 /obj/item/clothing/suit/armor/vest/government/command,
-/obj/item/clothing/head/helmet/solgov,
+/obj/item/clothing/head/helmet/iseo/peacekeeper,
 /obj/item/clothing/glasses/tacgoggles,
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/shoes/jackboots/duty,
@@ -9858,12 +9863,12 @@
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/glasses/tacgoggles,
 /obj/item/clothing/suit/armor/vest/government/command,
-/obj/item/clothing/head/helmet/solgov,
+/obj/item/clothing/head/helmet/iseo/peacekeeper,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/item/clothing/suit/armor/vest/government/command,
-/obj/item/clothing/head/helmet/solgov,
+/obj/item/clothing/head/helmet/iseo/peacekeeper,
 /obj/item/clothing/glasses/tacgoggles,
 /obj/item/clothing/accessory/storage/holster/thigh,
 /obj/item/clothing/shoes/jackboots/duty,
@@ -10739,6 +10744,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/foreport)
 "aPE" = (
@@ -10831,6 +10837,11 @@
 	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPK" = (
@@ -13841,7 +13852,6 @@
 "cCb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
 "cDb" = (
@@ -13938,6 +13948,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/centralport)
 "cLb" = (
@@ -14881,6 +14892,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/forestarboard)
 "dXM" = (
@@ -17877,10 +17889,21 @@
 /turf/simulated/floor/tiled,
 /area/security/brig)
 "ivf" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /obj/machinery/door/firedoor,
-/obj/random/obstruction,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/maintenance/firstdeck/foreport)
+/area/maintenance/firstdeck/aftport)
 "ivh" = (
 /obj/machinery/status_display,
 /obj/effect/paint/eggshell,
@@ -25424,11 +25447,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
-"rKD" = (
-/obj/random/torchcloset,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/maintenance/firstdeck/centralstarboard)
 "rKP" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/helmet/ballistic,
@@ -44518,7 +44536,7 @@ aaa
 aaa
 aaa
 abP
-rKD
+gAv
 gAv
 afT
 agN
@@ -44556,7 +44574,7 @@ aNa
 qDj
 aQF
 qDj
-ivf
+qDj
 tAS
 aaa
 aaa
@@ -53647,7 +53665,7 @@ aHQ
 aHQ
 aHQ
 aHQ
-aTf
+ivf
 xPU
 xPU
 xPU

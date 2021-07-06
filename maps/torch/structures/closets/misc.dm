@@ -158,5 +158,5 @@
 	return list(
 		/obj/item/gun/energy/gun/small/secure = 3,
 		/obj/item/clothing/suit/armor/vest/government/command = 3,
-		/obj/item/clothing/head/helmet/solgov/command = 3
+		/obj/item/clothing/head/helmet/command = 3
 	)

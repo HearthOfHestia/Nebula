@@ -8014,10 +8014,6 @@
 "tI" = (
 /obj/structure/table/rack,
 /obj/random/solgov,
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 11;
-	pixel_y = 1
-	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = -24
@@ -15560,29 +15556,6 @@
 /obj/effect/paint_stripe/command,
 /turf/simulated/floor/plating,
 /area/bridge)
-"XW" = (
-/obj/structure/catwalk,
-/obj/structure/cable/green{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	d2 = 4;
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "north bump";
-	pixel_x = 0;
-	pixel_y = 24;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/bridge/foreport)
 "Yb" = (
 /obj/structure/catwalk,
 /obj/machinery/alarm{
@@ -26871,7 +26844,7 @@ ti
 ti
 ti
 ti
-XW
+xz
 xE
 tg
 ad

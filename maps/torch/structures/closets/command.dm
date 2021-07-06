@@ -49,7 +49,7 @@
 		/obj/item/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/cap,
 		/obj/item/clothing/under/iseo/utility/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet/command,
 	)
 
 /obj/structure/closet/secure_closet/XO
@@ -78,7 +78,7 @@
 		/obj/item/storage/backpack/satchel/cap,
 		/obj/item/storage/box/imprinting,
 		/obj/item/clothing/suit/armor/vest/government/command,
-		/obj/item/clothing/head/helmet/solgov/command
+		/obj/item/clothing/head/helmet/command
 	)
 
 /obj/structure/closet/secure_closet/sea
@@ -90,7 +90,7 @@
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/clothing/suit/armor/vest/government/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet/command,
 		/obj/item/storage/belt/holster/general,
 		/obj/item/gun/energy/confuseray,
 		/obj/item/radio/headset/sea,

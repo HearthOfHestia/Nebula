@@ -641,6 +641,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/starboard)
 "co" = (
@@ -9972,6 +9973,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/port)
 "If" = (
@@ -11483,19 +11485,9 @@
 /area/maintenance/fourthdeck/aft)
 "MN" = (
 /obj/structure/table/woodentable,
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = 7;
-	pixel_y = 5;
-	pixel_z = 0
-	},
-/obj/item/chems/food/drinks/glass2/coffeecup/SCG{
-	pixel_x = -1;
-	pixel_y = 1
-	},
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
+/obj/item/chems/food/drinks/glass2/coffeecup/metal,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "MR" = (
@@ -11795,6 +11787,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/aft)
 "Nz" = (
@@ -14077,6 +14070,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/aft)
 "TE" = (
@@ -16442,6 +16436,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/starboard)
 "ZN" = (

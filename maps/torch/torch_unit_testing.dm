@@ -51,6 +51,7 @@
 		/area/tcommsat/network_relay/d1 = NO_SCRUBBER|NO_VENT,
 		/area/tcommsat/network_relay/d2 = NO_SCRUBBER|NO_VENT,
 		/area/tcommsat/network_relay/d4 = NO_SCRUBBER|NO_VENT,
+		/area/tcommsat/network_relay/d5 = NO_SCRUBBER|NO_VENT,
 		/area/tcommsat/network_relay/bridge = NO_SCRUBBER|NO_VENT,
 		/area/curiosity_hangar/start = NO_SCRUBBER,
 		/area/opportunity_hangar/start = NO_SCRUBBER,

@@ -9,10 +9,10 @@ Random item spawning
 	icon_state = "solsoft"
 
 /obj/random/solgov/spawn_choices()
-	return list(/obj/item/clothing/head/solgov/utility/fleet = 4,
-				/obj/item/clothing/head/soft/solgov/expedition = 2,
-				/obj/item/clothing/head/soft/solgov/fleet = 4,
-				/obj/item/clothing/head/helmet/solgov = 1,
+	return list(/obj/item/clothing/head/espatier/utility/tan = 4,
+				/obj/item/clothing/head/iseo/utility = 2,
+				/obj/item/clothing/head/espatier/utility= 4,
+				/obj/item/clothing/head/helmet = 1,
 				/obj/item/clothing/suit/armor/vest/government/sec = 2,
 				/obj/item/clothing/under/iseo/utility = 5,
 				/obj/item/clothing/under/espatier/utility = 3,
@@ -107,7 +107,7 @@ Weapons
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Captain of SEV Torch' engraved."
 	fire_delay = 5.7 //Autorevolver. Also synced with the animation
 	fire_anim = "mosley_fire"
-	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 2)
+	origin_tech = "{'combat':3,'materials':3}"
 	starts_loaded = 0 //Nobody keeps ballistic weapons loaded
 
 /obj/item/gun/energy/stunrevolver/secure/nanotrasen

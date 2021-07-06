@@ -37,7 +37,7 @@
 /obj/structure/closet/secure_closet/security_torch/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/vest/government/sec,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
 		/obj/item/storage/belt/holster/security,
@@ -69,7 +69,7 @@
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/vest/government/sec,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/heads/cos,
 		/obj/item/radio/headset/heads/cos/alt,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
@@ -107,7 +107,7 @@
 /obj/structure/closet/secure_closet/brigchief/WillContain()
 	return list(
 		/obj/item/clothing/suit/armor/vest/government/sec,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
 		/obj/item/clothing/glasses/sunglasses/sechud/goggles,
@@ -141,7 +141,7 @@
 		/obj/item/clothing/gloves/forensic,
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
-		/obj/item/clothing/head/helmet/solgov/security,
+		/obj/item/clothing/head/helmet/command,
 		/obj/item/clothing/suit/armor/vest/government/sec,
 		/obj/item/gun/energy/gun/small/secure,
 		/obj/item/flash,

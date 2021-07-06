@@ -57,7 +57,7 @@
 		/obj/item/clothing/glasses/meson,
 		/obj/item/clothing/glasses/welding/superior,
 		/obj/item/clothing/suit/armor/vest/government/command,
-		/obj/item/clothing/head/helmet/solgov/command,
+		/obj/item/clothing/head/helmet/command,
 		/obj/item/clipboard,
 		/obj/item/holowarrant,
 		/obj/item/storage/box/armband/engine,
