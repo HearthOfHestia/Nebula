@@ -28,6 +28,7 @@
 		. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='[pref.tail_color]'><table style='display:inline;' bgcolor='[pref.tail_color]'><tr><td>__</td></tr></table> </font><br>"
 		if (tails.extra_overlay) // only show the secondary color prompt if we can change color to begin with
 			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.tail_color_extra]'><table style='display:inline;' bgcolor='[pref.tail_color_extra]'><tr><td>__</td></tr></table> </font><br>"
+	
 
 /datum/category_item/player_setup_item/physical/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(!CanUseTopic(user))
@@ -88,5 +89,4 @@
 		if(new_tailc2)
 			pref.tail_color_extra = new_tailc2
 			return TOPIC_REFRESH_UPDATE_PREVIEW
-
 	return ..()
