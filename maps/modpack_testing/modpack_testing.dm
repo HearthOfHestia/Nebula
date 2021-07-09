@@ -14,6 +14,7 @@
 	#include "../../mods/content/scaling_descriptors.dm"
 	#include "../../mods/content/xenobiology/_xenobiology.dme"
 	#include "../../mods/content/neural_laces/_laces.dme"
+//	#include "../../mods/content/shards/_shards.dme"
 
 	#include "../../mods/mobs/dionaea/_dionaea.dme"
 	#include "../../mods/mobs/borers/_borers.dme"
