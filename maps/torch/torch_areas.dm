@@ -1252,14 +1252,6 @@
 /area/centcom/test
 	name = "\improper Centcom Testing Facility"
 
-/area/solar
-	area_flags = AREA_FLAG_EXTERNAL
-	requires_power = 1
-	always_unpowered = 1
-	has_gravity = FALSE
-	base_turf = /turf/space
-	req_access = list(access_engine_equip)
-
 // Maintenance
 
 /area/maintenance/disposal

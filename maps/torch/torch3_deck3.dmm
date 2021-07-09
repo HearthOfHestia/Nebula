@@ -11431,7 +11431,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "AY" = (
-/obj/random_multi/single_item/punitelly,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9
 	},
@@ -14043,7 +14042,6 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/sleep/dorms/one)
 "IE" = (
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "IG" = (
@@ -14058,15 +14056,12 @@
 /area/crew_quarters/sleep/dorms/hallway)
 "IH" = (
 /obj/structure/table/steel,
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
 "II" = (
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
 "IJ" = (
-/obj/random_multi/single_item/punitelly,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
@@ -16187,7 +16182,6 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/gym)
 "NO" = (
-/obj/random_multi/single_item/punitelly,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/vacant/mess)
@@ -17150,7 +17144,6 @@
 	icon_state = "alarm0";
 	pixel_y = -22
 	},
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "QB" = (

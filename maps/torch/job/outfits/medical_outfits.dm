@@ -4,6 +4,7 @@
 	id_type = /obj/item/card/id/torch/crew/medical
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store_str
+	gloves = /obj/item/clothing/gloves/duty/med
 
 /decl/hierarchy/outfit/job/torch/crew/medical/New()
 	..()

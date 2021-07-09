@@ -7,16 +7,9 @@
 	//base = TRUE
 
 	initial_restricted_waypoints = list(
-		/datum/shuttle/autodock/overmap/exploration_shuttle = list("nav_hangar_spirit"), 	//can't have random shuttles popping inside the ship
+		/datum/shuttle/autodock/overmap/exploration_shuttle = list("nav_hangar_spirit"),
 		/datum/shuttle/autodock/overmap/opportunity = list("nav_hangar_opportunity"),
 		/datum/shuttle/autodock/overmap/perseverance = list("nav_hangar_perseverance"),
-		"Trichoptera" = list("nav_trichoptera_altdock"), //restricts Trichoptera specific docking waypoint on deck 4 portside
-		"Skrellian Scout" = list("nav_skrellscout_dock"), //restricts Skrell Scoutship specific docking waypoint on deck 4 portside
-		"Rescue" = list("nav_ert_dock"), //restricts ERT Shuttle specific docking waypoint on deck 4 portside
-		"ITV The Reclaimer" = list("nav_hangar_gantry_torch"), //gantry shuttles
-		"ITV Vulcan" = list("nav_hangar_gantry_torch_two"),
-		"ITV Spiritus" = list("nav_hangar_gantry_torch_three"),
-		"SRV Venerable Catfish" = list("nav_verne_5"), //docking location for verne shuttle
 		/datum/shuttle/autodock/overmap/curiosity = list("nav_hangar_curiosity")
 	)
 

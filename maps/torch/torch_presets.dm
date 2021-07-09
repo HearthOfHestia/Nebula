@@ -1,17 +1,17 @@
-var/const/NETWORK_PERSEVERANCE      = "Perseverance"
-var/const/NETWORK_BRIDGE      = "Bridge"
-var/const/NETWORK_SPIRIT     = "Spirit"
-var/const/NETWORK_EXPEDITION  = "Expedition"
-var/const/NETWORK_FIRST_DECK  = "First Deck"
-var/const/NETWORK_FOURTH_DECK = "Fourth Deck"
-var/const/NETWORK_POD         = "General Utility Pod"
-var/const/NETWORK_SECOND_DECK = "Second Deck"
-var/const/NETWORK_SUPPLY      = "Supply"
-var/const/NETWORK_HANGAR      = "Hangar"
-var/const/NETWORK_EXPLO       = "Exploration"
-var/const/NETWORK_THIRD_DECK  = "Third Deck"
-var/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
-var/const/NETWORK_CURIOSITY  = "Curiosity"
+var/global/const/NETWORK_PERSEVERANCE      = "Perseverance"
+var/global/const/NETWORK_BRIDGE      = "Bridge"
+var/global/const/NETWORK_SPIRIT     = "Spirit"
+var/global/const/NETWORK_EXPEDITION  = "Expedition"
+var/global/const/NETWORK_FIRST_DECK  = "First Deck"
+var/global/const/NETWORK_FOURTH_DECK = "Fourth Deck"
+var/global/const/NETWORK_POD         = "General Utility Pod"
+var/global/const/NETWORK_SECOND_DECK = "Second Deck"
+var/global/const/NETWORK_SUPPLY      = "Supply"
+var/global/const/NETWORK_HANGAR      = "Hangar"
+var/global/const/NETWORK_EXPLO       = "Exploration"
+var/global/const/NETWORK_THIRD_DECK  = "Third Deck"
+var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
+var/global/const/NETWORK_CURIOSITY  = "Curiosity"
 
 /datum/map/torch/get_network_access(var/network)
 	switch(network)
@@ -139,7 +139,7 @@ var/const/NETWORK_CURIOSITY  = "Curiosity"
 
 // Substation SMES
 /obj/machinery/power/smes/buildable/preset/torch/substation
-	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 1) // Note that it gets one more from construction
+	uncreated_component_parts = list(/obj/item/stock_parts/smes_coil = 1) // Note that it gets one more from global/construction
 	_input_maxed = TRUE
 	_output_maxed = TRUE
 
@@ -184,10 +184,10 @@ var/const/NETWORK_CURIOSITY  = "Curiosity"
 	_output_on = TRUE
 	_fully_charged = TRUE
 
-var/const/NETWORK_COMMAND = "Command"
-var/const/NETWORK_ENGINE  = "Engine"
-var/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
-var/const/HAIL_FREQ = 1463
+var/global/const/NETWORK_COMMAND = "Command"
+var/global/const/NETWORK_ENGINE  = "Engine"
+var/global/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
+var/global/const/HAIL_FREQ = 1463
 
 /datum/map/proc/get_shared_network_access(var/network)
 	switch(network)

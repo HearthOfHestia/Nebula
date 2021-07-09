@@ -12,6 +12,7 @@
 	head = /obj/item/clothing/head/iseo/beret/command
 	id_type = /obj/item/card/id/torch/gold
 	pda_type = /obj/item/modular_computer/pda/captain
+	gloves = /obj/item/clothing/gloves/duty/com
 
 /decl/hierarchy/outfit/job/torch/crew/command/CO/New()
 	..()
@@ -26,6 +27,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/silver
 	pda_type = /obj/item/modular_computer/pda/heads/hop
+	gloves = /obj/item/clothing/gloves/duty/com
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO/espatier
 	name = OUTFIT_JOB_NAME("Executive Officer - Espatier Corps")
@@ -42,6 +44,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store_str
 	head = /obj/item/clothing/head/iseo/beret/medical
+	gloves = /obj/item/clothing/gloves/duty/med
 
 /decl/hierarchy/outfit/job/torch/crew/command/cmo/New()
 	..()
@@ -62,6 +65,7 @@
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store_str
 	head = /obj/item/clothing/head/iseo/beret/engineering
+	gloves = /obj/item/clothing/gloves/duty/eng
 
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/New()
 	..()
@@ -81,6 +85,7 @@
 	id_type = list(/obj/item/card/id/torch/silver/security)
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 	head = /obj/item/clothing/head/iseo/beret/security
+	gloves = /obj/item/clothing/gloves/duty/sec
 
 /decl/hierarchy/outfit/job/torch/crew/command/cos/New()
 	..()
@@ -125,6 +130,7 @@
 	l_ear = /obj/item/radio/headset/sea
 	id_type = list(/obj/item/card/id/torch/crew/sea)
 	pda_type = /obj/item/modular_computer/pda/heads
+	gloves = /obj/item/clothing/gloves/duty/com
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer
 	name = OUTFIT_JOB_NAME("Bridge Officer")
@@ -133,6 +139,7 @@
 	id_type = list(/obj/item/card/id/torch/crew/bridgeofficer)
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/radio/headset/bridgeofficer
+	gloves = /obj/item/clothing/gloves/duty/com
 
 /decl/hierarchy/outfit/job/torch/crew/command/bridgeofficer/espatier
 	name = OUTFIT_JOB_NAME("Bridge Officer - Espatier Corps")

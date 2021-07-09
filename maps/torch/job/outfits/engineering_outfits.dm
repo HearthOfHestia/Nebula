@@ -15,6 +15,7 @@
 	id_type = /obj/item/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	head = /obj/item/clothing/head/iseo/beret/engineering
+	gloves = /obj/item/clothing/gloves/duty/eng
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/espatier
 	name = OUTFIT_JOB_NAME("Senior Engineer - Espatier")
@@ -29,6 +30,7 @@
 	id_type = /obj/item/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 	head = /obj/item/clothing/head/iseo/beret/engineering
+	gloves = /obj/item/clothing/gloves/duty/eng
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/espatier
 	name = OUTFIT_JOB_NAME("Engineer - Espatier")
@@ -50,6 +52,7 @@
 	shoes = /obj/item/clothing/shoes/color/black
 	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
+	gloves = /obj/item/clothing/gloves/duty/eng
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/iseo
 	name = OUTFIT_JOB_NAME("Roboticist - Torch")

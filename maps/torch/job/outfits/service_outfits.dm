@@ -1,6 +1,7 @@
 /decl/hierarchy/outfit/job/torch/crew/service
 	l_ear = /obj/item/radio/headset/headset_service
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/service
+	gloves = /obj/item/clothing/gloves/duty/srv
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor
 	name = OUTFIT_JOB_NAME("Sanitation Technician - Torch")

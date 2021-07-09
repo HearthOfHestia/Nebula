@@ -3,7 +3,6 @@
 	sort_category = "Skill Badges"
 	category = /datum/gear/skill
 	slot = slot_tie_str
-	allowed_
 
 /datum/gear/skill/botany
 	display_name = "Field Xenobotany Specialist badge"

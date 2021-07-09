@@ -1,6 +1,7 @@
 /decl/hierarchy/outfit/job/torch/crew/supply
 	l_ear = /obj/item/radio/headset/headset_cargo
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/supply
+	gloves = /obj/item/clothing/gloves/duty/sup
 
 /decl/hierarchy/outfit/job/torch/crew/supply/New()
 	..()

@@ -2675,7 +2675,6 @@
 /area/maintenance/seconddeck/forestarboard)
 "fw" = (
 /obj/effect/floor_decal/corner/yellow/diagonal,
-/obj/random_multi/single_item/punitelly,
 /obj/machinery/light/small{
 	dir = 1
 	},
@@ -13222,7 +13221,6 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "EQ" = (
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "ES" = (
@@ -17413,7 +17411,6 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "PP" = (
@@ -17811,7 +17808,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "QR" = (
-/obj/random_multi/single_item/punitelly,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "QT" = (

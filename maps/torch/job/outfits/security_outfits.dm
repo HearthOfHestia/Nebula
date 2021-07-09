@@ -2,6 +2,7 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/security
 	l_ear = /obj/item/radio/headset/headset_sec
 	pda_slot = slot_l_store_str
+	gloves = /obj/item/clothing/gloves/duty/sec
 
 /decl/hierarchy/outfit/job/torch/crew/security/New()
 	..()
