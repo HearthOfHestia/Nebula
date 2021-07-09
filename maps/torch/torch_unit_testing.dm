@@ -21,7 +21,6 @@
 		/area/maintenance/thirddeck/aftstarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/fifthdeck/aftstarboard = NO_SCRUBBER|NO_VENT,
 		/area/maintenance/waterstore = 0,
-		/area/shield = NO_SCRUBBER|NO_VENT,
 		/area/shuttle = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/shuttle/merchant = NO_SCRUBBER|NO_APC,
 		/area/shuttle/escape_pod6/station = NO_SCRUBBER|NO_APC|NO_VENT,

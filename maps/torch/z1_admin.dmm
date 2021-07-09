@@ -6296,7 +6296,6 @@
 	locked = 1;
 	name = "Shuttle Hatch"
 	},
-/obj/effect/shuttle_landmark/ferry/start,
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
 "aHS" = (

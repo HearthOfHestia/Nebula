@@ -141,24 +141,6 @@ TORCH_ESCAPE_POD(19)
 
 //Transport
 
-/datum/shuttle/autodock/ferry/centcom
-	name = "Centcom"
-	location = 1
-	warmup_time = 10
-	shuttle_area = /area/shuttle/transport1/centcom
-	dock_target = "centcom_shuttle"
-	waypoint_offsite = "nav_ferry_start"
-
-/obj/effect/shuttle_landmark/ferry/start
-	name = "Centcom"
-	landmark_tag = "nav_ferry_start"
-	docking_controller = "centcom_shuttle_bay"
-
-/obj/effect/shuttle_landmark/ferry/out
-	name = "Docking Bay"
-	landmark_tag = "nav_ferry_out"
-	docking_controller = "centcom_shuttle_dock_airlock"
-
 /obj/effect/shuttle_landmark/merc/hanger
 	name = "Northeast of Hanger Deck"
 	landmark_tag = "nav_merc_hanger"

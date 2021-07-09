@@ -101,7 +101,7 @@ Weapons
 	req_access = list(access_liaison)
 
 /obj/item/gun/projectile/revolver/medium/captain
-	name = "\improper Final Argument"
+	name = "Final Argument"
 	icon = 'maps/torch/icons/obj/uniques.dmi'
 	icon_state = "mosley"
 	desc = "A shiny al-Maliki & Mosley Autococker automatic revolver, with black accents. Marketed as the 'Revolver for the Modern Era'. This one has 'To the Captain of SEV Torch' engraved."
@@ -126,3 +126,49 @@ Weapons
 
 /obj/effect/paint/expeditionary
 	color = "#68099e"
+
+/obj/item/gun/projectile/service_carbine
+	name = "service carbine"
+	desc = "The Zendai Armories MS2-A 'Legate' is a medium-caliber service carbine utilized across human-controlled space. Fires 10mm rounds."
+	icon = 'maps/torch/icons/obj/carbine.dmi'
+	fire_delay = 3
+	origin_tech = "{'combat':3,'materials':3}"
+	starts_loaded = 0
+	caliber = CALIBER_RIFLE
+	ammo_type = /obj/item/ammo_casing/pistol
+	slot_flags = SLOT_BACK
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/carbine
+	allowed_magazines = /obj/item/ammo_magazine/carbine
+	one_hand_penalty = 8
+	bulk = GUN_BULK_RIFLE
+	mag_insert_sound = 'sound/weapons/guns/interaction/batrifle_magin.ogg'
+	mag_remove_sound = 'sound/weapons/guns/interaction/batrifle_magout.ogg'
+	material = /decl/material/solid/metal/steel
+	matter = list(
+		/decl/material/solid/metal/silver = MATTER_AMOUNT_REINFORCEMENT,
+		/decl/material/solid/gemstone/diamond = MATTER_AMOUNT_TRACE
+	)
+
+/obj/item/gun/projectile/service_carbine/update_base_icon()
+	if(ammo_magazine)
+		if(ammo_magazine.stored_ammo.len)
+			icon_state = "[get_world_inventory_state()]-loaded"
+		else
+			icon_state = "[get_world_inventory_state()]-empty"
+	else
+		icon_state = get_world_inventory_state()
+
+/obj/item/ammo_magazine/carbine
+	name = "carbine magazine"
+	icon_state = "bullup"
+	origin_tech = "{'combat':2}"
+	mag_type = MAGAZINE
+	caliber = CALIBER_RIFLE
+	material = /decl/material/solid/metal/steel
+	ammo_type = /obj/item/ammo_casing/pistol
+	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
+	multiple_sprites = 1
+
+
+

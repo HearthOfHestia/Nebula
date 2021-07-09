@@ -12,16 +12,19 @@
 	l_ear = /obj/item/radio/headset/heads/torchntdirector
 	id_type = /obj/item/card/id/torch/silver/research
 	pda_type = /obj/item/modular_computer/pda/heads/rd
+	head = /obj/item/clothing/head/iseo/beret/exploration
 
 /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
 	name = OUTFIT_JOB_NAME("Senior Scientist - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	id_type = /obj/item/card/id/torch/crew/research/senior_scientist
+	head = /obj/item/clothing/head/iseo/beret/exploration
 
 /decl/hierarchy/outfit/job/torch/crew/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Expeditionary Corps")
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	id_type = /obj/item/card/id/torch/crew/research/scientist
+	head = /obj/item/clothing/head/iseo/beret/exploration
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/solgov
 	name = OUTFIT_JOB_NAME("Research Assistant - SCG")

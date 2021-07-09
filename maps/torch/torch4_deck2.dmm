@@ -12220,6 +12220,7 @@
 /area/vacant/cargo)
 "Cv" = (
 /obj/machinery/door/firedoor,
+/obj/random/obstruction,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/cargo)
 "Cw" = (
@@ -12227,6 +12228,7 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/target/syndicate,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "Cx" = (
@@ -16166,6 +16168,10 @@
 /obj/structure/sign/warning/vent_port,
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/engineering/engine_room)
+"MG" = (
+/obj/random/obstruction,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "MI" = (
 /obj/machinery/atmospherics/pipe/zpipe/down/fuel{
 	dir = 8
@@ -20409,6 +20415,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
+"YD" = (
+/obj/item/toy/desk/fan,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "YG" = (
 /obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -38196,7 +38206,7 @@ QD
 Tg
 mT
 BU
-Cr
+MG
 mT
 pi
 pi
@@ -38398,7 +38408,7 @@ pi
 Tg
 mT
 BV
-Cr
+MG
 mT
 Ds
 Wp
@@ -38600,7 +38610,7 @@ pi
 Tg
 mT
 BW
-Cr
+MG
 Bk
 Wp
 Wp
@@ -38802,7 +38812,7 @@ pi
 Tg
 mT
 BX
-Cr
+YD
 RT
 Wp
 ag

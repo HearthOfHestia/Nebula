@@ -10552,11 +10552,7 @@
 	health = 1e+006
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/gun/energy/gun/secure,
-/obj/item/gun/energy/gun/secure,
 /obj/structure/window/reinforced,
-/obj/item/gun/energy/gun/secure,
-/obj/item/gun/energy/gun/secure,
 /obj/machinery/door/window/brigdoor{
 	dir = 4
 	},
@@ -14763,6 +14759,9 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
+/obj/machinery/sleeper{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
 "dOM" = (
@@ -15057,7 +15056,7 @@
 	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled/white,
-/area/rnd/xenoarch/analysis)
+/area/rnd/locker)
 "ehZ" = (
 /obj/structure/table/steel,
 /obj/item/paper_bin{
@@ -15237,6 +15236,8 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 4
 	},
+/obj/item/gun/projectile/service_carbine,
+/obj/item/gun/projectile/service_carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "evb" = (
@@ -19806,8 +19807,6 @@
 	},
 /obj/item/gun/energy/laser/secure,
 /obj/item/gun/energy/laser/secure,
-/obj/item/gun/energy/laser/secure,
-/obj/item/gun/energy/laser/secure,
 /obj/machinery/door/window/brigdoor{
 	dir = 4
 	},
@@ -20631,7 +20630,7 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
-/area/rnd/xenoarch/analysis)
+/area/rnd/locker)
 "mcA" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
@@ -21175,7 +21174,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
-/area/rnd/xenoarch/analysis)
+/area/rnd/locker)
 "mLb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -25361,6 +25360,14 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
+/obj/item/ammo_magazine/carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "rFb" = (
@@ -26330,6 +26337,8 @@
 /obj/machinery/door/window/brigdoor{
 	dir = 4
 	},
+/obj/item/gun/projectile/service_carbine,
+/obj/item/gun/projectile/service_carbine,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
 "sCb" = (
@@ -26477,6 +26486,20 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
 "sLb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/sleeper{
+	dir = 4
+	},
 /obj/effect/floor_decal/corner/paleblue/mono,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -26910,7 +26933,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
-/area/rnd/xenoarch/analysis)
+/area/rnd/locker)
 "tEs" = (
 /obj/structure/filingcabinet/chestdrawer{
 	dir = 1
@@ -28798,13 +28821,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
-"xTh" = (
-/obj/machinery/sleeper{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/paleblue/mono,
-/turf/simulated/floor/tiled/white/monotile,
-/area/medical/sleeper)
 "xTT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/emcloset,
@@ -49389,10 +49405,10 @@ akp
 cQb
 dgb
 poS
-sLb
+fvb
 dZb
-pPa
-xTh
+sLb
+ezb
 fvb
 adL
 dZb

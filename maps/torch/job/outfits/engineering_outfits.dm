@@ -14,11 +14,13 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
+	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer/espatier
 	name = OUTFIT_JOB_NAME("Senior Engineer - Espatier")
 	uniform = /obj/item/clothing/under/espatier/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
+	head = /obj/item/clothing/head/espatier/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
 	name = OUTFIT_JOB_NAME("Engineer - Torch")
@@ -26,11 +28,13 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
+	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer/espatier
 	name = OUTFIT_JOB_NAME("Engineer - Espatier")
 	uniform = /obj/item/clothing/under/espatier/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
+	head = /obj/item/clothing/head/espatier/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	name = OUTFIT_JOB_NAME("Engineering Assistant")
@@ -38,6 +42,7 @@
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/card/id/torch/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
+	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist
 	name = OUTFIT_JOB_NAME("Roboticist - Contractor")
@@ -52,6 +57,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
+	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/espatier
 	name = OUTFIT_JOB_NAME("Roboticist - Espatier")
@@ -59,3 +65,4 @@
 	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	pda_type = /obj/item/modular_computer/pda/roboticist
+	head = /obj/item/clothing/head/espatier/beret/engineering

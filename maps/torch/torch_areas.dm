@@ -924,12 +924,6 @@
 	sound_env = SMALL_ENCLOSED
 	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
 
-/area/crew_quarters/sleep/bunk
-	name = "\improper Bunk Room"
-	icon_state = "Sleep"
-	sound_env = SMALL_SOFTFLOOR
-	area_flags = AREA_FLAG_RAD_SHIELDED | AREA_FLAG_ION_SHIELDED
-
 /area/crew_quarters/sleep/cryo/aux
 	name = "\improper First Deck Cryogenic Storage"
 	icon_state = "Sleep"
@@ -1119,24 +1113,12 @@
 	name = "\improper Autopsy"
 	icon_state = "autopsy"
 
-// Shield Rooms
-
-/area/shield
-	name = "\improper Shield Generator"
-	icon_state = "engineering"
-	sound_env = SMALL_ENCLOSED
-	req_access = list(access_engine_equip)
-
 // Misc
 /area/teleporter
 	name = "\improper Teleporter"
 	icon_state = "teleporter"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_teleporter)
-
-/area/solar/bridge
-	name = "\improper Bridge Solar Array"
-	icon_state = "panelsS"
 
 /area/eva
 	name = "\improper EVA Storage"
@@ -1277,14 +1259,6 @@
 	has_gravity = FALSE
 	base_turf = /turf/space
 	req_access = list(access_engine_equip)
-
-/area/solar/auxstarboard
-	name = "\improper Fore Starboard Solar Array"
-	icon_state = "panelsA"
-
-/area/solar/port
-	name = "\improper Port Auxiliary Solar Array"
-	icon_state = "panelsP"
 
 // Maintenance
 

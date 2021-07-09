@@ -9248,13 +9248,27 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
 "wT" = (
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /obj/machinery/power/apc{
-	dir = 2;
-	name = "south bump";
-	pixel_y = -24
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
+/obj/structure/cable/green{
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
-/area/maintenance/bridge/aftport)
+/area/maintenance/bridge/foreport)
 "wU" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -26844,7 +26858,7 @@ ti
 ti
 ti
 ti
-xz
+wT
 xE
 tg
 ad
@@ -31688,7 +31702,7 @@ on
 CR
 Pc
 wn
-wT
+wS
 CN
 CN
 CN

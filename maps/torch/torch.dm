@@ -83,10 +83,8 @@
 	#include "items/summarydocuments.dm"
 
 	#include "items/clothing/ec_skillbadges.dm"
-	#include "items/clothing/solgov-accessory.dm"
 	#include "items/clothing/solgov-head.dm"
 
-	#include "items/weapon/storage/wallets.dm"
 
 	#include "items/unsorted_missing.dm"
 
@@ -166,6 +164,7 @@
 	#include "datums\music\nearest_starbase.dm"
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
+	#include "items\hearth_clothing\hats_general.dm"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"

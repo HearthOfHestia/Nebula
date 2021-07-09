@@ -29,6 +29,7 @@
 
 /decl/hierarchy/outfit/job/torch/crew/command/XO/espatier
 	name = OUTFIT_JOB_NAME("Executive Officer - Espatier Corps")
+	head = /obj/item/clothing/head/espatier/beret/command
 	uniform = /obj/item/clothing/under/espatier/utility/command
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
@@ -40,6 +41,7 @@
 	id_type = /obj/item/card/id/torch/silver/medical
 	pda_type = /obj/item/modular_computer/pda/heads/cmo
 	pda_slot = slot_l_store_str
+	head = /obj/item/clothing/head/iseo/beret/medical
 
 /decl/hierarchy/outfit/job/torch/crew/command/cmo/New()
 	..()
@@ -49,16 +51,17 @@
 	name = OUTFIT_JOB_NAME("Chief Medical Officer - Espatier Corps")
 	uniform = /obj/item/clothing/under/espatier/utility/medical
 	shoes = /obj/item/clothing/shoes/jackboots/duty
+	head = /obj/item/clothing/head/espatier/beret/medical
 
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
 	name = OUTFIT_JOB_NAME("Chief Engineer - Torch")
 	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	l_ear = /obj/item/radio/headset/heads/ce
-	id_type = list(/obj/item/card/id/torch/silver/engineering)
+	id_type = /obj/item/card/id/torch/silver/engineering
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	pda_slot = slot_l_store_str
-	//flags = OUTFIT_FLAGS_JOB_DEFAULT | OUTFIT_EXTENDED_SURVIVAL
+	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/New()
 	..()
@@ -68,6 +71,7 @@
 	name = OUTFIT_JOB_NAME("Chief Engineer - Espatier Corps")
 	uniform = /obj/item/clothing/under/espatier/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
+	head = /obj/item/clothing/head/espatier/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/command/cos
 	name = OUTFIT_JOB_NAME("Chief of Security")
@@ -76,6 +80,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = list(/obj/item/card/id/torch/silver/security)
 	pda_type = /obj/item/modular_computer/pda/heads/hos
+	head = /obj/item/clothing/head/iseo/beret/security
 
 /decl/hierarchy/outfit/job/torch/crew/command/cos/New()
 	..()
@@ -85,6 +90,7 @@
 	name = OUTFIT_JOB_NAME("Chief of Security - Espatier Corps")
 	uniform = /obj/item/clothing/under/espatier/utility/security
 	shoes = /obj/item/clothing/shoes/jackboots/duty
+	head = /obj/item/clothing/head/espatier/beret/security
 
 /decl/hierarchy/outfit/job/torch/passenger/workplace_liaison
 	name = OUTFIT_JOB_NAME("Workplace Liaison")
