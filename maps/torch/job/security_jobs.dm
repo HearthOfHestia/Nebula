@@ -22,7 +22,8 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
+	                    SKILL_FORENSICS   = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
@@ -72,7 +73,8 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_BASIC,
-	                    SKILL_FORENSICS   = SKILL_ADEPT)
+	                    SKILL_FORENSICS   = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
 	                    SKILL_WEAPONS     = SKILL_EXPERT,
@@ -120,7 +122,8 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
+	                    SKILL_FORENSICS   = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,

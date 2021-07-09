@@ -18,7 +18,8 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_BUREAUCRACY	= SKILL_EXPERT,
-	                    SKILL_FINANCE		= SKILL_BASIC)
+	                    SKILL_FINANCE		= SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 	skill_points = 20
 
 	access = list(
@@ -57,7 +58,8 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_BASIC,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
+	                    SKILL_FORENSICS   = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 	max_skill = list(   SKILL_COMBAT      = SKILL_EXPERT,
 	                    SKILL_WEAPONS     = SKILL_EXPERT,
 	                    SKILL_FORENSICS   = SKILL_EXPERT)

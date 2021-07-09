@@ -26,7 +26,8 @@
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
-						SKILL_DEVICES     = SKILL_ADEPT)
+						SKILL_DEVICES     = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -66,7 +67,8 @@
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
-						SKILL_DEVICES     = SKILL_ADEPT)
+						SKILL_DEVICES     = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -109,7 +111,8 @@
 	)
 	min_skill = list(   SKILL_EVA     = SKILL_BASIC,
 	                    SKILL_MEDICAL = SKILL_BASIC,
-	                    SKILL_ANATOMY = SKILL_BASIC)
+	                    SKILL_ANATOMY = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_CHEMISTRY   = SKILL_MAX)
@@ -157,7 +160,8 @@
 	min_skill = list(   SKILL_EVA     = SKILL_ADEPT,
 	                    SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_MEDICAL = SKILL_EXPERT,
-	                    SKILL_ANATOMY = SKILL_BASIC)
+	                    SKILL_ANATOMY = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -191,7 +195,8 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/contractor)
 	min_skill = list(   SKILL_MEDICAL   = SKILL_BASIC,
-	                    SKILL_CHEMISTRY = SKILL_ADEPT)
+	                    SKILL_CHEMISTRY = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_BASIC,
 						SKILL_ANATOMY	  = SKILL_BASIC,
@@ -237,7 +242,8 @@
 	)
 	min_skill = list(
 		SKILL_BUREAUCRACY = SKILL_BASIC,
-		SKILL_MEDICAL     = SKILL_BASIC
+		SKILL_MEDICAL     = SKILL_BASIC,
+		SKILL_LITERACY    = SKILL_ADEPT
 	)
 	max_skill = list(
 		SKILL_MEDICAL     = SKILL_MAX

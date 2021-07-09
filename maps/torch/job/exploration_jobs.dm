@@ -23,7 +23,8 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_ADEPT,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_BASIC)
+	                    SKILL_PILOT       = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX,
@@ -73,7 +74,8 @@
 		access_radio_exp, access_radio_sci, access_radio_sup
 	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
-						SKILL_PILOT = SKILL_ADEPT)
+						SKILL_PILOT = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
@@ -99,7 +101,7 @@
 		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3
 	)
-	min_skill = list(   SKILL_EVA = SKILL_BASIC)
+	min_skill = list(   SKILL_EVA = SKILL_BASIC,SKILL_LITERACY = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX,

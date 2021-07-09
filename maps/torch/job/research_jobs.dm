@@ -62,7 +62,8 @@
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
@@ -112,6 +113,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1
 	)
+	min_skill = list(SKILL_LITERACY    = SKILL_ADEPT)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)

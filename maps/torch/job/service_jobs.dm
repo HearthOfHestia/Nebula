@@ -20,7 +20,7 @@
 		/datum/mil_rank/sc/s2,
 		/datum/mil_rank/espatier/o1,
 		/datum/mil_rank/espatier/o2)
-	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC)
+	min_skill = list(SKILL_BUREAUCRACY = SKILL_BASIC, SKILL_LITERACY    = SKILL_ADEPT)
 
 	access = list(
 		access_morgue, access_chapel_office,
@@ -55,7 +55,7 @@
 		/datum/mil_rank/espatier/e3,
 		/datum/mil_rank/espatier/e4
 	)
-	min_skill = list(   SKILL_HAULING = SKILL_BASIC)
+	min_skill = list(   SKILL_HAULING = SKILL_BASIC, SKILL_LITERACY    = SKILL_ADEPT)
 
 	access = list(
 		access_maint_tunnels, access_emergency_storage,
@@ -94,7 +94,8 @@
 	)
 	min_skill = list(   SKILL_COOKING   = SKILL_ADEPT,
 	                    SKILL_BOTANY    = SKILL_BASIC,
-	                    SKILL_CHEMISTRY = SKILL_BASIC)
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	access = list(
 		access_hydroponics, access_kitchen,
@@ -125,7 +126,8 @@
 
 	min_skill = list(   SKILL_COOKING   = SKILL_BASIC,
 	                    SKILL_BOTANY    = SKILL_BASIC,
-	                    SKILL_CHEMISTRY = SKILL_BASIC)
+	                    SKILL_CHEMISTRY = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 	selection_color = COMMS_COLOR_SERVICE
 
 /datum/job/crew

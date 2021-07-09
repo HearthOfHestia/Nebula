@@ -22,7 +22,8 @@
 	                    SKILL_FINANCE     = SKILL_BASIC,
 	                    SKILL_HAULING     = SKILL_BASIC,
 	                    SKILL_EVA         = SKILL_BASIC,
-	                    SKILL_PILOT       = SKILL_BASIC)
+	                    SKILL_PILOT       = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 18
@@ -64,7 +65,8 @@
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_FINANCE     = SKILL_BASIC,
-	                    SKILL_HAULING     = SKILL_BASIC)
+	                    SKILL_HAULING     = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 
@@ -95,7 +97,8 @@
 		"Shaft Miner",
 		"Salvage Technician")
 	min_skill = list(   SKILL_HAULING = SKILL_ADEPT,
-	                    SKILL_EVA     = SKILL_BASIC)
+	                    SKILL_EVA     = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 

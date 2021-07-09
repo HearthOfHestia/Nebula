@@ -24,7 +24,8 @@
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
 	                    SKILL_ATMOS        = SKILL_BASIC,
-	                    SKILL_ENGINES      = SKILL_ADEPT)
+	                    SKILL_ENGINES      = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
@@ -84,7 +85,8 @@
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
 	                    SKILL_ELECTRICAL   = SKILL_BASIC,
 	                    SKILL_ATMOS        = SKILL_BASIC,
-	                    SKILL_ENGINES      = SKILL_BASIC)
+	                    SKILL_ENGINES      = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
@@ -140,7 +142,8 @@
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
 	                    SKILL_ATMOS        = SKILL_ADEPT,
-	                    SKILL_ENGINES      = SKILL_ADEPT)
+	                    SKILL_ENGINES      = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
@@ -190,7 +193,8 @@
 	                    SKILL_DEVICES		= SKILL_ADEPT,
 	                    SKILL_EVA           = SKILL_ADEPT,
 	                    SKILL_ANATOMY       = SKILL_ADEPT,
-	                    SKILL_MECH          = HAS_PERK)
+	                    SKILL_MECH          = HAS_PERK,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,

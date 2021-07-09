@@ -3787,7 +3787,6 @@
 	dir = 1;
 	id_tag = "endeavour_dock";
 	pixel_y = -24;
-	tag = null;
 	tag_door = "endeavour_dock_door"
 	},
 /turf/simulated/floor/tiled/dark,

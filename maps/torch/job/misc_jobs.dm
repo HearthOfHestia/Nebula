@@ -76,7 +76,8 @@ Civilian
 	access = list(access_merchant)
 	announced = FALSE
 	min_skill = list(   SKILL_FINANCE = SKILL_ADEPT,
-	                    SKILL_PILOT	  = SKILL_BASIC)
+	                    SKILL_PILOT	  = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 24

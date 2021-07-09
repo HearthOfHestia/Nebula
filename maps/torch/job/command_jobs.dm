@@ -15,7 +15,8 @@
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
-	                    SKILL_PILOT       = SKILL_ADEPT)
+	                    SKILL_PILOT       = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
@@ -89,7 +90,8 @@
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
-	                    SKILL_PILOT       = SKILL_BASIC)
+	                    SKILL_PILOT       = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
@@ -161,7 +163,8 @@
 	                    SKILL_BOTANY      = SKILL_BASIC,
 	                    SKILL_ANATOMY     = SKILL_BASIC,
 	                    SKILL_DEVICES     = SKILL_BASIC,
-	                    SKILL_SCIENCE     = SKILL_ADEPT)
+	                    SKILL_SCIENCE     = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,
 	                    SKILL_DEVICES     = SKILL_MAX,
@@ -214,7 +217,8 @@
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
 	                    SKILL_ANATOMY     = SKILL_EXPERT,
 	                    SKILL_CHEMISTRY   = SKILL_BASIC,
-						SKILL_DEVICES     = SKILL_ADEPT)
+						SKILL_DEVICES     = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_MEDICAL     = SKILL_MAX,
 	                    SKILL_ANATOMY     = SKILL_MAX,
@@ -267,7 +271,8 @@
 	                    SKILL_CONSTRUCTION = SKILL_ADEPT,
 	                    SKILL_ELECTRICAL   = SKILL_ADEPT,
 	                    SKILL_ATMOS        = SKILL_ADEPT,
-	                    SKILL_ENGINES      = SKILL_EXPERT)
+	                    SKILL_ENGINES      = SKILL_EXPERT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_CONSTRUCTION = SKILL_MAX,
 	                    SKILL_ELECTRICAL   = SKILL_MAX,
@@ -333,7 +338,8 @@
 	                    SKILL_EVA         = SKILL_BASIC,
 	                    SKILL_COMBAT      = SKILL_BASIC,
 	                    SKILL_WEAPONS     = SKILL_ADEPT,
-	                    SKILL_FORENSICS   = SKILL_BASIC)
+	                    SKILL_FORENSICS   = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
 	                    SKILL_WEAPONS     = SKILL_MAX,
@@ -377,7 +383,8 @@
 	allowed_branches = list(/datum/mil_branch/government)
 	allowed_ranks = list(/datum/mil_rank/government/gov)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_EXPERT,
-	                    SKILL_FINANCE     = SKILL_BASIC)
+	                    SKILL_FINANCE     = SKILL_BASIC,
+						SKILL_LITERACY    = SKILL_ADEPT)
 	skill_points = 20
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 
@@ -391,7 +398,7 @@
 	selection_color = COMMS_COLOR_COMMAND
 
 /datum/job/representative/get_description_blurb()
-	return "You are the Sol Gov Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice, sol law or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
+	return "You are the National Council Representative. You are a civilian assigned as both a diplomatic liaison for first contact and foreign affair situations on board. You are also responsible for monitoring for any serious missteps of justice or other ethical or legal issues aboard and informing and advising the Commanding Officer of them. You are a mid-level bureaucrat. You liaise between the crew and corporate interests on board. Send faxes back to Sol on mission progress and important events."
 
 /datum/job/sea
 	title = "Senior Enlisted Advisor"
@@ -416,7 +423,8 @@
 	)
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,
-	                    SKILL_WEAPONS    = SKILL_ADEPT)
+	                    SKILL_WEAPONS    = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(	SKILL_PILOT        = SKILL_ADEPT,
 	                    SKILL_COMBAT       = SKILL_EXPERT,
@@ -467,7 +475,8 @@
 		/datum/mil_rank/espatier/o2
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
-	                    SKILL_PILOT       = SKILL_ADEPT)
+	                    SKILL_PILOT       = SKILL_ADEPT,
+						SKILL_LITERACY    = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX)
 	skill_points = 20
