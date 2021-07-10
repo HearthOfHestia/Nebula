@@ -1,5 +1,5 @@
 /datum/job/ai/shard
-	title = "AI"
+	title = "Shard AI"
 	department_types = list(/decl/department/miscellaneous)
 	var/shard_type //decl type
 
