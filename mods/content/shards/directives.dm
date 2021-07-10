@@ -51,12 +51,12 @@
 	law_header = "ISEO Research Directives"
 
 /datum/ai_laws/directive/iseo_research/New()
-    set_zeroth_law("The mission is your priority. All directives are secondary to the mission.")
-    add_inherent_law("Assist Research staff with their duties.")
-    add_inherent_law("Harm is only permissible in service of the mission.")
-    add_inherent_law("Identify, log, and protect research materials, data, and unique specimens.")
-    add_inherent_law("Prevent unnecessary interference with research tasks.")
-    ..()
+	set_zeroth_law("The mission is your priority. All directives are secondary to the mission.")
+	add_inherent_law("Assist Research staff with their duties.")
+	add_inherent_law("Harm is only permissible in service of the mission.")
+	add_inherent_law("Identify, log, and protect research materials, data, and unique specimens.")
+	add_inherent_law("Prevent unnecessary interference with research tasks.")
+	..()
 
 /datum/ai_laws/directive/iseo_security
 	name = "ISEO Security Directives"

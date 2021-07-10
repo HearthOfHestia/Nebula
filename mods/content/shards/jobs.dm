@@ -4,11 +4,11 @@
 	var/shard_type //decl type
 
 /datum/job/ai/shard/is_position_available()
-    var/decl/ai_type/shard_decl = GET_DECL(shard_type)
-    for(var/obj/structure/aicore/deactivated/C in empty_playable_ai_cores)
-        if(C.core_type == shard_decl.department) 
-            return TRUE
-    return FALSE
+	var/decl/ai_type/shard_decl = GET_DECL(shard_type)
+	for(var/obj/structure/aicore/deactivated/C in empty_playable_ai_cores)
+		if(C.core_type == shard_decl.department) 
+			return TRUE
+	return FALSE
 
 /datum/job/ai/shard/do_spawn_special(var/mob/living/character, var/mob/new_player/new_player_mob)
 	var/decl/ai_type/shard_decl = GET_DECL(shard_type)
