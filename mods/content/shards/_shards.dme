@@ -1,0 +1,12 @@
+#ifndef MODPACK_SHARDS
+#define MODPACK_SHARDS
+#include "shards.dm"
+#include "ai.dm"
+#include "datums.dm"
+#include "directives.dm"
+#include "drones.dm"
+#include "jobs.dm"
+#include "structures.dm"
+#include "override.dm"
+#include "drone_modules.dm"
+#endif
