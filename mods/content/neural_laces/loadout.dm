@@ -1,5 +1,5 @@
-/datum/gear/augmentation/neural_lace
-	display_name = "neural lace"
+/decl/loadout_option/augmentation/neural_lace
+	name = "neural lace"
 	custom_setup_proc_arguments = list(BP_HEAD)
 	path = /obj/item/organ/internal/neural_lace
 
