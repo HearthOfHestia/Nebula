@@ -1,34 +1,34 @@
 // Shoelocker
-/datum/gear/shoes/duty
-	display_name = "duty boots"
+/decl/loadout_option/shoes/duty
+	name = "duty boots"
 	path = /obj/item/clothing/shoes/jackboots/duty
 
-/datum/gear/shoes/whitedress
-	display_name = "dress shoes, white"
+/decl/loadout_option/shoes/whitedress
+	name = "dress shoes, white"
 	path = /obj/item/clothing/shoes/dress/white
 
-/datum/gear/shoes/dress
-	display_name = "dress shoes"
+/decl/loadout_option/shoes/dress
+	name = "dress shoes"
 	path = /obj/item/clothing/shoes/dress
 
-/datum/gear/shoes/athletic
+/decl/loadout_option/shoes/athletic
 	allowed_roles = SEMIFORMAL_ROLES
 
-/datum/gear/shoes/color
+/decl/loadout_option/shoes/color
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/shoes/flats
+/decl/loadout_option/shoes/flats
 	allowed_roles = SEMIANDFORMAL_ROLES
 
-/datum/gear/shoes/high
+/decl/loadout_option/shoes/high
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/shoes/sandal
+/decl/loadout_option/shoes/sandal
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/shoes/heels
+/decl/loadout_option/shoes/heels
 	allowed_roles = SEMIANDFORMAL_ROLES
 
-/datum/gear/shoes/boots
+/decl/loadout_option/shoes/boots
 	allowed_branches = CIVILIAN_BRANCHES
