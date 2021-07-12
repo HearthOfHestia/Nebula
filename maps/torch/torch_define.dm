@@ -13,8 +13,8 @@
 	overmap_event_areas = 34
 	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
-	allowed_spawns = list("Cryogenic Storage")
-	default_spawn = "Cryogenic Storage"
+	allowed_spawns = list(/decl/spawnpoint/cryo)
+	default_spawn = /decl/spawnpoint/cryo
 	default_job_type = /datum/job/assistant
 
 	station_name  = "\improper ISEO Endeavour"
