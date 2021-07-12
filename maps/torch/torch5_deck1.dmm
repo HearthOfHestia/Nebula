@@ -6880,8 +6880,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "avO" = (
 /obj/effect/floor_decal/corner/pink/mono,
 /obj/machinery/body_scanconsole{
@@ -7238,14 +7243,14 @@
 	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "axN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "axO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7255,12 +7260,12 @@
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "seclockdown";
-	name = "Lockdown Blast Door";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/security/wing)
+/area/security/lobby)
 "axT" = (
 /obj/structure/closet/crate,
 /obj/item/stock_parts/circuitboard/smes,
@@ -7664,7 +7669,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "azi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7758,7 +7763,7 @@
 	},
 /obj/effect/floor_decal/corner/red/mono,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "aAe" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
@@ -7767,7 +7772,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "aAl" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -7831,6 +7836,7 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/rnd/development)
 "aAT" = (
+/obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/firstdeck)
 "aAU" = (
@@ -7861,7 +7867,7 @@
 /obj/effect/wallframe_spawn/reinforced,
 /obj/effect/paint_stripe/security,
 /turf/simulated/floor/plating,
-/area/security/wing)
+/area/security/lobby)
 "aBw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13316,7 +13322,7 @@
 /area/shuttle/escape_pod16/station)
 "bUH" = (
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "bUZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -13358,13 +13364,19 @@
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/plating,
 /area/shuttle/escape_pod17/station)
+"bVw" = (
+/obj/effect/floor_decal/corner/red{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/security/lobby)
 "bVA" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
 	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "bWb" = (
 /obj/machinery/status_display{
 	pixel_x = -32;
@@ -13737,12 +13749,6 @@
 	pixel_x = -5;
 	pixel_y = 34
 	},
-/obj/machinery/button/blast_door{
-	id_tag = "seclockdown";
-	name = "Security Lockdown";
-	pixel_x = 8;
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
 "cxb" = (
@@ -13868,7 +13874,7 @@
 	name = "Privacy Shutters"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/wing)
+/area/security/lobby)
 "cEb" = (
 /obj/structure/closet/secure_closet/medical_torch,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -14777,8 +14783,18 @@
 	dir = 5
 	},
 /obj/structure/flora/pottedplant/stoutbush,
+/obj/structure/cable/green{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/power/apc{
+	dir = 1;
+	name = "north bump";
+	pixel_x = 0;
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "dQb" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -15325,7 +15341,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "ezb" = (
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -16330,7 +16346,7 @@
 	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
-/area/security/wing)
+/area/security/lobby)
 "guP" = (
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/regular{
@@ -16619,6 +16635,10 @@
 /obj/effect/paint_stripe/medical,
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/medical/washroom)
+"gTR" = (
+/obj/effect/paint_stripe/security,
+/turf/simulated/wall/r_wall/prepainted,
+/area/security/lobby)
 "gUp" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/red{
@@ -16635,7 +16655,7 @@
 	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "gWb" = (
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /obj/machinery/door/blast/shutters{
@@ -17024,9 +17044,6 @@
 /turf/simulated/floor/plating,
 /area/rnd/entry)
 "htq" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
 /obj/machinery/light{
 	dir = 8
 	},
@@ -17655,12 +17672,12 @@
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "seclockdown";
-	name = "Lockdown Blast Door";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/security/wing)
+/area/security/lobby)
 "iib" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -17840,7 +17857,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "itb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5;
@@ -20484,7 +20501,7 @@
 	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
-/area/security/wing)
+/area/security/lobby)
 "lKb" = (
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -21919,8 +21936,13 @@
 	dir = 5
 	},
 /obj/structure/bed/chair/padded/red,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "nLo" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -23743,7 +23765,7 @@
 "pUr" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/wing)
+/area/security/lobby)
 "pVv" = (
 /obj/effect/paint_stripe/security,
 /obj/effect/wallframe_spawn/reinforced/polarized{
@@ -24460,6 +24482,7 @@
 /area/hallway/primary/firstdeck/fore)
 "qHx" = (
 /obj/structure/sign/warning/secure_area,
+/obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/firstdeck)
 "qIb" = (
@@ -26251,7 +26274,7 @@
 	},
 /obj/effect/paint_stripe/security,
 /turf/simulated/floor/plating,
-/area/security/wing)
+/area/security/lobby)
 "sxT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -26850,7 +26873,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "tzg" = (
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/xenoarch/anom_storage)
@@ -27445,7 +27468,7 @@
 "uJn" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/security/wing)
+/area/security/lobby)
 "uKa" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -27922,7 +27945,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/security/wing)
+/area/security/lobby)
 "vUl" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -28314,6 +28337,7 @@
 	dir = 4;
 	icon_state = "securearea"
 	},
+/obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/teleporter/firstdeck)
 "wWr" = (
@@ -28745,12 +28769,12 @@
 	density = 0;
 	dir = 4;
 	icon_state = "pdoor0";
-	id_tag = "seclockdown";
-	name = "Lockdown Blast Door";
+	id_tag = "Prison Gate";
+	name = "Security Blast Door";
 	opacity = 0
 	},
 /turf/simulated/floor/tiled/monotile,
-/area/security/wing)
+/area/security/lobby)
 "xRm" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 9;
@@ -36308,7 +36332,7 @@ uBg
 uBg
 uBg
 uBg
-uBg
+tAS
 tAS
 aaa
 aaa
@@ -36511,7 +36535,7 @@ kSs
 etI
 sBg
 uBg
-uBg
+tAS
 tAS
 aaa
 aaa
@@ -37723,7 +37747,7 @@ jhf
 lcI
 pud
 uBg
-uBg
+tAS
 tAS
 aaa
 aaa
@@ -38511,11 +38535,11 @@ cXj
 ajZ
 sxG
 sxG
-tkr
+gTR
 nbb
 nmb
-tkr
-tkr
+gTR
+gTR
 aDE
 aKE
 cHj
@@ -38917,7 +38941,7 @@ nLd
 vTY
 eyY
 lJP
-jpt
+bVw
 aBd
 uJn
 aDF
@@ -39119,7 +39143,7 @@ dPA
 txA
 bUH
 grI
-jpt
+bVw
 aBd
 uJn
 hQT
@@ -39519,13 +39543,13 @@ pVv
 pVv
 ajZ
 ajZ
-tkr
+gTR
 ihc
 axO
 xRh
-tkr
-tkr
-tkr
+gTR
+gTR
+gTR
 aDE
 aJa
 riC
@@ -42368,12 +42392,12 @@ uBg
 jei
 qCs
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa
@@ -42570,12 +42594,12 @@ uBg
 aPC
 aQA
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa
@@ -42772,12 +42796,12 @@ jTV
 aPC
 tAS
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa
@@ -42973,13 +42997,13 @@ uKa
 uKa
 aPE
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa
@@ -43175,13 +43199,13 @@ qVb
 jTV
 aPC
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa
@@ -43377,13 +43401,13 @@ qDj
 qDj
 aPD
 tAS
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
+xqk
 aaa
 aaa
 aaa

@@ -390,7 +390,7 @@
 /turf/simulated/wall/titanium,
 /area/exploration_shuttle/cockpit)
 "bi" = (
-/turf/simulated/floor/plating,
+/turf/simulated/floor/hangar,
 /area/quartermaster/hangar)
 "bj" = (
 /obj/effect/paint/tan,
@@ -1341,7 +1341,7 @@
 /area/maintenance/fifthdeck/fore)
 "da" = (
 /obj/effect/floor_decal/corner/red/mono,
-/obj/structure/aicore/deactivated,
+/obj/structure/aicore/deactivated/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "db" = (
@@ -2123,7 +2123,8 @@
 	pixel_x = -22;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/drone_fabricator/shard,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai_upload_foyer)
 "eC" = (
 /obj/structure/cable/cyan{
@@ -2470,7 +2471,7 @@
 /obj/structure/sign/warning/lethal_turrets{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai_upload_foyer)
 "fG" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
@@ -3275,7 +3276,7 @@
 /area/quartermaster/storage)
 "ia" = (
 /obj/effect/floor_decal/corner/purple/mono,
-/obj/structure/aicore/deactivated,
+/obj/structure/aicore/deactivated/research,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "ic" = (
@@ -3737,7 +3738,7 @@
 /area/quartermaster/storage)
 "jh" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
-/obj/structure/aicore/deactivated,
+/obj/structure/aicore/deactivated/medical,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "jk" = (
@@ -7147,6 +7148,20 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition/eva)
+"qk" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "ql" = (
 /obj/effect/wallframe_spawn/no_grille,
 /obj/machinery/door/firedoor,
@@ -8795,6 +8810,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
+/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/ai/ai_upload_foyer)
 "tQ" = (
@@ -9497,6 +9513,7 @@
 	name = "AI Foyer"
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/ai/ai_upload_foyer)
 "vE" = (
@@ -9515,6 +9532,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
+/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/ai/ai_upload_foyer)
 "vF" = (
@@ -10721,6 +10739,9 @@
 	name = "AI Upload"
 	},
 /obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/ai/ai_upload)
 "CX" = (
@@ -12889,6 +12910,20 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftstarboard)
+"Pz" = (
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/fifthdeck/fore)
 "PA" = (
 /obj/machinery/fabricator/pipe{
 	anchored = 1
@@ -12903,7 +12938,7 @@
 /area/exploration_shuttle/atmos)
 "PH" = (
 /obj/effect/floor_decal/corner/orange/mono,
-/obj/structure/aicore/deactivated,
+/obj/structure/aicore/deactivated/engineering,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "PM" = (
@@ -12936,7 +12971,7 @@
 	c_tag = "AI Foyer"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/bridge/ai/ai_upload)
+/area/bridge/ai/ai_upload_foyer)
 "Qd" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/vacant/bar)
@@ -13077,6 +13112,11 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
@@ -13684,7 +13724,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/hangar,
 /area/quartermaster/hangar)
 "UX" = (
 /obj/effect/shuttle_landmark/torch/hangar/curiosity,
@@ -13804,7 +13844,7 @@
 /area/exploration_shuttle/cargo)
 "VS" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
-/obj/structure/aicore/deactivated,
+/obj/structure/aicore/deactivated/command,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "VV" = (
@@ -27515,7 +27555,7 @@ qP
 qT
 qY
 rx
-IN
+qk
 rI
 an
 an
@@ -28323,7 +28363,7 @@ wA
 uT
 uT
 pn
-uT
+Pz
 rK
 nk
 an

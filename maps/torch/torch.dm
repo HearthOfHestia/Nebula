@@ -10,6 +10,9 @@
 	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
 	#include "..\..\mods\species\utility_frames\_utility_frames.dme"
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
+	#include "..\..\mods\content\neural_laces\_laces.dme"
+	#include "..\..\mods\content\genemodding\_genemodding.dme"
+	#include "..\..\mods\content\shards\_shards.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"

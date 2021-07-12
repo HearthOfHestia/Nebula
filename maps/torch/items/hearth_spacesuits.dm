@@ -42,7 +42,7 @@
 
 /obj/item/clothing/suit/space/void/exploration
 	desc = "An atmos resistant voidsuit for space and planet exploration."
-	name = "pilot voidsuit"
+	name = "exploration voidsuit"
 	icon = 'maps/torch/icons/converted_icons/spacesuits/explo_voidsuit.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -57,7 +57,7 @@
 
 /obj/item/clothing/head/helmet/space/void/command
 	desc = "A sealed helmet, intended for a spacesuit."
-	name = "exploration voidsuit helmet"
+	name = "command voidsuit helmet"
 	icon = 'maps/torch/icons/converted_icons/spacesuits/command_voidsuit_helmet.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -69,7 +69,7 @@
 
 /obj/item/clothing/suit/space/void/command
 	desc = "An atmos resistant voidsuit for protection from hazardous enviroments."
-	name = "pilot voidsuit"
+	name = "command voidsuit"
 	icon = 'maps/torch/icons/converted_icons/spacesuits/command_voidsuit.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES,
@@ -86,7 +86,7 @@
 	name = "command HCM"
 	suit_type = "command hardsuit"
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/command_rig.dmi'
-	desc = "A specialized hardsuit rig control module issued to command staff of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to command staff of the ISSC and their peers."
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES, 
 		bullet = ARMOR_BALLISTIC_SMALL, 
@@ -144,7 +144,7 @@
 /obj/item/rig/command/xo
 	name = "officer's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to high ranking officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to high ranking officers of the ISSC and their peers."
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/xo_rig.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES, 
@@ -181,7 +181,7 @@
 /obj/item/rig/command/co
 	name = "commanding officer's command HCM"
 	suit_type = "advanced command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to commanding officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to commanding officers of the ISSC."
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/co_rig.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT, 
@@ -217,7 +217,7 @@
 /obj/item/rig/command/medical
 	name = "medical command HCM"
 	suit_type = "medical command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking medical officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to ranking medical officers of the ISSC and their peers."
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/cmo_rig.dmi'
 
 	chest = /obj/item/clothing/suit/space/rig/command/medical
@@ -256,7 +256,7 @@
 /obj/item/rig/command/security
 	name = "security command HCM"
 	suit_type = "security command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking security officers of the Expeditionary Corps and their peers."
+	desc = "A specialized hardsuit rig control module issued to ranking security officers of the ISSC and their peers."
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/cso_rig.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_RESISTANT, 
@@ -299,7 +299,7 @@
 /obj/item/rig/command/science
 	name = "research command HCM"
 	suit_type = "research command hardsuit"
-	desc = "A specialized hardsuit rig control module issued to ranking research officers of the Expeditionary Corps."
+	desc = "A specialized hardsuit rig control module issued to ranking research officers of the ISSC."
 	icon = 'maps/torch/icons/converted_icons/spacesuits/rigs/module/cso_rig.dmi'
 	armor = list(
 		melee = ARMOR_MELEE_KNIVES, 
