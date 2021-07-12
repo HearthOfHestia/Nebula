@@ -266,7 +266,7 @@
 	if(job.is_restricted(client.prefs, src))
 		return
 
-	var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client)
+	var/decl/spawnpoint/spawnpoint = job.get_spawnpoint(client)
 	if(!spawnpoint)
 		to_chat(src, alert("That spawnpoint is unavailable. Please try another."))
 		return 0
@@ -426,7 +426,7 @@
 		var/datum/job/job = SSjobs.get_by_title(mind.assigned_role)
 		if(!job)
 			job = SSjobs.get_by_title(global.using_map.default_job_title)
-		var/datum/spawnpoint/spawnpoint = job.get_spawnpoint(client, client.prefs.ranks[job.title])
+		var/decl/spawnpoint/spawnpoint = job.get_spawnpoint(client, client.prefs.ranks[job.title])
 		spawn_turf = pick(spawnpoint.turfs)
 
 	if(chosen_species)
@@ -471,10 +471,6 @@
 	new_character.dna.ready_dna(new_character)
 	new_character.dna.b_type = client.prefs.b_type
 	new_character.sync_organ_dna()
-	if(client.prefs.disabilities)
-		// Set defer to 1 if you add more crap here so it only recalculates struc_enzymes once. - N3X
-		new_character.dna.SetSEState(global.GLASSESBLOCK,1,0)
-		new_character.disabilities |= NEARSIGHTED
 
 	// Do the initial caching of the player's body icons.
 	new_character.force_update_limbs()

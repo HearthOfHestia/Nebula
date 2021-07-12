@@ -1,5 +1,5 @@
 
-/datum/gear/uniform/harness
-	display_name = "utility harness"
+/decl/loadout_option/uniform/harness
+	name = "utility harness"
 	allowed_branches = null
 	path = /obj/item/clothing/under/harness

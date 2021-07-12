@@ -1,11 +1,11 @@
 
-/datum/gear/head/solberet
-	display_name = "ISEO beret selection"
+/decl/loadout_option/head/solberet
+	name = "ISEO beret selection"
 	description = "A beret denoting service in an organization within the ISEO."
 	path = /obj/item/clothing/head/beret/iseo
 	allowed_branches = ISEO_BRANCHES
 
-/datum/gear/head/solberet/New()
+/decl/loadout_option/head/solberet/New()
 	..()
 	var/berets = list()
 	berets["peacekeeper beret"] = /obj/item/clothing/head/beret/iseo/peacekeeper
@@ -15,51 +15,51 @@
 	berets["diplomatic security beret"] = /obj/item/clothing/head/beret/iseo/diplomatic
 	gear_tweaks += new/datum/gear_tweak/path(berets)
 
-/datum/gear/head/fleetcap
-	display_name = "fleet cap"
+/decl/loadout_option/head/fleetcap
+	name = "ISEO cap"
 	path = /obj/item/clothing/head/iseo/utility
 	cost = 0
 	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
-/datum/gear/head/surgical
+/decl/loadout_option/head/surgical
 	allowed_roles = STERILE_ROLES
 
-/datum/gear/head/beret
+/decl/loadout_option/head/beret
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/mask/bandana
+/decl/loadout_option/mask/bandana
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/bandana
+/decl/loadout_option/head/bandana
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/beanie
+/decl/loadout_option/head/beanie
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/bow
+/decl/loadout_option/head/bow
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/cap
+/decl/loadout_option/head/cap
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/hairflower
+/decl/loadout_option/head/hairflower
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/hardhat
+/decl/loadout_option/head/hardhat
 	allowed_roles = TECHNICAL_ROLES
 
-/datum/gear/head/formalhat
+/decl/loadout_option/head/formalhat
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/informalhat
+/decl/loadout_option/head/informalhat
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/head/welding
+/decl/loadout_option/head/welding
 	allowed_roles = TECHNICAL_ROLES
 
-/datum/gear/tactical/balaclava
+/decl/loadout_option/tactical/balaclava
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/head/corporateberet
+/decl/loadout_option/head/corporateberet
 	allowed_branches = CIVILIAN_BRANCHES

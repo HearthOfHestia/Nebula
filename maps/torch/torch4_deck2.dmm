@@ -17357,7 +17357,7 @@
 	name = "west bump";
 	pixel_x = -24
 	},
-/obj/machinery/fusion_fuel_compressor,
+/obj/machinery/fuel_compressor,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/shieldbay)
 "PJ" = (
@@ -19929,7 +19929,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "Xe" = (
-/obj/machinery/fusion_fuel_compressor,
+/obj/machinery/fuel_compressor,
 /obj/machinery/light{
 	dir = 1
 	},

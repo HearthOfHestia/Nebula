@@ -1,50 +1,50 @@
-/datum/gear/accessory/armband_ma
-	display_name = "master at arms brassard"
+/decl/loadout_option/accessory/armband_ma
+	name = "master at arms brassard"
 	path = /obj/item/clothing/accessory/armband/ma
 	allowed_roles = SECURITY_ROLES
 
-/datum/gear/accessory/armband_security
+/decl/loadout_option/accessory/armband_security
 	allowed_roles = SECURITY_ROLES
 
-/datum/gear/accessory/armband_cargo
+/decl/loadout_option/accessory/armband_cargo
 	allowed_roles = SUPPLY_ROLES
 
-/datum/gear/accessory/armband_medical
+/decl/loadout_option/accessory/armband_medical
 	allowed_roles = MEDICAL_ROLES
 
-/datum/gear/accessory/armband_emt
+/decl/loadout_option/accessory/armband_emt
 	allowed_roles = list(/datum/job/doctor, /datum/job/medical_trainee)
 
-/datum/gear/accessory/armband_corpsman
-	display_name = "medical armband"
+/decl/loadout_option/accessory/armband_corpsman
+	name = "medical armband"
 	path = /obj/item/clothing/accessory/armband/medblue
 	allowed_roles = list(/datum/job/cmo, /datum/job/senior_doctor, /datum/job/junior_doctor, /datum/job/doctor, /datum/job/medical_trainee)
 
-/datum/gear/accessory/armband_engineering
+/decl/loadout_option/accessory/armband_engineering
 	allowed_roles = ENGINEERING_ROLES
 
-/datum/gear/accessory/armband_hydro
+/decl/loadout_option/accessory/armband_hydro
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
 
-/datum/gear/accessory/armband_nt
+/decl/loadout_option/accessory/armband_nt
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/ntaward
+/decl/loadout_option/accessory/ntaward
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/tie
+/decl/loadout_option/accessory/tie
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/tie_color
+/decl/loadout_option/accessory/tie_color
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/stethoscope
+/decl/loadout_option/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
 
-/datum/gear/tactical/holster
+/decl/loadout_option/tactical/holster
 	allowed_roles = ARMED_ROLES
 
-/datum/gear/tactical/holster/New()
+/decl/loadout_option/tactical/holster/New()
 	..()
 	var/holsters = list()
 	holsters["shoulder holster"] = /obj/item/clothing/accessory/storage/holster
@@ -54,141 +54,141 @@
 	holsters["thigh holster"] = /obj/item/clothing/accessory/storage/holster/thigh
 	gear_tweaks += new/datum/gear_tweak/path(holsters)
 
-/datum/gear/tactical/sheath
+/decl/loadout_option/tactical/sheath
 	allowed_roles = list(/datum/job/pathfinder, /datum/job/explorer)
 
-/datum/gear/tactical/armor_deco
+/decl/loadout_option/tactical/armor_deco
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/tactical/press_tag
-	display_name = "Press tag"
+/decl/loadout_option/tactical/press_tag
+	name = "Press tag"
 	path = /obj/item/clothing/accessory/armor/tag/press
 	allowed_roles = list(/datum/job/assistant)
 
-/datum/gear/tactical/helm_covers
+/decl/loadout_option/tactical/helm_covers
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/clothing/hawaii
+/decl/loadout_option/clothing/hawaii
 	allowed_roles = SEMIFORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/scarf
+/decl/loadout_option/clothing/scarf
 	allowed_roles = SEMIANDFORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/flannel
+/decl/loadout_option/clothing/flannel
 	allowed_roles = SEMIFORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/vest
+/decl/loadout_option/clothing/vest
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/suspenders
+/decl/loadout_option/clothing/suspenders
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/suspenders/colorable
+/decl/loadout_option/clothing/suspenders/colorable
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/wcoat
+/decl/loadout_option/clothing/wcoat
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/zhongshan
+/decl/loadout_option/clothing/zhongshan
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/dashiki
+/decl/loadout_option/clothing/dashiki
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/thawb
+/decl/loadout_option/clothing/thawb
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/sherwani
+/decl/loadout_option/clothing/sherwani
 	allowed_roles = FORMAL_ROLES
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/qipao
+/decl/loadout_option/clothing/qipao
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/sweater
+/decl/loadout_option/clothing/sweater
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/clothing/tangzhuang
+/decl/loadout_option/clothing/tangzhuang
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/bowtie
+/decl/loadout_option/accessory/bowtie
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/accessory/ftupin
+/decl/loadout_option/accessory/ftupin
 	allowed_branches = CIVILIAN_BRANCHES
 
 /*********************
  tactical accessories
 *********************/
-/datum/gear/tactical/ubac
-	display_name = "black UBAC shirt"
+/decl/loadout_option/tactical/ubac
+	name = "black UBAC shirt"
 	path = /obj/item/clothing/accessory/ubac
 	allowed_roles = ARMORED_ROLES
 	allowed_branches = list(/datum/mil_branch/iseo_issc, /datum/mil_branch/espatier_corps)
 
-/datum/gear/tactical/ubac/blue
-	display_name = "navy blue UBAC shirt"
+/decl/loadout_option/tactical/ubac/blue
+	name = "navy blue UBAC shirt"
 	path = /obj/item/clothing/accessory/ubac/blue
 	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
-/datum/gear/tactical/ubac/misc
-	display_name = "miscellaneous UBAC shirt selection"
+/decl/loadout_option/tactical/ubac/misc
+	name = "miscellaneous UBAC shirt selection"
 	path = /obj/item/clothing/accessory/ubac
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/tactical/ubac/misc/New()
+/decl/loadout_option/tactical/ubac/misc/New()
 	..()
 	var/shirts = list()
 	shirts["green UBAC shirt"] = /obj/item/clothing/accessory/ubac/green
 	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
 	gear_tweaks += new/datum/gear_tweak/path(shirts)
 
-/datum/gear/tactical/armor_pouches
-	display_name = "black armor pouches"
+/decl/loadout_option/tactical/armor_pouches
+	name = "black armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches
 	cost = 2
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/tactical/armor_pouches/navy
-	display_name = "navy armor pouches"
+/decl/loadout_option/tactical/armor_pouches/navy
+	name = "navy armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/navy
 	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
-/datum/gear/tactical/armor_pouches/misc
-	display_name = "miscellaneous armor pouches selection"
+/decl/loadout_option/tactical/armor_pouches/misc
+	name = "miscellaneous armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/tactical/armor_pouches/misc/New()
+/decl/loadout_option/tactical/armor_pouches/misc/New()
 	..()
 	var/pouches = list()
 	pouches["green armor pouches"] = /obj/item/clothing/accessory/storage/pouches/green
 	pouches["tan armor pouches"] = /obj/item/clothing/accessory/storage/pouches/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
 
-/datum/gear/tactical/large_pouches
-	display_name = "black large armor pouches"
+/decl/loadout_option/tactical/large_pouches
+	name = "black large armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/large
 	cost = 5
 	allowed_roles = ARMORED_ROLES
 
-/datum/gear/tactical/large_pouches/navy
-	display_name = "navy large armor pouches"
+/decl/loadout_option/tactical/large_pouches/navy
+	name = "navy large armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/large/navy
 	allowed_branches = list(/datum/mil_branch/iseo_issc)
 
-/datum/gear/tactical/large_pouches/misc
-	display_name = "miscellaneous large armor pouches selection"
+/decl/loadout_option/tactical/large_pouches/misc
+	name = "miscellaneous large armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches/large
 	allowed_branches = CIVILIAN_BRANCHES
 
-/datum/gear/tactical/large_pouches/misc/New()
+/decl/loadout_option/tactical/large_pouches/misc/New()
 	..()
 	var/pouches = list()
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
