@@ -653,7 +653,6 @@
 /area/engineering/bluespace
 	name = "Superluminal Drive Containment"
 	icon_state = "engineering"
-	color = COLOR_BLUE_LIGHT
 	req_access = list(access_engine_equip, access_heads, access_engine, access_maint_tunnels)
 
 /area/engineering/atmos/aux
@@ -937,7 +936,7 @@
 	icon_state = "robotics"
 
 /area/crew_quarters/office
-	name = "\improper Computer Lab"
+	name = "\improper Classroom"
 	icon_state = "conference"
 
 /area/hydroponics/storage

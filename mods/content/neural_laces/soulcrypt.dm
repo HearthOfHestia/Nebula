@@ -1,7 +1,7 @@
 /obj/machinery/soulcrypt
 	name = "soulcrypt"
 	desc = "An advanced computer which can simulate the conciousness of any sentient being - provided a neural lace is inserted."
-	icon = 'mods/content/neural_laces\soulcrypt.dm/'
+	icon = 'mods/content/neural_laces/soulcrypt.dmi'
 	icon_state = "soulcrypt_inactive"
 	idle_power_usage = 1000
 	active_power_usage = 25000

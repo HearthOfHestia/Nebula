@@ -13,6 +13,7 @@
 	#include "..\..\mods\content\neural_laces\_laces.dme"
 	#include "..\..\mods\content\genemodding\_genemodding.dme"
 	#include "..\..\mods\content\shards\_shards.dme"
+	#include "..\..\mods\content\antighost\_subtle_antighost.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
