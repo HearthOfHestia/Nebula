@@ -27,15 +27,17 @@
 		/obj/item/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/stock_parts/circuitboard/cooker
-	name = "circuitboard (candy machine)"
-	build_path = /obj/machinery/cooker/candy
+// HEARTH OF HESTIA EDIT
+/obj/item/stock_parts/circuitboard/appliance
+	name = "circuitboard (kitchen appliance)"
+	build_path = /obj/machinery/appliance/mixer/candy
 	board_type = "machine"
 	origin_tech = "{'biotech':1,'materials':1}"
 	buildtype_select = TRUE
 	req_components = list(
-		/obj/item/stock_parts/manipulator = 2,
-		/obj/item/stock_parts/matter_bin = 1,
+		/obj/item/stock_parts/capacitor = 3,
+		/obj/item/stock_parts/scanning_module = 1,
+		/obj/item/stock_parts/matter_bin = 2,
 		/obj/item/stack/cable_coil = 10)
 	additional_spawn_components = list(
 		/obj/item/stock_parts/console_screen = 1,
@@ -43,8 +45,10 @@
 		/obj/item/stock_parts/power/apc/buildable = 1
 	)
 
-/obj/item/stock_parts/circuitboard/cooker/get_buildable_types()
-	return subtypesof(/obj/machinery/cooker)
+/obj/item/stock_parts/circuitboard/appliance/get_buildable_types()
+	return subtypesof(/obj/machinery/appliance/cooker) + subtypesof(/obj/machinery/appliance/mixer)
+
+// END HEARTH OF HESTIA EDIT
 
 /obj/item/stock_parts/circuitboard/honey
 	name = "circuitboard (honey extractor)"
