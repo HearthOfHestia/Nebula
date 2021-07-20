@@ -45,11 +45,13 @@
 /decl/recipe/rofflewaffles
 	appliance = MICROWAVE
 	reagents = list(/decl/material/liquid/psychotropics = 5, /decl/material/liquid/nutriment/batter/cakebatter = 20)
+	reagent_mix = REAGENT_REPLACE // no raw batter
 	result = /obj/item/chems/food/snacks/rofflewaffles
 
 /decl/recipe/boiledrice
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/rice = 10)
+	reagent_mix = REAGENT_REPLACE // no raw rice
 	result = /obj/item/chems/food/snacks/boiledrice
 
 /decl/recipe/pastatomato
@@ -57,6 +59,7 @@
 	fruit = list("tomato" = 2)
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(/obj/item/chems/food/snacks/spagetti)
+	reagent_mix = REAGENT_REPLACE // get that water outta here
 	result = /obj/item/chems/food/snacks/pastatomato
 
 /decl/recipe/meatballspagetti
@@ -66,6 +69,7 @@
 		/obj/item/chems/food/snacks/spagetti,
 		/obj/item/chems/food/snacks/meatball = 2,
 	)
+	reagent_mix = REAGENT_REPLACE // get that water outta here
 	result = /obj/item/chems/food/snacks/meatballspagetti
 
 /decl/recipe/spesslaw
@@ -75,6 +79,7 @@
 		/obj/item/chems/food/snacks/spagetti,
 		/obj/item/chems/food/snacks/meatball = 4,
 	)
+	reagent_mix = REAGENT_REPLACE // get that water outta here
 	result = /obj/item/chems/food/snacks/spesslaw
 
 /decl/recipe/nanopasta
@@ -84,4 +89,5 @@
 		/obj/item/chems/food/snacks/spagetti,
 		/obj/item/stack/nanopaste
 	)
+	reagent_mix = REAGENT_REPLACE // get that water outta here
 	result = /obj/item/chems/food/snacks/nanopasta

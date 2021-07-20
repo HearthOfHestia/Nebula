@@ -68,6 +68,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/dough = 2,
 	)
+	reagent_mix = REAGENT_REPLACE // Don't include the milk or sugar
 	result = /obj/item/chems/food/snacks/sliceable/bananabread
 
 /decl/recipe/muffin
@@ -123,12 +124,13 @@
 /decl/recipe/spacylibertyduff
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/ethanol/vodka = 5, /decl/material/liquid/psychotropics = 5)
+	reagent_mix = REAGENT_REPLACE // Don't include the water
 	result = /obj/item/chems/food/snacks/spacylibertyduff
 
 /decl/recipe/cookie
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 5, /decl/material/liquid/nutriment/coco = 5)
-
+	reagent_mix = REAGENT_REPLACE // Don't include the cakebatter
 	result = /obj/item/chems/food/snacks/cookie
 
 /decl/recipe/fortunecookie
@@ -193,6 +195,7 @@
 	fruit = list("banana" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	reagent_mix = REAGENT_REPLACE // Don't include the sugar
 	result = /obj/item/chems/food/snacks/bananapie
 
 /decl/recipe/cherrypie
@@ -202,6 +205,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/sliceable/flatdough,
 	)
+	reagent_mix = REAGENT_REPLACE // Don't include the sugar
 	result = /obj/item/chems/food/snacks/cherrypie
 
 /decl/recipe/berryclafoutis
@@ -218,6 +222,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/dough
 	)
+	reagent_mix = REAGENT_REPLACE // special case; chaos donut adds random reagents
 	result = /obj/item/chems/food/snacks/donut/chaos
 
 /decl/recipe/amanita_pie
@@ -302,18 +307,21 @@
 	fruit = list("pumpkin" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	reagent_mix = REAGENT_REPLACE // Remove the sugar
 	result = /obj/item/chems/food/snacks/sliceable/pumpkinpie
 
 /decl/recipe/plumphelmetbiscuit
 	appliance = OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/batter = 10)
+	reagent_mix = REAGENT_REPLACE // Remove the batter
 	result = /obj/item/chems/food/snacks/plumphelmetbiscuit
 
 /decl/recipe/plumphelmetbiscuitvegan
 	appliance = OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/water = 10)
+	reagent_mix = REAGENT_REPLACE // Remove the raw flour and the water
 	result = /obj/item/chems/food/snacks/plumphelmetbiscuit
 
 /decl/recipe/cracker
@@ -330,6 +338,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/sliceable/bread,
 	)
+	reagent_mix = REAGENT_REPLACE // Remove the water
 	result = /obj/item/chems/food/snacks/stuffing
 
 /decl/recipe/tofurkey

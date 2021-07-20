@@ -103,7 +103,7 @@
 	var/total_removed = 0
 
 	for (var/obj/item/I in CI.container)
-		if (I.reagents && I.reagents.total_volume)
+		if (I.reagents?.total_volume)
 			for (var/_R in I.reagents.reagent_volumes)
 				if (ispath(_R, /decl/material/liquid/nutriment/triglyceride/oil))
 					total_oil += I.reagents.reagent_volumes[_R]

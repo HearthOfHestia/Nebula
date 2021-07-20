@@ -13,6 +13,7 @@
 		/obj/item/chems/food/snacks/fries,
 		/obj/item/chems/food/snacks/fish
 	)
+	reagent_mix = REAGENT_REPLACE // we don't want the fries to show up twice
 	result = /obj/item/chems/food/snacks/fishandchips
 
 /decl/recipe/katsucurry
@@ -22,6 +23,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/meat/chicken
 	)
+	reagent_mix = REAGENT_REPLACE // get the raw reagents out of there
 	result = /obj/item/chems/food/snacks/katsucurry
 
 /decl/recipe/fishfingers
@@ -37,6 +39,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/rawsticks
 	)
+	reagent_mix = REAGENT_REPLACE // get the raw potato out of there
 	result = /obj/item/chems/food/snacks/fries
 
 /decl/recipe/onionrings

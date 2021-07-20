@@ -89,17 +89,17 @@
 		var/list/ingredients = list()
 		for(var/thing in recipe.reagents)
 			var/decl/material/thing_reagent = thing
-			ingredients += "<span codexlink='[initial(thing_reagent.name)] (substance)'>[recipe.reagents[thing]]u [initial(thing_reagent.name)]</span>"
+			ingredients += "<span codexlink='[initial(thing_reagent.name)]'>[recipe.reagents[thing]]u [initial(thing_reagent.name)]</span>"
 		for(var/thing in recipe.items)
 			var/atom/thing_atom = thing
 			var/count = recipe.items[thing]
 			var/desc_str = (count > 1) ? " [count]x [initial(thing_atom.name)]" : "\a [initial(thing_atom.name)]"
-			ingredients += "<span codexlink='[initial(thing_atom.name)] (recipe)'>[desc_str]</span>"
+			ingredients += "<span codexlink='[initial(thing_atom.name)]'>[desc_str]</span>"
 		for(var/thing in recipe.fruit)
 			ingredients += "[recipe.fruit[thing]] [thing]\s"
 		if(recipe.coating)
 			var/decl/material/coating = recipe.coating
-			ingredients += "<span codexlink='[initial(coating.name)] (condiment recipe)'>\a [initial(coating.name)]</span> coating"
+			ingredients += "<span codexlink='[initial(coating.name)]'>\a [initial(coating.name)]</span> coating"
 		mechanics_text += "<ul><li>[jointext(ingredients, "</li><li>")]</li></ul>"
 		var/atom/recipe_product = recipe.result
 		var/plural = recipe.result_quantity > 1

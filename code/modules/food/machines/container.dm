@@ -179,7 +179,7 @@
 	var/list/weights = list()
 	for (var/contained in contents)
 		var/obj/item/I = contained
-		if (I.reagents && I.reagents.total_volume)
+		if (I.reagents?.total_volume)
 			total += I.reagents.total_volume
 			weights[I] = I.reagents.total_volume
 

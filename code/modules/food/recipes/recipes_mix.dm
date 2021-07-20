@@ -9,6 +9,7 @@
 		/obj/item/chems/food/snacks/cheesewedge,
 		/obj/item/chems/food/snacks/boiledegg,
 	)
+	// use the default reagent mixing, since it should taste disgusting
 	result = /obj/item/chems/food/snacks/superbiteburger
 
 /decl/recipe/jellyburger
@@ -185,6 +186,7 @@
 		/obj/item/chems/food/snacks/meat = 2,
 		/obj/item/chems/food/snacks/egg,
 	)
+	reagent_mix = REAGENT_REPLACE // no raw egg
 	result = /obj/item/chems/food/snacks/bigbiteburger
 
 /decl/recipe/sandwich
@@ -199,6 +201,7 @@
 /decl/recipe/chazuke
 	appliance = MIX|MICROWAVE|SAUCEPAN|POT // just stir it in a bowl, or heat it
 	reagents = list(/decl/material/liquid/nutriment/rice/chazuke = 10)
+	reagent_mix = REAGENT_REPLACE // no raw chazuke in our cooked chazuke
 	result = /obj/item/chems/food/snacks/boiledrice/chazuke
 
 /decl/recipe/taco

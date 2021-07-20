@@ -50,8 +50,10 @@
 	complexity = length(reagents) + length(fruit)
 	var/value
 	for(var/i in items) // add the number of items total
+		if(!items[i])
+			items[i] = 1
 		value = items[i]
-		complexity += isnum(value) ? value : 1
+		complexity += (isnum(value) ? value : 1)
 	complexity += length(uniquelist(items)) // add how many unique items there are; will prioritise burgers over 2 bunbuns and 1 wasted meat, for example
 
 /decl/recipe/proc/get_appliances_string()
@@ -156,16 +158,16 @@
 			if(!istype(thing, itype))
 				continue
 			container_contents -= thing
-			if(isnum(needed_items[itype]))
-				--needed_items[itype]
-				if(needed_items[itype] <= 0)
-					needed_items -= itype
-			else
+			needed_items[itype]--
+			if(needed_items[itype] <= 0)
 				needed_items -= itype
-			break
+				break
 		if(!length(container_contents))
 			break
-	return !length(needed_items)
+	sum = 0
+	for(var/i in needed_items)
+		sum += needed_items[i]
+	return !sum
 
 //general version
 /decl/recipe/proc/make(var/obj/container)
@@ -190,11 +192,11 @@
 	to decide what to do. They may be used again to make another recipe or discarded, or merged into the results,
 	thats no longer the concern of this proc
 	*/
-	var/datum/reagents/buffer = new /datum/reagents(1e12, global.temp_reagents_holder)//
+	var/datum/reagents/buffer = new /datum/reagents(INFINITY, global.temp_reagents_holder)//
 	var/list/container_contents = container.get_contained_external_atoms()
 	//Find items we need
-	if (LAZYLEN(items))
-		for (var/i in items)
+	for (var/i in items)
+		for(var/_ in 1 to items[i])
 			var/obj/item/I = locate(i) in container_contents
 			if (I && I.reagents)
 				I.reagents.trans_to_holder(buffer,I.reagents.total_volume)
@@ -286,7 +288,7 @@
 			holder.trans_to(a, total / length(results))
 	return results
 
-/proc/select_recipe(var/obj/obj as obj, var/appliance = null)
+/proc/select_recipe(var/obj/container, var/appliance)
 	if(!appliance)
 		CRASH("Null appliance flag passed to select_recipe!")
 	var/highest_complexity = 0
@@ -295,7 +297,7 @@
 		var/decl/recipe/recipe = available_recipes[rtype]
 		if(!(appliance & recipe.appliance))
 			continue
-		if(!recipe.check_reagents(obj.reagents) || !recipe.check_items(obj)  || !recipe.check_fruit(obj))
+		if(!recipe.check_reagents(container.reagents) || !recipe.check_items(container)  || !recipe.check_fruit(container))
 			continue
 		if(recipe.complexity >= highest_complexity)
 			highest_complexity = recipe.complexity

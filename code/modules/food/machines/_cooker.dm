@@ -63,7 +63,7 @@
 		for (var/a in cooking_objs)
 			var/datum/cooking_item/CI = a
 			num++
-			if (CI && CI.container)
+			if (CI?.container)
 				string += "- [CI.container.label(num)], [report_progress(CI)]</br>"
 		to_chat(usr, string)
 	else
@@ -196,6 +196,6 @@
 
 /obj/machinery/appliance/cooker/add_content(var/obj/item/I, var/mob/user)
 	var/datum/cooking_item/CI = ..()
-	if (CI && CI.combine_target)
+	if (CI?.combine_target)
 		to_chat(user, "[I] will be used to make a [selected_option]. Output selection is returned to default for future items.")
 		selected_option = null

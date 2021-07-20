@@ -49,7 +49,7 @@
 	return jointext(splittext(..(), " ") - prefix, " ")
 
 /obj/item/chems/food/snacks/variable/proc/update_scale()
-	if (reagents && reagents.total_volume)
+	if (reagents?.total_volume)
 		var/ratio = reagents.total_volume / size
 		scale = sqrt(ratio) //Scaling factor is square root of desired area
 		scale = Clamp(scale, min_scale, max_scale)

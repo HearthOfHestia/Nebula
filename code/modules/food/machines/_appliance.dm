@@ -339,7 +339,7 @@
 	var/decl/recipe/recipe = null
 	var/atom/C = null
 	var/appliance
-	if (CI.container && CI.container.appliancetype)
+	if (CI.container?.appliancetype)
 		C = CI.container
 		appliance = CI.container.appliancetype
 	else if(appliancetype)
@@ -412,7 +412,7 @@
 		words |= splittext(S.name," ")
 		cooktypes |= S.cooked
 
-		if (S.reagents && S.reagents.total_volume > 0)
+		if (S.reagents?.total_volume)
 			if (S.filling_color)
 				if (!totalcolour || !buffer.total_volume)
 					totalcolour = S.filling_color
