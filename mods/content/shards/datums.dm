@@ -173,4 +173,5 @@
 /decl/department/medical
 /decl/department/engineering
 /decl/department/security
+/decl/department/miscellaneous
 //These stubs are here because it won't pass CI otherwise!
