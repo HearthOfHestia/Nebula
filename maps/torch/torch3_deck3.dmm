@@ -4870,11 +4870,13 @@
 	icon_state = "1-2"
 	},
 /obj/effect/wallframe_spawn/no_grille,
+/obj/effect/paint_stripe/common,
 /turf/simulated/floor/plating,
 /area/crew_quarters/pool)
 "kf" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/no_grille,
+/obj/effect/paint_stripe/common,
 /turf/simulated/floor/plating,
 /area/crew_quarters/pool)
 "kg" = (
@@ -11415,6 +11417,10 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled,
 /area/crew_quarters/sleep/dorms/hallway)
+"Bh" = (
+/obj/structure/hygiene/drain/bath,
+/turf/simulated/floor/pool,
+/area/crew_quarters/pool)
 "Bi" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -15044,10 +15050,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
-"LA" = (
-/obj/item/caution/cone,
-/turf/simulated/floor/plating,
-/area/crew_quarters/pool)
 "LB" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -15854,6 +15856,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
+/obj/structure/closet/athletic_mixed,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/pool)
 "On" = (
@@ -16765,6 +16768,10 @@
 "Rf" = (
 /turf/simulated/floor/wood,
 /area/crew_quarters/gym)
+"Rg" = (
+/obj/item/beach_ball,
+/turf/simulated/floor/pool,
+/area/crew_quarters/pool)
 "Rm" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -18631,7 +18638,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/mess)
 "WI" = (
-/turf/simulated/floor/plating,
+/obj/structure/hygiene/faucet,
+/turf/simulated/floor/pool,
 /area/crew_quarters/pool)
 "WL" = (
 /obj/structure/lattice,
@@ -18719,13 +18727,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/sleep/dorms/hallway)
 "WW" = (
-/obj/machinery/light/small,
-/obj/item/storage/secure/safe{
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/obj/structure/closet/secure_closet/personal/empty,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/pool,
 /area/crew_quarters/pool)
 "WX" = (
 /obj/machinery/light/spot{
@@ -28093,7 +28095,7 @@ tO
 tO
 tO
 tO
-aa
+BV
 aa
 aa
 aa
@@ -28294,7 +28296,7 @@ YC
 YC
 YC
 YC
-tO
+YC
 BV
 aa
 aa
@@ -28691,10 +28693,10 @@ yG
 kg
 Yc
 WI
-WI
-WI
-WI
-WI
+WW
+WW
+WW
+WW
 Yc
 Yc
 Yc
@@ -28892,11 +28894,11 @@ Yr
 PH
 yH
 BW
-WI
-WI
-WI
-WI
-WI
+WW
+WW
+WW
+Rg
+WW
 Yc
 LO
 RV
@@ -29094,11 +29096,11 @@ Yr
 zz
 kg
 Yc
-WI
-WI
-WI
-LA
-WI
+WW
+WW
+WW
+WW
+WW
 Yc
 Yc
 Yc
@@ -29297,10 +29299,10 @@ yI
 kg
 Yc
 WI
-WI
-WI
-WI
-WI
+WW
+Bh
+WW
+WW
 Yc
 Yc
 RV
@@ -29498,11 +29500,11 @@ Yr
 Zn
 kg
 Yc
-WI
-WI
-WI
-WI
-WI
+WW
+WW
+WW
+WW
+WW
 NL
 UI
 UI
@@ -29700,11 +29702,11 @@ ZX
 zB
 kg
 Yc
-WI
-WI
-WI
-WI
-WI
+WW
+Rg
+WW
+WW
+WW
 Kz
 UI
 Es
@@ -29902,11 +29904,11 @@ yH
 yH
 yH
 LF
-LA
 WI
-WI
-WI
-WI
+WW
+WW
+WW
+WW
 Yc
 am
 Jj
@@ -30510,7 +30512,7 @@ ot
 WX
 UF
 UF
-WW
+UF
 Om
 Te
 zf
