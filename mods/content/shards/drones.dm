@@ -39,8 +39,12 @@
 	stripe.color = stripe_color
 	add_overlay(stripe)
 
+	var/image/eyes = emissive_overlay(icon, "emissive")
 	if(controlling_ai)
-		add_overlay(emissive_overlay(icon, "emissive"))
+		eyes.color = COLOR_CYAN
+	else
+		eyes.color = COLOR_PALE_YELLOW
+	add_overlay(eyes)
 
 /mob/living/silicon/robot/drone/shard/command
 	name = "Command SIC"

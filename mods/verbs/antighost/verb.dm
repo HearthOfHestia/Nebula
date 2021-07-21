@@ -35,9 +35,9 @@ var/global/list/speech_toppings = list("|" = "i", "+" = "b", "_" = "u")
 		var/undisplayed_message = "<span class='emote'><B>[src]</B> <I>does something too subtle for you to see.</I></span>"
 		message = encode_html_emphasis(message)
 
-		var/list/vis = get_mobs_and_objs_in_view_fast(get_turf(src),1,2) //Turf, Range, and type 2 is emote
-		var/list/vis_mobs = vis["mobs"]
-		var/list/vis_objs = vis["objs"]
+		var/list/vis_mobs = list()
+		var/list/vis_objs = list()
+		get_mobs_and_objs_in_view_fast(get_turf(src),1,vis_mobs,vis_objs) //ok so the implementation on bay/neb directly mutates lists
 
 		for(var/vismob in vis_mobs)
 			var/mob/M = vismob

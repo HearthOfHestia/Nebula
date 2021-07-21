@@ -870,6 +870,10 @@
 
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
+	icon_state = "locker" 
+
+/area/crew_quarters/pool
+	name = "\improper Pool"
 	icon_state = "locker"
 
 /area/crew_quarters/head

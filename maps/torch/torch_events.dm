@@ -1,6 +1,4 @@
-#define ASSIGNMENT_ENGINEER "Engineer"
 #define ASSIGNMENT_SUPPLY "Supply"
-#define ASSIGNMENT_SECURITY "Security"
 
 /*
 /datum/map/torch/setup_events()
