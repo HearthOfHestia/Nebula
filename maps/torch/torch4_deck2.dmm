@@ -5616,10 +5616,6 @@
 /turf/simulated/open,
 /area/hallway/primary/seconddeck/center)
 "mo" = (
-/obj/machinery/atmospherics/pipe/simple/visible{
-	dir = 10;
-	icon_state = "11"
-	},
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 4
 	},
@@ -15351,7 +15347,7 @@
 "Ko" = (
 /obj/machinery/portable_atmospherics/canister/sleeping_agent,
 /obj/machinery/camera/network/engineering{
-	c_tag = "Atmospherics - South";
+	c_tag = "Atmospherics - Southeast";
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/white{

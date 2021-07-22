@@ -8,6 +8,8 @@ Synthetic
 	spawn_positions = 3
 	supervisors = "your laws"
 	minimal_player_age = 3
+	hud_icon = "hudblank"
+	outfit_type = /decl/hierarchy/outfit/job/generic/scientist
 	allowed_ranks = list(
 		/datum/mil_rank/civ/synthetic
 	)

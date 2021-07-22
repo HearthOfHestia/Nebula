@@ -4042,10 +4042,6 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/pool)
-"iy" = (
-/obj/effect/paint_stripe/common,
-/turf/simulated/wall/map_preset/tan,
-/area/crew_quarters/head/sauna)
 "iA" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -38589,10 +38585,10 @@ fz
 YK
 gr
 uU
-iy
-iy
-iy
-iy
+Kj
+Kj
+Kj
+Kj
 uX
 UZ
 Vf
@@ -38791,7 +38787,7 @@ YK
 YK
 gK
 TZ
-iy
+Kj
 iF
 xm
 kV
@@ -38993,7 +38989,7 @@ YK
 YK
 gK
 LL
-iy
+Kj
 iV
 xm
 kV
@@ -39195,7 +39191,7 @@ YK
 MX
 gL
 hj
-iy
+Kj
 kV
 xm
 kV
@@ -39397,7 +39393,7 @@ YK
 in
 Ix
 in
-iy
+Kj
 kV
 xm
 xm
@@ -39599,7 +39595,7 @@ YK
 fD
 fD
 hp
-iy
+Kj
 jp
 xm
 xm
@@ -39801,7 +39797,7 @@ fl
 uU
 uU
 uU
-iy
+Kj
 xm
 VV
 uX
