@@ -42,6 +42,6 @@
 
 /obj/machinery/suit_cycler/exploration/prepared
 	buildable = FALSE
-	suit = /obj/item/clothing/suit/space/void/excavation
-	helmet = /obj/item/clothing/head/helmet/space/void/excavation
+	suit = /obj/item/clothing/suit/space/void/exploration
+	helmet = /obj/item/clothing/head/helmet/space/void/exploration
 	boots = /obj/item/clothing/shoes/magboots

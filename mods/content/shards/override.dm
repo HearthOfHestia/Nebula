@@ -66,3 +66,6 @@
 /mob/living/silicon/ai/proc/update_hologram()
 	qdel(holo_icon)
 	holo_icon = getHologramIcon(icon('icons/mob/hologram.dmi',"Face"), custom_tone = custom_color_tone)
+
+/obj/machinery/ai_powersupply //50kw x 5 AIs is a little bit too much given that's half the Endeavour's idle power usage.
+	active_power_usage = 15000 * AI_POWERUSAGE_OXYLOSS_TO_WATTS_MULTIPLIER
