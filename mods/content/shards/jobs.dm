@@ -1,8 +1,10 @@
+/datum/job/ai
+	hud_icon = "hudblank"
+	outfit_type = /decl/hierarchy/outfit/job/generic/scientist
+
 /datum/job/ai/shard
 	title = "Shard AI"
 	department_types = list(/decl/department/miscellaneous)
-	hud_icon = "hudblank"
-	outfit_type = /decl/hierarchy/outfit/job/generic/scientist
 	var/shard_type //decl type
 
 /datum/job/ai/shard/is_position_available()
