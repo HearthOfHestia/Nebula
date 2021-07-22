@@ -74,6 +74,7 @@
 /decl/recipe/muffin
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 10)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/muffin
 
 /decl/recipe/eggplantparm
@@ -258,6 +259,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/monkeycube
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/monkeysdelight
 
 /decl/recipe/baguette
@@ -355,6 +357,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/dough
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/donut/jelly
 
 /decl/recipe/jellydonut/cherry
@@ -370,18 +373,21 @@
 	items = list(
 		/obj/item/chems/food/snacks/dough
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/donut/normal
 
 /decl/recipe/appletart
 	appliance = OVEN
 	fruit = list("goldapple" = 1)
 	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/appletart
 
 // Cakes.
 /decl/recipe/cake
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 60)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/sliceable/plaincake
 
 /decl/recipe/cake/carrot
@@ -424,4 +430,5 @@
 
 /decl/recipe/cake/chocolatebar
 	reagents = list(/decl/material/liquid/drink/milk/chocolate = 10, /decl/material/liquid/nutriment/coco = 5, /decl/material/liquid/nutriment/sugar = 5)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/chocolatebar

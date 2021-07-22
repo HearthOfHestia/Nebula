@@ -42,6 +42,7 @@
 	appliance = SAUCEPAN
 	fruit = list("apple" = 1)
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/sugar = 5)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/candiedapple
 
 /decl/recipe/chawanmushi
@@ -51,11 +52,13 @@
 	items = list(
 		/obj/item/chems/food/snacks/egg = 2
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/chawanmushi
 
 /decl/recipe/bloodsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/blood = 30)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/bloodsoup
 
 /decl/recipe/mysterysoup
@@ -67,18 +70,21 @@
 		/obj/item/chems/food/snacks/egg,
 		/obj/item/chems/food/snacks/cheesewedge,
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/mysterysoup
 
 /decl/recipe/mushroomsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("mushroom" = 1)
 	reagents = list(/decl/material/liquid/drink/milk = 10)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/mushroomsoup
 
 /decl/recipe/beetsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("whitebeet" = 1, "cabbage" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/beetsoup
 
 /decl/recipe/milosoup
@@ -88,24 +94,29 @@
 		/obj/item/chems/food/snacks/soydope = 2,
 		/obj/item/chems/food/snacks/tofu = 2,
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/milosoup
 
 /decl/recipe/tomatosoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("tomato" = 2)
 	reagents = list(/decl/material/liquid/water = 10)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/tomatosoup
+
 /decl/recipe/meatballsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("carrot" = 1, "potato" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(/obj/item/chems/food/snacks/meatball)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/meatballsoup
 
 /decl/recipe/vegetablesoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("carrot" = 1, "potato" = 1, "corn" = 1, "eggplant" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/vegetablesoup
 
 /decl/recipe/nettlesoup
@@ -115,11 +126,13 @@
 	items = list(
 		/obj/item/chems/food/snacks/egg
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/nettlesoup
 
 /decl/recipe/wishsoup
 	appliance = MICROWAVE|SAUCEPAN|POT // microwave works, because desperation
 	reagents = list(/decl/material/liquid/water = 20)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result= /obj/item/chems/food/snacks/wishsoup
 
 /decl/recipe/hotchili
@@ -139,11 +152,13 @@
 	fruit = list("potato" = 1, "tomato" = 1, "carrot" = 1, "eggplant" = 1, "mushroom" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(/obj/item/chems/food/snacks/meat)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/stew
 
 /decl/recipe/mint
 	appliance = SAUCEPAN
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5, /decl/material/liquid/frostoil = 5)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/mint
 
 /decl/recipe/boiledspiderleg
@@ -152,6 +167,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/spider
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/spider/cooked
 
 /decl/recipe/pelmeni_boiled
@@ -160,6 +176,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/pelmen = 5
 	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/pelmeni_boiled
 
 /decl/recipe/meatball
@@ -179,6 +196,7 @@
 /decl/recipe/ricepudding
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/rice = 10)
+	reagent_mix = REAGENT_REPLACE // get the raw reagents out of there
 	result = /obj/item/chems/food/snacks/ricepudding
 
 
@@ -196,6 +214,7 @@
 	items = list(
 		/obj/item/chems/food/snacks/spagetti,
 	)
+	reagent_mix = REAGENT_REPLACE // don't fill it with water
 	result = /obj/item/chems/food/snacks/boiledspagetti
 
 /decl/recipe/boiledegg
@@ -204,16 +223,19 @@
 	items = list(
 		/obj/item/chems/food/snacks/egg
 	)
+	reagent_mix = REAGENT_REPLACE // shouldn't fill it with water
 	result = /obj/item/chems/food/snacks/boiledegg
 
 /decl/recipe/waffles
 	appliance = SKILLET // no waffle griddle, sadly
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 20)
+	reagent_mix = REAGENT_REPLACE // the batter should be cooked
 	result = /obj/item/chems/food/snacks/waffles
 
 /decl/recipe/pancakes
 	appliance = SKILLET
 	reagents = list(/decl/material/liquid/nutriment/batter = 20)
+	reagent_mix = REAGENT_REPLACE // the batter should be cooked
 	result = /obj/item/chems/food/snacks/pancakes
 
 /decl/recipe/pancakes/blu
@@ -232,6 +254,7 @@
 	appliance = SKILLET // considering it equivalent to waffles?
 	fruit = list("soybeans" = 1)
 	reagents = list(/decl/material/liquid/nutriment/flour = 10)
+	reagent_mix = REAGENT_REPLACE // get the flour out of there
 	result = /obj/item/chems/food/snacks/soylenviridians
 
 /decl/recipe/soylentgreen
@@ -240,11 +263,13 @@
 	items = list(
 		/obj/item/chems/food/snacks/meat/human = 2
 	)
+	reagent_mix = REAGENT_REPLACE // no flour
 	result = /obj/item/chems/food/snacks/soylentgreen
 
 /decl/recipe/amanitajelly
 	appliance = SAUCEPAN
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/ethanol/vodka = 5, /decl/material/liquid/amatoxin = 5)
+	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/snacks/amanitajelly
 
 /decl/recipe/amanitajelly/make_food(var/obj/container)
