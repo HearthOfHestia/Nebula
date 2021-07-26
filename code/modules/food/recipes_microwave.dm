@@ -193,7 +193,7 @@ I said no!
 	. = ..()
 	if(!.)
 		return FALSE
-	for(var/obj/item/chems/food/snacks/donkpocket/being_cooked in container.get_contained_external_atoms())
+	for(var/obj/item/chems/food/donkpocket/being_cooked in container.get_contained_external_atoms())
 		if(!being_cooked.warm)
 			return TRUE
 	return FALSE

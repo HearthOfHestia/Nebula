@@ -6826,11 +6826,11 @@
 "qx" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
-/obj/item/chems/food/snacks/cookie,
-/obj/item/chems/food/snacks/cookie,
-/obj/item/chems/food/snacks/cookie,
-/obj/item/chems/food/snacks/cookie,
-/obj/item/chems/food/snacks/cookie,
+/obj/item/chems/food/cookie,
+/obj/item/chems/food/cookie,
+/obj/item/chems/food/cookie,
+/obj/item/chems/food/cookie,
+/obj/item/chems/food/cookie,
 /obj/item/storage/lunchbox/cat,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)

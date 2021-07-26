@@ -11379,7 +11379,7 @@
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	req_access = newlist()
 	},
-/obj/item/chems/food/snacks/mint,
+/obj/item/chems/food/mint,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "AY" = (

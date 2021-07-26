@@ -2197,7 +2197,7 @@
 /area/space)
 "anP" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/snacks/chips,
+/obj/item/chems/food/chips,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anQ" = (
@@ -6031,7 +6031,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/amanita_pie,
+/obj/item/chems/food/amanita_pie,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6040,7 +6040,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/bigbiteburger,
+/obj/item/chems/food/bigbiteburger,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6066,7 +6066,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/stew,
+/obj/item/chems/food/stew,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6110,7 +6110,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/boiledrice,
+/obj/item/chems/food/boiledrice,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6119,7 +6119,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/beetsoup,
+/obj/item/chems/food/beetsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6128,7 +6128,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/stuffing,
+/obj/item/chems/food/stuffing,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6137,7 +6137,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/soylenviridians,
+/obj/item/chems/food/soylenviridians,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6209,7 +6209,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/bloodsoup,
+/obj/item/chems/food/bloodsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6218,7 +6218,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/tofukabob,
+/obj/item/chems/food/tofukabob,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6227,7 +6227,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/poppypretzel,
+/obj/item/chems/food/poppypretzel,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6307,7 +6307,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/spesslaw,
+/obj/item/chems/food/spesslaw,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6316,7 +6316,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/candiedapple,
+/obj/item/chems/food/candiedapple,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6325,7 +6325,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/mushroomsoup,
+/obj/item/chems/food/mushroomsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6334,7 +6334,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/meatsteak,
+/obj/item/chems/food/meatsteak,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -7852,7 +7852,7 @@
 /turf/simulated/floor/asteroid,
 /area/merchant_station)
 "aMh" = (
-/obj/item/chems/food/snacks/grown/mushroom/libertycap,
+/obj/item/chems/food/grown/mushroom/libertycap,
 /turf/simulated/floor/asteroid,
 /area/merchant_station)
 "aMm" = (

@@ -13064,7 +13064,7 @@
 /obj/random/firstaid,
 /obj/random/firstaid,
 /obj/random/medical,
-/obj/item/chems/food/snacks/candy/proteinbar,
+/obj/item/chems/food/candy/proteinbar,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/medical)
 "cwQ" = (
@@ -23674,7 +23674,7 @@
 "qLr" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/structure/table/standard,
-/obj/item/chems/food/snacks/lunacake/mooncake,
+/obj/item/chems/food/lunacake/mooncake,
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22
