@@ -214,7 +214,8 @@ var/global/list/admin_verbs_debug = list(
 	/client/proc/spawn_exoplanet,
 	/client/proc/print_cargo_prices,
 	/client/proc/resend_nanoui_templates,
-	/client/proc/display_del_log
+	/client/proc/display_del_log,
+	/client/proc/spawn_ore_pile
 	)
 
 var/global/list/admin_verbs_paranoid_debug = list(
@@ -915,7 +916,7 @@ var/global/list/admin_verbs_mod = list(
 		if("Upload custom")
 			var/file = input(usr) as icon|null
 
-			if(!file) 
+			if(!file)
 				return
 
 			global.using_map.update_titlescreen(file)
