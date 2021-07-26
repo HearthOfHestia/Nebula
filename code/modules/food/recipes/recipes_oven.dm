@@ -1,44 +1,44 @@
 /decl/recipe/donkpocket
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/doughslice,
-		/obj/item/chems/food/snacks/meatball
+		/obj/item/chems/food/doughslice,
+		/obj/item/chems/food/meatball
 	)
-	result = /obj/item/chems/food/snacks/donkpocket //SPECIAL
+	result = /obj/item/chems/food/donkpocket //SPECIAL
 
-/decl/recipe/donkpocket/proc/warm_up(var/obj/item/chems/food/snacks/donkpocket/being_cooked)
+/decl/recipe/donkpocket/proc/warm_up(var/obj/item/chems/food/donkpocket/being_cooked)
 	being_cooked.heat()
 
 /decl/recipe/donkpocket/make_food(var/obj/container)
 	. = ..(container)
-	for(var/obj/item/chems/food/snacks/donkpocket/being_cooked in .)
+	for(var/obj/item/chems/food/donkpocket/being_cooked in .)
 		warm_up(being_cooked)
 
 /decl/recipe/donkpocket/rawmeat
 	items = list(
-		/obj/item/chems/food/snacks/doughslice,
-		/obj/item/chems/food/snacks/rawmeatball
+		/obj/item/chems/food/doughslice,
+		/obj/item/chems/food/rawmeatball
 	)
 
 /decl/recipe/donkpocket/warm
 	appliance = OVEN | MICROWAVE
 	reagents = list() //This is necessary since this is a child object of the above recipe and we don't want donk pockets to need flour
 	items = list(
-		/obj/item/chems/food/snacks/donkpocket
+		/obj/item/chems/food/donkpocket
 	)
-	result = /obj/item/chems/food/snacks/donkpocket //SPECIAL
+	result = /obj/item/chems/food/donkpocket //SPECIAL
 
 /decl/recipe/donkpocket/warm/check_items(obj/container)
 	. = ..()
 	if(!.)
 		return FALSE
-	for(var/obj/item/chems/food/snacks/donkpocket/being_cooked in container.get_contained_external_atoms())
+	for(var/obj/item/chems/food/donkpocket/being_cooked in container.get_contained_external_atoms())
 		if(!being_cooked.warm)
 			return TRUE
 	return FALSE
 
 /decl/recipe/donkpocket/warm/make_food(var/obj/container)
-	for(var/obj/item/chems/food/snacks/donkpocket/being_cooked in container.get_contained_external_atoms())
+	for(var/obj/item/chems/food/donkpocket/being_cooked in container.get_contained_external_atoms())
 		if(!being_cooked.warm)
 			warm_up(being_cooked)
 			return list(being_cooked)
@@ -46,107 +46,107 @@
 /decl/recipe/meatbread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough = 2,
-		/obj/item/chems/food/snacks/cutlet = 2,
-		/obj/item/chems/food/snacks/cheesewedge = 2,
+		/obj/item/chems/food/dough = 2,
+		/obj/item/chems/food/cutlet = 2,
+		/obj/item/chems/food/cheesewedge = 2,
 	)
-	result = /obj/item/chems/food/snacks/sliceable/meatbread
+	result = /obj/item/chems/food/sliceable/meatbread
 
 /decl/recipe/xenomeatbread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough = 2,
-		/obj/item/chems/food/snacks/xenomeat = 2,
-		/obj/item/chems/food/snacks/cheesewedge = 2,
+		/obj/item/chems/food/dough = 2,
+		/obj/item/chems/food/xenomeat = 2,
+		/obj/item/chems/food/cheesewedge = 2,
 	)
-	result = /obj/item/chems/food/snacks/sliceable/xenomeatbread
+	result = /obj/item/chems/food/sliceable/xenomeatbread
 
 /decl/recipe/bananabread
 	appliance = OVEN
 	fruit = list("banana" = 2)
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/dough = 2,
+		/obj/item/chems/food/dough = 2,
 	)
 	reagent_mix = REAGENT_REPLACE // Don't include the milk or sugar
-	result = /obj/item/chems/food/snacks/sliceable/bananabread
+	result = /obj/item/chems/food/sliceable/bananabread
 
 /decl/recipe/muffin
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/muffin
+	result = /obj/item/chems/food/muffin
 
 /decl/recipe/eggplantparm
 	appliance = OVEN
 	fruit = list("eggplant" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/cheesewedge = 2
+		/obj/item/chems/food/cheesewedge = 2
 		)
-	result = /obj/item/chems/food/snacks/eggplantparm
+	result = /obj/item/chems/food/eggplantparm
 
 /decl/recipe/pizzamargherita
 	appliance = OVEN
 	fruit = list("tomato" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/cheesewedge = 3,
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/cheesewedge = 3,
 	)
-	result = /obj/item/chems/food/snacks/sliceable/pizza/margherita
+	result = /obj/item/chems/food/sliceable/pizza/margherita
 
 /decl/recipe/meatpizza
 	appliance = OVEN
 	fruit = list("tomato" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/cutlet = 2,
-		/obj/item/chems/food/snacks/cheesewedge
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/cutlet = 2,
+		/obj/item/chems/food/cheesewedge
 	)
-	result = /obj/item/chems/food/snacks/sliceable/pizza/meatpizza
+	result = /obj/item/chems/food/sliceable/pizza/meatpizza
 
 /decl/recipe/mushroompizza
 	appliance = OVEN
 	fruit = list("mushroom" = 5, "tomato" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/cheesewedge
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/cheesewedge
 	)
-	result = /obj/item/chems/food/snacks/sliceable/pizza/mushroompizza
+	result = /obj/item/chems/food/sliceable/pizza/mushroompizza
 
 /decl/recipe/vegetablepizza
 	appliance = OVEN
 	fruit = list("eggplant" = 1, "carrot" = 1, "corn" = 1, "tomato" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/cheesewedge
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/cheesewedge
 	)
-	result = /obj/item/chems/food/snacks/sliceable/pizza/vegetablepizza
+	result = /obj/item/chems/food/sliceable/pizza/vegetablepizza
 
 /decl/recipe/spacylibertyduff
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/ethanol/vodka = 5, /decl/material/liquid/psychotropics = 5)
 	reagent_mix = REAGENT_REPLACE // Don't include the water
-	result = /obj/item/chems/food/snacks/spacylibertyduff
+	result = /obj/item/chems/food/spacylibertyduff
 
 /decl/recipe/cookie
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 5, /decl/material/liquid/nutriment/coco = 5)
 	reagent_mix = REAGENT_REPLACE // Don't include the cakebatter
-	result = /obj/item/chems/food/snacks/cookie
+	result = /obj/item/chems/food/cookie
 
 /decl/recipe/fortunecookie
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/doughslice,
+		/obj/item/chems/food/doughslice,
 		/obj/item/paper,
 	)
-	result = /obj/item/chems/food/snacks/fortunecookie
+	result = /obj/item/chems/food/fortunecookie
 
 /decl/recipe/fortunecookie/make_food(obj/container)
 	var/obj/item/paper/paper = locate() in container
 	paper.loc = null //prevent deletion
-	var/obj/item/chems/food/snacks/fortunecookie/being_cooked = ..(container)
+	var/obj/item/chems/food/fortunecookie/being_cooked = ..(container)
 	paper.forceMove(being_cooked)
 	being_cooked.trash = paper //so the paper is left behind as trash without special-snowflake(TM Nodrak) code ~carn
 	return being_cooked
@@ -161,274 +161,274 @@
 /decl/recipe/tofubread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough = 3,
-		/obj/item/chems/food/snacks/tofu = 3,
-		/obj/item/chems/food/snacks/cheesewedge = 3,
+		/obj/item/chems/food/dough = 3,
+		/obj/item/chems/food/tofu = 3,
+		/obj/item/chems/food/cheesewedge = 3,
 	)
-	result = /obj/item/chems/food/snacks/sliceable/tofubread
+	result = /obj/item/chems/food/sliceable/tofubread
 
 /decl/recipe/meatpie
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/cutlet
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/cutlet
 	)
-	result = /obj/item/chems/food/snacks/meatpie
+	result = /obj/item/chems/food/meatpie
 
 /decl/recipe/tofupie
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/tofu,
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/tofu,
 	)
-	result = /obj/item/chems/food/snacks/tofupie
+	result = /obj/item/chems/food/tofupie
 
 /decl/recipe/xemeatpie
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
-		/obj/item/chems/food/snacks/xenomeat,
+		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/xenomeat,
 	)
-	result = /obj/item/chems/food/snacks/xemeatpie
+	result = /obj/item/chems/food/xemeatpie
 
 /decl/recipe/bananapie
 	appliance = OVEN
 	fruit = list("banana" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatdough)
 	reagent_mix = REAGENT_REPLACE // Don't include the sugar
-	result = /obj/item/chems/food/snacks/bananapie
+	result = /obj/item/chems/food/bananapie
 
 /decl/recipe/cherrypie
 	appliance = OVEN
 	fruit = list("cherries" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 10)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatdough,
 	)
 	reagent_mix = REAGENT_REPLACE // Don't include the sugar
-	result = /obj/item/chems/food/snacks/cherrypie
+	result = /obj/item/chems/food/cherrypie
 
 /decl/recipe/berryclafoutis
 	appliance = OVEN
 	fruit = list("berries" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatdough,
 	)
-	result = /obj/item/chems/food/snacks/berryclafoutis
+	result = /obj/item/chems/food/berryclafoutis
 
 /decl/recipe/chaosdonut
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/frostoil = 5, /decl/material/liquid/capsaicin = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/dough
+		/obj/item/chems/food/dough
 	)
 	reagent_mix = REAGENT_REPLACE // special case; chaos donut adds random reagents
-	result = /obj/item/chems/food/snacks/donut/chaos
+	result = /obj/item/chems/food/donut/chaos
 
 /decl/recipe/amanita_pie
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/amatoxin = 5)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
-	result = /obj/item/chems/food/snacks/amanita_pie
+	items = list(/obj/item/chems/food/sliceable/flatdough)
+	result = /obj/item/chems/food/amanita_pie
 
 /decl/recipe/plump_pie
 	appliance = OVEN
 	fruit = list("plumphelmet" = 1)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
-	result = /obj/item/chems/food/snacks/plump_pie
+	items = list(/obj/item/chems/food/sliceable/flatdough)
+	result = /obj/item/chems/food/plump_pie
 
 /decl/recipe/enchiladas
 	appliance = OVEN|FRYER
 	fruit = list("chili" = 2, "corn" = 1)
-	items = list(/obj/item/chems/food/snacks/cutlet)
-	result = /obj/item/chems/food/snacks/enchiladas
+	items = list(/obj/item/chems/food/cutlet)
+	result = /obj/item/chems/food/enchiladas
 
 /decl/recipe/creamcheesebread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough = 2,
-		/obj/item/chems/food/snacks/cheesewedge = 2,
+		/obj/item/chems/food/dough = 2,
+		/obj/item/chems/food/cheesewedge = 2,
 	)
-	result = /obj/item/chems/food/snacks/sliceable/creamcheesebread
+	result = /obj/item/chems/food/sliceable/creamcheesebread
 
 /decl/recipe/monkeysdelight
 	appliance = OVEN|MICROWAVE
 	fruit = list("banana" = 1)
 	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/nutriment/flour = 10)
 	items = list(
-		/obj/item/chems/food/snacks/monkeycube
+		/obj/item/chems/food/monkeycube
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/monkeysdelight
+	result = /obj/item/chems/food/monkeysdelight
 
 /decl/recipe/baguette
 	appliance = OVEN
 	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
-		/obj/item/chems/food/snacks/dough = 2,
+		/obj/item/chems/food/dough = 2,
 	)
-	result = /obj/item/chems/food/snacks/baguette
+	result = /obj/item/chems/food/baguette
 
 /decl/recipe/bun
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough
+		/obj/item/chems/food/dough
 	)
-	result = /obj/item/chems/food/snacks/bun
+	result = /obj/item/chems/food/bun
 
 /decl/recipe/flatbread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/flatdough
+		/obj/item/chems/food/sliceable/flatdough
 	)
-	result = /obj/item/chems/food/snacks/flatbread
+	result = /obj/item/chems/food/flatbread
 
 /decl/recipe/bread
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/dough = 4
+		/obj/item/chems/food/dough = 4
 	)
 	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
-	result = /obj/item/chems/food/snacks/sliceable/bread
+	result = /obj/item/chems/food/sliceable/bread
 
 /decl/recipe/poppypretzel
 	appliance = OVEN
 	fruit = list("poppy" = 1)
-	items = list(/obj/item/chems/food/snacks/dough)
-	result = /obj/item/chems/food/snacks/poppypretzel
+	items = list(/obj/item/chems/food/dough)
+	result = /obj/item/chems/food/poppypretzel
 
 /decl/recipe/applepie
 	appliance = OVEN
 	fruit = list("apple" = 1)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
-	result = /obj/item/chems/food/snacks/applepie
+	items = list(/obj/item/chems/food/sliceable/flatdough)
+	result = /obj/item/chems/food/applepie
 
 /decl/recipe/pumpkinpie
 	appliance = OVEN
 	fruit = list("pumpkin" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatdough)
 	reagent_mix = REAGENT_REPLACE // Remove the sugar
-	result = /obj/item/chems/food/snacks/sliceable/pumpkinpie
+	result = /obj/item/chems/food/sliceable/pumpkinpie
 
 /decl/recipe/plumphelmetbiscuit
 	appliance = OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/batter = 10)
 	reagent_mix = REAGENT_REPLACE // Remove the batter
-	result = /obj/item/chems/food/snacks/plumphelmetbiscuit
+	result = /obj/item/chems/food/plumphelmetbiscuit
 
 /decl/recipe/plumphelmetbiscuitvegan
 	appliance = OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/water = 10)
 	reagent_mix = REAGENT_REPLACE // Remove the raw flour and the water
-	result = /obj/item/chems/food/snacks/plumphelmetbiscuit
+	result = /obj/item/chems/food/plumphelmetbiscuit
 
 /decl/recipe/cracker
 	appliance = OVEN
 	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
 	items = list(
-		/obj/item/chems/food/snacks/doughslice
+		/obj/item/chems/food/doughslice
 	)
-	result = /obj/item/chems/food/snacks/cracker
+	result = /obj/item/chems/food/cracker
 
 /decl/recipe/stuffing
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
-		/obj/item/chems/food/snacks/sliceable/bread,
+		/obj/item/chems/food/sliceable/bread,
 	)
 	reagent_mix = REAGENT_REPLACE // Remove the water
-	result = /obj/item/chems/food/snacks/stuffing
+	result = /obj/item/chems/food/stuffing
 
 /decl/recipe/tofurkey
 	appliance = OVEN
 	items = list(
-		/obj/item/chems/food/snacks/tofu = 2,
-		/obj/item/chems/food/snacks/stuffing,
+		/obj/item/chems/food/tofu = 2,
+		/obj/item/chems/food/stuffing,
 	)
-	result = /obj/item/chems/food/snacks/tofurkey
+	result = /obj/item/chems/food/tofurkey
 
 /decl/recipe/jellydonut
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/drink/juice/berry = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/dough
+		/obj/item/chems/food/dough
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/donut/jelly
+	result = /obj/item/chems/food/donut/jelly
 
 /decl/recipe/jellydonut/cherry
 	reagents = list(/decl/material/liquid/nutriment/cherryjelly = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/dough
+		/obj/item/chems/food/dough
 	)
-	result = /obj/item/chems/food/snacks/donut/cherryjelly
+	result = /obj/item/chems/food/donut/cherryjelly
 
 /decl/recipe/donut
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/snacks/dough
+		/obj/item/chems/food/dough
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/donut/normal
+	result = /obj/item/chems/food/donut/normal
 
 /decl/recipe/appletart
 	appliance = OVEN
 	fruit = list("goldapple" = 1)
-	items = list(/obj/item/chems/food/snacks/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatdough)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/appletart
+	result = /obj/item/chems/food/appletart
 
 // Cakes.
 /decl/recipe/cake
 	appliance = OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 60)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/sliceable/plaincake
+	result = /obj/item/chems/food/sliceable/plaincake
 
 /decl/recipe/cake/carrot
 	fruit = list("carrot" = 3)
-	result = /obj/item/chems/food/snacks/sliceable/carrotcake
+	result = /obj/item/chems/food/sliceable/carrotcake
 
 /decl/recipe/cake/cheese
 	items = list(
-		/obj/item/chems/food/snacks/cheesewedge = 2
+		/obj/item/chems/food/cheesewedge = 2
 	)
-	result = /obj/item/chems/food/snacks/sliceable/cheesecake
+	result = /obj/item/chems/food/sliceable/cheesecake
 
 /decl/recipe/cake/orange
 	fruit = list("orange" = 1)
-	result = /obj/item/chems/food/snacks/sliceable/orangecake
+	result = /obj/item/chems/food/sliceable/orangecake
 
 /decl/recipe/cake/lime
 	fruit = list("lime" = 1)
-	result = /obj/item/chems/food/snacks/sliceable/limecake
+	result = /obj/item/chems/food/sliceable/limecake
 
 /decl/recipe/cake/lemon
 	fruit = list("lemon" = 1)
-	result = /obj/item/chems/food/snacks/sliceable/lemoncake
+	result = /obj/item/chems/food/sliceable/lemoncake
 
 /decl/recipe/cake/chocolate
-	items = list(/obj/item/chems/food/snacks/chocolatebar)
-	result = /obj/item/chems/food/snacks/sliceable/chocolatecake
+	items = list(/obj/item/chems/food/chocolatebar)
+	result = /obj/item/chems/food/sliceable/chocolatecake
 
 /decl/recipe/cake/birthday
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 60, /decl/material/liquid/nutriment/sprinkles = 10)
-	result = /obj/item/chems/food/snacks/sliceable/birthdaycake
+	result = /obj/item/chems/food/sliceable/birthdaycake
 
 /decl/recipe/cake/apple
 	fruit = list("apple" = 2)
-	result = /obj/item/chems/food/snacks/sliceable/applecake
+	result = /obj/item/chems/food/sliceable/applecake
 
 /decl/recipe/cake/brain
 	items = list(/obj/item/organ/internal/brain)
-	result = /obj/item/chems/food/snacks/sliceable/braincake
+	result = /obj/item/chems/food/sliceable/braincake
 
 /decl/recipe/cake/chocolatebar
 	reagents = list(/decl/material/liquid/drink/milk/chocolate = 10, /decl/material/liquid/nutriment/coco = 5, /decl/material/liquid/nutriment/sugar = 5)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/chocolatebar
+	result = /obj/item/chems/food/chocolatebar

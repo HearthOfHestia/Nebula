@@ -27,15 +27,15 @@
 	)
 
 	output_options = list(
-		"Pizza" = /obj/item/chems/food/snacks/variable/pizza,
-		"Bread" = /obj/item/chems/food/snacks/variable/bread,
-		"Pie" = /obj/item/chems/food/snacks/variable/pie,
-		"Cake" = /obj/item/chems/food/snacks/variable/cake,
-		"Hot Pocket" = /obj/item/chems/food/snacks/variable/pocket,
-		"Kebab" = /obj/item/chems/food/snacks/variable/kebab,
-		"Waffles" = /obj/item/chems/food/snacks/variable/waffles,
-		"Cookie" = /obj/item/chems/food/snacks/variable/cookie,
-		"Donut" = /obj/item/chems/food/snacks/variable/donut
+		"Pizza" = /obj/item/chems/food/variable/pizza,
+		"Bread" = /obj/item/chems/food/variable/bread,
+		"Pie" = /obj/item/chems/food/variable/pie,
+		"Cake" = /obj/item/chems/food/variable/cake,
+		"Hot Pocket" = /obj/item/chems/food/variable/pocket,
+		"Kebab" = /obj/item/chems/food/variable/kebab,
+		"Waffles" = /obj/item/chems/food/variable/waffles,
+		"Cookie" = /obj/item/chems/food/variable/cookie,
+		"Donut" = /obj/item/chems/food/variable/donut
 	)
 
 

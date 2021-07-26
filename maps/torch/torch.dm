@@ -10,6 +10,11 @@
 	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
 	#include "..\..\mods\species\utility_frames\_utility_frames.dme"
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
+	#include "..\..\mods\content\neural_laces\_laces.dme"
+	#include "..\..\mods\content\genemodding\_genemodding.dme"
+	#include "..\..\mods\content\shards\_shards.dme"
+	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
+	#include "..\..\mods\utility\ooc_notes\_ooc_notes.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
@@ -40,6 +45,7 @@
 	#include "torch_floor_decals.dm"
 	#include "torch_cyclers.dm"
 	#include "machinery\rtg.dm"
+	#include "torch_departments.dm"
 
 	#include "datums/uniforms.dm"
 	#include "datums/game_modes/torch_traitor.dm"
@@ -134,6 +140,7 @@
 	#include "structures/closets/services.dm"
 	#include "structures/closets/supply.dm"
 	#include "structures/closets/exploration.dm"
+	#include "structures/lectern.dm"
 
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"

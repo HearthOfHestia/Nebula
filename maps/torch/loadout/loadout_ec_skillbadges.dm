@@ -1,7 +1,7 @@
 
 /decl/loadout_option/skill
-	category = /decl/loadout_option/skill
 	slot = slot_tie_str
+	category = /decl/loadout_category/accessories
 
 /decl/loadout_option/skill/botany
 	name = "Field Xenobotany Specialist badge"

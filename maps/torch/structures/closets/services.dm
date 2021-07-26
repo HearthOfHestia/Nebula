@@ -72,7 +72,7 @@
 	return list(
 		/obj/item/clothing/head/soft/black,
 		/obj/item/radio/headset/headset_service,
-		/obj/item/chems/food/drinks/shaker,
+		/obj/item/chems/drinks/shaker,
 		/obj/item/glass_jar,
 		/obj/item/book/manual/barman_recipes,
 		/obj/item/clothing/under/bartender,

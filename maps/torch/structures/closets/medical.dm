@@ -111,7 +111,7 @@
 		/obj/item/clothing/glasses/hud/health,
 		/obj/item/storage/firstaid/adv,
 		/obj/item/clothing/suit/storage/medical_chest_rig,
-		/obj/item/clothing/head/hardhat/EMS,
+		/obj/item/clothing/head/hardhat/ems,
 		/obj/item/knife/folding/swiss/medic,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/medic, /obj/item/storage/backpack/satchel/med)),
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag/med, /obj/item/storage/backpack/messenger/med))

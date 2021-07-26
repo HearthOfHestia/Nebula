@@ -196,7 +196,7 @@
 	. = 0
 	if(istype(loc, /turf))
 		var/turf/T = loc
-		. += T.movement_delay
+		. += T.movement_delay()
 	if(HAS_STATUS(src, STAT_DROWSY))
 		. += 6
 	if(lying) //Crawling, it's slower
@@ -516,8 +516,6 @@
 	return stat == DEAD
 
 /mob/proc/is_mechanical()
-	if(mind && (mind.assigned_role == "Robot" || mind.assigned_role == "AI"))
-		return 1
 	return istype(src, /mob/living/silicon)
 
 /mob/proc/is_ready()
@@ -620,7 +618,7 @@
 	//It just makes sense for now. ~Carn
 	if( update_icon )	//forces a full overlay update
 		update_icon = 0
-		regenerate_icons()
+		update_icon()
 	if( lying != last_lying )
 		update_transform()
 
@@ -781,11 +779,6 @@
 		var/mob/living/carbon/human/human_user = U
 		human_user.bloody_hands(src)
 	return 1
-
-// A mob should either use update_icon(), overriding this definition, or use update_icons(), not touching update_icon().
-// It should not use both.
-/mob/on_update_icon()
-	return update_icons()
 
 /mob/verb/face_direction()
 

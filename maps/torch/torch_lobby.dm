@@ -1,5 +1,5 @@
 /datum/map/torch
-	lobby_screens = list('maps/torch/lobby/iseo-endeavor.gif')
+	lobby_screens = list('maps/torch/lobby/iseo-endeavor.gif', 'maps/torch/lobby/hearth_symbol_lobby.png')
 	lobby_tracks = list(
 		/decl/music_track/cloudsofneptune,
 		/decl/music_track/chasing_time,

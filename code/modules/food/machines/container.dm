@@ -9,7 +9,7 @@
 	volume = 80//Maximum units of reagents
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER | ATOM_FLAG_NO_REACT
 	var/list/insertable = list(
-		/obj/item/chems/food/snacks,
+		/obj/item/chems/food,
 		/obj/item/holder,
 		/obj/item/paper,
 		/obj/item/flame/candle,
@@ -285,7 +285,7 @@
 		results += TR
 
 	for (var/r in results)
-		var/obj/item/chems/food/snacks/R = r
+		var/obj/item/chems/food/R = r
 		R.forceMove(src) //Move everything from the buffer back to the container
 
 	QDEL_NULL(temp) //delete buffer object

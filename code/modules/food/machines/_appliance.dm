@@ -1,7 +1,7 @@
 // This folder contains code that was originally ported from Apollo Station and then refactored/optimized/changed.
 
 // Tracks precooked food to stop deep fried baked grilled grilled grilled diona nymph cereal.
-/obj/item/chems/food/snacks
+/obj/item/chems/food
 	var/tmp/list/cooked
 
 // Root type for cooking machines. See following files for specific implementations.
@@ -182,7 +182,7 @@
 			return CAN_INSERT
 
 	// We're trying to cook something else. Check if it's valid.
-	var/obj/item/chems/food/snacks/check = I
+	var/obj/item/chems/food/check = I
 	if(istype(check) && LAZYISIN(cook_type,check.cooked))
 		to_chat(user, SPAN_WARNING("[check] has already been [cook_type]."))
 		return CANNOT_INSERT
@@ -280,7 +280,7 @@
 
 //Just a helper to save code duplication in the above
 /obj/machinery/appliance/proc/oilwork(var/obj/item/I, var/datum/cooking_item/CI)
-	var/obj/item/chems/food/snacks/S = I
+	var/obj/item/chems/food/S = I
 	var/work = 0
 	if (istype(S) && S.reagents)
 		for (var/_R in S.reagents.reagent_volumes)
@@ -366,7 +366,7 @@
 
 
 		for (var/r in results)
-			var/obj/item/chems/food/snacks/R = r
+			var/obj/item/chems/food/R = r
 			R.forceMove(C) //Move everything from the buffer back to the container
 			LAZYDISTINCTADD(R.cooked, cook_type)
 
@@ -383,7 +383,7 @@
 			modify_cook(i, CI)
 
 	//Final step. Cook function just cooks batter for now.
-	for (var/obj/item/chems/food/snacks/S in CI.container)
+	for (var/obj/item/chems/food/S in CI.container)
 		S.cook()
 
 
@@ -400,10 +400,10 @@
 	var/totalcolour
 
 	for (var/obj/item/I in CI.container)
-		var/obj/item/chems/food/snacks/S
+		var/obj/item/chems/food/S
 		if (istype(I, /obj/item/holder))
 			S = create_mob_food(I, CI)
-		else if (istype(I, /obj/item/chems/food/snacks))
+		else if (istype(I, /obj/item/chems/food))
 			S = I
 
 		if (!S)
@@ -432,7 +432,7 @@
 
 	CI.container.reagents.trans_to_holder(buffer, CI.container.reagents.total_volume)
 
-	var/obj/item/chems/food/snacks/variable/result = new cook_path(CI.container)
+	var/obj/item/chems/food/variable/result = new cook_path(CI.container)
 	buffer.trans_to(result, buffer.total_volume)
 
 	//Filling overlay
@@ -462,10 +462,10 @@
 
 //Helper proc for standard modification cooking
 /obj/machinery/appliance/proc/modify_cook(var/obj/item/input, var/datum/cooking_item/CI)
-	var/obj/item/chems/food/snacks/result
+	var/obj/item/chems/food/result
 	if (istype(input, /obj/item/holder))
 		result = create_mob_food(input, CI)
-	else if (istype(input, /obj/item/chems/food/snacks))
+	else if (istype(input, /obj/item/chems/food))
 		result = input
 	else
 		//Nonviable item
@@ -486,7 +486,7 @@
 	// You dun goofed.
 	CI.burned = TRUE
 	CI.container.clear()
-	new /obj/item/chems/food/snacks/badrecipe(CI.container)
+	new /obj/item/chems/food/badrecipe(CI.container)
 
 	// Produce nasty smoke.
 	visible_message(SPAN_DANGER("[src] vomits a gout of rancid smoke!"))
@@ -557,12 +557,12 @@
 /obj/machinery/appliance/proc/cook_mob(var/mob/living/victim, var/mob/user)
 	return
 
-/obj/machinery/appliance/proc/change_product_strings(var/obj/item/chems/food/snacks/product, var/datum/cooking_item/CI)
+/obj/machinery/appliance/proc/change_product_strings(var/obj/item/chems/food/product, var/datum/cooking_item/CI)
 	product.name = "[cook_type] [product.name]"
 	product.desc = "[product.desc]\nIt has been [cook_type]."
 
 
-/obj/machinery/appliance/proc/change_product_appearance(var/obj/item/chems/food/snacks/product, var/datum/cooking_item/CI)
+/obj/machinery/appliance/proc/change_product_appearance(var/obj/item/chems/food/product, var/datum/cooking_item/CI)
 	if (!product.batter_coating) //Coatings change colour through a new sprite
 		product.color = food_color
 	product.filling_color = food_color
@@ -576,7 +576,7 @@
 	if (victim.stat != DEAD)
 		return null //Victim somehow survived the cooking, they do not become food
 
-	var/obj/item/chems/food/snacks/variable/mob/result = new /obj/item/chems/food/snacks/variable/mob(CI.container)
+	var/obj/item/chems/food/variable/mob/result = new /obj/item/chems/food/variable/mob(CI.container)
 	result.w_class = victim.mob_size
 	var/reagent_amount = victim.mob_size ** 2 * 3
 	if(isanimal(victim))

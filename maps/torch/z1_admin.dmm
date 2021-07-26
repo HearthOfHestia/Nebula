@@ -2178,13 +2178,13 @@
 /area/space)
 "ano" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anp" = (
@@ -2197,17 +2197,17 @@
 /area/space)
 "anP" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/snacks/chips,
+/obj/item/chems/food/chips,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anQ" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anR" = (
@@ -2499,7 +2499,7 @@
 	},
 /area/centcom/living)
 "atM" = (
-/obj/item/chems/food/condiment/small/peppermill{
+/obj/item/chems/condiment/small/peppermill{
 	pixel_x = 2;
 	pixel_y = 6
 	},
@@ -2509,7 +2509,7 @@
 	},
 /area/centcom/living)
 "atN" = (
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -2567,7 +2567,7 @@
 	},
 /area/centcom)
 "atY" = (
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -2782,7 +2782,7 @@
 /turf/simulated/floor/shuttle/white,
 /area/shuttle/administration/centcom)
 "auT" = (
-/obj/item/chems/food/condiment/small/saltshaker{
+/obj/item/chems/condiment/small/saltshaker{
 	pixel_x = -6
 	},
 /obj/structure/table/standard,
@@ -2862,7 +2862,7 @@
 /area/shuttle/administration/centcom)
 "avg" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/shaker,
+/obj/item/chems/drinks/shaker,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "white"
@@ -3081,7 +3081,7 @@
 "avP" = (
 /obj/structure/table/standard,
 /obj/item/chems/glass/beaker,
-/obj/item/chems/food/condiment/enzyme,
+/obj/item/chems/condiment/enzyme,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "white"
@@ -6031,7 +6031,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/amanita_pie,
+/obj/item/chems/food/amanita_pie,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6040,7 +6040,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/bigbiteburger,
+/obj/item/chems/food/bigbiteburger,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6066,7 +6066,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/stew,
+/obj/item/chems/food/stew,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6110,7 +6110,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/boiledrice,
+/obj/item/chems/food/boiledrice,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6119,7 +6119,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/beetsoup,
+/obj/item/chems/food/beetsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6128,7 +6128,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/stuffing,
+/obj/item/chems/food/stuffing,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6137,7 +6137,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/soylenviridians,
+/obj/item/chems/food/soylenviridians,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6209,7 +6209,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/bloodsoup,
+/obj/item/chems/food/bloodsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6218,7 +6218,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/tofukabob,
+/obj/item/chems/food/tofukabob,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6227,7 +6227,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/poppypretzel,
+/obj/item/chems/food/poppypretzel,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6307,7 +6307,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/spesslaw,
+/obj/item/chems/food/spesslaw,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6316,7 +6316,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/candiedapple,
+/obj/item/chems/food/candiedapple,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6325,7 +6325,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/mushroomsoup,
+/obj/item/chems/food/mushroomsoup,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -6334,7 +6334,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/chems/food/snacks/meatsteak,
+/obj/item/chems/food/meatsteak,
 /turf/unsimulated/floor{
 	icon_state = "wood"
 	},
@@ -7073,9 +7073,9 @@
 /area/tdome/tdomeobserve)
 "aKm" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /obj/item/flame/lighter/zippo/random,
 /obj/item/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
@@ -7083,9 +7083,9 @@
 	},
 /area/tdome/tdomeobserve)
 "aKn" = (
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -7852,7 +7852,7 @@
 /turf/simulated/floor/asteroid,
 /area/merchant_station)
 "aMh" = (
-/obj/item/chems/food/snacks/grown/mushroom/libertycap,
+/obj/item/chems/food/grown/mushroom/libertycap,
 /turf/simulated/floor/asteroid,
 /area/merchant_station)
 "aMm" = (
@@ -11341,7 +11341,7 @@
 /area/holodeck/source_temple)
 "dTZ" = (
 /obj/structure/table/holo_woodentable,
-/obj/item/chems/food/drinks/glass2/coffeecup{
+/obj/item/chems/drinks/glass2/coffeecup{
 	holographic = 1
 	},
 /turf/simulated/floor/holofloor/wood,
@@ -11877,7 +11877,7 @@
 /area/holodeck/source_volleyball)
 "quq" = (
 /obj/structure/table/holo_woodentable,
-/obj/item/chems/food/drinks/teapot{
+/obj/item/chems/drinks/teapot{
 	holographic = 1
 	},
 /turf/simulated/floor/holofloor/wood,

@@ -94,7 +94,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/overmap_size = 20		//Dimensions of overmap zlevel if overmap is used.
 	var/overmap_z = 0		//If 0 will generate overmap zlevel on init. Otherwise will populate the zlevel provided.
 	var/overmap_event_areas = 0 //How many event "clouds" will be generated
-	var/pray_reward_type = /obj/item/chems/food/snacks/cookie // What reward should be given by admin when a prayer is received?
+	var/pray_reward_type = /obj/item/chems/food/cookie // What reward should be given by admin when a prayer is received?
 	var/list/map_markers_to_load
 
 	// The list of lobby screen images to pick() from.
@@ -181,7 +181,6 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	if(!LAZYLEN(planet_size))
 		planet_size = list(world.maxx, world.maxy)
 
-	current_lobby_screen = pick(lobby_screens)
 	game_year = (text2num(time2text(world.realtime, "YYYY")) + game_year)
 
 	if(ispath(default_job_type, /datum/job))
@@ -200,6 +199,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 
 /datum/map/proc/setup_map()
 	lobby_track = get_lobby_track()
+	update_titlescreen()
 	world.update_status()
 
 /datum/map/proc/setup_job_lists()
@@ -346,15 +346,29 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	)
 
 /datum/map/proc/show_titlescreen(client/C)
+	set waitfor = FALSE
+
 	winset(C, "lobbybrowser", "is-disabled=false;is-visible=true")
 
-	show_browser(C, current_lobby_screen, "file=titlescreen.png;display=0")
-	show_browser(C, file('html/lobby_titlescreen.html'), "window=lobbybrowser")
+	show_browser(C, current_lobby_screen, "file=titlescreen.gif;display=0")
+
+	if(isnewplayer(C.mob))
+		var/mob/new_player/player = C.mob
+		show_browser(C, player.get_lobby_browser_html(), "window=lobbybrowser")
 
 /datum/map/proc/hide_titlescreen(client/C)
 	if(C.mob) // Check if the client is still connected to something
 		// Hide title screen, allowing player to see the map
 		winset(C, "lobbybrowser", "is-disabled=true;is-visible=false")
+
+/datum/map/proc/update_titlescreen(new_screen)
+	current_lobby_screen = new_screen || pick(lobby_screens)
+	refresh_lobby_browsers()
+
+/datum/map/proc/refresh_lobby_browsers()
+	for(var/mob/new_player/player in global.player_list)
+		show_titlescreen(player.client)
+		player.show_lobby_menu()
 
 /datum/map/proc/create_trade_hubs()
 	new /datum/trade_hub/singleton
@@ -368,6 +382,30 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 /datum/map/proc/get_specops_area()
 	return
 
+/datum/map/proc/summarize_roundend_for(var/mob/player)
+	if(!player)
+		return
+	if(player.stat != DEAD)
+		var/turf/playerTurf = get_turf(player)
+		if(SSevac.evacuation_controller && SSevac.evacuation_controller.round_over() && SSevac.evacuation_controller.emergency_evacuation)
+			if(isNotAdminLevel(playerTurf.z))
+				to_chat(player, "<font color='blue'><b>You managed to survive, but were marooned on [station_name()] as [player.real_name]...</b></font>")
+			else
+				to_chat(player, "<font color='green'><b>You managed to survive the events on [station_name()] as [player.real_name].</b></font>")
+		else if(isAdminLevel(playerTurf.z))
+			to_chat(player, "<font color='green'><b>You successfully underwent crew transfer after events on [station_name()] as [player.real_name].</b></font>")
+		else if(issilicon(player))
+			to_chat(player, "<font color='green'><b>You remain operational after the events on [station_name()] as [player.real_name].</b></font>")
+		else
+			to_chat(player, "<font color='blue'><b>You got through just another workday on [station_name()] as [player.real_name].</b></font>")
+	else
+		if(isghost(player))
+			var/mob/observer/ghost/O = player
+			if(!O.started_as_observer)
+				to_chat(player, "<font color='red'><b>You did not survive the events on [station_name()]...</b></font>")
+		else
+			to_chat(player, "<font color='red'><b>You did not survive the events on [station_name()]...</b></font>")
+
 /datum/map/proc/create_passport(var/mob/living/carbon/human/H)
 	if(!passport_type)
 		return
@@ -376,3 +414,4 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		pass.set_info(H)
 	if(!H.equip_to_slot(pass, slot_in_backpack_str))
 		H.put_in_hands(pass)
+

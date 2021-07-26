@@ -14,6 +14,17 @@
 	var/last_flow_dir = 0
 	var/update_lighting = FALSE
 
+/obj/effect/fluid/Initialize()
+	atom_flags |= ATOM_FLAG_OPEN_CONTAINER
+	icon_state = ""
+	create_reagents(FLUID_MAX_DEPTH)
+	. = ..()
+	var/turf/simulated/T = get_turf(src)
+	if(!isturf(T) || !T.CanFluidPass())
+		return INITIALIZE_HINT_QDEL
+	if(istype(T))
+		T.unwet_floor(FALSE)
+
 /obj/effect/fluid/airlock_crush()
 	qdel(src)
 
@@ -30,17 +41,6 @@
 			ADD_ACTIVE_FLUID(F)
 	update_lighting = TRUE
 	update_icon()
-
-/obj/effect/fluid/Initialize()
-	atom_flags |= ATOM_FLAG_OPEN_CONTAINER
-	icon_state = ""
-	create_reagents(FLUID_MAX_DEPTH)
-	. = ..()
-	var/turf/simulated/T = get_turf(src)
-	if(!isturf(T) || !T.CanFluidPass())
-		return INITIALIZE_HINT_QDEL
-	if(istype(T))
-		T.unwet_floor(FALSE)
 
 /obj/effect/fluid/Destroy()
 	var/turf/simulated/T = get_turf(src)
@@ -69,7 +69,7 @@
 
 	var/decl/material/main_reagent = reagents.get_primary_reagent_decl()
 	if(main_reagent) // TODO: weighted alpha from all reagents, not just primary
-		alpha = Clamp(ceil(255*(reagents.total_volume/FLUID_DEEP)) * main_reagent.opacity, main_reagent.min_fluid_opacity, main_reagent.max_fluid_opacity)
+		alpha = Clamp(CEILING(255*(reagents.total_volume/FLUID_DEEP)) * main_reagent.opacity, main_reagent.min_fluid_opacity, main_reagent.max_fluid_opacity)
 
 	if(reagents.total_volume <= FLUID_PUDDLE)
 		APPLY_FLUID_OVERLAY("puddle")

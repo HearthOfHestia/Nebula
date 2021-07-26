@@ -103,9 +103,9 @@
 		mechanics_text += "<ul><li>[jointext(ingredients, "</li><li>")]</li></ul>"
 		var/atom/recipe_product = recipe.result
 		var/plural = recipe.result_quantity > 1
-		mechanics_text += "<br>This recipe takes [ceil(recipe.time/10)] second\s to cook in [recipe.get_appliances_string()] and creates [plural ? recipe.result_quantity : "a(n)"] [initial(recipe_product.name)][plural ? "s" : ""]."
+		mechanics_text += "<br>This recipe takes [CEILING(recipe.time/10)] second\s to cook in [recipe.get_appliances_string()] and creates [plural ? recipe.result_quantity : "a(n)"] [initial(recipe_product.name)][plural ? "s" : ""]."
 		var/recipe_name = recipe.display_name || sanitize(initial(recipe_product.name))
-		guide_html += "<h3>[capitalize(recipe_name)]</h3>Place [english_list(ingredients)] into [recipe.get_appliances_string()] for [ceil(recipe.time/10)] second\s."
+		guide_html += "<h3>[capitalize(recipe_name)]</h3>Place [english_list(ingredients)] into [recipe.get_appliances_string()] for [CEILING(recipe.time/10)] second\s."
 
 		entries_to_register += new /datum/codex_entry(             \
 		 _display_name =       "[recipe_name] (recipe)", \

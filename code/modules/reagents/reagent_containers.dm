@@ -55,8 +55,8 @@
 	return
 
 /obj/item/chems/attackby(obj/item/W, mob/user)
-	if(istype(W, /obj/item/chems/food/snacks))
-		var/obj/item/chems/food/snacks/dipped = W
+	if(istype(W, /obj/item/chems/food))
+		var/obj/item/chems/food/dipped = W
 		. = dipped.attempt_apply_coating(src, user)
 		if(.)
 			return .
@@ -154,7 +154,7 @@
 
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //puts a limit on how fast people can eat/drink things
 			self_feed_message(user)
-			reagents.trans_to_mob(user, issmall(user) ? ceil(amount_per_transfer_from_this/2) : amount_per_transfer_from_this, CHEM_INGEST)
+			reagents.trans_to_mob(user, issmall(user) ? CEILING(amount_per_transfer_from_this/2) : amount_per_transfer_from_this, CHEM_INGEST)
 			feed_sound(user)
 			add_trace_DNA(user)
 			return 1

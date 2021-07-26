@@ -2,299 +2,299 @@
 	appliance = SKILLET
 	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
-		/obj/item/chems/food/snacks/egg
+		/obj/item/chems/food/egg
 	)
-	result = /obj/item/chems/food/snacks/friedegg
+	result = /obj/item/chems/food/friedegg
 
 /decl/recipe/friedegg2
 	appliance = SKILLET
 	items = list(
-		/obj/item/chems/food/snacks/egg = 2,
+		/obj/item/chems/food/egg = 2,
 	)
-	result = /obj/item/chems/food/snacks/friedegg
+	result = /obj/item/chems/food/friedegg
 
 /decl/recipe/chocolateegg
 	appliance = SAUCEPAN|POT // melt the chocolate
 	items = list(
-		/obj/item/chems/food/snacks/egg,
-		/obj/item/chems/food/snacks/chocolatebar,
+		/obj/item/chems/food/egg,
+		/obj/item/chems/food/chocolatebar,
 	)
-	result = /obj/item/chems/food/snacks/chocolateegg
+	result = /obj/item/chems/food/chocolateegg
 
 /decl/recipe/sausage
 	appliance = SKILLET
 	items = list(
-		/obj/item/chems/food/snacks/rawmeatball,
-		/obj/item/chems/food/snacks/rawcutlet,
+		/obj/item/chems/food/rawmeatball,
+		/obj/item/chems/food/rawcutlet,
 	)
-	result = /obj/item/chems/food/snacks/sausage
+	result = /obj/item/chems/food/sausage
 
 /decl/recipe/fatsausage
 	appliance = SKILLET
 	reagents = list(/decl/material/solid/blackpepper = 2)
 	items = list(
-		/obj/item/chems/food/snacks/rawmeatball,
-		/obj/item/chems/food/snacks/rawcutlet,
+		/obj/item/chems/food/rawmeatball,
+		/obj/item/chems/food/rawcutlet,
 	)
-	result = /obj/item/chems/food/snacks/fatsausage
+	result = /obj/item/chems/food/fatsausage
 
 /decl/recipe/candiedapple
 	appliance = SAUCEPAN
 	fruit = list("apple" = 1)
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/sugar = 5)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/candiedapple
+	result = /obj/item/chems/food/candiedapple
 
 /decl/recipe/chawanmushi
 	appliance = SAUCEPAN|POT // steamed
 	fruit = list("mushroom" = 1)
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/soysauce = 5)
 	items = list(
-		/obj/item/chems/food/snacks/egg = 2
+		/obj/item/chems/food/egg = 2
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/chawanmushi
+	result = /obj/item/chems/food/chawanmushi
 
 /decl/recipe/bloodsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/blood = 30)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/bloodsoup
+	result = /obj/item/chems/food/bloodsoup
 
 /decl/recipe/mysterysoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/badrecipe,
-		/obj/item/chems/food/snacks/tofu,
-		/obj/item/chems/food/snacks/egg,
-		/obj/item/chems/food/snacks/cheesewedge,
+		/obj/item/chems/food/badrecipe,
+		/obj/item/chems/food/tofu,
+		/obj/item/chems/food/egg,
+		/obj/item/chems/food/cheesewedge,
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/mysterysoup
+	result = /obj/item/chems/food/mysterysoup
 
 /decl/recipe/mushroomsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("mushroom" = 1)
 	reagents = list(/decl/material/liquid/drink/milk = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/mushroomsoup
+	result = /obj/item/chems/food/mushroomsoup
 
 /decl/recipe/beetsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("whitebeet" = 1, "cabbage" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/beetsoup
+	result = /obj/item/chems/food/beetsoup
 
 /decl/recipe/milosoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/soydope = 2,
-		/obj/item/chems/food/snacks/tofu = 2,
+		/obj/item/chems/food/soydope = 2,
+		/obj/item/chems/food/tofu = 2,
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/milosoup
+	result = /obj/item/chems/food/milosoup
 
 /decl/recipe/tomatosoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("tomato" = 2)
 	reagents = list(/decl/material/liquid/water = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/tomatosoup
+	result = /obj/item/chems/food/tomatosoup
 
 /decl/recipe/meatballsoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("carrot" = 1, "potato" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
-	items = list(/obj/item/chems/food/snacks/meatball)
+	items = list(/obj/item/chems/food/meatball)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/meatballsoup
+	result = /obj/item/chems/food/meatballsoup
 
 /decl/recipe/vegetablesoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("carrot" = 1, "potato" = 1, "corn" = 1, "eggplant" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/vegetablesoup
+	result = /obj/item/chems/food/vegetablesoup
 
 /decl/recipe/nettlesoup
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("nettle" = 1, "potato" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/egg
+		/obj/item/chems/food/egg
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/nettlesoup
+	result = /obj/item/chems/food/nettlesoup
 
 /decl/recipe/wishsoup
 	appliance = MICROWAVE|SAUCEPAN|POT // microwave works, because desperation
 	reagents = list(/decl/material/liquid/water = 20)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result= /obj/item/chems/food/snacks/wishsoup
+	result= /obj/item/chems/food/wishsoup
 
 /decl/recipe/hotchili
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("chili" = 1, "tomato" = 1)
-	items = list(/obj/item/chems/food/snacks/cutlet)
-	result = /obj/item/chems/food/snacks/hotchili
+	items = list(/obj/item/chems/food/cutlet)
+	result = /obj/item/chems/food/hotchili
 
 /decl/recipe/coldchili
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("icechili" = 1, "tomato" = 1)
-	items = list(/obj/item/chems/food/snacks/cutlet)
-	result = /obj/item/chems/food/snacks/coldchili
+	items = list(/obj/item/chems/food/cutlet)
+	result = /obj/item/chems/food/coldchili
 
 /decl/recipe/stew
 	appliance = MICROWAVE|SAUCEPAN|POT
 	fruit = list("potato" = 1, "tomato" = 1, "carrot" = 1, "eggplant" = 1, "mushroom" = 1)
 	reagents = list(/decl/material/liquid/water = 10)
-	items = list(/obj/item/chems/food/snacks/meat)
+	items = list(/obj/item/chems/food/meat)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/stew
+	result = /obj/item/chems/food/stew
 
 /decl/recipe/mint
 	appliance = SAUCEPAN
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5, /decl/material/liquid/frostoil = 5)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/mint
+	result = /obj/item/chems/food/mint
 
 /decl/recipe/boiledspiderleg
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/spider
+		/obj/item/chems/food/spider
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/spider/cooked
+	result = /obj/item/chems/food/spider/cooked
 
 /decl/recipe/pelmeni_boiled
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/pelmen = 5
+		/obj/item/chems/food/pelmen = 5
 	)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/pelmeni_boiled
+	result = /obj/item/chems/food/pelmeni_boiled
 
 /decl/recipe/meatball
 	appliance = SKILLET|MICROWAVE
 	items = list(
-		/obj/item/chems/food/snacks/rawmeatball
+		/obj/item/chems/food/rawmeatball
 	)
-	result = /obj/item/chems/food/snacks/meatball
+	result = /obj/item/chems/food/meatball
 
 /decl/recipe/cutlet
 	appliance = SKILLET|MICROWAVE
 	items = list(
-		/obj/item/chems/food/snacks/rawcutlet
+		/obj/item/chems/food/rawcutlet
 	)
-	result = /obj/item/chems/food/snacks/cutlet
+	result = /obj/item/chems/food/cutlet
 
 /decl/recipe/ricepudding
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/rice = 10)
 	reagent_mix = REAGENT_REPLACE // get the raw reagents out of there
-	result = /obj/item/chems/food/snacks/ricepudding
+	result = /obj/item/chems/food/ricepudding
 
 
 /decl/recipe/stewedsoymeat
 	appliance = SAUCEPAN|POT
 	fruit = list("carrot" = 1, "tomato" = 1)
 	items = list(
-		/obj/item/chems/food/snacks/soydope = 2
+		/obj/item/chems/food/soydope = 2
 	)
-	result = /obj/item/chems/food/snacks/stewedsoymeat
+	result = /obj/item/chems/food/stewedsoymeat
 
 /decl/recipe/boiledspagetti
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/spagetti,
+		/obj/item/chems/food/spagetti,
 	)
 	reagent_mix = REAGENT_REPLACE // don't fill it with water
-	result = /obj/item/chems/food/snacks/boiledspagetti
+	result = /obj/item/chems/food/boiledspagetti
 
 /decl/recipe/boiledegg
 	appliance = SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10)
 	items = list(
-		/obj/item/chems/food/snacks/egg
+		/obj/item/chems/food/egg
 	)
 	reagent_mix = REAGENT_REPLACE // shouldn't fill it with water
-	result = /obj/item/chems/food/snacks/boiledegg
+	result = /obj/item/chems/food/boiledegg
 
 /decl/recipe/waffles
 	appliance = SKILLET // no waffle griddle, sadly
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 20)
 	reagent_mix = REAGENT_REPLACE // the batter should be cooked
-	result = /obj/item/chems/food/snacks/waffles
+	result = /obj/item/chems/food/waffles
 
 /decl/recipe/pancakes
 	appliance = SKILLET
 	reagents = list(/decl/material/liquid/nutriment/batter = 20)
 	reagent_mix = REAGENT_REPLACE // the batter should be cooked
-	result = /obj/item/chems/food/snacks/pancakes
+	result = /obj/item/chems/food/pancakes
 
 /decl/recipe/pancakes/blu
 	fruit = list("blueberries" = 2)
-	result = /obj/item/chems/food/snacks/pancakesblu
+	result = /obj/item/chems/food/pancakesblu
 
 /decl/recipe/omelette
 	appliance = SKILLET
 	items = list(
-		/obj/item/chems/food/snacks/egg = 2,
-		/obj/item/chems/food/snacks/cheesewedge,
+		/obj/item/chems/food/egg = 2,
+		/obj/item/chems/food/cheesewedge,
 	)
-	result = /obj/item/chems/food/snacks/omelette
+	result = /obj/item/chems/food/omelette
 
 /decl/recipe/soylenviridians
 	appliance = SKILLET // considering it equivalent to waffles?
 	fruit = list("soybeans" = 1)
 	reagents = list(/decl/material/liquid/nutriment/flour = 10)
 	reagent_mix = REAGENT_REPLACE // get the flour out of there
-	result = /obj/item/chems/food/snacks/soylenviridians
+	result = /obj/item/chems/food/soylenviridians
 
 /decl/recipe/soylentgreen
 	appliance = SKILLET // considering it equivalent to waffles?
 	reagents = list(/decl/material/liquid/nutriment/flour = 10)
 	items = list(
-		/obj/item/chems/food/snacks/meat/human = 2
+		/obj/item/chems/food/meat/human = 2
 	)
 	reagent_mix = REAGENT_REPLACE // no flour
-	result = /obj/item/chems/food/snacks/soylentgreen
+	result = /obj/item/chems/food/soylentgreen
 
 /decl/recipe/amanitajelly
 	appliance = SAUCEPAN
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/ethanol/vodka = 5, /decl/material/liquid/amatoxin = 5)
 	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/snacks/amanitajelly
+	result = /obj/item/chems/food/amanitajelly
 
 /decl/recipe/amanitajelly/make_food(var/obj/container)
-	var/obj/item/chems/food/snacks/amanitajelly/being_cooked = ..(container)
+	var/obj/item/chems/food/amanitajelly/being_cooked = ..(container)
 	being_cooked.reagents.clear_reagent(/decl/material/liquid/amatoxin)
 	return being_cooked
 
 /decl/recipe/toastedsandwich
 	appliance = SKILLET
 	items = list(
-		/obj/item/chems/food/snacks/sandwich
+		/obj/item/chems/food/sandwich
 	)
-	result = /obj/item/chems/food/snacks/toastedsandwich
+	result = /obj/item/chems/food/toastedsandwich
 
 /decl/recipe/grilledcheese
 	appliance = SKILLET
 	items = list(
-		/obj/item/chems/food/snacks/slice/bread = 2,
-		/obj/item/chems/food/snacks/cheesewedge,
+		/obj/item/chems/food/slice/bread = 2,
+		/obj/item/chems/food/cheesewedge,
 	)
-	result = /obj/item/chems/food/snacks/grilledcheese
+	result = /obj/item/chems/food/grilledcheese
 /decl/recipe/jelliedtoast
 	appliance = SKILLET
 	reagents = list(/decl/material/liquid/nutriment/cherryjelly = 5)
 	items = list(
-		/obj/item/chems/food/snacks/slice/bread,
+		/obj/item/chems/food/slice/bread,
 	)
-	result = /obj/item/chems/food/snacks/jelliedtoast/cherry
+	result = /obj/item/chems/food/jelliedtoast/cherry

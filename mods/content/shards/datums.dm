@@ -167,3 +167,11 @@
 		access_xenoarch,
 		access_network
 	)
+
+/decl/department/command
+/decl/department/science
+/decl/department/medical
+/decl/department/engineering
+/decl/department/security
+/decl/department/miscellaneous
+//These stubs are here because it won't pass CI otherwise!
