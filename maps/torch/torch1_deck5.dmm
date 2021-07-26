@@ -2655,10 +2655,10 @@
 /obj/random/mre,
 /obj/random/mre,
 /obj/random/mre,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
 /obj/item/radio/intercom{
 	dir = 4;
 	pixel_x = -21

@@ -2178,13 +2178,13 @@
 /area/space)
 "ano" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anp" = (
@@ -2202,12 +2202,12 @@
 /area/space)
 "anQ" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anR" = (
@@ -2499,7 +2499,7 @@
 	},
 /area/centcom/living)
 "atM" = (
-/obj/item/chems/food/condiment/small/peppermill{
+/obj/item/chems/condiment/small/peppermill{
 	pixel_x = 2;
 	pixel_y = 6
 	},
@@ -2509,7 +2509,7 @@
 	},
 /area/centcom/living)
 "atN" = (
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -2567,7 +2567,7 @@
 	},
 /area/centcom)
 "atY" = (
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "steel"
@@ -2782,7 +2782,7 @@
 /turf/simulated/floor/shuttle/white,
 /area/shuttle/administration/centcom)
 "auT" = (
-/obj/item/chems/food/condiment/small/saltshaker{
+/obj/item/chems/condiment/small/saltshaker{
 	pixel_x = -6
 	},
 /obj/structure/table/standard,
@@ -2862,7 +2862,7 @@
 /area/shuttle/administration/centcom)
 "avg" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/shaker,
+/obj/item/chems/drinks/shaker,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "white"
@@ -3081,7 +3081,7 @@
 "avP" = (
 /obj/structure/table/standard,
 /obj/item/chems/glass/beaker,
-/obj/item/chems/food/condiment/enzyme,
+/obj/item/chems/condiment/enzyme,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "white"
@@ -7073,9 +7073,9 @@
 /area/tdome/tdomeobserve)
 "aKm" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
-/obj/item/chems/food/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
+/obj/item/chems/drinks/bottle/small/beer,
 /obj/item/flame/lighter/zippo/random,
 /obj/item/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
@@ -7083,9 +7083,9 @@
 	},
 /area/tdome/tdomeobserve)
 "aKn" = (
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
-/obj/item/chems/food/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
+/obj/item/chems/drinks/cans/cola,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -11341,7 +11341,7 @@
 /area/holodeck/source_temple)
 "dTZ" = (
 /obj/structure/table/holo_woodentable,
-/obj/item/chems/food/drinks/glass2/coffeecup{
+/obj/item/chems/drinks/glass2/coffeecup{
 	holographic = 1
 	},
 /turf/simulated/floor/holofloor/wood,
@@ -11877,7 +11877,7 @@
 /area/holodeck/source_volleyball)
 "quq" = (
 /obj/structure/table/holo_woodentable,
-/obj/item/chems/food/drinks/teapot{
+/obj/item/chems/drinks/teapot{
 	holographic = 1
 	},
 /turf/simulated/floor/holofloor/wood,

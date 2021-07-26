@@ -857,10 +857,10 @@
 	dir = 4;
 	icon_state = "bordercolorhalf"
 	},
-/obj/item/chems/food/drinks/glass2/mug,
-/obj/item/chems/food/drinks/glass2/mug,
-/obj/item/chems/food/drinks/glass2/mug,
-/obj/item/chems/food/drinks/glass2/mug,
+/obj/item/chems/drinks/glass2/mug,
+/obj/item/chems/drinks/glass2/mug,
+/obj/item/chems/drinks/glass2/mug,
+/obj/item/chems/drinks/glass2/mug,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "cu" = (
@@ -1392,7 +1392,7 @@
 "dk" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/chems/food/condiment/enzyme,
+/obj/item/chems/condiment/enzyme,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "dl" = (
@@ -1917,7 +1917,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/chems/food/condiment/barbecue,
+/obj/item/chems/condiment/barbecue,
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "eu" = (
@@ -3745,7 +3745,7 @@
 	pixel_y = -7
 	},
 /obj/random/smokes,
-/obj/item/chems/food/drinks/glass2/coffeecup/dais{
+/obj/item/chems/drinks/glass2/coffeecup/dais{
 	pixel_x = -6;
 	pixel_y = 12
 	},
@@ -6050,17 +6050,17 @@
 /area/crew_quarters/galley)
 "nd" = (
 /obj/structure/table/woodentable/walnut,
-/obj/item/chems/food/condiment/small/saltshaker,
-/obj/item/chems/food/condiment/small/peppermill,
+/obj/item/chems/condiment/small/saltshaker,
+/obj/item/chems/condiment/small/peppermill,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/mess)
 "ne" = (
 /obj/structure/table/marble,
-/obj/item/chems/food/condiment/small/saltshaker{
+/obj/item/chems/condiment/small/saltshaker{
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/chems/food/condiment/small/peppermill{
+/obj/item/chems/condiment/small/peppermill{
 	pixel_x = 3
 	},
 /obj/effect/floor_decal/corner/grey/diagonal{
@@ -6544,7 +6544,7 @@
 /area/crew_quarters/galley)
 "oi" = (
 /obj/structure/table/marble,
-/obj/item/chems/food/condiment/enzyme,
+/obj/item/chems/condiment/enzyme,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -7359,7 +7359,7 @@
 /area/hallway/primary/thirddeck/aft)
 "qs" = (
 /obj/structure/table/woodentable,
-/obj/item/chems/food/drinks/glass2/coffeecup,
+/obj/item/chems/drinks/glass2/coffeecup,
 /obj/effect/floor_decal/corner/lime{
 	dir = 5
 	},
@@ -9376,8 +9376,8 @@
 	icon_state = "bordercolorhalf"
 	},
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/glass2/coffeecup/britcup,
-/obj/item/chems/food/drinks/glass2/coffeecup/britcup,
+/obj/item/chems/drinks/glass2/coffeecup/britcup,
+/obj/item/chems/drinks/glass2/coffeecup/britcup,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "vy" = (
@@ -10622,7 +10622,7 @@
 /obj/effect/floor_decal/corner/green/half,
 /obj/structure/table/standard,
 /obj/item/storage/box/glasses/pint,
-/obj/item/chems/food/drinks/glass2/carafe,
+/obj/item/chems/drinks/glass2/carafe,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "yH" = (
@@ -11161,10 +11161,10 @@
 	dir = 4;
 	icon_state = "bordercolorhalf"
 	},
-/obj/item/chems/food/drinks/glass2/shot,
-/obj/item/chems/food/drinks/glass2/shot,
-/obj/item/chems/food/drinks/glass2/shot,
-/obj/item/chems/food/drinks/glass2/shot,
+/obj/item/chems/drinks/glass2/shot,
+/obj/item/chems/drinks/glass2/shot,
+/obj/item/chems/drinks/glass2/shot,
+/obj/item/chems/drinks/glass2/shot,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "Ao" = (
@@ -12312,7 +12312,7 @@
 /area/crew_quarters/recreation)
 "DI" = (
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/glass2/coffeecup/metal,
+/obj/item/chems/drinks/glass2/coffeecup/metal,
 /obj/item/deck/cards,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
@@ -12648,17 +12648,17 @@
 /area/crew_quarters/office)
 "Es" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/chems/food/drinks/cans/speer,
-/obj/item/chems/food/drinks/cans/speer,
-/obj/item/chems/food/drinks/cans/speer,
-/obj/item/chems/food/drinks/cans/ale,
-/obj/item/chems/food/drinks/cans/ale,
-/obj/item/chems/food/drinks/cans/ale,
-/obj/item/chems/food/drinks/cans/artbru,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
-/obj/item/chems/food/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/speer,
+/obj/item/chems/drinks/cans/speer,
+/obj/item/chems/drinks/cans/speer,
+/obj/item/chems/drinks/cans/ale,
+/obj/item/chems/drinks/cans/ale,
+/obj/item/chems/drinks/cans/ale,
+/obj/item/chems/drinks/cans/artbru,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
+/obj/item/chems/drinks/cans/waterbottle,
 /obj/machinery/firealarm{
 	pixel_y = 21
 	},
@@ -16677,9 +16677,9 @@
 	icon_state = "bordercolorhalf"
 	},
 /obj/structure/table/standard,
-/obj/item/chems/food/drinks/glass2/coffeecup/black,
-/obj/item/chems/food/drinks/glass2/coffeecup/black,
-/obj/item/chems/food/drinks/glass2/coffeecup/black,
+/obj/item/chems/drinks/glass2/coffeecup/black,
+/obj/item/chems/drinks/glass2/coffeecup/black,
+/obj/item/chems/drinks/glass2/coffeecup/black,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "QU" = (
@@ -17940,9 +17940,9 @@
 	dir = 4;
 	icon_state = "bordercolorhalf"
 	},
-/obj/item/chems/food/drinks/glass2/square,
-/obj/item/chems/food/drinks/glass2/square,
-/obj/item/chems/food/drinks/glass2/square,
+/obj/item/chems/drinks/glass2/square,
+/obj/item/chems/drinks/glass2/square,
+/obj/item/chems/drinks/glass2/square,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "UE" = (
@@ -19213,10 +19213,10 @@
 	dir = 4;
 	icon_state = "bordercolorhalf"
 	},
-/obj/item/chems/food/drinks/glass2/rocks,
-/obj/item/chems/food/drinks/glass2/rocks,
-/obj/item/chems/food/drinks/glass2/rocks,
-/obj/item/chems/food/drinks/glass2/rocks,
+/obj/item/chems/drinks/glass2/rocks,
+/obj/item/chems/drinks/glass2/rocks,
+/obj/item/chems/drinks/glass2/rocks,
+/obj/item/chems/drinks/glass2/rocks,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "YA" = (

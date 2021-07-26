@@ -81,7 +81,7 @@ var/global/list/speech_toppings = list("|" = "i", "+" = "b", "_" = "u")
 		return
 
 	var/length = length(message)
-	var/posts = CEILING((length/MAX_MESSAGE_LEN), 1)
+	var/posts = CEILING(length/MAX_MESSAGE_LEN)
 	to_chat(user,message)
 	to_chat(user, SPAN_DANGER("^ This message was NOT SENT ^ -- It was [length] characters, and the limit is [MAX_MESSAGE_LEN]. It would fit in [posts] separate messages."))
 
@@ -91,7 +91,7 @@ var/global/list/speech_toppings = list("|" = "i", "+" = "b", "_" = "u")
 		var/regex/R = new("\\[delimiter](.+?)\\[delimiter]","g")
 		var/tag = speech_toppings[delimiter]
 		tagged_message = R.Replace(tagged_message,"<[tag]>$1</[tag]>")
-		
+
 	return tagged_message
 
 #undef MAX_HUGE_MESSAGE_LEN
