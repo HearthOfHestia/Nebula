@@ -451,3 +451,18 @@
 	nutriment_factor = 5
 	taste_mult = 1.3
 	taste_description = "chocolate"
+
+// Caramel sugar and sauce from Hestia
+/decl/material/liquid/nutriment/caramelsugar
+	name = "Caramel Sugar"
+	lore_text = "Caramelised sugar, used in various recipes."
+	taste_description = "toasty sweetness"
+	taste_mult = 1.5
+	nutriment_factor = 1.5
+
+/decl/material/liquid/nutriment/caramelsauce
+	name = "Caramel Sauce"
+	lore_text = "A caramel-based sauce. Now you're caramel dancin'."
+	taste_description = "toasty sweet cream"
+	taste_mult = 3
+	nutriment_factor = 3

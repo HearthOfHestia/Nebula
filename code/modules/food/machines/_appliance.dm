@@ -40,7 +40,6 @@
 	var/finish_verb = "pings!"
 	var/combine_first = FALSE//If 1, this appliance will do combination cooking before checking recipes
 
-
 /obj/machinery/appliance/Initialize()
 	. = ..()
 	if(length(output_options))
@@ -196,7 +195,6 @@
 		return CANNOT_INSERT
 	return CAN_INSERT
 
-
 //This function is overridden by cookers that do stuff with containers
 /obj/machinery/appliance/proc/has_space(var/obj/item/I)
 	if (length(cooking_objs) >= max_contents)
@@ -224,7 +222,6 @@
 	//From here we can start cooking food
 	add_content(I, user)
 	update_icon()
-
 
 //Override for container mechanics
 /obj/machinery/appliance/proc/add_content(var/obj/item/I, var/mob/user)
@@ -294,7 +291,6 @@
 				work += S.reagents.reagent_volumes[_R]
 				CI.max_oil += S.reagents.reagent_volumes[_R] * 0.15
 
-
 	else if(istype(I, /obj/item/holder))
 		var/mob/living/contained = locate() in I
 		if (contained)
@@ -330,7 +326,6 @@
 		for (var/i in cooking_objs)
 			do_cooking_tick(i)
 
-
 /obj/machinery/appliance/proc/finish_cooking(var/datum/cooking_item/CI)
 	audible_message("<b>[src]</b> [finish_verb]")
 	if(cooked_sound)
@@ -349,43 +344,32 @@
 		recipe = select_recipe(C, appliance = appliance)
 
 	if (recipe)
-		var/list/results = recipe.make_food(C)
+		var/decl/recipe/oldrecipe = recipe
+		var/list/cooked_items = list()
+		while(recipe)
+			cooked_items += recipe.make_food(C)
+			recipe = select_recipe(C, appliance = appliance)
+			if (!recipe || recipe != oldrecipe)
+				break
 
-		var/obj/temp = new /obj(src) //To prevent infinite loops, all results will be moved into a temporary location so they're not considered as inputs for other recipes
-
-		for (var/atom/movable/AM in results)
-			AM.forceMove(temp)
-
-		//making multiple copies of a recipe from one container. For example, tons of fries
-		while (select_recipe(C, appliance = appliance) == recipe)
-			var/list/TR = list()
-			TR += recipe.make_food(C)
-			for (var/atom/movable/AM in TR) //Move results to buffer
-				AM.forceMove(temp)
-			results += TR
-
-
-		for (var/r in results)
+		for (var/r in cooked_items)
 			var/obj/item/chems/food/R = r
 			R.forceMove(C) //Move everything from the buffer back to the container
 			LAZYDISTINCTADD(R.cooked, cook_type)
 
-		QDEL_NULL(temp) //delete buffer object
 		. = TRUE //None of the rest of this function is relevant for recipe cooking
 
 	else if(CI.combine_target)
 		. = combination_cook(CI)
 
-
 	else
 		//Otherwise, we're just doing standard modification cooking. change a color + name
-		for (var/obj/item/i in CI.container)
+		for (var/obj/item/i in C)
 			modify_cook(i, CI)
 
 	//Final step. Cook function just cooks batter for now.
-	for (var/obj/item/chems/food/S in CI.container)
+	for (var/obj/item/chems/food/S in C)
 		S.cook()
-
 
 //Combination cooking involves combining the names and reagents of ingredients into a predefined output object
 //The ingredients represent flavours or fillings. EG: donut pizza, cheese bread
@@ -421,7 +405,6 @@
 					t = buffer.total_volume / y
 					totalcolour = BlendRGB(totalcolour, S.filling_color, t)
 					//Blend colours in order to find a good filling color
-
 
 			S.reagents.trans_to_holder(buffer, S.reagents.total_volume)
 		//Cleanup these empty husk ingredients now
@@ -560,7 +543,6 @@
 /obj/machinery/appliance/proc/change_product_strings(var/obj/item/chems/food/product, var/datum/cooking_item/CI)
 	product.name = "[cook_type] [product.name]"
 	product.desc = "[product.desc]\nIt has been [cook_type]."
-
 
 /obj/machinery/appliance/proc/change_product_appearance(var/obj/item/chems/food/product, var/datum/cooking_item/CI)
 	if (!product.batter_coating) //Coatings change colour through a new sprite

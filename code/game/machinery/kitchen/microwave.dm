@@ -241,12 +241,12 @@
 	var/decl/recipe/recipe = select_recipe(src, MICROWAVE)
 	if(!recipe)
 		return
-	var/result = recipe.result
+	var/decl/recipe/oldrecipe = recipe
 	var/list/cooked_items = list()
 	while(recipe)
 		cooked_items += recipe.make_food(src)
 		recipe = select_recipe(src, MICROWAVE)
-		if (!recipe || (recipe.result != result))
+		if (!recipe || recipe != oldrecipe)
 			break
 
 	//Any leftover reagents are divided amongst the foods
