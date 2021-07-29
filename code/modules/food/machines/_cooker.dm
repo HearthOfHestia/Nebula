@@ -1,7 +1,7 @@
 /obj/machinery/appliance/cooker
 	var/min_temp = 80 + T0C	//Minimum temperature to do any cooking
 	var/optimal_temp = 200 + T0C	//Temperature at which we have 100% efficiency. efficiency is lowered on either side of this
-	var/optimal_power = 1.1//cooking power at 100%
+	var/optimal_power = 0.8 //cooking power at 100%
 	var/set_temp = 200 + T0C
 	var/temp_settings = 4 // the number of temperature settings to have, including min and optimal
 	var/list/temp_options = list()

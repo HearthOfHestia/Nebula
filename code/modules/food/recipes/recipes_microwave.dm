@@ -51,7 +51,7 @@
 /decl/recipe/boiledrice
 	appliance = MICROWAVE|SAUCEPAN|POT
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/rice = 10)
-	reagent_mix = REAGENT_REPLACE // no raw rice
+	reagent_mix = REAGENT_REPLACE // remove the water
 	result = /obj/item/chems/food/boiledrice
 
 /decl/recipe/pastatomato

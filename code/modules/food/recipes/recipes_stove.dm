@@ -6,13 +6,6 @@
 	)
 	result = /obj/item/chems/food/friedegg
 
-/decl/recipe/friedegg2
-	appliance = SKILLET
-	items = list(
-		/obj/item/chems/food/egg = 2,
-	)
-	result = /obj/item/chems/food/friedegg
-
 /decl/recipe/chocolateegg
 	appliance = SAUCEPAN|POT // melt the chocolate
 	items = list(
@@ -199,7 +192,6 @@
 	reagent_mix = REAGENT_REPLACE // get the raw reagents out of there
 	result = /obj/item/chems/food/ricepudding
 
-
 /decl/recipe/stewedsoymeat
 	appliance = SAUCEPAN|POT
 	fruit = list("carrot" = 1, "tomato" = 1)
@@ -244,8 +236,8 @@
 
 /decl/recipe/omelette
 	appliance = SKILLET
+	reagents = list(/decl/material/liquid/nutriment/protein/egg = 6)
 	items = list(
-		/obj/item/chems/food/egg = 2,
 		/obj/item/chems/food/cheesewedge,
 	)
 	result = /obj/item/chems/food/omelette
@@ -273,9 +265,9 @@
 	result = /obj/item/chems/food/amanitajelly
 
 /decl/recipe/amanitajelly/make_food(var/obj/container)
-	var/obj/item/chems/food/amanitajelly/being_cooked = ..(container)
-	being_cooked.reagents.clear_reagent(/decl/material/liquid/amatoxin)
-	return being_cooked
+	. = ..(container)
+	for(var/obj/item/chems/food/amanitajelly/being_cooked in .)
+		being_cooked.reagents.clear_reagent(/decl/material/liquid/amatoxin)
 
 /decl/recipe/toastedsandwich
 	appliance = SKILLET

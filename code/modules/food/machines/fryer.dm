@@ -10,7 +10,7 @@
 	appliancetype = FRYER
 	active_power_usage = 12 KILOWATTS
 	heating_power = 12000
-	optimal_power = 1.35
+	optimal_power = 0.8
 	idle_power_usage = 3.6 KILOWATTS
 	//Power used to maintain temperature once it's heated.
 	//Going with 25% of the active power. This is a somewhat arbitrary value

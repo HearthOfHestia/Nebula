@@ -135,27 +135,26 @@
 	result = /obj/item/chems/food/cookie
 
 /decl/recipe/fortunecookie
-	appliance = OVEN
+	appliance = OVEN|FRYER
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(
-		/obj/item/chems/food/doughslice,
-		/obj/item/paper,
+		/obj/item/chems/food/doughslice // our check_items override already handles the paper
 	)
 	result = /obj/item/chems/food/fortunecookie
 
 /decl/recipe/fortunecookie/make_food(obj/container)
-	var/obj/item/paper/paper = locate() in container
-	paper.loc = null //prevent deletion
-	var/obj/item/chems/food/fortunecookie/being_cooked = ..(container)
-	paper.forceMove(being_cooked)
-	being_cooked.trash = paper //so the paper is left behind as trash without special-snowflake(TM Nodrak) code ~carn
-	return being_cooked
+	. = ..(container)
+	var/obj/item/paper/paper = locate() in container.get_contained_external_atoms()
+	for (var/obj/item/chems/food/fortunecookie/being_cooked in .)
+		paper.forceMove(being_cooked)
+		being_cooked.trash = paper //so the paper is left behind as trash
+		return
 
 /decl/recipe/fortunecookie/check_items(var/obj/container)
 	. = ..()
-	if(.)
+	if (.)
 		var/obj/item/paper/paper = locate() in container
-		if(!paper || !paper.info)
+		if (!paper || !istype(paper))
 			return FALSE
 
 /decl/recipe/tofubread
@@ -350,31 +349,6 @@
 		/obj/item/chems/food/stuffing,
 	)
 	result = /obj/item/chems/food/tofurkey
-
-/decl/recipe/jellydonut
-	appliance = OVEN
-	reagents = list(/decl/material/liquid/drink/juice/berry = 5, /decl/material/liquid/nutriment/sugar = 5)
-	items = list(
-		/obj/item/chems/food/dough
-	)
-	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/donut/jelly
-
-/decl/recipe/jellydonut/cherry
-	reagents = list(/decl/material/liquid/nutriment/cherryjelly = 5, /decl/material/liquid/nutriment/sugar = 5)
-	items = list(
-		/obj/item/chems/food/dough
-	)
-	result = /obj/item/chems/food/donut/cherryjelly
-
-/decl/recipe/donut
-	appliance = OVEN
-	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
-	items = list(
-		/obj/item/chems/food/dough
-	)
-	reagent_mix = REAGENT_REPLACE // simplify end product
-	result = /obj/item/chems/food/donut/normal
 
 /decl/recipe/appletart
 	appliance = OVEN

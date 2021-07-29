@@ -12,7 +12,7 @@
 	resistance = 10000 // Approx. 4 minutes.
 	idle_power_usage = 2 KILOWATTS
 	//uses ~30% power to stay warm
-	optimal_power = 1.2
+	optimal_power = 1.0
 	light_x = 2
 	max_contents = 5
 	use_power = POWER_USE_OFF	//Starts turned off

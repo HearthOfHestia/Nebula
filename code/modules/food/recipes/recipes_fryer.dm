@@ -48,3 +48,28 @@
 	coating = /decl/material/liquid/nutriment/batter
 	reagents = list(/decl/material/liquid/nutriment/batter = 10)
 	result = /obj/item/chems/food/onionrings
+
+/decl/recipe/jellydonut
+	appliance = FRYER
+	reagents = list(/decl/material/liquid/drink/juice/berry = 5, /decl/material/liquid/nutriment/sugar = 5)
+	items = list(
+		/obj/item/chems/food/dough
+	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
+	result = /obj/item/chems/food/donut/jelly
+
+/decl/recipe/jellydonut/cherry
+	reagents = list(/decl/material/liquid/nutriment/cherryjelly = 5, /decl/material/liquid/nutriment/sugar = 5)
+	items = list(
+		/obj/item/chems/food/dough
+	)
+	result = /obj/item/chems/food/donut/cherryjelly
+
+/decl/recipe/donut
+	appliance = FRYER
+	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
+	items = list(
+		/obj/item/chems/food/dough
+	)
+	reagent_mix = REAGENT_REPLACE // simplify end product
+	result = /obj/item/chems/food/donut/normal
