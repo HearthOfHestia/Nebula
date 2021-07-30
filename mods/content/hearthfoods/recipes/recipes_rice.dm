@@ -38,11 +38,6 @@
 	reagent_mix = REAGENT_REPLACE //Get that rice and wine outta here
 	result = /obj/item/chems/food/risotto
 
-/decl/recipe/boiledrice
-	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
-	reagents = list(/decl/material/liquid/water = 5, /decl/material/liquid/nutriment/rice = 10)
-	result = /obj/item/chems/food/boiledrice
-
 /decl/recipe/ricepudding
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/rice = 10)

@@ -127,18 +127,6 @@
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 4)
 
-/obj/item/chems/food/boiledrice
-	name = "boiled rice"
-	desc = "A boring dish of boring rice."
-	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
-	icon_state = "boiledrice"
-	trash = /obj/item/trash/snack_bowl
-	filling_color = "#fffbdb"
-	center_of_mass = @"{'x':17,'y':11}"
-	nutriment_amt = 2
-	nutriment_type = /decl/material/liquid/nutriment/rice
-	bitesize = 2
-
 /obj/item/chems/food/ricepudding
 	name = "rice pudding"
 	desc = "Where's the jam?"
