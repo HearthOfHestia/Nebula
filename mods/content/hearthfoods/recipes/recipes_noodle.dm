@@ -1,5 +1,5 @@
 /decl/recipe/kitsuneudon
-	appliance = MICROWAVE | SAUCEPAN | POT
+	appliance = APPLIANCE_MICROWAVE | APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/liquid/nutriment/protein/egg = 3)
 	items = list(
 		/obj/item/chems/food/spagetti,
@@ -8,7 +8,7 @@
 	result = /obj/item/chems/food/kitsuneudon
 
 /decl/recipe/lomein
-	appliance = MICROWAVE | SAUCEPAN | POT
+	appliance = APPLIANCE_MICROWAVE | APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/liquid/water = 5, /decl/material/liquid/nutriment/soysauce = 5)
 	fruit = list("carrot" = 1, "cabbage" = 1)
 	items = list(

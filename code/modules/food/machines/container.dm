@@ -202,7 +202,7 @@
 	icon_state = "ovendish"
 	max_space = 30
 	volume = 120
-	appliancetype = OVEN
+	appliancetype = APPLIANCE_OVEN
 	material = /decl/material/solid/stone/ceramic
 
 /obj/item/chems/cooking_container/skillet
@@ -213,7 +213,7 @@
 	volume = 30
 	hitsound = 'sound/weapons/smash.ogg'
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER // Will still react
-	appliancetype = SKILLET
+	appliancetype = APPLIANCE_SKILLET
 
 /obj/item/chems/cooking_container/saucepan
 	name = "saucepan"
@@ -224,7 +224,7 @@
 	slot_flags = SLOT_HEAD
 	hitsound = 'sound/weapons/smash.ogg'
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER // Will still react
-	appliancetype = SAUCEPAN
+	appliancetype = APPLIANCE_SAUCEPAN
 
 /obj/item/chems/cooking_container/pot
 	name = "cooking pot"
@@ -235,7 +235,7 @@
 	volume = 180
 	hitsound = 'sound/weapons/smash.ogg'
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER // Will still react
-	appliancetype = POT
+	appliancetype = APPLIANCE_POT
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/chems/cooking_container/fryer
@@ -243,7 +243,7 @@
 	shortname = "basket"
 	desc = "Put ingredients in this; designed for use with a deep fryer. Warranty void if used."
 	icon_state = "basket"
-	appliancetype = FRYER
+	appliancetype = APPLIANCE_FRYER
 
 /obj/item/chems/cooking_container/grill_grate/can_fit()
 	if(length(contents) >= 3)
@@ -255,7 +255,7 @@
 	shortname = "plate"
 	desc = "A plate. You plate foods on this plate."
 	icon_state = "plate"
-	appliancetype = MIX
+	appliancetype = APPLIANCE_MIX
 	atom_flags = ATOM_FLAG_OPEN_CONTAINER // Will still react
 	volume = 15 // for things like jelly sandwiches etc
 	max_space = 25

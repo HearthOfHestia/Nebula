@@ -1,5 +1,5 @@
 /decl/recipe/slimetoast
-	appliance = MIX | SKILLET
+	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
 		/obj/item/chems/food/slice/bread,
@@ -7,7 +7,7 @@
 	result = /obj/item/chems/food/jelliedtoast/slime
 
 /decl/recipe/jellydonut/slime
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/slimejelly = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
 		/obj/item/chems/food/dough
@@ -15,7 +15,7 @@
 	result = /obj/item/chems/food/donut/slimejelly
 
 /decl/recipe/slimeburger
-	appliance = MIX
+	appliance = APPLIANCE_MIX
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
 		/obj/item/chems/food/bun
@@ -23,7 +23,7 @@
 	result = /obj/item/chems/food/jellyburger/slime
 
 /decl/recipe/slimesandwich
-	appliance = MIX
+	appliance = APPLIANCE_MIX
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
 		/obj/item/chems/food/slice/bread = 2,
@@ -31,7 +31,7 @@
 	result = /obj/item/chems/food/jellysandwich/slime
 
 /decl/recipe/slimesoup
-	appliance = SAUCEPAN | POT
+	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/slimejelly = 5)
 	items = list()
 	result = /obj/item/chems/food/slimesoup

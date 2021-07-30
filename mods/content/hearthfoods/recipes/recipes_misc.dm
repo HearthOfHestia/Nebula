@@ -1,5 +1,5 @@
 /decl/recipe/meatbun
-	appliance = SAUCEPAN | POT
+	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/liquid/water = 5)
 	items = list(
 		/obj/item/chems/food/doughslice,
@@ -9,7 +9,7 @@
 	result = /obj/item/chems/food/meatbun
 
 /decl/recipe/custardbun
-	appliance = SAUCEPAN | POT
+	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/liquid/water = 5, /decl/material/liquid/nutriment/protein/egg = 3)
 	items = list(
 		/obj/item/chems/food/doughslice
@@ -18,7 +18,7 @@
 	result = /obj/item/chems/food/custardbun
 
 /decl/recipe/chickenmomo
-	appliance = SAUCEPAN | POT
+	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 2, /decl/material/liquid/water = 5)
 	items = list(
 		/obj/item/chems/food/doughslice = 3,
@@ -28,7 +28,7 @@
 	result = /obj/item/chems/food/chickenmomo
 
 /decl/recipe/veggiemomo
-	appliance = SAUCEPAN | POT
+	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 2, /decl/material/liquid/water = 5)
 	fruit = list("carrot" = 1, "cabbage" = 1)
 	items = list(
@@ -48,7 +48,7 @@
 	result_quantity = 4
 
 /decl/recipe/fish_taco
-	appliance = MIX | SKILLET
+	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
 	fruit = list("chili" = 1, "lemon" = 1)
 	items = list(
 		/obj/item/chems/food/fish,
@@ -78,7 +78,7 @@
 	result = /obj/item/chems/food/banana_split
 
 /decl/recipe/honeytoast
-	appliance = SKILLET
+	appliance = APPLIANCE_SKILLET
 	reagents = list(/decl/material/liquid/nutriment/honey = 5)
 	items = list(
 		/obj/item/chems/food/slice/bread
@@ -87,7 +87,7 @@
 	result = /obj/item/chems/food/honeytoast
 
 /decl/recipe/truffle
-	appliance = SAUCEPAN // it's melted and poured into a mold...?
+	appliance = APPLIANCE_SAUCEPAN // it's melted and poured into a mold...?
 	reagents = list(/decl/material/liquid/nutriment/coco = 2, /decl/material/liquid/drink/milk/cream = 5)
 	items = list(
 		/obj/item/chems/food/chocolatebar

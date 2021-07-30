@@ -268,13 +268,13 @@
 #define AS_ANYTHING as anything
 
 // Cooking appliances.
-#define MIX         BITFLAG(0)
-#define FRYER       BITFLAG(1)
-#define OVEN        BITFLAG(2)
-#define SKILLET     BITFLAG(3)
-#define SAUCEPAN    BITFLAG(4)
-#define POT         BITFLAG(5)
-#define MICROWAVE   BITFLAG(6)
+#define APPLIANCE_MIX         BITFLAG(0)
+#define APPLIANCE_FRYER       BITFLAG(1)
+#define APPLIANCE_OVEN        BITFLAG(2)
+#define APPLIANCE_SKILLET     BITFLAG(3)
+#define APPLIANCE_SAUCEPAN    BITFLAG(4)
+#define APPLIANCE_POT         BITFLAG(5)
+#define APPLIANCE_MICROWAVE   BITFLAG(6)
 // Cooking misc.
 // can_insert return values
 #define CANNOT_INSERT  0

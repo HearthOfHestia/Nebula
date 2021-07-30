@@ -77,7 +77,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "friedrice"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	center_of_mass = @"{'x':17,'y':11}"
 	nutriment_amt = 4
 	nutriment_desc = list("soy" = 2, "cabbage" = 2)
@@ -94,7 +94,7 @@
 	desc = "A bundle of rice wrapped in seaweed. This one seems to have a fish flake filling inside."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "riceball"
-	filling_color = "#A66829"
+	filling_color = "#a66829"
 	center_of_mass = @"{'x':17,'y':16}"
 	nutriment_amt = 1
 	nutriment_desc = list("seaweed" = 1)
@@ -118,7 +118,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "porkbowl"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	bitesize = 2
 	nutriment_amt = 6
 	nutriment_type = /decl/material/liquid/nutriment/rice
@@ -133,7 +133,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "boiledrice"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	center_of_mass = @"{'x':17,'y':11}"
 	nutriment_amt = 2
 	nutriment_type = /decl/material/liquid/nutriment/rice
@@ -145,7 +145,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "rpudding"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	center_of_mass = @"{'x':17,'y':11}"
 	nutriment_amt = 4
 	nutriment_type = /decl/material/liquid/nutriment/rice

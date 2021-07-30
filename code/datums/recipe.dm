@@ -17,7 +17,7 @@
 	// A value of -1 is permissive and cares not for any coatings
 	// Any typepath indicates a specific coating that should be present
 	// Coatings are used for batter, breadcrumbs, beer-batter, colonel's secret coating, etc
-	var/appliance = MIX           // Which appliances this recipe can be made in.
+	var/appliance = APPLIANCE_MIX // Which appliances this recipe can be made in.
 	// List of defines is in _defines/misc.dm. But for reference they are:
 	/*
 		MIX
@@ -58,38 +58,38 @@
 
 /decl/recipe/proc/get_appliances_string()
 	var/list/appliance_names
-	if(appliance & MIX)
+	if(appliance & APPLIANCE_MIX)
 		LAZYADD(appliance_names, "a mixing bowl or plate")
-	if(appliance & FRYER)
+	if(appliance & APPLIANCE_FRYER)
 		LAZYADD(appliance_names, "a fryer")
-	if(appliance & OVEN)
+	if(appliance & APPLIANCE_OVEN)
 		LAZYADD(appliance_names, "an oven")
-	if(appliance & SKILLET)
+	if(appliance & APPLIANCE_SKILLET)
 		LAZYADD(appliance_names, "a skillet")
-	if(appliance & SAUCEPAN)
+	if(appliance & APPLIANCE_SAUCEPAN)
 		LAZYADD(appliance_names, "a saucepan")
-	if(appliance & POT)
+	if(appliance & APPLIANCE_POT)
 		LAZYADD(appliance_names, "a pot")
-	if(appliance & MICROWAVE)
+	if(appliance & APPLIANCE_MICROWAVE)
 		LAZYADD(appliance_names, "a microwave")
 	return english_list(appliance_names, and_text = " or ")
 
 /decl/recipe/proc/get_appliance_names()
 	var/list/appliance_names
-	if(appliance & MIX)
+	if(appliance & APPLIANCE_MIX)
 		LAZYADD(appliance_names, "mixing bowl")
 		LAZYADD(appliance_names, "plate")
-	if(appliance & FRYER)
+	if(appliance & APPLIANCE_FRYER)
 		LAZYADD(appliance_names, "fryer")
-	if(appliance & OVEN)
+	if(appliance & APPLIANCE_OVEN)
 		LAZYADD(appliance_names, "oven")
-	if(appliance & SKILLET)
+	if(appliance & APPLIANCE_SKILLET)
 		LAZYADD(appliance_names, "skillet")
-	if(appliance & SAUCEPAN)
+	if(appliance & APPLIANCE_SAUCEPAN)
 		LAZYADD(appliance_names, "saucepan")
-	if(appliance & POT)
+	if(appliance & APPLIANCE_POT)
 		LAZYADD(appliance_names, "pot")
-	if(appliance & MICROWAVE)
+	if(appliance & APPLIANCE_MICROWAVE)
 		LAZYADD(appliance_names, "microwave")
 	return appliance_names
 

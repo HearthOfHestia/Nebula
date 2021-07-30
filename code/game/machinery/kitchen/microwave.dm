@@ -217,7 +217,7 @@
 	if (reagents.total_volume && prob(50)) // 50% chance a liquid recipe gets messy
 		dirty += CEILING(reagents.total_volume / 10)
 
-	var/decl/recipe/recipe = select_recipe(src, MICROWAVE)
+	var/decl/recipe/recipe = select_recipe(src, APPLIANCE_MICROWAVE)
 	if (!recipe)
 		failed = TRUE
 		cook_time = update_cook_time()
@@ -238,14 +238,14 @@
 	return (ct / cooking_power)
 
 /obj/machinery/microwave/proc/finish_cooking()
-	var/decl/recipe/recipe = select_recipe(src, MICROWAVE)
+	var/decl/recipe/recipe = select_recipe(src, APPLIANCE_MICROWAVE)
 	if(!recipe)
 		return
 	var/decl/recipe/oldrecipe = recipe
 	var/list/cooked_items = list()
 	while(recipe)
 		cooked_items += recipe.make_food(src)
-		recipe = select_recipe(src, MICROWAVE)
+		recipe = select_recipe(src, APPLIANCE_MICROWAVE)
 		if (!recipe || recipe != oldrecipe)
 			break
 

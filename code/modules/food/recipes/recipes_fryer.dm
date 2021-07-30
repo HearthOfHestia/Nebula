@@ -1,5 +1,5 @@
 /decl/recipe/cubancarp
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	fruit = list("chili" = 1)
 	coating = /decl/material/liquid/nutriment/batter
 	items = list(
@@ -8,7 +8,7 @@
 	result = /obj/item/chems/food/cubancarp
 
 /decl/recipe/fishandchips
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/fries,
 		/obj/item/chems/food/fish
@@ -17,7 +17,7 @@
 	result = /obj/item/chems/food/fishandchips
 
 /decl/recipe/katsucurry
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	fruit = list("apple" = 1, "carrot" = 1, "potato" = 1)
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/liquid/nutriment/rice = 10, /decl/material/liquid/nutriment/flour = 5)
 	items = list(
@@ -27,7 +27,7 @@
 	result = /obj/item/chems/food/katsucurry
 
 /decl/recipe/fishfingers
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/fish
 	)
@@ -35,7 +35,7 @@
 	result = /obj/item/chems/food/fishfingers
 
 /decl/recipe/fries
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/rawsticks
 	)
@@ -43,14 +43,14 @@
 	result = /obj/item/chems/food/fries
 
 /decl/recipe/onionrings
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	fruit = list("onion" = 1)
 	coating = /decl/material/liquid/nutriment/batter
 	reagents = list(/decl/material/liquid/nutriment/batter = 10)
 	result = /obj/item/chems/food/onionrings
 
 /decl/recipe/jellydonut
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/drink/juice/berry = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
 		/obj/item/chems/food/dough
@@ -66,7 +66,7 @@
 	result = /obj/item/chems/food/donut/cherryjelly
 
 /decl/recipe/donut
-	appliance = FRYER
+	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
 	items = list(
 		/obj/item/chems/food/dough

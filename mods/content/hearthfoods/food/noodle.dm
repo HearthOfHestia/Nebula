@@ -5,7 +5,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "lomein"
 	trash = /obj/item/trash/plate
-	filling_color = "#FCEE81"
+	filling_color = "#fcee81"
 	center_of_mass = @"{'x':16,'y':10}"
 	nutriment_amt = 4
 	nutriment_desc = list("mushroom" = 2, "cabbage" = 2)
