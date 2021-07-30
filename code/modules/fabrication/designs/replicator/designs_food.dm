@@ -11,5 +11,5 @@
 /datum/fabricator_recipe/food/soydope
 	path = /obj/item/chems/food/soydope
 
-/datum/fabricator_recipe/food/boiledrice
-	path = /obj/item/chems/food/boiledrice
+/datum/fabricator_recipe/food/mashedpotato
+	path = /obj/item/chems/food/mashedpotato
