@@ -16,6 +16,7 @@
 	light_x = 2
 	max_contents = 5
 	use_power = POWER_USE_OFF	//Starts turned off
+	pass_flags = 0
 	var/open = FALSE // Start closed so people don't heat up ovens with the door open
 
 	starts_with = list(
@@ -40,7 +41,7 @@
 
 
 /obj/machinery/appliance/cooker/oven/get_mechanics_info()
-	return "Control-click this to toggle its power; alt-click this to open/close the door."
+	return ..() + "</br>Alt-click this to open/close the door."
 
 /obj/machinery/appliance/cooker/oven/on_update_icon()
 	..()

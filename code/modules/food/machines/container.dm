@@ -58,10 +58,10 @@
 /obj/item/chems/cooking_container/proc/get_content_info()
 	var/string = "It contains:</br><ul>"
 	var/list/numerical_contents = list()
-	for(var/thing as anything in get_contained_external_atoms())
-		numerical_contents[thing] += 1
+	for(var/atom/thing as anything in get_contained_external_atoms())
+		numerical_contents[thing.name] += 1
 	for(var/atom/key as anything in numerical_contents)
-		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key.name]" : "\a [key.name]"]</li>"
+		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key.name]" : "\a [key.name]"]</li></br>"
 	string += "</ul>"
 	return string
 

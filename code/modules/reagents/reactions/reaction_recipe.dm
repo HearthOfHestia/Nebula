@@ -125,14 +125,6 @@
 	// no maximum! i mean technically it should burn at some point but ehh
 	mix_message = "The sugar melts into a sticky, brown liquid."
 
-/datum/chemical_reaction/recipe/caramelsauce
-	name = "Caramel Sauce"
-	result = /decl/material/liquid/nutriment/caramelsauce
-	required_reagents = list(/decl/material/liquid/nutriment/caramelsugar = 2, /decl/material/liquid/drink/milk/cream = 1, /decl/material/liquid/drink/syrup_base = 2)
-	result_amount = 5
-	mix_message = "The solution thickens into a glossy, brown sauce."
-	maximum_temperature = T0C + 82 // You don't want the syrup to crystallise/caramelise; that'd just make more caramel...
-
 /datum/chemical_reaction/recipe/simplesyrup
 	name = "Simple Syrup"
 	result = /decl/material/liquid/drink/syrup_base

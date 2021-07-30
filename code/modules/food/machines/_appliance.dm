@@ -13,6 +13,10 @@
 	density = 1
 	anchored = 1
 	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
+	maximum_component_parts = list(/obj/item/stock_parts = 11)
+
+	pass_flags = PASS_FLAG_TABLE
 
 	use_power = 0
 	idle_power_usage = 5			// Power used when turned on, but not processing anything
@@ -40,6 +44,14 @@
 	var/finish_verb = "pings!"
 	var/combine_first = FALSE//If 1, this appliance will do combination cooking before checking recipes
 
+/obj/machinery/appliance/components_are_accessible(path)
+	return !cooking && ..()
+
+/obj/machinery/appliance/cannot_transition_to(state_path, mob/user)
+	if(cooking)
+		return SPAN_NOTICE("Wait for \the [src] to finish first!")
+	return ..()
+
 /obj/machinery/appliance/Initialize()
 	. = ..()
 	if(length(output_options))
@@ -55,6 +67,8 @@
 
 /obj/machinery/appliance/examine(var/mob/user)
 	. = ..()
+	if(panel_open)
+		to_chat(user, "The service panel is open.")
 	if(Adjacent(user))
 		list_contents(user)
 
