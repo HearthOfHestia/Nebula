@@ -93,7 +93,7 @@
 		for(var/thing in recipe.items)
 			var/atom/thing_atom = thing
 			var/count = recipe.items[thing]
-			var/desc_str = (count > 1) ? " [count]x [initial(thing_atom.name)]" : "\a [initial(thing_atom.name)]"
+			var/desc_str = (count > 1) ? "[count]x [initial(thing_atom.name)]" : "\a [initial(thing_atom.name)]"
 			ingredients += "<span codexlink='[initial(thing_atom.name)]'>[desc_str]</span>"
 		for(var/thing in recipe.fruit)
 			ingredients += "[recipe.fruit[thing]] [thing]\s"
