@@ -39,7 +39,7 @@
 	name = "Militarized Space"
 	description = "A very different style of living from a more traditional Skrell, those who live and reside in space belong to no particular Qrii'Qerria \
 	and instead are governed by the SDTF of the system in which they reside, with all services and installations under the control of the local Raskinta SDTF Commander \
-	rather than a Qerr-Katish. Life in these circumstances is often more regimented and disciplined, with a stronger emphasis on community and collaboration, with varying extremes \
+	rather than a Qerr-Skria. Life in these circumstances is often more regimented and disciplined, with a stronger emphasis on community and collaboration, with varying extremes \
 	depending on the status, funding and level of military engagements the SDTF is currently in. Such lifestyles are quite common near the Ascent-Skrell border."
 	capital = "None"
 	ruling_body = "Your local SDTF"
@@ -48,8 +48,9 @@
 
 /decl/cultural_info/location/free
 	name = "Skrell Space"
-	description = "There are many skrell who live in outposts, colonies, cities or installations that simply are not noteworthy enough. They differ from skrell who live in \
-	militarized space due to the presence of a dedicated Qrii'Qerria overseeing them, and/or nearby outposts, instead of a SDTF."
+	description = "There are many skrell who live in outposts, colonies, cities or installations that are often not given the same amount of media coverage \
+	as Qerr'Vallis, Gilkrol'Qarr and so on. Those skrell often live comfortable, standard lives under the control of their local Qrii'Qerria. This category includes \
+	noteworthy systems such as those near and around Qerr'Vallis, and further away systems that may sometimes be in the edge of skrell space."
 	capital = "None"
 	ruling_body = "None"
 	distance = "N/A"
@@ -58,11 +59,11 @@
 /decl/cultural_info/location/gilkrolqarr
 	name = "Gilkrol-Qarr"
 	description = "Also known as the old capital, the planet of Gilkrol-Qarr in the Kale'Ta'q* system was the administrative hub of the empire during the Kali'r war, after Qerr'Vallis\
-	was overrun with Ascent forces. Today, Gilkrol'Qarr is the planet with the largest Skrell population in their entire territory, owing to the planet's \
-	large radius and comfortable, warm temperatures. Recent censuses estimate an astonishing seventy-three billion skrell living in the giant lush planet, with most of its alien forests \
-	having been wiped to give rise to massive, often underground housing complexes. Even then, many ecological reserves exist on the planet to preserve it's original \
-	flora and fauna, and much of the planet remains unoccupied in spite of the extremely-dense habitation zones. Gilkrol-Qarr is also the biggest exporter of \
-	electronics, manufactured goods and general appliances mostly destinated towards civilian usage. Kale'Ta'q is also the location of the main base of operations of Kali'mak."
+	was overrun with Ascent forces. Gilkrol'Qarr is characterized by its warm temperatures, unstable terrain, huge cave complexes and lush, alien \
+	underground fauna and flora. Despite it's radius being about three times that of Qerr'Balaks, the giant, superhabitable 'karst-world' has an abnormally low gravity and is incapable \
+	of holding its atmosphere well, making cave habitation and underground structures the preffered method of habitation of the skrell who \
+	live in its vast underground complexes. Gilkrol'Qarr is the most populous planet in the Skrell sphere of influence, with over thirty-three billion \
+	inhabitants, and fifty billion more living outisde of the planet but in the same system. Kale'Ta'q is also the main base of operations of the Kali'mak SDTF."
 	capital = "None"
 	ruling_body = "None"
 	distance = "N/A"

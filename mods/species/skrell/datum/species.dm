@@ -90,7 +90,8 @@
 			/decl/cultural_info/location/mitorqi,
 			/decl/cultural_info/location/ueorsi,
 			/decl/cultural_info/location/free,
-			/decl/cultural_info/location/skrellspace
+			/decl/cultural_info/location/skrellspace,
+			/decl/cultural_info/location/other
 		),
 		TAG_FACTION = list(
 			/decl/cultural_info/faction/skrell,

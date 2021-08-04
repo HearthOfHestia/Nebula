@@ -98,21 +98,17 @@
 
 /decl/cultural_info/culture/skrell/caste_ue
 	name = "Ue-Katish"
-	description = "Rarely seen outside the skrellian society, the Raskinta-Katish are however recognised and respected by their entire species, for \
-		they are the ones who ensure the safety and stability of skrellian civilisation, both against internal and external threats. \
-		The military caste of the Skrell, most end up working for the various city-states, either in the police or as a career soldier,\
-		although some of them end up working for private security or as entertainment fighters. They are very conservative, almost reactionary, \
-		and deeply committed to their community, caring very little for self-development and personal satisfaction. Their martial training \
-		leaves very little time for most intellectual pursuits, although they are trained to be expert tacticians and are only beaten by the \
-		Qerr-Katish in terms of organisational skills. While they are wealthier than the Kanin-Katish overall, they are still among the poorer \
-		castes of skrellkind and their large families of three or four bondings put a heavy strain on their earnings, only compensated by their \
-		strong social cohesion. These are often the hardest to spot among a crowd because they intentionally wear clothing other castes are known \
-		for while not working, however they tend to stick to clothing that is easy to move in and are often dark blue. Their skin is generally green, blue, black, brown or yellow.\
+	description = "While not technically a ‘Caste’ by itself, the Ue-Katish make up only an incredibly small but growing fraction of the total Skrellian population. Born to unions \
+		of Skrell of two different castes or two Ue-Katish, the Ue-Katish typically have no place in the regimented society of the Skrell. Many work in various forms of dangerous, \
+		unpleasant, and low-paying labor, and although they are still Skrell and individuals with rights, discrimination still ends up being extremely common. Many Ue-Katish try to \
+		imitate other castes in an attempt to pass as a Kanin, a Malish or another caste, or leave for a more tolerant life either inside human territory, nomadically, or as pirates. \
+		Ue-Katish are often not discriminated against as much in the colonies that are closer to the human border as a result of ‘cultural bleed’, but they are still viewed with mistrust. Their \
+		headtails can vary, often being based roughly on their parentage but in some cases being inconsistent with even that due to genetic mutation. This can greatly limit their ability to pass as another caste in society at times. \
 		Their headtails can vary, often being based roughly on their parentage but in some cases being inconsistent with even that due to genetic mutation. \
 		This can greatly limit their ability to pass as another caste in society at times, as having two headtails of different lengths is a dead-giveaway of an Ue-Katish. \
 		Ue-Katish's psionic powers are able to manifest themselves in many different ways, or not at all. Ue-Katish with at least some psionic potential \
 		are often able to pass as another caste and live comfortably within Skrellian society, as are those very, incredibly few select individuals who inherit \
 		both the psionic skillsets of their progenitors. However, Ue-katish are unique in that they can also be hatched without any Psionic potential at all, \
-		which often forces them to leave their home-system in search of a more tolerant colony or an Ue-Katish pirate flotilla."
+		which often forces them to leave their home-system in search of a more tolerant colony, the Directorate, Humanity or an Ue-Katish pirate flotilla."
 
 	economic_power = 0.6
