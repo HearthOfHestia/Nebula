@@ -49,7 +49,7 @@
 
 //Access + Loadout
 
-/var/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
+var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 /datum/access/skrellscoutship
 	id = access_skrellscoutship

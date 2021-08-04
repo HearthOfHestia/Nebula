@@ -24,7 +24,7 @@
 	)
 
 
-/obj/effect/overmap/visitable/ship/landable/skrellscoutship/New()
+/obj/effect/overmap/visitable/ship/landable/skrellscoutship/Initialize()
 	name = "SSV [pick("Xilvuxix", "Zuuvixix", "Quizuu", "Vulzxixvuu","Krixxmuzoox","Qerr-Gliqrixx", "Qarr-Kon")]"
 	..()
 
@@ -49,7 +49,7 @@
 		/area/ship/skrellscoutship/crew/dormitories, /area/ship/skrellscoutship/crew/toilets, /area/ship/skrellscoutship/crew/medbay, /area/ship/skrellscoutship/crew/kitchen,
 		/area/ship/skrellscoutship/maintenance/power, /area/ship/skrellscoutship/command/armory,
 		/area/ship/skrellscoutship/dock, /area/ship/skrellscoutship/maintenance/atmos,
-		/area/ship/skrellscoutship/crew/rec 
+		/area/ship/skrellscoutship/crew/rec
 		)
 	defer_initialisation = TRUE
 	knockdown = FALSE
