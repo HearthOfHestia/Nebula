@@ -284,3 +284,8 @@
 #define CONTAINER_EMPTY  0
 #define CONTAINER_SINGLE 1
 #define CONTAINER_MANY   2
+
+//NOTE: INTENT_HOTKEY_* defines are not actual intents!
+//they are here to support hotkeys
+#define INTENT_HOTKEY_LEFT  "left"
+#define INTENT_HOTKEY_RIGHT "right"
