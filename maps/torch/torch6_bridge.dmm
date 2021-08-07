@@ -281,7 +281,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/cobed)
 "aL" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -914,7 +914,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/storage/box/cups,
@@ -1634,7 +1634,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/rd)
 "cT" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/cash,
@@ -1848,7 +1848,7 @@
 /area/bridge)
 "di" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -2017,7 +2017,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "dF" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2307,7 +2307,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "em" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/flashlight/lamp{
@@ -2406,7 +2406,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
 "eu" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/red/mono,
@@ -3131,7 +3131,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fH" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/westright{
 	autoset_access = 0;
@@ -3723,7 +3723,7 @@
 /area/perseverance/cockpit)
 "hi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -3870,7 +3870,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
 "hL" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/microwave,
@@ -3881,7 +3881,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
 "hM" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/snack,
@@ -4114,7 +4114,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/perseverance/head)
 "iv" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/single/cola,
@@ -4142,7 +4142,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
 "iy" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/smokes,
@@ -4245,7 +4245,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/heads/office/ce)
 "iS" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/yellow{
@@ -4419,7 +4419,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/light{
@@ -4834,7 +4834,7 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/toy/desk/newtoncradle,
@@ -5307,7 +5307,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
@@ -5383,7 +5383,7 @@
 /turf/simulated/wall/titanium,
 /area/perseverance/medical)
 "mz" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/darkblue/mono,
@@ -5475,7 +5475,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mJ" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/red/mono,
@@ -5940,7 +5940,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "nZ" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/binoculars,
@@ -6463,7 +6463,7 @@
 /area/aux_eva)
 "pR" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/suit_cooling_unit,
@@ -6704,7 +6704,7 @@
 /area/bridge)
 "qi" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -6884,7 +6884,7 @@
 /turf/simulated/floor/tiled,
 /area/perseverance/storage)
 "qF" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
@@ -7173,7 +7173,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "rw" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
@@ -7240,7 +7240,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "rE" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/defibrillator/loaded,
 /obj/machinery/camera/network/perseverance{
 	c_tag = "Perseverance - Infirmary";
@@ -7530,7 +7530,7 @@
 /turf/simulated/floor/tiled/white,
 /area/perseverance/medical)
 "su" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/mask/surgical,
 /obj/item/radio/intercom{
@@ -7819,7 +7819,7 @@
 /turf/simulated/floor/tiled/white,
 /area/perseverance/medical)
 "tf" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/spray/antiseptic,
 /obj/item/chems/spray/cleaner,
 /obj/machinery/light{
@@ -8012,7 +8012,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
 "tI" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/solgov,
 /obj/machinery/firealarm{
 	dir = 8;
@@ -8021,7 +8021,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/secure_storage)
 "tJ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/solgov,
 /obj/random/solgov,
 /turf/simulated/floor/tiled/monotile,
@@ -8044,7 +8044,7 @@
 /turf/simulated/floor/airless,
 /area/perseverance/maintenance)
 "tM" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/stack/medical/advanced/bruise_pack,
 /turf/simulated/floor/tiled/white/monotile,
 /area/perseverance/medical)
@@ -8053,7 +8053,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/perseverance/medical)
 "tO" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/tiled/white/monotile,
 /area/perseverance/medical)
@@ -8560,7 +8560,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
 "vk" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/structure/cable/green{
@@ -8579,7 +8579,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
 "vl" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/darkblue{
@@ -8781,7 +8781,7 @@
 	pixel_x = 32
 	},
 /obj/item/modular_computer/laptop/preset/custom_loadout/standard,
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -9071,7 +9071,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
 "wx" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/darkblue/mono,
@@ -9107,7 +9107,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "wC" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/red{
@@ -9987,7 +9987,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/aux_eva)
 "zC" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/box/PDAs{
 	pixel_x = 4;
 	pixel_y = 4
@@ -10301,7 +10301,7 @@
 	dir = 4;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/recharger{
@@ -10946,7 +10946,7 @@
 /area/crew_quarters/heads/office/cl)
 "Dq" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -10989,7 +10989,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/aicard,
 /obj/item/pinpointer,
 /obj/item/storage/toolbox/mechanical,
@@ -11025,7 +11025,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "DI" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
 /turf/simulated/floor/plating,
@@ -11142,7 +11142,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/binoculars,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -11280,7 +11280,7 @@
 /turf/simulated/floor/airless,
 /area/perseverance/airlock)
 "Ff" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/radio,
 /obj/item/crowbar,
@@ -11980,7 +11980,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "Ia" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/paper_bin{
@@ -12175,7 +12175,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/cobed)
 "IE" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/photocopier/faxmachine/torch{
@@ -13116,7 +13116,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Nn" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/chems/drinks/glass2/coffeecup/pawn,
@@ -13699,7 +13699,7 @@
 /area/bridge/disciplinary_board_room)
 "Qh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/storage/toolbox/mechanical,
@@ -14058,7 +14058,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/flash,
@@ -14415,7 +14415,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/heads/cobed)
 "Ta" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/paper_bin{
@@ -14525,7 +14525,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/inflatable_dispenser,
@@ -14773,7 +14773,7 @@
 	dir = 2;
 	health = 1e+007
 	},
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -15413,7 +15413,7 @@
 /area/bridge/meeting_room)
 "Xh" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -15930,7 +15930,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "Zx" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/keycard_auth/torch{

@@ -115,7 +115,7 @@
 	},
 /obj/item/rig/eva/equipped,
 /obj/item/rig/eva/equipped,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/light/small{
@@ -135,7 +135,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "aJ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/effect/floor_decal/spline/fancy/black{
 	dir = 5
 	},
@@ -192,7 +192,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "ba" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
@@ -293,7 +293,7 @@
 /obj/item/stock_parts/subspace/amplifier,
 /obj/item/stock_parts/subspace/amplifier,
 /obj/item/stock_parts/subspace/amplifier,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -303,7 +303,7 @@
 /obj/item/stock_parts/subspace/ansible,
 /obj/item/stock_parts/subspace/ansible,
 /obj/item/stock_parts/subspace/ansible,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -317,7 +317,7 @@
 /obj/item/stock_parts/subspace/crystal,
 /obj/item/stock_parts/subspace/crystal,
 /obj/item/stock_parts/subspace/crystal,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -335,7 +335,7 @@
 /obj/item/stock_parts/subspace/filter,
 /obj/item/stock_parts/subspace/filter,
 /obj/item/stock_parts/subspace/filter,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
 	},
@@ -428,7 +428,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "bC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/hatchet,
 /obj/item/minihoe,
 /obj/effect/floor_decal/corner/green{
@@ -618,7 +618,7 @@
 /obj/item/stock_parts/subspace/analyzer,
 /obj/item/stock_parts/subspace/analyzer,
 /obj/item/stock_parts/subspace/analyzer,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -639,7 +639,7 @@
 "bX" = (
 /obj/item/stock_parts/subspace/transmitter,
 /obj/item/stock_parts/subspace/transmitter,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stock_parts/computer/hard_drive/portable,
 /obj/item/stock_parts/computer/hard_drive/portable,
 /turf/simulated/floor/tiled/monotile,
@@ -912,7 +912,7 @@
 /obj/item/stock_parts/micro_laser/high,
 /obj/item/stock_parts/micro_laser/high,
 /obj/item/stock_parts/micro_laser/high,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -933,20 +933,20 @@
 /turf/simulated/floor/tiled/monotile,
 /area/tcommsat/storage)
 "cD" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/technology_scanner,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
 "cE" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/tank,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
 "cF" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
@@ -1428,7 +1428,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/tcommsat/chamber)
 "dq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stock_parts/subspace/treatment,
 /obj/item/stock_parts/subspace/treatment,
 /obj/item/stock_parts/subspace/treatment,
@@ -1588,7 +1588,7 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "dI" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/chemical_dispenser/bar_coffee/full{
 	dir = 8
 	},
@@ -1815,7 +1815,7 @@
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "ei" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stock_parts/circuitboard/telecomms/processor,
 /obj/item/stock_parts/circuitboard/telecomms/processor,
 /obj/item/stock_parts/circuitboard/telecomms/receiver,
@@ -1897,7 +1897,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos/aux)
 "es" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -1960,7 +1960,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/towel/random,
 /obj/item/towel/random,
 /obj/item/towel/random,
@@ -2211,7 +2211,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/suit/storage/hooded/wintercoat/engineering,
 /obj/structure/cable/green{
 	d2 = 4;
@@ -2665,7 +2665,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/vacant/mess)
 "fQ" = (
-/obj/structure/table,
+/obj/structure/table/frame,
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/vacant/mess)
@@ -2693,7 +2693,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/sleep/cryo)
 "fT" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -3217,7 +3217,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "gR" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/suit_cooling_unit,
@@ -4081,7 +4081,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation)
 "iF" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/maintenance/solgov,
@@ -4264,7 +4264,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/galleybackroom)
 "iV" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/bomb_supply,
@@ -4950,7 +4950,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
 "kq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -5217,7 +5217,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/pool)
 "kV" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/maintenance/solgov,
@@ -5275,7 +5275,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "le" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
@@ -5346,7 +5346,7 @@
 /turf/simulated/floor/lino,
 /area/tcommsat/computer)
 "lp" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/tool,
 /turf/simulated/floor/tiled/techfloor,
@@ -5400,7 +5400,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "lx" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -5417,7 +5417,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "lB" = (
@@ -5590,7 +5590,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "lY" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/minihoe,
 /obj/item/hatchet,
 /obj/effect/floor_decal/corner/green/half{
@@ -7791,7 +7791,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
 "rD" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/action_figure,
@@ -8063,7 +8063,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/center)
 "si" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/maintenance/solgov,
@@ -8490,7 +8490,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "sP" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/storage/briefcase/inflatable{
@@ -8962,7 +8962,7 @@
 /area/maintenance/thirddeck/port)
 "uh" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/sealant_tank/mapped,
@@ -9375,7 +9375,7 @@
 	dir = 8;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/glass2/coffeecup/britcup,
 /obj/item/chems/drinks/glass2/coffeecup/britcup,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -9665,7 +9665,7 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "wo" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 7
@@ -10100,7 +10100,7 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics)
 "xp" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/hand_labeler,
 /obj/item/stack/package_wrap/twenty_five,
 /obj/machinery/light{
@@ -10117,7 +10117,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "xr" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
@@ -10417,7 +10417,7 @@
 /turf/simulated/wall/map_preset/tan,
 /area/crew_quarters/sleep/dorms/four)
 "xZ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/structure/cable/green{
 	d2 = 4;
 	icon_state = "0-4"
@@ -10520,7 +10520,7 @@
 	c_tag = "Cryogenic Storage - Aft Starboard";
 	dir = 8
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/cups{
 	pixel_x = 2;
 	pixel_y = 2
@@ -10610,7 +10610,7 @@
 /area/chapel/office)
 "yD" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/gun/launcher/sealant,
@@ -10620,7 +10620,7 @@
 /area/engineering/hardstorage)
 "yG" = (
 /obj/effect/floor_decal/corner/green/half,
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/glasses/pint,
 /obj/item/chems/drinks/glass2/carafe,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -10631,7 +10631,7 @@
 /area/crew_quarters/observation)
 "yI" = (
 /obj/effect/floor_decal/corner/green/half,
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/cups,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
@@ -10681,7 +10681,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "yS" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
@@ -10802,7 +10802,7 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/crew_quarters/observation)
 "zf" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/towel/random,
 /obj/item/towel/random,
 /obj/item/towel/random,
@@ -11069,7 +11069,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/sleep/dorms/hallway)
 "zU" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/alarm{
 	dir = 4;
 	icon_state = "alarm0";
@@ -11284,7 +11284,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/mess)
 "AD" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/computer/cryopod{
 	density = 0;
 	pixel_x = -32;
@@ -11320,7 +11320,7 @@
 /turf/simulated/floor/tiled,
 /area/storage/tools)
 "AK" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/tech_supply,
@@ -11535,7 +11535,7 @@
 /turf/simulated/floor/tiled,
 /area/storage/tools)
 "BC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/paicard,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -11585,7 +11585,7 @@
 /turf/simulated/floor/tiled,
 /area/storage/tools)
 "BO" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/chemical_dispenser/bar_alc/full{
 	dir = 8
 	},
@@ -11675,7 +11675,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/fore)
 "Cc" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
 "Ce" = (
@@ -11683,11 +11683,11 @@
 	c_tag = "Third Deck - Teleporter";
 	dir = 1
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
 "Cf" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
@@ -12311,7 +12311,7 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/crew_quarters/recreation)
 "DI" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/glass2/coffeecup/metal,
 /obj/item/deck/cards,
 /turf/simulated/floor/tiled/techfloor,
@@ -12927,7 +12927,7 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/thirddeck/port)
 "Fg" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/bomb_supply,
@@ -12939,7 +12939,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "Fh" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/alarm{
@@ -13058,7 +13058,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "Fy" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
@@ -13317,7 +13317,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "Gk" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/tech_supply,
@@ -13540,7 +13540,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "GJ" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/junk,
@@ -13548,7 +13548,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "GK" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/single/cola,
@@ -13765,7 +13765,7 @@
 	dir = 4;
 	pixel_x = -22
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/modular_computer/laptop/preset/custom_loadout/cheap,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
@@ -13817,7 +13817,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "HF" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/cable/green,
@@ -13860,7 +13860,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/sleep/dorms/three)
 "If" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/chemical_dispenser/bar_soft/full{
 	dir = 8
 	},
@@ -14229,7 +14229,7 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/aft)
 "Jg" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/recharger,
 /obj/item/wrench,
 /obj/machinery/light_switch{
@@ -15095,7 +15095,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "LL" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/lipstick,
@@ -15435,7 +15435,7 @@
 	dir = 8;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "MU" = (
@@ -15497,7 +15497,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/aftport)
 "Nd" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/radio/intercom{
 	dir = 4;
 	pixel_x = -21
@@ -15640,7 +15640,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -16352,7 +16352,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "PQ" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/stack/material/pane/mapped/rborosilicate/twenty{
@@ -16470,7 +16470,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/reagentgrinder/juicer,
 /obj/item/chems/glass/beaker{
 	pixel_x = 5
@@ -16565,7 +16565,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "QE" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -16676,7 +16676,7 @@
 	dir = 8;
 	icon_state = "bordercolorhalf"
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/glass2/coffeecup/black,
 /obj/item/chems/drinks/glass2/coffeecup/black,
 /obj/item/chems/drinks/glass2/coffeecup/black,
@@ -16802,7 +16802,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light,
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/effect/floor_decal/corner/green{
 	dir = 10;
 	icon_state = "corner_white"
@@ -16882,7 +16882,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/thirddeck)
 "RB" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/reagentgrinder/juicer{
 	pixel_y = 8
 	},
@@ -16985,7 +16985,7 @@
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/thruster/d3port)
 "RT" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -17256,7 +17256,7 @@
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/office)
 "SL" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/tank/emergency/oxygen/double,
@@ -17449,7 +17449,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
@@ -17701,7 +17701,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/chapel/office)
 "TZ" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/flashlight/lamp/lava/red{
@@ -17869,7 +17869,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
 "Ux" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/sticky_pad,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
@@ -18729,7 +18729,7 @@
 /obj/machinery/light/spot{
 	dir = 4
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/cups{
 	pixel_x = 2;
 	pixel_y = 2
@@ -19034,7 +19034,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/dropper,
 /obj/effect/floor_decal/corner/green{
 	dir = 10;
@@ -19179,7 +19179,7 @@
 	},
 /obj/item/stack/material/panel/mapped/plastic/twenty,
 /obj/item/stack/material/pane/mapped/glass/twenty,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/bar)
 "Yv" = (
