@@ -16,7 +16,9 @@
 /obj/structure/closet/chefcloset_torch/WillContain()
 	return list(
 		/obj/item/clothing/head/soft/mime,
-		/obj/item/radio/headset/headset_service,
+		/obj/item/radio/headset/headset_service = 2,
+		/obj/item/clothing/under/sundress,
+		/obj/item/clothing/under/waiter = 2,
 		/obj/item/storage/box/mousetraps = 2,
 		/obj/item/clothing/under/chef,
 		/obj/item/clothing/head/chefhat,
