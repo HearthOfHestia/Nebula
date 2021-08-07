@@ -16,7 +16,7 @@
 	#include "..\..\mods\content\shards\_shards.dme"
 	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
 	#include "..\..\mods\utility\ooc_notes\_ooc_notes.dme"
-	#include "..\..\mods\utility\tgsv4_integration\__tgs.dme"
+	#include "..\..\mods\utility\tgsv4_integration\___tgs.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
