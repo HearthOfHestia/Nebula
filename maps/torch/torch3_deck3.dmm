@@ -2120,7 +2120,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/machinery/cooker/grill,
+/obj/machinery/appliance/cooker/stove,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -2388,7 +2388,7 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/machinery/cooker/grill,
+/obj/machinery/appliance/cooker/stove,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -2419,7 +2419,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "ft" = (
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/oven,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -5782,7 +5782,7 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/machinery/cooker/cereal,
+/obj/machinery/appliance/mixer/cereal,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
@@ -5884,7 +5884,7 @@
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},
-/obj/machinery/cooker/fryer,
+/obj/machinery/appliance/cooker/fryer,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "mG" = (
@@ -15360,7 +15360,7 @@
 /area/hallway/primary/thirddeck/fore)
 "MC" = (
 /obj/structure/table/marble,
-/obj/machinery/cooker/candy,
+/obj/machinery/appliance/mixer/candy,
 /obj/effect/floor_decal/corner/grey/diagonal{
 	dir = 4
 	},

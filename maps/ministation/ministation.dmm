@@ -10084,11 +10084,11 @@
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "zI" = (
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/oven,
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "zJ" = (
-/obj/machinery/cooker/grill,
+/obj/machinery/appliance/cooker/stove,
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "zK" = (
@@ -10376,7 +10376,7 @@
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "Av" = (
-/obj/machinery/cooker/fryer,
+/obj/machinery/appliance/cooker/fryer,
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "Aw" = (
@@ -10399,11 +10399,11 @@
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "Az" = (
-/obj/machinery/cooker/cereal,
+/obj/machinery/appliance/mixer/cereal,
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "AA" = (
-/obj/machinery/cooker/candy,
+/obj/machinery/appliance/mixer/candy,
 /turf/simulated/floor/wood,
 /area/ministation/cafe)
 "AB" = (

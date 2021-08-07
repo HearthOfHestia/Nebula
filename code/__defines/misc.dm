@@ -266,3 +266,21 @@
 #define Z_ALL_TURFS(Z) block(locate(1, 1, Z), locate(world.maxx, world.maxy, Z))
 
 #define AS_ANYTHING as anything
+
+// Cooking appliances.
+#define APPLIANCE_MIX         BITFLAG(0)
+#define APPLIANCE_FRYER       BITFLAG(1)
+#define APPLIANCE_OVEN        BITFLAG(2)
+#define APPLIANCE_SKILLET     BITFLAG(3)
+#define APPLIANCE_SAUCEPAN    BITFLAG(4)
+#define APPLIANCE_POT         BITFLAG(5)
+#define APPLIANCE_MICROWAVE   BITFLAG(6)
+// Cooking misc.
+// can_insert return values
+#define CANNOT_INSERT  0
+#define CAN_INSERT     1
+#define INSERT_GRABBED 2
+// check_contents return values
+#define CONTAINER_EMPTY  0
+#define CONTAINER_SINGLE 1
+#define CONTAINER_MANY   2
