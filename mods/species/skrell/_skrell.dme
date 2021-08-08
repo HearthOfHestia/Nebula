@@ -20,4 +20,18 @@
 #include "gear/gear_rig.dm"
 #include "gear/gear_suit.dm"
 #include "gear/gear_under.dm"
+#include "turfs/flooring.dm"
+#include "maps/skrellscoutship/skrellscoutship.dm"
+#include "gear/ammo.dm"
+#include "gear/fabrication_designs.dm"
+#include "gear/accessories.dm"
 #endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE

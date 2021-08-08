@@ -2,7 +2,7 @@
 
 #include "skrellscoutship_areas.dm"
 #include "skrellscoutship_shuttles.dm"
-#include "skrellscoutship_radio.dm"
+//#include "skrellscoutship_radio.dm"
 
 /datum/map_template/ruin/away_site/skrellscoutship
 	name = "Skrellian Scout Ship"
@@ -20,7 +20,6 @@
 /obj/effect/overmap/visitable/sector/skrellscoutspace
 	name = "Empty Sector"
 	desc = "Slight traces of a cloaking device are present. Unable to determine exact location."
-	in_space = 1
 	icon_state = "event"
 	hide_from_reports = TRUE
 
@@ -56,7 +55,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	desc = "SSV Crewman"
 	region = ACCESS_REGION_NONE
 
-/obj/item/weapon/card/id/skrellscoutship
+/obj/item/card/id/skrellscoutship
 	color = COLOR_GRAY40
 	detail_color = "#7331c4"
 	access = list(access_skrellscoutship)
@@ -118,7 +117,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	var/skrellcaste = input(H, "What is your Skrell's Caste?", "SDTF Rank") as null|anything in skrellscoutcastes
 	if(skrellcaste)
 		var/skrellsubcaste = input(H, "What is your Skrell's Subcaste?", "SDTF Rank") as null|anything in skrellscoutcastes[skrellcaste]
-		var/obj/item/weapon/card/id/C = H.wear_id
+		var/obj/item/card/id/C = H.wear_id
 		if(istype(C))
 			C.assignment = skrellsubcaste
 
@@ -131,37 +130,22 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
 	icon_state = "skrell_suit"
 	item_state = "skrell_suit"
-	worn_state = "skrell_suit"
-
-/obj/item/weapon/reagent_containers/food/condiment/psilocybin
-	label_text = "Psilocybin"
-	starting_reagents = list(/datum/reagent/psilocybin = 50)
-
-
-/obj/item/weapon/reagent_containers/food/condiment/mindbreaker
-	label_text = "Mindbreaker"
-	starting_reagents = list(/datum/reagent/mindbreaker = 50)
-
-
-/obj/item/weapon/reagent_containers/food/condiment/space_drugs
-	label_text = "Ambrosia"
-	starting_reagents = list(/datum/reagent/space_drugs = 50)
 
 /decl/hierarchy/outfit/job/skrellscoutship
 	name = "Xilvuxix Crew"
 	uniform = /obj/item/clothing/under/skrelljumpsuit
-	shoes = /obj/item/clothing/shoes/dutyboots
+	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/skrell
 	pda_type = /obj/item/modular_computer/pda
-	pda_slot = slot_l_store
-	l_ear = /obj/item/device/radio/headset/map_preset/skrellscoutship
-	id_types = list(/obj/item/weapon/card/id/skrellscoutship)
+	pda_slot = slot_l_store_str
+	l_ear = /obj/item/radio/headset //Needs to be changed later
+	id_type = /obj/item/card/id/skrellscoutship
 	l_pocket = /obj/item/clothing/accessory/badge/tags/skrell
-	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX
+	r_pocket = /obj/item/clothing/accessory/rank/SDTF/QZQX
 
 /decl/hierarchy/outfit/job/skrellscoutship/leader
 	name = "Xilvuxix Vuxix"
-	r_pocket = /obj/item/clothing/accessory/skrellian/rank/SDTF/QVX
+	r_pocket = /obj/item/clothing/accessory/rank/SDTF/QVX
 
 /datum/mil_branch/skrell_fleet
 	name = "Skrellian Defense Task Force"
@@ -179,12 +163,14 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 /datum/mil_rank/skrell_fleet/zuumqix
 	name = "Qrii-Zuumqix"
 	name_short = "QZQX"
-	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QZQX)
+	sort_order = 1
+	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QZQX)
 
 /datum/mil_rank/skrell_fleet/vuxix
 	name = "Qrii-Vuxix"
 	name_short = "QVX"
-	accessory = list(/obj/item/clothing/accessory/skrellian/rank/SDTF/QVX)
+	sort_order = 2
+	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QVX)
 
 /obj/machinery/power/apc/skrell
 	req_access = list(access_skrellscoutship)
@@ -205,9 +191,16 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	. = ..()
 	TLV["temperature"] =	list(T0C-26, T0C, T0C+30, T0C+40) // K
 
+// A superpowered coil to be used on event SMES units, away sites that run lots of power, and maybe as a rare merchant item.
+/obj/item/stock_parts/smes_coil/advanced
+	name = "advanced magnetic coil"
+	desc = " An advanced magnetic coil made from rare materials. Can store and transfer more power than any previous designs."
+	ChargeCapacity = 500 KILOWATTS
+	IOCapacity = 2.5 MEGAWATTS
+
 /obj/machinery/power/smes/buildable/preset/skrell
 	uncreated_component_parts = list(
-		/obj/item/weapon/stock_parts/smes_coil/advanced = 2
+		/obj/item/stock_parts/smes_coil/advanced = 2
 	)
 	_input_maxed = TRUE
 	_output_maxed = TRUE
@@ -219,13 +212,15 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	req_access = list(access_skrellscoutship)
 
 /obj/machinery/power/apc/debug/skrell
-	cell_type = /obj/item/weapon/cell/infinite
+	uncreated_component_parts = list(
+		/obj/item/cell/infinite
+	)
 	req_access = list(access_skrellscoutship)
 
 #undef WEBHOOK_SUBMAP_LOADED_SKRELL
 
 //Skrell Security Belt
-/obj/item/weapon/storage/belt/holster/skrell
+/obj/item/storage/belt/holster/skrell
 	name = "skrellian holster belt"
 	desc = "Can hold security gear like handcuffs and flashes. This one has a convenient holster especially designed to accomodate the XV-5."
 	icon_state = "securitybelt"
@@ -233,84 +228,65 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	storage_slots = 8
 	overlay_flags = BELT_OVERLAY_ITEMS|BELT_OVERLAY_HOLSTER
 	can_hold = list(
-		/obj/item/weapon/crowbar,
-		/obj/item/weapon/grenade,
-		/obj/item/weapon/reagent_containers/spray/pepper,
-		/obj/item/weapon/handcuffs,
-		/obj/item/device/flash,
+		/obj/item/crowbar,
+		/obj/item/grenade,
+		/obj/item/chems/spray/pepper,
+		/obj/item/handcuffs,
+		/obj/item/flash,
 		/obj/item/clothing/glasses,
 		/obj/item/ammo_casing/shotgun,
 		/obj/item/ammo_magazine,
-		/obj/item/weapon/reagent_containers/food/snacks/donut/,
-		/obj/item/weapon/melee/baton,
-		/obj/item/weapon/melee/telebaton,
-		/obj/item/weapon/flame/lighter,
-		/obj/item/device/flashlight,
+		/obj/item/chems/food/donut/,
+		/obj/item/baton,
+		/obj/item/telebaton,
+		/obj/item/flame/lighter,
+		/obj/item/flashlight,
 		/obj/item/modular_computer/pda,
-		/obj/item/device/radio/headset,
-		/obj/item/device/hailer,
-		/obj/item/device/megaphone,
-		/obj/item/weapon/melee,
+		/obj/item/radio/headset,
+		/obj/item/hailer,
+		/obj/item/megaphone,
+		/obj/item/energy_blade,
+		/obj/item/baton,
 		/obj/item/taperoll,
-		/obj/item/device/holowarrant,
-		/obj/item/weapon/magnetic_ammo,
-		/obj/item/device/binoculars,
+		/obj/item/holowarrant,
+		/obj/item/magnetic_ammo,
+		/obj/item/binoculars,
 		/obj/item/clothing/gloves,
-		/obj/item/weapon/shield/energy/skrell,
+		/obj/item/magnetic_ammo,
+		/obj/item/binoculars,
+		/obj/item/shield/energy/skrell
 	)
-	can_holster = list(/obj/item/weapon/gun/energy/gun/skrell
+	can_holster = list(/obj/item/gun/energy/gun/skrell
 		)
 
 //Skell Lights
 
 /obj/machinery/light/skrell
 	name = "skrellian light"
-	light_type = /obj/item/weapon/light/tube/skrell
+	light_type = /obj/item/light/tube/skrell
 	desc = "Some kind of strange alien lighting technology."
 
 
-/obj/item/weapon/light/tube/skrell
+/obj/item/light/tube/skrell
 	name = "skrellian light filament"
 	color = COLOR_LIGHT_CYAN
-	b_colour = COLOR_LIGHT_CYAN
 	desc = "Some kind of strange alien lightbulb technology."
-	random_tone = FALSE
 
-/obj/item/weapon/light/tube/large/skrell
+/obj/item/light/tube/large/skrell
 	name = "skrellian light filament"
 	color = COLOR_LIGHT_CYAN
-	b_colour = COLOR_LIGHT_CYAN
 	desc = "Some kind of strange alien lightbulb technology."
 
 
-/obj/item/weapon/storage/box/lights/tubes/skrell
+/obj/item/storage/box/lights/tubes/skrell
 	name = "box of replacement tubes"
 	icon_state = "lighttube"
-	startswith = list(/obj/item/weapon/light/tube/skrell = 17,
-					/obj/item/weapon/light/tube/large/skrell = 4)
-
-//Skrell Suit Dispensers
-/obj/machinery/suit_storage_unit/skrell
-	boots = /obj/item/clothing/shoes/magboots;
-	color = "#00e1ff";
-	helmet = /obj/item/clothing/head/helmet/space/void/skrell/white;
-	islocked = 1;
-	name = "Skrell Suit Storage Unit (White)";
-	req_access = list("ACCESS_SKRELLSCOUT");
-	suit = /obj/item/clothing/suit/space/void/skrell/white
-
-/obj/machinery/suit_storage_unit/skrell/black
-	boots = /obj/item/clothing/shoes/magboots;
-	color = "#00e1ff";
-	helmet = /obj/item/clothing/head/helmet/space/void/skrell/black;
-	islocked = 1;
-	name = "Skrell Suit Storage Unit (Black)";
-	req_access = list("ACCESS_SKRELLSCOUT");
-	suit = /obj/item/clothing/suit/space/void/skrell/black
+	startswith = list(/obj/item/light/tube/skrell = 17,
+					/obj/item/light/tube/large/skrell = 4)
 
 //Skrell Devices
 
-/obj/item/weapon/tape_roll/skrell
+/obj/item/tape_roll/skrell
 	name = "modular adhesive dispenser"
 	desc = "A roll of sticky tape. Possibly for taping ducks... or was that ducts?"
 	icon = 'icons/obj/bureaucracy.dmi'

@@ -4,7 +4,7 @@
 	allowed_branches = list(/datum/mil_branch/civilian)
 	allowed_ranks = list(/datum/mil_rank/civ/civ)
 	required_language = null
-
+/* We are commenting this out to avoid glitches with the skrell modpack
 /datum/mil_branch/skrell_fleet
 	name = "Skrellian Defense Task Force"
 	name_short = "SDTF"
@@ -15,7 +15,7 @@
 
 /datum/mil_rank/skrell_fleet
 	name = "NULL"
-
+*/
 /datum/map/torch
 	branch_types = list(
 		/datum/mil_branch/iseo_issc,
