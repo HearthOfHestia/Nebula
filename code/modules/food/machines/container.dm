@@ -304,7 +304,7 @@
 	icon_state = "mixingbowl"
 	center_of_mass = @"{'x':17,'y':7}"
 	max_space = 30
-	matter = list(DEFAULT_WALL_MATERIAL = 300)
+	matter = list(/decl/material/solid/metal/aluminium = 300)
 	volume = 90
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = @"[5,10,15,25,30,60, 90]"
