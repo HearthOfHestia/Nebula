@@ -13,6 +13,10 @@
 	idle_power_usage = 20
 	clicksound = "button"
 	clickvol = 20
+	construct_state = /decl/machine_construction/default/panel_closed
+	uncreated_component_parts = null
+	stat_immune = 0
+	base_type = /obj/machinery/chem_master
 	var/obj/item/chems/beaker = null
 	var/obj/item/storage/pill_bottle/loaded_pill_bottle = null
 	var/mode = 0
@@ -47,6 +51,7 @@
 		to_chat(user, "You add the beaker to the machine!")
 		src.updateUsrDialog()
 		icon_state = "mixer1"
+		return TRUE
 
 	else if(istype(B, /obj/item/storage/pill_bottle))
 
@@ -58,6 +63,9 @@
 		src.loaded_pill_bottle = B
 		to_chat(user, "You add the pill bottle into the dispenser slot!")
 		src.updateUsrDialog()
+		return TRUE
+	
+	return ..()
 
 /obj/machinery/chem_master/Topic(href, href_list, state)
 	if(..())
@@ -314,7 +322,7 @@
 	return ..(reagent, "Condiment infos", 0)
 
 /obj/machinery/chem_master/condimaster/create_bottle(mob/user)
-	var/obj/item/chems/food/condiment/P = new/obj/item/chems/food/condiment(src.loc)
+	var/obj/item/chems/condiment/P = new/obj/item/chems/condiment(src.loc)
 	reagents.trans_to_obj(P,50)
 
 /obj/machinery/chem_master/condimaster/extra_options()

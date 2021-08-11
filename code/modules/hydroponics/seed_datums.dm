@@ -121,8 +121,8 @@
 	display_name = "poison berry bush"
 	mutants = list("deathberries")
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/bromide = list(3,5), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/bromide = list(3,5),
 		/decl/material/liquid/poisonberryjuice = list(10,5)
 	)
 
@@ -138,8 +138,8 @@
 	display_name = "death berry bush"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/bromide = list(3,3), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/bromide = list(3,3),
 		/decl/material/gas/carbon_monoxide = list(1,5)
 	)
 
@@ -255,7 +255,7 @@
 	display_name = "quantumato plant"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1,20), 
+		/decl/material/liquid/nutriment = list(1,20),
 		/decl/material/liquid/ethanol/bluecuracao = list(10,5)
 	)
 
@@ -339,10 +339,10 @@
 	display_name = "biteleaf patch"
 	mutants = list("biteleafdeus")
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/psychoactives = list(1,8), 
-		/decl/material/liquid/burn_meds = list(1,8,1), 
-		/decl/material/liquid/brute_meds = list(1,10,1), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/psychoactives = list(1,8),
+		/decl/material/liquid/burn_meds = list(1,8,1),
+		/decl/material/liquid/brute_meds = list(1,10,1),
 		/decl/material/liquid/bromide = list(1,10)
 	)
 	kitchen_tag = "biteleaf"
@@ -365,11 +365,11 @@
 	display_name = "biteleaf deus patch"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/brute_meds = list(1,8), 
-		/decl/material/liquid/antidepressants = list(1,8,1), 
-		/decl/material/liquid/stimulants = list(1,8,1), 
-		/decl/material/liquid/amphetamines = list(1,10,1), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/brute_meds = list(1,8),
+		/decl/material/liquid/antidepressants = list(1,8,1),
+		/decl/material/liquid/stimulants = list(1,8,1),
+		/decl/material/liquid/amphetamines = list(1,10,1),
 		/decl/material/liquid/psychoactives = list(1,10)
 	)
 	kitchen_tag = "biteleafdeus"
@@ -424,7 +424,7 @@
 	name = "plumphelmet"
 	seed_name = "plump helmet"
 	display_name = "plump helmet mushroom patch"
-	mutants = list("walkingmushroom","corkwood")
+	mutants = list("walkingmushroom","towercap")
 	chems = list(/decl/material/liquid/nutriment = list(2,10))
 	kitchen_tag = "plumphelmet"
 
@@ -524,21 +524,20 @@
 	set_trait(TRAIT_PLANT_COLOUR,"#e6d8dd")
 	set_trait(TRAIT_PLANT_ICON,"mushroom5")
 
-/datum/seed/mushroom/corkwood
-	name = "corkwood"
-	seed_name = "corkwood"
-	display_name = "corkwood thicket"
+/datum/seed/mushroom/towercap
+	name = "towercap"
+	seed_name = "towercap"
+	display_name = "towercap thicket"
 	chems = list(/decl/material/solid/wood = list(10,1))
 	mutants = null
 
-/datum/seed/mushroom/corkwood/New()
+/datum/seed/mushroom/towercap/New()
 	..()
 	set_trait(TRAIT_MATURATION,15)
 	set_trait(TRAIT_PRODUCT_ICON,"mushroom7")
 	set_trait(TRAIT_PRODUCT_COLOUR,"#d3aca3")
 	set_trait(TRAIT_PLANT_COLOUR,"#dcd9d9")
 	set_trait(TRAIT_PLANT_ICON,"mushroom8")
-
 /datum/seed/mushroom/glowbell
 	name = "glowbell"
 	seed_name = "glowbell"
@@ -1039,7 +1038,7 @@
 	name = "pumpkin"
 	seed_name = "pumpkin"
 	display_name = "pumpkin vine"
-	chems = list(/decl/material/liquid/nutriment = list(1,6))
+	chems = list(/decl/material/liquid/nutriment = list(1,6), /decl/material/liquid/drink/juice/pumpkinpulp = list(1,6))
 	kitchen_tag = "pumpkin"
 
 /datum/seed/pumpkin/New()

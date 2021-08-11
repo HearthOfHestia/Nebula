@@ -299,7 +299,7 @@ TORCH_ESCAPE_POD(19)
 	name = "Spirit Hangar"
 	landmark_tag = "nav_hangar_spirit"
 	base_area = /area/quartermaster/hangar
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/hangar
 
 /obj/effect/shuttle_landmark/torch/deck1/exploration_shuttle
 	name = "Space near Forth Deck"
@@ -346,7 +346,7 @@ TORCH_ESCAPE_POD(19)
 	name = "Opportunity Hangar"
 	landmark_tag = "nav_hangar_opportunity"
 	base_area = /area/quartermaster/hangar
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/hangar/glass
 
 /obj/effect/shuttle_landmark/torch/deck1/opportunity
 	name = "Space near Forth Deck"
@@ -433,7 +433,7 @@ TORCH_ESCAPE_POD(19)
 /obj/effect/shuttle_landmark/torch/hangar/curiosity
 	name = "Curiosity Hangar"
 	landmark_tag = "nav_hangar_curiosity"
-	base_turf = /turf/simulated/floor/plating
+	base_turf = /turf/simulated/floor/hangar/glass
 	base_area = /area/quartermaster/hangar
 
 /obj/effect/shuttle_landmark/torch/transit/curiosity

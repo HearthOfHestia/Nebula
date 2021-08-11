@@ -86,6 +86,6 @@
 		/obj/item/flash = 7,
 		/obj/item/chems/spray/pepper = 4,
 		/obj/item/holowarrant = 4,
-		/obj/item/chems/food/snacks/donut/normal = 12,
+		/obj/item/chems/food/donut/normal = 12,
 		/obj/item/storage/box/evidence = 8,
 		/obj/item/clothing/accessory/badge/maa = 6)

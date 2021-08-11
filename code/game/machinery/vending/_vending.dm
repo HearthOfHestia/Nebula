@@ -270,7 +270,7 @@
 		data["mode"] = 1
 		data["product"] = currently_vending.item_name
 		data["price"] = cur.format_value(currently_vending.price)
-		data["price_num"] = Floor(currently_vending.price / cur.absolute_value)
+		data["price_num"] = FLOOR(currently_vending.price / cur.absolute_value)
 		data["message"] = status_message
 		data["message_err"] = status_error
 	else
@@ -287,7 +287,7 @@
 				"key" =    key,
 				"name" =   I.item_name,
 				"price" =  cur.format_value(I.price),
-				"price_num" = Floor(I.price / cur.absolute_value),
+				"price_num" = FLOOR(I.price / cur.absolute_value),
 				"color" =  I.display_color,
 				"amount" = I.get_amount())))
 
@@ -370,7 +370,7 @@
 	if(vend_reply && last_reply + vend_delay + 200 <= world.time)
 		speak(vend_reply)
 		last_reply = world.time
-	
+
 /obj/machinery/vending/proc/finish_vending(var/datum/stored_items/vending_products/product)
 	set waitfor = FALSE
 	if(!product)

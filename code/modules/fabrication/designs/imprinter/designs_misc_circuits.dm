@@ -215,6 +215,12 @@
 /datum/fabricator_recipe/imprinter/circuit/reagent_cooler
 	path = /obj/item/stock_parts/circuitboard/reagent_heater/cooler
 
+/datum/fabricator_recipe/imprinter/circuit/chem_master
+	path = /obj/item/stock_parts/circuitboard/chem_master
+
+/datum/fabricator_recipe/imprinter/circuit/chemical_dispenser
+	path = /obj/item/stock_parts/circuitboard/chemical_dispenser
+
 /datum/fabricator_recipe/imprinter/circuit/atmos_control
 	path = /obj/item/stock_parts/circuitboard/atmoscontrol
 
@@ -356,8 +362,9 @@
 /datum/fabricator_recipe/imprinter/circuit/gibber
 	path = /obj/item/stock_parts/circuitboard/gibber
 
-/datum/fabricator_recipe/imprinter/circuit/cooker
-	path = /obj/item/stock_parts/circuitboard/cooker
+// HEARTH OF HESTIA EDIT
+/datum/fabricator_recipe/imprinter/circuit/appliance
+	path = /obj/item/stock_parts/circuitboard/appliance
 
 /datum/fabricator_recipe/imprinter/circuit/honey_extractor
 	path = /obj/item/stock_parts/circuitboard/honey
@@ -379,6 +386,9 @@
 
 /datum/fabricator_recipe/imprinter/circuit/shipsensors
 	path = /obj/item/stock_parts/circuitboard/shipsensors
+
+/datum/fabricator_recipe/imprinter/circuit/nuclear_cylinder_storage
+	path = /obj/item/stock_parts/circuitboard/nuclear_cylinder_storage
 
 /datum/fabricator_recipe/imprinter/circuit/grinder
 	path = /obj/item/stock_parts/circuitboard/grinder
@@ -451,6 +461,9 @@
 
 /datum/fabricator_recipe/imprinter/circuit/router
 	path = /obj/item/stock_parts/circuitboard/router
+
+/datum/fabricator_recipe/imprinter/circuit/router_wall_mounted
+	path = /obj/item/stock_parts/circuitboard/router/wall_mounted
 
 /datum/fabricator_recipe/imprinter/circuit/relay
 	path = /obj/item/stock_parts/circuitboard/relay

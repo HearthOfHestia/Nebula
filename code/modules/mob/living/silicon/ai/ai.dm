@@ -715,6 +715,7 @@ var/global/list/ai_verbs_default = list(
 	to_chat(src, SPAN_NOTICE("Integrated radio encryption keys have been reset."))
 
 /mob/living/silicon/ai/on_update_icon()
+	..()
 	if(!selected_sprite || !(selected_sprite in available_icons()))
 		// This should NOT be using the decl repository and cannot use GET_DECL() as default_ai_icon is a datum. TODO: rewrite AI icon handling.
 		selected_sprite = decls_repository.get_decl(default_ai_icon)
@@ -792,3 +793,23 @@ var/global/list/ai_verbs_default = list(
 
 /mob/living/silicon/ai/get_admin_job_string()
 	return "AI"
+
+/mob/living/silicon/ai/eastface()
+	if(holo)
+		holo.set_dir_hologram(client.client_dir(EAST), src)
+	return ..()
+
+/mob/living/silicon/ai/westface()
+	if(holo)
+		holo.set_dir_hologram(client.client_dir(WEST), src)
+	return ..()
+
+/mob/living/silicon/ai/northface()
+	if(holo)
+		holo.set_dir_hologram(client.client_dir(NORTH), src)
+	return ..()
+
+/mob/living/silicon/ai/southface()
+	if(holo)
+		holo.set_dir_hologram(client.client_dir(SOUTH), src)
+	return ..()

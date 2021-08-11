@@ -250,6 +250,8 @@ var/global/list/gamemode_cache = list()
 	var/max_client_view_x
 	var/max_client_view_y
 
+	var/allow_diagonal_movement = FALSE
+
 	var/no_throttle_localhost
 
 	var/static/list/protected_vars = list(
@@ -262,7 +264,7 @@ var/global/list/gamemode_cache = list()
 	. = ..() | protected_vars
 
 /datum/configuration/New()
-	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
+	var/list/L = subtypesof(/datum/game_mode)
 	for (var/T in L)
 		// I wish I didn't have to instance the game modes in order to look up
 		// their information, but it is the only way (at least that I know of).
@@ -881,6 +883,9 @@ var/global/list/gamemode_cache = list()
 					config.max_client_view_x = text2num(value)
 				if("max_client_view_y")
 					config.max_client_view_y = text2num(value)
+
+				if("allow_diagonal_movement")
+					config.allow_diagonal_movement = TRUE
 
 				if("use_loyalty_implants")
 					config.use_loyalty_implants = 1

@@ -99,7 +99,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/gas_overlay)
 
 	var/door_icon_base = "metal"                         // Door base icon tag. See header.
 	var/table_icon_base = "metal"
-	var/table_reinf = "reinf_metal"
+	var/table_icon_reinforced = "reinf_metal"
+
 	var/list/stack_origin_tech = "{'materials':1}" // Research level for stacks.
 
 	// Attributes
@@ -363,8 +364,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/gas_overlay)
 
 // General wall debris product placement.
 // Not particularly necessary aside from snowflakey cult girders.
-/decl/material/proc/place_dismantled_product(var/turf/target,var/is_devastated)
-	return create_object(target, is_devastated ? 1 : 2)
+/decl/material/proc/place_dismantled_product(var/turf/target, var/is_devastated, var/amount = 2)
+	amount = is_devastated ? FLOOR(amount * 0.5) : amount
+	if(amount > 0)
+		return create_object(target, amount)
 
 // As above.
 /decl/material/proc/place_shard(var/turf/target)
@@ -422,7 +425,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/gas_overlay)
 // This doesn't apply to skin contact - this is for, e.g. extinguishers and sprays. The difference is that reagent is not directly on the mob's skin - it might just be on their clothing.
 /decl/material/proc/touch_mob(var/mob/living/M, var/amount, var/datum/reagents/holder)
 	if(fuel_value && amount && istype(M))
-		M.fire_stacks += Floor((amount * fuel_value)/FLAMMABLE_LIQUID_DIVISOR)
+		M.fire_stacks += FLOOR((amount * fuel_value)/FLAMMABLE_LIQUID_DIVISOR)
 #undef FLAMMABLE_LIQUID_DIVISOR
 
 /decl/material/proc/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder) // Cleaner cleaning, lube lubbing, etc, all go here

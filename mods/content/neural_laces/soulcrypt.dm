@@ -1,8 +1,8 @@
 /obj/machinery/soulcrypt
 	name = "soulcrypt"
 	desc = "An advanced computer which can simulate the conciousness of any sentient being - provided a neural lace is inserted."
-	icon = 'icons/obj/machines/holopad.dmi'
-	icon_state = "holopad-B0"
+	icon = 'mods/content/neural_laces/soulcrypt.dmi'
+	icon_state = "soulcrypt_inactive"
 	idle_power_usage = 1000
 	active_power_usage = 25000
 
@@ -16,6 +16,12 @@
 	. = ..()
 	if(lace)
 		to_chat(user, SPAN_NOTICE("A neural lace is inserted."))
+
+/obj/machinery/soulcrypt/on_update_icon()
+	if(summoning_dead)
+		icon_state = "soulcrypt_active"
+	else
+		icon_state = "soulcrypt_inactive"
 
 /obj/machinery/soulcrypt/attackby(var/obj/item/I, var/mob/user)
 	. = ..()

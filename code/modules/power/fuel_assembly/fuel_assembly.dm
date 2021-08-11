@@ -13,7 +13,7 @@
 /obj/item/fuel_assembly/Initialize(mapload, var/_material, var/list/makeup, var/_colour)
 	. = ..(mapload, _material)
 	LAZYINITLIST(matter)
-	
+
 	if(makeup)
 		if(length(makeup) == 1) // Rod is only made from one material.
 			var/decl/material/mat = decls_repository.get_decl(makeup[1])
@@ -66,7 +66,7 @@
 		return PROCESS_KILL
 
 	if(istype(loc, /turf))
-		SSradiation.radiate(src, max(1,ceil(radioactivity/15)))
+		SSradiation.radiate(src, max(1,CEILING(radioactivity/15)))
 
 /obj/item/fuel_assembly/Destroy()
 	STOP_PROCESSING(SSobj, src)
@@ -78,7 +78,7 @@
 
 /obj/item/fuel_assembly/tritium
 	material = /decl/material/gas/hydrogen/tritium
-	
+
 /obj/item/fuel_assembly/supermatter
 	material = /decl/material/solid/exotic_matter
 

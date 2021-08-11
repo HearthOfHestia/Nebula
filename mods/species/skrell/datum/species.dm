@@ -22,7 +22,7 @@
 	herbivores on the whole and tend to be co-operative with the other species of the galaxy, although they rarely reveal \
 	the secrets of their empire to their allies."
 
-	meat_type = /obj/item/chems/food/snacks/fish/octopus
+	meat_type = /obj/item/chems/food/fish/octopus
 	bone_material = /decl/material/solid/bone/cartilage
 	available_pronouns = list(
 		/decl/pronouns
