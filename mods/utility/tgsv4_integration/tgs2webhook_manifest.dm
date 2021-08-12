@@ -14,4 +14,4 @@
 		"fields" = fields,
 		"color" = COLOR_WEBHOOK_DEFAULT
 	))
-	/*DEBUG, REMOVE LATER*/world.log << json_encode(.)
+	/*DEBUG, REMOVE LATER*/to_world_log("MANIFEST DATA: [json_encode(.)]")
