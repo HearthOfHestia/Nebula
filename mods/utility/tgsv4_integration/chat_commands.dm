@@ -25,5 +25,5 @@
 
 /datum/tgs_chat_command/tgs_manifest_webhook/Run(datum/tgs_chat_user/sender, params)
 	SSwebhooks.send(WEBHOOK_CREW_MANIFEST, list("manifest" = nano_crew_manifest()))
-	return "Fetching crew manifest..."
+	return ""
 
