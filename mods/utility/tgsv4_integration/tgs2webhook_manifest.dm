@@ -8,7 +8,7 @@
 		var/field_value = ""
 		for(var/entry in data["manifest"][department])
 			field_value += "[entry["name"]] - [entry["rank"]]\n"
-		fields += list(list()"inline" = TRUE, "name" = department, "value" = field_value)
+		fields += list(list("inline" = TRUE, "name" = department, "value" = field_value))
 	.["embeds"] = list(list(
 		"title" = "Crew Manifest",
 		"fields" = fields,
