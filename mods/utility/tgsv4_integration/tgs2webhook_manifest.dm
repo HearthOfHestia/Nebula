@@ -14,3 +14,4 @@
 		"fields" = fields,
 		"color" = COLOR_WEBHOOK_DEFAULT
 	))
+	/*DEBUG, REMOVE LATER*/world.log << json_encode(.)

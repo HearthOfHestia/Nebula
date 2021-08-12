@@ -335,9 +335,18 @@
 	return TRUE
 
 /obj/machinery/appliance/Process()
-	if (cooking_power > 0 && cooking)
+	if (cooking)
 		for (var/datum/cooking_item/CI as anything in cooking_objs)
-			do_cooking_tick(CI)
+			if(cooking_power > 0)
+				do_cooking_tick(CI)
+		check_cooking()
+
+/obj/machinery/appliance/proc/check_cooking()
+	if (cooking)
+		if(!length(cooking_objs))
+			cooking = FALSE
+			return
+		for (var/datum/cooking_item/CI as anything in cooking_objs)
 			if(length(CI.container.contents) || CI.container.reagents.total_volume)
 				continue
 			cooking = FALSE
@@ -552,6 +561,7 @@
 		qdel(CI)
 	else
 		CI.reset()//reset instead of deleting if the container is left inside
+	check_cooking()
 
 /obj/machinery/appliance/proc/cook_mob(var/mob/living/victim, var/mob/user)
 	return
@@ -607,6 +617,7 @@
 	victim.forceMove(null)
 	QDEL_NULL(victim)
 	QDEL_NULL(H)
+	check_cooking()
 
 	return result
 
