@@ -3,6 +3,7 @@
 
 /decl/webhook/crew_manifest/get_message(var/list/data)
 	. = ..()
+	/*DEBUG, REMOVE LATER*/to_world_log("MANIFEST DATA: [json_encode(data)]")
 	var/list/fields = list()
 	for(var/department in data["manifest"])
 		var/field_value = ""
@@ -14,4 +15,4 @@
 		"fields" = fields,
 		"color" = COLOR_WEBHOOK_DEFAULT
 	))
-	/*DEBUG, REMOVE LATER*/to_world_log("MANIFEST DATA: [json_encode(.)]")
+	/*DEBUG, REMOVE LATER*/to_world_log("WEBHOOK DATA: [json_encode(.)]")
