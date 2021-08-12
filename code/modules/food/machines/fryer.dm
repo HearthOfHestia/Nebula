@@ -88,7 +88,7 @@
 //This causes a slow drop in oil levels, encouraging refill after extended use
 /obj/machinery/appliance/cooker/fryer/do_cooking_tick(var/datum/cooking_item/CI)
 	if(..() && (CI.oil < CI.max_oil) && prob(20))
-		var/datum/reagents/buffer = new /datum/reagents(2)
+		var/datum/reagents/buffer = new /datum/reagents(2, global.temp_reagents_holder)
 		reagents.trans_to_holder(buffer, min(0.5, CI.max_oil - CI.oil))
 		CI.oil += buffer.total_volume
 		CI.container.soak_reagent(buffer)
@@ -97,7 +97,7 @@
 //Upon finishing a recipe the fryer will analyse any oils in the result, and replace them with our oil
 //As well as capping the total to the max oil
 /obj/machinery/appliance/cooker/fryer/finish_cooking(var/datum/cooking_item/CI)
-	..()
+	. = ..()
 	var/total_oil = 0
 	var/total_our_oil = 0
 	var/total_removed = 0
@@ -118,7 +118,7 @@
 
 		if (total_our_oil < total_oil)
 			//If we have less than the combined total, then top up from our reservoir
-			var/datum/reagents/buffer = new /datum/reagents(INFINITY)
+			var/datum/reagents/buffer = new /datum/reagents(INFINITY, global.temp_reagents_holder)
 			reagents.trans_to_holder(buffer, total_oil - total_our_oil)
 			CI.container.soak_reagent(buffer)
 		else if (total_our_oil > total_oil)

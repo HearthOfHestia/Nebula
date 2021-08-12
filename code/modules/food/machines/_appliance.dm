@@ -107,8 +107,7 @@
 	return SPAN_DANGER("It is burning!")
 
 /obj/machinery/appliance/proc/get_cooking_item_from_container(var/obj/item/chems/cooking_container/CC)
-	for(var/C in cooking_objs)
-		var/datum/cooking_item/CI = C
+	for(var/datum/cooking_item/CI as anything in cooking_objs)
 		if(CI.container == CC)
 			return CI
 
@@ -337,8 +336,11 @@
 
 /obj/machinery/appliance/Process()
 	if (cooking_power > 0 && cooking)
-		for (var/i in cooking_objs)
-			do_cooking_tick(i)
+		for (var/datum/cooking_item/CI as anything in cooking_objs)
+			do_cooking_tick(CI)
+			if(length(CI.container.contents) || CI.container.reagents.total_volume)
+				continue
+			cooking = FALSE
 
 /obj/machinery/appliance/proc/finish_cooking(var/datum/cooking_item/CI)
 	audible_message("<b>[src]</b> [finish_verb]")
@@ -394,7 +396,7 @@
 
 	var/list/words = list()
 	var/list/cooktypes = list()
-	var/datum/reagents/buffer = new /datum/reagents(1000)
+	var/datum/reagents/buffer = new /datum/reagents(1000, global.temp_reagents_holder)
 	var/totalcolour
 
 	for (var/obj/item/I in CI.container)
