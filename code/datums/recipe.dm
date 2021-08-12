@@ -140,7 +140,7 @@
 	if (coating == -1)
 		return TRUE //-1 value doesnt care
 
-	return !coating || (S.batter_coating == coating)
+	return S.batter_coating == coating
 
 /decl/recipe/proc/check_items(var/obj/container)
 	SHOULD_BE_PURE(TRUE)
@@ -158,6 +158,8 @@
 			if(!istype(thing, itype))
 				continue
 			container_contents -= thing
+			if(!check_coating(thing))
+				continue
 			needed_items[itype]--
 			if(needed_items[itype] <= 0)
 				needed_items -= itype

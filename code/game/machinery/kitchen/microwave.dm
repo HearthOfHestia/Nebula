@@ -298,13 +298,13 @@
 		icon_state = "mw1"
 
 	set_light(1, 1.5)
-	soundloop.start()
+	soundloop.start(src)
 	update_icon()
 	SSnano.update_uis(src)
 
 /obj/machinery/microwave/proc/after_finish_loop()
 	set_light(0)
-	soundloop.stop()
+	soundloop.stop(src)
 	update_icon()
 
 /obj/machinery/microwave/proc/stop(var/abort = FALSE)

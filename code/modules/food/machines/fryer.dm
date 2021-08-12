@@ -79,7 +79,7 @@
 	..()
 	if (cooking)
 		icon_state = on_icon
-		fry_loop.start()
+		fry_loop.start(src)
 	else
 		icon_state = off_icon
 		fry_loop.stop(src)
