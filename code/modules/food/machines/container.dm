@@ -42,7 +42,7 @@
 		return TRUE //If not, do nothing.
 	if(standard_dispenser_refill(user, target)) //Are they clicking a water tank/some dispenser?
 		return TRUE
-	if(standard_pour_into(user, target)) //Pouring into another beaker?
+	if(istype(target, /obj/item/chems) && standard_pour_into(user, target)) //Pouring into another beaker?
 		return TRUE
 	if(standard_feed_mob(user, target))
 		return TRUE
