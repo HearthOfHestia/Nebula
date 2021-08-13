@@ -2990,7 +2990,7 @@
 #include "code\modules\reagents\reagent_containers\food\baked_goods.dm"
 #include "code\modules\reagents\reagent_containers\food\bread.dm"
 #include "code\modules\reagents\reagent_containers\food\burgers.dm"
-#include "code\modules\reagents\reagent_containers\food\canned.dm"
+#include "code\modules\reagents\reagent_containers\food\canned_food.dm"
 #include "code\modules\reagents\reagent_containers\food\dough.dm"
 #include "code\modules\reagents\reagent_containers\food\eggs.dm"
 #include "code\modules\reagents\reagent_containers\food\fish.dm"
