@@ -59,9 +59,9 @@
 	var/string = "It contains:</br><ul>"
 	var/list/numerical_contents = list()
 	for(var/atom/thing as anything in get_contained_external_atoms())
-		numerical_contents[thing.name] += 1
-	for(var/key as anything in numerical_contents)
-		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key]" : "\a [key]"]</li></br>"
+		numerical_contents[thing] += 1
+	for(var/atom/key as anything in numerical_contents)
+		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key.name]" : "\a [key]"]</li></br>"
 	string += "</ul>"
 	return string
 
