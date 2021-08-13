@@ -197,7 +197,7 @@ Please contact me on #coderbus IRC. ~Carn x
 			if(i != HO_DAMAGE_LAYER)
 				overlay.transform = M
 			if(i == HO_TAIL_UNDER_LAYER)
-				underlays = list(i)
+				underlays = list(entry)
 			else
 				add_overlay(entry)
 		else if(istype(entry, /list))
@@ -205,7 +205,7 @@ Please contact me on #coderbus IRC. ~Carn x
 				if(i != HO_DAMAGE_LAYER)
 					overlay.transform = M
 				if(i == HO_TAIL_UNDER_LAYER)
-					underlays = list(i)
+					underlays = list(entry)
 				else
 					add_overlay(entry)
 
