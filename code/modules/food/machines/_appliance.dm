@@ -235,6 +235,7 @@
 	//From here we can start cooking food
 	add_content(I, user)
 	update_icon()
+	return TRUE // do not call afterattack
 
 //Override for container mechanics
 /obj/machinery/appliance/proc/add_content(var/obj/item/I, var/mob/user)

@@ -203,20 +203,5 @@
 			reagents.trans_to(I, I.reagents.maximum_volume)
 			user.visible_message("[user] scoops some oil out of [src].", SPAN_NOTICE("You scoop some oil out of [src]."))
 			return TRUE
-	//It contains stuff, handle pouring any oil into the fryer
-	//Possibly in future allow pouring non-oil reagents in, in  order to sabotage it and poison food.
-	//That would really require coding some sort of filter or better replacement mechanism first
-	//So for now, restrict to oil only
-		var/amount = 0
-		for (var/_R in I.reagents.reagent_volumes)
-			if (ispath(_R, /decl/material/liquid/nutriment/triglyceride/oil))
-				var/delta = REAGENTS_FREE_SPACE(reagents)
-				delta = min(delta, I.reagents.reagent_volumes[_R])
-				reagents.add_reagent(_R, delta)
-				I.reagents.remove_reagent(_R, delta)
-				amount += delta
-		if (amount > 0)
-			user.visible_message("[user] pours some oil into [src].", SPAN_NOTICE("You pour [amount]u of oil into [src]."), SPAN_NOTICE("You hear something viscous being poured into a metal container."))
-			return TRUE
-	//If neither of the above returned, then call parent as normal
+	//If the above hasn't returned, then call parent as normal
 	..()
