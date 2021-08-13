@@ -442,7 +442,7 @@
 	CI.container.reagents.trans_to_holder(buffer, CI.container.reagents.total_volume)
 
 	var/obj/item/chems/food/variable/result = new cook_path(CI.container)
-	buffer.trans_to(result, buffer.total_volume)
+	buffer.trans_to_obj(result, buffer.total_volume)
 
 	//Filling overlay
 	var/image/I = image(result.icon, "[result.icon_state]_filling")

@@ -101,13 +101,14 @@
 	var/total_oil = 0
 	var/total_our_oil = 0
 	var/total_removed = 0
+	var/decl/material/our_oil = reagents.get_primary_reagent_decl()
 
 	for (var/obj/item/I in CI.container)
 		if (I.reagents?.total_volume)
 			for (var/_R in I.reagents.reagent_volumes)
 				if (ispath(_R, /decl/material/liquid/nutriment/triglyceride/oil))
 					total_oil += I.reagents.reagent_volumes[_R]
-					if (_R != reagents.primary_reagent)
+					if (_R != our_oil.type)
 						total_removed += I.reagents.reagent_volumes[_R]
 						I.reagents.remove_reagent(_R, I.reagents.reagent_volumes[_R])
 					else
@@ -129,7 +130,7 @@
 				var/obj/item/I = thing
 				if (I.reagents?.total_volume)
 					for (var/_R in I.reagents.reagent_volumes)
-						if (_R == reagents.primary_reagent)
+						if (_R == our_oil.type)
 							I.reagents.remove_reagent(_R, I.reagents.reagent_volumes[_R]*portion)
 					if(REAGENT_DATA(I.reagents, reagents.primary_reagent)) // cool down the oil
 						LAZYSET(I.reagents.reagent_data[reagents.primary_reagent], "temperature", T0C + rand(35, 45)) // warm, but not hot; avoiding aftereffects of the hot oil
@@ -200,7 +201,7 @@
 	if(istype(I, /obj/item/chems/glass) && I.reagents)
 		if (I.reagents.total_volume <= 0 && reagents)
 			//Its empty, handle scooping some hot oil out of the fryer
-			reagents.trans_to(I, I.reagents.maximum_volume)
+			reagents.trans_to_obj(I, I.reagents.maximum_volume)
 			user.visible_message("[user] scoops some oil out of [src].", SPAN_NOTICE("You scoop some oil out of [src]."))
 			return TRUE
 	//If the above hasn't returned, then call parent as normal

@@ -192,7 +192,7 @@
 		for (var/contained in contents)
 			var/obj/item/I = contained
 			if (weights[I])
-				holder.trans_to(I, weights[I] / total)
+				holder.trans_to_obj(I, weights[I] / total)
 
 
 /obj/item/chems/cooking_container/oven

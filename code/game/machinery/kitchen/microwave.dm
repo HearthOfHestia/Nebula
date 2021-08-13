@@ -252,9 +252,8 @@
 	//Any leftover reagents are divided amongst the foods
 	var/total = reagents.total_volume
 	for (var/obj/item/I in cooked_items)
-		if(I.reagents)
-			reagents.trans_to_holder(I.reagents, total/cooked_items.len)
-			I.dropInto(loc) // since eject only ejects ingredients!
+		reagents.trans_to_obj(I, total/cooked_items.len)
+		I.dropInto(loc) // since eject only ejects ingredients!
 
 	dispose(message = FALSE) //clear out anything left
 

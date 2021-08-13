@@ -286,9 +286,8 @@
 		//If we're here, then holder is a buffer containing the total reagents for all the results.
 		//So now we redistribute it among them
 		var/total = holder.total_volume
-		for (var/i in results)
-			var/atom/a = i //optimisation
-			holder.trans_to(a, total / length(results))
+		for (var/atom/a as anything in results)
+			holder.trans_to_obj(a, total / length(results))
 	return results
 
 /proc/select_recipe(var/obj/container, var/appliance)
