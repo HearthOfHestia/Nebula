@@ -125,15 +125,9 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 	name = "black gloves"
 	desc = "A pair of black, reinforced gloves. The tag on the inner stitching appears to be written in some form of Skrellian."
 
-/obj/item/clothing/under/skrelljumpsuit
-	name = "black bodysuit"
-	desc = "A sleek, skin-tight bodysuit designed to not wick moisture away from the body. The inner stitching appears to contain something written in Skrellian."
-	icon_state = "skrell_suit"
-	item_state = "skrell_suit"
-
 /decl/hierarchy/outfit/job/skrellscoutship
 	name = "Xilvuxix Crew"
-	uniform = /obj/item/clothing/under/skrelljumpsuit
+	uniform = /obj/item/clothing/under/skrell
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/skrell
 	pda_type = /obj/item/modular_computer/pda
@@ -146,31 +140,6 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 /decl/hierarchy/outfit/job/skrellscoutship/leader
 	name = "Xilvuxix Vuxix"
 	r_pocket = /obj/item/clothing/accessory/rank/SDTF/QVX
-
-/datum/mil_branch/skrell_fleet
-	name = "Skrellian Defense Task Force"
-	name_short = "SDTF"
-	email_domain = "sdtf.qb"
-	rank_types = list(
-		/datum/mil_rank/skrell_fleet/zuumqix,
-		/datum/mil_rank/skrell_fleet/vuxix
-	)
-	spawn_rank_types = list(
-		/datum/mil_rank/skrell_fleet/zuumqix,
-		/datum/mil_rank/skrell_fleet/vuxix
-	)
-
-/datum/mil_rank/skrell_fleet/zuumqix
-	name = "Qrii-Zuumqix"
-	name_short = "QZQX"
-	sort_order = 1
-	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QZQX)
-
-/datum/mil_rank/skrell_fleet/vuxix
-	name = "Qrii-Vuxix"
-	name_short = "QVX"
-	sort_order = 2
-	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QVX)
 
 /obj/machinery/power/apc/skrell
 	req_access = list(access_skrellscoutship)
