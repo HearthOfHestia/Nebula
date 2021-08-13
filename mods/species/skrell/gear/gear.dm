@@ -47,6 +47,8 @@
 	icon_state = "skrellshield"
 	shield_light_color = "#bf7efc"
 
+//All skrell weapons need testing, as they were ported directly from bay and not properly configured for nebula YET
+
 /obj/item/gun/energy/gun/skrell
 	name = "skrellian handgun"
 	desc = "A common Skrellian side-arm, the Xuxquu*'Voom-5, or XV-5, is a more traditional energy weapon, tuned to dispense beams in three different wavelengths."
@@ -58,10 +60,7 @@
 	fire_delay = 6
 	one_hand_penalty = 1
 	self_recharge = 1
-
 	projectile_type = /obj/item/projectile/beam/stun
-	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
-	modifystate = "skrell_pistol_stun"
 
 	firemodes = list(
 		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, indicator_color=COLOR_CYAN),
