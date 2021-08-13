@@ -17,7 +17,7 @@
 /obj/item/clothing/accessory/badge/tags/skrell
 	name = "\improper Skrellian holobadge"
 	desc = "A high tech Skrellian holobadge, designed to project information about the owner."
-	icon_state = "skrell_badge"
+	icon = 'mods/species/skrell/icons/clothing/accessories/obj_skrell_badge.dmi'
 	badge_string = null	//Will be the name of the SDTF.
 
 /obj/item/clothing/accessory/badge/tags/skrell/set_desc(var/mob/living/carbon/human/H)
