@@ -43,21 +43,6 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride/oil/corn, optimal_oil*(1 - variance))
 	fry_loop = new(list(src), FALSE)
 
-/obj/machinery/appliance/cooker/fryer/heat_up()
-	if (!..())
-		return
-	//Set temperature of oil reagent
-	if (ispath(reagents.primary_reagent, /decl/material/liquid/nutriment/triglyceride/oil))
-		LAZYINITLIST(reagents.reagent_data[reagents.primary_reagent])
-		reagents.reagent_data[reagents.primary_reagent]["temperature"] = temperature
-
-/obj/machinery/appliance/cooker/fryer/ProcessAtomTemperature()
-	//Set temperature of oil reagent
-	if (ispath(reagents.primary_reagent, /decl/material/liquid/nutriment/triglyceride/oil))
-		LAZYINITLIST(reagents.reagent_data[reagents.primary_reagent])
-		reagents.reagent_data[reagents.primary_reagent]["temperature"] = temperature
-	. = ..()
-
 /obj/machinery/appliance/cooker/fryer/update_cooking_power()
 	..()//In addition to parent temperature calculation
 	//Fryer efficiency also drops when oil levels arent optimal
@@ -132,8 +117,6 @@
 					for (var/_R in I.reagents.reagent_volumes)
 						if (_R == our_oil.type)
 							I.reagents.remove_reagent(_R, I.reagents.reagent_volumes[_R]*portion)
-					if(REAGENT_DATA(I.reagents, reagents.primary_reagent)) // cool down the oil
-						LAZYSET(I.reagents.reagent_data[reagents.primary_reagent], "temperature", T0C + rand(35, 45)) // warm, but not hot; avoiding aftereffects of the hot oil
 
 /obj/machinery/appliance/cooker/fryer/cook_mob(var/mob/living/victim, var/mob/user)
 

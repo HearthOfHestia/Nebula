@@ -204,9 +204,6 @@
 	taste_description = "some sort of oil"
 	taste_mult = 0.1
 
-/decl/material/liquid/nutriment/triglyceride/oil/initialize_data(var/newdata) // Called when the reagent is created.
-	return ..() || list("temperature" = T20C, "lastburnmessage" = 0)
-
 /decl/material/liquid/nutriment/triglyceride/oil/touch_turf(var/turf/simulated/T, var/datum/reagents/holder)
 	if(!istype(T))
 		return
@@ -244,7 +241,7 @@
 	var/data = REAGENT_DATA(holder, type)
 
 	//If temperature is too low to burn, return a factor of 0. no damage
-	if (data["temperature"] < threshold)
+	if (holder.temperature < threshold)
 		return 0
 
 	//Step = degrees above heat level 1 for 1.0 multiplier
@@ -252,20 +249,18 @@
 	if (S && istype(S))
 		step = (S.heat_level_2 - S.heat_level_1)*1.5
 
-	. = data["temperature"] - threshold
+	. = holder.temperature - threshold
 	. /= step
 	. = min(., 2.5)//Cap multiplier at 2.5
 
 /decl/material/liquid/nutriment/triglyceride/oil/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	var/dfactor = heatdamage(M)
+	var/dfactor = heatdamage(M, holder)
 	if (dfactor)
 		var/data = REAGENT_DATA(holder, type)
 		LAZYINITLIST(holder.reagent_data)
 		M.take_organ_damage(0, removed * 1.5 * dfactor)
-		data["temperature"] -= (6 * removed) / (1 + REAGENT_VOLUME(holder, type)*0.1)//Cools off as it burns you
-		if (LAZYACCESS(holder.reagent_data[type], "lastburnmessage")+100 < world.time)
-			to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
-			LAZYSET(holder.reagent_data[type], "lastburnmessage", world.time)
+		ADJUST_ATOM_TEMPERATURE(holder, holder.temperature - (6 * removed) / (1 + REAGENT_VOLUME(holder, type)*0.1)//Cools off as it burns you
+		to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
 
 /decl/material/liquid/nutriment/triglyceride/oil/corn
 	name = "Corn Oil"
