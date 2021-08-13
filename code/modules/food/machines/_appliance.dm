@@ -349,7 +349,7 @@
 			return
 		for (var/datum/cooking_item/CI as anything in cooking_objs)
 			if(length(CI.container.contents) || CI.container.reagents.total_volume)
-				continue
+				break
 			cooking = FALSE
 
 /obj/machinery/appliance/proc/finish_cooking(var/datum/cooking_item/CI)
