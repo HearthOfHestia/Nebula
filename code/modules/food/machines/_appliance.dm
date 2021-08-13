@@ -347,9 +347,12 @@
 		if(!length(cooking_objs))
 			cooking = FALSE
 			return
+		var/has_contents = FALSE
 		for (var/datum/cooking_item/CI as anything in cooking_objs)
 			if(length(CI.container.contents) || CI.container.reagents.total_volume)
+				has_contents = TRUE
 				break
+		if (!has_contents)
 			cooking = FALSE
 
 /obj/machinery/appliance/proc/finish_cooking(var/datum/cooking_item/CI)
