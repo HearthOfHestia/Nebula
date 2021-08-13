@@ -5,43 +5,49 @@
 	species_allowed = list(SPECIES_SKRELL)
 
 /datum/sprite_accessory/hair/skrell
-	name = "Kanin/Raskinta - Very Short Headtails"
+	name = "Kanin - Very Short Headtails"
 	icon = 'mods/species/skrell/icons/body/hair.dmi'
-	icon_state = "very_short"
+	icon_state = "very_short_s"
+	species_allowed = list(SPECIES_SKRELL)
+
+/datum/sprite_accessory/hair/skrell
+	name = "Raskinta - Split Very Short Headtails"
+	icon = 'mods/species/skrell/icons/body/hair.dmi'
+	icon_state = "split_s"
 	species_allowed = list(SPECIES_SKRELL)
 
 /datum/sprite_accessory/hair/skrell/short
 	name = "Malish - Short Headtails"
-	icon_state = "short"
-
-/datum/sprite_accessory/hair/skrell/fortuna
-	name = "Malish - Fortuna Headtails"
-	icon_state = "fortuna"
+	icon_state = "short_s"
 
 /datum/sprite_accessory/hair/skrell/long
 	name = "Talum - Long Headtails"
-	icon_state = "long"
+	icon_state = "long_s"
 
-/datum/sprite_accessory/hair/skrell/seaweed
-	name = "Talum - Seaweed Headtails"
-	icon_state = "seaweed"
+/datum/sprite_accessory/hair/skrell/wavy
+	name = "Talum - Wavy"
+	icon_state = "wavy-long_s"
 
-/datum/sprite_accessory/hair/skrell/driftwood
-	name = "Talum - Driftwood Headtails"
-	icon_state = "driftwood"
+/datum/sprite_accessory/hair/skrell/tied
+	name = "Talum - Tied"
+	icon_state = "tied-long_s"
+
+/datum/sprite_accessory/hair/skrell/scarf
+	name = "Talum - Scarf"
+	icon_state = "scarf-long_s"
 
 /datum/sprite_accessory/hair/skrell/very_long
 	name = "Qerr - Very Long Headtails"
-	icon_state = "very_long"
+	icon_state = "very-long_s"
 
-/datum/sprite_accessory/hair/skrell/hoop
-	name = "Qerr - Hoop Headtails"
-	icon_state = "hoop"
+/datum/sprite_accessory/hair/skrell/tiedq
+	name = "Qerr - Tied Headtails"
+	icon_state = "tied-very_long_s"
 
-/datum/sprite_accessory/hair/skrell/backwater
-	name = "Qerr - Backwater Headtails"
-	icon_state = "backwater"
+/datum/sprite_accessory/hair/skrell/scarfq
+	name = "Qerr - Scarf"
+	icon_state = "scarf-very_long_s"
 
 /datum/sprite_accessory/hair/skrell/reef
-	name = "Qerr - Reef Headtails"
-	icon_state = "reef"
+	name = "Qerr - Wavy"
+	icon_state = "wavy-very_long_s"
