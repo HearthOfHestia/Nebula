@@ -64,21 +64,21 @@
 
 // Some jobs for nabber grades defined here due to map-specific job datums.
 /*
-/decl/cultural_info/culture/nabber/New()
+/decl/cultural_info/culture/nabber/Initialize()
 	LAZYADD(valid_jobs, /datum/job/scientist_assistant)
-	..()
+	. = ..()
 
-/decl/cultural_info/culture/nabber/b/New()
+/decl/cultural_info/culture/nabber/b/Initialize()
 	LAZYADD(valid_jobs, /datum/job/cargo_tech)
-	..()
+	. = ..()
 
-/decl/cultural_info/culture/nabber/a/New()
+/decl/cultural_info/culture/nabber/a/Initialize()
 	LAZYADD(valid_jobs, /datum/job/engineer)
-	..()
+	. = ..()
 
-/decl/cultural_info/culture/nabber/a/plus/New()
+/decl/cultural_info/culture/nabber/a/plus/Initialize()
 	LAZYADD(valid_jobs, /datum/job/doctor)
-	..()
+	. = ..()
 
 /datum/job
 	allowed_branches = list(

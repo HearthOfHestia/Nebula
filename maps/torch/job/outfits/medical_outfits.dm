@@ -6,8 +6,8 @@
 	pda_slot = slot_l_store_str
 	gloves = /obj/item/clothing/gloves/duty/med
 
-/decl/hierarchy/outfit/job/torch/crew/medical/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/medical/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_MEDICAL
 
 /decl/hierarchy/outfit/job/torch/crew/medical/senior

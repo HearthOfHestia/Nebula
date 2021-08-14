@@ -5,8 +5,8 @@
 	path = /obj/item/clothing/head/beret/iseo
 	allowed_branches = ISEO_BRANCHES
 
-/decl/loadout_option/head/solberet/New()
-	..()
+/decl/loadout_option/head/solberet/Initialize()
+	. = ..()
 	var/berets = list()
 	berets["peacekeeper beret"] = /obj/item/clothing/head/beret/iseo/peacekeeper
 	berets["gateway administration beret"] = /obj/item/clothing/head/beret/iseo/gateway
