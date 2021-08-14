@@ -1,6 +1,6 @@
 /decl/hierarchy/mil_uniform
 	name = "Master outfit hierarchy"
-	hierarchy_type = /decl/hierarchy/mil_uniform
+	abstract_type = /decl/hierarchy/mil_uniform
 	var/list/branches = null
 	var/departments = 0
 	var/min_rank = 0
@@ -31,8 +31,8 @@
 
 /decl/hierarchy/mil_uniform/iseo
 	name = "Master ISEO outfit"
-	hierarchy_type = /decl/hierarchy/mil_uniform/iseo
-	
+	abstract_type = /decl/hierarchy/mil_uniform/iseo
+
 
 	pt_under = /obj/item/clothing/under/iseo/pt
 	pt_shoes = /obj/item/clothing/shoes/color/black
@@ -58,7 +58,7 @@
 
 /decl/hierarchy/mil_uniform/espatier
 	name = "Master Espatier outfit"
-	hierarchy_type = /decl/hierarchy/mil_uniform/espatier
+	abstract_type = /decl/hierarchy/mil_uniform/espatier
 
 
 	pt_under = /obj/item/clothing/under/espatier/pt
@@ -89,7 +89,7 @@
 
 /decl/hierarchy/mil_uniform/civilian
 	name = "Master civilian outfit"		//Basically just here for the rent-a-tux, ahem, I mean... dress uniform.
-	hierarchy_type = /decl/hierarchy/mil_uniform/civilian
+	abstract_type = /decl/hierarchy/mil_uniform/civilian
 
 	service_under = /obj/item/clothing/under/suit_jacket/really_black
 	service_skirt = /obj/item/clothing/under/skirt_c/dress/black

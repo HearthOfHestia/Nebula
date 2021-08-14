@@ -14,7 +14,7 @@
 
 /decl/recipe/popcorn
 	appliance = APPLIANCE_MICROWAVE|APPLIANCE_SAUCEPAN|APPLIANCE_POT
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 5)
+	reagents = list(/decl/material/solid/sodiumchloride = 5)
 	fruit = list("corn" = 1)
 	result = /obj/item/chems/food/popcorn
 
@@ -25,7 +25,7 @@
 
 /decl/recipe/meatsteak
 	appliance = APPLIANCE_MICROWAVE|APPLIANCE_SKILLET
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(/obj/item/chems/food/cutlet)
 	result = /obj/item/chems/food/meatsteak
 
@@ -38,7 +38,7 @@
 
 /decl/recipe/syntisteak
 	appliance = APPLIANCE_MICROWAVE|APPLIANCE_SKILLET
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(/obj/item/chems/food/meat/syntiflesh)
 	result = /obj/item/chems/food/meatsteak/synthetic
 

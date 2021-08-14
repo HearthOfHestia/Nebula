@@ -5,7 +5,7 @@
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/explorer
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder
-	name = OUTFIT_JOB_NAME("Pathfinder")
+	name = "Job - Pathfinder"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/pathfinder
@@ -15,12 +15,12 @@
 	gloves = /obj/item/clothing/gloves/duty/sci
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/pathfinder/espatier
-	name = OUTFIT_JOB_NAME("Pathfinder - Espatier Corps")
+	name = "Job - Pathfinder - Espatier Corps"
 	uniform = /obj/item/clothing/under/espatier/utility/science
 	head = /obj/item/clothing/head/espatier/beret/exploration
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/explorer
-	name = OUTFIT_JOB_NAME("Explorer")
+	name = "Job - Explorer"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/explorer
@@ -30,12 +30,12 @@
 	gloves = /obj/item/clothing/gloves/duty/sci
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/explorer/espatier
-	name = OUTFIT_JOB_NAME("Explorer - Espatier Corps")
+	name = "Job - Explorer - Espatier Corps"
 	uniform = /obj/item/clothing/under/espatier/utility/science
 	head = /obj/item/clothing/head/espatier/beret/exploration
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/pilot
-	name = OUTFIT_JOB_NAME("Shuttle Pilot")
+	name = "Job - Shuttle Pilot"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/pilot
@@ -45,6 +45,6 @@
 	gloves = /obj/item/clothing/gloves/duty/sci
 
 /decl/hierarchy/outfit/job/torch/crew/exploration/pilot/espatier
-	name = OUTFIT_JOB_NAME("Shuttle Pilot - Espatier Corps")
+	name = "Job - Shuttle Pilot - Espatier Corps"
 	uniform = /obj/item/clothing/under/espatier/utility/science
 	head = /obj/item/clothing/head/espatier/beret/exploration

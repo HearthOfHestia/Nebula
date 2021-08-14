@@ -1,17 +1,17 @@
 /decl/hierarchy/outfit/job/torch/crew/service
 	l_ear = /obj/item/radio/headset/headset_service
-	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/service
+	abstract_type = /decl/hierarchy/outfit/job/torch/crew/service
 	gloves = /obj/item/clothing/gloves/duty/srv
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Torch")
+	name = "Job - Sanitation Technician - Torch"
 	uniform = /obj/item/clothing/under/janitor
 	shoes = /obj/item/clothing/shoes/color/black
 	id_type = /obj/item/card/id/torch/crew/service/janitor
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor/iseo
-	name = OUTFIT_JOB_NAME("Sanitation Technician - ISEO")
+	name = "Job - Sanitation Technician - ISEO"
 	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/service/janitor
@@ -19,20 +19,20 @@
 	head = /obj/item/clothing/head/iseo/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/janitor/espatier
-	name = OUTFIT_JOB_NAME("Sanitation Technician - Espatier")
+	name = "Job - Sanitation Technician - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook
-	name = OUTFIT_JOB_NAME("Cook - Torch")
+	name = "Job - Cook - Torch"
 	uniform = /obj/item/clothing/under/chef
 	shoes = /obj/item/clothing/shoes/color/black
 	id_type = /obj/item/card/id/torch/crew/service/chef
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook/iseo
-	name = OUTFIT_JOB_NAME("Cook - ISEO")
+	name = "Job - Cook - ISEO"
 	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/service/chef
@@ -40,20 +40,20 @@
 	head = /obj/item/clothing/head/iseo/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/cook/espatier
-	name = OUTFIT_JOB_NAME("Cook - Espatier")
+	name = "Job - Cook - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/bartender
-	name = OUTFIT_JOB_NAME("Bartender - Torch")
+	name = "Job - Bartender - Torch"
 	uniform = /obj/item/clothing/under/bartender
 	shoes = /obj/item/clothing/shoes/dress
 	id_type = /obj/item/card/id/torch/contractor/service/bartender
 	pda_type = /obj/item/modular_computer/pda
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman
-	name = OUTFIT_JOB_NAME("Crewman")
+	name = "Job - Crewman"
 	uniform = /obj/item/clothing/under/iseo/utility
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew
@@ -61,28 +61,28 @@
 	head = /obj/item/clothing/head/iseo/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/crewman/espatier
-	name = OUTFIT_JOB_NAME("Crewman - Espatier")
+	name = "Job - Crewman - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/service
 
 /decl/hierarchy/outfit/job/torch/passenger/research/assist/janitor
-	name = OUTFIT_JOB_NAME("Custodian - Torch")
+	name = "Job - Custodian - Torch"
 	uniform = /obj/item/clothing/under/janitor
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain
-	name = OUTFIT_JOB_NAME("Chaplain - Torch")
+	name = "Job - Chaplain - Torch"
 	uniform = /obj/item/clothing/under/chaplain
 	id_type = /obj/item/card/id/torch/crew/service/chaplain
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/iseo
-	name = OUTFIT_JOB_NAME("Chaplain - ISEO")
+	name = "Job - Chaplain - ISEO"
 	uniform = /obj/item/clothing/under/iseo/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/iseo/beret/service
 
 /decl/hierarchy/outfit/job/torch/crew/service/chaplain/espatier
-	name = OUTFIT_JOB_NAME("Chaplain - Espatier")
+	name = "Job - Chaplain - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/service
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/service

@@ -86,7 +86,7 @@
 /obj/item/chems/food/spreads/butter/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride, 15)
-	reagents.add_reagent(/decl/material/solid/mineral/sodiumchloride, 1)
+	reagents.add_reagent(/decl/material/solid/sodiumchloride, 1)
 
 /obj/item/chems/food/cheese_cracker
 	name = "supreme cheese toast"

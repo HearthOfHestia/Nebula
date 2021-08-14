@@ -1,6 +1,6 @@
 /decl/recipe/friedegg
 	appliance = APPLIANCE_SKILLET
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
 		/obj/item/chems/food/egg
 	)

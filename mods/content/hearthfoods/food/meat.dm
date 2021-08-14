@@ -206,7 +206,7 @@
 /obj/item/chems/food/crab_legs/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 6)
-	reagents.add_reagent(/decl/material/solid/mineral/sodiumchloride, 1)
+	reagents.add_reagent(/decl/material/solid/sodiumchloride, 1)
 
 /obj/item/chems/food/nugget
 	name = "chicken nugget"

@@ -254,7 +254,7 @@
 /decl/recipe/monkeysdelight
 	appliance = APPLIANCE_OVEN|APPLIANCE_MICROWAVE
 	fruit = list("banana" = 1)
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/nutriment/flour = 10)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/nutriment/flour = 10)
 	items = list(
 		/obj/item/chems/food/monkeycube
 	)
@@ -263,7 +263,7 @@
 
 /decl/recipe/baguette
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
 		/obj/item/chems/food/dough = 2,
 	)
@@ -288,7 +288,7 @@
 	items = list(
 		/obj/item/chems/food/dough = 4
 	)
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1)
 	result = /obj/item/chems/food/sliceable/bread
 
 /decl/recipe/poppypretzel
@@ -327,7 +327,7 @@
 
 /decl/recipe/cracker
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/doughslice
 	)
@@ -335,7 +335,7 @@
 
 /decl/recipe/stuffing
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(
 		/obj/item/chems/food/sliceable/bread,
 	)
