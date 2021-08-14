@@ -84,7 +84,7 @@
 	icon = 'mods/species/lizard/icons/facial_hair.dmi'
 	icon_state = "facial_chinhorns"
 	species_allowed = list(SPECIES_LIZARD)
-	gender = NEUTER
+	gender = null
 	blend = ICON_MULTIPLY
 
 /datum/sprite_accessory/facial_hair/lizard/hornadorns

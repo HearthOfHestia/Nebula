@@ -9,6 +9,7 @@
 	#include "..\..\mods\content\modern_earth\_modern_earth.dme"
 	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
 	#include "..\..\mods\species\utility_frames\_utility_frames.dme"
+	#include "..\..\mods\species\lizard\_lizard.dme"
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
 	#include "..\..\mods\content\neural_laces\_laces.dme"
 	#include "..\..\mods\content\genemodding\_genemodding.dme"

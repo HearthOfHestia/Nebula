@@ -14,7 +14,9 @@
 	associated_gender =      FEMALE
 	tail_animation =         'mods/species/lizard/icons/tail.dmi'
 	tail =                   "sogtail"
+	tail_blend =             ICON_MULTIPLY
 	uniform_state_modifier = "_f"
+	limb_blend =             ICON_MULTIPLY
 
 /decl/bodytype/lizard/masculine
 	name =                   "masculine"
