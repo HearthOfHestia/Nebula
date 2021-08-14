@@ -32,10 +32,6 @@
 	if(force && !(obj_flags & ITEM_FLAG_NO_BLUDGEON) && user.a_intent == I_HURT)
 		return ..()
 
-	if(!ATOM_IS_OPEN_CONTAINER(src))
-		to_chat(user, "<span class='notice'>\The [src] isn't open!</span>")
-		return 0
-
 	if(standard_feed_mob(user, M))
 		update_icon(src)
 		return TRUE
