@@ -85,8 +85,7 @@
 	breathing_sound = 'mods/species/lizard/sound/lizard_breathing.ogg'
 
 	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/lizard,
-		BP_BRAIN = /obj/item/organ/internal/brain/lizard
+		BP_EYES = /obj/item/organ/internal/eyes/lizard
 	)
 
 	appearance_descriptors = list(
