@@ -1,7 +1,8 @@
 /decl/cultural_info/culture/lizard
-	name = "Lizard Culture"
-	description = "The humanoid race of reptiles was able to successfully adapt to life in space. \
-	Despite the fact that these creatures are sensitive to cold, they have a number of fighting qualities that have evolved over their long evolved life."
+	name = "Unathi Culture"
+	description = "The Unathi today are generally more space-bound, the majority of them live on large ships that many of them will spend the rest of their lives on.\
+	To them, the future rests on the shoulders of starships and spaceports. Generally speaking, their wealth and economy help them ensure that their own future,\
+	if nobody else's, rests up beyond the clouds of their planets, building and manufacturing starships and orbital stations anywhere they may be allowed."
 	language = /decl/language/lizard
 	secondary_langs = list(
 		/decl/language/human/common,
