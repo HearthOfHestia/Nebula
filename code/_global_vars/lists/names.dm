@@ -8,6 +8,8 @@ var/global/list/first_names_male =   file2list("config/names/first_male.txt")
 var/global/list/first_names_female = file2list("config/names/first_female.txt")
 var/global/list/last_names =         file2list("config/names/last.txt")
 var/global/list/clown_names =        file2list("config/names/clown.txt")
+var/global/list/first_name_skrell =  file2list("config/names/first_name_skrell.txt")
+var/global/list/last_name_skrell =   file2list("config/names/last_name_skrell.txt")
 
 var/global/list/verbs =              file2list("config/names/verbs.txt")
 var/global/list/adjectives =         file2list("config/names/adjectives.txt")

@@ -7,5 +7,8 @@
 	colour = "selenian"
 	key = "k"
 	flags = WHITELISTED
-	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","*","!")
+	syllables = list("qr","qrr","xuq","qil","quum","xuqm","vol","xrim","zaoo","qu-uu","qix","qoo","zix","'","!")
 	shorthand = "SK"
+
+/decl/language/skrell/get_random_name(var/gender)
+	return capitalize(pick(global.first_name_skrell)) + capitalize(pick(global.last_name_skrell))
