@@ -22,7 +22,7 @@
 #include "gear/gear_suit.dm"
 #include "gear/gear_under.dm"
 #include "turfs/flooring.dm"
-//#include "maps/skrellscoutship/skrellscoutship.dm"
+#include "maps/skrellscoutship/skrellscoutship.dm"
 #include "gear/ammo.dm"
 #include "gear/fabrication_designs.dm"
 #include "gear/accessories.dm"

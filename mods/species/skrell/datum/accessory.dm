@@ -10,7 +10,7 @@
 	icon_state = "very_short"
 	species_allowed = list(SPECIES_SKRELL)
 
-/datum/sprite_accessory/hair/skrell
+/datum/sprite_accessory/hair/skrell/raskin
 	name = "Raskinta - Split Very Short Headtails"
 	icon = 'mods/species/skrell/icons/body/hair.dmi'
 	icon_state = "split"
