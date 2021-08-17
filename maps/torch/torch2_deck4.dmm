@@ -2126,9 +2126,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
-"hq" = (
-/turf/simulated/wall/map_preset/tan,
-/area/command/captainmess)
 "hr" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -11152,9 +11149,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/crew_quarters/adherent)
-"Mp" = (
-/turf/simulated/wall/prepainted,
-/area/command/captainmess)
 "Mq" = (
 /obj/structure/railing/mapped{
 	dir = 8;
@@ -33556,7 +33550,7 @@ er
 hl
 Zd
 Zd
-hq
+Zd
 ll
 Wf
 WI
@@ -35568,15 +35562,15 @@ er
 er
 cK
 er
-Mp
-Mp
-Mp
-Mp
-Mp
-Mp
-Mp
-hq
-hq
+er
+er
+er
+er
+er
+er
+er
+Zd
+VW
 VW
 VW
 WI
