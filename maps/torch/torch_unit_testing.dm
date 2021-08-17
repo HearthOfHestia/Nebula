@@ -40,6 +40,7 @@
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant/bar = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/vacant = NO_SCRUBBER|NO_VENT|NO_APC,
+		/area/vacant/marine_bay = 0,
 		/area/vacant/prototype/control = 0,
 		/area/vacant/prototype/engine = 0,
 		/area/vacant/cargo = NO_SCRUBBER|NO_VENT,
