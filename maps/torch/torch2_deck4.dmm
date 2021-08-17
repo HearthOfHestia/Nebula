@@ -62,9 +62,12 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "ap" = (
-/obj/item/stool/padded,
-/obj/random/trash,
-/turf/simulated/floor/wood/walnut,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/random/closet,
+/obj/random/junk,
+/turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "aq" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
@@ -742,11 +745,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod7/station)
 "cE" = (
-/obj/random/trash,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
+/obj/random/closet,
+/obj/random/trash,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "cI" = (
 /obj/structure/cable/green{
@@ -1139,10 +1143,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod7/station)
 "dR" = (
-/obj/structure/table/gamblingtable,
 /obj/random/trash,
-/obj/item/deck/cards,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "dU" = (
 /obj/structure/ladder,
@@ -1248,9 +1250,14 @@
 /area/hallway/primary/fourthdeck/fore)
 "em" = (
 /obj/structure/table/gamblingtable,
-/obj/random/plushie,
 /obj/item/deck/cards,
-/turf/simulated/floor/wood/walnut,
+/obj/item/deck/cards,
+/obj/item/deck/cards,
+/obj/item/deck/cards,
+/obj/random/cash,
+/obj/random/cash,
+/obj/random/cash,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "en" = (
 /obj/machinery/conveyor{
@@ -1335,10 +1342,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod7/station)
 "eC" = (
-/obj/structure/table/marble,
-/obj/random/trash,
-/obj/item/storage/box/glasses/shot,
-/turf/simulated/floor/plating,
+/obj/item/stool/padded,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "eE" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -1448,12 +1453,16 @@
 /obj/item/book/manual/nt_regs,
 /turf/simulated/floor/wood,
 /area/crew_quarters/lounge)
-"fd" = (
-/obj/structure/table/frame,
-/obj/machinery/light/small{
-	dir = 4
+"fb" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
+/area/maintenance/fourthdeck/forestarboard)
+"fd" = (
+/obj/random/closet,
+/obj/random/trash,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "fg" = (
 /obj/structure/cable/green{
@@ -1874,13 +1883,7 @@
 /area/hallway/primary/fourthdeck/aft)
 "gr" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/forestarboard)
-"gu" = (
-/obj/structure/table/marble,
-/obj/random/trash,
-/obj/item/storage/box/glasses/pint,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "gx" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2105,24 +2108,43 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/maintenance/fourthdeck/forestarboard)
 "hm" = (
 /obj/structure/bed,
 /obj/item/bedsheet/clown,
-/turf/simulated/floor/wood/walnut,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "ho" = (
 /obj/random/trash,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "hp" = (
 /obj/random/trash,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
@@ -2406,10 +2428,10 @@
 	dir = 1
 	},
 /obj/machinery/disposal,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "in" = (
-/obj/machinery/light/small{
+/obj/machinery/light/spot{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -3196,6 +3218,20 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/aft)
+"lI" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/maintenance/fourthdeck/forestarboard)
 "lK" = (
 /obj/random/trash,
 /obj/structure/disposalpipe/segment,
@@ -4245,11 +4281,11 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "py" = (
-/obj/machinery/computer/arcade,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
+/obj/structure/closet,
+/obj/item/storage/fancy/crayons,
+/obj/item/storage/fancy/crayons,
+/obj/item/storage/fancy/crayons,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "pD" = (
 /obj/structure/railing/mapped{
@@ -4395,6 +4431,11 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
@@ -4866,6 +4907,21 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
+"rI" = (
+/obj/random/trash,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/maintenance/fourthdeck/forestarboard)
 "rO" = (
 /obj/structure/cable/green{
 	d2 = 2;
@@ -11913,12 +11969,6 @@
 	},
 /turf/simulated/open,
 /area/hallway/primary/fourthdeck/fore)
-"OI" = (
-/obj/structure/table/gamblingtable,
-/obj/random/smokes,
-/obj/item/deck/cards,
-/turf/simulated/floor/wood/walnut,
-/area/maintenance/fourthdeck/forestarboard)
 "OJ" = (
 /obj/machinery/computer/modular/preset/security{
 	dir = 1;
@@ -12589,13 +12639,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
-"QA" = (
-/obj/structure/closet/crate/freezer,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/wood/walnut,
-/area/maintenance/fourthdeck/forestarboard)
 "QB" = (
 /obj/effect/shuttle_landmark/ninja/deck5{
 	name = "4th Deck, Fore Dock"
@@ -13015,9 +13058,12 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "RL" = (
-/obj/structure/table/marble,
-/obj/machinery/chemical_dispenser/bar_alc,
-/turf/simulated/floor/wood/walnut,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -25;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "RM" = (
 /obj/effect/floor_decal/corner/brown{
@@ -13094,7 +13140,7 @@
 /area/maintenance/fourthdeck/port)
 "RT" = (
 /obj/item/stool/padded,
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "RU" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -13817,10 +13863,6 @@
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
-"Tz" = (
-/obj/random/closet,
-/turf/simulated/floor/wood/walnut,
-/area/maintenance/fourthdeck/forestarboard)
 "TA" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -14033,8 +14075,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
 "Un" = (
-/obj/item/stack/material/brick/mapped/marble/twentyfive,
-/turf/simulated/floor/wood/walnut,
+/obj/structure/fitness/weightlifter,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "Uo" = (
 /obj/structure/disposalpipe/segment{
@@ -14047,7 +14089,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "Up" = (
 /obj/effect/floor_decal/corner/red{
@@ -14796,7 +14843,7 @@
 /area/maintenance/fourthdeck/foreport)
 "Wx" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "Wy" = (
 /obj/structure/cable/green{
@@ -14979,8 +15026,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/aft)
 "WU" = (
-/obj/structure/table/frame,
-/turf/simulated/floor/plating,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "WW" = (
 /obj/machinery/door/airlock/mining{
@@ -15024,11 +15070,15 @@
 /turf/simulated/wall/prepainted,
 /area/maintenance/fourthdeck/starboard)
 "Xg" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 1;
+	icon_state = "map-scrubbers"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
@@ -15047,6 +15097,11 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
@@ -15318,9 +15373,16 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/port)
 "XM" = (
-/obj/random/trash,
-/obj/random/trash,
-/turf/simulated/floor/wood/walnut,
+/obj/machinery/power/apc{
+	dir = 8;
+	name = "west bump";
+	pixel_x = -24
+	},
+/obj/structure/cable/green{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "XN" = (
 /obj/effect/floor_decal/corner/brown/mono,
@@ -15546,8 +15608,10 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/fourthdeck)
 "Yu" = (
-/obj/item/stool/padded,
-/turf/simulated/floor/plating,
+/obj/random/closet,
+/obj/random/trash,
+/obj/random/trash,
+/turf/simulated/floor/tiled/dark,
 /area/maintenance/fourthdeck/forestarboard)
 "Yv" = (
 /obj/structure/catwalk,
@@ -16224,7 +16288,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/deckchief)
 "ZR" = (
-/turf/simulated/floor/wood/walnut,
+/obj/structure/bed/padded,
+/obj/item/bedsheet/brown,
+/obj/structure/curtain/open/bed,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/fourthdeck/forestarboard)
 "ZS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -33744,11 +33811,11 @@ aS
 bv
 Lu
 er
-QA
-fL
+ZR
+ap
 ZR
 cE
-fL
+ZR
 Uo
 ij
 Zd
@@ -33946,10 +34013,10 @@ er
 er
 Xl
 er
-Tz
-aV
-Yu
-Yu
+fL
+dR
+dR
+WU
 gr
 Xg
 hm
@@ -34148,13 +34215,13 @@ rr
 er
 VR
 er
-Tz
-Yu
-OI
-OI
-Yu
-Os
 ZR
+Yu
+ZR
+fd
+ZR
+lI
+WU
 Zd
 aY
 aY
@@ -34350,13 +34417,13 @@ aV
 er
 VR
 er
-ZR
-ap
-em
-dR
-RT
+er
+er
+er
+er
+er
 ho
-ZR
+WU
 Zd
 aY
 aY
@@ -34555,9 +34622,9 @@ er
 py
 fL
 RT
-Yu
-fL
-ho
+RL
+XM
+rI
 KW
 Zd
 aY
@@ -34755,12 +34822,12 @@ er
 bY
 er
 er
-Yu
-ZR
-fL
+eC
+em
+RT
 Wx
 hp
-ZR
+fb
 Zd
 Ga
 Ga
@@ -34960,9 +35027,9 @@ er
 WU
 eC
 WU
-gu
-aV
+WU
 fL
+WU
 Zd
 Ga
 Ga
@@ -35160,11 +35227,11 @@ Mm
 QX
 er
 Un
-XM
 fL
-ZR
+WU
+Un
 fL
-ZR
+WU
 Zd
 Rg
 Rg
@@ -35361,12 +35428,12 @@ bN
 bZ
 QX
 er
-fd
+fL
+fL
 WU
-WU
-RL
+fL
 in
-ZR
+WU
 RC
 lr
 lr
