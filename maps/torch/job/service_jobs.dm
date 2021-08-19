@@ -109,6 +109,8 @@
 /datum/job/bartender
 	title = "Bartender"
 	department_types = list(/decl/department/service)
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Executive Officer"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 30

@@ -43,21 +43,6 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride/oil/corn, optimal_oil*(1 - variance))
 	fry_loop = new(list(src), FALSE)
 
-/obj/machinery/appliance/cooker/fryer/heat_up()
-	if (!..())
-		return
-	//Set temperature of oil reagent
-	if (ispath(reagents.primary_reagent, /decl/material/liquid/nutriment/triglyceride/oil))
-		LAZYINITLIST(reagents.reagent_data[reagents.primary_reagent])
-		reagents.reagent_data[reagents.primary_reagent]["temperature"] = temperature
-
-/obj/machinery/appliance/cooker/fryer/ProcessAtomTemperature()
-	//Set temperature of oil reagent
-	if (ispath(reagents.primary_reagent, /decl/material/liquid/nutriment/triglyceride/oil))
-		LAZYINITLIST(reagents.reagent_data[reagents.primary_reagent])
-		reagents.reagent_data[reagents.primary_reagent]["temperature"] = temperature
-	. = ..()
-
 /obj/machinery/appliance/cooker/fryer/update_cooking_power()
 	..()//In addition to parent temperature calculation
 	//Fryer efficiency also drops when oil levels arent optimal
@@ -79,7 +64,7 @@
 	..()
 	if (cooking)
 		icon_state = on_icon
-		fry_loop.start()
+		fry_loop.start(src)
 	else
 		icon_state = off_icon
 		fry_loop.stop(src)
@@ -88,7 +73,7 @@
 //This causes a slow drop in oil levels, encouraging refill after extended use
 /obj/machinery/appliance/cooker/fryer/do_cooking_tick(var/datum/cooking_item/CI)
 	if(..() && (CI.oil < CI.max_oil) && prob(20))
-		var/datum/reagents/buffer = new /datum/reagents(2)
+		var/datum/reagents/buffer = new /datum/reagents(2, global.temp_reagents_holder)
 		reagents.trans_to_holder(buffer, min(0.5, CI.max_oil - CI.oil))
 		CI.oil += buffer.total_volume
 		CI.container.soak_reagent(buffer)
@@ -97,17 +82,18 @@
 //Upon finishing a recipe the fryer will analyse any oils in the result, and replace them with our oil
 //As well as capping the total to the max oil
 /obj/machinery/appliance/cooker/fryer/finish_cooking(var/datum/cooking_item/CI)
-	..()
+	. = ..()
 	var/total_oil = 0
 	var/total_our_oil = 0
 	var/total_removed = 0
+	var/decl/material/our_oil = reagents.get_primary_reagent_decl()
 
 	for (var/obj/item/I in CI.container)
 		if (I.reagents?.total_volume)
 			for (var/_R in I.reagents.reagent_volumes)
 				if (ispath(_R, /decl/material/liquid/nutriment/triglyceride/oil))
 					total_oil += I.reagents.reagent_volumes[_R]
-					if (_R != reagents.primary_reagent)
+					if (_R != our_oil.type)
 						total_removed += I.reagents.reagent_volumes[_R]
 						I.reagents.remove_reagent(_R, I.reagents.reagent_volumes[_R])
 					else
@@ -118,7 +104,7 @@
 
 		if (total_our_oil < total_oil)
 			//If we have less than the combined total, then top up from our reservoir
-			var/datum/reagents/buffer = new /datum/reagents(INFINITY)
+			var/datum/reagents/buffer = new /datum/reagents(INFINITY, global.temp_reagents_holder)
 			reagents.trans_to_holder(buffer, total_oil - total_our_oil)
 			CI.container.soak_reagent(buffer)
 		else if (total_our_oil > total_oil)
@@ -129,10 +115,8 @@
 				var/obj/item/I = thing
 				if (I.reagents?.total_volume)
 					for (var/_R in I.reagents.reagent_volumes)
-						if (_R == reagents.primary_reagent)
+						if (_R == our_oil.type)
 							I.reagents.remove_reagent(_R, I.reagents.reagent_volumes[_R]*portion)
-					if(REAGENT_DATA(I.reagents, reagents.primary_reagent)) // cool down the oil
-						LAZYSET(I.reagents.reagent_data[reagents.primary_reagent], "temperature", T0C + rand(35, 45)) // warm, but not hot; avoiding aftereffects of the hot oil
 
 /obj/machinery/appliance/cooker/fryer/cook_mob(var/mob/living/victim, var/mob/user)
 
@@ -200,23 +184,8 @@
 	if(istype(I, /obj/item/chems/glass) && I.reagents)
 		if (I.reagents.total_volume <= 0 && reagents)
 			//Its empty, handle scooping some hot oil out of the fryer
-			reagents.trans_to(I, I.reagents.maximum_volume)
+			reagents.trans_to_obj(I, I.reagents.maximum_volume)
 			user.visible_message("[user] scoops some oil out of [src].", SPAN_NOTICE("You scoop some oil out of [src]."))
 			return TRUE
-	//It contains stuff, handle pouring any oil into the fryer
-	//Possibly in future allow pouring non-oil reagents in, in  order to sabotage it and poison food.
-	//That would really require coding some sort of filter or better replacement mechanism first
-	//So for now, restrict to oil only
-		var/amount = 0
-		for (var/_R in I.reagents.reagent_volumes)
-			if (ispath(_R, /decl/material/liquid/nutriment/triglyceride/oil))
-				var/delta = REAGENTS_FREE_SPACE(reagents)
-				delta = min(delta, I.reagents.reagent_volumes[_R])
-				reagents.add_reagent(_R, delta)
-				I.reagents.remove_reagent(_R, delta)
-				amount += delta
-		if (amount > 0)
-			user.visible_message("[user] pours some oil into [src].", SPAN_NOTICE("You pour [amount]u of oil into [src]."), SPAN_NOTICE("You hear something viscous being poured into a metal container."))
-			return TRUE
-	//If neither of the above returned, then call parent as normal
+	//If the above hasn't returned, then call parent as normal
 	..()
