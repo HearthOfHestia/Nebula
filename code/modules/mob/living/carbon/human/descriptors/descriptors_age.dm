@@ -5,7 +5,7 @@
 		"a toddler" =      3,
 		"a child" =        7,
 		"a teenager" =    13,
-		"a young adult" = 17,
+		"a young adult" = 18, // HEARTH OF HESTIA EDIT
 		"an adult" =      25,
 		"middle-aged" =   40,
 		"aging" =         55,
@@ -19,11 +19,11 @@
 		"somewhat younger than you",
 		"younger than you",
 		"much younger than you",
-		"a child compared to you"
+		"very young compared to you" // HEARTH OF HESTIA EDIT
 	)
 	comparative_value_descriptors_larger = list(
 		"slightly older than you",
-		"older  than you",
+		"older than you",
 		"much older than you",
 		"ancient compared to you"
 	)
@@ -59,7 +59,7 @@
 /datum/appearance_descriptor/age/get_min_chargen_value()
 	var/age_key = standalone_value_descriptors[chargen_min_index]
 	return standalone_value_descriptors[age_key]
-	
+
 /datum/appearance_descriptor/age/get_max_chargen_value()
 	var/age_key = standalone_value_descriptors[min(length(standalone_value_descriptors), chargen_max_index+1)]
 	. = standalone_value_descriptors[age_key]-1
