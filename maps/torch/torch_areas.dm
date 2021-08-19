@@ -243,12 +243,6 @@
 	name = "\improper First Deck Aft Hallway"
 	icon_state = "hallA"
 
-/area/crew_quarters/safe_room/firstdeck
-	name = "\improper First Deck Safe Room"
-
-/area/crew_quarters/safe_room/medical
-	name = "\improper Medical Safe Room"
-
 /area/maintenance/substation/firstdeck // First Deck (Z-4)
 	name = "First Deck Substation"
 
@@ -980,6 +974,9 @@
 /area/security
 	req_access = list(access_security)
 
+/area/security/processing
+	name = "Security - Processing Room"
+
 /area/security/bo
 	name = "\improper Security - Brig Chief"
 	icon_state = "Warden"
@@ -1060,6 +1057,11 @@
 
 /area/medical/locker
 	name = "\improper Medical Locker Room"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
+
+/area/medical/resleevelab
+	name = "\improper Resleeving Lab"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
