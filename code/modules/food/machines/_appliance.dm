@@ -107,8 +107,7 @@
 	return SPAN_DANGER("It is burning!")
 
 /obj/machinery/appliance/proc/get_cooking_item_from_container(var/obj/item/chems/cooking_container/CC)
-	for(var/C in cooking_objs)
-		var/datum/cooking_item/CI = C
+	for(var/datum/cooking_item/CI as anything in cooking_objs)
 		if(CI.container == CC)
 			return CI
 
@@ -236,6 +235,7 @@
 	//From here we can start cooking food
 	add_content(I, user)
 	update_icon()
+	return TRUE // do not call afterattack
 
 //Override for container mechanics
 /obj/machinery/appliance/proc/add_content(var/obj/item/I, var/mob/user)
@@ -336,9 +336,24 @@
 	return TRUE
 
 /obj/machinery/appliance/Process()
-	if (cooking_power > 0 && cooking)
-		for (var/i in cooking_objs)
-			do_cooking_tick(i)
+	if (cooking)
+		for (var/datum/cooking_item/CI as anything in cooking_objs)
+			if(cooking_power > 0)
+				do_cooking_tick(CI)
+		check_cooking()
+
+/obj/machinery/appliance/proc/check_cooking()
+	if (cooking)
+		if(!length(cooking_objs))
+			cooking = FALSE
+			return
+		var/has_contents = FALSE
+		for (var/datum/cooking_item/CI as anything in cooking_objs)
+			if(length(CI.container.contents) || CI.container.reagents.total_volume)
+				has_contents = TRUE
+				break
+		if (!has_contents)
+			cooking = FALSE
 
 /obj/machinery/appliance/proc/finish_cooking(var/datum/cooking_item/CI)
 	audible_message("<b>[src]</b> [finish_verb]")
@@ -394,7 +409,7 @@
 
 	var/list/words = list()
 	var/list/cooktypes = list()
-	var/datum/reagents/buffer = new /datum/reagents(1000)
+	var/datum/reagents/buffer = new /datum/reagents(1000, global.temp_reagents_holder)
 	var/totalcolour
 
 	for (var/obj/item/I in CI.container)
@@ -430,7 +445,7 @@
 	CI.container.reagents.trans_to_holder(buffer, CI.container.reagents.total_volume)
 
 	var/obj/item/chems/food/variable/result = new cook_path(CI.container)
-	buffer.trans_to(result, buffer.total_volume)
+	buffer.trans_to_obj(result, buffer.total_volume)
 
 	//Filling overlay
 	var/image/I = image(result.icon, "[result.icon_state]_filling")
@@ -550,6 +565,7 @@
 		qdel(CI)
 	else
 		CI.reset()//reset instead of deleting if the container is left inside
+	check_cooking()
 
 /obj/machinery/appliance/proc/cook_mob(var/mob/living/victim, var/mob/user)
 	return
@@ -605,6 +621,7 @@
 	victim.forceMove(null)
 	QDEL_NULL(victim)
 	QDEL_NULL(H)
+	check_cooking()
 
 	return result
 

@@ -135,33 +135,6 @@
 	var/icon_cooked = "batter_cooked"
 	var/coated_adj = "battered"
 
-/decl/material/liquid/nutriment/batter/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	//We'll assume that the batter isnt going to be regurgitated and eaten by someone else. Only show this once
-	var/list/data = REAGENT_DATA(holder, type)
-	if (!data["cooked"])
-		//Raw coatings will sometimes cause vomiting
-		if (prob(1))
-			to_chat(M, "This raw [name] tastes disgusting!")
-			if (ishuman(M))
-				var/mob/living/carbon/human/H = M
-				H.vomit()
-	..()
-
-/decl/material/liquid/nutriment/batter/initialize_data(var/newdata) // Called when the reagent is created.
-	. = ..()
-	if (!.)
-		. = list()
-	else
-		if (isnull(.["cooked"]))
-			.["cooked"] = FALSE
-		return .
-	.["cooked"] = FALSE
-
-/decl/material/liquid/nutriment/batter/mix_data(var/datum/reagents/reagents, var/newdata, var/newamount)
-	. = ..()
-	if(newamount > (REAGENT_VOLUME(reagents, type)/2)) // take whatever the majority is
-		.["cooked"] = newdata["cooked"]
-
 /decl/material/liquid/nutriment/batter/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
 	..()
 	new /obj/effect/decal/cleanable/pie_smudge(T)
@@ -200,12 +173,8 @@
 	lore_text = "Oils are liquid fats."
 	color = "#c79705"
 	touch_met = 1.5
-	var/lastburnmessage = 0
 	taste_description = "some sort of oil"
 	taste_mult = 0.1
-
-/decl/material/liquid/nutriment/triglyceride/oil/initialize_data(var/newdata) // Called when the reagent is created.
-	return ..() || list("temperature" = T20C, "lastburnmessage" = 0)
 
 /decl/material/liquid/nutriment/triglyceride/oil/touch_turf(var/turf/simulated/T, var/datum/reagents/holder)
 	if(!istype(T))
@@ -214,26 +183,6 @@
 	if(holder.reagent_volumes[type] >= 3)
 		T.wet_floor()
 
-//Handles setting the temperature when oils are mixed
-/decl/material/liquid/nutriment/mix_data(var/datum/reagents/reagents, var/list/newdata, var/newamount)
-	if(!islist(newdata) || !newdata.len)
-		return
-
-	var/data = ..()
-	var/volume = REAGENT_VOLUME(reagents, type)
-	var/ouramount = volume - newamount
-	if (ouramount <= 0 || !data["temperature"] || !volume)
-		//If we get here, then this reagent has just been created, just copy the temperature exactly
-		data["temperature"] = newdata["temperature"]
-
-	else
-		//Our temperature is set to the mean of the two mixtures, taking volume into account
-		var/total = (data["temperature"] * ouramount) + (newdata["temperature"] * newamount)
-		data["temperature"] = total / volume
-
-	return data
-
-
 //Calculates a scaling factor for scalding damage, based on the temperature of the oil and creature's heat resistance
 /decl/material/liquid/nutriment/triglyceride/oil/proc/heatdamage(var/mob/living/carbon/M, var/datum/reagents/holder)
 	var/threshold = 360//Human heatdamage threshold
@@ -241,10 +190,8 @@
 	if (S && istype(S))
 		threshold = S.heat_level_1
 
-	var/data = REAGENT_DATA(holder, type)
-
 	//If temperature is too low to burn, return a factor of 0. no damage
-	if (data["temperature"] < threshold)
+	if (!holder?.my_atom || (holder.my_atom.temperature < threshold))
 		return 0
 
 	//Step = degrees above heat level 1 for 1.0 multiplier
@@ -252,20 +199,15 @@
 	if (S && istype(S))
 		step = (S.heat_level_2 - S.heat_level_1)*1.5
 
-	. = data["temperature"] - threshold
+	. = holder.my_atom.temperature - threshold
 	. /= step
 	. = min(., 2.5)//Cap multiplier at 2.5
 
 /decl/material/liquid/nutriment/triglyceride/oil/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
-	var/dfactor = heatdamage(M)
+	var/dfactor = heatdamage(M, holder)
 	if (dfactor)
-		var/data = REAGENT_DATA(holder, type)
-		LAZYINITLIST(holder.reagent_data)
 		M.take_organ_damage(0, removed * 1.5 * dfactor)
-		data["temperature"] -= (6 * removed) / (1 + REAGENT_VOLUME(holder, type)*0.1)//Cools off as it burns you
-		if (LAZYACCESS(holder.reagent_data[type], "lastburnmessage")+100 < world.time)
-			to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
-			LAZYSET(holder.reagent_data[type], "lastburnmessage", world.time)
+		to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
 
 /decl/material/liquid/nutriment/triglyceride/oil/corn
 	name = "Corn Oil"
