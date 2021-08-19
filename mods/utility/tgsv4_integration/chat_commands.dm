@@ -12,6 +12,7 @@
 /datum/tgs_chat_command/tgscheck
 	name = "check"
 	help_text = "Gets the playercount, gamemode, and address of the server"
+	admin_only = FALSE
 
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
 	var/server = config.server
@@ -24,4 +25,5 @@
 
 /datum/tgs_chat_command/tgs_manifest_webhook/Run(datum/tgs_chat_user/sender, params)
 	SSwebhooks.send(WEBHOOK_CREW_MANIFEST, list("manifest" = nano_crew_manifest()))
+	return ""
 

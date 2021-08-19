@@ -2,8 +2,8 @@
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/liquid/water = 5)
 	items = list(
-		/obj/item/chems/food/doughslice,
-		/obj/item/chems/food/rawcutlet
+		/obj/item/chems/food/doughslice = 1,
+		/obj/item/chems/food/rawcutlet = 1
 	)
 	reagent_mix = REAGENT_REPLACE //Water used up in cooking
 	result = /obj/item/chems/food/meatbun
@@ -12,7 +12,7 @@
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/liquid/water = 5, /decl/material/liquid/nutriment/protein/egg = 3)
 	items = list(
-		/obj/item/chems/food/doughslice
+		/obj/item/chems/food/doughslice = 1
 	)
 	reagent_mix = REAGENT_REPLACE //Water, egg used up in cooking
 	result = /obj/item/chems/food/custardbun
@@ -39,9 +39,9 @@
 
 /decl/recipe/cheese_cracker
 	items = list(
-		/obj/item/chems/food/spreads,
-		/obj/item/chems/food/slice/bread,
-		/obj/item/chems/food/cheesewedge
+		/obj/item/chems/food/spreads = 1,
+		/obj/item/chems/food/slice/bread = 1,
+		/obj/item/chems/food/cheesewedge = 1
 	)
 	reagents = list(/decl/material/solid/spacespice = 1)
 	result = /obj/item/chems/food/cheese_cracker
@@ -51,8 +51,8 @@
 	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
 	fruit = list("chili" = 1, "lemon" = 1)
 	items = list(
-		/obj/item/chems/food/fish,
-		/obj/item/chems/food/tortilla
+		/obj/item/chems/food/fish = 1,
+		/obj/item/chems/food/tortilla = 1
 	)
 	result = /obj/item/chems/food/fish_taco
 
@@ -64,7 +64,7 @@
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/solid/ice = 5)
 	reagent_mix = REAGENT_REPLACE
 	items = list(
-		/obj/item/chems/food/icecream
+		/obj/item/chems/food/icecream = 1
 	)
 	result = /obj/item/chems/food/icecreamsandwich
 
@@ -73,7 +73,7 @@
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/solid/ice = 5)
 	reagent_mix = REAGENT_REPLACE
 	items = list(
-		/obj/item/chems/food/icecream
+		/obj/item/chems/food/icecream = 1
 	)
 	result = /obj/item/chems/food/banana_split
 
@@ -81,7 +81,7 @@
 	appliance = APPLIANCE_SKILLET
 	reagents = list(/decl/material/liquid/nutriment/honey = 5)
 	items = list(
-		/obj/item/chems/food/slice/bread
+		/obj/item/chems/food/slice/bread = 1
 	)
 	reagent_mix = REAGENT_REPLACE //Simplify end product
 	result = /obj/item/chems/food/honeytoast
@@ -90,7 +90,7 @@
 	appliance = APPLIANCE_SAUCEPAN // it's melted and poured into a mold...?
 	reagents = list(/decl/material/liquid/nutriment/coco = 2, /decl/material/liquid/drink/milk/cream = 5)
 	items = list(
-		/obj/item/chems/food/chocolatebar
+		/obj/item/chems/food/chocolatebar = 1
 	)
 	reagent_mix = REAGENT_REPLACE
 	result = /obj/item/chems/food/truffle

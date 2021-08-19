@@ -128,11 +128,6 @@
 		if (do_coating_prefix)
 			SetName("[our_coating.coated_adj] [name]")
 
-	for (var/r in reagents.reagent_volumes)
-		if (ispath(r, /decl/material/liquid/nutriment/batter))
-			LAZYINITLIST(reagents.reagent_data)
-			LAZYSET(reagents.reagent_data[r], "cooked", TRUE)
-
 /obj/item/chems/food/Initialize()
 	.=..()
 	if(nutriment_amt)
@@ -142,7 +137,6 @@
 		if(ispath(reagent_type, /decl/material/liquid/nutriment/batter))
 			LAZYINITLIST(reagents.reagent_data)
 			LAZYINITLIST(reagents.reagent_data[reagent_type]) // add a new reagent_data entry for each reagent type
-			reagents.reagent_data[reagent_type]["cooked"] = TRUE // batter starts cooked in compile-time foods
 
 	//Placeholder for effect that trigger on eating that aren't tied to reagents.
 /obj/item/chems/food/proc/On_Consume(var/mob/M)
@@ -194,9 +188,7 @@
 		to_chat(user, "<span class='danger'>None of [src] left!</span>")
 		qdel(src)
 		return 0
-	if(!ATOM_IS_OPEN_CONTAINER(src))
-		to_chat(user, "<span class='notice'>\The [src] isn't open!</span>")
-		return 0
+
 	if(istype(M, /mob/living/carbon))
 		//TODO: replace with standard_feed_mob() call.
 		var/mob/living/carbon/C = M
