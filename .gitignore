@@ -49,3 +49,5 @@ lib/*.so
 # python
 *.pyc
 __pycache__
+
+nebula.dme

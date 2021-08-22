@@ -64,7 +64,9 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s2,
-		/datum/mil_rank/espatier/o2
+		/datum/mil_rank/sc/s1,
+		/datum/mil_rank/espatier/o2,
+		/datum/mil_rank/espatier/o1
 	)
 
 	access = list(
@@ -98,6 +100,8 @@
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
+		/datum/mil_rank/sc/t3,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3
 	)

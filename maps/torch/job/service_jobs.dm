@@ -49,11 +49,14 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/espatier/e2,
+		/datum/mil_rank/espatier/e3,
+		/datum/mil_rank/espatier/e4,
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
-		/datum/mil_rank/espatier/e3,
-		/datum/mil_rank/espatier/e4
+		/datum/mil_rank/sc/t3,
+		/datum/mil_rank/sc/t4,
 	)
 	min_skill = list(   SKILL_HAULING = SKILL_BASIC, SKILL_LITERACY    = SKILL_ADEPT)
 
@@ -85,9 +88,11 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/sc/t4,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3,
 		/datum/mil_rank/espatier/e4
@@ -146,8 +151,11 @@
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/service/crewman/espatier
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/espatier/e1,
+		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3,
 		/datum/mil_rank/espatier/e4,
+		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/sc/t4
