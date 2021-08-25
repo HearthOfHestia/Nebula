@@ -57,10 +57,13 @@
 		/datum/mil_branch/civilian = /decl/hierarchy/outfit/job/torch/crew/supply/contractor
 	)
 	allowed_ranks = list(
+		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/espatier/e4,
 		/datum/mil_rank/espatier/e3,
+		/datum/mil_rank/espatier/e2,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/civ/contractor
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
