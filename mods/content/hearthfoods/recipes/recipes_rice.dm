@@ -48,8 +48,8 @@
 	fruit = list("carrot" = 1, "cabbage" = 1, "mushroom" = 1)
 	reagents = list(/decl/material/liquid/nutriment/rice = 5, /decl/material/solid/spacespice = 2)
 	items = list(
-		/obj/item/chems/food/egg,
-		/obj/item/chems/food/cutlet
+		/obj/item/chems/food/egg = 1,
+		/obj/item/chems/food/cutlet = 1
 	)
 	reagent_mix = REAGENT_REPLACE //Simplify end product
 	result = /obj/item/chems/food/bibimbap
@@ -59,6 +59,6 @@
 	reagents = list(/decl/material/liquid/water = 5, /decl/material/liquid/nutriment/rice = 10)
 	reagent_mix = REAGENT_REPLACE
 	items = list(
-		/obj/item/chems/food/bacon
+		/obj/item/chems/food/bacon = 1
 	)
 	result = /obj/item/chems/food/porkbowl

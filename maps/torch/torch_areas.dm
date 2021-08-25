@@ -243,12 +243,6 @@
 	name = "\improper First Deck Aft Hallway"
 	icon_state = "hallA"
 
-/area/crew_quarters/safe_room/firstdeck
-	name = "\improper First Deck Safe Room"
-
-/area/crew_quarters/safe_room/medical
-	name = "\improper Medical Safe Room"
-
 /area/maintenance/substation/firstdeck // First Deck (Z-4)
 	name = "First Deck Substation"
 
@@ -623,16 +617,6 @@
 	name = "\improper Command - CoS' Office"
 	req_access = list(access_hos)
 
-/area/crew_quarters/heads/office/cl
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Office"
-	req_access = list(access_liaison)
-
-/area/crew_quarters/heads/office/cl/backroom
-	icon_state = "heads_cl"
-	name = "\improper Command - CL's Backroom"
-	req_access = list(access_liaison)
-
 /area/crew_quarters/heads/office/sgr
 	icon_state = "heads_sr"
 	name = "\improper Command - NCR's Office"
@@ -699,6 +683,10 @@
 /area/vacant/mess
 	name = "\improper Old Mess"
 	icon_state = "bar"
+
+/area/vacant/marine_bay
+	name = "Vacant Barracks"
+	icon_state = "crew_quarters"
 
 /area/vacant/chapel
 	name = "\improper Unused Chapel"
@@ -986,6 +974,9 @@
 /area/security
 	req_access = list(access_security)
 
+/area/security/processing
+	name = "Security - Processing Room"
+
 /area/security/bo
 	name = "\improper Security - Brig Chief"
 	icon_state = "Warden"
@@ -1066,6 +1057,11 @@
 
 /area/medical/locker
 	name = "\improper Medical Locker Room"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
+
+/area/medical/resleevelab
+	name = "\improper Resleeving Lab"
 	icon_state = "locker"
 	req_access = list(access_medical_equip)
 
