@@ -6,5 +6,6 @@
 #include "voice_mob.dm"
 #include "soulcrypt.dm"
 #include "loadout.dm"
+#include "body_printer.dm"
+#include "dna_disk.dm"
 #endif
-
