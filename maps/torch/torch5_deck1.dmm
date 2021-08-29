@@ -3218,7 +3218,9 @@
 	name = "Infirmary Staging Lockdown";
 	opacity = 0
 	},
-/obj/machinery/door/airlock/glass/medical,
+/obj/machinery/door/airlock/glass/medical{
+	id_tag = "inf_stage"
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/staging)
 "ahb" = (
@@ -12768,6 +12770,19 @@
 /obj/machinery/alarm{
 	pixel_y = 16
 	},
+/obj/structure/closet/crate/freezer/meat,
+/obj/item/stack/material/bone{
+	amount = 60
+	},
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
+/obj/item/chems/food/meat/syntiflesh,
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
 "czb" = (
@@ -12873,6 +12888,7 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
+/obj/machinery/bioprinter/filled,
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
 "cGd" = (
@@ -13244,6 +13260,9 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
 	},
+/obj/item/storage/secure/safe{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
 "dfZ" = (
@@ -13294,6 +13313,7 @@
 	},
 /obj/structure/table,
 /obj/item/storage/firstaid/adv,
+/obj/item/storage/box/dna_disks,
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
 "dib" = (
