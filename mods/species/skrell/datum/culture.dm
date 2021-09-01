@@ -35,7 +35,7 @@
 		made up of two or three bondings. People within this caste often wear clothing made \
 		from the same materials as the Qerr-katish yet more simplified, white shirts and \
 		black pants with possible jewelry for decoration. Their skin is generally pale \
-		green, sky blue or pale yellow. They have shorter headtails. The Malish Katish are able to use their Psionics to gather inforamtion from the environment\
+		green, sky blue or pale yellow. They have shorter headtails. The Malish Katish are able to use their Psionics to gather inforamtion from the environment \
 		around them. This translates into identifying chemicals, gas compositions and even the \
 		extent of another being's injuries, organic or otherwise."
 	economic_power = 1.3
@@ -50,17 +50,17 @@
 		much of their individualism. Their families are frequently large, three or four bondings, generally with a couple of partners, which does \
 		not leave them much in terms of money. The Kanin-Katish are among the less wealthy people of skrellkind, but they do not seem to mind, as \
 		their work is the life and blood of skrellian civilisation. Their clothing is made to last, the personality of the Skrell often being shown \
-		through arm bands or headtail decorations of any kind. Their skin is generally red, orange, pale yellow, dark orange or black.\
-		They have very short headtails. The Kanin are also unique in that their Psionic abilities allow them to manipulate\
-		the environment that they are in. It is not unncommon to see Kanin making use of their\
-		psionic potential, which manifests itself in the form of telekinesis, to lift heavier\
+		through arm bands or headtail decorations of any kind. Their skin is generally red, orange, pale yellow, dark orange or black. \
+		They have very short headtails. The Kanin are also unique in that their Psionic abilities allow them to manipulate \
+		the environment that they are in. It is not uncommon to see Kanin making use of their \
+		psionic potential, which manifests itself in the form of telekinesis, to lift heavier \
 		objects, grab objects from afar or even mend the injuries of another being."
 	economic_power = 1.2
 
 
 /decl/cultural_info/culture/skrell/caste_talum
 	name = "Talum-Katish"
-	description = " Considering the Skrells' emphasis on functionality and practicality, one would be mistaken to think they do not consider arts much. \
+	description = "Considering the Skrells' emphasis on functionality and practicality, one would be mistaken to think they do not consider arts much. \
 		This very important sector of skrellian society is handled by the Talum-Katish, artists, aesthetes, entertainers, chefs, actors, writers, singers. \
 		They somewhat compete with the Qerr-Katish's role as representatives of skrellkind, although in a different way. As such, they are often mistaken for \
 		Qerr-Katish themselves, which might explain why this caste is generally seen as rarer and less celebrated than the others, while they are in fact \
@@ -68,7 +68,7 @@
 		taste for a busy social life. Highly cultured, they are the free-thinkers of skrellian society, often at odds with more traditionalist and conservative castes. \
 		A heterogeneous lot, it is hard to estimate their global financial capacities, they however tend to reproduce a lot, multiplying their encounters \
 		with various partners, which might put a strain on their savings. Their clothing is often an odd mix of Qerr-Katish and Kanin-Katish, as they often wear \
-		clothing that is colourful , adorned with embroidery and their headtails sparkling with various brilliant metals. Their skin is generally purple, blue, pink, orange, red or white.\
+		clothing that is colourful , adorned with embroidery and their headtails sparkling with various brilliant metals. Their skin is generally purple, blue, pink, orange, red or white. \
 		Talum-Katish headtails are a middle ground between the shorter headtails of the Malish and the extremely long headtails of the Qerr, and are an important element of \
 		Talum self-expression. Talum-Katish have psionic powers that allow them to communicate with nearby beings through emotions. \
 		Talum are able to project complex and intense feelings of joy, melancholy, fear and so on in the minds of those around them, \

@@ -58,7 +58,7 @@
 
 /decl/cultural_info/location/gilkrolqarr
 	name = "Gilkrol-Qarr"
-	description = "Also known as the old capital, the planet of Gilkrol-Qarr in the Kale'Ta'q* system was the administrative hub of the empire during the Kali'r war, after Qerr'Vallis\
+	description = "Also known as the old capital, the planet of Gilkrol-Qarr in the Kale'Ta'q* system was the administrative hub of the empire during the Kali'r war, after Qerr'Vallis \
 	was overrun with Ascent forces. Gilkrol'Qarr is characterized by its warm temperatures, unstable terrain, huge cave complexes and lush, alien \
 	underground fauna and flora. Despite it's radius being about three times that of Qerr'Balaks, the giant, superhabitable 'karst-world' has an abnormally low gravity and is incapable \
 	of holding its atmosphere well, making cave habitation and underground structures the preffered method of habitation of the skrell who \

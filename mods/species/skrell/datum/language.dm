@@ -1,5 +1,5 @@
 /decl/language/skrell
-	name = "Common Skrellian"
+	name = "Skrellian"
 	desc = "A melodic and complex language spoken by the Skrell of the Oligarchy. Some of the notes are inaudible to humans."
 	speech_verb = "warbles"
 	ask_verb = "trills"

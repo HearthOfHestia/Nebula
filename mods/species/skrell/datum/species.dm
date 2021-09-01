@@ -105,6 +105,7 @@
 		TAG_RELIGION = list(
 			/decl/cultural_info/religion/skrell,
 			/decl/cultural_info/religion/skrell/starspiritual,
+			/decl/cultural_info/religion/skrell/psionic,
 			/decl/cultural_info/religion/other
 		)
 	)
