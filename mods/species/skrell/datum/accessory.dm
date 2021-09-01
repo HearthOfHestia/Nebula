@@ -12,17 +12,23 @@
 
 /datum/sprite_accessory/hair/skrell/raskin
 	name = "Raskinta - Split Very Short Headtails"
-	icon = 'mods/species/skrell/icons/body/hair.dmi'
 	icon_state = "split"
-	species_allowed = list(SPECIES_SKRELL)
 
 /datum/sprite_accessory/hair/skrell/short
 	name = "Malish - Short Headtails"
 	icon_state = "short"
 
+/datum/sprite_accessory/hair/skrell/malishpullback
+	name = "Malish - Pullback"
+	icon_state = "pullback-short"
+
 /datum/sprite_accessory/hair/skrell/long
 	name = "Talum - Long Headtails"
 	icon_state = "long"
+
+/datum/sprite_accessory/hair/skrell/talumpullback
+	name = "Talum - Pullback"
+	icon_state = "pullback-long"
 
 /datum/sprite_accessory/hair/skrell/wavy
 	name = "Talum - Wavy"
@@ -51,3 +57,7 @@
 /datum/sprite_accessory/hair/skrell/reef
 	name = "Qerr - Wavy"
 	icon_state = "wavy-very_long"
+
+/datum/sprite_accessory/hair/skrell/qerrpullback
+	name = "Qerr - Pullback"
+	icon_state = "pullback-very_long"
