@@ -140,7 +140,7 @@
 	if (coating == -1)
 		return TRUE //-1 value doesnt care
 
-	return !coating || (S.batter_coating == coating)
+	return S.batter_coating == coating
 
 /decl/recipe/proc/check_items(var/obj/container)
 	SHOULD_BE_PURE(TRUE)
@@ -158,6 +158,8 @@
 			if(!istype(thing, itype))
 				continue
 			container_contents -= thing
+			if(!check_coating(thing))
+				continue
 			needed_items[itype]--
 			if(needed_items[itype] <= 0)
 				needed_items -= itype
@@ -284,9 +286,8 @@
 		//If we're here, then holder is a buffer containing the total reagents for all the results.
 		//So now we redistribute it among them
 		var/total = holder.total_volume
-		for (var/i in results)
-			var/atom/a = i //optimisation
-			holder.trans_to(a, total / length(results))
+		for (var/atom/a as anything in results)
+			holder.trans_to_obj(a, total / length(results))
 	return results
 
 /proc/select_recipe(var/obj/container, var/appliance)

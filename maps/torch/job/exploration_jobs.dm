@@ -98,6 +98,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3
 	)

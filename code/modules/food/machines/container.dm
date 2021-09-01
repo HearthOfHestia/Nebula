@@ -42,7 +42,7 @@
 		return TRUE //If not, do nothing.
 	if(standard_dispenser_refill(user, target)) //Are they clicking a water tank/some dispenser?
 		return TRUE
-	if(standard_pour_into(user, target)) //Pouring into another beaker?
+	if(istype(target, /obj/item/chems) && standard_pour_into(user, target)) //Pouring into another beaker?
 		return TRUE
 	if(standard_feed_mob(user, target))
 		return TRUE
@@ -59,9 +59,9 @@
 	var/string = "It contains:</br><ul>"
 	var/list/numerical_contents = list()
 	for(var/atom/thing as anything in get_contained_external_atoms())
-		numerical_contents[thing.name] += 1
+		numerical_contents[thing] += 1
 	for(var/atom/key as anything in numerical_contents)
-		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key.name]" : "\a [key.name]"]</li></br>"
+		string += "<li>[(numerical_contents[key] > 1) ? "[numerical_contents[key]]x [key.name]" : "\a [key]"]</li></br>"
 	string += "</ul>"
 	return string
 
@@ -192,7 +192,7 @@
 		for (var/contained in contents)
 			var/obj/item/I = contained
 			if (weights[I])
-				holder.trans_to(I, weights[I] / total)
+				holder.trans_to_obj(I, weights[I] / total)
 
 
 /obj/item/chems/cooking_container/oven
