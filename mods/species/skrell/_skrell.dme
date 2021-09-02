@@ -4,9 +4,37 @@
 #include "datum/accessory.dm"
 #include "datum/culture.dm"
 #include "datum/descriptor.dm"
+#include "datum/emotes.dm"
 #include "datum/faction.dm"
 #include "datum/language.dm"
 #include "datum/location.dm"
+#include "datum/religion.dm"
+#include "datum/skrell_meat.dm"
 #include "datum/species_bodytype.dm"
 #include "datum/species.dm"
+#include "datum/skrell_ranks.dm"
+/*#include "datum/pronouns_skrell.dm"
+- Disabled until pronoun code is sorted out.
+*/
+#include "gear/clustertool.dm"
+#include "gear/gear.dm"
+#include "gear/gear_ears.dm"
+#include "gear/gear_head.dm"
+#include "gear/gear_mask.dm"
+#include "gear/gear_rig.dm"
+#include "gear/gear_suit.dm"
+#include "gear/gear_under.dm"
+#include "turfs/flooring.dm"
+/* #include "maps/skrellscoutship/skrellscoutship.dm"
+Disabled until:
+- Map is fixed
+- Weaponry is tested and proven to be working
+- RIGs are tested
+- Fusion Reactor is Tested
+- Old stuff is added
+- Etc Etc.
+*/
+#include "gear/ammo.dm"
+#include "gear/fabrication_designs.dm"
+#include "gear/accessories.dm"
 #endif

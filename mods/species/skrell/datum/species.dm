@@ -6,7 +6,7 @@
 		/decl/bodytype/skrell
 		)
 
-	preview_icon = 'mods/species/skrell/icons/preview.dmi'
+	preview_icon = 'mods/species/skrell/icons/body/preview.dmi'
 
 	primitive_form = "Neaera"
 	unarmed_attacks = list(
@@ -16,11 +16,11 @@
 		/decl/natural_attack/bite
 	)
 
-	description = "An amphibious species, Skrell come from the star system known as Qerr'Vallis, which translates to 'Star of \
-	the royals' or 'Light of the Crown'.<br/><br/>Skrell are a highly advanced and logical race who live under the rule \
-	of the Qerr'Katish, a caste within their society which keeps the empire of the Skrell running smoothly. Skrell are \
-	herbivores on the whole and tend to be co-operative with the other species of the galaxy, although they rarely reveal \
-	the secrets of their empire to their allies."
+	description = "The Skrell are a highly advanced race of psionically-active amphibians hailing from the system known as Qerr'Vallis. <br/> <br/> Their society \
+	is regimented into five different castes with different psionic skillsets of which the Qerr'Katish, or Royal Caste rules over. Skrell are strict herbivores who are \
+	unable to eat large quantities of animal protein without feeling sick or even suffering from food poisoning. <br/> <br/>  Skrell value cooperation \
+	and have very communal lifestyles, and, despite their diplomatic fluency and innate curiosity, the Skrell are very leery of outside \
+	interference in their own customs and values."
 
 	meat_type = /obj/item/chems/food/fish/octopus
 	bone_material = /decl/material/solid/bone/cartilage
@@ -45,12 +45,12 @@
 	darksight_range = 4
 
 	spawn_flags = SPECIES_CAN_JOIN
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
+	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8cd7a3"
 	blood_color = "#1d2cbf"
 	base_color = "#006666"
-	organs_icon = 'mods/species/skrell/icons/organs.dmi'
+	organs_icon = 'mods/species/skrell/icons/body/organs.dmi'
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -77,14 +77,21 @@
 			/decl/cultural_info/culture/skrell/caste_malish,
 			/decl/cultural_info/culture/skrell/caste_kanin,
 			/decl/cultural_info/culture/skrell/caste_talum,
-			/decl/cultural_info/culture/skrell/caste_raskinta
+			/decl/cultural_info/culture/skrell/caste_raskinta,
+			/decl/cultural_info/culture/skrell/caste_ue
 		),
 		TAG_HOMEWORLD = list(
-			/decl/cultural_info/location/qerrbalak,
+			/decl/cultural_info/location/qerrvallis,
 			/decl/cultural_info/location/talamira,
-			/decl/cultural_info/location/roasora,
+			/decl/cultural_info/location/gilkrolqarr,
 			/decl/cultural_info/location/mitorqi,
-			/decl/cultural_info/location/skrellspace
+			/decl/cultural_info/location/harrkelm,
+			/decl/cultural_info/location/epsilon,
+			/decl/cultural_info/location/mitorqi,
+			/decl/cultural_info/location/ueorsi,
+			/decl/cultural_info/location/free,
+			/decl/cultural_info/location/skrellspace,
+			/decl/cultural_info/location/other
 		),
 		TAG_FACTION = list(
 			/decl/cultural_info/faction/skrell,
@@ -92,9 +99,13 @@
 			/decl/cultural_info/faction/skrell/yiitalana,
 			/decl/cultural_info/faction/skrell/krrigli,
 			/decl/cultural_info/faction/skrell/qonprri,
+			/decl/cultural_info/faction/skrell/kalimak,
 			/decl/cultural_info/faction/other
 		),
 		TAG_RELIGION = list(
+			/decl/cultural_info/religion/skrell,
+			/decl/cultural_info/religion/skrell/starspiritual,
+			/decl/cultural_info/religion/skrell/psionic,
 			/decl/cultural_info/religion/other
 		)
 	)
@@ -133,6 +144,6 @@
 /obj/item/organ/internal/eyes/skrell
 	name = "amphibian eyes"
 	desc = "Large black orbs, belonging to some sort of giant frog by looks of it."
-	icon = 'mods/species/skrell/icons/organs.dmi'
-	eye_icon = 'mods/species/skrell/icons/eyes.dmi'
+	icon = 'mods/species/skrell/icons/body/organs.dmi'
+	eye_icon = 'mods/species/skrell/icons/body/eyes.dmi'
 	apply_eye_colour = FALSE
