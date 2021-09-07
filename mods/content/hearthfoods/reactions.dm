@@ -5,7 +5,7 @@
 	minimum_temperature = 30 CELSIUS
 	maximum_temperature = 140 CELSIUS
 	required_reagents = list(/decl/material/liquid/drink/milk/cream = 20, /decl/material/solid/sodiumchloride = 1)
-	obj_result = /obj/item/food/spreads/butter
+	obj_result = /obj/item/chems/food/spreads/butter
 	result_amount = 1
 
 /datum/chemical_reaction/recipe/caramelisation
