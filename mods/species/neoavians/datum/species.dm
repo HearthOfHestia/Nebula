@@ -19,6 +19,7 @@
 	of Hyperion. Neo-avian naming conventions tend to be a chosen name followed by the species of the person, followed by the location they were hatched."
 
 	age_descriptor = /datum/appearance_descriptor/age/neoavian
+	holder_icon = 'mods/species/neoavians/icons/holder.dmi'
 
 	meat_type = /obj/item/chems/food/meat/chicken
 
@@ -34,7 +35,7 @@
 	holder_type = /obj/item/holder
 	gluttonous = GLUT_TINY
 	blood_volume = 320
-	hunger_factor = 0.1
+	hunger_factor = DEFAULT_HUNGER_FACTOR * 1.6
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_COLOR | HAS_EYE_COLOR
@@ -48,6 +49,7 @@
 		)
 
 	has_organ = list(
+		BP_STOMACH =  /obj/item/organ/internal/stomach,
 		BP_HEART =    /obj/item/organ/internal/heart,
 		BP_LUNGS =    /obj/item/organ/internal/lungs,
 		BP_LIVER =    /obj/item/organ/internal/liver,
@@ -81,6 +83,9 @@
 	if(!pref.body_markings["Tailfeathers (Groin)"])
 		pref.body_markings["Tailfeathers (Groin)"] = "#252525"
 	pref.skin_colour = "#252525"
+
+/decl/species/neoavian/get_holder_color(var/mob/living/carbon/human/H)
+	return H.skin_colour
 
 /obj/item/organ/internal/eyes/avian
 	eye_icon = 'mods/species/neoavians/icons/eyes.dmi'

@@ -84,7 +84,7 @@
 				to_chat(user, "You cannot pad \the [src] with that.")
 				return
 			C.use(1)
-			if(!istype(src.loc, /turf))
+			if(!isturf(src.loc))
 				src.forceMove(get_turf(src))
 			to_chat(user, "You add padding to \the [src].")
 			add_padding(padding_type)
@@ -106,12 +106,6 @@
 				if(do_after(user, 20, src))
 					if(user_buckle_mob(affecting, user))
 						qdel(W)
-
-/obj/structure/bed/Move()
-	. = ..()
-	if(buckled_mob)
-		buckled_mob.glide_size = glide_size // Setting loc apparently does animate with glide size.
-		buckled_mob.forceMove(loc)
 
 /obj/structure/bed/forceMove()
 	. = ..()
@@ -152,7 +146,7 @@
 	icon = 'icons/obj/structures/rollerbed.dmi'
 	icon_state = "down"
 	anchored = 0
-	buckle_pixel_shift = @"{'x':0,'y':0,'z':6}"
+	buckle_pixel_shift = list("x" = 0, "y" = 0, "z" = 6)
 	var/item_form_type = /obj/item/roller	//The folded-up object path.
 	var/obj/item/chems/beaker
 	var/iv_attached = 0

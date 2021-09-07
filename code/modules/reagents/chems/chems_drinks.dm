@@ -248,6 +248,7 @@
 	lore_text = "A mixture of perfectly healthy milk and delicious chocolate."
 	taste_description = "chocolate milk"
 	color = "#74533b"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "chocolate milk"
 	glass_desc = "Deliciously fattening!"
@@ -293,6 +294,7 @@
 	overdose = 60
 	glass_name = "coffee"
 	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 	var/list/flavour_modifiers = list()
 
 /decl/material/liquid/drink/coffee/Initialize()
@@ -362,6 +364,7 @@
 	color = "#403010"
 	nutrition = 2
 	adj_temp = 5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "hot chocolate"
 	glass_desc = "Made with love! And cocoa beans."
@@ -374,6 +377,7 @@
 	adj_dizzy = -5
 	adj_drowsy = -3
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "soda water"
 	glass_desc = "A glass of fizzy soda water."
@@ -385,6 +389,7 @@
 	taste_description = "grape soda"
 	color = "#421c52"
 	adj_drowsy = -3
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "grape soda"
 	glass_desc = "Looks like a delicious drink!"
@@ -399,6 +404,7 @@
 	adj_drowsy = -3
 	adj_sleepy = -2
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "tonic water"
 	glass_desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
@@ -409,6 +415,7 @@
 	taste_description = "tartness"
 	color = "#ffff00"
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "lemonade"
 	glass_desc = "Oh the nostalgia..."
@@ -420,6 +427,7 @@
 	taste_description = "tart and tasty"
 	color = "#cccc99"
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "citrus seltzer"
 	glass_desc = "A tasty blend of fizz and citrus."
@@ -431,6 +439,7 @@
 	taste_description = "orange and cola"
 	color = "#9f3400"
 	adj_temp = -2
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "orange cola"
 	glass_desc = "It's an unpleasant shade of muddy brown, and smells like over-ripe citrus."
@@ -441,6 +450,7 @@
 	taste_description = "creamy vanilla"
 	color = "#aee5e4"
 	adj_temp = -9
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "milkshake"
 	glass_desc = "Glorious brainfreezing mixture."
@@ -453,6 +463,7 @@
 	adj_temp = -5
 	adj_sleepy = -2
 	euphoriant = 30
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "mutagen cola"
 	glass_desc = "The unstable energy of a radioactive isotope in beverage form."
@@ -476,6 +487,7 @@
 	lore_text = "Made in the modern day with proper pomegranate substitute. Who uses real fruit, anyways?"
 	taste_description = "100% pure pomegranate"
 	color = "#ff004f"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "grenadine syrup"
 	glass_desc = "Sweet and tangy, a bar syrup used to add color or flavor to drinks."
@@ -487,6 +499,7 @@
 	color = "#100800"
 	adj_drowsy = -3
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "cola"
 	glass_desc = "A glass of refreshing cola."
@@ -500,6 +513,7 @@
 	adj_drowsy = -7
 	adj_sleepy = -1
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "citrus soda"
 	glass_desc = "A glass of fizzy citrus soda."
@@ -512,6 +526,7 @@
 	color = "#102000"
 	adj_drowsy = -6
 	adj_temp = -5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "cherry soda"
 	glass_desc = "A glass of cherry soda, a delicious blend of 42 flavours."
@@ -522,6 +537,7 @@
 	taste_description = "a hull breach"
 	color = "#202800"
 	adj_temp = -8
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "lemonade"
 	glass_desc = "A glass of lemonade. It helps keep you cool."
@@ -533,6 +549,7 @@
 	taste_description = "tangy lime and lemon soda"
 	color = "#878f00"
 	adj_temp = -8
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "lemon lime soda"
 	glass_desc = "A tangy substance made of 0.5% natural citrus!"
@@ -544,6 +561,7 @@
 	taste_description = "dry and cheap noodles"
 	nutrition = 1
 	color = "#302000"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/hot_ramen
 	name = "hot ramen"
@@ -552,6 +570,7 @@
 	color = "#302000"
 	nutrition = 5
 	adj_temp = 5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/hell_ramen
 	name = "hell ramen"
@@ -559,6 +578,7 @@
 	taste_description = "wet and cheap noodles on fire"
 	color = "#302000"
 	nutrition = 5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/hell_ramen/affect_ingest(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	..()
@@ -595,6 +615,7 @@
 	adj_temp = 20
 	glass_name = "black tea"
 	glass_desc = "Tasty black tea, it has antioxidants, it's good for you!"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/tea/black/build_presentation_name_from_reagents(var/obj/item/prop, var/supplied)
 	if(prop.reagents.has_reagent(/decl/material/liquid/drink/juice/orange))
@@ -612,6 +633,7 @@
 	lore_text = "Subtle green tea, it has antioxidants, it's good for you!"
 	taste_description = "subtle green tea"
 	color = "#b4cd94"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "green tea"
 	glass_desc = "Subtle green tea, it has antioxidants, it's good for you!"
@@ -621,6 +643,7 @@
 	lore_text = "A spiced, dark tea. Goes great with milk."
 	taste_description = "spiced black tea"
 	color = "#151000"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "chai"
 	glass_desc = "A spiced, dark tea. Goes great with milk."
@@ -637,6 +660,7 @@
 	lore_text = "A caffeine-free dark red tea, flavorful and full of antioxidants."
 	taste_description = "nutty red tea"
 	color = "#ab4c3a"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "redbush tea"
 	glass_desc = "A caffeine-free dark red tea, flavorful and full of antioxidants."
@@ -661,6 +685,7 @@
 	taste_description = "mint"
 	color = "#07aab2"
 	coffee_priority = 1
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "mint flavouring"
 	glass_desc = "Also known as mentha."
@@ -672,6 +697,7 @@
 	color = "#542a0c"
 	coffee_modifier = "mocha"
 	coffee_priority = 5
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "chocolate syrup"
 	glass_desc = "Thick chocolate syrup used to flavor drinks."
@@ -682,6 +708,7 @@
 	taste_description = "caramel"
 	color = "#85461e"
 	coffee_priority = 2
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "caramel syrup"
 	glass_desc = "Thick caramel syrup used to flavor drinks."
@@ -692,6 +719,7 @@
 	taste_description = "vanilla"
 	color = "#f3e5ab"
 	coffee_priority = 3
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "vanilla syrup"
 	glass_desc = "Thick vanilla syrup used to flavor drinks."
@@ -702,6 +730,7 @@
 	taste_description = "pumpkin spice"
 	color = "#d88b4c"
 	coffee_priority = 4
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "pumpkin spice syrup"
 	glass_desc = "Thick spiced pumpkin syrup used to flavor drinks."
@@ -713,6 +742,7 @@
 	color = "#44371f"
 	glass_name = "ginger beer"
 	glass_desc = "A hearty, non-alcoholic beverage brewed from ginger."
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/beastenergy
 	name = "Beast Energy"
@@ -721,6 +751,7 @@
 	color = "#d69115"
 	glass_name = "beast energy"
 	glass_desc = "Why would you drink this without mixer?"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/beastenergy/affect_ingest(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	..()
@@ -739,12 +770,14 @@
 	color = "#ece4e3"
 	glass_name = "Kefir"
 	glass_desc = "Fermented milk, looks a lot like yougurt."
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 /decl/material/liquid/drink/compote
 	name = "compote"
 	lore_text = "Traditional dessert drink made from fruits or berries. Grandma would be proud."
 	taste_description = "sweet-sour berries"
 	color = "#9e4b00"
+	exoplanet_rarity = MAT_RARITY_NOWHERE
 
 	glass_name = "Compote"
 	glass_desc = "Traditional dessert drink made from fruits or berries. Grandma would be proud."

@@ -6,7 +6,7 @@
 		"Exploration" = TRUE
 	)
 	networks = list(NETWORK_EXPEDITION)
-	sprites = list(
+	module_sprites = list(
 		"Drone"  = "drone-science",
 		"Eyebot" = "eyebot-science"
 	)

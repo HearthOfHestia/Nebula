@@ -2,6 +2,7 @@
 #define CONTENT_PACK_HEARTHFOODS
 // BEGIN_INCLUDE
 #include "hearthfoods.dm"
+#include "chems.dm"
 #include "reactions.dm"
 #include "trash.dm"
 #include "food\baked_goods.dm"
