@@ -1,14 +1,20 @@
 /datum/appearance_descriptor/headtail_length
 	name = "headtail length"
-	chargen_label = "headtails (gender)"
+	chargen_label = "headtails (caste)"
 	skip_species_mention = TRUE
 	standalone_value_descriptors = list(
+		"very short and split",
+		"very short",
 		"short",
-		"long"
+		"long",
+		"very long"
 		)
 	chargen_value_descriptors = list(
-		"short (male)" =  1,
-		"long (female)" = 2
+		"very short and split (Raskinta-Katish)" =  1,
+		"very short (Kanin-Katish)" = 2,
+		"short (Malish-Katish)" = 3,
+		"long (Talum-Katish)" = 4,
+		"very long (Qerr-Katish)" = 5
 		)
 
 /datum/appearance_descriptor/headtail_length/get_first_person_message_start()
@@ -16,12 +22,3 @@
 
 /datum/appearance_descriptor/headtail_length/get_third_person_message_start(var/decl/pronouns/my_gender)
 	. = "[my_gender.His] headtails are"
-
-/datum/appearance_descriptor/headtail_length/get_comparative_value_string_equivalent(var/my_value, var/decl/pronouns/my_gender, var/decl/pronouns/other_gender)
-	. = "indicating [other_gender.he] [other_gender.is] [my_value == 1 ? "male" : "female"] like you"
-
-/datum/appearance_descriptor/headtail_length/get_comparative_value_string_smaller(var/value, var/decl/pronouns/my_gender, var/decl/pronouns/other_gender)
-	. = "indicating [other_gender.he] [other_gender.is] male"
-
-/datum/appearance_descriptor/headtail_length/get_comparative_value_string_larger(var/value, var/decl/pronouns/my_gender, var/decl/pronouns/other_gender)
-	. = "indicating [other_gender.he] [other_gender.is] female"

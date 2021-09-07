@@ -7,7 +7,7 @@
 /decl/recipe/risottoballs
 	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
-	items = list(/obj/item/chems/food/risotto)
+	items = list(/obj/item/chems/food/risotto = 1)
 	coating = /decl/material/liquid/nutriment/batter
 	reagent_mix = REAGENT_REPLACE //Simplify end product
 	result = /obj/item/chems/food/risottoballs
@@ -16,7 +16,7 @@
 	appliance = APPLIANCE_FRYER
 	fruit = list("onion" = 1)
 	items = list(
-		/obj/item/chems/food/doughslice
+		/obj/item/chems/food/doughslice = 1
 	)
 	result = /obj/item/chems/food/onionrings
 
@@ -30,7 +30,7 @@
 /decl/recipe/batteredsausage
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/sausage
+		/obj/item/chems/food/sausage = 1
 	)
 	result = /obj/item/chems/food/sausage/battered
 	coating = /decl/material/liquid/nutriment/batter
@@ -38,7 +38,7 @@
 /decl/recipe/katsu
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/meat/chicken
+		/obj/item/chems/food/meat/chicken = 1
 	)
 	result = /obj/item/chems/food/chickenkatsu
 	coating = /decl/material/liquid/nutriment/batter/beerbatter
@@ -46,7 +46,7 @@
 /decl/recipe/pizzacrunch_1
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/sliceable/pizza
+		/obj/item/chems/food/sliceable/pizza = 1
 	)
 	result = /obj/item/chems/food/sliceable/pizza/crunch
 	coating = /decl/material/liquid/nutriment/batter
@@ -55,7 +55,7 @@
 /decl/recipe/pizzacrunch_2
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/variable/pizza
+		/obj/item/chems/food/variable/pizza = 1
 	)
 	result = /obj/item/chems/food/sliceable/pizza/crunch
 	coating = /decl/material/liquid/nutriment/batter
@@ -75,7 +75,7 @@
 /decl/recipe/corn_dog
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/sausage
+		/obj/item/chems/food/sausage = 1
 	)
 	fruit = list("corn" = 1)
 	coating = /decl/material/liquid/nutriment/batter

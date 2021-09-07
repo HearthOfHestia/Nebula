@@ -14,7 +14,7 @@
 /decl/recipe/honeybun
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/dough
+		/obj/item/chems/food/dough = 1
 	)
 	reagents = list(/decl/material/liquid/nutriment/honey = 5)
 	result = /obj/item/chems/food/honeybun
@@ -48,7 +48,7 @@
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/sugar = 15, /decl/material/liquid/drink/milk/cream = 10)
 	items = list(
-		/obj/item/chems/food/dough
+		/obj/item/chems/food/dough = 1
 		)
 	result = /obj/item/chems/food/cinnamonbun
 	result_quantity = 4

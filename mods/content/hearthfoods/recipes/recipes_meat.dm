@@ -2,14 +2,14 @@
 /decl/recipe/bacon
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/rawbacon
+		/obj/item/chems/food/rawbacon = 1
 	)
 	result = /obj/item/chems/food/bacon
 
 /decl/recipe/bacon_micro
 	appliance = APPLIANCE_MICROWAVE
 	items = list(
-		/obj/item/chems/food/rawbacon
+		/obj/item/chems/food/rawbacon = 1
 	)
 	result = /obj/item/chems/food/bacon/microwave
 
@@ -34,8 +34,8 @@
 /decl/recipe/bacon_stick
 	appliance = APPLIANCE_MIX
 	items = list(
-		/obj/item/chems/food/bacon,
-		/obj/item/chems/food/boiledegg
+		/obj/item/chems/food/bacon = 1,
+		/obj/item/chems/food/boiledegg = 1
 	)
 	result = /obj/item/chems/food/bacon_stick
 
@@ -51,8 +51,8 @@
 /decl/recipe/bacon_and_eggs
 	appliance = APPLIANCE_SKILLET
 	items = list(
-		/obj/item/chems/food/bacon,
-		/obj/item/chems/food/friedegg
+		/obj/item/chems/food/bacon = 1,
+		/obj/item/chems/food/friedegg = 1
 	)
 	result = /obj/item/chems/food/bacon_and_eggs
 
@@ -87,10 +87,11 @@
 	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/nutriment/flour = 5)
 	items = list(
-		/obj/item/chems/food/meat/chicken
+		/obj/item/chems/food/meat/chicken = 1
 	)
 	reagent_mix = REAGENT_REPLACE
 	result = /obj/item/chems/food/nugget
+	result_quantity = 6
 
 /decl/recipe/generalschicken
 	appliance = APPLIANCE_FRYER
@@ -102,16 +103,16 @@
 
 /decl/recipe/chickenwings
 	appliance = APPLIANCE_FRYER
-	reagents = list("capsaicin" = 1, "batter" = 2)
+	reagents = list(/decl/material/liquid/capsaicin = 1, /decl/material/liquid/nutriment/batter = 2)
 	items = list(
-		/obj/item/chems/food/meat/chicken
+		/obj/item/chems/food/meat/chicken = 1
 	)
 	result = /obj/item/chems/food/chickenwing
 
 /decl/recipe/chickenfillet //Also just combinable, like burgers and hot dogs.
 	items = list(
-		/obj/item/chems/food/chickenkatsu,
-		/obj/item/chems/food/bun
+		/obj/item/chems/food/chickenkatsu = 1,
+		/obj/item/chems/food/bun = 1
 	)
 	result = /obj/item/chems/food/chickenfillet
 
@@ -119,7 +120,7 @@
 /decl/recipe/ribplate // Well, steak.
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/honey = 5, /decl/material/solid/spacespice = 2, /decl/material/solid/blackpepper = 1)
-	items = list(/obj/item/chems/food/meat)
+	items = list(/obj/item/chems/food/meat = 1)
 	reagent_mix = REAGENT_REPLACE
 	result = /obj/item/chems/food/ribplate
 
@@ -138,8 +139,8 @@
 	fruit = list("tomato" = 1, "cabbage" = 1)
 	reagents = list(/decl/material/solid/sodiumchloride = 1)
 	items = list(
-		/obj/item/chems/food/meatsteak,
-		/obj/item/chems/food/sliceable/flatdough
+		/obj/item/chems/food/meatsteak = 1,
+		/obj/item/chems/food/sliceable/flatdough = 1
 	)
 	result = /obj/item/chems/food/donerkebab
 
@@ -147,24 +148,24 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("carrot" = 2, "potato" = 2)
 	items = list(
-		/obj/item/chems/food/meat
+		/obj/item/chems/food/meat = 1
 	)
 	result = /obj/item/chems/food/roastbeef
 
 /decl/recipe/father_breakfast
 	appliance = APPLIANCE_MIX
 	items = list(
-		/obj/item/chems/food/sausage,
-		/obj/item/chems/food/omelette,
-		/obj/item/chems/food/meatsteak
+		/obj/item/chems/food/sausage = 1,
+		/obj/item/chems/food/omelette = 1,
+		/obj/item/chems/food/meatsteak = 1
 	)
 	result = /obj/item/chems/food/father_breakfast
 
 /decl/recipe/stuffed_meatball
 	appliance = APPLIANCE_MIX
 	items = list(
-		/obj/item/chems/food/meatball,
-		/obj/item/chems/food/cheesewedge
+		/obj/item/chems/food/meatball = 1,
+		/obj/item/chems/food/cheesewedge = 1
 	)
 	fruit = list("cabbage" = 1)
 	result = /obj/item/chems/food/stuffed_meatball
@@ -172,9 +173,9 @@
 /decl/recipe/meat_pocket
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
-		/obj/item/chems/food/meatball,
-		/obj/item/chems/food/cheesewedge
+		/obj/item/chems/food/sliceable/flatdough = 1,
+		/obj/item/chems/food/meatball = 1,
+		/obj/item/chems/food/cheesewedge = 1
 	)
 	result = /obj/item/chems/food/meat_pocket
 	result_quantity = 2
@@ -208,7 +209,7 @@
 	appliance = APPLIANCE_SKILLET | APPLIANCE_SAUCEPAN
 	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/water = 5)
 	items = list(
-		/obj/item/chems/food/egg
+		/obj/item/chems/food/egg = 1
 	)
 	reagent_mix = REAGENT_REPLACE //Get that water outta here
 	result = /obj/item/chems/food/poachedegg
@@ -217,8 +218,8 @@
 /decl/recipe/red_sun_special
 	appliance = APPLIANCE_SKILLET | APPLIANCE_SAUCEPAN
 	items = list(
-		/obj/item/chems/food/sausage,
-		/obj/item/chems/food/cheesewedge
+		/obj/item/chems/food/sausage = 1,
+		/obj/item/chems/food/cheesewedge = 1
 
 	)
 	result = /obj/item/chems/food/red_sun_special
@@ -227,8 +228,8 @@
 /decl/recipe/sweet_and_sour
 	appliance = APPLIANCE_FRYER
 	items = list(
-		/obj/item/chems/food/bacon,
-		/obj/item/chems/food/cutlet
+		/obj/item/chems/food/bacon = 1,
+		/obj/item/chems/food/cutlet = 1
 	)
 	reagents = list(/decl/material/liquid/nutriment/soysauce = 5, /decl/material/liquid/nutriment/batter = 10)
 	result = /obj/item/chems/food/sweet_and_sour
@@ -238,8 +239,8 @@
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/sodiumchloride = 1)
 	items = list(
-		/obj/item/chems/food/crabmeat,
-		/obj/item/chems/food/spreads
+		/obj/item/chems/food/crabmeat = 1,
+		/obj/item/chems/food/spreads = 1
 		)
 	reagent_mix = REAGENT_REPLACE
 	result = /obj/item/chems/food/crab_legs
