@@ -17,6 +17,7 @@
 		/datum/mil_rank/sc/t4,
 		/datum/mil_rank/espatier/e5,
 		/datum/mil_rank/espatier/e6,
+		/datum/mil_rank/espatier/e7
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
