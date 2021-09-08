@@ -19,6 +19,9 @@ Synthetic
 	minimal_player_age = 7
 	total_positions = 0
 	spawn_positions = 0
+	allowed_branches = list(
+		/datum/mil_branch/civilian
+	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/synthetic
 	)

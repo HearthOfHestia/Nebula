@@ -28,6 +28,9 @@
 	#include "../../mods/species/lizard/_lizard.dme"
 	#include "../../mods/species/vox/_vox.dme"
 	#include "../../mods/species/adherent/_adherent.dme"
+	#include "../../mods/species/skrell/_skrell.dme"
+
+//	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
@@ -185,7 +188,6 @@
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
 	#include "items\hearth_clothing\hats_general.dm"
-	#include "..\..\mods\species\skrell\_skrell.dme"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"
