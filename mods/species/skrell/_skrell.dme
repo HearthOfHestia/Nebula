@@ -13,9 +13,7 @@
 #include "datum/species_bodytype.dm"
 #include "datum/species.dm"
 #include "datum/skrell_ranks.dm"
-/*#include "datum/pronouns_skrell.dm"
-- Disabled until pronoun code is sorted out.
-*/
+#include "datum/pronouns_skrell.dm"
 #include "gear/clustertool.dm"
 #include "gear/gear.dm"
 #include "gear/gear_ears.dm"
