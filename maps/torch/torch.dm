@@ -188,7 +188,6 @@
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
 	#include "items\hearth_clothing\hats_general.dm"
-	#include "..\..\mods\species\skrell\_skrell.dme"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"
