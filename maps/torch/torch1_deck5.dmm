@@ -1266,7 +1266,7 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/radio,
 /obj/item/radio,
 /obj/item/radio,
@@ -1605,7 +1605,7 @@
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/airlock)
 "dD" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/belt/utility/full,
 /obj/structure/cable/cyan{
 	d2 = 8;
@@ -1848,7 +1848,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/power)
 "ec" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/firstaid,
@@ -2088,7 +2088,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/atmos)
 "ez" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
@@ -3716,7 +3716,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/cell_charger,
@@ -3756,7 +3756,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/storage)
 "jn" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/stack/material/cardstock/mapped/cardboard/fifty,
@@ -4289,7 +4289,7 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/exploration)
 "kr" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/storage/box/greenglowsticks,
 /obj/item/storage/box/greenglowsticks,
@@ -4360,7 +4360,7 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "ky" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/flag/green,
 /obj/item/stack/flag/green,
 /obj/item/stack/flag/green,
@@ -4380,7 +4380,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
 "kz" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/scanner/xenobio,
 /obj/item/scanner/xenobio,
 /obj/item/scanner/xenobio,
@@ -4530,7 +4530,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/door/window/northright{
 	dir = 1;
 	name = "heavy suit storage"
@@ -4769,7 +4769,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
 "lr" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -6363,7 +6363,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/fifthdeck/aftport)
 "oB" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 4
 	},
 /obj/item/storage/toolbox/mechanical,
@@ -6791,7 +6791,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "pv" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -7118,7 +7118,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qg" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/shovel{
 	pixel_x = -5
 	},
@@ -7143,7 +7143,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qi" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/cable/green{
 	d1 = 1;
@@ -8162,7 +8162,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/fore)
 "rW" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/bodybag,
 /obj/item/storage/box/autoinjectors,
 /turf/simulated/floor/tiled/white,
@@ -9217,7 +9217,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftport)
 "ux" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance,
 /obj/random/maintenance,
 /obj/random/maintenance,
@@ -9629,7 +9629,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
 "wc" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /turf/simulated/floor/tiled/techfloor,
@@ -13288,7 +13288,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Rf" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/firstaid,
@@ -13452,7 +13452,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -13548,7 +13548,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/atmos)
 "SF" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/reagent_temperature,
 /turf/simulated/floor/plating,
 /area/vacant/infirmary)
@@ -13824,7 +13824,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
 "UL" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 4
 	},
 /obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
@@ -14422,7 +14422,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/curiosity_hangar/start)
 "Yi" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 4
 	},
 /obj/item/stack/material/sheet/mapped/steel/fifty{

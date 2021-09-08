@@ -13,6 +13,22 @@
 	var/result                    // example: = /obj/item/chems/food/donut/normal
 	var/time = 100                // Cooking time in deciseconds.
 	var/result_quantity = 1       // How many items to create. Where possible, just use fewer ingredients instead.
+	var/coating = null            // Required coating on all items in the recipe. The default value of null explitly requires no coating
+	// A value of -1 is permissive and cares not for any coatings
+	// Any typepath indicates a specific coating that should be present
+	// Coatings are used for batter, breadcrumbs, beer-batter, colonel's secret coating, etc
+	var/appliance = APPLIANCE_MIX // Which appliances this recipe can be made in.
+	// List of defines is in _defines/misc.dm. But for reference they are:
+	/*
+		MIX
+		FRYER
+		OVEN
+		SKILLET
+		SAUCEPAN
+		POT
+		MICROWAVE
+	*/
+	// This is a bitfield, more than one type can be used.
 
 	var/const/REAGENT_REPLACE = 0 //Reagents in the ingredients are discarded (only the reagents present in the result at compiletime are used)
 	var/const/REAGENT_MAX     = 1 //The result will contain the maximum of each reagent present between the two pools. Compiletime result, and sum of ingredients
@@ -34,9 +50,48 @@
 	complexity = length(reagents) + length(fruit)
 	var/value
 	for(var/i in items) // add the number of items total
+		if(!items[i])
+			items[i] = 1
 		value = items[i]
-		complexity += isnum(value) ? value : 1
+		complexity += (isnum(value) ? value : 1)
 	complexity += length(uniquelist(items)) // add how many unique items there are; will prioritise burgers over 2 bunbuns and 1 wasted meat, for example
+
+/decl/recipe/proc/get_appliances_string()
+	var/list/appliance_names
+	if(appliance & APPLIANCE_MIX)
+		LAZYADD(appliance_names, "a mixing bowl or plate")
+	if(appliance & APPLIANCE_FRYER)
+		LAZYADD(appliance_names, "a fryer")
+	if(appliance & APPLIANCE_OVEN)
+		LAZYADD(appliance_names, "an oven")
+	if(appliance & APPLIANCE_SKILLET)
+		LAZYADD(appliance_names, "a skillet")
+	if(appliance & APPLIANCE_SAUCEPAN)
+		LAZYADD(appliance_names, "a saucepan")
+	if(appliance & APPLIANCE_POT)
+		LAZYADD(appliance_names, "a pot")
+	if(appliance & APPLIANCE_MICROWAVE)
+		LAZYADD(appliance_names, "a microwave")
+	return english_list(appliance_names, and_text = " or ")
+
+/decl/recipe/proc/get_appliance_names()
+	var/list/appliance_names
+	if(appliance & APPLIANCE_MIX)
+		LAZYADD(appliance_names, "mixing bowl")
+		LAZYADD(appliance_names, "plate")
+	if(appliance & APPLIANCE_FRYER)
+		LAZYADD(appliance_names, "fryer")
+	if(appliance & APPLIANCE_OVEN)
+		LAZYADD(appliance_names, "oven")
+	if(appliance & APPLIANCE_SKILLET)
+		LAZYADD(appliance_names, "skillet")
+	if(appliance & APPLIANCE_SAUCEPAN)
+		LAZYADD(appliance_names, "saucepan")
+	if(appliance & APPLIANCE_POT)
+		LAZYADD(appliance_names, "pot")
+	if(appliance & APPLIANCE_MICROWAVE)
+		LAZYADD(appliance_names, "microwave")
+	return appliance_names
 
 /decl/recipe/proc/check_reagents(var/datum/reagents/avail_reagents)
 	SHOULD_BE_PURE(TRUE)
@@ -70,18 +125,32 @@
 		use_tag = "[S.dry ? "dried " : ""][use_tag]"
 		if(isnull(needed_fruits[use_tag]))
 			continue
-		needed_fruits[use_tag]--
+		if(check_coating(S))
+			needed_fruits[use_tag]--
 	for(var/ktag in needed_fruits)
 		if(needed_fruits[ktag] > 0)
 			return FALSE
 	return TRUE
+
+//This is called on individual items within the container.
+/decl/recipe/proc/check_coating(var/obj/item/chems/food/S)
+	if(!istype(S))
+		return TRUE//Only snacks can be battered
+
+	if (coating == -1)
+		return TRUE //-1 value doesnt care
+
+	return S.batter_coating == coating
 
 /decl/recipe/proc/check_items(var/obj/container)
 	SHOULD_BE_PURE(TRUE)
 	if(!length(items))
 		return TRUE
 	var/list/container_contents = container?.get_contained_external_atoms()
-	if(length(container_contents) < length(items))
+	var/sum = 0
+	for(var/i in items)
+		sum += items[i]
+	if(length(container_contents) < sum)
 		return FALSE
 	var/list/needed_items = items.Copy()
 	for(var/itype in needed_items)
@@ -89,16 +158,18 @@
 			if(!istype(thing, itype))
 				continue
 			container_contents -= thing
-			if(isnum(needed_items[itype]))
-				--needed_items[itype]
-				if(needed_items[itype] <= 0)
-					needed_items -= itype
-			else
+			if(!check_coating(thing))
+				continue
+			needed_items[itype]--
+			if(needed_items[itype] <= 0)
 				needed_items -= itype
-			break
+				break
 		if(!length(container_contents))
 			break
-	return !length(needed_items)
+	sum = 0
+	for(var/i in needed_items)
+		sum += needed_items[i]
+	return !sum
 
 //general version
 /decl/recipe/proc/make(var/obj/container)
@@ -123,14 +194,15 @@
 	to decide what to do. They may be used again to make another recipe or discarded, or merged into the results,
 	thats no longer the concern of this proc
 	*/
-	var/datum/reagents/buffer = new /datum/reagents(1e12, global.temp_reagents_holder)//
+	var/datum/reagents/buffer = new /datum/reagents(INFINITY, global.temp_reagents_holder)//
 	var/list/container_contents = container.get_contained_external_atoms()
 	//Find items we need
-	if (LAZYLEN(items))
-		for (var/i in items)
+	for (var/i in items)
+		for(var/_ in 1 to items[i])
 			var/obj/item/I = locate(i) in container_contents
 			if (I && I.reagents)
 				I.reagents.trans_to_holder(buffer,I.reagents.total_volume)
+				container_contents -= I
 				qdel(I)
 
 	//Find fruits
@@ -214,7 +286,21 @@
 		//If we're here, then holder is a buffer containing the total reagents for all the results.
 		//So now we redistribute it among them
 		var/total = holder.total_volume
-		for (var/i in results)
-			var/atom/a = i //optimisation
-			holder.trans_to(a, total / length(results))
+		for (var/atom/a as anything in results)
+			holder.trans_to_obj(a, total / length(results))
 	return results
+
+/proc/select_recipe(var/obj/container, var/appliance)
+	if(!appliance)
+		CRASH("Null appliance flag passed to select_recipe!")
+	var/highest_complexity = 0
+	var/available_recipes = decls_repository.get_decls_of_subtype(/decl/recipe)
+	for (var/rtype in available_recipes)
+		var/decl/recipe/recipe = available_recipes[rtype]
+		if(!(appliance & recipe.appliance))
+			continue
+		if(!recipe.check_reagents(container.reagents) || !recipe.check_items(container)  || !recipe.check_fruit(container))
+			continue
+		if(recipe.complexity >= highest_complexity)
+			highest_complexity = recipe.complexity
+			. = recipe

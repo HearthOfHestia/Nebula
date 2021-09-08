@@ -48,7 +48,7 @@
 	if(M.HasTrait(/decl/trait/metabolically_inert))
 		return
 
-	M.heal_organ_damage(0.5 * removed, 0) //what	
+	M.heal_organ_damage(0.5 * removed, 0) //what
 	M.add_chemical_effect(CE_BLOODRESTORE, 4 * removed)
 
 /decl/material/liquid/nutriment/proc/adjust_nutrition(var/mob/living/carbon/M, var/alien, var/removed)
@@ -127,10 +127,13 @@
 /decl/material/liquid/nutriment/batter
 	name = "batter"
 	lore_text = "A gooey mixture of eggs and flour, a base for turning wheat into food."
-	taste_description = "blandness"
+	taste_description = "batter"
 	nutriment_factor = 3
 	color = "#ffd592"
 	slipperiness = -1
+	var/icon_raw = "batter_raw"
+	var/icon_cooked = "batter_cooked"
+	var/coated_adj = "battered"
 
 /decl/material/liquid/nutriment/batter/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
 	..()
@@ -141,6 +144,75 @@
 	lore_text = "A gooey mixture of eggs, flour and sugar, a important precursor to cake!"
 	taste_description = "sweetness"
 	color = "#ffe992"
+
+/decl/material/liquid/nutriment/batter/beerbatter
+	name = "beer batter mix"
+	color = "#f5f4e9"
+	icon_raw = "batter_raw"
+	icon_cooked = "batter_cooked"
+	coated_adj = "beer-battered"
+	taste_description = "beer batter"
+
+/decl/material/liquid/nutriment/batter/beerbatter/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
+	..()
+	M.add_chemical_effect(CE_ALCOHOL, removed*0.02) //Very slightly alcoholic
+
+//Fats
+//=========================
+/decl/material/liquid/nutriment/triglyceride
+	name = "triglyceride"
+	lore_text = "More commonly known as fat, the third macronutrient, with over double the energy content of carbs and protein"
+
+	nutriment_factor = 27//The caloric ratio of carb/protein/fat is 4:4:9
+	color = "#cccccc"
+	taste_description = "fat"
+
+/decl/material/liquid/nutriment/triglyceride/oil
+	//Having this base class incase we want to add more variants of oil
+	name = "Oil"
+	lore_text = "Oils are liquid fats."
+	color = "#c79705"
+	touch_met = 1.5
+	taste_description = "some sort of oil"
+	taste_mult = 0.1
+
+/decl/material/liquid/nutriment/triglyceride/oil/touch_turf(var/turf/simulated/T, var/datum/reagents/holder)
+	if(!istype(T))
+		return
+
+	if(holder.reagent_volumes[type] >= 3)
+		T.wet_floor()
+
+//Calculates a scaling factor for scalding damage, based on the temperature of the oil and creature's heat resistance
+/decl/material/liquid/nutriment/triglyceride/oil/proc/heatdamage(var/mob/living/carbon/M, var/datum/reagents/holder)
+	var/threshold = 360//Human heatdamage threshold
+	var/decl/species/S = M.get_species(1)
+	if (S && istype(S))
+		threshold = S.heat_level_1
+
+	//If temperature is too low to burn, return a factor of 0. no damage
+	if (!holder?.my_atom || (holder.my_atom.temperature < threshold))
+		return 0
+
+	//Step = degrees above heat level 1 for 1.0 multiplier
+	var/step = 60
+	if (S && istype(S))
+		step = (S.heat_level_2 - S.heat_level_1)*1.5
+
+	. = holder.my_atom.temperature - threshold
+	. /= step
+	. = min(., 2.5)//Cap multiplier at 2.5
+
+/decl/material/liquid/nutriment/triglyceride/oil/affect_touch(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
+	var/dfactor = heatdamage(M, holder)
+	if (dfactor)
+		M.take_organ_damage(0, removed * 1.5 * dfactor)
+		to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
+
+/decl/material/liquid/nutriment/triglyceride/oil/corn
+	name = "Corn Oil"
+	lore_text = "An oil derived from corn."
+	taste_description = "corn oil"
 
 /decl/material/liquid/nutriment/coffee
 	name = "coffee powder"
@@ -312,3 +384,20 @@
 	taste_description = "mayo"
 	color = "#efede8"
 	taste_mult = 2
+
+// From Synnono's Cooking Expansion on Aurora
+/decl/material/liquid/nutriment/browniemix
+	name = "Brownie Mix"
+	lore_text = "A dry mix for making delicious brownies."
+	color = "#441a03"
+	nutriment_factor = 5
+	taste_mult = 1.3
+	taste_description = "chocolate"
+
+// Caramel sugar from Hestia
+/decl/material/liquid/nutriment/caramelsugar
+	name = "Caramel Sugar"
+	lore_text = "Caramelised sugar, used in various recipes."
+	taste_description = "toasty sweetness"
+	taste_mult = 1.5
+	nutriment_factor = 1.5

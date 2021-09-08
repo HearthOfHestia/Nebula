@@ -111,7 +111,9 @@
 		/datum/mil_branch/iseo_issc
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/t1
+		/datum/mil_rank/sc/t1,
+		/datum/mil_rank/sc/t2,
+		/datum/mil_rank/sc/t3
 	)
 	min_skill = list(SKILL_LITERACY    = SKILL_ADEPT)
 	max_skill = list(   SKILL_ANATOMY     = SKILL_MAX,

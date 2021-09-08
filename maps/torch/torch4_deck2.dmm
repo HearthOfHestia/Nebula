@@ -157,7 +157,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engine_monitoring)
 "au" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/storage/box/lights/mixed,
@@ -251,7 +251,7 @@
 /turf/simulated/floor/reinforced,
 /area/engineering/fuelbay/aux)
 "aF" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/integrated_electronics/wirer,
@@ -325,12 +325,12 @@
 /obj/item/stock_parts/circuitboard/shield_generator,
 /obj/item/stock_parts/circuitboard/shield_generator,
 /obj/item/stock_parts/circuitboard/shield_generator,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "aN" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/helm,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -354,14 +354,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "aP" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/borgupload,
 /obj/item/stock_parts/circuitboard/aiupload,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "aQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/caution,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -456,7 +456,7 @@
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "be" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -472,13 +472,13 @@
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
 "bh" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/junk,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "bi" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
@@ -606,7 +606,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftstarboard)
 "bv" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/stack/material/sheet/mapped/steel/fifty{
@@ -654,7 +654,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/morgue)
 "bA" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/stack/material/pane/mapped/glass/fifty{
@@ -779,7 +779,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "bO" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/mre/dessert,
 /obj/random/mre/dessert,
 /obj/random/mre/dessert/vegan,
@@ -806,7 +806,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "bR" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/flashlight{
@@ -857,7 +857,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "bU" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/robotics,
 /obj/machinery/light/small{
@@ -1135,7 +1135,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "cp" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/aicard,
@@ -1198,7 +1198,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "cs" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/stock_parts/circuitboard/arcade/battle,
 /obj/item/stock_parts/circuitboard/arcade/orion_trail,
@@ -1271,7 +1271,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "cF" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/northleft{
@@ -1315,7 +1315,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "cK" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/structure/window/reinforced,
@@ -1340,7 +1340,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/forestarboard)
 "cM" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/northleft{
@@ -1369,7 +1369,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "cP" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/technology_scanner,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -1438,7 +1438,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "cZ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/reinforced/mapped/plasteel/fifty{
 	amount = 10
@@ -1477,7 +1477,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "dc" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/tech_supply,
@@ -1487,7 +1487,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "de" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/crowbar/brace_jack,
 /obj/item/clothing/gloves/insulated,
@@ -1507,7 +1507,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "df" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/computer/tesla_link,
 /obj/item/stock_parts/computer/processor_unit,
@@ -1538,7 +1538,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "dh" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/autolathe,
 /obj/item/stock_parts/circuitboard/unary_atmos/cooler,
@@ -1554,7 +1554,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "di" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -1596,7 +1596,7 @@
 /area/hallway/primary/seconddeck/elevator)
 "do" = (
 /obj/effect/decal/cleanable/cobweb2,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
@@ -1771,7 +1771,7 @@
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "dO" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	desc = "A simple wooden altar covered in cloth.";
 	icon = 'icons/obj/cult.dmi';
 	icon_state = "churchaltar";
@@ -2064,7 +2064,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/tech)
 "el" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/airlock_electronics/secure,
 /obj/item/stock_parts/circuitboard/airlock_electronics/secure,
@@ -2075,7 +2075,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "em" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/airlock_electronics,
 /obj/item/stock_parts/circuitboard/airlock_electronics,
@@ -2085,7 +2085,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "en" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/apc,
 /obj/item/stock_parts/circuitboard/apc,
@@ -2094,7 +2094,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "eo" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/atmos_alert,
 /obj/item/stock_parts/circuitboard/stationalert,
@@ -2115,7 +2115,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "er" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig/medical/equipped,
 /obj/machinery/light/small{
 	dir = 4
@@ -2401,7 +2401,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
 "eQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/flashlight,
 /obj/item/flashlight,
 /obj/item/flashlight,
@@ -2443,7 +2443,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
 "eS" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/defibrillator/compact,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/medical)
@@ -2481,7 +2481,7 @@
 /area/assembly/robotics)
 "eW" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/shiny/mapped/aluminium/fifty,
 /obj/item/stack/material/shiny/mapped/aluminium/fifty,
@@ -2941,7 +2941,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fZ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/random/junk,
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
@@ -3358,7 +3358,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "gO" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/flame/candle,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/chapel)
@@ -3393,7 +3393,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "gT" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -3654,12 +3654,12 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod11/station)
 "hC" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "hD" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/chapel)
@@ -3776,7 +3776,7 @@
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "hW" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -3807,7 +3807,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_bay)
 "ia" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/item/storage/box/lights/bulbs,
@@ -3974,7 +3974,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small,
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/firstaid,
@@ -4035,7 +4035,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "iA" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/structure/cable/green{
 	d1 = 4;
 	d2 = 8;
@@ -4222,7 +4222,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "iS" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/power/apc{
 	dir = 1;
 	name = "north bump";
@@ -4247,7 +4247,7 @@
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2
 	},
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/aiModule/reset,
@@ -4451,7 +4451,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
 "jB" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22
@@ -4464,7 +4464,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
 "jC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/random/maintenance/solgov,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -4478,7 +4478,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/northleft,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/aiModule/purge,
@@ -4491,7 +4491,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/machinery/door/window/brigdoor/northleft,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/aiModule/robocop,
@@ -4650,7 +4650,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "jZ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /obj/machinery/firealarm{
 	pixel_y = 21
@@ -4919,7 +4919,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/center)
 "kE" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/seconddeck)
 "kF" = (
@@ -4952,7 +4952,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "kK" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/welding,
@@ -5676,7 +5676,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "mw" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -5851,7 +5851,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "mR" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/rods{
 	amount = 50
@@ -5963,7 +5963,7 @@
 /obj/machinery/vending/wallmed1{
 	pixel_y = 32
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/robotanalyzer,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/firstaid/surgery,
@@ -6198,7 +6198,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "nB" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/random/tank,
 /obj/effect/floor_decal/techfloor{
 	dir = 4;
@@ -6223,7 +6223,7 @@
 /turf/simulated/floor/plating,
 /area/engineering/engine_monitoring)
 "nE" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/circular_saw,
 /obj/item/scalpel{
 	pixel_y = 12
@@ -6803,7 +6803,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/engine_room)
 "po" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
@@ -6972,13 +6972,13 @@
 /turf/simulated/floor/plating,
 /area/engineering/locker_room)
 "pE" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/aiModule/reset,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
 "pG" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/clothing/head/hardhat,
@@ -7946,7 +7946,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "rq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/sheet/mapped/steel/fifty{
 	amount = 50
@@ -8692,7 +8692,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engineering_bay)
 "tj" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/junk,
@@ -8722,7 +8722,7 @@
 /turf/simulated/floor/plating,
 /area/engineering/drone_fabrication)
 "tm" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -8868,7 +8868,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/wastetank)
 "tG" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/alarm{
@@ -9023,7 +9023,7 @@
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/engineering/atmos)
 "tX" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
@@ -9219,7 +9219,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "uz" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/radio/intercom{
 	dir = 8;
@@ -9410,7 +9410,7 @@
 /turf/simulated/floor/bluegrid,
 /area/engineering/bluespace)
 "uW" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/button/blast_door{
 	id_tag = "xenobio2";
 	name = "Containment Blast Doors";
@@ -9911,7 +9911,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/light/small{
@@ -9988,7 +9988,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "ww" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/maintenance/solgov,
@@ -10589,7 +10589,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/disposal)
 "yk" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/technology_scanner,
@@ -10637,7 +10637,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/medical)
 "yq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/random/maintenance/solgov,
@@ -10956,7 +10956,7 @@
 /obj/item/stock_parts/subspace/crystal,
 /obj/item/stock_parts/subspace/filter,
 /obj/item/stock_parts/subspace/transmitter,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light/small{
 	dir = 8
@@ -10983,7 +10983,7 @@
 /obj/item/stock_parts/circuitboard/telecomms/server,
 /obj/item/stock_parts/circuitboard/telecomms/bus,
 /obj/item/stock_parts/circuitboard/telecomms/broadcaster,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
@@ -11995,7 +11995,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "BG" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/tech_supply,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftport)
@@ -12174,7 +12174,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "Cl" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stock_parts/console_screen,
 /obj/item/stock_parts/matter_bin,
 /obj/item/stock_parts/matter_bin,
@@ -12294,7 +12294,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
 "CD" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/sheet/mapped/steel/fifty,
 /obj/item/stack/material/sheet/mapped/steel/fifty,
 /obj/item/stack/material/pane/mapped/glass/fifty,
@@ -12322,7 +12322,7 @@
 	name = "east bump";
 	pixel_x = 24
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/box/monkeycubes,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
@@ -12527,7 +12527,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
 "Dh" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/box/beakers,
 /obj/item/storage/box/bodybags,
 /obj/item/storage/box/masks,
@@ -12747,7 +12747,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "DH" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/junk,
 /obj/random/maintenance/solgov,
 /obj/item/storage/box/matches,
@@ -14408,7 +14408,7 @@
 /turf/simulated/floor/plating,
 /area/rnd/xenobiology)
 "HU" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
@@ -14642,7 +14642,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
@@ -15433,7 +15433,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/shieldbay)
 "KE" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -15792,7 +15792,7 @@
 /turf/simulated/floor/plating,
 /area/engineering/atmos)
 "LN" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/machinery/cell_charger{
@@ -15898,7 +15898,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/engine_room)
 "Me" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/scanner/gas,
 /obj/item/scanner/gas,
@@ -15973,7 +15973,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "Mk" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/toolbox/mechanical{
 	pixel_x = 2;
 	pixel_y = 3
@@ -16004,7 +16004,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/technology_scanner,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftport)
@@ -16137,7 +16137,7 @@
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "MJ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/airlock_electronics,
 /obj/item/stock_parts/circuitboard/airlock_electronics,
@@ -16190,7 +16190,7 @@
 /turf/simulated/floor/airless,
 /area/engineering/engine_room)
 "MW" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/holodeckcontrol,
 /obj/item/stock_parts/circuitboard/mech_recharger,
@@ -16343,7 +16343,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/hallway/primary/seconddeck/center)
 "Nl" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/toolbox/electrical,
 /obj/machinery/alarm{
 	dir = 8;
@@ -16596,7 +16596,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "NU" = (
-/obj/structure/table/standard{
+/obj/structure/table{
 	name = "plastic table frame"
 	},
 /obj/random/single/playing_cards,
@@ -16779,7 +16779,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/book/manual/rust_engine,
 /turf/simulated/floor/tiled/monotile,
 /area/vacant/prototype/control)
@@ -18129,7 +18129,7 @@
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 2
 	},
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/aiModule/solgov,
@@ -18167,7 +18167,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology)
 "RO" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -18218,7 +18218,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "RX" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/structure/bedsheetbin,
 /obj/structure/cable/green{
 	d1 = 4;
@@ -19032,7 +19032,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "Ul" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/belt/medical,
 /obj/item/storage/belt/medical,
 /obj/item/storage/belt/medical,
@@ -19187,7 +19187,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
 "UQ" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/random/junk,
@@ -19235,7 +19235,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "Ve" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/aerogel/mapped/tritium/fifty{
 	amount = 50
 	},
@@ -19765,7 +19765,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/spray/cleaner{
 	pixel_x = -5
 	},
@@ -20092,7 +20092,7 @@
 /area/engineering/atmos)
 "Xv" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/item/clothing/mask/gas/half,
@@ -20274,7 +20274,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
 "Yg" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
 	amount = 50
@@ -20324,7 +20324,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
 "Ym" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/button/blast_door{
 	id_tag = "xenobio3";
 	name = "Containment Blast Doors";
@@ -20782,7 +20782,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/fuelbay/aux)
 "ZF" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/stock_parts/circuitboard/message_monitor,
 /turf/simulated/floor/tiled/techfloor/grid,
