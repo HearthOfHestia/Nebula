@@ -138,6 +138,19 @@
 /decl/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.appearance_descriptors["headtail length"] == 1 ? MALE : FEMALE)
 
+/decl/species/skrell/handle_trail(mob/living/carbon/human/H, turf/simulated/T)
+	if(!H.shoes)
+		var/list/bloodDNA
+		var/list/blood_data = REAGENT_DATA(H.vessel, /decl/material/liquid/blood)
+		if(blood_data)
+			bloodDNA = list(blood_data["blood_DNA"] = blood_data["blood_type"])
+		else
+			bloodDNA = list()
+		T.AddTracks(move_trail, bloodDNA, H.dir, 0, H.skin_colour) // Coming
+		var/turf/simulated/from = get_step(H, global.reverse_dir[H.dir])
+		if(istype(from))
+			from.AddTracks(move_trail, bloodDNA, 0, H.dir, H.skin_colour) // Going
+
 /decl/species/skrell/check_background()
 	return TRUE
 
