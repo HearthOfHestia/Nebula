@@ -835,11 +835,6 @@
 	name = "\improper Research Paperwork Office"
 	icon_state = "devlab"
 
-/area/rnd/entry
-	name = "\improper Research and Development Access"
-	icon_state = "decontamination"
-	req_access = list()
-
 /area/rnd/locker
 	name = "\improper Research Locker Room"
 	icon_state = "locker"
@@ -1461,6 +1456,9 @@
 
 /area/assembly/robotics/surgery
 	name = "\improper Robotics Operating Theatre"
+
+/area/rnd
+	req_access = list(access_research)
 
 /area/rnd/misc_lab
 	name = "\improper Miscellaneous Research"

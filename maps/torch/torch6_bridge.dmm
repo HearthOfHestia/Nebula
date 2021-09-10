@@ -1952,6 +1952,7 @@
 /obj/item/aiModule/solgov,
 /obj/item/aiModule/reset,
 /obj/item/aiModule/purge,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dG" = (
@@ -2009,7 +2010,6 @@
 "dL" = (
 /obj/structure/closet/secure_closet/engineering_chief_torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dM" = (
