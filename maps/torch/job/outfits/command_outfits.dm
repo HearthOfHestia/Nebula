@@ -45,6 +45,7 @@
 	pda_slot = slot_l_store_str
 	head = /obj/item/clothing/head/iseo/beret/medical
 	gloves = /obj/item/clothing/gloves/duty/med
+	id_type = /obj/item/card/id/torch/silver/medical
 
 /decl/hierarchy/outfit/job/torch/crew/command/cmo/New()
 	..()
@@ -82,7 +83,7 @@
 	l_ear = /obj/item/radio/headset/heads/cos
 	uniform = /obj/item/clothing/under/iseo/utility/security
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = list(/obj/item/card/id/torch/silver/security)
+	id_type = /obj/item/card/id/torch/silver/security
 	pda_type = /obj/item/modular_computer/pda/heads/hos
 	head = /obj/item/clothing/head/iseo/beret/security
 	gloves = /obj/item/clothing/gloves/duty/sec
@@ -102,7 +103,7 @@
 	l_ear = /obj/item/radio/headset/heads/torchntcommand
 	uniform = /obj/item/clothing/under/suit_jacket/corp
 	shoes = /obj/item/clothing/shoes/dress
-	id_type = list(/obj/item/card/id/torch/passenger/corporate/liaison)
+	id_type = /obj/item/card/id/torch/passenger/corporate/liaison
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 	backpack_contents = list(/obj/item/clothing/accessory/badge/nanotrasen = 1)
 
@@ -111,7 +112,7 @@
 	l_ear =    /obj/item/radio/headset/heads/torchcorp
 	uniform =  /obj/item/clothing/under/suit_jacket/corp
 	shoes =    /obj/item/clothing/shoes/dress
-	id_type = list( /obj/item/card/id/torch/passenger/corporate)
+	id_type = /obj/item/card/id/torch/passenger/corporate
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /decl/hierarchy/outfit/job/torch/crew/representative
@@ -120,7 +121,7 @@
 	uniform = /obj/item/clothing/under/internalaffairs
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/dress
-	id_type = list(/obj/item/card/id/torch/crew/representative)
+	id_type = /obj/item/card/id/torch/crew/representative
 	pda_type = /obj/item/modular_computer/pda/heads/paperpusher
 
 /decl/hierarchy/outfit/job/torch/crew/command/sea/espatier
@@ -128,7 +129,7 @@
 	uniform = /obj/item/clothing/under/espatier/utility/command
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	l_ear = /obj/item/radio/headset/sea
-	id_type = list(/obj/item/card/id/torch/crew/sea)
+	id_type = /obj/item/card/id/torch/crew/sea
 	pda_type = /obj/item/modular_computer/pda/heads
 	gloves = /obj/item/clothing/gloves/duty/com
 
@@ -136,7 +137,7 @@
 	name = OUTFIT_JOB_NAME("Bridge Officer")
 	uniform = /obj/item/clothing/under/iseo/utility/command
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = list(/obj/item/card/id/torch/crew/bridgeofficer)
+	id_type = /obj/item/card/id/torch/crew/bridgeofficer
 	pda_type = /obj/item/modular_computer/pda/heads
 	l_ear = /obj/item/radio/headset/bridgeofficer
 	gloves = /obj/item/clothing/gloves/duty/com

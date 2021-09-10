@@ -48,7 +48,7 @@
 		/obj/item/clothing/accessory/stethoscope,
 		/obj/item/flashlight/pen,
 		/obj/item/clothing/glasses/hud/health,
-		/obj/item/clothing/suit/armor/vest/government/command,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/command,
 		/obj/item/holowarrant,
 		/obj/item/storage/firstaid/adv,
