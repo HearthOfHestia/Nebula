@@ -188,7 +188,6 @@
 		to_chat(user, "<span class='danger'>None of [src] left!</span>")
 		qdel(src)
 		return 0
-
 	if(istype(M, /mob/living/carbon))
 		//TODO: replace with standard_feed_mob() call.
 		var/mob/living/carbon/C = M
