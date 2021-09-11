@@ -36,7 +36,7 @@
 
 /obj/structure/closet/secure_closet/security_torch/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/vest/government/sec,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
@@ -68,7 +68,7 @@
 
 /obj/structure/closet/secure_closet/cos/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/vest/government/sec,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/heads/cos,
 		/obj/item/radio/headset/heads/cos/alt,
@@ -106,7 +106,7 @@
 
 /obj/structure/closet/secure_closet/brigchief/WillContain()
 	return list(
-		/obj/item/clothing/suit/armor/vest/government/sec,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/iseo/security,
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
@@ -142,7 +142,7 @@
 		/obj/item/radio/headset/headset_sec,
 		/obj/item/radio/headset/headset_sec/alt,
 		/obj/item/clothing/head/helmet/command,
-		/obj/item/clothing/suit/armor/vest/government/sec,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/gun/energy/gun/small/secure,
 		/obj/item/flash,
 		/obj/item/baton/loaded,

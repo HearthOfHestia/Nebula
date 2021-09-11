@@ -524,7 +524,7 @@
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
+	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Storage."
 
 /area/turbolift/endeavour_third
 	name = "lift (second deck)"
@@ -536,7 +536,7 @@
 	name = "lift (third deck)"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Habitation Deck"
-	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Officer's Mess. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym."
+	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym. Garden."
 
 /area/turbolift/endeavour_first
 	name = "lift (fourth deck)"
@@ -834,11 +834,6 @@
 /area/rnd/office
 	name = "\improper Research Paperwork Office"
 	icon_state = "devlab"
-
-/area/rnd/entry
-	name = "\improper Research and Development Access"
-	icon_state = "decontamination"
-	req_access = list()
 
 /area/rnd/locker
 	name = "\improper Research Locker Room"
@@ -1461,6 +1456,9 @@
 
 /area/assembly/robotics/surgery
 	name = "\improper Robotics Operating Theatre"
+
+/area/rnd
+	req_access = list(access_research)
 
 /area/rnd/misc_lab
 	name = "\improper Miscellaneous Research"
