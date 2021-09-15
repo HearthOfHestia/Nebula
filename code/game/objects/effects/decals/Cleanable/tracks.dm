@@ -169,13 +169,6 @@ var/global/list/image/fluidtrack_cache=list()
 	goingdir = goingdir && global.reverse_dir[goingdir]
 	..(DNA, comingdir, goingdir, bloodcolor)
 
-/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints
-	name = "wet footprints"
-	desc = "They look like still wet tracks left by skrellian feet."
-
-/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints/dry()
-	qdel(src)
-
 /obj/effect/decal/cleanable/blood/tracks/snake
 	name = "wet tracks"
 	dryname = "dried tracks"

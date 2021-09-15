@@ -154,6 +154,12 @@
 /decl/species/skrell/check_background()
 	return TRUE
 
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints
+	name = "wet footprints"
+	desc = "They look like still wet tracks left by skrellian feet."
+
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints/dry()
+	qdel(src)
 /obj/item/organ/internal/eyes/skrell
 	name = "amphibian eyes"
 	desc = "Large black orbs, belonging to some sort of giant frog by looks of it."
