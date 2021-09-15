@@ -4,6 +4,7 @@
 	footstep_type = /decl/footsteps/asteroid
 	icon_state = "0"
 	layer = PLATING_LAYER
+	open_turf_type = /turf/exterior/open
 	var/diggable = 1
 	var/dirt_color = "#7c5e42"
 	var/possible_states = 0
@@ -14,7 +15,20 @@
 	var/obj/effect/overmap/visitable/sector/exoplanet/owner
 
 /turf/exterior/Initialize(mapload, no_update_icon = FALSE)
+
+	if(possible_states > 0)
+		icon_state = "[rand(0, possible_states)]"
+	owner = LAZYACCESS(map_sectors, "[z]")
+	if(!istype(owner))
+		owner = null
+	else
+		//Must be done here, as light data is not fully carried over by ChangeTurf (but overlays are).
+		set_light(owner.lightlevel)
+		if(owner.planetary_area && istype(loc, world.area))
+			ChangeArea(src, owner.planetary_area)
+
 	. = ..(mapload)	// second param is our own, don't pass to children
+
 	if (no_update_icon)
 		return
 
@@ -35,6 +49,22 @@
 	if(istype(ext))
 		ext.affecting_heat_sources = last_affecting_heat_sources
 	return ext
+
+/turf/exterior/initialize_ambient_light(var/mapload)
+	update_ambient_light(mapload)
+
+/turf/exterior/update_ambient_light(var/mapload)
+	if(owner) // Exoplanets do their own lighting shenanigans.
+		//Must be done here, as light data is not fully carried over by ChangeTurf (but overlays are).
+		set_light(owner.lightlevel)
+		return
+	if(config.starlight)
+		var/area/A = get_area(src)
+		if(A.show_starlight)
+			set_light(config.starlight, 0.75, l_color = SSskybox.background_color)
+			return
+	if(!mapload)
+		set_light(0)
 
 /turf/exterior/is_plating()
 	return !density
@@ -64,19 +94,6 @@
 		var/obj/structure/fire_source/heat_source = thing
 		gas.temperature = gas.temperature + heat_source.exterior_temperature / max(1, get_dist(src, get_turf(heat_source)))
 	return gas
-
-/turf/exterior/Initialize(var/ml)
-	if(possible_states > 0)
-		icon_state = "[rand(0, possible_states)]"
-	owner = LAZYACCESS(map_sectors, "[z]")
-	if(!istype(owner))
-		owner = null
-	else
-		//Must be done here, as light data is not fully carried over by ChangeTurf (but overlays are).
-		set_light(owner.lightlevel)
-		if(owner.planetary_area && istype(loc, world.area))
-			ChangeArea(src, owner.planetary_area)
-	. = ..()
 
 /turf/exterior/levelupdate()
 	for(var/obj/O in src)
@@ -170,3 +187,5 @@
 		vis_contents += air.graphic
 	else
 		vis_contents.Cut()
+		if(flooded)
+			vis_contents |= global.flood_object

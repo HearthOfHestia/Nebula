@@ -17,7 +17,7 @@
 /decl/recipe/hotandsoursoup
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
 	fruit = list("cabbage" = 1, "mushroom" = 1)
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 2, /decl/material/solid/blackpepper = 2, /decl/material/liquid/water = 10)
+	reagents = list(/decl/material/solid/sodiumchloride = 2, /decl/material/solid/blackpepper = 2, /decl/material/liquid/water = 10)
 	items = list(
 		/obj/item/chems/food/tofu = 1
 	)

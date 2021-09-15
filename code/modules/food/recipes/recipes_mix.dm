@@ -1,7 +1,7 @@
 /decl/recipe/superbiteburger
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	fruit = list("tomato" = 1)
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 5, /decl/material/solid/blackpepper = 5)
+	reagents = list(/decl/material/solid/sodiumchloride = 5, /decl/material/solid/blackpepper = 5)
 	items = list(
 		/obj/item/chems/food/bigbiteburger,
 		/obj/item/chems/food/dough,
