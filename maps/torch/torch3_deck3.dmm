@@ -1753,6 +1753,7 @@
 	dir = 4
 	},
 /obj/machinery/power/sensor{
+	id_tag = "Third Deck Subgrid";
 	name = "Powernet Sensor - Third Deck Subgrid"
 	},
 /obj/structure/catwalk,
@@ -18329,6 +18330,13 @@
 	pixel_x = -22;
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
+/obj/machinery/power/sensor{
+	id_tag = "Telecommunications Subgrid"
+	},
+/obj/structure/cable/cyan{
+	d2 = 2;
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/tcommsat/chamber)
 "Xg" = (
@@ -19087,6 +19095,19 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
+"ZC" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/tcommsat/chamber)
 "ZD" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -28364,7 +28385,7 @@ ZN
 aM
 bQ
 Xf
-NC
+ZC
 ej
 eT
 gc

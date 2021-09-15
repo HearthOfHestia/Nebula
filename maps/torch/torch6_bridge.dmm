@@ -983,6 +983,7 @@
 	c_tag = "Substation - Bridge"
 	},
 /obj/machinery/power/sensor{
+	id_tag = "Bridge Deck Subgrid";
 	name = "Powernet Sensor - Bridge Subgrid"
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -2879,7 +2880,8 @@
 	dir = 8;
 	icon_state = "shock"
 	},
-/turf/simulated/wall/r_wall/map_preset/tan,
+/obj/effect/paint_stripe/command,
+/turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/forestarboard)
 "fv" = (
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -6024,10 +6026,7 @@
 /area/crew_quarters/heads/office/xo)
 "oA" = (
 /obj/structure/lattice,
-/obj/machinery/camera/network/command{
-	c_tag = "Bridge Exterior - Starboard";
-	dir = 2
-	},
+/obj/machinery/light/navigation/delay5,
 /turf/space,
 /area/space)
 "oB" = (
@@ -6221,7 +6220,10 @@
 /area/perseverance/airlock)
 "pe" = (
 /obj/structure/lattice,
-/obj/machinery/light/navigation/delay5,
+/obj/machinery/camera/network/command{
+	c_tag = "Bridge Exterior - Starboard";
+	dir = 2
+	},
 /turf/space,
 /area/space)
 "pf" = (
@@ -7491,6 +7493,7 @@
 	dir = 8;
 	icon_state = "shock"
 	},
+/obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/foreport)
 "sy" = (
@@ -11274,9 +11277,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/disciplinary_board_room)
-"Fp" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/bridge/storage)
 "Fv" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/machinery/light{
@@ -11495,6 +11495,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Gu" = (
+/obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/foreport)
 "Gy" = (
@@ -12925,9 +12926,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
-"Mz" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/heads/office/co)
 "MA" = (
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
@@ -22711,7 +22709,8 @@ aa
 aa
 aa
 aa
-pe
+aa
+oA
 aa
 aa
 aa
@@ -22725,9 +22724,8 @@ aa
 aa
 aa
 aa
+oA
 aa
-aa
-pe
 aa
 aa
 aa
@@ -22912,10 +22910,10 @@ af
 af
 af
 af
+af
 aa
 ae
 aa
-aa
 zx
 aa
 aa
@@ -22927,10 +22925,10 @@ kE
 aa
 aa
 zx
-aa
 aa
 ae
 qA
+tg
 tg
 tg
 tg
@@ -23115,8 +23113,8 @@ af
 af
 af
 af
-oA
-aa
+af
+pe
 aa
 vA
 aa
@@ -23130,8 +23128,8 @@ aa
 aa
 vA
 aa
-aa
 ae
+tg
 tg
 tg
 tg
@@ -23332,7 +23330,7 @@ KG
 Hz
 Es
 aa
-aa
+ae
 sx
 Gu
 Gu
@@ -23535,7 +23533,7 @@ FE
 HE
 BI
 RV
-Mz
+bq
 Yz
 Pt
 Pt
@@ -23721,7 +23719,7 @@ lo
 Gr
 rz
 Xz
-Fp
+lo
 eM
 DE
 Ie

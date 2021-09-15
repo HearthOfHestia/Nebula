@@ -4887,6 +4887,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/sensor{
+	id_tag = "Fourth Deck Subgrid";
 	name = "Powernet Sensor - Fourth Deck Subgrid"
 	},
 /obj/effect/floor_decal/industrial/warning{

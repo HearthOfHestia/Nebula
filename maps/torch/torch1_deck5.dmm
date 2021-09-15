@@ -7663,6 +7663,7 @@
 /area/maintenance/substation/fifthdeck)
 "rc" = (
 /obj/machinery/power/sensor{
+	id_tag = "Fifth Deck Subgrid";
 	name = "Powernet Sensor - Fifth Deck Subgrid"
 	},
 /obj/structure/cable/green,
@@ -11530,6 +11531,9 @@
 	id_tag = "aiblast";
 	name = "AI Core Blast Door Control";
 	pixel_x = -24
+	},
+/obj/machinery/power/sensor{
+	id_tag = "AI Core Subgrid"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/ai/ai)

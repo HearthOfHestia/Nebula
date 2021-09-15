@@ -2262,6 +2262,7 @@
 /area/maintenance/seconddeck/forestarboard)
 "eF" = (
 /obj/machinery/power/sensor{
+	id_tag = "Second Deck Subgrid";
 	name = "Powernet Sensor - Second Deck Subgrid"
 	},
 /obj/structure/cable/green{
@@ -3240,6 +3241,7 @@
 /area/engineering/engine_room)
 "gB" = (
 /obj/machinery/power/sensor{
+	id_tag = "Atmospherics Subgrid";
 	name = "Powernet Sensor - Atmospherics Subgrid"
 	},
 /obj/structure/cable/cyan{
@@ -3687,6 +3689,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/sensor{
+	id_tag = "Engine Output";
 	name = "Powernet Sensor - Engine Output"
 	},
 /obj/structure/catwalk,
@@ -9538,6 +9541,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/power/sensor{
+	id_tag = "R-UST Power Generation";
 	name = "R-UST Power Generation - Powernet Sensor"
 	},
 /obj/structure/cable/yellow{
@@ -11146,6 +11150,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 9
+	},
+/obj/structure/cable{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/sensor{
+	id_tag = "Auxillary Power Generation"
 	},
 /turf/simulated/floor/plating,
 /area/engineering/auxpowergen)
@@ -19469,6 +19480,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/sensor{
+	id_tag = "Engine Subgrid";
 	name = "Powernet Sensor - Engine Subgrid"
 	},
 /obj/machinery/power/apc/super/critical{

@@ -406,7 +406,8 @@ var/global/list/localhost_addresses = list(
 		'html/panels.css',
 		'html/spacemag.css',
 		'html/images/loading.gif',
-		'html/images/talisman.png'
+		'html/images/talisman.png',
+		'html/images/iseo.png'
 		)
 
 	var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache)

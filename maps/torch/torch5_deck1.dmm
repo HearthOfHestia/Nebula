@@ -3598,6 +3598,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/sensor{
+	id_tag = "First Deck Subgrid";
 	name = "Powernet Sensor - First Deck Subgrid"
 	},
 /obj/structure/cable/green,

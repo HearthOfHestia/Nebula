@@ -68,7 +68,7 @@
 /obj/item/folder/nt/rd
 
 /obj/item/folder/envelope/captain
-	desc = "A thick envelope. The ISEO crest is stamped in the corner, along with 'TOP SECRET - ISEO UMBRA'."
+	desc = "A thick envelope. The ISEO crest is stamped in the corner, along with 'TOP SECRET - ISEO PROTOCOLS'."
 
 /obj/item/folder/envelope/captain/Initialize()
 	..()
@@ -80,7 +80,7 @@
 	var/memo = {"
 	<tt><center><b><font color='red'>SECRET - CODE WORDS: ENDEAVOUR</font></b>
 	<h3>INTERNATIONAL STELLAR EXPLORATION ORGANIZATION NATIONAL COUNCIL</h3>
-	<img src = iseologo.png>
+	<img src = 'iseo.png'>
 	</center>
 	<b>FROM:</b> National Council Chairman Andriana Blake<br>
 	<b>TO:</b> Commanding Officer of ISEO Endeavour <br>
@@ -112,31 +112,43 @@
 	new/obj/item/paper/umbra(src)
 
 /obj/item/folder/envelope/rep
-	desc = "A thick envelope. The ISEO crest is stamped in the corner, along with 'TOP SECRET - ENDEAVOUR UMBRA'."
+	desc = "A thick envelope. The ISEO crest is stamped in the corner, along with 'TOP SECRET - ENDEAVOUR PROTOCOLS'."
 
 /obj/item/folder/envelope/rep/Initialize()
 	. = ..()
 	new/obj/item/paper/umbra(src)
 
 /obj/item/paper/umbra
-	name = "UMBRA Protocol"
+	name = "Emergency Protocols"
 	info = {"
-	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS: ENDEAVOUR UMBRA</font></b>
+	<tt><center><b><font color='red'>TOP SECRET - CODE WORDS</font></b>
 	<h3>OFFICE OF THE SECRETARY GENERAL OF THE ISEO NATIONAL COUNCIL</h3>
-	<img src = iseologo.png>
+	<img src = 'iseo.png'>
 	</center>
 	<b>FROM:</b> Johnathan Smitherson, Special Aide of the Secretary General<br>
 	<b>TO:</b> Commanding Officer of the ISEO Endeavour<br>
 	<b>CC:</b> National Representative aboard the ISEO Endeavour<br>
-	<b>SUBJECT:</b> UMBRA protocol<br>
+	<b>SUBJECT:</b> Emergency protocols<br>
 	<hr>
 	This is a small addendum to the usual operating procedures. Unlike the rest of SOP, this is not left to the Commanding Officer's discretion and is mandatory. As unconventional as this is, we felt it is essential for smooth operation of this mission.<br>
-	Procedure can be initiated only by transmission from ISEO Expeditionary Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
-	The signal to initiate the procedure are codewords 'GOOD NIGHT WORLD' used in this order as one phrase. You do not need to send acknowledgement.
-	<li>Information about this expedition's findings is to be treated as secret and vital to the ISEO's operational security, and is protected under codeword UMBRA. Only National-Council affiliated ISEO employees the ISEO Endeavour are allowed access to this information on a need-to-know basis.</li>
-	<li>The secrecy of this information is to be applied retroactively. Any non-cleared personnel who were exposed to such information are to be secured and transferred to DIA on arrival at home port.</li>
-	<li>Any devices capable of transmitting or receiving data at interstellar range are to be confiscated from private possession.</li>
-	<li>Disregard any systems remaining in your flight plan and set course for Sol, Neptune orbit. You will be contacted upon your arrival. Do not make stops in ports on the way unless absolutely necessary.</li>
+	These procedures can be initiated only by transmission from ISEO Expeditionary Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
+	<br>
+	The following codewords will either be transmitted to your vessel, or be transmitted by your vessel to indicate a course of action taken.
+	You, Captain, may initiate some of these protocols in certain events. 
+
+	<li>HERA MOURNING: You may execute this protocol. In the event that the ISEO Endeavour faces destruction in a manner which allows transmission of this protocol, you are to enact this protocol. Transmit all scientific and navigation data along with final crew roster.</li>
+
+	<li>ICARUS DARKNESS: You may execute this protocol. In the event that the ISEO Endeavour is at risk of capture by hostile alien forces, you are to ensure the destruction of the FTL drive and all sensitive navigational data, up to and including scuttling the ship via self-destruct if required.</li>
+
+	<li>APOLLO WITHERING: You may execute this protocol. In the event that a xenolife outbreak of of any form - viral, bacteria, or fauna-derived - develops and can not be contained, this protocol is to be enacted. If feasible, evacuate the ship. Otherwise, set scuttling charges and transmit final crew roster. 
+
+	<li>HERMES EXPEDIENT: This protocol may only be enacted by Expeditionary Command. The ISEO Endeavour is to immediately recall all deployed personnel and immediately set course for Sol under full communications blackout. Minimize resupply stops and prevent any crew from leaving the vessel. On entering the Sol system, park in Pluto orbit. You will be contacted.</li>
+
+	<li>ARES RISING: In the event of an act of war, this protocol may only be enacted by Expeditionary Command and will contain a following identifier. The ISEO Endeavour is to immediately escalate to blue alert and actively avoid all entities associated with the given identifier, and any members of the identifier's species or faction are to be arrested immediately. The ISEO Endeavour is to wrap up current exploration operations and recall to Sol if no threat is present.</li>
+
+	<li>APOLLYON ASCENDANT: In the event of a end-of-humanity scenario - genocidal invasion, all-out-interstellar war, xenolife infestation, or other event that will meaningfully reduce the human population by a significant degree, this protocol will be enacted by command. The ISEO Endeavour is to set course for the nearest known allied system and make port until contacted by the system's controlling government. In the event that this is not possible, the ISEO Endeavour is to locate the nearest habitable planet and remain in orbit, conducting expeditions to assess suitability for a new colony. </li>
+
+	While drastic, these protocols are designed for usage in situations that may face the Endeavour or Humanity within the next decades. It is unlikely any of them will ever be activated, but we must be prepared for all eventualities.
 	<br>
 	While drastic, I assure you this is a simple precaution, lest any issues. Just keep the option open, and carry on with your normal duties.
 	<i>Regards, John.</i></tt>
