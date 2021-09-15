@@ -3,13 +3,7 @@ var/global/list/ear_styles_list = list()	//stores /decl/sprite_accessory/ears in
 
 /hook/startup/proc/init_ears_tails_datums()
 	//Tails.
-	for(var/path in subtypesof(/decl/sprite_accessory/tail))
-		var/decl/sprite_accessory/tail/H = new path()
-		global.tail_styles_list[H.name] = H
-
+	global.tail_styles_list = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/tail)
 	//Ears.
-	for(var/path in subtypesof(/decl/sprite_accessory/ears))
-		var/decl/sprite_accessory/ears/H = new path()
-		global.ear_styles_list[H.name] = H
-
+	global.ear_styles_list = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/ears)
 	return TRUE
