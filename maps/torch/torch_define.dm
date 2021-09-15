@@ -3,6 +3,7 @@
 	full_name = "\improper ISEO Endeavour"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
+	welcome_sound = 'maps/torch/sounds/cryorevival.ogg'
 	//config_path = "config/torch_config.txt"
 
 	admin_levels = list(7)

@@ -39,7 +39,7 @@
 
 /decl/recipe/croissant
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/liquid/water = 5, /decl/material/liquid/drink/milk = 5)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/liquid/water = 5, /decl/material/liquid/drink/milk = 5)
 	reagent_mix = REAGENT_REPLACE
 	items = list(/obj/item/chems/food/dough)
 	result = /obj/item/chems/food/croissant

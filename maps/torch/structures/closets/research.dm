@@ -45,7 +45,7 @@
 		/obj/item/clipboard/steel,
 		/obj/item/taperoll/research,
 		/obj/item/clothing/glasses/welding/superior,
-		/obj/item/clothing/suit/armor/vest/government/command,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/command,
 		/obj/item/storage/box/secret_project_disks/science,
 		/obj/item/storage/belt/general,
