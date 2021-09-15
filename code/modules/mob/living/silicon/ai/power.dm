@@ -133,6 +133,7 @@
 /mob/living/silicon/ai/proc/update_power_usage()
 	var/newusage = calculate_power_usage()
 	newusage *= AI_POWERUSAGE_OXYLOSS_TO_WATTS_MULTIPLIER
+	newusage = newusage / 2
 	if(psupply)
 		psupply.change_power_consumption(newusage, POWER_USE_ACTIVE)
 		psupply.update_power_state()

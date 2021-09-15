@@ -11,7 +11,7 @@
 	appearance_flags = PIXEL_SCALE | LONG_GLIDE
 
 	var/slowdown = 0
-
+	var/tmp/icon_cache_key
 	// Strings
 	var/broken_description             // fracture string if any.
 	var/damage_state = "00"            // Modifier used for generating the on-mob damage overlay for this limb.
@@ -39,6 +39,7 @@
 	var/skin_blend = ICON_ADD          // How the skin colour is applied.
 	var/hair_colour                    // hair colour
 	var/list/markings = list()         // Markings (body_markings) to apply to the icon
+	var/render_alpha = 255
 
 	// Wound and structural data.
 	var/wound_update_accuracy = 1      // how often wounds should be updated, a higher number means less often
@@ -107,7 +108,7 @@
 		replaced(owner)
 		sync_colour_to_human(owner)
 	get_icon()
-	slowdown = species.get_slowdown(owner)
+	slowdown = species.get_slowdown(owner) // TODO make this a getter so octopodes can override it based on flooding
 	if(species)
 		for(var/attack_type in species.unarmed_attacks)
 			var/decl/natural_attack/attack = GET_DECL(attack_type)
@@ -961,8 +962,8 @@ Note that amputating the affected organ does in fact remove the infection from t
 			forceMove(get_turf(src))
 			if(!clean)
 				// Throw limb around.
-				if(src && istype(loc,/turf))
-					throw_at(get_edge_target_turf(src,pick(global.alldirs)),rand(1,3),30)
+				if(src && isturf(loc))
+					throw_at(get_edge_target_turf(src, pick(global.alldirs)), rand(1,3), THROWFORCE_GIBS)
 				set_dir(SOUTH, TRUE)
 		if(DISMEMBER_METHOD_BURN, DISMEMBER_METHOD_ACID)
 			if(disintegrate == DISMEMBER_METHOD_BURN)

@@ -51,7 +51,7 @@
 		/obj/item/binoculars,
 		/obj/item/knife/folding/swiss/explorer,
 		/obj/item/clothing/accessory/buddytag,
-		///obj/item/storage/firstaid/light,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag, /obj/item/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/flashlight, /obj/item/flashlight/flare, /obj/item/flashlight/flare/glowstick/random))

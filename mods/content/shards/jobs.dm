@@ -17,7 +17,11 @@
 /datum/job/ai/shard/do_spawn_special(var/mob/living/character, var/mob/new_player/new_player_mob)
 	var/decl/ai_type/shard_decl = GET_DECL(shard_type)
 	var/obj/structure/aicore/deactivated/core
+	var/area/old_area
+	var/turf/T
 	character = character.AIize(move=0) // AIize the character, but don't move them yet
+	T = get_turf(character)
+	old_area = T.loc
 
 	// is_available for AI checks that there is an empty core available in this list
 	for(var/obj/structure/aicore/deactivated/C in empty_playable_ai_cores)
@@ -25,6 +29,7 @@
 			core = C
 
 	character.forceMove(core.loc)
+	old_area.retally_power()
 	var/mob/living/silicon/ai/A = character
 	shard_decl.configure_ai(A)
 	A.on_mob_init()
