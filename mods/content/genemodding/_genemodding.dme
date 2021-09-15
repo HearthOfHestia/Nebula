@@ -2,9 +2,9 @@
 #define CONTENT_PACK_GENEMODDING
 #include "genemodding.dm"
 #include "cosmetics_selection.dm"
-#include "datum/ears.dm"
-#include "datum/marking.dm"
-#include "datum/tail.dm"
+#include "decl/ears.dm"
+#include "decl/marking.dm"
+#include "decl/tail.dm"
 #include "head_overwrites.dm"
 #include "hooks.dm"
 #include "mob_overwrites.dm"

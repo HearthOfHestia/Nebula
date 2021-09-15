@@ -6,7 +6,7 @@
 
 /decl/recipe/chips
 	appliance = APPLIANCE_SKILLET | APPLIANCE_FRYER
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/tortilla = 1
 	)
@@ -31,14 +31,14 @@
 /decl/recipe/salsa
 	appliance = APPLIANCE_MIX
 	fruit = list("chili" = 1, "tomato" = 1, "lime" = 1)
-	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/sodiumchloride = 1)
 	result = /obj/item/chems/food/dip/salsa
 	reagent_mix = REAGENT_REPLACE //Ingredients are mixed together.
 
 /decl/recipe/guac
 	appliance = APPLIANCE_MIX
 	fruit = list("chili" = 1, "lime" = 1)
-	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/tofu = 1
 	)
@@ -48,7 +48,7 @@
 /decl/recipe/cheesesauce
 	appliance = APPLIANCE_SKILLET | APPLIANCE_SAUCEPAN // melt the cheese
 	fruit = list("chili" = 1, "tomato" = 1)
-	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/blackpepper = 1,/decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/cheesewedge = 1
 	)

@@ -6,6 +6,7 @@
 	default_action_type = /datum/action/item_action/organ
 	material = /decl/material/solid/meat
 	origin_tech = "{'materials':1,'biotech':1}"
+	throwforce = 2
 
 	// Strings.
 	var/organ_tag = "organ"           // Unique identifier.
@@ -469,3 +470,10 @@ var/global/list/ailment_reference_cache = list()
 				LAZYREMOVE(ailments, ext_ailment)
 				return TRUE
 	return FALSE
+
+/obj/item/organ/proc/has_diagnosable_ailments(var/mob/user, var/scanner = FALSE)
+	for(var/datum/ailment/ailment in ailments)
+		if(ailment.manual_diagnosis_string && !scanner)
+			LAZYADD(., ailment.replace_tokens(message = ailment.manual_diagnosis_string, user = user))
+		else if(ailment.scanner_diagnosis_string && scanner)
+			LAZYADD(., ailment.replace_tokens(message = ailment.scanner_diagnosis_string, user = user))

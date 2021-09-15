@@ -21,9 +21,12 @@ var/global/list/time_prefs_fixed = list()
 /* END PLACEHOLDER VERB */
 
 /datum/preferences
-	// doohickeys for savefiles
+	/// doohickeys for savefiles
 	var/is_guest = FALSE
-	// Holder so it doesn't default to slot 1, rather the last one used
+	/// Cached varialbe for checking byond membership. Also handles days of membership left.
+	var/is_byond_member
+
+	/// Holder so it doesn't default to slot 1, rather the last one used
 	var/default_slot = 1
 
 	// Cache, mapping slot record ids to character names
@@ -87,6 +90,7 @@ var/global/list/time_prefs_fixed = list()
 			is_guest = TRUE
 		else
 			load_data()
+			is_byond_member = client.IsByondMember()
 
 	sanitize_preferences()
 	update_preview_icon()
@@ -373,13 +377,13 @@ var/global/list/time_prefs_fixed = list()
 		O.markings.Cut()
 
 	for(var/M in body_markings)
-		var/datum/sprite_accessory/marking/mark_datum = global.body_marking_styles_list[M]
+		var/decl/sprite_accessory/marking/mark_datum = GET_DECL(M)
 		var/mark_color = "[body_markings[M]]"
 
 		for(var/BP in mark_datum.body_parts)
 			var/obj/item/organ/external/O = character.organs_by_name[BP]
 			if(O)
-				O.markings[M] = list("color" = mark_color, "datum" = mark_datum)
+				O.markings[M] = mark_color
 
 	if(LAZYLEN(appearance_descriptors))
 		character.appearance_descriptors = appearance_descriptors.Copy()

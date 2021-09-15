@@ -4,9 +4,10 @@
 /decl/loadout_option/eyes/fashionglasses
 	allowed_branches = CIVILIAN_BRANCHES
 
-/decl/loadout_option/eyes/sciencegoggles/New()
+/decl/loadout_option/eyes/sciencegoggles/Initialize()
+	. = ..()
+
 	allowed_roles = RESEARCH_ROLES | EXPLORATION_ROLES
-	..()
 
 /decl/loadout_option/eyes/security
 	allowed_roles = SECURITY_ROLES
