@@ -43,25 +43,13 @@
 
 /obj/item/clothing/head/helmet/space/rig/skrell
 	icon = 'mods/species/skrell/icons/rigs/standard/helmet.dmi'
-/obj/item/clothing/head/helmet/space/rig/skrell/Initialize()
-	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL)
 /obj/item/clothing/suit/space/rig/skrell
 	icon = 'mods/species/skrell/icons/rigs/standard/chest.dmi'
-/obj/item/clothing/suit/space/rig/skrell/Initialize()
-	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL)
 /obj/item/clothing/shoes/magboots/rig/skrell
 	icon = 'mods/species/skrell/icons/rigs/standard/boots.dmi'
-/obj/item/clothing/shoes/magboots/rig/skrell/Initialize()
-	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL)
 /obj/item/clothing/gloves/rig/skrell
 	icon = 'mods/species/skrell/icons/rigs/standard/gloves.dmi'
 	siemens_coefficient = 0
-/obj/item/clothing/gloves/rig/skrell/Initialize()
-	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL)
 
 //Skrell Engineering Suit
 /obj/item/rig/skrell/eng
