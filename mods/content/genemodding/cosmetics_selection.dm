@@ -2,7 +2,7 @@
 	. += "<h2>Genemod Selection</h2>"
 
 	var/ear_display = "Normal"
-	var/datum/sprite_accessory/ears/ear = (pref.ear_style in global.ear_styles_list) ? global.ear_styles_list[pref.ear_style] : null
+	var/decl/sprite_accessory/ears/ear = (pref.ear_style in global.ear_styles_list) ? global.ear_styles_list[pref.ear_style] : null
 	if(ear)
 		ear_display = ear.name
 	else if(pref.ear_style)
@@ -16,7 +16,7 @@
 			. += "<a href='?src=\ref[src];ear_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.ear_color_extra]'><table style='display:inline;' bgcolor='[pref.ear_color_extra]'><tr><td>__</td></tr></table> </font><br>"
 
 	var/tail_display = "Normal"
-	var/datum/sprite_accessory/tail/tails = (pref.tail_style in global.tail_styles_list) ? global.tail_styles_list[pref.tail_style] : null
+	var/decl/sprite_accessory/tail/tails = (pref.tail_style in global.tail_styles_list) ? global.tail_styles_list[pref.tail_style] : null
 	if(tails)
 		tail_display = tails.name
 	else if(pref.tail_style)
@@ -28,7 +28,7 @@
 		. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='[pref.tail_color]'><table style='display:inline;' bgcolor='[pref.tail_color]'><tr><td>__</td></tr></table> </font><br>"
 		if (tails.extra_overlay) // only show the secondary color prompt if we can change color to begin with
 			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='[pref.tail_color_extra]'><table style='display:inline;' bgcolor='[pref.tail_color_extra]'><tr><td>__</td></tr></table> </font><br>"
-	
+
 
 /datum/category_item/player_setup_item/physical/cosmetics/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(!CanUseTopic(user))
@@ -38,7 +38,7 @@
 		// Construct the list of names allowed for this user.
 		var/list/pretty_ear_styles = list("Normal" = null)
 		for(var/path in global.ear_styles_list)
-			var/datum/sprite_accessory/ears/instance = global.ear_styles_list[path]
+			var/decl/sprite_accessory/ears/instance = global.ear_styles_list[path]
 			pretty_ear_styles[instance.name] = path
 
 		// Present choice to user
@@ -66,7 +66,7 @@
 		// Construct the list of names allowed for this user.
 		var/list/pretty_tail_styles = list("Normal" = null)
 		for(var/path in global.tail_styles_list)
-			var/datum/sprite_accessory/tail/instance = global.tail_styles_list[path]
+			var/decl/sprite_accessory/tail/instance = global.tail_styles_list[path]
 			pretty_tail_styles[instance.name] = path
 
 		// Present choice to user
