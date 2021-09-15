@@ -1,12 +1,3 @@
-/obj/item/clothing/head/helmet/space/void/Initialize()
-	. = ..()
-	if("exclude" in bodytype_restricted)
-		LAZYDISTINCTADD(bodytype_restricted, BODYTYPE_SKRELL)
-	else if(length(bodytype_restricted))
-		LAZYREMOVE(bodytype_restricted, BODYTYPE_SKRELL)
-	else
-		bodytype_restricted = list("exclude", BODYTYPE_SKRELL)
-
 /obj/item/clothing/head/helmet/space/void/skrell
 	name = "alien helmet"
 	icon = 'mods/species/skrell/icons/clothing/head/skrell_helmet_white.dmi'
@@ -20,11 +11,12 @@
 		bio = ARMOR_BIO_SHIELDED,
 		rad = ARMOR_RAD_SHIELDED
 		)
-	bodytype_restricted = list(BODYTYPE_SKRELL, BODYTYPE_HUMANOID)
 
-/obj/item/clothing/head/helmet/space/void/skrell/Initialize()
+/obj/item/clothing/head/helmet/space/void/skrell/mob_can_equip(mob/living/M, slot, disable_warning = 0)
 	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL)
+	var/mob/living/carbon/human/H = M
+	if(. && istype(H) && H.bodytype.name != BODYTYPE_SKRELL)
+		return FALSE
 
 /obj/item/clothing/head/helmet/space/void/skrell/black
 	icon = 'mods/species/skrell/icons/clothing/head/skrell_helmet_black.dmi'
@@ -33,3 +25,9 @@
 	name = "skrellian helmet"
 	desc = "A helmet built for use by a Skrell. This one appears to be fairly standard and reliable."
 	icon = 'mods/species/skrell/icons/clothing/head/helmet_skrell.dmi'
+
+/obj/item/clothing/head/helmet/skrell/mob_can_equip(mob/living/M, slot, disable_warning = 0)
+	. = ..()
+	var/mob/living/carbon/human/H = M
+	if(. && istype(H) && H.bodytype.name != BODYTYPE_SKRELL)
+		return FALSE
