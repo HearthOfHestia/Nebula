@@ -4,8 +4,9 @@
 	pda_slot = slot_l_store_str
 	gloves = /obj/item/clothing/gloves/duty/sec
 
-/decl/hierarchy/outfit/job/torch/crew/security/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/security/Initialize()
+	. = ..()
+	
 	BACKPACK_OVERRIDE_SECURITY
 
 /decl/hierarchy/outfit/job/torch/crew/security/brig_chief

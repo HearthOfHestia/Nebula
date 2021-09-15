@@ -44,8 +44,8 @@
 /decl/loadout_option/tactical/holster
 	allowed_roles = ARMED_ROLES
 
-/decl/loadout_option/tactical/holster/New()
-	..()
+/decl/loadout_option/tactical/holster/Initialize()
+	. = ..()
 	var/holsters = list()
 	holsters["shoulder holster"] = /obj/item/clothing/accessory/storage/holster
 	holsters["armpit holster"] = /obj/item/clothing/accessory/storage/holster/armpit
@@ -142,8 +142,8 @@
 	path = /obj/item/clothing/accessory/ubac
 	allowed_branches = CIVILIAN_BRANCHES
 
-/decl/loadout_option/tactical/ubac/misc/New()
-	..()
+/decl/loadout_option/tactical/ubac/misc/Initialize()
+	. = ..()
 	var/shirts = list()
 	shirts["green UBAC shirt"] = /obj/item/clothing/accessory/ubac/green
 	shirts["tan UBAC shirt"] = /obj/item/clothing/accessory/ubac/tan
@@ -165,8 +165,8 @@
 	path = /obj/item/clothing/accessory/storage/pouches
 	allowed_branches = CIVILIAN_BRANCHES
 
-/decl/loadout_option/tactical/armor_pouches/misc/New()
-	..()
+/decl/loadout_option/tactical/armor_pouches/misc/Initialize()
+	. = ..()
 	var/pouches = list()
 	pouches["green armor pouches"] = /obj/item/clothing/accessory/storage/pouches/green
 	pouches["tan armor pouches"] = /obj/item/clothing/accessory/storage/pouches/tan
@@ -188,8 +188,8 @@
 	path = /obj/item/clothing/accessory/storage/pouches/large
 	allowed_branches = CIVILIAN_BRANCHES
 
-/decl/loadout_option/tactical/large_pouches/misc/New()
-	..()
+/decl/loadout_option/tactical/large_pouches/misc/Initialize()
+	. = ..()
 	var/pouches = list()
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
