@@ -6,7 +6,7 @@
 
 /decl/recipe/risottoballs
 	appliance = APPLIANCE_FRYER
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1)
 	items = list(/obj/item/chems/food/risotto = 1)
 	coating = /decl/material/liquid/nutriment/batter
 	reagent_mix = REAGENT_REPLACE //Simplify end product
