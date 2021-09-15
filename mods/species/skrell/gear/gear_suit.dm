@@ -20,12 +20,7 @@
 		)
 	heat_protection = SLOT_UPPER_BODY|SLOT_LOWER_BODY|SLOT_LEGS|SLOT_FEET|SLOT_ARMS|SLOT_HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	bodytype_restricted = list(BODYTYPE_SKRELL, BODYTYPE_HUMANOID)
 	flags_inv = HIDEJUMPSUIT
-
-/obj/item/clothing/suit/space/void/skrell/Initialize()
-	. = ..()
-	bodytype_restricted = list(BODYTYPE_SKRELL, BODYTYPE_HUMANOID)
 
 /obj/item/clothing/suit/space/void/skrell/black
 	icon = 'mods/species/skrell/icons/clothing/suit/skrell_suit_black.dmi'
