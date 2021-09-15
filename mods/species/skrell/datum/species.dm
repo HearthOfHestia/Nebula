@@ -146,10 +146,10 @@
 			bloodDNA = list(blood_data["blood_DNA"] = blood_data["blood_type"])
 		else
 			bloodDNA = list()
-		T.AddTracks(move_trail, bloodDNA, H.dir, 0, H.skin_colour + "8c") // Coming (8c is the alpha value)
+		T.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, H.dir, 0, H.skin_colour + "25") // Coming (8c is the alpha value)
 		var/turf/simulated/from = get_step(H, global.reverse_dir[H.dir])
 		if(istype(from))
-			from.AddTracks(move_trail, bloodDNA, 0, H.dir, H.skin_colour + "8c") // Going (8c is the alpha value)
+			from.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, 0, H.dir, H.skin_colour + "25") // Going (8c is the alpha value)
 
 /decl/species/skrell/check_background()
 	return TRUE
