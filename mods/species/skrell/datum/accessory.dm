@@ -1,63 +1,63 @@
-/datum/sprite_accessory/skin/skrell
+/decl/sprite_accessory/skin/skrell
 	name = "Default skrell skin"
 	icon_state = "default"
 	icon = 'mods/species/skrell/icons/body/body.dmi'
 	species_allowed = list(SPECIES_SKRELL)
 
-/datum/sprite_accessory/hair/skrell
+/decl/sprite_accessory/hair/skrell
 	name = "Kanin - Very Short Headtails"
 	icon = 'mods/species/skrell/icons/body/hair.dmi'
 	icon_state = "very_short"
 	species_allowed = list(SPECIES_SKRELL)
 
-/datum/sprite_accessory/hair/skrell/raskin
+/decl/sprite_accessory/hair/skrell/raskin
 	name = "Raskinta - Split Very Short Headtails"
 	icon_state = "split"
 
-/datum/sprite_accessory/hair/skrell/short
+/decl/sprite_accessory/hair/skrell/short
 	name = "Malish - Short Headtails"
 	icon_state = "short"
 
-/datum/sprite_accessory/hair/skrell/malishpullback
+/decl/sprite_accessory/hair/skrell/malishpullback
 	name = "Malish - Pullback"
 	icon_state = "pullback-short"
 
-/datum/sprite_accessory/hair/skrell/long
+/decl/sprite_accessory/hair/skrell/long
 	name = "Talum - Long Headtails"
 	icon_state = "long"
 
-/datum/sprite_accessory/hair/skrell/talumpullback
+/decl/sprite_accessory/hair/skrell/talumpullback
 	name = "Talum - Pullback"
 	icon_state = "pullback-long"
 
-/datum/sprite_accessory/hair/skrell/wavy
+/decl/sprite_accessory/hair/skrell/wavy
 	name = "Talum - Wavy"
 	icon_state = "wavy-long"
 
-/datum/sprite_accessory/hair/skrell/tied
+/decl/sprite_accessory/hair/skrell/tied
 	name = "Talum - Tied"
 	icon_state = "tied-long"
 
-/datum/sprite_accessory/hair/skrell/scarf
+/decl/sprite_accessory/hair/skrell/scarf
 	name = "Talum - Scarf"
 	icon_state = "scarf-long"
 
-/datum/sprite_accessory/hair/skrell/very_long
+/decl/sprite_accessory/hair/skrell/very_long
 	name = "Qerr - Very Long Headtails"
 	icon_state = "very_long"
 
-/datum/sprite_accessory/hair/skrell/tiedq
+/decl/sprite_accessory/hair/skrell/tiedq
 	name = "Qerr - Tied Headtails"
 	icon_state = "tied-very_long"
 
-/datum/sprite_accessory/hair/skrell/scarfq
+/decl/sprite_accessory/hair/skrell/scarfq
 	name = "Qerr - Scarf"
 	icon_state = "scarf-very_long"
 
-/datum/sprite_accessory/hair/skrell/reef
+/decl/sprite_accessory/hair/skrell/reef
 	name = "Qerr - Wavy"
 	icon_state = "wavy-very_long"
 
-/datum/sprite_accessory/hair/skrell/qerrpullback
+/decl/sprite_accessory/hair/skrell/qerrpullback
 	name = "Qerr - Pullback"
 	icon_state = "pullback-very_long"

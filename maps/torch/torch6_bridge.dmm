@@ -1952,6 +1952,7 @@
 /obj/item/aiModule/solgov,
 /obj/item/aiModule/reset,
 /obj/item/aiModule/purge,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/ce)
 "dG" = (
@@ -5369,6 +5370,7 @@
 	pixel_y = 27;
 	req_access = list("ACCESS_HEAD_OF_SECURITY")
 	},
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
 "mJ" = (
@@ -9795,6 +9797,7 @@
 "za" = (
 /obj/structure/closet/secure_closet/XO,
 /obj/random/drinkbottle,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/heads/office/xo)
 "zb" = (
@@ -14728,6 +14731,7 @@
 	},
 /obj/effect/floor_decal/corner/research/mono,
 /obj/structure/closet/secure_closet/RD_torch,
+/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Uk" = (

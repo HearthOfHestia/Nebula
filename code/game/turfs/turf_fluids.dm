@@ -17,13 +17,17 @@
 /turf/return_fluid()
 	return (locate(/obj/effect/fluid) in contents)
 
-/turf/proc/make_flooded()
-	if(!flooded)
-		flooded = TRUE
-		for(var/obj/effect/fluid/F in src)
-			qdel(F)
-		update_icon()
+/turf/proc/make_unflooded(var/force)
+	if(force || flooded)
+		flooded = FALSE
 		fluid_update()
+		update_icon()
+
+/turf/proc/make_flooded(var/force)
+	if(force || !flooded)
+		flooded = TRUE
+		fluid_update()
+		update_icon()
 
 /turf/is_flooded(var/lying_mob, var/absolute)
 	return (flooded || (!absolute && check_fluid_depth(lying_mob ? FLUID_OVER_MOB_HEAD : FLUID_DEEP)))
@@ -43,13 +47,9 @@
 	return 0
 
 /turf/proc/show_bubbles()
-	set waitfor = 0
-
+	set waitfor = FALSE
 	if(flooded)
-		if(istype(flood_object))
-			flick("ocean-bubbles", flood_object)
 		return
-
 	var/obj/effect/fluid/F = locate() in src
 	if(istype(F))
 		flick("bubbles",F)
@@ -68,12 +68,9 @@
 	// Wake up ourself!
 	if(flooded)
 		ADD_ACTIVE_FLUID_SOURCE(src)
-		for(var/obj/effect/fluid/F in src)
-			qdel(F)
 	else
-		REMOVE_ACTIVE_FLUID_SOURCE(src)
-		for(var/obj/effect/fluid/F in src)
-			ADD_ACTIVE_FLUID(F)
+		REMOVE_ACTIVE_FLUID_SOURCE(src)	
+	update_flood_overlay()
 
 /turf/proc/add_fluid(var/fluid_type, var/fluid_amount, var/defer_update)
 	var/obj/effect/fluid/F = locate() in src
