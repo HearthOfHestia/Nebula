@@ -55,7 +55,7 @@
 	name = "Auxiliary Head"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -76,7 +76,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -114,14 +114,14 @@
 /area/maintenance/firstdeck/aftstarboard)
 "abc" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 2
@@ -136,14 +136,14 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "abe" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -153,7 +153,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
@@ -323,7 +323,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/medical{
@@ -333,7 +333,7 @@
 /area/medical/chemistry)
 "abz" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -353,7 +353,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -369,7 +369,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -385,7 +385,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -401,7 +401,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -517,7 +517,7 @@
 "abS" = (
 /obj/machinery/light/small,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -633,14 +633,14 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/thruster/d1starboard)
 "ach" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -654,7 +654,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -664,7 +664,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/door/firedoor,
@@ -675,7 +675,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
@@ -765,7 +765,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -869,7 +869,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/medical/medicalhallway)
@@ -974,7 +974,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -1130,7 +1130,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1179,7 +1179,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
@@ -1196,7 +1196,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1215,7 +1215,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/catwalk,
@@ -1231,11 +1231,11 @@
 	},
 /obj/effect/decal/cleanable/cobweb2,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
@@ -1258,7 +1258,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1275,10 +1275,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1293,7 +1293,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1327,7 +1327,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1360,7 +1360,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/glass/medical,
 /turf/simulated/floor/tiled/white/monotile,
@@ -1443,7 +1443,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1464,7 +1464,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1511,7 +1511,7 @@
 	pixel_y = 32
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -1531,13 +1531,13 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1583,7 +1583,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1604,7 +1604,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1625,7 +1625,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/sign/warning/nosmoking_1{
 	pixel_y = 23
@@ -1647,20 +1647,20 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "aeq" = (
 /obj/structure/bed/chair/office/comfy/red,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9;
@@ -1672,7 +1672,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
@@ -1705,13 +1705,13 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1734,10 +1734,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1763,7 +1763,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "selfddoor";
@@ -1790,7 +1790,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -1802,7 +1802,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/glass/medical{
 	autoset_access = 0;
@@ -1831,7 +1831,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1885,7 +1885,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/button/access/interior{
 	id_tag = "bridgestarboard_airlock";
@@ -1914,7 +1914,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -1936,7 +1936,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -1952,7 +1952,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -1971,7 +1971,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -1988,7 +1988,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -2043,10 +2043,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
@@ -2055,10 +2055,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -2073,10 +2073,10 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
@@ -2088,7 +2088,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
@@ -2104,10 +2104,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -2133,7 +2133,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -2157,7 +2157,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -2213,7 +2213,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -2288,7 +2288,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
@@ -2304,7 +2304,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -2321,7 +2321,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -2358,7 +2358,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
@@ -2428,7 +2428,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -2450,7 +2450,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "afP" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -2467,7 +2467,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "afQ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -2484,10 +2484,10 @@
 /area/maintenance/firstdeck/centralstarboard)
 "afR" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -2500,7 +2500,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "afS" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -2523,7 +2523,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2539,7 +2539,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -2601,7 +2601,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/glass/medical,
 /turf/simulated/floor/tiled/white/monotile,
@@ -2631,7 +2631,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -2665,7 +2665,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -2701,7 +2701,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -2714,7 +2714,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/counselor)
@@ -2748,7 +2748,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -2760,7 +2760,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -2777,7 +2777,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -2794,7 +2794,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 10
@@ -2850,7 +2850,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -2873,7 +2873,7 @@
 /area/medical/staging)
 "agM" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -2898,7 +2898,7 @@
 	name = "First Deck Substation"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/substation/firstdeck)
@@ -2906,7 +2906,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -2982,7 +2982,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "agX" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3103,7 +3103,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/white,
@@ -3218,7 +3218,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -3235,7 +3235,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/counselor/therapy)
@@ -3265,7 +3265,7 @@
 "ahI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/item/radio/intercom{
@@ -3290,7 +3290,7 @@
 /area/crew_quarters/sleep/cryo/aux)
 "ahM" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -3306,10 +3306,10 @@
 /area/maintenance/firstdeck/forestarboard)
 "ahN" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -3333,7 +3333,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -3342,7 +3342,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "ahP" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -3407,13 +3407,13 @@
 /area/maintenance/substation/firstdeck)
 "ahT" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -3449,7 +3449,7 @@
 /area/medical/counselor)
 "ahV" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/valve/shutoff{
@@ -3462,7 +3462,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/item/radio/intercom{
 	dir = 1;
@@ -3482,7 +3482,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -3495,7 +3495,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/firealarm{
 	dir = 1;
@@ -3522,7 +3522,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/oxygen_pump{
 	pixel_y = -32
@@ -3557,7 +3557,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/counselor)
@@ -3574,7 +3574,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
@@ -3587,7 +3587,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/medical/counselor/therapy)
@@ -3767,7 +3767,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -3855,7 +3855,7 @@
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -3877,7 +3877,7 @@
 /area/assembly/chargebay)
 "ajG" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
@@ -3959,7 +3959,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "ajV" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -3989,13 +3989,13 @@
 /area/maintenance/substation/firstdeck)
 "akf" = (
 /obj/structure/cable{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
@@ -4009,7 +4009,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -4020,7 +4020,7 @@
 /area/maintenance/substation/firstdeck)
 "akh" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -4032,17 +4032,17 @@
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "aki" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/structure/cable{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -4065,7 +4065,7 @@
 		icon_state = "0-8"
 	},
 /obj/structure/cable{
-			icon_state = "16-0";
+	icon_state = "16-0";
 	pixel_y = 0
 	},
 /obj/machinery/atmospherics/pipe/zpipe/up/supply{
@@ -4128,7 +4128,7 @@
 /area/medical/resleevelab)
 "akK" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
@@ -4139,7 +4139,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "akL" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
@@ -4149,10 +4149,10 @@
 /area/maintenance/firstdeck/aftstarboard)
 "akM" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -4165,7 +4165,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "akW" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4199,7 +4199,7 @@
 /area/security/processing)
 "alh" = (
 /obj/structure/cable{
-			icon_state = "32-1"
+	icon_state = "32-1"
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{
 	color = "#ff0000";
@@ -4218,13 +4218,13 @@
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "alj" = (
 /obj/structure/cable{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -4251,7 +4251,7 @@
 /obj/random/powercell,
 /obj/structure/catwalk,
 /obj/structure/cable{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -4357,7 +4357,7 @@
 /area/medical/equipstorage)
 "alR" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -4445,14 +4445,14 @@
 /area/maintenance/substation/firstdeck)
 "amr" = (
 /obj/structure/cable{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "ams" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/structure/catwalk,
@@ -4464,25 +4464,25 @@
 	name = "Auxiliary Power Storage"
 	},
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/auxpower)
 "amu" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/structure/cable{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/engineering/auxpower)
 "amv" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/machinery/light/small,
@@ -4546,7 +4546,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/storage/emergency)
@@ -4597,7 +4597,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -4622,7 +4622,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -4640,7 +4640,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/alarm{
 	dir = 8;
@@ -4690,7 +4690,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -4741,7 +4741,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -4792,7 +4792,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -4811,10 +4811,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -4843,7 +4843,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
@@ -4856,7 +4856,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
@@ -4932,7 +4932,7 @@
 /area/hallway/primary/firstdeck/fore)
 "aqm" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5013,14 +5013,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/physicianoffice)
 "arb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -5043,10 +5043,10 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -5069,7 +5069,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
@@ -5090,7 +5090,7 @@
 	},
 /obj/machinery/light,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
@@ -5108,7 +5108,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -5122,14 +5122,14 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
 "ary" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -5142,7 +5142,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -5161,7 +5161,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -5180,7 +5180,7 @@
 /area/medical/physicianoffice)
 "ask" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5189,7 +5189,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "asl" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -5205,7 +5205,7 @@
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -5257,7 +5257,7 @@
 /area/hallway/primary/firstdeck/fore)
 "asD" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/blue/half{
 	dir = 4;
@@ -5268,7 +5268,7 @@
 "asE" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5279,7 +5279,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "asF" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5298,14 +5298,14 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 10
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -5337,7 +5337,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
@@ -5381,7 +5381,7 @@
 /area/medical/locker)
 "atn" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -5403,7 +5403,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -5448,7 +5448,7 @@
 /area/hallway/primary/firstdeck/fore)
 "atF" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -5462,7 +5462,7 @@
 "atG" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -5541,7 +5541,7 @@
 /area/medical/locker)
 "auj" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5555,7 +5555,7 @@
 /area/hallway/primary/firstdeck/aft)
 "auy" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5570,7 +5570,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auB" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
@@ -5598,7 +5598,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auF" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5615,7 +5615,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auG" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5633,7 +5633,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auH" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5649,7 +5649,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auI" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -5672,7 +5672,7 @@
 /area/hallway/primary/firstdeck/fore)
 "auJ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -5693,7 +5693,7 @@
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
@@ -5728,7 +5728,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -5823,7 +5823,7 @@
 /area/medical/physicianoffice)
 "avx" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -5853,7 +5853,7 @@
 /obj/effect/floor_decal/corner/red/mono,
 /obj/structure/table/steel,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/lobby)
@@ -5924,7 +5924,7 @@
 /area/hallway/primary/firstdeck/fore)
 "avX" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -5969,7 +5969,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/effect/floor_decal/corner/green/mono,
@@ -5983,7 +5983,7 @@
 /area/hallway/primary/firstdeck/center)
 "awG" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6015,7 +6015,7 @@
 "awV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -6034,7 +6034,7 @@
 /area/security/detectives_office)
 "awZ" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 4
@@ -6064,7 +6064,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/green{
 	dir = 5
@@ -6083,7 +6083,7 @@
 /area/hallway/primary/firstdeck/center)
 "axl" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
@@ -6095,7 +6095,7 @@
 		icon_state = "0-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/effect/paint_stripe/security,
 /turf/simulated/floor/plating,
@@ -6143,7 +6143,7 @@
 /area/hallway/primary/firstdeck/aft)
 "axF" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6162,7 +6162,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell1)
@@ -6175,7 +6175,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 8;
@@ -6222,10 +6222,10 @@
 /area/engineering/hardstorage/aux)
 "axY" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/item/radio/beacon,
 /obj/effect/catwalk_plated,
@@ -6239,20 +6239,20 @@
 /area/hallway/primary/firstdeck/fore)
 "axZ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
 "aya" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "ayb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6265,7 +6265,7 @@
 /area/hallway/primary/firstdeck/center)
 "ayd" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6276,7 +6276,7 @@
 /area/hallway/primary/firstdeck/center)
 "aye" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6289,15 +6289,15 @@
 /area/hallway/primary/firstdeck/center)
 "ayf" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/item/radio/beacon,
 /obj/effect/catwalk_plated,
@@ -6311,7 +6311,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -6328,7 +6328,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -6344,7 +6344,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6354,7 +6354,7 @@
 /area/hallway/primary/firstdeck/center)
 "ayj" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/item/radio/beacon,
 /obj/effect/catwalk_plated,
@@ -6371,7 +6371,7 @@
 /area/hallway/primary/firstdeck/center)
 "aym" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6388,7 +6388,7 @@
 "ayp" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -6404,7 +6404,7 @@
 /area/hallway/primary/firstdeck/center)
 "ayw" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6422,7 +6422,7 @@
 /area/hallway/primary/firstdeck/aft)
 "ayy" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6438,7 +6438,7 @@
 /area/hallway/primary/firstdeck/aft)
 "ayz" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6470,7 +6470,7 @@
 /area/medical/resleevelab)
 "ayB" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -6484,10 +6484,10 @@
 /area/hallway/primary/firstdeck/aft)
 "ayC" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -6503,10 +6503,10 @@
 /area/hallway/primary/firstdeck/aft)
 "ayG" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -6516,7 +6516,7 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
@@ -6532,7 +6532,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
@@ -6548,10 +6548,10 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/lobby)
@@ -6559,7 +6559,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/green/mono,
 /obj/structure/disposalpipe/segment,
@@ -6606,7 +6606,7 @@
 /area/hallway/primary/firstdeck/aft)
 "azR" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6656,7 +6656,7 @@
 /area/security/lobby)
 "aAl" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -6728,7 +6728,7 @@
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
@@ -6753,7 +6753,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
@@ -6893,7 +6893,7 @@
 /area/teleporter/firstdeck)
 "aCq" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6923,7 +6923,7 @@
 "aCx" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -6931,7 +6931,7 @@
 /area/security/wing)
 "aCA" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -6971,7 +6971,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -7057,7 +7057,7 @@
 /area/maintenance/firstdeck/centralport)
 "aDA" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7069,7 +7069,7 @@
 /area/hallway/primary/firstdeck/aft)
 "aDD" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/alarm{
 	dir = 8;
@@ -7126,7 +7126,7 @@
 /area/security/bo)
 "aDK" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -7148,7 +7148,7 @@
 /area/security/nuke_storage)
 "aDP" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -7165,7 +7165,7 @@
 /area/hallway/primary/firstdeck/fore)
 "aDU" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -7213,7 +7213,7 @@
 /area/maintenance/firstdeck/centralport)
 "aEC" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
@@ -7231,7 +7231,7 @@
 /area/maintenance/firstdeck/aftport)
 "aEH" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7245,20 +7245,20 @@
 	level = 2
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
 "aEL" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
 "aEO" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -7282,7 +7282,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7292,7 +7292,7 @@
 "aEU" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7318,7 +7318,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -7331,7 +7331,7 @@
 	pixel_y = 0
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -7349,7 +7349,7 @@
 	pixel_x = 21
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -7369,10 +7369,10 @@
 		icon_state = "0-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
 		icon_state = "0-4"
@@ -7384,7 +7384,7 @@
 /area/rnd/development)
 "aFd" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/valve/shutoff,
@@ -7424,7 +7424,7 @@
 	icon_state = "map-scrubbers"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -7434,7 +7434,7 @@
 /area/rnd/xenoarch/equipment)
 "aFL" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -7464,7 +7464,7 @@
 	pixel_x = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/random_multi/single_item/summarydocuments/sec,
 /turf/simulated/floor/tiled/dark,
@@ -7557,7 +7557,7 @@
 /area/hallway/primary/firstdeck/fore)
 "aGo" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -7610,7 +7610,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -7641,7 +7641,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -7667,7 +7667,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -7682,7 +7682,7 @@
 	icon_state = "chair_preview"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
@@ -7709,10 +7709,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -7767,7 +7767,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -7788,7 +7788,7 @@
 /area/rnd/misc_lab)
 "aHR" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7813,10 +7813,10 @@
 "aHX" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -7836,7 +7836,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7845,7 +7845,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/bo)
@@ -7855,10 +7855,10 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7870,7 +7870,7 @@
 /area/security/bo)
 "aIa" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -7910,7 +7910,7 @@
 	pixel_y = 40
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bo)
@@ -7927,13 +7927,13 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig)
@@ -7942,7 +7942,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/item/deck/cards,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig)
@@ -8022,10 +8022,10 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -8041,7 +8041,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/power/emitter/anchored,
 /obj/structure/cable/green{
@@ -8073,7 +8073,7 @@
 	pixel_y = -26
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -8085,10 +8085,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -8101,7 +8101,7 @@
 	},
 /obj/effect/floor_decal/corner/research/mono,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenoarch/analysis)
@@ -8115,10 +8115,10 @@
 	icon_state = "cap"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -8136,7 +8136,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8154,7 +8154,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/locker)
@@ -8178,7 +8178,7 @@
 /area/security/bo)
 "aJi" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -8199,7 +8199,7 @@
 	icon_state = "bordercolorhalf"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/landmark{
 	name = "lightsout"
@@ -8352,7 +8352,7 @@
 /area/maintenance/firstdeck/foreport)
 "aJK" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -8371,7 +8371,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -8410,7 +8410,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
@@ -8432,7 +8432,7 @@
 /area/security/wing)
 "aKB" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8506,7 +8506,7 @@
 "aKT" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -8527,7 +8527,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell1)
@@ -8546,13 +8546,13 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell2)
 "aKY" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -8643,7 +8643,7 @@
 /area/security/wing)
 "aLD" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8669,7 +8669,7 @@
 "aLE" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8687,7 +8687,7 @@
 /area/security/wing)
 "aLG" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8703,7 +8703,7 @@
 "aLH" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -8748,7 +8748,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8820,7 +8820,7 @@
 	icon_state = "map_scrubber_off"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell2)
@@ -8863,7 +8863,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -8905,7 +8905,7 @@
 	req_access = list("ACCESS_BRIG")
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8923,7 +8923,7 @@
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9041,7 +9041,7 @@
 /area/rnd/xenoarch/cell1)
 "aNc" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell2)
@@ -9072,7 +9072,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4
@@ -9141,7 +9141,7 @@
 /area/security/brig)
 "aNV" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -9158,7 +9158,7 @@
 /area/maintenance/firstdeck/foreport)
 "aNW" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -9225,7 +9225,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
@@ -9303,7 +9303,7 @@
 "aOL" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9337,7 +9337,7 @@
 /area/maintenance/firstdeck/foreport)
 "aOP" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/autoname/engineering,
 /turf/simulated/floor/tiled/techfloor,
@@ -9389,7 +9389,7 @@
 /area/maintenance/firstdeck/foreport)
 "aPC" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9405,7 +9405,7 @@
 /area/maintenance/firstdeck/foreport)
 "aPD" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9422,7 +9422,7 @@
 /area/maintenance/firstdeck/foreport)
 "aPE" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9446,12 +9446,12 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -9464,7 +9464,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -9497,11 +9497,11 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
@@ -9513,7 +9513,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/alarm{
@@ -9532,7 +9532,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
@@ -9554,7 +9554,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -9573,7 +9573,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
@@ -9589,7 +9589,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
@@ -9603,7 +9603,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
@@ -9625,7 +9625,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -9641,7 +9641,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod_berth{
@@ -9658,7 +9658,7 @@
 "aPS" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -9757,7 +9757,7 @@
 /area/maintenance/firstdeck/foreport)
 "aQz" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -9786,7 +9786,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
@@ -9800,7 +9800,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/catwalk,
@@ -9814,7 +9814,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8;
@@ -9832,7 +9832,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -9845,7 +9845,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -9895,7 +9895,7 @@
 	pixel_x = 24
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics/office)
@@ -9929,7 +9929,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
@@ -9979,7 +9979,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -10007,7 +10007,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10019,7 +10019,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -10042,7 +10042,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -10058,7 +10058,7 @@
 /area/maintenance/firstdeck/foreport)
 "aRv" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -10077,7 +10077,7 @@
 /area/maintenance/firstdeck/foreport)
 "aRw" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10090,7 +10090,7 @@
 /area/maintenance/firstdeck/foreport)
 "aRy" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -10156,7 +10156,7 @@
 /area/shuttle/escape_pod17/station)
 "aRH" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -10170,7 +10170,7 @@
 /area/maintenance/firstdeck/centralport)
 "aRI" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -10183,10 +10183,10 @@
 /area/maintenance/firstdeck/centralport)
 "aRJ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10199,7 +10199,7 @@
 /area/maintenance/firstdeck/centralport)
 "aRK" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/valve/shutoff{
@@ -10209,7 +10209,7 @@
 /area/maintenance/firstdeck/centralport)
 "aRL" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10222,7 +10222,7 @@
 /area/maintenance/firstdeck/centralport)
 "aRM" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -10252,7 +10252,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -10438,7 +10438,7 @@
 	},
 /obj/structure/bed/roller,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -10451,7 +10451,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -10461,7 +10461,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/engineering{
 	name = "Robotics"
@@ -10476,7 +10476,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -10490,7 +10490,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/aftport)
@@ -10509,10 +10509,10 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftport)
@@ -10524,7 +10524,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -10643,7 +10643,7 @@
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -10678,14 +10678,14 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/thruster/d1port)
 "aUe" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/binary/pump/high_power/on{
@@ -10696,7 +10696,7 @@
 /area/thruster/d1port)
 "aUf" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
@@ -10709,7 +10709,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/hatch/maintenance,
 /obj/machinery/door/firedoor,
@@ -10723,7 +10723,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1port)
@@ -10807,7 +10807,7 @@
 "aYj" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10882,7 +10882,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -10891,7 +10891,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -10908,7 +10908,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/alarm{
 	dir = 1;
@@ -10922,7 +10922,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 5;
@@ -10964,7 +10964,7 @@
 "bob" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10984,7 +10984,7 @@
 "bpb" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -10997,7 +10997,7 @@
 	icon_state = "map-scrubbers"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -11013,7 +11013,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/questioning)
@@ -11025,7 +11025,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/blast/regular{
 	dir = 4;
@@ -11053,7 +11053,7 @@
 /area/teleporter/firstdeck)
 "brj" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -11062,7 +11062,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -11072,7 +11072,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -11101,7 +11101,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -11128,7 +11128,7 @@
 /area/assembly/chargebay)
 "bAd" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell3)
@@ -11170,7 +11170,7 @@
 /area/maintenance/firstdeck/aftport)
 "bEQ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment{
@@ -11179,10 +11179,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11191,7 +11191,7 @@
 /area/hallway/primary/firstdeck/aft)
 "bGb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/catwalk,
@@ -11214,7 +11214,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -11224,7 +11224,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/center)
@@ -11246,7 +11246,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
 		icon_state = "0-4"
@@ -11472,7 +11472,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -11529,7 +11529,7 @@
 /area/shuttle/escape_pod15/station)
 "bWw" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
@@ -11623,7 +11623,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -11645,7 +11645,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -11665,7 +11665,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "cib" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -11691,7 +11691,7 @@
 /area/security/wing)
 "cjb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11714,13 +11714,13 @@
 	pixel_y = 0
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "ckb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11742,7 +11742,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
@@ -11820,7 +11820,7 @@
 /area/rnd/xenoarch/cell1)
 "cub" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralstarboard)
@@ -11854,7 +11854,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/button/alternate/door{
 	desc = "A remote control switch for the brig foyer.";
@@ -11884,7 +11884,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
@@ -11927,7 +11927,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/rnd/xenoarch/anom_storage)
@@ -11981,7 +11981,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -12060,7 +12060,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
@@ -12068,7 +12068,7 @@
 /area/maintenance/firstdeck/centralport)
 "cLb" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -12089,7 +12089,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "cMJ" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1;
@@ -12189,7 +12189,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/development)
@@ -12249,7 +12249,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -12290,7 +12290,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
@@ -12385,13 +12385,13 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
 "dgb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/paleblue/three_quarters{
 	dir = 4
@@ -12460,7 +12460,7 @@
 /area/security/detectives_office)
 "dkJ" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment{
@@ -12486,7 +12486,7 @@
 /area/security/wing)
 "dlb" = (
 /obj/structure/cable{
-			icon_state = "4-8";
+	icon_state = "4-8";
 	pixel_x = 0
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -12551,7 +12551,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/medical/washroom)
@@ -12653,7 +12653,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
@@ -12678,7 +12678,7 @@
 /area/medical/chemistry)
 "dDc" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12711,7 +12711,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
@@ -12741,7 +12741,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue/autopsy)
@@ -12770,7 +12770,7 @@
 	initial_id_tag = "torch_primary_pd"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
 		icon_state = "0-8"
@@ -12807,7 +12807,7 @@
 	pixel_y = 32
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/item/chems/glass/bottle/stabilizer,
 /obj/item/chems/glass/bottle/stabilizer,
@@ -12960,7 +12960,7 @@
 /area/medical/sleeper)
 "dWA" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -12999,7 +12999,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13036,13 +13036,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13055,7 +13055,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
@@ -13086,7 +13086,7 @@
 	pixel_x = 21
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -13211,7 +13211,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
@@ -13220,7 +13220,7 @@
 /area/security/storage)
 "eob" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -13281,7 +13281,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13329,7 +13329,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13347,15 +13347,15 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13374,7 +13374,7 @@
 	dir = 2
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -13421,7 +13421,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
@@ -13455,10 +13455,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
@@ -13518,7 +13518,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled/white/monotile,
@@ -13561,7 +13561,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/assembly/robotics/laboratory)
@@ -13574,7 +13574,7 @@
 /area/medical/sleeper)
 "eUO" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13592,7 +13592,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/hygiene/drain,
 /turf/simulated/floor/tiled/white/monotile,
@@ -13650,7 +13650,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/medical{
 	name = "Medical Storeroom"
@@ -13660,7 +13660,7 @@
 /area/medical/foyer/storeroom)
 "fll" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/emergency)
@@ -13840,7 +13840,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell1)
@@ -13942,10 +13942,10 @@
 /area/rnd/xenoarch/analysis)
 "fKJ" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -14007,7 +14007,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
@@ -14078,7 +14078,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -14090,7 +14090,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
@@ -14105,7 +14105,7 @@
 /area/engineering/hardstorage/aux)
 "gbb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -14242,7 +14242,7 @@
 	pixel_y = -25
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
@@ -14279,7 +14279,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
@@ -14318,7 +14318,7 @@
 /area/security/questioning)
 "gxi" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -14328,13 +14328,13 @@
 /area/security/detectives_office)
 "gxX" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment{
@@ -14351,7 +14351,7 @@
 /area/maintenance/firstdeck/aftstarboard)
 "gyP" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -14407,7 +14407,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -14463,7 +14463,7 @@
 /area/medical/exam_room)
 "gEY" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -14474,7 +14474,7 @@
 /obj/random/junk,
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
@@ -14507,7 +14507,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/anom_storage)
@@ -14574,7 +14574,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/bed/chair/padded/red{
 	dir = 4;
@@ -14622,7 +14622,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
@@ -14650,7 +14650,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/security{
@@ -14679,7 +14679,7 @@
 /area/hallway/primary/firstdeck/aft)
 "heb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14695,7 +14695,7 @@
 /area/hallway/primary/firstdeck/center)
 "hfb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -14714,13 +14714,13 @@
 /obj/effect/paint/tan,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "hgb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14765,7 +14765,7 @@
 /area/medical/surgery)
 "hhb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/sortjunction{
 	dir = 4;
@@ -14773,7 +14773,7 @@
 	sort_type = "Research Equipment"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -14799,7 +14799,7 @@
 /area/rnd/xenoarch/analysis)
 "hib" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14832,7 +14832,7 @@
 /area/medical/surgery2)
 "hnL" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -14842,7 +14842,7 @@
 /area/security/detectives_office)
 "hnN" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14871,7 +14871,7 @@
 		icon_state = "0-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/paint_stripe/security,
 /turf/simulated/floor/plating,
@@ -14882,7 +14882,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -14943,7 +14943,7 @@
 "hub" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -15010,7 +15010,7 @@
 		icon_state = "0-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/wallframe_spawn/reinforced/no_grille,
 /obj/effect/paint/eggshell,
@@ -15029,7 +15029,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15038,12 +15038,12 @@
 /area/hallway/primary/firstdeck/fore)
 "hzb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -15056,7 +15056,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
@@ -15079,7 +15079,7 @@
 "hBb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
@@ -15133,7 +15133,7 @@
 /area/security/bo)
 "hDT" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
@@ -15173,7 +15173,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/railing/mapped{
@@ -15191,7 +15191,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -15300,7 +15300,7 @@
 /area/medical/staging)
 "hQb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/portable_atmospherics/powered/scrubber,
@@ -15342,7 +15342,7 @@
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
 		icon_state = "0-2"
@@ -15404,7 +15404,7 @@
 /area/engineering/hardstorage/aux)
 "hYM" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -15492,7 +15492,7 @@
 /area/security/lobby)
 "iib" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 8
@@ -15502,14 +15502,14 @@
 "ijb" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/opscheck)
@@ -15530,7 +15530,7 @@
 	opacity = 0
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/door/window/southleft{
 	dir = 4;
@@ -15546,7 +15546,7 @@
 /obj/structure/table/steel,
 /obj/item/flashlight/lamp,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled,
 /area/security/questioning)
@@ -15568,7 +15568,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/paint_stripe/common,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/sleep/cryo/aux)
@@ -15615,7 +15615,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/development)
@@ -15631,7 +15631,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/white,
@@ -15660,10 +15660,10 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
@@ -15679,7 +15679,7 @@
 	name = "First Deck Teleporter"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15698,7 +15698,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -15720,7 +15720,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -15773,7 +15773,7 @@
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -15854,7 +15854,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -15866,7 +15866,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/development)
@@ -15907,7 +15907,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/exam_room)
@@ -15931,7 +15931,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -15946,7 +15946,7 @@
 /area/crew_quarters/sleep/cryo/aux)
 "iPV" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -16002,7 +16002,7 @@
 /area/rnd/misc_lab)
 "iTC" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16028,10 +16028,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -16048,7 +16048,7 @@
 "iVb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/shutoff,
 /obj/machinery/atmospherics/valve/shutoff,
@@ -16127,7 +16127,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
@@ -16166,7 +16166,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -16178,7 +16178,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -16189,7 +16189,7 @@
 /area/maintenance/firstdeck/foreport)
 "jfb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16230,7 +16230,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery2)
@@ -16240,7 +16240,7 @@
 	},
 /obj/machinery/atmospherics/binary/pump,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
@@ -16286,7 +16286,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/meter,
@@ -16319,7 +16319,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/paleblue/half,
 /turf/simulated/floor/tiled/monotile,
@@ -16366,7 +16366,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -16379,7 +16379,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -16393,7 +16393,7 @@
 /area/hallway/primary/firstdeck/center)
 "jtb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16415,7 +16415,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
@@ -16437,7 +16437,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -16459,7 +16459,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/surgery)
@@ -16475,7 +16475,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/hologram/holopad,
@@ -16493,10 +16493,10 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -16510,7 +16510,7 @@
 /area/rnd/misc_lab)
 "jAM" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -16529,7 +16529,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -16545,7 +16545,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -16626,7 +16626,7 @@
 /area/rnd/locker)
 "jIG" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -16651,7 +16651,7 @@
 /area/rnd/research)
 "jKb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16686,11 +16686,11 @@
 /area/rnd/research)
 "jON" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -16718,7 +16718,7 @@
 /obj/machinery/atmospherics/binary/pump,
 /obj/effect/floor_decal/corner/research/mono,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenoarch/analysis)
@@ -16790,7 +16790,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/light,
@@ -16826,7 +16826,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/hygiene/drain,
 /turf/simulated/floor/tiled/white/monotile,
@@ -16881,7 +16881,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
@@ -17004,7 +17004,7 @@
 	pixel_y = -26
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -17129,7 +17129,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/visible,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -17152,13 +17152,13 @@
 /area/assembly/robotics/office)
 "kwb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
@@ -17185,7 +17185,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -17346,7 +17346,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
@@ -17358,7 +17358,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
@@ -17376,7 +17376,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -17391,10 +17391,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -17410,7 +17410,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -17454,7 +17454,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/body_scanconsole{
 	dir = 1
@@ -17486,7 +17486,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
@@ -17617,10 +17617,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/wing)
@@ -17694,7 +17694,7 @@
 /area/security/detectives_office)
 "lib" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/landmark{
 	name = "lightsout"
@@ -17734,7 +17734,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/development)
@@ -17788,16 +17788,16 @@
 "lpb" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lqb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/development)
@@ -17831,7 +17831,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/catwalk,
@@ -17979,7 +17979,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -17991,7 +17991,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -18011,10 +18011,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
@@ -18075,7 +18075,7 @@
 "lJP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -18092,7 +18092,7 @@
 /area/security/detectives_office)
 "lMb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -18127,7 +18127,7 @@
 /area/rnd/xenoarch/analysis)
 "lVb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 8
@@ -18156,7 +18156,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -18207,13 +18207,13 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
@@ -18231,7 +18231,7 @@
 "mdv" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "forensics"
@@ -18262,7 +18262,7 @@
 /area/security/evidence)
 "mgX" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -18279,7 +18279,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -18289,7 +18289,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -18325,7 +18325,7 @@
 "mjb" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/junction{
 	dir = 8
@@ -18336,7 +18336,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -18361,7 +18361,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/firstdeck/fore)
@@ -18380,7 +18380,7 @@
 /area/medical/physicianoffice)
 "mlw" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -18445,7 +18445,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -18489,7 +18489,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -18500,13 +18500,13 @@
 /area/maintenance/firstdeck/forestarboard)
 "mvl" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 4;
@@ -18532,7 +18532,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -18606,7 +18606,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Operating Theatre 2";
@@ -18621,7 +18621,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
@@ -18636,7 +18636,7 @@
 /area/security/questioning)
 "mBv" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -18688,7 +18688,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
@@ -18697,7 +18697,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atm{
 	pixel_x = 32
@@ -18758,7 +18758,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
@@ -18766,7 +18766,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/camera/network/first_deck{
@@ -18831,10 +18831,10 @@
 	},
 /obj/item/radio/beacon,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
@@ -18843,7 +18843,7 @@
 /area/hallway/primary/firstdeck/fore)
 "mTb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -18887,7 +18887,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -18948,7 +18948,7 @@
 	id_tag = "BrigFoyer"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 5
@@ -18968,14 +18968,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/firstdeck/fore)
@@ -19060,7 +19060,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19087,7 +19087,7 @@
 /area/medical/surgery)
 "njQ" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19111,7 +19111,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19124,7 +19124,7 @@
 /area/security/locker)
 "nkr" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
@@ -19165,7 +19165,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/red{
 	dir = 9;
@@ -19209,10 +19209,10 @@
 /area/teleporter/firstdeck)
 "npe" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -19309,7 +19309,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -19383,7 +19383,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/hatch/blue,
 /turf/simulated/floor/tiled/white/monotile,
@@ -19392,7 +19392,7 @@
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -19429,7 +19429,7 @@
 /area/security/bo)
 "nHf" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 6
@@ -19448,7 +19448,7 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark,
@@ -19478,7 +19478,7 @@
 	},
 /obj/structure/bed/chair/padded/red,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -19524,7 +19524,7 @@
 	pixel_y = -3
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -19534,7 +19534,7 @@
 /area/security/opscheck)
 "nPO" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19549,7 +19549,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/effect/floor_decal/industrial/warning{
@@ -19563,7 +19563,7 @@
 /area/maintenance/firstdeck/aftport)
 "nQb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/bed/chair/comfy/red{
 	dir = 4
@@ -19574,7 +19574,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/research{
@@ -19596,7 +19596,7 @@
 /area/hallway/primary/firstdeck/aft)
 "nUp" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -19637,7 +19637,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19674,7 +19674,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19692,7 +19692,7 @@
 	c_tag = "First Deck Fore Hallway - Port"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19726,7 +19726,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/research{
@@ -19752,7 +19752,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -19802,7 +19802,7 @@
 /area/hallway/primary/firstdeck/aft)
 "oeb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
@@ -19850,7 +19850,7 @@
 /area/hallway/primary/firstdeck/fore)
 "ohl" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell2)
@@ -19916,7 +19916,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
@@ -19935,7 +19935,7 @@
 /area/thruster/d1port)
 "oqp" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -19965,7 +19965,7 @@
 "ouI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/catwalk,
@@ -20118,7 +20118,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/green{
 	dir = 10;
@@ -20168,10 +20168,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/security/wing)
@@ -20249,7 +20249,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
@@ -20277,7 +20277,7 @@
 /area/assembly/robotics/office)
 "oQb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20296,7 +20296,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/light_switch{
 	pixel_x = 24;
@@ -20307,7 +20307,7 @@
 "oSb" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -20320,7 +20320,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -20336,7 +20336,7 @@
 /area/security/locker)
 "oTb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20351,7 +20351,7 @@
 /area/rnd/research)
 "oUb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20369,7 +20369,7 @@
 		icon_state = "0-2"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/paint_stripe/security,
 /turf/simulated/floor/plating,
@@ -20402,7 +20402,7 @@
 /area/security/brig)
 "oXb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 10;
@@ -20424,7 +20424,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
@@ -20471,7 +20471,7 @@
 /area/security/detectives_office)
 "pcb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20495,7 +20495,7 @@
 /area/rnd/research)
 "pdb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20511,7 +20511,7 @@
 /area/rnd/research)
 "peb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20524,7 +20524,7 @@
 "pfb" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -20542,7 +20542,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -20551,7 +20551,7 @@
 /area/rnd/misc_lab)
 "phb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/misc_lab)
@@ -20561,13 +20561,13 @@
 	icon_state = "warning"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
 "pjb" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
@@ -20578,7 +20578,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -20587,7 +20587,7 @@
 /area/security/wing)
 "pjR" = (
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -20609,7 +20609,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/staging)
@@ -20628,7 +20628,7 @@
 /area/rnd/research)
 "pmb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
@@ -20758,7 +20758,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/glass/research{
 	name = "Xenoflora Laboratory"
@@ -20768,7 +20768,7 @@
 /area/rnd/xenobiology/xenoflora)
 "pxb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -20776,7 +20776,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -20805,7 +20805,7 @@
 	},
 /obj/structure/railing/mapped,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20814,7 +20814,7 @@
 /area/maintenance/firstdeck/aftport)
 "pyg" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -20907,7 +20907,7 @@
 /area/rnd/misc_lab)
 "pEb" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
@@ -20920,16 +20920,16 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
 "pFb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/bed/chair/comfy/lime{
 	dir = 4
@@ -20961,7 +20961,7 @@
 /area/rnd/misc_lab)
 "pHb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -20984,7 +20984,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -21030,7 +21030,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
@@ -21106,7 +21106,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/sleeper)
@@ -21123,7 +21123,7 @@
 /area/rnd/xenobiology/xenoflora)
 "pQO" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -21185,7 +21185,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell3)
@@ -21238,7 +21238,7 @@
 /area/rnd/xenobiology/xenoflora)
 "pZb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -21259,7 +21259,7 @@
 	secured_wires = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -21347,7 +21347,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -21365,7 +21365,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -21424,7 +21424,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
@@ -21484,7 +21484,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -21624,7 +21624,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
@@ -21640,7 +21640,7 @@
 /area/security/detectives_office)
 "qyb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -21712,7 +21712,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
@@ -21761,7 +21761,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/research{
 	name = "Research Paperwork Office"
@@ -21777,7 +21777,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -21798,7 +21798,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -21820,7 +21820,7 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/iv_drip,
 /obj/machinery/light/spot{
@@ -21913,7 +21913,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light{
@@ -21980,7 +21980,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -22144,7 +22144,7 @@
 /area/rnd/office)
 "qYb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -22158,7 +22158,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -22279,7 +22279,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -22479,7 +22479,7 @@
 	dir = 2
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
@@ -22499,7 +22499,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -22562,7 +22562,7 @@
 /area/rnd/misc_lab)
 "ruz" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -22621,7 +22621,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 6;
@@ -22695,7 +22695,7 @@
 /area/rnd/xenobiology/xenoflora)
 "rDC" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -22716,7 +22716,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -22843,7 +22843,7 @@
 /obj/item/clothing/head/helmet/ballistic,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
@@ -22864,7 +22864,7 @@
 /area/rnd/misc_lab)
 "rMb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -22965,7 +22965,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -22988,7 +22988,7 @@
 "rUO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/questioning)
@@ -23027,7 +23027,7 @@
 /area/rnd/xenobiology/xenoflora)
 "rXJ" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -23108,7 +23108,7 @@
 /area/security/locker)
 "sbb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light{
@@ -23119,7 +23119,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -23138,7 +23138,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -23157,7 +23157,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
@@ -23171,7 +23171,7 @@
 "sdb" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -23214,17 +23214,17 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "sgb" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/catwalk,
@@ -23276,7 +23276,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/evidence)
@@ -23296,7 +23296,7 @@
 /area/medical/staging)
 "sjb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/meter,
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -23309,7 +23309,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -23328,7 +23328,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
@@ -23349,7 +23349,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -23377,7 +23377,7 @@
 "smr" = (
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -23403,7 +23403,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/corner/research{
 	dir = 9;
@@ -23413,10 +23413,10 @@
 /area/rnd/xenobiology/xenoflora)
 "sne" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
@@ -23467,7 +23467,7 @@
 /area/rnd/misc_lab)
 "srR" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -23486,7 +23486,7 @@
 /area/rnd/research)
 "ssb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -23507,7 +23507,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
@@ -23611,7 +23611,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/questioning)
@@ -23725,7 +23725,7 @@
 /area/hallway/primary/firstdeck/fore)
 "sFb" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -23751,7 +23751,7 @@
 /area/medical/staging)
 "sGF" = (
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell1)
@@ -23792,7 +23792,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/machinery/alarm{
@@ -23811,7 +23811,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/sleeper{
 	dir = 4
@@ -23825,7 +23825,7 @@
 	icon_state = "map_scrubber_off"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell3)
@@ -23845,10 +23845,10 @@
 /area/security/brig)
 "sNb" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -23883,7 +23883,7 @@
 /obj/effect/wallframe_spawn/reinforced,
 /obj/effect/paint_stripe/common,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/sleep/cryo/aux)
@@ -23900,7 +23900,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 9
@@ -23943,7 +23943,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -23962,10 +23962,10 @@
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/door/window/brigdoor/westright{
 	dir = 1;
@@ -24003,7 +24003,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -24067,7 +24067,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/foyer)
@@ -24120,7 +24120,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/wing)
@@ -24134,7 +24134,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/catwalk,
@@ -24194,7 +24194,7 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
@@ -24224,7 +24224,7 @@
 /area/rnd/office)
 "tGe" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -24254,10 +24254,10 @@
 "tJM" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -24272,7 +24272,7 @@
 /area/security/wing)
 "tJO" = (
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -24281,7 +24281,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -24312,7 +24312,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -24368,7 +24368,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plating,
@@ -24378,7 +24378,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -24406,10 +24406,10 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/storage)
@@ -24456,7 +24456,7 @@
 /area/rnd/xenoarch/analysis)
 "ugg" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -24470,7 +24470,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "2-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/aft)
@@ -24595,7 +24595,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
@@ -24617,7 +24617,7 @@
 	icon_state = "comfyofficechair_preview"
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/questioning)
@@ -24631,7 +24631,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/processing)
@@ -24656,7 +24656,7 @@
 	dir = 6
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/medical/foyer/storeroom)
@@ -24709,7 +24709,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -24740,7 +24740,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/storage)
@@ -24833,7 +24833,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -24850,7 +24850,7 @@
 	},
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -24972,7 +24972,7 @@
 	sort_type = "Brig Storage"
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
@@ -24981,7 +24981,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/plating,
 /area/security/wing)
@@ -25006,7 +25006,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/firealarm{
 	dir = 4;
@@ -25048,7 +25048,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1port)
@@ -25075,7 +25075,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock/glass/medical,
 /turf/simulated/floor/tiled/white,
@@ -25103,7 +25103,7 @@
 "vMw" = (
 /obj/machinery/hologram/holopad,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -25132,7 +25132,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/light{
 	dir = 4
@@ -25146,7 +25146,7 @@
 /area/security/lobby)
 "vUl" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
@@ -25177,7 +25177,7 @@
 	pixel_y = 0
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/equipstorage)
@@ -25195,7 +25195,7 @@
 /area/medical/locker)
 "wcj" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
@@ -25255,13 +25255,13 @@
 "wkS" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "1-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
@@ -25303,10 +25303,10 @@
 "wmK" = (
 /obj/effect/catwalk_plated,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -25333,7 +25333,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -25417,7 +25417,7 @@
 "wzG" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -25496,7 +25496,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/storage/emergency)
@@ -25505,7 +25505,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -25536,7 +25536,7 @@
 	dir = 4
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -25582,7 +25582,7 @@
 	pixel_x = -22
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
 /area/security/brig)
@@ -25613,7 +25613,7 @@
 	pixel_y = -25
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
@@ -25626,7 +25626,7 @@
 	dir = 9
 	},
 /obj/structure/cable/green{
-			icon_state = "1-8"
+	icon_state = "1-8"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -25796,7 +25796,7 @@
 	dir = 5
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
@@ -25831,7 +25831,7 @@
 "xAp" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/medical/sleeper)
@@ -25854,7 +25854,7 @@
 	dir = 1
 	},
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
@@ -25886,7 +25886,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/glass/civilian,
 /turf/simulated/floor/tiled/monotile,
@@ -25936,13 +25936,13 @@
 /area/security/wing)
 "xIT" = (
 /obj/structure/cable/green{
-			icon_state = "2-8"
+	icon_state = "2-8"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "xJP" = (
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/corner/blue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -26018,7 +26018,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -26059,7 +26059,7 @@
 	pixel_y = -2
 	},
 /obj/structure/cable/green{
-			icon_state = "1-2"
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/armoury)
@@ -26074,7 +26074,7 @@
 /area/hallway/primary/firstdeck/center)
 "xSU" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
@@ -26138,7 +26138,7 @@
 /area/maintenance/firstdeck/forestarboard)
 "ygK" = (
 /obj/structure/cable/green{
-			icon_state = "4-8"
+	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
