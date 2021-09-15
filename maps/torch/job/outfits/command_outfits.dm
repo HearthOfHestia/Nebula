@@ -14,8 +14,8 @@
 	pda_type = /obj/item/modular_computer/pda/captain
 	gloves = /obj/item/clothing/gloves/duty/com
 
-/decl/hierarchy/outfit/job/torch/crew/command/CO/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/command/CO/Initialize()
+	. = ..()
 	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/storage/backpack/captain
 	backpack_overrides[/decl/backpack_outfit/satchel] = /obj/item/storage/backpack/satchel/cap
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/com
@@ -47,8 +47,8 @@
 	gloves = /obj/item/clothing/gloves/duty/med
 	id_type = /obj/item/card/id/torch/silver/medical
 
-/decl/hierarchy/outfit/job/torch/crew/command/cmo/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/command/cmo/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_MEDICAL
 
 /decl/hierarchy/outfit/job/torch/crew/command/cmo/espatier
@@ -68,8 +68,8 @@
 	head = /obj/item/clothing/head/iseo/beret/engineering
 	gloves = /obj/item/clothing/gloves/duty/eng
 
-/decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/espatier
@@ -88,8 +88,8 @@
 	head = /obj/item/clothing/head/iseo/beret/security
 	gloves = /obj/item/clothing/gloves/duty/sec
 
-/decl/hierarchy/outfit/job/torch/crew/command/cos/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/command/cos/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_SECURITY
 
 /decl/hierarchy/outfit/job/torch/crew/command/cos/espatier

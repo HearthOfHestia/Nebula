@@ -3,8 +3,8 @@
 	l_ear = /obj/item/radio/headset/headset_eng
 	pda_slot = slot_l_store_str
 
-/decl/hierarchy/outfit/job/torch/crew/engineering/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/engineering/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/senior_engineer

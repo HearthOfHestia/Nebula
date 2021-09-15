@@ -1,5 +1,5 @@
-/decl/hierarchy/outfit/job/torch/crew/exploration/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/exploration/Initialize()
+	. = ..()
 	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/storage/backpack/explorer
 	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/storage/backpack/satchel/explorer
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/explorer

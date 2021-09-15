@@ -3,8 +3,8 @@
 	abstract_type = /decl/hierarchy/outfit/job/torch/crew/supply
 	gloves = /obj/item/clothing/gloves/duty/sup
 
-/decl/hierarchy/outfit/job/torch/crew/supply/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/supply/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
@@ -51,6 +51,6 @@
 	pda_type = /obj/item/modular_computer/pda/mining
 	l_ear = /obj/item/radio/headset/headset_mining
 
-/decl/hierarchy/outfit/job/torch/passenger/research/prospector/New()
-	..()
+/decl/hierarchy/outfit/job/torch/passenger/research/prospector/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING
