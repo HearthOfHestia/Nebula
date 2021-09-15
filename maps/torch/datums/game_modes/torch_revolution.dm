@@ -3,7 +3,7 @@
 	round_description = "Morale is shattered, and a mutiny is brewing! Use the 'Check Round Info' verb for more information!"
 	extended_round_description = "Time in space, away from home and loved ones, takes its toll on even the most grizzled space travelers. As time goes on, some crew find themselves \
 								stretched to their breaking points; friendly faces become harsh and hostile, and the most sensible of minds become filled with bitterness and petty ideas. \
-								As their peers find themselves surrounded by ever-angrier forces, the situation on the Torch is rapidly reaching its brutal climax."
+								As their peers find themselves surrounded by ever-angrier forces, the situation on the Endeavour is rapidly reaching its brutal climax."
 	config_tag = "mutiny"
 	required_enemies = 4
 	required_players = 10
@@ -14,10 +14,10 @@
 
 	faction_welcome = "That's it; you're done taking this crap. Obey all instructions from the leaders of the mutiny, and ensure the mutiny succeeds."
 	welcome_text = "You've been out here for what feels like an eternity. The time spent in space has worn away at your conscience, and \
-					you won't let yourself be canned up like a sardine for even one more jump. Take control of your situation and use the Torch for your own ends, or \
+					you won't let yourself be canned up like a sardine for even one more jump. Take control of your situation and use the Endeavour for your own ends, or \
 					even just to return home."
 
-	victory_text = "The Torch has fallen to the mutiny, and its future is now in question."
+	victory_text = "The Endeavour has fallen to the mutiny, and its future is now in question."
 	loss_text = "The attempted mutiny has failed, but the crew questions what happens now."
 
 	//Inround revs.
@@ -31,8 +31,8 @@
 	name = "Loyalist"
 	name_plural = "Loyalists"
 	faction_name = "Loyalist"
-	victory_text = "The Torch is free of the mutineers, although the cost has yet to be discovered in full."
-	loss_text = "The mutineers have won; the Torch will never be the same."
+	victory_text = "The Endeavour is free of the mutineers, although the cost has yet to be discovered in full."
+	loss_text = "The mutineers have won; the Endeavour will never be the same."
 
 
 /decl/special_role/loyalists/Initialize()
