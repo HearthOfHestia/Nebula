@@ -25,7 +25,7 @@
 	meat_type = /obj/item/chems/food/fish/octopus
 	bone_material = /decl/material/solid/bone/cartilage
 	available_pronouns = list(
-		/decl/pronouns
+		/decl/pronouns/skrell
 	)
 	hidden_from_codex = FALSE
 
@@ -126,9 +126,7 @@
 	exertion_reagent_scale = 5
 	exertion_reagent_path = /decl/material/liquid/lactate
 	exertion_emotes_biological = list(
-		/decl/emote/exertion/biological,
-		/decl/emote/exertion/biological/breath,
-		/decl/emote/exertion/biological/pant
+		/decl/emote/exertion/biological/breath
 	)
 	exertion_emotes_synthetic = list(
 		/decl/emote/exertion/synthetic,
@@ -138,9 +136,28 @@
 /decl/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.appearance_descriptors["headtail length"] == 1 ? MALE : FEMALE)
 
+/decl/species/skrell/handle_trail(mob/living/carbon/human/H, turf/simulated/T)
+	if(!H.shoes)
+		var/list/bloodDNA
+		var/list/blood_data = REAGENT_DATA(H.vessel, /decl/material/liquid/blood)
+		if(blood_data)
+			bloodDNA = list(blood_data["blood_DNA"] = blood_data["blood_type"])
+		else
+			bloodDNA = list()
+		T.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, H.dir, 0, H.skin_colour + "25") // Coming (8c is the alpha value)
+		var/turf/simulated/from = get_step(H, global.reverse_dir[H.dir])
+		if(istype(from))
+			from.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, 0, H.dir, H.skin_colour + "25") // Going (8c is the alpha value)
+
 /decl/species/skrell/check_background()
 	return TRUE
 
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints
+	name = "wet footprints"
+	desc = "They look like still wet tracks left by skrellian feet."
+
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints/dry()
+	qdel(src)
 /obj/item/organ/internal/eyes/skrell
 	name = "amphibian eyes"
 	desc = "Large black orbs, belonging to some sort of giant frog by looks of it."
