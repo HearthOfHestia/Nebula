@@ -25,7 +25,7 @@
 	meat_type = /obj/item/chems/food/fish/octopus
 	bone_material = /decl/material/solid/bone/cartilage
 	available_pronouns = list(
-		/decl/pronouns
+		/decl/pronouns/skrell
 	)
 	hidden_from_codex = FALSE
 
@@ -126,9 +126,7 @@
 	exertion_reagent_scale = 5
 	exertion_reagent_path = /decl/material/liquid/lactate
 	exertion_emotes_biological = list(
-		/decl/emote/exertion/biological,
-		/decl/emote/exertion/biological/breath,
-		/decl/emote/exertion/biological/pant
+		/decl/emote/exertion/biological/breath
 	)
 	exertion_emotes_synthetic = list(
 		/decl/emote/exertion/synthetic,

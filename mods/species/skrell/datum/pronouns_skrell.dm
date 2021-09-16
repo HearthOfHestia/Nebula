@@ -1,16 +1,16 @@
-/decl/pronouns/skrell //Currently unused until I sort out pronoun code.
-	name = SKRELL
+/decl/pronouns/skrell
+	name = "Skrell"
 	formal_term = "Skrell"
 	informal_term = "Skrell"
 
 	He   = "Vi"
 	he   = "vi"
-	His  = "xil"
-	his  = "xil"
-	him  = "xil"
+	His  = "Vil"
+	his  = "vil"
+	him  = "vil"
 	has  = "has"
 	is   = "is"
 	does = "does"
-	self = "xilself"
+	self = "vilself"
 	s    = "s"
 	es   = "es"
