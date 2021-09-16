@@ -1,6 +1,6 @@
 /decl/bodytype/lizard
 	name =                   "feminine"
-	bodytype_category =      BODYTYPE_HUMANOID
+	bodytype_category =      BODYTYPE_UNATHI
 	husk_icon =              'mods/species/lizard/icons/husk.dmi'
 	icon_base =              'mods/species/lizard/icons/body_female.dmi'
 	icon_deformed =          'mods/species/lizard/icons/deformed_body_female.dmi'
