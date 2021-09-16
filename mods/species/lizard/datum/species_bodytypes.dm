@@ -11,7 +11,7 @@
 	limb_icon_intensity =    0.7
 	health_hud_intensity =   2
 	associated_gender =      FEMALE
-	tail_animation =         'mods/species/lizard/icons/tail.dmi'
+	tail_icon =              'mods/species/lizard/icons/tail.dmi'
 	tail =                   "sogtail"
 	tail_blend =             ICON_MULTIPLY
 	uniform_state_modifier = "_f"
