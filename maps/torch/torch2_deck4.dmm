@@ -1298,6 +1298,19 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
+"eM" = (
+/obj/structure/bed/chair/comfy/brown{
+	dir = 4
+	},
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	id_tag = "lounge_shutters";
+	name = "Window Shutters";
+	pixel_x = -26;
+	pixel_y = -24
+	},
+/turf/simulated/floor/carpet,
+/area/crew_quarters/lounge)
 "eO" = (
 /obj/machinery/atmospherics/pipe/manifold4w/hidden,
 /turf/simulated/floor/tiled/monotile,
@@ -2497,10 +2510,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "jr" = (
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = -24;
-	pixel_y = 6
+/obj/structure/bed/chair/comfy/brown{
+	dir = 4
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
@@ -5681,23 +5692,8 @@
 /turf/simulated/open,
 /area/quartermaster/expedition/storage)
 "uw" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Lounge Maintenance"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/obj/machinery/light/small,
+/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "uA" = (
 /obj/structure/closet/jcloset_torch,
@@ -9107,7 +9103,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "HB" = (
 /obj/machinery/door/airlock/maintenance{
@@ -9526,13 +9522,19 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "IN" = (
-/obj/structure/catwalk,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "IQ" = (
@@ -9618,6 +9620,10 @@
 	dir = 1;
 	icon_state = "spline_fancy"
 	},
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "Jq" = (
@@ -9694,7 +9700,6 @@
 /area/eva)
 "JG" = (
 /obj/structure/table/woodentable,
-/obj/item/storage/box/donut,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "JI" = (
@@ -10551,7 +10556,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/aft)
 "Ml" = (
-/obj/machinery/light/small,
+/obj/machinery/fabricator/book{
+	pixel_y = 0
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "Mm" = (
@@ -10958,21 +10965,24 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "Nr" = (
-/obj/structure/catwalk,
+/obj/machinery/door/airlock/maintenance{
+	name = "Lounge Maintenance"
+	},
+/obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
+	dir = 4
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/crew_quarters/lounge)
 "Nt" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -11000,16 +11010,8 @@
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
 "Nw" = (
-/obj/structure/bed/chair/comfy/brown{
-	dir = 4
-	},
-/obj/machinery/button/blast_door{
-	desc = "A remote control-switch for shutters.";
-	id_tag = "lounge_shutters";
-	name = "Window Shutters";
-	pixel_x = -26;
-	pixel_y = -24
-	},
+/obj/structure/table/woodentable,
+/obj/item/storage/box/donut,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "Nx" = (
@@ -11152,12 +11154,9 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "NZ" = (
-/obj/machinery/computer/modular/preset/civilian{
-	dir = 8;
-	icon_state = "console"
-	},
-/obj/machinery/newscaster{
-	pixel_x = 32
+/obj/machinery/light_switch{
+	pixel_x = -24;
+	pixel_y = 0
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
@@ -11517,12 +11516,13 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
 "Pk" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = -24;
+	pixel_y = 6
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
+/turf/simulated/floor/wood/walnut,
+/area/crew_quarters/lounge)
 "Pm" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10;
@@ -11557,13 +11557,15 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/forestarboard)
 "Pp" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
-/turf/simulated/floor/plating,
-/area/maintenance/fourthdeck/foreport)
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/carpet,
+/area/crew_quarters/lounge)
 "Pq" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -11710,11 +11712,7 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/light_switch{
-	pixel_x = -24;
-	pixel_y = 0
-	},
-/turf/simulated/floor/plating,
+/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "PQ" = (
 /obj/effect/floor_decal/corner/brown/half,
@@ -12002,12 +12000,9 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/storage/upper)
 "QJ" = (
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
+/obj/structure/catwalk,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -12144,16 +12139,10 @@
 /turf/simulated/floor/tiled/steel_ridged,
 /area/quartermaster/hangar/top)
 "Rk" = (
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 9
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
@@ -13430,10 +13419,11 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fourthdeck/forestarboard)
 "UD" = (
-/obj/machinery/fabricator/book{
-	pixel_y = 0
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 1;
+	icon_state = "spline_fancy"
 	},
-/turf/simulated/floor/wood/walnut,
+/turf/simulated/floor/carpet,
 /area/crew_quarters/lounge)
 "UE" = (
 /obj/structure/catwalk,
@@ -13703,8 +13693,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/eva)
 "Vq" = (
-/obj/effect/paint_stripe/common,
-/turf/simulated/wall/r_wall/map_preset/tan,
+/obj/structure/stairs/north,
+/turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "Vr" = (
 /turf/simulated/wall/r_wall/map_preset/tan,
@@ -14999,8 +14989,12 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/starboard)
 "YZ" = (
-/obj/structure/bed/chair/comfy/brown{
-	dir = 4
+/obj/machinery/computer/modular/preset/civilian{
+	dir = 8;
+	icon_state = "console"
+	},
+/obj/machinery/newscaster{
+	pixel_x = 32
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
@@ -31929,8 +31923,8 @@ WD
 hr
 YD
 SP
-RY
-RY
+jr
+uw
 iS
 Db
 PR
@@ -32332,13 +32326,13 @@ Sd
 Xt
 PK
 Zq
-MY
-NZ
-UD
+iS
+iS
+iS
 iS
 Nr
-Pp
-Pk
+iS
+iS
 DT
 Gt
 Gt
@@ -32534,13 +32528,13 @@ Yd
 Wh
 TY
 Zk
-Vq
-Vq
-Vq
-Sd
-uw
 iS
-iS
+Vq
+NZ
+Pk
+OO
+Pp
+eM
 Uu
 Uu
 Gt
@@ -32736,12 +32730,12 @@ Yd
 ER
 FB
 Zk
-Vq
+iS
 Hv
 PO
-jr
+RY
 OO
-Jo
+CH
 Nw
 pG
 sJ
@@ -32943,7 +32937,7 @@ RY
 RY
 RY
 OO
-CH
+UD
 JG
 pG
 sJ
@@ -33544,8 +33538,8 @@ Yd
 XZ
 FB
 Rf
-Sd
-Sd
+iS
+iS
 iS
 iS
 Ux
@@ -34757,7 +34751,7 @@ Sd
 FI
 Gr
 GZ
-Sd
+iS
 Ie
 Of
 Of
@@ -34959,7 +34953,7 @@ Sd
 iS
 iS
 iS
-Sd
+iS
 If
 kw
 XL

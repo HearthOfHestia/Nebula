@@ -6,6 +6,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 40)
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/CO
+	primary_department = /decl/department/command
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 	)
@@ -60,6 +61,9 @@
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security, access_curiosity_maint, access_rd, access_curiosity_rd, access_torch_fax, access_torch_helm,
 		access_radio_comm, access_radio_eng, access_radio_med, access_radio_sec, access_radio_sup, access_radio_serv, access_radio_exp, access_radio_sci
 	)
+
+	selection_color = "#1c4abd"
+	head_position = TRUE
 	
 /datum/job/captain/get_description_blurb()
 	return "You are the Commanding Officer. You are the top dog. You are an experienced professional officer in control of an entire ship, and ultimately responsible for all that happens onboard. Your job is to make sure [using_map.full_name] fulfils its space exploration mission. Delegate to your Executive Officer, your department heads, and your Senior Enlisted Advisor to effectively manage the ship, and listen to and trust their expertise."
@@ -80,6 +84,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 45
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/XO
+	primary_department = /decl/department/command
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/XO/espatier
@@ -136,6 +141,8 @@
 	total_positions = 1
 	spawn_positions = 1
 
+	selection_color = "#1c4abd"
+
 /datum/job/hop/get_description_blurb()
 	return "You are the Executive Officer. You are an experienced senior officer, second in command of the ship, and are responsible for the smooth operation of the ship under your Commanding Officer. In their absence, you are expected to take their place. Your primary duty is directly managing department heads and all those outside a department heading. You are also responsible for the contractors and passengers aboard the ship. Consider the Senior Enlisted Advisor and Bridge Officers tools at your disposal."
 
@@ -146,8 +153,9 @@
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 60
-	department_types = list(/decl/department/command, /decl/department/science)
+	department_types = list(/decl/department/science, /decl/department/command)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/cso
+	primary_department = /decl/department/science
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps
@@ -191,7 +199,8 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = COMMS_COLOR_COMMAND
+	selection_color = "#7a3f7a"
+	head_position = TRUE
 
 /datum/job/rd/get_description_blurb()
 	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the corporate interests of the Expeditionary Corps Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
@@ -204,7 +213,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 35)
 	ideal_character_age = 48
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cmo
-	department_types = list(/decl/department/command, /decl/department/medical)
+	department_types = list(/decl/department/medical, /decl/department/command)
+	primary_department = /decl/department/medical
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/cmo/espatier
@@ -243,7 +253,8 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = COMMS_COLOR_COMMAND
+	selection_color = "#03b4b4"
+	head_position = TRUE
 
 /datum/job/cmo/get_description_blurb()
 	return "You are the Chief Medical Officer. You manage the medical department. You ensure all members of medical are skilled, tasked and handling their duties. Ensure your doctors are staffing your infirmary and your corpsman/paramedics are ready for response. Act as a second surgeon or backup pharmacist in the absence of either. You are expected to know medical very well, along with general regulations."
@@ -255,8 +266,9 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 40
 	minimal_player_age = 14
-	department_types = list(/decl/department/command/, /decl/department/engineering)
+	department_types = list(/decl/department/engineering, /decl/department/command/)
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer
+	primary_department = /decl/department/engineering
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/espatier
@@ -312,7 +324,8 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = COMMS_COLOR_COMMAND
+	selection_color = "#cc7c05"
+	head_position = TRUE
 
 /datum/job/chief_engineer/get_description_blurb()
 	return "You are the Chief Engineer. You manage the Engineering Department. You are responsible for the Senior engineer, who is your right hand and (should be) an experienced, skilled engineer. Delegate to and listen to them. Manage your engineers, ensure vessel power stays on, breaches are patched and problems are fixed. Advise the CO on engineering matters. You are also responsible for the maintenance and control of any vessel synthetics. You are an experienced engineer with a wealth of theoretical knowledge. You should also know vessel regulations to a reasonable degree."
@@ -325,7 +338,8 @@
 	minimum_character_age = list(SPECIES_HUMAN = 25)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/command/cos
-	department_types = list(/decl/department/command, /decl/department/security)
+	department_types = list(/decl/department/security, /decl/department/command)
+	primary_department = /decl/department/security
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/cos/espatier
@@ -364,7 +378,8 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	selection_color = COMMS_COLOR_COMMAND
+	selection_color = "#bb0606"
+	head_position = TRUE
 
 /datum/job/hos/get_description_blurb()
 	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
