@@ -1,6 +1,7 @@
 /datum/job/qm
 	title = "Deck Chief"
-	department_types = list(/decl/department/supply)
+	department_types = list(/decl/department/supply, /decl/department/command)
+	primary_department = /decl/department/supply
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Executive Officer"
@@ -9,6 +10,7 @@
 	minimum_character_age = list(SPECIES_HUMAN = 27)
 	ideal_character_age = 35
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
+	alt_titles = list("Quartermaster", "Logistics Chief")
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
 		/datum/mil_branch/espatier_corps
@@ -32,7 +34,8 @@
 		access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_opportunity_helm,
 		access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_opportunity, access_hangar,
 		access_mining, access_mining_office, access_mining_station, access_commissary, access_teleporter, access_eva, access_torch_fax,
-		access_radio_sup, access_radio_exp, access_radio_comm
+		access_radio_sup, access_radio_exp, access_radio_comm, access_hydroponics, access_kitchen, access_solgov_crew, access_bar,
+		access_commissary, access_radio_serv, access_bar
 	)
 
 	minimal_access = list()
@@ -40,7 +43,8 @@
 	software_on_spawn = list(/datum/computer_file/program/supply,
 							 /datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
-	selection_color = COMMS_COLOR_SUPPLY
+	selection_color = "#d4a24a"
+	head_position = 1
 
 /datum/job/cargo_tech
 	title = "Deck Technician"

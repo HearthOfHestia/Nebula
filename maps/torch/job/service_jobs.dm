@@ -7,7 +7,7 @@
 	ideal_character_age = 40
 	economic_power = 6
 	minimal_player_age = 0
-	supervisors = "the Executive Officer"
+	supervisors = "the Deck Chief"
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/chaplain
 	allowed_branches = list(
 		/datum/mil_branch/civilian,
@@ -29,14 +29,14 @@
 	)
 
 	minimal_access = list()
-	selection_color = COMMS_COLOR_SERVICE
+	selection_color = "#254c25"
 
 /datum/job/janitor
 	title = "Sanitation Technician"
 	department_types = list(/decl/department/service)
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Executive Officer"
+	supervisors = "the Deck Chief"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 20
 	alt_titles = list(
@@ -66,7 +66,7 @@
 	)
 
 	minimal_access = list()
-	selection_color = COMMS_COLOR_SERVICE
+	selection_color = "#254c25"
 
 /datum/job/chef
 	title = "Cook"
@@ -74,7 +74,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 18)
-	supervisors = "the Executive Officer"
+	supervisors = "the Deck Chief"
 	alt_titles = list(
 		"Chef",
 		"Culinary Specialist"
@@ -108,14 +108,14 @@
 	)
 
 	minimal_access = list()
-	selection_color = COMMS_COLOR_SERVICE
+	selection_color = "#254c25"
 
 /datum/job/bartender
 	title = "Bartender"
 	department_types = list(/decl/department/service)
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Executive Officer"
+	supervisors = "the Deck Chief"
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	ideal_character_age = 30
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/service/bartender
@@ -134,7 +134,7 @@
 	                    SKILL_BOTANY    = SKILL_BASIC,
 	                    SKILL_CHEMISTRY = SKILL_BASIC,
 						SKILL_LITERACY    = SKILL_ADEPT)
-	selection_color = COMMS_COLOR_SERVICE
+	selection_color = "#254c25"
 
 /datum/job/crew
 	title = "Crewman"
@@ -164,4 +164,4 @@
 		access_maint_tunnels, access_emergency_storage,
 		access_solgov_crew, access_radio_serv
 	)
-	selection_color = COMMS_COLOR_SERVICE
+	selection_color = "#254c25"

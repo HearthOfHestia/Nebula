@@ -62,21 +62,11 @@
 	species_to_branch_blacklist = list(
 		/decl/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
 		/decl/species/utility_frame = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/decl/species/adherent = list(/datum/mil_branch/iseo_issc)
+		/decl/species/adherent = list(/datum/mil_branch/iseo_issc),
+		/decl/species/serpentid = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/espatier_corps, /datum/mil_branch/iseo_issc),
+		/decl/species/mantid = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet, /datum/mil_branch/espatier_corps, /datum/mil_branch/iseo_issc)
 	)
-
-/*	species_to_branch_blacklist = list(
-		/datum/species/human   = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/machine = list(/datum/mil_branch/alien, /datum/mil_branch/skrell_fleet),
-		/datum/species/vox     = list(
-			/datum/mil_branch/iseo_issc,
-			/datum/mil_branch/fleet,
-			/datum/mil_branch/civilian,
-			/datum/mil_branch/solgov,
-			/datum/mil_branch/skrell_fleet
-		)
-	)
-
+/*
 	species_to_branch_whitelist = list(
 		/datum/species/diona        = list(/datum/mil_branch/civilian),
 		/datum/species/nabber       = list(/datum/mil_branch/civilian),

@@ -73,6 +73,6 @@
 	department_types = list(/decl/department/science)
 	shard_type = /decl/ai_type/science
 	spawn_positions = 1
-	selection_color = COMMS_COLOR_SCIENCE
+	selection_color = "#633d63"
 
 

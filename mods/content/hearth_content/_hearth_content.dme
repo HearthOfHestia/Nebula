@@ -1,0 +1,6 @@
+#ifndef MODPACK_HEARTH_CONTENT
+#define MODPACK_HEARTH_CONTENT
+#include "hearth_content.dm"
+#include "sprite_overrides.dm"
+#include "aspects.dm"
+#endif
