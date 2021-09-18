@@ -29,7 +29,7 @@
 	#include "../../mods/species/adherent/_adherent.dme"
 	#include "../../mods/species/skrell/_skrell.dme"
 
-//	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
+	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"

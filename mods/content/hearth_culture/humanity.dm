@@ -177,7 +177,7 @@
 	many more have succeeded, though few know or care. The Cloud has often been regarded as a lawless frontier, the modern Wild West. Among people who grew up here, \
 	an experimental spirit can be seen, and the pursuit of novelty held in high regard."
 
-decl/cultural_info/culture/human/kuiper
+/decl/cultural_info/culture/human/kuiper
 	name = "Brinker"
 	description = "You are from the Kuiper Belt, a former inhabitant of one of the variety of stations and estates established there, billions of miles away \
 	from the warm rays of Sol. An asteroid field far more massive than the main Belt, it's surprisingly light on mining facilities, with a greater emphasis \
