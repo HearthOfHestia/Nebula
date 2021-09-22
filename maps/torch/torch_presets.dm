@@ -40,12 +40,15 @@ var/global/const/CAMERA_CHANNEL_CURIOSITY  = "Curiosity"
 // Networks
 /obj/machinery/camera/network/perseverance
 	preset_channels = list(CAMERA_CHANNEL_PERSEVERANCE)
+	initial_access = list(access_perseverance)
 
 /obj/machinery/camera/network/bridge
 	preset_channels = list(CAMERA_CHANNEL_BRIDGE)
+	initial_access = list(access_heads)
 
 /obj/machinery/camera/network/exploration_shuttle
 	preset_channels = list(CAMERA_CHANNEL_SPIRIT)
+	initial_access = list(access_expedition_shuttle)
 
 /obj/machinery/camera/network/expedition
 	preset_channels = list(CAMERA_CHANNEL_EXPEDITION)
@@ -61,44 +64,54 @@ var/global/const/CAMERA_CHANNEL_CURIOSITY  = "Curiosity"
 
 /obj/machinery/camera/network/pod
 	preset_channels = list(CAMERA_CHANNEL_POD)
+	initial_access = list(access_opportunity)
 
 /obj/machinery/camera/network/second_deck
 	preset_channels = list(CAMERA_CHANNEL_SECOND_DECK)
 
 /obj/machinery/camera/network/supply
 	preset_channels = list(CAMERA_CHANNEL_SUPPLY)
+	initial_access = list(access_mailsorting)
 
 /obj/machinery/camera/network/hangar
 	preset_channels = list(CAMERA_CHANNEL_HANGAR)
+	initial_access = list(access_hangar)
 
 /obj/machinery/camera/network/exploration
 	preset_channels = list(CAMERA_CHANNEL_EXPLO)
+	initial_access = list(access_explorer)
 
 /obj/machinery/camera/network/third_deck
 	preset_channels = list(CAMERA_CHANNEL_THIRD_DECK)
 
 /obj/machinery/camera/network/command
 	preset_channels = list(CAMERA_CHANNEL_COMMAND)
+	initial_access = list(access_heads)
 
 /obj/machinery/camera/network/crescent
 	preset_channels = list(CAMERA_CHANNEL_CRESCENT)
 
 /obj/machinery/camera/network/engine
 	preset_channels = list(CAMERA_CHANNEL_ENGINE)
+	initial_access = list(access_engine)
 
 /obj/machinery/camera/network/engineering_outpost
 	preset_channels = list(CAMERA_CHANNEL_ENGINEERING_OUTPOST)
+	initial_access = list(access_engine)
 
 /obj/machinery/camera/network/nanotrasen
 	preset_channels = list(CAMERA_CHANNEL_CURIOSITY)
+	initial_access = list(access_curiosity_security)
 
 // Motion
 /obj/machinery/camera/motion/engineering_outpost
 	preset_channels = list(CAMERA_CHANNEL_ENGINEERING_OUTPOST)
+	access_engine
 
 // All Upgrades
 /obj/machinery/camera/all/command
 	preset_channels = list(CAMERA_CHANNEL_COMMAND)
+	initial_access = list(access_heads)
 
 
 //
