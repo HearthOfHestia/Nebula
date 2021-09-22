@@ -1559,7 +1559,7 @@
 /obj/machinery/camera/network/engineering{
 	c_tag = "Command Hallway - Center Fore Staboard";
 	dir = 4;
-	network = list("Bridge")
+	preset_channels = list("Bridge")
 	},
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 9
@@ -1864,7 +1864,7 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Chief Engineer - Office";
 	dir = 1;
-	network = list("Command","Engineering")
+	preset_channels = list("Command","Engineering")
 	},
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
@@ -4992,7 +4992,7 @@
 	},
 /obj/machinery/camera/network/command{
 	c_tag = "Chief of Security - Office";
-	network = list("Command","Security")
+	preset_channels = list("Command","Security")
 	},
 /obj/machinery/button/alternate/door{
 	desc = "A remote control-switch for the office door.";
@@ -5719,7 +5719,7 @@
 	},
 /obj/machinery/camera/network/command{
 	c_tag = "Chief Medical Officer - Office";
-	network = list("Command","Medical")
+	preset_channels = list("Command","Medical")
 	},
 /obj/machinery/light{
 	dir = 1
@@ -7803,7 +7803,7 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Sol Government Representative - Office";
 	dir = 4;
-	network = list("Command","Security")
+	preset_channels = list("Command","Security")
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
@@ -7916,7 +7916,7 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Senior Enlisted Advisor - Office";
 	dir = 4;
-	network = list("Command")
+	preset_channels = list("Command")
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/sea)
@@ -11624,7 +11624,7 @@
 /obj/machinery/camera/network/command{
 	c_tag = "Chief Science Officer - Office";
 	dir = 8;
-	network = list("Command","Research")
+	preset_channels = list("Command","Research")
 	},
 /obj/machinery/papershredder,
 /turf/simulated/floor/tiled/monotile,

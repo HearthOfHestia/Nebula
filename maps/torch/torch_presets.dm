@@ -1,69 +1,37 @@
-var/global/const/NETWORK_PERSEVERANCE      = "Perseverance"
-var/global/const/NETWORK_BRIDGE      = "Bridge"
-var/global/const/NETWORK_SPIRIT     = "Spirit"
-var/global/const/NETWORK_EXPEDITION  = "Expedition"
-var/global/const/NETWORK_FIRST_DECK  = "First Deck"
-var/global/const/NETWORK_FOURTH_DECK = "Fourth Deck"
-var/global/const/NETWORK_POD         = "General Utility Pod"
-var/global/const/NETWORK_SECOND_DECK = "Second Deck"
-var/global/const/NETWORK_SUPPLY      = "Supply"
-var/global/const/NETWORK_HANGAR      = "Hangar"
-var/global/const/NETWORK_EXPLO       = "Exploration"
-var/global/const/NETWORK_THIRD_DECK  = "Third Deck"
-var/global/const/NETWORK_FIFTH_DECK  = "Fifth Deck"
-var/global/const/NETWORK_CURIOSITY  = "Curiosity"
+var/global/const/CAMERA_CHANNEL_PERSEVERANCE      = "Perseverance"
+var/global/const/CAMERA_CHANNEL_BRIDGE      = "Bridge"
+var/global/const/CAMERA_CHANNEL_SPIRIT     = "Spirit"
+var/global/const/CAMERA_CHANNEL_EXPEDITION  = "Expedition"
+var/global/const/CAMERA_CHANNEL_FIRST_DECK  = "First Deck"
+var/global/const/CAMERA_CHANNEL_FOURTH_DECK = "Fourth Deck"
+var/global/const/CAMERA_CHANNEL_POD         = "General Utility Pod"
+var/global/const/CAMERA_CHANNEL_SECOND_DECK = "Second Deck"
+var/global/const/CAMERA_CHANNEL_SUPPLY      = "Supply"
+var/global/const/CAMERA_CHANNEL_HANGAR      = "Hangar"
+var/global/const/CAMERA_CHANNEL_EXPLO       = "Exploration"
+var/global/const/CAMERA_CHANNEL_THIRD_DECK  = "Third Deck"
+var/global/const/CAMERA_CHANNEL_FIFTH_DECK  = "Fifth Deck"
+var/global/const/CAMERA_CHANNEL_CURIOSITY  = "Curiosity"
 
 /datum/map/torch/get_network_access(var/network)
 	switch(network)
-		if(NETWORK_PERSEVERANCE)
+		if(CAMERA_CHANNEL_PERSEVERANCE)
 			return access_perseverance
-		if(NETWORK_BRIDGE)
+		if(CAMERA_CHANNEL_BRIDGE)
 			return access_heads
-		if(NETWORK_SPIRIT)
+		if(CAMERA_CHANNEL_SPIRIT)
 			return access_expedition_shuttle
-		if(NETWORK_POD)
+		if(CAMERA_CHANNEL_POD)
 			return access_opportunity
-		if(NETWORK_SUPPLY)
+		if(CAMERA_CHANNEL_SUPPLY)
 			return access_mailsorting
-		if(NETWORK_HANGAR)
+		if(CAMERA_CHANNEL_HANGAR)
 			return access_hangar
-		if(NETWORK_EXPLO)
+		if(CAMERA_CHANNEL_EXPLO)
 			return access_explorer
-		if(NETWORK_CURIOSITY)
+		if(CAMERA_CHANNEL_CURIOSITY)
 			return access_curiosity_security
 	return get_shared_network_access(network) || ..()
-
-/datum/map/torch
-	// Networks that will show up as options in the camera monitor program
-	station_networks = list(
-		NETWORK_ROBOTS,
-		NETWORK_FIRST_DECK,
-		NETWORK_SECOND_DECK,
-		NETWORK_THIRD_DECK,
-		NETWORK_FOURTH_DECK,
-		NETWORK_FIFTH_DECK,
-		NETWORK_BRIDGE,
-		NETWORK_COMMAND,
-		NETWORK_ENGINEERING,
-		NETWORK_ENGINE,
-		NETWORK_MEDICAL,
-		NETWORK_RESEARCH,
-		NETWORK_SECURITY,
-		NETWORK_SUPPLY,
-		NETWORK_EXPEDITION,
-		NETWORK_EXPLO,
-		NETWORK_HANGAR,
-		NETWORK_PERSEVERANCE,
-		NETWORK_SPIRIT,
-		NETWORK_POD,
-		NETWORK_CURIOSITY,
-		NETWORK_ALARM_ATMOS,
-		NETWORK_ALARM_CAMERA,
-		NETWORK_ALARM_FIRE,
-		NETWORK_ALARM_MOTION,
-		NETWORK_ALARM_POWER,
-		NETWORK_THUNDER,
-	)
 
 //
 // Cameras
@@ -71,66 +39,66 @@ var/global/const/NETWORK_CURIOSITY  = "Curiosity"
 
 // Networks
 /obj/machinery/camera/network/perseverance
-	network = list(NETWORK_PERSEVERANCE)
+	preset_channels = list(CAMERA_CHANNEL_PERSEVERANCE)
 
 /obj/machinery/camera/network/bridge
-	network = list(NETWORK_BRIDGE)
+	preset_channels = list(CAMERA_CHANNEL_BRIDGE)
 
 /obj/machinery/camera/network/exploration_shuttle
-	network = list(NETWORK_SPIRIT)
+	preset_channels = list(CAMERA_CHANNEL_SPIRIT)
 
 /obj/machinery/camera/network/expedition
-	network = list(NETWORK_EXPEDITION)
+	preset_channels = list(CAMERA_CHANNEL_EXPEDITION)
 
 /obj/machinery/camera/network/first_deck
-	network = list(NETWORK_FIRST_DECK)
+	preset_channels = list(CAMERA_CHANNEL_FIRST_DECK)
 
 /obj/machinery/camera/network/fourth_deck
-	network = list(NETWORK_FOURTH_DECK)
+	preset_channels = list(CAMERA_CHANNEL_FOURTH_DECK)
 
 /obj/machinery/camera/network/fifth_deck
-	network = list(NETWORK_FIFTH_DECK)
+	preset_channels = list(CAMERA_CHANNEL_FIFTH_DECK)
 
 /obj/machinery/camera/network/pod
-	network = list(NETWORK_POD)
+	preset_channels = list(CAMERA_CHANNEL_POD)
 
 /obj/machinery/camera/network/second_deck
-	network = list(NETWORK_SECOND_DECK)
+	preset_channels = list(CAMERA_CHANNEL_SECOND_DECK)
 
 /obj/machinery/camera/network/supply
-	network = list(NETWORK_SUPPLY)
+	preset_channels = list(CAMERA_CHANNEL_SUPPLY)
 
 /obj/machinery/camera/network/hangar
-	network = list(NETWORK_HANGAR)
+	preset_channels = list(CAMERA_CHANNEL_HANGAR)
 
 /obj/machinery/camera/network/exploration
-	network = list(NETWORK_EXPLO)
+	preset_channels = list(CAMERA_CHANNEL_EXPLO)
 
 /obj/machinery/camera/network/third_deck
-	network = list(NETWORK_THIRD_DECK)
+	preset_channels = list(CAMERA_CHANNEL_THIRD_DECK)
 
 /obj/machinery/camera/network/command
-	network = list(NETWORK_COMMAND)
+	preset_channels = list(CAMERA_CHANNEL_COMMAND)
 
 /obj/machinery/camera/network/crescent
-	network = list(NETWORK_CRESCENT)
+	preset_channels = list(CAMERA_CHANNEL_CRESCENT)
 
 /obj/machinery/camera/network/engine
-	network = list(NETWORK_ENGINE)
+	preset_channels = list(CAMERA_CHANNEL_ENGINE)
 
 /obj/machinery/camera/network/engineering_outpost
-	network = list(NETWORK_ENGINEERING_OUTPOST)
+	preset_channels = list(CAMERA_CHANNEL_ENGINEERING_OUTPOST)
 
 /obj/machinery/camera/network/nanotrasen
-	network = list(NETWORK_CURIOSITY)
+	preset_channels = list(CAMERA_CHANNEL_CURIOSITY)
 
 // Motion
 /obj/machinery/camera/motion/engineering_outpost
-	network = list(NETWORK_ENGINEERING_OUTPOST)
+	preset_channels = list(CAMERA_CHANNEL_ENGINEERING_OUTPOST)
 
 // All Upgrades
 /obj/machinery/camera/all/command
-	network = list(NETWORK_COMMAND)
+	preset_channels = list(CAMERA_CHANNEL_COMMAND)
 
 
 //
@@ -184,16 +152,16 @@ var/global/const/NETWORK_CURIOSITY  = "Curiosity"
 	_output_on = TRUE
 	_fully_charged = TRUE
 
-var/global/const/NETWORK_COMMAND = "Command"
-var/global/const/NETWORK_ENGINE  = "Engine"
-var/global/const/NETWORK_ENGINEERING_OUTPOST = "Engineering Outpost"
+var/global/const/CAMERA_CHANNEL_COMMAND = "Command"
+var/global/const/CAMERA_CHANNEL_ENGINE  = "Engine"
+var/global/const/CAMERA_CHANNEL_ENGINEERING_OUTPOST = "Engineering Outpost"
 var/global/const/HAIL_FREQ = 1463
 
 /datum/map/proc/get_shared_network_access(var/network)
 	switch(network)
-		if(NETWORK_COMMAND)
+		if(CAMERA_CHANNEL_COMMAND)
 			return access_heads
-		if(NETWORK_ENGINE, NETWORK_ENGINEERING_OUTPOST)
+		if(CAMERA_CHANNEL_ENGINE, CAMERA_CHANNEL_ENGINEERING_OUTPOST)
 			return access_engine
 
 /datum/map/torch/default_internal_channels()
