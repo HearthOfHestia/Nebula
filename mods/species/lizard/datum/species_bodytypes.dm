@@ -16,6 +16,15 @@
 	tail_blend =             ICON_MULTIPLY
 	uniform_state_modifier = "_f"
 	limb_blend =             ICON_MULTIPLY
+	equip_adjust = list(
+		slot_back_str = list(NORTH = list(NORTH = 1), EAST = list(EAST = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_wear_suit_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_wear_id_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_gloves_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_tie_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_undershirt_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1)),
+		slot_head_str = list(NORTH = list(NORTH = 1), EAST = list(NORTH = 1), SOUTH = list(NORTH = 1), WEST = list(NORTH = 1))
+	)
 
 /decl/bodytype/lizard/masculine
 	name =                   "masculine"
