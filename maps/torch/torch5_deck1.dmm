@@ -4214,7 +4214,6 @@
 	dir = 2
 	},
 /obj/structure/lattice,
-/obj/machinery/door/firedoor,
 /turf/simulated/open,
 /area/maintenance/substation/firstdeck)
 "ali" = (

@@ -1199,12 +1199,12 @@
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_bridge)
-
+/*
 /area/bridge/disciplinary_board_room
 	name = "\improper Disciplinary Board Room"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_bridge)
-/*
+
 /area/bridge/disciplinary_board_room/deliberation
 	name = "\improper Deliberation Room"
 	sound_env = SMALL_ENCLOSED
