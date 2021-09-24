@@ -297,7 +297,7 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
@@ -675,7 +675,7 @@
 	pixel_x = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
@@ -869,7 +869,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -1728,6 +1728,7 @@
 /area/vacant/chapel)
 "dP" = (
 /obj/structure/railing/mapped,
+/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "dQ" = (
@@ -1805,7 +1806,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1947,7 +1948,7 @@
 	initial_id_tag = "aux_fusion_plant"
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
@@ -2059,7 +2060,7 @@
 /area/maintenance/seconddeck/forestarboard)
 "et" = (
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/emitter/gyrotron/anchored{
 	dir = 8;
@@ -2084,6 +2085,7 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
+/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "ev" = (
@@ -2093,7 +2095,7 @@
 /area/maintenance/seconddeck/aftstarboard)
 "ew" = (
 /obj/structure/cable/yellow{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/power/port_gen/pacman/mrs{
 	anchored = 1
@@ -2171,10 +2173,10 @@
 	name = "Powernet Sensor - Second Deck Subgrid"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/item/radio/intercom{
 	pixel_y = 23
@@ -2241,7 +2243,7 @@
 	},
 /obj/machinery/power/terminal,
 /obj/structure/cable{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/catwalk,
@@ -2569,7 +2571,7 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/assembly/robotics)
@@ -2800,11 +2802,17 @@
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "gb" = (
+/obj/machinery/door/firedoor/border{
+	dir = 1
+	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gc" = (
 /obj/structure/disposalpipe/down,
 /obj/structure/lattice,
+/obj/machinery/door/firedoor/border{
+	dir = 1
+	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gd" = (
@@ -2852,7 +2860,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
@@ -3065,13 +3073,13 @@
 	name = "Powernet Sensor - Atmospherics Subgrid"
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/structure/table/steel,
 /obj/item/storage/toolbox/electrical,
@@ -3083,7 +3091,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
@@ -3109,10 +3117,10 @@
 	RCon_tag = "Substation - Second Deck"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/seconddeck)
@@ -3181,6 +3189,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/lattice,
 /obj/structure/railing/mapped,
+/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gQ" = (
@@ -3345,10 +3354,10 @@
 	name = "Powernet Sensor - Master Grid"
 	},
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/structure/cable{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_smes)
@@ -3367,7 +3376,7 @@
 /area/engineering/engine_smes)
 "hm" = (
 /obj/structure/cable/yellow{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/power/terminal{
 	dir = 1;
@@ -3467,7 +3476,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/sensor{
 	id_tag = "Engine Output";
@@ -3548,7 +3557,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
@@ -3604,7 +3613,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
@@ -3664,7 +3673,7 @@
 /area/engineering/engine_room)
 "ij" = (
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -3692,7 +3701,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/disposalpipe/segment{
@@ -3813,7 +3822,7 @@
 	},
 /obj/item/storage/box/syringes,
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/firealarm{
 	dir = 2;
@@ -3983,7 +3992,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/random/maintenance/solgov,
 /obj/structure/cable/cyan{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/synth/borg_upload)
@@ -4046,7 +4055,7 @@
 /area/engineering/engine_room)
 "jd" = (
 /obj/structure/cable/yellow{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/generator{
 	anchored = 1;
@@ -4404,7 +4413,7 @@
 	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -4916,7 +4925,7 @@
 	icon_state = "bordercolorhalf"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/camera/network/second_deck{
 	c_tag = "Second Deck - Stairwell";
@@ -4973,7 +4982,7 @@
 	pixel_x = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -5049,6 +5058,13 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
+"lH" = (
+/obj/structure/catwalk,
+/obj/machinery/door/firedoor/border{
+	dir = 1
+	},
+/turf/simulated/open,
+/area/maintenance/seconddeck/aftstarboard)
 "lJ" = (
 /obj/item/stool/padded,
 /obj/effect/floor_decal/industrial/warning,
@@ -5144,10 +5160,10 @@
 /area/engineering/engine_room)
 "lW" = (
 /obj/structure/cable/yellow{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/generator{
 	anchored = 1;
@@ -5719,7 +5735,7 @@
 "no" = (
 /obj/machinery/ftl_shunt/core,
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/bluegrid,
 /area/engineering/bluespace)
@@ -5943,7 +5959,7 @@
 	opacity = 0
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/disposalpipe/segment{
@@ -6419,7 +6435,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
@@ -6955,7 +6971,7 @@
 "qo" = (
 /obj/machinery/power/shield_generator,
 /obj/structure/cable{
-		icon_state = "0-2";
+	icon_state = "0-2";
 	pixel_y = 0
 	},
 /turf/simulated/floor/plating,
@@ -7613,6 +7629,9 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
+/obj/machinery/door/firedoor/border{
+	dir = 1
+	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "rD" = (
@@ -7635,7 +7654,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -7742,7 +7761,7 @@
 	},
 /obj/effect/floor_decal/corner/yellow/three_quarters,
 /turf/simulated/floor/tiled,
-/area/engineering/storage)
+/area/engineering/foyer)
 "sc" = (
 /obj/effect/floor_decal/corner/yellow/half,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
@@ -7994,7 +8013,7 @@
 	},
 /obj/effect/paint_stripe/engineering,
 /turf/simulated/wall/map_preset/tan,
-/area/engineering/storage)
+/area/engineering/foyer)
 "sI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8622,7 +8641,7 @@
 	pixel_x = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/structure/iv_drip,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -8647,7 +8666,7 @@
 	dir = 4
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc/super/critical{
 	dir = 1;
@@ -8999,7 +9018,7 @@
 	name = "R-UST Power Generation - Powernet Sensor"
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
@@ -9159,7 +9178,7 @@
 /area/engineering/atmos)
 "vF" = (
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 2;
@@ -10072,7 +10091,7 @@
 	dir = 8
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/light/small,
 /obj/effect/floor_decal/industrial/warning{
@@ -10093,6 +10112,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
 "yt" = (
@@ -10309,7 +10329,7 @@
 /area/engineering/auxpowergen)
 "yY" = (
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/super/critical{
 	dir = 1;
@@ -10552,7 +10572,7 @@
 	dir = 9
 	},
 /obj/structure/cable{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/power/sensor{
 	id_tag = "Auxillary Power Generation"
@@ -10579,7 +10599,7 @@
 /area/engineering/auxpowergen)
 "zH" = (
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/terminal,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -10655,6 +10675,9 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
+	},
+/obj/machinery/door/firedoor/border{
+	dir = 1
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
@@ -10908,7 +10931,7 @@
 	RCon_tag = "Auxillary Radiopile"
 	},
 /obj/structure/cable{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/button/blast_door{
 	id_tag = "aux_blast";
@@ -11054,7 +11077,7 @@
 /area/storage/cargo)
 "AP" = (
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/blast/regular{
@@ -11408,6 +11431,10 @@
 /obj/effect/wallframe_spawn/reinforced_borosilicate,
 /turf/simulated/floor/plating,
 /area/engineering/fuelbay)
+"BU" = (
+/obj/effect/paint_stripe/command,
+/turf/simulated/wall/r_wall/map_preset/tan,
+/area/engineering/foyer)
 "BY" = (
 /turf/simulated/wall/map_preset/tan,
 /area/hallway/primary/seconddeck)
@@ -11434,7 +11461,7 @@
 	pixel_y = 0
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 1;
@@ -11538,7 +11565,7 @@
 	pixel_x = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/fuelbay)
@@ -11631,7 +11658,7 @@
 /area/storage/research)
 "CF" = (
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/apc{
 	dir = 4;
@@ -11694,6 +11721,9 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 1
+	},
+/obj/machinery/door/firedoor/border{
+	dir = 8
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
@@ -11900,6 +11930,10 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
 	},
+/obj/machinery/door/firedoor/border{
+	dir = 8
+	},
+/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "Do" = (
@@ -11936,6 +11970,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
+"Ds" = (
+/obj/structure/catwalk,
+/obj/machinery/door/firedoor/border,
+/turf/simulated/open,
+/area/maintenance/seconddeck/aftstarboard)
 "Dt" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -12252,7 +12291,7 @@
 	state = 2
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
@@ -12577,7 +12616,7 @@
 /area/vacant/prototype/engine)
 "Fi" = (
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/smes/buildable{
 	RCon_tag = "Prototype - Distribution";
@@ -12797,7 +12836,7 @@
 /area/engineering/atmos)
 "FG" = (
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/alarm/server{
 	dir = 4;
@@ -12924,7 +12963,7 @@
 /area/space)
 "Gd" = (
 /obj/structure/cable/cyan{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/smes/buildable/preset/torch/substation_full{
 	RCon_tag = "Substation - Atmospherics"
@@ -13069,6 +13108,12 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"Gr" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/obj/effect/paint/tan,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/foreport)
 "Gs" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -13304,7 +13349,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable{
-		icon_state = "0-2";
+	icon_state = "0-2";
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/yellow{
@@ -13651,6 +13696,7 @@
 "Ib" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/machinery/door/firedoor,
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "Ic" = (
@@ -13665,7 +13711,7 @@
 	RCon_tag = "Substation - Engine"
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/camera/network/engine{
 	c_tag = "Engine - SMES";
@@ -13709,7 +13755,7 @@
 	dir = 1
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -13842,7 +13888,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/cable/green{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -13943,7 +13989,7 @@
 	output_attempt = 1
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-2"
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -14045,7 +14091,7 @@
 	RCon_tag = "Substation - Shields"
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/firealarm{
 	dir = 1;
@@ -14192,7 +14238,7 @@
 	pixel_y = -28
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/elevator)
@@ -14292,7 +14338,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/disposal)
@@ -14332,6 +14378,7 @@
 /obj/machinery/atmospherics/pipe/zpipe/up/fuel{
 	dir = 8
 	},
+/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "JX" = (
@@ -14378,7 +14425,7 @@
 	RCon_tag = "Engine - Main"
 	},
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
@@ -14812,7 +14859,7 @@
 /area/engineering/locker_room)
 "LC" = (
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
@@ -14854,7 +14901,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -14925,7 +14972,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -15294,7 +15341,7 @@
 	opacity = 0
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/disposalpipe/segment{
@@ -15319,10 +15366,10 @@
 	icon_state = "term"
 	},
 /obj/structure/cable{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -15605,7 +15652,7 @@
 	dir = 9
 	},
 /turf/simulated/floor/tiled,
-/area/engineering/storage)
+/area/engineering/foyer)
 "NJ" = (
 /obj/effect/paint_stripe/engineering,
 /turf/simulated/wall/r_wall/map_preset/tan,
@@ -15799,7 +15846,7 @@
 	icon_state = "term"
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -16109,10 +16156,10 @@
 	icon_state = "warning"
 	},
 /obj/structure/cable{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/structure/cable{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_smes)
@@ -16267,6 +16314,12 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"Pt" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/obj/effect/paint/tan,
+/turf/simulated/floor/plating,
+/area/maintenance/seconddeck/aftport)
 "Pu" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 6
@@ -16337,7 +16390,7 @@
 /area/hallway/primary/seconddeck)
 "PI" = (
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
@@ -16632,7 +16685,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/seconddeck)
@@ -16655,7 +16708,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/open,
-/area/engineering/storage)
+/area/engineering/foyer)
 "QA" = (
 /obj/machinery/vending/robotics{
 	dir = 4;
@@ -16937,7 +16990,7 @@
 	name = "Powernet Sensor - Shield Subgrid"
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
@@ -17060,6 +17113,9 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "RJ" = (
+/obj/machinery/door/firedoor/border{
+	dir = 1
+	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "RK" = (
@@ -17626,7 +17682,7 @@
 	dir = 1
 	},
 /obj/structure/cable/yellow{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/vacant/prototype/engine)
@@ -17921,7 +17977,7 @@
 /area/vacant/prototype/control)
 "Uh" = (
 /obj/structure/cable/yellow{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -17930,7 +17986,7 @@
 /area/vacant/prototype/engine)
 "Uj" = (
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable/preset/torch/engine_main{
 	RCon_tag = "Prototype - Main"
@@ -18153,7 +18209,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable{
-		icon_state = "0-2";
+	icon_state = "0-2";
 	pixel_y = 0
 	},
 /turf/simulated/floor/reinforced/airless,
@@ -18212,6 +18268,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
+/obj/effect/paint/tan,
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
 "Vn" = (
@@ -18354,7 +18411,7 @@
 /area/engineering/engine_room)
 "Wd" = (
 /obj/structure/cable/cyan{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /obj/machinery/power/sensor{
 	id_tag = "Engine Subgrid";
@@ -18763,7 +18820,7 @@
 	pixel_x = -32
 	},
 /turf/simulated/open,
-/area/engineering/storage)
+/area/engineering/foyer)
 "WX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19444,7 +19501,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/cyan{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -19494,7 +19551,7 @@
 	dir = 8
 	},
 /obj/structure/cable/green{
-		icon_state = "0-4"
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -19579,7 +19636,7 @@
 	pixel_x = 24
 	},
 /obj/structure/cable/green{
-		icon_state = "0-8"
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/entry)
@@ -35225,7 +35282,7 @@ WO
 pi
 pi
 pi
-Wp
+Gr
 Hb
 Hb
 Hb
@@ -35427,7 +35484,7 @@ OX
 OX
 OX
 pi
-Wp
+Gr
 Hb
 Hb
 Hb
@@ -35629,7 +35686,7 @@ Cq
 CU
 OX
 pi
-Wp
+Gr
 Hb
 Hb
 Hb
@@ -35831,7 +35888,7 @@ Cr
 CV
 OX
 pi
-Wp
+Gr
 Hb
 Hb
 Hb
@@ -36033,7 +36090,7 @@ Cs
 Sm
 OX
 DR
-Wp
+Gr
 Hb
 Hb
 Hb
@@ -40459,12 +40516,12 @@ rq
 GA
 kf
 SI
-jy
-jy
-jy
-jy
-jy
-fp
+oE
+oE
+oE
+oE
+oE
+BU
 vS
 zZ
 xC
@@ -40666,7 +40723,7 @@ Qz
 WV
 NI
 sb
-fp
+BU
 vS
 FI
 Yy
@@ -43507,7 +43564,7 @@ hP
 vZ
 OW
 Fy
-wU
+Pt
 Hb
 Hb
 Hb
@@ -43709,7 +43766,7 @@ wM
 nj
 OW
 mM
-wU
+Pt
 Hb
 Hb
 Hb
@@ -43911,7 +43968,7 @@ Zg
 Ge
 OW
 Ps
-wU
+Pt
 Hb
 Hb
 Hb
@@ -44113,7 +44170,7 @@ wO
 WD
 OW
 Fy
-wU
+Pt
 Hb
 Hb
 Hb
@@ -44683,9 +44740,9 @@ IE
 bC
 GM
 cD
+lH
 on
-on
-on
+Ds
 eX
 fN
 WK

@@ -987,6 +987,11 @@
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
+/area/security/armoury/blue
+	name = "\improper Security - Blue Armory"
+	icon_state = "Warden"
+	req_access = list(access_armory)
+
 /area/security/detectives_office
 	name = "\improper Security - Investigations Office"
 	icon_state = "detective"

@@ -8,7 +8,7 @@
 	color = COLOR_MAROON
 
 /obj/effect/paint_stripe/command
-	color = COMMS_COLOR_COMMAND
+	color = "#344C87"
 
 /obj/effect/paint_stripe/science
 	color = "#68099e"

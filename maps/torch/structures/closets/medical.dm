@@ -40,7 +40,7 @@
 		/obj/item/radio/headset/heads/cmo,
 		/obj/item/radio/headset/heads/cmo/alt,
 		/obj/item/flash,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/megaphone,
 		/obj/item/chems/hypospray/vial,
 		/obj/item/storage/fancy/vials,
