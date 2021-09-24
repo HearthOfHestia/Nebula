@@ -730,11 +730,6 @@
 /obj/structure/closet/emcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/starboard)
-"ck" = (
-/obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
-/turf/simulated/open,
-/area/maintenance/thirddeck/starboard)
 "cl" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /obj/effect/floor_decal/corner/green/half,
@@ -3345,7 +3340,6 @@
 /obj/structure/railing/mapped,
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "hK" = (
@@ -4792,7 +4786,6 @@
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/zpipe/down/supply,
 /obj/machinery/atmospherics/pipe/zpipe/down/scrubbers,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/thirddeck/aftstarboard)
 "la" = (
@@ -5390,7 +5383,6 @@
 /area/crew_quarters/galley)
 "mG" = (
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/thirddeck/aftstarboard)
 "mK" = (
@@ -6076,12 +6068,6 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
 	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
@@ -13323,12 +13309,6 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "JM" = (
@@ -14819,12 +14799,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "Pn" = (
@@ -15780,12 +15754,6 @@
 	dir = 1
 	},
 /obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "SJ" = (
@@ -16344,12 +16312,6 @@
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
 	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
@@ -16930,10 +16892,6 @@
 /area/tcommsat/chamber)
 "Wl" = (
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
 "Wo" = (
@@ -17046,9 +17004,6 @@
 "WL" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "WP" = (
@@ -17161,10 +17116,6 @@
 	},
 /obj/structure/lattice,
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/thirddeck/starboard)
 "Xa" = (
@@ -17518,10 +17469,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/port)
 "Yk" = (
@@ -40128,7 +40075,7 @@ aa
 aa
 aa
 aQ
-ck
+Wl
 bJ
 nC
 nC

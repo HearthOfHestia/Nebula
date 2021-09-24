@@ -741,7 +741,7 @@
 	icon_state = "0-4"
 	},
 /obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /obj/machinery/door/firedoor,
@@ -1515,15 +1515,14 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
-	dir = 1;
-	icon_state = "map-scrubbers"
-	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
 /obj/structure/cable/green{
 	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
@@ -1681,9 +1680,6 @@
 	},
 /obj/structure/cable/green{
 	icon_state = "1-8"
-	},
-/obj/structure/cable/green{
-	icon_state = "2-8"
 	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
@@ -2406,6 +2402,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
 "fG" = (
@@ -2622,10 +2621,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/port)
 "fT" = (
-/obj/machinery/camera/network/command{
-	c_tag = "Bridge - Entry Port";
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10;
 	icon_state = "corner_white"
@@ -3174,15 +3169,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
 "ig" = (
 /obj/structure/flora/pottedplant/shoot,
@@ -3216,12 +3205,6 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -3638,6 +3621,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
+"jo" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/carpet/blue,
+/area/crew_quarters/heads/cobed)
 "jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -4177,6 +4166,14 @@
 	id_tag = "hop_office_desk";
 	name = "XO Queue Privacy Shutters";
 	opacity = 1
+	},
+/obj/structure/cable/green{
+	dir = 1;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	dir = null;
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
@@ -5069,8 +5066,6 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	icon_state = "1-4"
 	},
@@ -5319,6 +5314,9 @@
 	dir = 1;
 	icon_state = "console"
 	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
 "pB" = (
@@ -5327,6 +5325,9 @@
 /obj/random_multi/single_item/runtime,
 /obj/effect/floor_decal/spline/plain/beige{
 	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/heads/office/xo)
@@ -5630,8 +5631,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
 "qp" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/catwalk,
@@ -5769,12 +5768,10 @@
 /turf/simulated/floor/tiled/white,
 /area/command/captainmess)
 "qE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/catwalk,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftstarboard)
 "qH" = (
@@ -5831,6 +5828,19 @@
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/aft)
+"qV" = (
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "xo_windows"
+	},
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/xo)
 "qW" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced{
@@ -6307,7 +6317,7 @@
 "sm" = (
 /obj/machinery/shipsensors,
 /turf/simulated/floor/reinforced/airless,
-/area/bridge/storage)
+/area/bridge)
 "sn" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10;
@@ -6415,22 +6425,15 @@
 "sH" = (
 /obj/machinery/door/airlock/sol{
 	id_tag = "repdoor";
-	name = "SolGov Representative";
+	name = "National Council Representative";
 	secured_wires = 1
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	icon_state = "1-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
 /obj/structure/cable/green{
 	icon_state = "1-8"
 	},
@@ -6491,6 +6494,7 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/rd)
 "sU" = (
@@ -6936,8 +6940,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/sol{
-	id_tag = null;
-	name = "SolGov Representative";
+	name = "National Council Representative";
 	secured_wires = 1
 	},
 /turf/simulated/floor/wood/walnut,
@@ -7022,7 +7025,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/lattice,
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "ut" = (
@@ -7182,6 +7184,26 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/ce)
+"uU" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "meeting_windows"
+	},
+/obj/effect/paint_stripe/command,
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/obj/machinery/door/blast/shutters{
+	density = 0;
+	dir = 8;
+	icon_state = "shutter0";
+	id_tag = "heads_meeting";
+	name = "Meeting Room Window Shutters";
+	opacity = 0
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/plating,
+/area/bridge/meeting_room)
 "uV" = (
 /obj/structure/sign/deck/bridge{
 	dir = 8;
@@ -7315,11 +7337,27 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/foreport)
+"vt" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "xo_windows"
+	},
+/obj/machinery/door/blast/shutters{
+	density = 1;
+	dir = 4;
+	icon_state = "shutter1";
+	id_tag = "hop_office_desk";
+	name = "XO Queue Privacy Shutters";
+	opacity = 1
+	},
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/xo)
 "vu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -7524,7 +7562,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -7571,12 +7609,19 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/sgr)
 "wa" = (
-/obj/structure/catwalk,
-/obj/machinery/door/firedoor/border{
-	dir = 8
+/obj/structure/cable/green,
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/paint/tan,
+/obj/structure/cable/green{
+	dir = null;
+	icon_state = "0-2"
 	},
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/cobed)
 "wj" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -7611,9 +7656,6 @@
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
@@ -7728,6 +7770,9 @@
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cobed)
@@ -7986,7 +8031,6 @@
 /area/maintenance/bridge/foreport)
 "xm" = (
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "xn" = (
@@ -8000,8 +8044,9 @@
 	icon_state = "2-4"
 	},
 /obj/structure/catwalk,
-/obj/machinery/door/firedoor/border{
-	dir = 4
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/aftport)
@@ -8068,9 +8113,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "xy" = (
@@ -8170,9 +8212,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
 "xN" = (
@@ -8232,8 +8271,12 @@
 	dir = 4
 	},
 /obj/effect/catwalk_plated,
-/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/bridge/fore)
 "xY" = (
@@ -8315,15 +8358,19 @@
 /turf/simulated/floor/plating,
 /area/perseverance/maintenance)
 "yr" = (
-/obj/structure/railing/mapped{
+/obj/structure/cable/green,
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/paint/tan,
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/structure/cable/green{
 	dir = 1;
-	icon_state = "railing0-1"
+	icon_state = "0-2"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
-/turf/simulated/open,
-/area/maintenance/bridge/foreport)
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/cobed)
 "yw" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
@@ -8356,9 +8403,6 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
@@ -8629,9 +8673,6 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
 "zS" = (
@@ -8728,10 +8769,6 @@
 	},
 /obj/effect/paint_stripe/command,
 /obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	dir = 1;
-	icon_state = "0-2"
-	},
 /obj/machinery/door/blast/shutters{
 	density = 0;
 	dir = 8;
@@ -8740,6 +8777,7 @@
 	name = "Meeting Room Window Shutters";
 	opacity = 0
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
 "Ai" = (
@@ -9091,9 +9129,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
 "BI" = (
@@ -9236,7 +9271,6 @@
 "Cf" = (
 /obj/structure/closet/secure_closet/XO,
 /obj/random/drinkbottle,
-/obj/item/gun/energy/gun/secure,
 /turf/simulated/floor/carpet/green,
 /area/crew_quarters/heads/office/xo)
 "Cg" = (
@@ -9637,6 +9671,28 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/ce)
+"DD" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "bridge blast";
+	name = "Bridge Blast Doors"
+	},
+/obj/structure/cable/green{
+	dir = 1;
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/effect/paint/tan,
+/obj/structure/cable/green{
+	dir = null;
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/bridge)
 "DF" = (
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "co_windows"
@@ -9647,7 +9703,7 @@
 	},
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating,
@@ -9781,24 +9837,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
-"Es" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/hull,
-/obj/machinery/door/blast/regular/open{
-	dir = 4;
-	id_tag = "bridge blast";
-	name = "Bridge Blast Doors"
-	},
-/obj/structure/cable/green{
-	dir = 1;
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-8"
-	},
-/obj/effect/paint/tan,
-/turf/simulated/floor/plating,
-/area/bridge)
 "Ey" = (
 /obj/machinery/light,
 /obj/machinery/disposal,
@@ -9921,9 +9959,6 @@
 /turf/simulated/floor/plating,
 /area/perseverance/passenger)
 "Ff" = (
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
 /obj/effect/wallframe_spawn/reinforced/polarized{
 	id = "xo_windows"
 	},
@@ -9936,6 +9971,9 @@
 	opacity = 1
 	},
 /obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/office/xo)
 "Fg" = (
@@ -10074,6 +10112,24 @@
 /obj/effect/floor_decal/corner/darkblue/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/aft)
+"FN" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "xo_windows"
+	},
+/obj/machinery/door/blast/shutters{
+	density = 1;
+	dir = 4;
+	icon_state = "shutter1";
+	id_tag = "hop_office_desk";
+	name = "XO Queue Privacy Shutters";
+	opacity = 1
+	},
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/xo)
 "FQ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass/civilian,
@@ -10281,9 +10337,6 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/foreport)
@@ -10583,10 +10636,8 @@
 	icon_state = "0-2"
 	},
 /obj/structure/cable/green{
+	dir = null;
 	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-4"
 	},
 /obj/effect/paint/tan,
 /turf/simulated/floor/plating,
@@ -10786,7 +10837,7 @@
 "Ii" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /obj/machinery/door/firedoor,
@@ -11601,16 +11652,10 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/turf/space,
+/turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
 "LM" = (
 /obj/structure/catwalk,
@@ -11623,10 +11668,7 @@
 /obj/effect/paint_stripe/command,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /obj/machinery/door/blast/shutters{
@@ -11637,6 +11679,7 @@
 	name = "Meeting Room Window Shutters";
 	opacity = 0
 	},
+/obj/structure/cable/green,
 /turf/simulated/floor/plating,
 /area/bridge/meeting_room)
 "LQ" = (
@@ -11936,10 +11979,6 @@
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border,
-/obj/machinery/door/firedoor/border{
-	dir = 4
 	},
 /turf/simulated/open,
 /area/maintenance/bridge/aftport)
@@ -12496,7 +12535,6 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/aux_eva)
 "Qd" = (
@@ -12666,7 +12704,6 @@
 /area/hallway/primary/bridge/fore)
 "QV" = (
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/crew_quarters/heads/office/ce)
 "QW" = (
@@ -13063,7 +13100,7 @@
 	name = "Bridge Blast Doors"
 	},
 /obj/structure/cable/green{
-	dir = 1;
+	dir = null;
 	icon_state = "0-2"
 	},
 /obj/effect/paint/tan,
@@ -13296,6 +13333,9 @@
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced/hull,
 /obj/effect/paint/tan,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/cobed)
 "TE" = (
@@ -13936,6 +13976,9 @@
 /area/perseverance/medical)
 "Wv" = (
 /obj/structure/undies_wardrobe,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/carpet/blue,
 /area/crew_quarters/heads/cobed)
 "Ww" = (
@@ -13976,6 +14019,16 @@
 /obj/effect/paint_stripe/engineering,
 /turf/simulated/wall/r_wall/prepainted,
 /area/crew_quarters/heads/office/cmo)
+"WM" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "xo_windows"
+	},
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/xo)
 "WQ" = (
 /obj/effect/floor_decal/corner/darkblue/half{
 	dir = 1;
@@ -14279,7 +14332,7 @@
 	},
 /obj/effect/paint/tan,
 /turf/simulated/floor/reinforced/airless,
-/area/bridge/storage)
+/area/bridge)
 "XR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -14325,8 +14378,6 @@
 /obj/structure/cable/green{
 	icon_state = "1-4"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/engineering{
 	id_tag = null;
 	name = "Chief Engineer's Quarters";
@@ -22124,8 +22175,8 @@ Hz
 SE
 Aw
 KG
+DD
 Hz
-Es
 tg
 tg
 tg
@@ -22517,8 +22568,8 @@ Gr
 rz
 Xz
 sx
-TB
-TB
+wa
+yr
 Ie
 nf
 If
@@ -22922,7 +22973,7 @@ XO
 XO
 XO
 XO
-XO
+jo
 Ie
 cz
 hn
@@ -23755,7 +23806,7 @@ Pu
 Rl
 ZR
 bH
-yr
+Ma
 tg
 ad
 aa
@@ -23957,7 +24008,7 @@ MJ
 Oi
 lT
 Ht
-yr
+Ma
 tg
 ad
 aa
@@ -24159,7 +24210,7 @@ sM
 aK
 ZR
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -24361,7 +24412,7 @@ by
 BV
 ZR
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -24563,7 +24614,7 @@ sB
 ZR
 ZR
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -24765,7 +24816,7 @@ sB
 oB
 oB
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -24967,7 +25018,7 @@ sB
 oB
 oB
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -25169,7 +25220,7 @@ sB
 oB
 oB
 WX
-yr
+Ma
 tg
 ad
 ad
@@ -25353,7 +25404,7 @@ hs
 Xe
 LN
 dP
-LN
+uU
 Ah
 hs
 hs
@@ -26161,10 +26212,10 @@ iP
 dF
 Ia
 Ff
-Ff
+vt
 Ff
 lq
-Ff
+FN
 Ia
 Te
 Pe
@@ -26569,7 +26620,7 @@ Gf
 Gf
 em
 pA
-qq
+qV
 rf
 rZ
 sI
@@ -26580,7 +26631,7 @@ Sf
 vY
 wE
 sL
-wa
+JG
 GI
 BG
 xK
@@ -26771,7 +26822,7 @@ Zt
 nV
 wC
 pB
-qq
+qV
 xY
 sa
 sL
@@ -27175,7 +27226,7 @@ QK
 Tx
 Vs
 XC
-qq
+WM
 rd
 ga
 sL

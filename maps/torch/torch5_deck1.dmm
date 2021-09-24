@@ -4591,18 +4591,12 @@
 /turf/simulated/open,
 /area/maintenance/firstdeck/centralstarboard)
 "ann" = (
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/firstdeck/centralstarboard)
 "anp" = (
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
 	},
 /turf/simulated/open,
 /area/maintenance/firstdeck/centralstarboard)
@@ -4750,9 +4744,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
 /turf/simulated/open,
 /area/maintenance/firstdeck/centralstarboard)
 "aom" = (
@@ -10308,9 +10299,6 @@
 	dir = 4;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
 /obj/machinery/atmospherics/valve/shutoff{
 	dir = 4
 	},
@@ -12824,10 +12812,6 @@
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border{
-	dir = 4
-	},
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/firstdeck/aftport)
 "dIY" = (
@@ -19360,11 +19344,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/firstdeck)
-"nwz" = (
-/obj/structure/catwalk,
-/obj/machinery/door/firedoor/border,
-/turf/simulated/open,
-/area/maintenance/firstdeck/aftport)
 "nxK" = (
 /obj/effect/floor_decal/corner/yellow{
 	dir = 1
@@ -21260,13 +21239,6 @@
 "pKL" = (
 /turf/simulated/floor/tiled/dark,
 /area/security/detectives_office)
-"pKZ" = (
-/obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
-/turf/simulated/open,
-/area/maintenance/firstdeck/centralstarboard)
 "pLb" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/outline/blue,
@@ -23051,8 +23023,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/center)
 "rKP" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -23060,9 +23030,6 @@
 /obj/machinery/door/airlock/highsecurity/bolted{
 	id_tag = "redbolt";
 	name = "Armory"
-	},
-/obj/structure/cable/green{
-	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -24298,7 +24265,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border,
 /obj/machinery/atmospherics/valve/shutoff,
 /turf/simulated/open,
 /area/maintenance/firstdeck/aftport)
@@ -24973,9 +24939,6 @@
 	},
 /obj/machinery/atmospherics/pipe/zpipe/down/fuel{
 	dir = 8
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 4
 	},
 /turf/simulated/open,
 /area/maintenance/firstdeck/aftport)
@@ -41219,7 +41182,7 @@ ajd
 wNX
 aeg
 amn
-pKZ
+anm
 anm
 hVG
 aqn
@@ -51550,7 +51513,7 @@ rlb
 aHQ
 aRd
 aSd
-nwz
+aSd
 aTg
 aTQ
 aUd

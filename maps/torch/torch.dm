@@ -190,6 +190,7 @@
 	#include "datums\music\nearest_starbase.dm"
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
+	#include "datums\music\toboldlygo.dm"
 	#include "items\hearth_clothing\hats_general.dm"
 	//end HEARTH
 

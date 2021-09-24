@@ -1204,11 +1204,11 @@
 	name = "\improper Disciplinary Board Room"
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_bridge)
-
+/*
 /area/bridge/disciplinary_board_room/deliberation
 	name = "\improper Deliberation Room"
 	sound_env = SMALL_ENCLOSED
-
+*/
 /area/crew_quarters/heads
 	icon_state = "head_quarters"
 	req_access = list(access_heads)

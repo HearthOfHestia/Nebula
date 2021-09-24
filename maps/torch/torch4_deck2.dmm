@@ -1728,7 +1728,6 @@
 /area/vacant/chapel)
 "dP" = (
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "dQ" = (
@@ -2085,7 +2084,6 @@
 	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "ev" = (
@@ -2802,17 +2800,11 @@
 /turf/simulated/floor/plating,
 /area/vacant/chapel)
 "gb" = (
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gc" = (
 /obj/structure/disposalpipe/down,
 /obj/structure/lattice,
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gd" = (
@@ -3189,7 +3181,6 @@
 /obj/structure/disposalpipe/segment,
 /obj/structure/lattice,
 /obj/structure/railing/mapped,
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/forestarboard)
 "gQ" = (
@@ -5058,13 +5049,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
-"lH" = (
-/obj/structure/catwalk,
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
-/turf/simulated/open,
-/area/maintenance/seconddeck/aftstarboard)
 "lJ" = (
 /obj/item/stool/padded,
 /obj/effect/floor_decal/industrial/warning,
@@ -7628,9 +7612,6 @@
 /obj/structure/railing/mapped{
 	dir = 1;
 	icon_state = "railing0-1"
-	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
 	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
@@ -10676,9 +10657,6 @@
 	dir = 1;
 	icon_state = "railing0-1"
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "zQ" = (
@@ -11722,9 +11700,6 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/fuel{
 	dir = 1
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "CO" = (
@@ -11930,10 +11905,6 @@
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
 	},
-/obj/machinery/door/firedoor/border{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "Do" = (
@@ -11970,11 +11941,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
-"Ds" = (
-/obj/structure/catwalk,
-/obj/machinery/door/firedoor/border,
-/turf/simulated/open,
-/area/maintenance/seconddeck/aftstarboard)
 "Dt" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research{
@@ -14378,7 +14344,6 @@
 /obj/machinery/atmospherics/pipe/zpipe/up/fuel{
 	dir = 8
 	},
-/obj/machinery/door/firedoor/border,
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftport)
 "JX" = (
@@ -17113,9 +17078,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "RJ" = (
-/obj/machinery/door/firedoor/border{
-	dir = 1
-	},
 /turf/simulated/open,
 /area/maintenance/seconddeck/aftstarboard)
 "RK" = (
@@ -44740,9 +44702,9 @@ IE
 bC
 GM
 cD
-lH
 on
-Ds
+on
+on
 eX
 fN
 WK
