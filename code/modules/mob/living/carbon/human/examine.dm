@@ -10,12 +10,6 @@
 	var/skipeyes = 0
 	var/skipface = 0
 
-	if(user.zone_sel)
-		if(BP_TAIL in species.has_limbs)
-			user.zone_sel.icon_state = "zone_sel_tail"
-		else
-			user.zone_sel.icon_state = "zone_sel"
-
 	//exosuits and helmets obscure our view and stuff.
 	if(wear_suit)
 		skipgloves = wear_suit.flags_inv & HIDEGLOVES

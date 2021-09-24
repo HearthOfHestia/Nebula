@@ -31,17 +31,10 @@
 	return get_deform ? icon_deformed : icon_base
 
 /decl/bodytype/proc/get_tail(var/mob/living/carbon/human/H)
-	var/obj/item/organ/external/tail/tail = H.organs_by_name[BP_TAIL]
-	return tail?.tail_state
+	return tail
 
 /decl/bodytype/proc/get_tail_animation(var/mob/living/carbon/human/H)
-	var/obj/item/organ/external/tail/tail = H.organs_by_name[BP_TAIL]
-	return tail?.tail_animation
+	return tail_animation
 
 /decl/bodytype/proc/get_tail_hair(var/mob/living/carbon/human/H)
-	var/obj/item/organ/external/tail/tail = H.organs_by_name[BP_TAIL]
-	return tail?.tail_hair
-
-/decl/bodytype/proc/get_tail_icon(var/mob/living/carbon/human/H)
-	var/obj/item/organ/external/tail/tail = H.organs_by_name[BP_TAIL]
-	return tail?.tail_icon
+	return tail_hair
