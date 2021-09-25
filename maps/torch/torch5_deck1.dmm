@@ -17014,7 +17014,7 @@
 /obj/machinery/camera/network/medbay{
 	c_tag = "Infirmary - Robotics Laboratory";
 	dir = 4;
-	network = list("Medical, Engineering")
+	preset_channels = list("Medical, Engineering")
 	},
 /obj/effect/floor_decal/corner/yellow/mono,
 /turf/simulated/floor/tiled/white/monotile,
@@ -23683,7 +23683,7 @@
 /obj/machinery/camera/network/research{
 	c_tag = "Research - Miscellaneous Test Chamber";
 	dir = 8;
-	network = list("Research","Miscellaneous Reseach")
+	preset_channels = list("Research","Miscellaneous Reseach")
 	},
 /turf/simulated/floor/reinforced,
 /area/rnd/misc_lab)

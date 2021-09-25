@@ -160,8 +160,7 @@ var/global/list/time_prefs_fixed = list()
 	return 1
 
 /datum/preferences/proc/get_content(mob/user)
-	if(!SScharacter_setup.initialized)
-		return
+
 	if(!user || !user.client)
 		return
 
@@ -176,9 +175,9 @@ var/global/list/time_prefs_fixed = list()
 
 	var/dat = list("<center>")
 	if(is_guest)
-		dat += "Please create an account to save your preferences. If you have an account and are seeing this, please adminhelp for assistance."
+		dat += SPAN_WARNING("Please create an account to save your preferences. If you have an account and are seeing this, please adminhelp for assistance.")
 	else if(load_failed)
-		dat += "Loading your savefile failed. Please adminhelp for assistance."
+		dat += SPAN_DANGER("Loading your savefile failed: [load_failed]<br>Please adminhelp for assistance.")
 	else
 
 		dat += "<b>Slot</b> - "
@@ -199,6 +198,10 @@ var/global/list/time_prefs_fixed = list()
 	return JOINTEXT(dat)
 
 /datum/preferences/proc/open_setup_window(mob/user)
+
+	if(!SScharacter_setup.initialized)
+		return
+
 	winshow(user, "preferences_window", TRUE)
 	var/datum/browser/popup = new(user, "preferences_browser", "Character Setup", 800, 800)
 	var/content = {"
@@ -316,11 +319,12 @@ var/global/list/time_prefs_fixed = list()
 	return 1
 
 /datum/preferences/proc/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
+
 	// Sanitizing rather than saving as someone might still be editing when copy_to occurs.
 	player_setup.sanitize_setup()
 	character.personal_aspects = list()
 	character.set_species(species)
-	character.set_bodytype((character.species.get_bodytype_by_name(bodytype) || character.species.default_bodytype), TRUE)
+	character.set_bodytype((character.species.get_bodytype_by_name(bodytype) || character.species.default_bodytype), FALSE)
 
 	if(be_random_name)
 		var/decl/cultural_info/culture = GET_DECL(cultural_info[TAG_CULTURE])
