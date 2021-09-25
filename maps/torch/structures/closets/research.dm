@@ -37,7 +37,7 @@
 		/obj/item/tank/emergency/oxygen/engi,
 		/obj/item/clothing/mask/gas,
 		/obj/item/flash,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/megaphone,
 		/obj/item/taperecorder,
 		/obj/item/magnetic_tape/random = 3,

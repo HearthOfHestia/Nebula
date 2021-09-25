@@ -22,5 +22,6 @@
 		/decl/music_track/astrometrics,
 		/decl/music_track/astrometrics/starbase,
 		/decl/music_track/astrometrics/a_place,
-		/decl/music_track/lonely_satellite
+		/decl/music_track/lonely_satellite,
+		/decl/music_track/toboldlygo
 	)
