@@ -1,6 +1,6 @@
 /obj/effect/floor_decal/corner/darkblue
 	name = "dark blue corner"
-	color = COMMS_COLOR_COMMAND
+	color = "#344c87"
 
 /obj/effect/floor_decal/corner/darkblue/diagonal
 	icon_state = "corner_white_diagonal"
@@ -31,3 +31,7 @@
 
 /obj/effect/floor_decal/corner/darkblue/bordercee
 	icon_state = "bordercolorcee"
+
+/obj/effect/floor_decal/stairs
+	icon = 'icons/obj/stairs.dmi'
+	icon_state = "stairshort"

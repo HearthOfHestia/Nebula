@@ -71,6 +71,7 @@
 		/obj/item/megaphone,
 		/obj/item/holowarrant,
 		/obj/item/clothing/suit/armor/pcarrier/light,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/binoculars,
 		/obj/item/storage/belt/general,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack = 75, /obj/item/storage/backpack/satchel/grey = 25)),
