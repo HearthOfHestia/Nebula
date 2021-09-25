@@ -1,6 +1,6 @@
 /obj/effect/floor_decal/corner/darkblue
 	name = "dark blue corner"
-	color = "#344C87"
+	color = "#344c87"
 
 /obj/effect/floor_decal/corner/darkblue/diagonal
 	icon_state = "corner_white_diagonal"
