@@ -76,26 +76,3 @@
 /decl/sprite_accessory/hair/lizard/sidefrills
 	name = "Unathi Frills Side"
 	icon_state = "frills"
-
-// FACIAL
-
-/decl/sprite_accessory/facial_hair/lizard
-	name = "Unathi Horn Chin"
-	icon = 'mods/species/lizard/icons/facial_hair.dmi'
-	icon_state = "facial_chinhorns"
-	species_allowed = list(SPECIES_LIZARD)
-	gender = null
-	blend = ICON_MULTIPLY
-
-/decl/sprite_accessory/facial_hair/lizard/hornadorns
-	name = "Unathi Horn Adorns"
-	icon_state = "facial_hornadorns"
-
-/decl/sprite_accessory/facial_hair/lizard/spinespikes
-	name = "Unathi Spine Spikes"
-	icon_state = "facial_spikes"
-
-/decl/sprite_accessory/facial_hair/lizard/dorsalfrill
-	name = "Unathi Frill Dorsal"
-	icon_state = "facial_dorsalfrill"
-
