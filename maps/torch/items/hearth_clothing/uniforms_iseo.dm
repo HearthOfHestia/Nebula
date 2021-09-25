@@ -1,6 +1,10 @@
+/obj/item/clothing/under/iseo/Initialize()
+	. = ..()
+	LAZYREMOVE(sprite_sheets, BODYTYPE_UNATHI) // contained in the base icon
+
 //
 // PT Uniform
-// 
+//
 
 /obj/item/clothing/under/iseo/pt
 	name = "pt uniform"
@@ -9,7 +13,7 @@
 
 //
 // Utility
-// 
+//
 
 /obj/item/clothing/under/iseo/utility
 	name = "utility fatigues"
@@ -43,7 +47,7 @@
 
 //
 // Service
-// 
+//
 
 /obj/item/clothing/under/iseo/service/uniform
 	name = "service uniform"

@@ -1,6 +1,10 @@
+/obj/item/clothing/under/espatier/Initialize()
+	. = ..()
+	LAZYREMOVE(sprite_sheets, BODYTYPE_UNATHI) // contained in the base icon
+
 //
 // PT Uniform
-// 
+//
 
 /obj/item/clothing/under/espatier/pt
 	name = "pt uniform"
@@ -8,7 +12,7 @@
 	icon = 'maps/torch/icons/converted_icons/under/under_pt_espatiers.dmi'
 //
 // Utility
-// 
+//
 /obj/item/clothing/under/espatier/utility
 	name = "green utility fatigues"
 	desc = "A set of green fatigues made from sturdy, durable synthetic fibers. Mildly flash and stain resistant. Tailored for forested climates."
@@ -46,7 +50,7 @@
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_grey_espatiers.dmi'
 //
 // Service
-// 
+//
 
 /obj/item/clothing/under/espatier/service/uniform
 	name = "service uniform"
@@ -69,7 +73,7 @@
 
 //
 // Dress
-// 
+//
 
 /obj/item/clothing/under/espatier/dress/uniform
 	name = "dress uniform"
@@ -89,4 +93,3 @@
 	name = "dress skirt"
 	desc = "A black skirt with a brown dress shirt with gold highlights. Typically used only for the most formal of occasions."
 	icon = 'maps/torch/icons/converted_icons/under/under_dress_skirt_command_espatiers.dmi'
-	
