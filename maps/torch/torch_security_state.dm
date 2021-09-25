@@ -25,6 +25,28 @@
 	icon = 'maps/torch/icons/security_state.dmi'
 	alarm_appearance = /datum/alarm_appearance/green
 
+/decl/security_level/default/torchdept/proc/lock_armory(var/list/alert_areas)
+	for(var/atype in alert_areas)
+		var/area/A = locate(atype)
+		if(istype(A))
+			for(var/obj/machinery/door/airlock/highsecurity/bolted/V in A.contents)
+				if(V.locked)
+					V.unlock()
+				V.close()
+				V.lock()
+
+/decl/security_level/default/torchdept/proc/unlock_armory(var/list/alert_areas)
+	for(var/AA in alert_areas)
+		var/area/A = locate(AA)
+		if(istype(A))
+			for(var/obj/machinery/door/airlock/highsecurity/bolted/V in A.contents)
+				if(V.locked)
+					V.unlock()
+				V.open()
+				V.lock()
+	
+
+
 /decl/security_level/default/torchdept/code_green
 	name = "code green"
 	icon = 'icons/misc/security_state.dmi'
@@ -41,6 +63,7 @@
 /decl/security_level/default/torchdept/code_green/switching_down_to()
 	security_announcement_green.Announce("The situation has been resolved, and all crew are to return to their regular duties.", "Attention! Alert level lowered to code green.")
 	notify_station()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury, /area/security/armoury/blue))
 
 /decl/security_level/default/torchdept/code_violet
 	name = "code violet"
@@ -57,6 +80,10 @@
 	up_description = "A major medical emergency has developed. Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey all relevant instructions from medical staff."
 	down_description = "Code violet procedures are now in effect; Medical personnel are required to report to their supervisor for orders, and non-medical personnel are required to obey relevant instructions from medical staff."
 
+/decl/security_level/default/torchdept/code_violet/switching_down_to()
+	. = ..()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury, /area/security/armoury/blue))
+
 /decl/security_level/default/torchdept/code_orange
 	name = "code orange"
 
@@ -71,6 +98,9 @@
 	up_description = "A major engineering emergency has developed. Engineering personnel are required to report to their supervisor for orders, and non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff."
 	down_description = "Code orange procedures are now in effect; Engineering personnel are required to report to their supervisor for orders, and non-engineering personnel are required to evacuate any affected areas and obey relevant instructions from engineering staff."
 
+/decl/security_level/default/torchdept/code_orange/switching_down_to()
+	. = ..()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury, /area/security/armoury/blue))
 
 /decl/security_level/default/torchdept/code_blue
 	name = "code blue"
@@ -87,6 +117,14 @@
 	up_description = "A major security emergency has developed. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
 	down_description = "Code blue procedures are now in effect. Security personnel are to report to their supervisor for orders, are permitted to search staff and facilities, and may have weapons visible on their person."
 
+/decl/security_level/default/torchdept/code_blue/switching_up_to()
+	. = ..()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/unlock_armory, list(/area/security/armoury/blue))
+	
+/decl/security_level/default/torchdept/code_blue/switching_down_from()
+	. = ..()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury/blue))
+	
 /decl/security_level/default/torchdept/code_red
 	name = "code red"
 	icon = 'icons/misc/security_state.dmi'
@@ -108,6 +146,11 @@
 	security_announcement_red.Announce(up_description, "Attention! Code red alert procedures now in effect!")
 	notify_station()
 	using_map.unbolt_saferooms()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/unlock_armory, list(/area/security/armoury, /area/security/armoury/blue))
+
+/decl/security_level/default/torchdept/code_red/switching_down_from()
+	. = ..()
+	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury))
 
 /decl/security_level/default/torchdept/code_red/switching_down_to()
 	security_announcement_red.Announce("Code Delta has been disengaged. All staff are to report to their supervisor for orders. All crew should obey orders from relevant emergency personnel. Security personnel are permitted to search staff and facilities, and may have weapons unholstered at any time.", "Attention! Code red alert procedures now in effect!")
@@ -131,6 +174,8 @@
 /decl/security_level/default/torchdept/code_delta/switching_up_to()
 	security_announcement_delta.Announce("Code Delta procedures have been engaged. All crew are instructed to obey all instructions given by heads of staff. Any violations of these orders can be punished by death. This is not a drill.", "Attention! Delta security level reached!")
 	notify_station()
+	unlock_armory(list(/area/security/armoury/blue, /area/security/armoury))
+
 
 /datum/alarm_appearance/orange
 	display_icon = "status_display_lines"

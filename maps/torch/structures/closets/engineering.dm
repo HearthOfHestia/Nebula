@@ -50,7 +50,7 @@
 		/obj/item/clothing/mask/gas,
 		/obj/item/multitool,
 		/obj/item/flash,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/taperoll/engineering,
 		/obj/item/megaphone,
 		/obj/item/crowbar/brace_jack,

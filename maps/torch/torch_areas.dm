@@ -987,6 +987,11 @@
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
+/area/security/armoury/blue
+	name = "\improper Security - Blue Armory"
+	icon_state = "Warden"
+	req_access = list(access_armory)
+
 /area/security/detectives_office
 	name = "\improper Security - Investigations Office"
 	icon_state = "detective"
@@ -1194,7 +1199,7 @@
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_bridge)
-
+/*
 /area/bridge/disciplinary_board_room
 	name = "\improper Disciplinary Board Room"
 	sound_env = SMALL_ENCLOSED
@@ -1203,7 +1208,7 @@
 /area/bridge/disciplinary_board_room/deliberation
 	name = "\improper Deliberation Room"
 	sound_env = SMALL_ENCLOSED
-
+*/
 /area/crew_quarters/heads
 	icon_state = "head_quarters"
 	req_access = list(access_heads)

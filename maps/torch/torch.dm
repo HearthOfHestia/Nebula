@@ -34,6 +34,8 @@
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
 
+	#include "..\..\mods\utility\centcomdb\_centcomdb.dme"
+
 	#include "torch_define.dm"
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
@@ -108,6 +110,7 @@
 
 
 	#include "items/unsorted_missing.dm"
+	#include "items\guns.dm"
 
 	#include "items/hearth_spacesuits.dm"
 
@@ -156,6 +159,7 @@
 	#include "structures/closets/supply.dm"
 	#include "structures/closets/exploration.dm"
 	#include "structures/lectern.dm"
+	#include "structures\railing.dm"
 
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"
@@ -186,6 +190,7 @@
 	#include "datums\music\nearest_starbase.dm"
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
+	#include "datums\music\toboldlygo.dm"
 	#include "items\hearth_clothing\hats_general.dm"
 	//end HEARTH
 
