@@ -40,7 +40,7 @@
 	allowed_roles = list(/datum/job/assistant)
 
 /decl/loadout_option/tactical/helm_covers
-	display_name = "helmet covers"
+	name = "helmet covers"
 	path = /obj/item/clothing/accessory/armor/helmcover
 	flags = GEAR_HAS_SUBTYPE_SELECTION
 	allowed_roles = ARMORED_ROLES
