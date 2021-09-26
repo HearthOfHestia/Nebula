@@ -16,7 +16,6 @@
 
 	allowed_spawns = list(/decl/spawnpoint/cryo)
 	default_spawn = /decl/spawnpoint/cryo
-	default_species = /decl/species/human
 	default_job_type = /datum/job/assistant
 
 	station_name  = "\improper ISEO Endeavour"
