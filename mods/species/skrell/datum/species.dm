@@ -67,8 +67,8 @@
 
 	appearance_descriptors = list(
 		/datum/appearance_descriptor/height = 1,
-		/datum/appearance_descriptor/build = 0,
-		/datum/appearance_descriptor/headtail_length = 0
+		/datum/appearance_descriptor/build = 0.8,
+		/datum/appearance_descriptor/headtail_length = 1
 	)
 
 	available_cultural_info = list(
@@ -137,7 +137,7 @@
 	. = ..()
 	var/water = REAGENT_VOLUME(fluids, /decl/material/liquid/water)
 	if(water >= 40 && H.hydration < 400) //skrell passively absorb water.
-		H.hydration += 1 
+		H.hydration += 1
 
 /decl/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.appearance_descriptors["headtail length"] == 1 ? MALE : FEMALE)
