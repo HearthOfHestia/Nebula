@@ -1,8 +1,3 @@
-/hook/startup/proc/condi_add() // must be startup and not global_init so that global/static vars have been initialized
-	var/obj/item/chems/condiment/C = new()
-	C.special_bottles[/decl/material/solid/spacespice] = /obj/item/chems/condiment/small/spacespice
-	qdel(C)
-
 /obj/item/chems/condiment/small/spacespice
 	name = "\improper Space-Spice! bottle"
 	desc = "Space-Spice! brand Space-Spice!, manufactured by Space-Spice! Ltd., is a proprietary blend of spices claimed to taste better in space. This claim has not been evaluated by any scientific research and does not purport to treat or cure any disease, real or fictional. Any resemblance to other seasonings alive or dead is entirely coincidental."
@@ -12,3 +7,10 @@
 	volume = 40
 	center_of_mass = @"{'x':16,'y':9}"
 	starting_reagents = list(/decl/material/solid/spacespice = 40)
+	var/has_done_jank = FALSE
+
+/obj/item/chems/condiment/small/spacespice/Initialize()
+	. = ..()
+	if(!has_done_jank && !(/decl/material/solid/spacespice in special_bottles))
+		special_bottles[/decl/material/solid/spacespice] = /obj/item/chems/condiment/small/spacespice
+		has_done_jank = TRUE // remove all this when condiment bottles are moved to be on materials
