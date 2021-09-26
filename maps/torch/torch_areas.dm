@@ -637,7 +637,7 @@
 /area/engineering/bluespace
 	name = "Superluminal Drive Containment"
 	icon_state = "engineering"
-	req_access = list(access_engine_equip, access_heads, access_engine, access_maint_tunnels)
+	req_access = list(access_engine_equip, access_heads, access_engine)
 
 /area/engineering/atmos/aux
 	name = "\improper Auxiliary Atmospherics"
@@ -778,32 +778,32 @@
 /area/quartermaster/expedition
 	name = "\improper Expedition Preparation"
 	icon_state = "mining"
-	req_access = list(access_mining, access_nanotrasen, access_xenoarch)
+	req_access = list(list(access_mining), list(access_nanotrasen), list(access_xenoarch))
 
 /area/quartermaster/expedition/eva
 	name = "\improper Expedition EVA"
 	icon_state = "mining"
-	req_access = list(access_mining, access_xenoarch)
+	req_access = list(list(access_mining), list(access_xenoarch))
 
 /area/quartermaster/expedition/storage
 	name = "\improper Hangar Expedition Storage"
 	icon_state = "mining"
-	req_access = list(access_mining, access_explorer, access_xenoarch)
+	req_access = list(list(access_mining), list(access_explorer), list(access_xenoarch))
 
 /area/quartermaster/expedition/atmos
 	name = "\improper Hangar Atmospheric Storage"
 	icon_state = "mining"
-	req_access = list(access_mining, access_explorer, access_xenoarch)
+	req_access = list(list(access_mining), list(access_explorer), list(access_xenoarch))
 
 /area/quartermaster/exploration
 	name = "\improper Exploration Equipment"
 	icon_state = "exploration"
-	req_access = list(access_explorer, access_pathfinder, access_pilot)
+	req_access = list(list(access_explorer), list(access_pathfinder), list(access_pilot))
 
 /area/quartermaster/shuttlefuel
 	name = "\improper Shuttle Fuel Bay"
 	icon_state = "toxstorage"
-	req_access = list(access_hangar, access_cargo)
+	req_access = list(list(access_hangar), list(access_cargo))
 
 /area/quartermaster/hangar
 	name = "\improper Hangar Deck"
@@ -853,7 +853,7 @@
 
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
-	icon_state = "locker" 
+	icon_state = "locker"
 
 /area/crew_quarters/pool
 	name = "\improper Pool"
@@ -1049,7 +1049,7 @@
 /area/medical/foyer
 	name = "\improper Medical Foyer"
 	icon_state = "medbay"
-	req_access = list(access_medical,access_morgue,access_forensics_lockers)
+	req_access = list(list(access_medical),list(access_morgue),list(access_forensics_lockers))
 
 /area/medical/foyer/storeroom
 	name = "\improper Medical Storeroom"
@@ -1121,7 +1121,7 @@
 	name = "\improper Morgue"
 	icon_state = "morgue"
 	ambience = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg','sound/music/main.ogg')
-	req_access = list(access_morgue,access_forensics_lockers)
+	req_access = list(list(access_morgue),list(access_forensics_lockers))
 
 /area/medical/morgue/autopsy
 	name = "\improper Autopsy"
@@ -1225,7 +1225,7 @@
 	area_flags = AREA_FLAG_EXTERNAL
 	has_gravity = FALSE
 	turf_initializer = /decl/turf_initializer/maintenance/space
-	req_access = list(access_external_airlocks, access_maint_tunnels)
+	req_access = list(list(access_external_airlocks), list(access_maint_tunnels))
 
 /area/bridge/ai
 	req_access = list(access_ai_upload)
