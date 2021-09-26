@@ -17,7 +17,7 @@
 
 	var/decl/species/mob_species
 	if(!pref.species)
-		mob_species = GET_DECL(get_species_by_key(global.using_map.default_species))
+		mob_species = get_species_by_key(global.using_map.default_species)
 		pref.species = mob_species.name
 	else
 		mob_species = get_species_by_key(pref.species)
