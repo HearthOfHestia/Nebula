@@ -26,6 +26,7 @@
 	var/filling_color = "#ffffff" //Used by sandwiches.
 	var/trash = null
 	randpixel = 6
+	flags = ATOM_FLAG_OPEN_CONTAINER
 	possible_transfer_amounts = null
 	volume = 50
 	center_of_mass = @"{'x':16,'y':16}"
@@ -41,6 +42,8 @@
 	 */
 	var/cooked_icon = null
 
+/obj/item/chems/food/standard_pour_into(mob/user, atom/target)
+	return FALSE
 
 //Code for dipping food in batter
 /**
