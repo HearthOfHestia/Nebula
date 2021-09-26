@@ -1,4 +1,4 @@
-/hook/global_init/proc/condi_add()
+/hook/startup/proc/condi_add() // must be startup and not global_init so that global/static vars have been initialized
 	var/obj/item/chems/condiment/C = new()
 	C.special_bottles[/decl/material/solid/spacespice] = /obj/item/chems/condiment/small/spacespice
 	qdel(C)
