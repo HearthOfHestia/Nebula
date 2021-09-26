@@ -928,7 +928,6 @@
 
 /area/hydroponics/storage
 	name = "\improper Hydroponics Storage"
-	req_access = list(access_hydroponics)
 
 // Tcomms
 /area/tcommsat/storage

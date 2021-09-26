@@ -2729,6 +2729,16 @@
 /obj/machinery/appliance/cooker/stove,
 /turf/simulated/floor/tiled/white,
 /area/command/captainmess)
+"gq" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/polarized/no_grille,
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/plating,
+/area/command/captainmess)
 "gw" = (
 /obj/effect/paint/tan,
 /turf/simulated/wall/titanium,
@@ -3537,6 +3547,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/mess)
+"jq" = (
+/obj/machinery/door/firedoor,
+/obj/effect/wallframe_spawn/reinforced/polarized/no_grille,
+/obj/effect/paint_stripe/command,
+/obj/structure/cable/green,
+/turf/simulated/floor/plating,
+/area/command/captainmess)
 "jt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -4416,21 +4433,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/xo)
-"mL" = (
-/obj/effect/wallframe_spawn/reinforced/polarized{
-	id = "sea_windows"
-	},
-/obj/effect/paint_stripe/command,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable/green{
-	icon_state = "0-2"
-	},
-/obj/structure/cable/green,
-/turf/simulated/floor/plating,
-/area/crew_quarters/heads/office/sea)
 "mM" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/maintenance/bridge/aftstarboard)
@@ -7032,6 +7034,21 @@
 	},
 /turf/simulated/floor/reinforced/airless,
 /area/space)
+"va" = (
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "sea_windows"
+	},
+/obj/effect/paint_stripe/command,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/obj/structure/cable/green,
+/turf/simulated/floor/plating,
+/area/crew_quarters/heads/office/sea)
 "vb" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
@@ -7190,6 +7207,9 @@
 /obj/effect/paint/tan,
 /obj/structure/cable/green{
 	icon_state = "0-2"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/plating,
 /area/bridge)
@@ -8733,13 +8753,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/bridge/hallway/port)
-"AK" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/polarized/no_grille,
-/obj/effect/paint_stripe/command,
-/obj/structure/cable/green,
-/turf/simulated/floor/plating,
-/area/command/captainmess)
 "AP" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -11375,16 +11388,23 @@
 	},
 /turf/simulated/floor/airless,
 /area/perseverance/secure_storage)
-"Lq" = (
+"Lt" = (
 /obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/polarized/no_grille,
-/obj/effect/paint_stripe/command,
-/obj/structure/cable/green{
-	icon_state = "0-2"
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/blast/regular/open{
+	dir = 4;
+	id_tag = "bridge blast";
+	name = "Bridge Blast Doors"
 	},
-/obj/structure/cable/green,
+/obj/effect/paint/tan,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
 /turf/simulated/floor/plating,
-/area/command/captainmess)
+/area/bridge)
 "Lv" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 5
@@ -13306,23 +13326,6 @@
 	},
 /turf/simulated/floor/lino,
 /area/command/captainmess)
-"Us" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced/hull,
-/obj/machinery/door/blast/regular/open{
-	dir = 4;
-	id_tag = "bridge blast";
-	name = "Bridge Blast Doors"
-	},
-/obj/effect/paint/tan,
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/plating,
-/area/bridge)
 "Uu" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/effect/floor_decal/corner/red/half{
@@ -21726,7 +21729,7 @@ zN
 hH
 zN
 zN
-Us
+Lt
 tg
 tg
 tg
@@ -25166,7 +25169,7 @@ Vl
 sB
 VY
 TT
-mL
+va
 uI
 sB
 sB
@@ -25750,8 +25753,8 @@ sJ
 sJ
 sJ
 SJ
-Lq
-AK
+gq
+jq
 Le
 Le
 cg
