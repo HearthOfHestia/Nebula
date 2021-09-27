@@ -14276,7 +14276,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/techfloor,
-/area/space)
+/area/thruster/d3port)
 "Nw" = (
 /obj/effect/wallframe_spawn/no_grille,
 /obj/effect/paint_stripe/common,
@@ -14533,12 +14533,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/crew_quarters/sleep/dorms/hallway)
-"Or" = (
-/obj/machinery/atmospherics/unary/engine{
-	dir = 8
-	},
-/turf/simulated/floor/plating,
-/area/space)
 "Os" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -45159,7 +45153,7 @@ aa
 aa
 aa
 pI
-Or
+YA
 YA
 pI
 YA
