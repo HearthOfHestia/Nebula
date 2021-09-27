@@ -18122,7 +18122,7 @@
 	name = "Cyborg Upload Blast Doors";
 	pixel_x = -6;
 	pixel_y = -26;
-	req_access = list(access_ai_upload)
+	req_access = list("ACCESS_AI_UPLOAD")
 	},
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
