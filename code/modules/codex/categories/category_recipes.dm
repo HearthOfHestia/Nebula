@@ -61,7 +61,7 @@
 			var/decl/material/catalyst = catalyst_id
 			catalysts += "[food.catalysts[catalyst_id]]u <l>[lowertext(initial(catalyst.name))]</l>"
 		if(catalysts.len)
-			mechanics_text += " [jointext(reactant_values, " + ")] (catalysts: [jointext(catalysts, ", ")])]"
+			mechanics_text += " (catalysts: [jointext(catalysts, ", ")])]"
 		if(food.maximum_temperature != INFINITY)
 			mechanics_text += "<br>The recipe will not succeed if the temperature is above [food.maximum_temperature]K."
 		if(food.minimum_temperature > 0)
