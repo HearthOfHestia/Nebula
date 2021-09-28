@@ -266,7 +266,7 @@
 			z_eye = null
 			return
 		var/turf/above = GetAbove(src)
-		if(istype(above) && (above.z_flags & ZM_MIMIC_BELOW()))
+		if(istype(above) && (above.z_flags & ZM_MIMIC_BELOW))
 			z_eye = new /atom/movable/z_observer/z_up(src, src)
 			to_chat(src, "<span class='notice'>You look up.</span>")
 			reset_view(z_eye)
