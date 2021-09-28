@@ -15065,11 +15065,9 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
 "NG" = (
-/obj/random/obstruction,
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/seconddeck)
