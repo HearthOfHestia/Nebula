@@ -45,15 +45,6 @@
 	color = "#000000"
 	value = 0.1
 
-// From Synnono's Cooking Expansion on Aurora
-/decl/material/solid/spacespice
-	name = "exotic spices"
-	lore_text = "An exotic blend of spices for cooking. It must flow."
-	color = "#e08702"
-	taste_description = "spices"
-	taste_mult = 1.5
-	value = 0.5
-
 /decl/material/liquid/enzyme
 	name = "universal enzyme"
 	lore_text = "A universal enzyme used in the preperation of certain chemicals and foods."

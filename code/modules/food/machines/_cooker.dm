@@ -162,7 +162,6 @@
 			update_icon()
 		ADJUST_ATOM_TEMPERATURE(src, temperature + heating_power / resistance)
 		update_cooking_power()
-		return 1
 	else
 		if (use_power == POWER_USE_ACTIVE)
 			use_power = POWER_USE_IDLE
@@ -177,8 +176,9 @@
 			return TRUE
 		for(var/datum/cooking_item/CI in cooking_objs)
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
-		return TRUE // Don't kill this processing loop unless we're not powered or we're cold.
 	. = ..()
+	if(use_power == POWER_USE_ACTIVE)
+		return TRUE // Don't stop processing if we're actively heating
 
 //Cookers do differently, they use containers
 /obj/machinery/appliance/cooker/has_space(var/obj/item/I)
