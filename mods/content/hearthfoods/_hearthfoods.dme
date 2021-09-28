@@ -4,6 +4,8 @@
 #include "hearthfoods.dm"
 #include "reactions.dm"
 #include "trash.dm"
+#include "food\chems.dm"
+#include "food\condiments.dm"
 #include "food\baked_goods.dm"
 #include "food\food_overrides.dm"
 #include "food\fried.dm"
@@ -21,12 +23,5 @@
 #include "recipes\recipes_rice.dm"
 #include "recipes\recipes_soup.dm"
 #include "recipes\recipes_tortillas_chips.dm"
-// END_INCLUDE
 #endif
-// BEGIN_INTERNALS
-// END_INTERNALS
-// BEGIN_FILE_DIR
-#define FILE_DIR .
-// END_FILE_DIR
-// BEGIN_PREFERENCES
-// END_PREFERENCES
+// END_INCLUDE

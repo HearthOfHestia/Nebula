@@ -118,9 +118,6 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
@@ -1761,7 +1758,7 @@
 /obj/machinery/door/airlock/glass/medical{
 	autoset_access = 0;
 	name = "Medical Foyer";
-	req_access = list(list(access_medical,access_morgue,access_forensics_lockers))
+	req_access = list(list("ACCESS_MEDICAL","ACCESS_MORGUE","ACCESS_FORENSICS"))
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/monotile,
@@ -6669,9 +6666,6 @@
 /obj/item/anobattery{
 	pixel_x = 6;
 	pixel_y = 6
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-4"
 	},
 /obj/item/anodevice,
 /obj/item/anodevice,
@@ -18700,6 +18694,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "njg" = (
@@ -18815,6 +18812,9 @@
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
 /obj/effect/catwalk_plated,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/plating,
 /area/security/wing)
 "nqb" = (
@@ -20039,11 +20039,10 @@
 "oXv" = (
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "armbolt";
-	initial_access = list(access_armory);
 	name = "Armory Bolt Control";
 	pixel_x = 24;
 	pixel_y = -24;
-	req_access = list(access_armory)
+	req_access = list("ACCESS_ARMORY")
 	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
