@@ -4,6 +4,7 @@
 	fore_dir = WEST
 	vessel_mass = 100000
 	burn_delay = 2 SECONDS
+	sector_flags = OVERMAP_SECTOR_BASE | OVERMAP_SECTOR_IN_SPACE
 	//base = TRUE
 
 	initial_restricted_waypoints = list(
@@ -146,4 +147,3 @@
 	desc = "Trace radiation emanating from this sector is consistent with the aftermath of a superluminal jump."
 	icon_state = "event"
 	sector_flags = OVERMAP_SECTOR_KNOWN
-	
