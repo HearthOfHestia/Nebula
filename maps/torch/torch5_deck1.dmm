@@ -1514,7 +1514,8 @@
 	pixel_y = 32
 	},
 /obj/machinery/body_scan_display{
-	pixel_y = 24
+	pixel_y = 24;
+	id_tag = "scanner_or"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
@@ -2340,9 +2341,6 @@
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
-/obj/item/modular_computer/telescreen/preset/medical{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/staging)
 "afI" = (
@@ -4863,10 +4861,6 @@
 /obj/effect/floor_decal/corner/paleblue/three_quarters{
 	dir = 4
 	},
-/obj/structure/table,
-/obj/item/chems/drinks/glass2/coffeecup/one{
-	custom_desc = "A white coffee cup, prominently featuring a #1 Gorpsman. Someone has scratched the C into a G."
-	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "aqQ" = (
@@ -5734,7 +5728,8 @@
 "avO" = (
 /obj/effect/floor_decal/corner/pink/mono,
 /obj/machinery/body_scanconsole{
-	dir = 1
+	dir = 1;
+	display_tags = list("scanner_or")
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -11720,7 +11715,8 @@
 	},
 /obj/machinery/optable,
 /obj/machinery/body_scan_display{
-	pixel_y = 24
+	pixel_y = 24;
+	id_tag = "scanner_or"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
@@ -12238,7 +12234,8 @@
 	pixel_y = 32
 	},
 /obj/machinery/body_scan_display{
-	pixel_y = 24
+	pixel_y = 24;
+	id_tag = "scanner_or"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -17083,7 +17080,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/body_scanconsole{
-	dir = 1
+	dir = 1;
+	display_tags = list("scanner_or")
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/staging)
@@ -21226,6 +21224,7 @@
 /turf/simulated/floor/reinforced,
 /area/rnd/xenobiology/xenoflora)
 "qtQ" = (
+/obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/freezer,
 /area/medical/washroom)
 "qvX" = (
@@ -21576,6 +21575,10 @@
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -22
+	},
+/obj/item/chems/drinks/glass2/coffeecup/one{
+	custom_desc = "A white coffee cup, prominently featuring a #1 Gorpsman. Someone has scratched the C into a G.";
+	pixel_y = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/medicalhallway)
