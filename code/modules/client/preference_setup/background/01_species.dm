@@ -7,7 +7,7 @@
 	W.write("species", pref.species)
 
 /datum/category_item/player_setup_item/background/species/load_character(datum/pref_record_reader/R)
-	pref.species = R.read("species") 
+	pref.species = R.read("species")
 
 /datum/category_item/player_setup_item/background/species/sanitize_character()
 	. = ..()
@@ -17,7 +17,7 @@
 
 	var/decl/species/mob_species
 	if(!pref.species)
-		mob_species = GET_DECL(global.using_map.default_species)
+		mob_species = get_species_by_key(global.using_map.default_species)
 		pref.species = mob_species.name
 	else
 		mob_species = get_species_by_key(pref.species)
@@ -28,7 +28,7 @@
 		pref.gender = pronouns.name
 
 	pref.skills_allocated = pref.sanitize_skills(pref.skills_allocated)
-	pref.cultural_info = mob_species.default_cultural_info.Copy()
+	// culture is sanitised elsewhere
 
 	if(!has_flag(get_species_by_key(pref.species), HAS_UNDERWEAR))
 		pref.all_underwear.Cut()
@@ -40,7 +40,7 @@
 	var/decl/species/current_species = get_species_by_key(pref.species)
 	var/list/prefilter = get_playable_species()
 	var/list/playables = list()
-	
+
 	for(var/s in prefilter)
 		if(!check_rights(R_ADMIN, 0) && config.usealienwhitelist)
 			var/decl/species/checking_species = get_species_by_key(s)

@@ -21,6 +21,16 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 0.33)
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride, 1)
 
+// May as well put this here.
+/datum/codex_entry/rawbacon
+	associated_paths = list(/obj/item/chems/food/rawbacon)
+
+/datum/codex_entry/rawbacon/New(_display_name, list/_associated_paths, list/_associated_strings, _lore_text, _mechanics_text, _antag_text)
+	. = ..()
+	var/obj/item/chems/food/rawbacon/example = /obj/item/chems/food/rawbacon
+	lore_text = initial(example.desc)
+	mechanics_text = "Three strips of raw bacon can be made by slicing a raw cutlet with any sharp object. It can be cooked to make <l>bacon</l>."
+
 /obj/item/chems/food/bacon
 	name = "bacon"
 	desc = "A tasty slice of deep-fried meat. You don't see any pigs on this station, do you?"
