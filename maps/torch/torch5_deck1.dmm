@@ -11722,7 +11722,7 @@
 /obj/machinery/optable,
 /obj/machinery/body_scan_display{
 	pixel_y = 24;
-	tag = "scanner_or"
+	id_tag = "scanner_or"
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
