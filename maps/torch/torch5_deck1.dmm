@@ -2665,7 +2665,7 @@
 "agr" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/catwalk_plated,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "ags" = (
@@ -11994,6 +11994,7 @@
 "cVb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "cVl" = (
@@ -22532,7 +22533,7 @@
 "rQb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/catwalk_plated/white,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "rQE" = (
