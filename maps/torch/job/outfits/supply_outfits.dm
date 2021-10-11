@@ -1,14 +1,14 @@
 /decl/hierarchy/outfit/job/torch/crew/supply
 	l_ear = /obj/item/radio/headset/headset_cargo
-	hierarchy_type = /decl/hierarchy/outfit/job/torch/crew/supply
+	abstract_type = /decl/hierarchy/outfit/job/torch/crew/supply
 	gloves = /obj/item/clothing/gloves/duty/sup
 
-/decl/hierarchy/outfit/job/torch/crew/supply/New()
-	..()
+/decl/hierarchy/outfit/job/torch/crew/supply/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING
 
 /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer
-	name = OUTFIT_JOB_NAME("Deck Chief")
+	name = "Job - Deck Chief"
 	l_ear = /obj/item/radio/headset/headset_deckofficer
 	uniform = /obj/item/clothing/under/iseo/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
@@ -17,13 +17,13 @@
 	head = /obj/item/clothing/head/iseo/beret/supply
 
 /decl/hierarchy/outfit/job/torch/crew/supply/deckofficer/espatier
-	name = OUTFIT_JOB_NAME("Deck Chief - Espatier")
+	name = "Job - Deck Chief - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/supply
 
 /decl/hierarchy/outfit/job/torch/crew/supply/tech
-	name = OUTFIT_JOB_NAME("Deck Technician")
+	name = "Job - Deck Technician"
 	uniform = /obj/item/clothing/under/iseo/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	id_type = /obj/item/card/id/torch/crew/supply
@@ -31,26 +31,26 @@
 	head = /obj/item/clothing/head/iseo/beret/supply
 
 /decl/hierarchy/outfit/job/torch/crew/supply/tech/espatier
-	name = OUTFIT_JOB_NAME("Deck Technician - Espatier")
+	name = "Job - Deck Technician - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/supply
 
 /decl/hierarchy/outfit/job/torch/crew/supply/contractor
-	name = OUTFIT_JOB_NAME("Supply Assistant")
+	name = "Job - Supply Assistant"
 	uniform = /obj/item/clothing/under/cargotech
 	shoes = /obj/item/clothing/shoes/color/brown
 	id_type = /obj/item/card/id/torch/contractor/supply
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/torch/passenger/research/prospector
-	name = OUTFIT_JOB_NAME("Prospector")
+	name = "Job - Prospector"
 	uniform = /obj/item/clothing/under/work
 	shoes = /obj/item/clothing/shoes/workboots
 	id_type = /obj/item/card/id/torch/contractor/supply
 	pda_type = /obj/item/modular_computer/pda/mining
 	l_ear = /obj/item/radio/headset/headset_mining
 
-/decl/hierarchy/outfit/job/torch/passenger/research/prospector/New()
-	..()
+/decl/hierarchy/outfit/job/torch/passenger/research/prospector/Initialize()
+	. = ..()
 	BACKPACK_OVERRIDE_ENGINEERING

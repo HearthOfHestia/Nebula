@@ -3,7 +3,6 @@
 	lobby_tracks = list(
 		/decl/music_track/cloudsofneptune,
 		/decl/music_track/chasing_time,
-		/decl/music_track/torch,
 		/decl/music_track/human,
 		/decl/music_track/marhaba,
 		/decl/music_track/treacherous_voyage,
@@ -22,5 +21,6 @@
 		/decl/music_track/astrometrics,
 		/decl/music_track/astrometrics/starbase,
 		/decl/music_track/astrometrics/a_place,
-		/decl/music_track/lonely_satellite
+		/decl/music_track/lonely_satellite,
+		/decl/music_track/toboldlygo
 	)

@@ -200,14 +200,14 @@ Please contact me on #coderbus IRC. ~Carn x
 				underlays = list(entry)
 			else
 				add_overlay(entry)
-		else if(istype(entry, /list))
+		else if(islist(entry))
 			for(var/image/overlay in entry)
 				if(i != HO_DAMAGE_LAYER)
 					overlay.transform = M
 				if(i == HO_TAIL_UNDER_LAYER)
-					underlays = list(entry)
+					underlays = list(overlay)
 				else
-					add_overlay(entry)
+					add_overlay(overlay)
 
 	var/obj/item/organ/external/head/head = organs_by_name[BP_HEAD]
 	if(istype(head) && !head.is_stump())
@@ -250,13 +250,6 @@ var/global/list/damage_icon_parts = list()
 //constructs damage icon for each organ from mask * damage field and saves it in our overlays_ lists
 /mob/living/carbon/human/UpdateDamageIcon(var/update_icons=1)
 
-	var/damage_overlays = bodytype.get_damage_overlays(src)
-	if(!damage_overlays)
-		return
-	var/damage_mask = bodytype.get_damage_mask(src)
-	if(!damage_mask)
-		return
-
 	// first check whether something actually changed about damage appearance
 	var/damage_appearance = ""
 	for(var/obj/item/organ/external/O in organs)
@@ -270,7 +263,7 @@ var/global/list/damage_icon_parts = list()
 
 	previous_damage_appearance = damage_appearance
 
-	var/image/standing_image = image(damage_overlays, icon_state = "00")
+	var/image/standing_image = image(bodytype.get_damage_overlays(src), icon_state = "00")
 
 	// blend the individual damage states with our icons
 	for(var/obj/item/organ/external/O in organs)
@@ -284,8 +277,8 @@ var/global/list/damage_icon_parts = list()
 		var/use_colour = (BP_IS_PROSTHETIC(O) ? SYNTH_BLOOD_COLOUR : O.species.get_blood_colour(src))
 		var/cache_index = "[O.damage_state]/[O.icon_name]/[use_colour]/[species.name]"
 		if(damage_icon_parts[cache_index] == null)
-			DI = new /icon(bodytype.get_damage_overlays(src), O.damage_state)			// the damage icon for whole human
-			DI.Blend(new /icon(bodytype.get_damage_mask(src), O.icon_name), ICON_MULTIPLY)	// mask with this organ's pixels
+			DI = new /icon(bodytype.get_damage_overlays(src), O.damage_state) // the damage icon for whole human
+			DI.Blend(new /icon(O.icon, O.icon_name), ICON_MULTIPLY)  // mask with this organ's pixels
 			DI.Blend(use_colour, ICON_MULTIPLY)
 			damage_icon_parts[cache_index] = DI
 		else
@@ -351,16 +344,15 @@ var/global/list/damage_icon_parts = list()
 			icon_key += "0"
 			continue
 		for(var/M in part.markings)
-			icon_key += "[M][part.markings[M]["color"]]"
+			icon_key += "[M][part.markings[M]]"
 		if(part)
-			icon_key += "[part.bodytype.get_icon_cache_uid(part.owner)]"
-			icon_key += "[part.dna.GetUIState(DNA_UI_GENDER)]"
+			icon_key += "[part.bodytype.get_icon_cache_uid(part.owner)][part.render_alpha]"
 			icon_key += "[part.skin_tone]"
 			if(part.skin_colour)
 				icon_key += "[part.skin_colour]"
 				icon_key += "[part.skin_blend]"
 			for(var/M in part.markings)
-				icon_key += "[M][part.markings[M]["color"]]"
+				icon_key += "[M][part.markings[M]]"
 		if(BP_IS_PROSTHETIC(part))
 			icon_key += "2[part.model ? "-[part.model]": ""]"
 		else if(part.status & ORGAN_DEAD)
@@ -688,12 +680,11 @@ var/global/list/damage_icon_parts = list()
 		queue_icon_update()
 
 /mob/living/carbon/human/proc/update_tail_showing(var/update_icons=1)
-	overlays_standing[HO_TAIL_OVER_LAYER] = null
+
+	overlays_standing[HO_TAIL_OVER_LAYER] =  null
 	overlays_standing[HO_TAIL_UNDER_LAYER] = null
-
 	var/tail_state = bodytype.get_tail(src)
-
-	if(tail_state && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
+	if(tail_state && (!wear_suit || !(wear_suit.flags_inv & HIDETAIL)))
 		var/icon/tail_s = get_tail_icon()
 		overlays_standing[(dir == NORTH) ? HO_TAIL_OVER_LAYER : HO_TAIL_UNDER_LAYER] = image(tail_s, icon_state = "[tail_state]_s")
 		animate_tail_reset(0)
@@ -708,7 +699,8 @@ var/global/list/damage_icon_parts = list()
 		//generate a new one
 		var/tail_anim = bodytype.get_tail_animation(src) || bodytype.tail_icon
 		tail_icon = new/icon(tail_anim)
-		tail_icon.Blend(skin_colour, bodytype.tail_blend)
+		if(species.appearance_flags & HAS_SKIN_COLOR)
+			tail_icon.Blend(skin_colour, bodytype.tail_blend)
 		// The following will not work with animated tails.
 		var/use_tail = bodytype.get_tail_hair(src)
 		if(use_tail)

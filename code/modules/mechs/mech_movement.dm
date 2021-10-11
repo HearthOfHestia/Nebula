@@ -16,7 +16,7 @@
 		for(var/thing in pilots)
 			var/mob/pilot = thing
 			if(pilot.up_hint)
-				pilot.up_hint.icon_state = "uphint[(B ? B.is_open() : 0)]"
+				pilot.up_hint.icon_state = "uphint[(B?.z_flags & ZM_MIMIC_BELOW) ? 1 : 0]"
 
 /mob/living/exosuit/can_fall(var/anchor_bypass = FALSE, var/turf/location_override = src.loc)
 	//mechs are always anchored, so falling should always ignore it
@@ -50,7 +50,7 @@
 		to_chat(mover, SPAN_WARNING("The power indicator flashes briefly."))
 		next_move = world.time + 3 //On fast exosuits this got annoying fast
 		return MOVEMENT_STOP
-	
+
 	next_move = world.time + (exosuit.legs ? exosuit.legs.move_delay : 3)
 	return MOVEMENT_PROCEED
 

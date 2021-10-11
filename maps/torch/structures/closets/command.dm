@@ -40,7 +40,7 @@
 		/obj/item/storage/belt/general,
 		/obj/item/telebaton,
 		/obj/item/flash,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/megaphone,
 		/obj/item/storage/box/ids,
 		/obj/item/clipboard,
@@ -48,6 +48,7 @@
 		/obj/item/folder/blue,
 		/obj/item/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/cap,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/under/iseo/utility/command,
 		/obj/item/clothing/head/helmet/command,
 	)
@@ -64,7 +65,7 @@
 		/obj/item/storage/belt/general,
 		/obj/item/telebaton,
 		/obj/item/flash,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/megaphone,
 		/obj/item/storage/box/headset,
 		/obj/item/radio/headset/heads/torchexec/alt,
@@ -77,7 +78,7 @@
 		/obj/item/knife/folding/swiss/officer,
 		/obj/item/storage/backpack/satchel/cap,
 		/obj/item/storage/box/imprinting,
-		/obj/item/clothing/suit/armor/vest/government/command,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/command
 	)
 
@@ -89,10 +90,10 @@
 /obj/structure/closet/secure_closet/sea/WillContain()
 	return list(
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/clothing/suit/armor/vest/government/command,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		/obj/item/clothing/head/helmet/command,
 		/obj/item/storage/belt/holster/general,
-		/obj/item/gun/energy/confuseray,
+		/obj/item/gun/projectile/pistol/secure,
 		/obj/item/radio/headset/sea,
 		/obj/item/radio/headset/sea/alt,
 		/obj/item/storage/belt/general,
@@ -127,6 +128,7 @@
 		/obj/item/radio/headset/bridgeofficer/alt,
 		/obj/item/storage/belt/general,
 		/obj/item/knife/folding/swiss/officer,
+		/obj/item/clothing/suit/armor/pcarrier/medium,
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel/grey)),
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack/dufflebag, /obj/item/storage/backpack/messenger)),
 		new /datum/atom_creator/weighted(list(/obj/item/flashlight, /obj/item/flashlight/flare, /obj/item/flashlight/flare/glowstick/random))

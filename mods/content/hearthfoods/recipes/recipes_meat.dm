@@ -137,7 +137,7 @@
 /decl/recipe/donerkebab
 	appliance = APPLIANCE_MIX
 	fruit = list("tomato" = 1, "cabbage" = 1)
-	reagents = list(/decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/meatsteak = 1,
 		/obj/item/chems/food/sliceable/flatdough = 1
@@ -207,7 +207,7 @@
 
 /decl/recipe/poachedegg
 	appliance = APPLIANCE_SKILLET | APPLIANCE_SAUCEPAN
-	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/mineral/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/water = 5)
+	reagents = list(/decl/material/solid/spacespice = 1, /decl/material/solid/sodiumchloride = 1, /decl/material/solid/blackpepper = 1, /decl/material/liquid/water = 5)
 	items = list(
 		/obj/item/chems/food/egg = 1
 	)
@@ -237,7 +237,7 @@
 // Seafood
 /decl/recipe/crab_legs
 	appliance = APPLIANCE_SAUCEPAN | APPLIANCE_POT
-	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/mineral/sodiumchloride = 1)
+	reagents = list(/decl/material/liquid/water = 10, /decl/material/solid/sodiumchloride = 1)
 	items = list(
 		/obj/item/chems/food/crabmeat = 1,
 		/obj/item/chems/food/spreads = 1

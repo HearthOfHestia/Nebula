@@ -7790,7 +7790,7 @@
 /obj/effect/landmark{
 	name = "tdome2"
 	},
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Thunderdome - Red Team";
 	invisibility = 101
 	},
@@ -7817,7 +7817,7 @@
 /obj/effect/landmark{
 	name = "tdome1"
 	},
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Green Team";
 	invisibility = 101
 	},
@@ -7837,7 +7837,7 @@
 	},
 /area/acting/backstage)
 "aMe" = (
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Thunderdome Arena";
 	invisibility = 101
 	},
@@ -7863,7 +7863,7 @@
 	},
 /area/acting/backstage)
 "aMn" = (
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	anchored = 0;
 	c_tag = "Television";
 	name = "Movable Camera"
@@ -10224,7 +10224,6 @@
 /obj/machinery/cell_charger,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/blue{
-	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/random/powercell,
@@ -10310,7 +10309,6 @@
 /area/merchant_station)
 "aVk" = (
 /obj/structure/cable{
-	d2 = 2;
 	icon_state = "0-2";
 	pixel_y = 0
 	},
@@ -10328,8 +10326,6 @@
 	dir = 8
 	},
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
@@ -10339,8 +10335,6 @@
 	dir = 8
 	},
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
@@ -10417,7 +10411,6 @@
 /area/merchant_station)
 "aVF" = (
 /obj/structure/cable{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/solar,
@@ -10426,21 +10419,15 @@
 /area/merchant_station)
 "aVG" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aVH" = (
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /obj/structure/closet/crate,
@@ -10461,8 +10448,6 @@
 /area/merchant_station)
 "aVI" = (
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/structure/reagent_dispensers/fueltank,
@@ -10470,8 +10455,6 @@
 /area/merchant_station)
 "aVJ" = (
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/vending/engivend{
@@ -10482,8 +10465,6 @@
 "aVK" = (
 /obj/structure/table/steel,
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/item/storage/box/lights/mixed,
@@ -10492,8 +10473,6 @@
 /area/merchant_station)
 "aVL" = (
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
@@ -10579,7 +10558,6 @@
 /area/merchant_station)
 "aWg" = (
 /obj/structure/cable/blue{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable{
@@ -10596,8 +10574,6 @@
 /area/merchant_station)
 "aWh" = (
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -10642,7 +10618,6 @@
 /area/merchant_station)
 "aWy" = (
 /obj/structure/cable{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/tracker,
@@ -10650,34 +10625,24 @@
 /area/merchant_station)
 "aWz" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aWA" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
 	icon_state = "1-4"
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aWB" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10688,8 +10653,6 @@
 /area/merchant_station)
 "aWC" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10704,8 +10667,6 @@
 "aWD" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10720,15 +10681,12 @@
 	icon_state = "term"
 	},
 /obj/structure/cable{
-	d2 = 8;
 	icon_state = "0-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /obj/structure/bed/chair/comfy/brown{
@@ -10799,13 +10757,9 @@
 /area/merchant_station)
 "aWV" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/airless,

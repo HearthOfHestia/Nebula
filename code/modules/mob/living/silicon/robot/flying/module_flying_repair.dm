@@ -2,14 +2,14 @@
 	name = "repair drone module"
 	display_name = "Repair"
 	channels = list ("Engineering" = TRUE)
-	networks = list(NETWORK_ENGINEERING)
+	camera_channels = list(CAMERA_CAMERA_CHANNEL_ENGINEERING)
 	software = list(
 		/datum/computer_file/program/power_monitor,
 		/datum/computer_file/program/supermatter_monitor
 	)
-	sprites = list(
-		"Drone" = "drone-engineer",
-		"Eyebot" = "eyebot-engineering"
+	module_sprites = list(
+		"Drone" = 'icons/mob/robots/flying/flying_engineering.dmi',
+		"Eyebot" = 'icons/mob/robots/flying/eyebot_engineering.dmi'
 	)
 	equipment = list(
 		/obj/item/borg/sight/meson,

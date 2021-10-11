@@ -766,34 +766,30 @@
 	skin_tone = -skin_tone + 35
 
 	// hair
-	var/list/all_hairs = subtypesof(/datum/sprite_accessory/hair)
+	var/list/all_hairs = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/hair)
 	var/list/hairs = list()
 
 	// loop through potential hairs
 	for(var/x in all_hairs)
-		var/datum/sprite_accessory/hair/H = new x // create new hair datum based on type x
-		hairs.Add(H.name) // add hair name to hairs
-		qdel(H) // delete the hair after it's all done
+		hairs += all_hairs[x]
 
-	var/new_style = input("Please select hair style", "Character Generation",h_style)  as null|anything in hairs
+	var/decl/new_style = input("Please select hair style", "Character Generation",h_style)  as null|anything in hairs
 
 	// if new style selected (not cancel)
-	if (new_style)
-		h_style = new_style
+	if(new_style)
+		h_style = new_style.type
 
 	// facial hair
-	var/list/all_fhairs = subtypesof(/datum/sprite_accessory/facial_hair)
+	var/list/all_fhairs = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/facial_hair)
 	var/list/fhairs = list()
 
 	for(var/x in all_fhairs)
-		var/datum/sprite_accessory/facial_hair/H = new x
-		fhairs.Add(H.name)
-		qdel(H)
+		fhairs += all_fhairs[x]
 
 	new_style = input("Please select facial style", "Character Generation",f_style)  as null|anything in fhairs
 
 	if(new_style)
-		f_style = new_style
+		f_style = new_style.type
 
 	var/new_gender = alert(usr, "Please select gender.", "Character Generation", "Male", "Female", "Neutral")
 	if (new_gender)
@@ -1088,13 +1084,13 @@
 	if(species.holder_type)
 		holder_type = species.holder_type
 
-	var/decl/pronouns/pronouns = get_pronouns_by_gender(gender)
-	if(!istype(pronouns) || !(pronouns.type in species.available_pronouns))
-		pronouns = pick(species.available_pronouns)
-		set_gender(pronouns.name)
+	var/decl/pronouns/new_pronouns = get_pronouns_by_gender(get_sex())
+	if(!istype(new_pronouns) || !(new_pronouns in species.available_pronouns))
+		new_pronouns = pick(species.available_pronouns)
+		set_gender(new_pronouns.name)
 
 	icon_state = lowertext(species.name)
-	set_bodytype(pick(species.available_bodytypes))
+	set_bodytype(pick(species.available_bodytypes), TRUE)
 
 	species.create_organs(src)
 	species.handle_post_spawn(src)
@@ -1107,9 +1103,7 @@
 	default_pixel_x = initial(pixel_x) + bodytype.pixel_offset_x
 	default_pixel_y = initial(pixel_y) + bodytype.pixel_offset_y
 	default_pixel_z = initial(pixel_z) + bodytype.pixel_offset_z
-	pixel_x = default_pixel_x
-	pixel_y = default_pixel_y
-	pixel_z = default_pixel_z
+	reset_offsets()
 
 	appearance_descriptors = null
 	if(LAZYLEN(species.appearance_descriptors))
@@ -1347,7 +1341,7 @@
 	var/obj/item/organ/internal/eyes = get_internal_organ(BP_EYES)
 	. = istype(eyes) && eyes.is_usable()
 
-/mob/living/carbon/human/slip(var/slipped_on, stun_duration=8)
+/mob/living/carbon/human/slip(var/slipped_on, stun_duration = 8)
 	if((species.check_no_slip(src)) || (shoes && (shoes.item_flags & ITEM_FLAG_NOSLIP)))
 		return 0
 	return !!(..(slipped_on,stun_duration))
@@ -1791,11 +1785,9 @@
 		. = TRUE
 	for(var/obj/item/organ/external/E in organs)
 		for(var/mark in E.markings)
-			var/list/marking_data = E.markings[mark]
-			var/datum/sprite_accessory/marking/mark_datum = marking_data["datum"]
+			var/decl/sprite_accessory/marking/mark_datum = GET_DECL(mark)
 			if(mark_datum.flags & HAIR_LOSS_VULNERABLE)
 				E.markings -= mark
-				marking_data.Cut()
 				. = TRUE
 	if(.)
 		update_body()

@@ -8,12 +8,13 @@
 	. +=  "You're aboard the " + replacetext("<b>[station_name]</b>", "\improper", "") + ", an ISEO Starship. Its primary mission is looking for undiscovered sapient alien species, and general exploration along the way."
 	. +=  "The vessel is staffed with a mix of ISEO Personnel, and military personnel under the command of the ISEO."
 	. +=  "This area of space is uncharted, far, far away from Sol. You might encounter remote outposts or drifting hulks, but no recognized government holds claim on this sector."
+	. +=  "Out here, it is just you and the rest of the crew - tensions may flare, old rivalries might come up. The Endeavour is a test for Humanity in more than one sense."
 	return jointext(., "<br>")
 
 /datum/map/torch/send_welcome()
 	var/obj/effect/overmap/visitable/ship/torch = SSshuttle.ship_by_type(/obj/effect/overmap/visitable/ship/torch)
 
-	var/welcome_text = "<center><img src = iseologo.png /><br /><font size = 3><b>SEV Torch</b> Sensor Readings:</font><br>"
+	var/welcome_text = "<center><img src = 'iseo.png'><br /><font size = 3><b>ISEO Endeavour</b> Sensor Readings:</font><br>"
 	welcome_text += "Report generated on [stationdate2text()] at [stationtime2text()]</center><br /><br />"
 	welcome_text += "<hr>Current system:<br /><b>[torch ? system_name() : "Unknown"]</b><br /><br>"
 
@@ -53,5 +54,5 @@
 			welcome_text += "<br>No distress calls logged.<br />"
 		welcome_text += "<hr>"
 
-	post_comm_message("SEV Torch Sensor Readings", welcome_text)
+	post_comm_message("ISEO Endeavour Sensor Readings", welcome_text)
 	minor_announcement.Announce(message = "New [using_map.company_name] Update available at all communication consoles.")

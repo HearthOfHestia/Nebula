@@ -2,7 +2,7 @@ var/global/list/first_name_skrell =  file2list("mods/species/skrell/names/first_
 var/global/list/last_name_skrell =   file2list("mods/species/skrell/names/last_name_skrell.txt")
 
 /decl/language/skrell
-	name = "Skrellian"
+	name = "Common Skrellian"
 	desc = "A melodic and complex language spoken by the Skrell of the Oligarchy. Some of the notes are inaudible to humans."
 	speech_verb = "warbles"
 	ask_verb = "trills"
@@ -17,8 +17,8 @@ var/global/list/last_name_skrell =   file2list("mods/species/skrell/names/last_n
 	)
 
 /decl/language/skrell/casteless
-	name = "Ue-Katish Pidgin"
-	desc = "A flat and emotionless language spoken mainly by Ue-Katish pirates."
+	name = "Ue-Katish Cant"
+	desc = "A flat and emotionless language spoken mainly by Ue-Katish pirates, laden with slurs and insults."
 	speech_verb = "croaks"
 	ask_verb = "trills"
 	exclaim_verb = "chirps"

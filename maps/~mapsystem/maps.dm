@@ -71,8 +71,6 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/emergency_shuttle_leaving_dock
 	var/emergency_shuttle_recall_message
 
-	var/list/station_networks = list() 		// Camera networks that will show up on the console.
-
 	var/list/holodeck_programs = list() // map of string ids to /datum/holodeck_program instances
 	var/list/holodeck_supported_programs = list() // map of maps - first level maps from list-of-programs string id (e.g. "BarPrograms") to another map
 												  // this is in order to support multiple holodeck program listings for different holodecks
@@ -249,10 +247,17 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 		if(world.maxy < planet_size[2])
 			world.maxy = planet_size[2]
 	for(var/i = 0, i < num_exoplanets, i++)
-		var/exoplanet_type = pick(subtypesof(/obj/effect/overmap/visitable/sector/exoplanet))
+		var/exoplanet_type = pick_exoplanet()
 		INCREMENT_WORLD_Z_SIZE
 		var/obj/effect/overmap/visitable/sector/exoplanet/new_planet = new exoplanet_type(null, world.maxz)
 		new_planet.build_level(planet_size[1], planet_size[2])
+
+/datum/map/proc/pick_exoplanet()
+	var/planets = list()
+	for(var/T in subtypesof(/obj/effect/overmap/visitable/sector/exoplanet))
+		var/obj/effect/overmap/visitable/sector/exoplanet/planet_type = T
+		planets[T] = initial(planet_type.spawn_weight)
+	return pickweight(planets)
 
 // Used to apply various post-compile procedural effects to the map.
 /datum/map/proc/refresh_mining_turfs(var/zlevel)

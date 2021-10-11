@@ -524,7 +524,7 @@
 	name = "lift (first deck)"
 	lift_floor_label = "Deck 1"
 	lift_floor_name = "Operations Deck"
-	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Armory."
+	lift_announce_str = "Arriving at Operations Deck: Infirmary. Security Wing. Research Wing. Auxiliary Cryogenic Storage. Emergency Storage."
 
 /area/turbolift/endeavour_third
 	name = "lift (second deck)"
@@ -536,7 +536,7 @@
 	name = "lift (third deck)"
 	lift_floor_label = "Deck 3"
 	lift_floor_name = "Habitation Deck"
-	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Officer's Mess. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym."
+	lift_announce_str = "Arriving at Habitation Deck: Telecommunications. Mess Hall. Lounge. Observation. Hydroponics. Cryogenic Storage. Holodeck. Gym. Garden."
 
 /area/turbolift/endeavour_first
 	name = "lift (fourth deck)"
@@ -637,7 +637,7 @@
 /area/engineering/bluespace
 	name = "Superluminal Drive Containment"
 	icon_state = "engineering"
-	req_access = list(access_engine_equip, access_heads, access_engine, access_maint_tunnels)
+	req_access = list(access_engine_equip, access_heads, access_engine)
 
 /area/engineering/atmos/aux
 	name = "\improper Auxiliary Atmospherics"
@@ -778,32 +778,32 @@
 /area/quartermaster/expedition
 	name = "\improper Expedition Preparation"
 	icon_state = "mining"
-	req_access = list(access_mining, access_nanotrasen, access_xenoarch)
+	req_access = list(list(access_mining, access_nanotrasen, access_xenoarch))
 
 /area/quartermaster/expedition/eva
 	name = "\improper Expedition EVA"
 	icon_state = "mining"
-	req_access = list(access_mining, access_xenoarch)
+	req_access = list(list(access_mining, access_xenoarch))
 
 /area/quartermaster/expedition/storage
 	name = "\improper Hangar Expedition Storage"
 	icon_state = "mining"
-	req_access = list(access_mining, access_explorer, access_xenoarch)
+	req_access = list(list(access_mining, access_explorer, access_xenoarch))
 
 /area/quartermaster/expedition/atmos
 	name = "\improper Hangar Atmospheric Storage"
 	icon_state = "mining"
-	req_access = list(access_mining, access_explorer, access_xenoarch)
+	req_access = list(list(access_mining, access_explorer, access_xenoarch))
 
 /area/quartermaster/exploration
 	name = "\improper Exploration Equipment"
 	icon_state = "exploration"
-	req_access = list(access_explorer, access_pathfinder, access_pilot)
+	req_access = list(list(access_explorer, access_pathfinder, access_pilot))
 
 /area/quartermaster/shuttlefuel
 	name = "\improper Shuttle Fuel Bay"
 	icon_state = "toxstorage"
-	req_access = list(access_hangar, access_cargo)
+	req_access = list(list(access_hangar, access_cargo))
 
 /area/quartermaster/hangar
 	name = "\improper Hangar Deck"
@@ -813,7 +813,7 @@
 
 /area/quartermaster/hangar/top
 	name = "\improper Hangar Upper Walkway"
-	req_access = list()
+	req_access = null
 
 /area/quartermaster/flightcontrol
 	name = "\improper Flight Control Tower"
@@ -835,11 +835,6 @@
 	name = "\improper Research Paperwork Office"
 	icon_state = "devlab"
 
-/area/rnd/entry
-	name = "\improper Research and Development Access"
-	icon_state = "decontamination"
-	req_access = list()
-
 /area/rnd/locker
 	name = "\improper Research Locker Room"
 	icon_state = "locker"
@@ -858,7 +853,7 @@
 
 /area/crew_quarters/cryolocker
 	name = "\improper Cryogenic Storage Wardrobe"
-	icon_state = "locker" 
+	icon_state = "locker"
 
 /area/crew_quarters/pool
 	name = "\improper Pool"
@@ -933,7 +928,6 @@
 
 /area/hydroponics/storage
 	name = "\improper Hydroponics Storage"
-	req_access = list(access_hydroponics)
 
 // Tcomms
 /area/tcommsat/storage
@@ -989,6 +983,11 @@
 
 /area/security/armoury
 	name = "\improper Security - Armory"
+	icon_state = "Warden"
+	req_access = list(access_armory)
+
+/area/security/armoury/blue
+	name = "\improper Security - Blue Armory"
 	icon_state = "Warden"
 	req_access = list(access_armory)
 
@@ -1049,7 +1048,7 @@
 /area/medical/foyer
 	name = "\improper Medical Foyer"
 	icon_state = "medbay"
-	req_access = list(access_medical,access_morgue,access_forensics_lockers)
+	req_access = list(list(access_medical,access_morgue,access_forensics_lockers))
 
 /area/medical/foyer/storeroom
 	name = "\improper Medical Storeroom"
@@ -1074,7 +1073,7 @@
 	name = "\improper Medical Washroom"
 	icon_state = "toilet"
 	sound_env = SMALL_ENCLOSED
-	req_access = list()
+	req_access = null
 
 /area/medical/counselor
 	name = "\improper Counselor's Office"
@@ -1121,7 +1120,7 @@
 	name = "\improper Morgue"
 	icon_state = "morgue"
 	ambience = list('sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg','sound/music/main.ogg')
-	req_access = list(access_morgue,access_forensics_lockers)
+	req_access = list(list(access_morgue,access_forensics_lockers))
 
 /area/medical/morgue/autopsy
 	name = "\improper Autopsy"
@@ -1199,7 +1198,7 @@
 	ambience = list()
 	sound_env = MEDIUM_SOFTFLOOR
 	req_access = list(access_bridge)
-
+/*
 /area/bridge/disciplinary_board_room
 	name = "\improper Disciplinary Board Room"
 	sound_env = SMALL_ENCLOSED
@@ -1208,7 +1207,7 @@
 /area/bridge/disciplinary_board_room/deliberation
 	name = "\improper Deliberation Room"
 	sound_env = SMALL_ENCLOSED
-
+*/
 /area/crew_quarters/heads
 	icon_state = "head_quarters"
 	req_access = list(access_heads)
@@ -1225,7 +1224,7 @@
 	area_flags = AREA_FLAG_EXTERNAL
 	has_gravity = FALSE
 	turf_initializer = /decl/turf_initializer/maintenance/space
-	req_access = list(access_external_airlocks, access_maint_tunnels)
+	req_access = list(list(access_external_airlocks, access_maint_tunnels))
 
 /area/bridge/ai
 	req_access = list(access_ai_upload)
@@ -1417,7 +1416,7 @@
 /area/engineering/foyer
 	name = "\improper Engineering Foyer"
 	icon_state = "engineering_foyer"
-	req_access = list()
+	req_access = null
 
 /area/engineering/locker_room
 	name = "\improper Engineering Locker Room"
@@ -1432,7 +1431,7 @@
 /area/engineering/storage
 	name = "\improper Engineering Storage"
 	icon_state = "engineering_storage"
-	req_access = list()
+	req_access = null
 
 /area/engineering/atmos
 	name = "\improper Atmospherics"
@@ -1461,6 +1460,9 @@
 
 /area/assembly/robotics/surgery
 	name = "\improper Robotics Operating Theatre"
+
+/area/rnd
+	req_access = list(access_research)
 
 /area/rnd/misc_lab
 	name = "\improper Miscellaneous Research"
