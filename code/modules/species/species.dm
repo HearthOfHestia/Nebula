@@ -1,6 +1,7 @@
 /*
 	Datum-based species. Should make for much cleaner and easier to maintain race code.
 */
+var/global/const/DEFAULT_SPECIES_HEALTH = 200
 
 /decl/species
 
@@ -53,7 +54,7 @@
 	var/list/speech_chance                    // The likelihood of a speech sound playing.
 
 	// Combat vars.
-	var/total_health = 200                   // Point at which the mob will enter crit.
+	var/total_health = DEFAULT_SPECIES_HEALTH  // Point at which the mob will enter crit.
 	var/list/unarmed_attacks = list(           // Possible unarmed attacks that the mob will use in combat,
 		/decl/natural_attack,
 		/decl/natural_attack/bite
@@ -348,18 +349,20 @@
 /decl/species/proc/create_organs(var/mob/living/carbon/human/H) //Handles creation of mob organs.
 
 	H.mob_size = mob_size
-	for(var/obj/item/organ/organ in H.contents)
-		if((organ in H.organs) || (organ in H.internal_organs))
-			qdel(organ)
 
-	if(H.organs)                  H.organs.Cut()
-	if(H.internal_organs)         H.internal_organs.Cut()
-	if(H.organs_by_name)          H.organs_by_name.Cut()
-	if(H.internal_organs_by_name) H.internal_organs_by_name.Cut()
+	// TODO: only qdel limbs that are in the wrong location
+	// or are not present in the mob bodyplan; currently
+	// set_species and rejuvenate just trash the entire organ
+	// list, which is really horrible.
 
-	H.organs = list()
-	H.internal_organs = list()
+	QDEL_LIST(H.organs)
+	if(!islist(H.organs))
+		H.organs = list()
 	H.organs_by_name = list()
+
+	QDEL_LIST(H.internal_organs)
+	if(!islist(H.internal_organs))
+		H.internal_organs = list()
 	H.internal_organs_by_name = list()
 
 	for(var/limb_type in has_limbs)

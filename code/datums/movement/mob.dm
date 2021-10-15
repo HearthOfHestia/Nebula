@@ -25,6 +25,7 @@
 /datum/movement_handler/mob/incorporeal/DoMove(var/direction)
 	. = MOVEMENT_HANDLED
 	direction = mob.AdjustMovementDirection(direction)
+	mob.set_glide_size(0)
 
 	var/turf/T = get_step(mob, direction)
 	if(!mob.MayEnterTurf(T))
@@ -98,7 +99,7 @@
 		if(direction & (direction - 1)) //moved diagonally successfully
 			delay *= sqrt(2)
 		next_move = world.time + delay
-		mob.glide_size = ADJUSTED_GLIDE_SIZE(delay)
+		mob.set_glide_size(delay)
 
 /datum/movement_handler/mob/delay/MayMove(var/mover, var/is_external)
 	if(IS_NOT_SELF(mover) && is_external)

@@ -15,6 +15,7 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 	stat = DEAD
 	status_flags = GODMODE
 	shift_to_open_context_menu = FALSE
+	glide_size = 0
 	var/ghost_image_flag = GHOST_IMAGE_DARKNESS
 	var/image/ghost_image = null //this mobs ghost image, for deleting and stuff
 
@@ -61,7 +62,7 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 /mob/observer/set_stat()
 	stat = DEAD // They are also always dead
 
-/mob/observer/touch_map_edge()
+/mob/observer/touch_map_edge(var/overmap_id = OVERMAP_ID_SPACE)
 	if(z in global.using_map.sealed_levels)
 		return
 
@@ -91,3 +92,6 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 
 /mob/observer/get_admin_job_string()
 	return "Ghost"
+
+/mob/observer/set_glide_size(var/delay)
+	glide_size = 0
