@@ -88,6 +88,8 @@
 		BP_EYES = /obj/item/organ/internal/eyes/lizard
 	)
 
+	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail)
+
 	appearance_descriptors = list(
 		/datum/appearance_descriptor/height = 1.25,
 		/datum/appearance_descriptor/build =  1.25
