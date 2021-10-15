@@ -18,7 +18,7 @@
 	maint_all_access = 1
 	if(radstorm)
 		priority_announcement.Announce("The maintenance access requirement has been revoked on all maintenance airlocks, and saferooms have been unbolted.", "Attention!")
-		using_map.unbolt_saferooms()
+		global.using_map.unbolt_saferooms()
 	else
 		priority_announcement.Announce("The maintenance access requirement has been revoked on all maintenance airlocks.", "Attention!")
 
@@ -26,6 +26,6 @@
 	maint_all_access = 0
 	if(radstorm)
 		priority_announcement.Announce("The maintenance access requirement has been readded on all maintenance airlocks, and saferooms have been bolted.", "Attention!")
-		using_map.bolt_saferooms()
+		global.using_map.bolt_saferooms()
 	else
 		priority_announcement.Announce("The maintenance access requirement has been readded on all maintenance airlocks.", "Attention!")

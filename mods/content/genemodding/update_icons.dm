@@ -25,8 +25,3 @@
 		global.tail_icon_cache[icon_key] = tail_icon
 
 	return tail_icon
-
-/decl/bodytype/get_tail(var/mob/living/carbon/human/H)
-	if(H.tail_style)
-		return TRUE // shitty hack
-	return ..()

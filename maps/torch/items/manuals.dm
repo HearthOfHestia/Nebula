@@ -76,7 +76,7 @@
 
 /obj/item/folder/envelope/captain/LateInitialize()
 	..()
-	var/obj/effect/overmap/visitable/torch = map_sectors["[z]"]
+	var/obj/effect/overmap/visitable/torch = global.overmap_sectors["[z]"]
 	var/memo = {"
 	<tt><center><b><font color='red'>SECRET - CODE WORDS: ENDEAVOUR</font></b>
 	<h3>INTERNATIONAL STELLAR EXPLORATION ORGANIZATION NATIONAL COUNCIL</h3>
@@ -93,7 +93,7 @@
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
-	<li>[using_map.system_name]</li>
+	<li>[global.using_map.system_name]</li>
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
 	<li>[generate_system_name()]</li>
@@ -134,13 +134,13 @@
 	These procedures can be initiated only by transmission from ISEO Expeditionary Command via secure channel. The sender may not introduce themselves, but you shouldn't have trouble confirming the transmission source, I believe.<br>
 	<br>
 	The following codewords will either be transmitted to your vessel, or be transmitted by your vessel to indicate a course of action taken.
-	You, Captain, may initiate some of these protocols in certain events. 
+	You, Captain, may initiate some of these protocols in certain events.
 
 	<li>HERA MOURNING: You may execute this protocol. In the event that the ISEO Endeavour faces destruction in a manner which allows transmission of this protocol, you are to enact this protocol. Transmit all scientific and navigation data along with final crew roster.</li>
 
 	<li>ICARUS DARKNESS: You may execute this protocol. In the event that the ISEO Endeavour is at risk of capture by hostile alien forces, you are to ensure the destruction of the FTL drive and all sensitive navigational data, up to and including scuttling the ship via self-destruct if required.</li>
 
-	<li>APOLLO WITHERING: You may execute this protocol. In the event that a xenolife outbreak of of any form - viral, bacteria, or fauna-derived - develops and can not be contained, this protocol is to be enacted. If feasible, evacuate the ship. Otherwise, set scuttling charges and transmit final crew roster. 
+	<li>APOLLO WITHERING: You may execute this protocol. In the event that a xenolife outbreak of of any form - viral, bacteria, or fauna-derived - develops and can not be contained, this protocol is to be enacted. If feasible, evacuate the ship. Otherwise, set scuttling charges and transmit final crew roster.
 
 	<li>HERMES EXPEDIENT: This protocol may only be enacted by Expeditionary Command. The ISEO Endeavour is to immediately recall all deployed personnel and immediately set course for Sol under full communications blackout. Minimize resupply stops and prevent any crew from leaving the vessel. On entering the Sol system, park in Pluto orbit. You will be contacted.</li>
 
