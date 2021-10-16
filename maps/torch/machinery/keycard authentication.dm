@@ -61,7 +61,7 @@
 			trigger_armed_response_team(1)
 			SSstatistics.add_field("alert_keycard_auth_ert",1)
 		if("Grant Nuclear Authorization Code")
-			var/obj/machinery/nuclearbomb/nuke = locate(/obj/machinery/nuclearbomb/station) in world
+			var/obj/machinery/nuclearbomb/nuke = locate(/obj/machinery/nuclearbomb/station) in SSmachines.machinery
 			if(nuke)
 				to_chat(usr, "The nuclear authorization code is [nuke.r_code]")
 			else
