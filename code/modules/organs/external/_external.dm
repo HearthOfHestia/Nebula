@@ -102,6 +102,8 @@
 
 /obj/item/organ/external/Initialize()
 	. = ..()
+	if(. == INITIALIZE_HINT_QDEL)
+		return
 	if(isnull(pain_disability_threshold))
 		pain_disability_threshold = (max_damage * 0.75)
 	if(owner)
@@ -939,10 +941,12 @@ Note that amputating the affected organ does in fact remove the infection from t
 		damaged_organ.update_damages()
 
 	spawn(1)
-		victim.updatehealth()
-		victim.UpdateDamageIcon()
-		victim.refresh_visible_overlays()
-		set_dir(SOUTH, TRUE)
+		if(!QDELETED(victim))
+			victim.updatehealth()
+			victim.UpdateDamageIcon()
+			victim.refresh_visible_overlays()
+		if(!QDELETED(src))
+			set_dir(SOUTH, TRUE)
 
 	switch(disintegrate)
 		if(DISMEMBER_METHOD_EDGE)
