@@ -73,8 +73,7 @@
 		var/new_tail_style = input(user, "Pick tails", "Character Preference", pref.tail_style) as null|anything in pretty_tail_styles
 		if(new_tail_style)
 			pref.tail_style = pretty_tail_styles[new_tail_style]
-
-		return TOPIC_REFRESH_UPDATE_PREVIEW
+			return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["tail_color"])
 		var/new_tailc = input(user, "Choose your character's tail colour:", "Character Preference",

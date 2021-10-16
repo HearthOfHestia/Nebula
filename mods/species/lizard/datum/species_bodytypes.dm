@@ -36,3 +36,4 @@
 /obj/item/organ/external/tail/lizard
 	tail_icon =              'mods/species/lizard/icons/tail.dmi'
 	tail =                   "sogtail"
+	tail_blend =             ICON_MULTIPLY

@@ -89,11 +89,6 @@
 	icon_state = "crossfox"
 	do_colouration = FALSE
 
-/decl/sprite_accessory/tail/beethorax
-	name = "bee thorax"
-	icon_state = "beethorax"
-	do_colouration = FALSE
-
 /decl/sprite_accessory/tail/doublekitsune
 	name = "double kitsune tail, colorable"
 	icon_state = "doublekitsune"
@@ -141,10 +136,6 @@
 	icon_state = "vulptail"
 	extra_overlay = "mark"
 
-/decl/sprite_accessory/tail/otietail
-	name = "otie tail (vwag)"
-	icon_state = "otie"
-
 /decl/sprite_accessory/tail/ztail
 	name = "jagged flufftail"
 	icon_state = "ztail"
@@ -172,14 +163,9 @@
 	icon_state = "deertail"
 	extra_overlay = "mark"
 
-/decl/sprite_accessory/tail/special/tajaran
-	name = "tajaran tail"
+/decl/sprite_accessory/tail/tajanim
+	name = "animated tajaran tail"
 	icon_state = "tajtail_loop1"
-
-/decl/sprite_accessory/tail/zenghu_taj
-	name = "Zeng-Hu Tajaran Synth tail"
-	icon_state = "zenghu_taj"
-	do_colouration = FALSE
 
 /decl/sprite_accessory/tail/tail_smooth
 	name = "Smooth Lizard Tail, Colorable"
@@ -229,28 +215,28 @@
 	icon_state = "easterntail"
 	extra_overlay = "tips"
 
-/decl/sprite_accessory/tail/m_tail_synthliz_BEHINDstatic
+/decl/sprite_accessory/tail/synthliz
 	name = "Synthetic lizard tail"
 	icon_state = "m_tail_synthliz_BEHIND"
 
-/decl/sprite_accessory/tail/m_tail_synthliz_BEHIND
+/decl/sprite_accessory/tail/synthliz_animated
 	name = "Synthetic lizard tail, animated"
-	icon_state = "m_tail_synthliz_BEHIND"
+	icon_state = "m_tailwag_synthliz_BEHIND"
 
-/decl/sprite_accessory/tail/Segmentedtail
-	name = "Segmented tail, animated"
+/decl/sprite_accessory/tail/segmentedtail
+	name = "Segmented tail"
 	icon_state = "segmentedtail"
 	extra_overlay = "marking"
 
-/decl/sprite_accessory/tail/Segmentedtail/synth
-	name = "Segmented tail, animated synth"
+/decl/sprite_accessory/tail/segmentedtail/synth
+	name = "Segmented tail, synth"
 	icon_state = "segmentedtail"
 	extra_overlay = "lights"
 
 /decl/sprite_accessory/tail/fox_tail_s
 	name = "Fox tail"
-	icon_state = "fox_tail_s"
+	icon_state = "fox_tail"
 
 /decl/sprite_accessory/tail/fennec_tail_s
 	name = "Fennec tail"
-	icon_state = "fennec_tail_s"
+	icon_state = "fennec_tail"

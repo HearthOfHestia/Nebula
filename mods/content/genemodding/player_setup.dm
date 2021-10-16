@@ -35,31 +35,45 @@
 	pref.tail_color =		pref.tail_color			|| COLOR_BLACK
 	pref.tail_color_extra =	pref.tail_color_extra	|| COLOR_BLACK
 	if(pref.ear_style)
-		pref.ear_style	= sanitize_inlist(pref.ear_style, global.ear_styles_list, initial(pref.ear_style))
+		pref.ear_style	= sanitize_inlist(pref.ear_style, global.ear_styles_list, null)
 	if(pref.tail_style)
-		pref.tail_style	= sanitize_inlist(pref.tail_style, global.tail_styles_list, initial(pref.tail_style))
+		pref.tail_style	= sanitize_inlist(pref.tail_style, global.tail_styles_list, null)
 
-/mob/living/carbon/human/proc/sync_tail_to_style(var/decl/sprite_accessory/tail/tail_style, var/tail_color, var/tail_color_extra = null)
-	if(!tail_style)
-		return
+/mob/living/carbon/human/proc/sync_tail_to_style(var/decl/sprite_accessory/tail/tail_style, var/tail_color, var/tail_color_extra)
 	var/obj/item/organ/external/tail/tail_organ = get_organ(BP_TAIL)
+	if(!tail_style)
+		if(!tail_organ)
+			return
+		qdel(tail_organ)
+		if(BP_TAIL in species?.has_limbs)
+			var/tail_type = species.has_limbs[BP_TAIL]
+			tail_organ = new tail_type(src)
+			tail_organ.owner = src
+		return
 	if(!tail_organ)
 		tail_organ = new(src)
 		tail_organ.owner = src
+		// everything with adding the tail organ will be handled in its Initialize
 	tail_organ.tail_icon = tail_style.icon
 	tail_organ.tail = tail_style.icon_state
 	if(tail_style.do_colouration)
-		tail_organ.color = tail_color
+		tail_organ.tail_colour = tail_color
 		tail_organ.tail_hair_colour = tail_color_extra
 		tail_organ.tail_blend = tail_style.blend
 		tail_organ.tail_hair_blend = tail_style.blend
+	else
+		tail_organ.tail_colour = null
+		tail_organ.tail_hair_colour = null
+		tail_organ.tail_blend = null
+		tail_organ.tail_hair_blend = null
 	if(tail_style.extra_overlay)
 		tail_organ.tail_hair = tail_style.extra_overlay
+	else
+		tail_organ.tail_hair = null
 
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 	. = ..() // must be after species and such are set
 	character.ear_style = global.ear_styles_list[ear_style]
 	character.ear_color = ear_color
 	character.ear_color_extra = ear_color_extra
-	character.sync_tail_to_style(tail_style, tail_color, tail_color_extra)
-	character.update_icon()
+	character.sync_tail_to_style(global.tail_styles_list[tail_style], tail_color, tail_color_extra)
