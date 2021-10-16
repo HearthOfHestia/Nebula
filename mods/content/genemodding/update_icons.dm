@@ -1,27 +1,21 @@
-/mob/living/carbon/human/get_tail_icon()
-	//If you don't have a custom tail selected
-	if(!tail_style)
-		return ..()
-
-	// If you do
-	var/icon_key
-	if(tail_style.do_colouration)
-		if(tail_style.extra_overlay)
-			icon_key = "\ref[tail_style][tail_color][tail_color_extra]"
-		else
-			icon_key = "\ref[tail_style][tail_color]"
-	else
-		icon_key = any2ref(tail_style)
-	var/icon/tail_icon = global.tail_icon_cache[icon_key]
+/mob/living/carbon/human/get_tail_icon(var/obj/item/organ/external/tail/tail_organ)
+	// No parent call. This is a replacement, not a side-override.
+	if(!istype(tail_organ))
+		return
+	var/icon_key = "[tail_organ.get_tail()][tail_organ.icon][tail_organ.get_tail_blend(src)][species.appearance_flags & HAS_SKIN_COLOR][skin_colour][tail_organ.get_tail_hair()][tail_organ.get_tail_hair_blend()][tail_organ.get_tail_hair_colour()]"
+	var/icon/tail_icon = tail_icon_cache[icon_key]
 	if(!tail_icon)
-		tail_icon = icon(tail_style.icon, tail_style.icon_state)
-		if(tail_style.do_colouration)
-			tail_icon.Blend(tail_color, tail_style.blend)
-		if(tail_style.extra_overlay)
-			var/icon/overlay = icon(tail_style.icon, tail_style.extra_overlay)
-			overlay.Blend(tail_color_extra, tail_style.blend)
-			tail_icon.Blend(overlay, ICON_OVERLAY)
-			qdel(overlay)
-		global.tail_icon_cache[icon_key] = tail_icon
+		//generate a new one
+		var/tail_anim = tail_organ.get_tail_animation() || tail_organ.get_tail_icon()
+		tail_icon = new/icon(tail_anim)
+		if(species.appearance_flags & HAS_SKIN_COLOR)
+			tail_icon.Blend(skin_colour, tail_organ.get_tail_blend(src))
+		// The following will not work with animated tails.
+		var/use_tail = tail_organ.get_tail_hair()
+		if(use_tail)
+			var/icon/hair_icon = icon(tail_organ.get_tail_icon(src), "[tail_organ.get_tail()]_[use_tail]")
+			hair_icon.Blend(tail_organ.get_tail_hair_colour(), tail_organ.get_tail_hair_blend())
+			tail_icon.Blend(hair_icon, ICON_OVERLAY)
+		tail_icon_cache[icon_key] = tail_icon
 
 	return tail_icon

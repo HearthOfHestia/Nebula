@@ -39,11 +39,27 @@
 	if(pref.tail_style)
 		pref.tail_style	= sanitize_inlist(pref.tail_style, global.tail_styles_list, initial(pref.tail_style))
 
+/mob/living/carbon/human/proc/sync_tail_to_style(var/decl/sprite_accessory/tail/tail_style, var/tail_color, var/tail_color_extra = null)
+	if(!tail_style)
+		return
+	var/obj/item/organ/external/tail/tail_organ = get_organ(BP_TAIL)
+	if(!tail_organ)
+		tail_organ = new(src)
+		tail_organ.owner = src
+	tail_organ.tail_icon = tail_style.icon
+	tail_organ.tail = tail_style.icon_state
+	if(tail_style.do_colouration)
+		tail_organ.color = tail_color
+		tail_organ.tail_hair_colour = tail_color_extra
+		tail_organ.tail_blend = tail_style.blend
+		tail_organ.tail_hair_blend = tail_style.blend
+	if(tail_style.extra_overlay)
+		tail_organ.tail_hair = tail_style.extra_overlay
+
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
-	..()
-	character.ear_style		= global.ear_styles_list[ear_style]
-	character.ear_color		= ear_color
-	character.ear_color_extra	= ear_color_extra
-	character.tail_style		= global.tail_styles_list[tail_style]
-	character.tail_color		= tail_color
-	character.tail_color_extra	= tail_color_extra
+	. = ..() // must be after species and such are set
+	character.ear_style = global.ear_styles_list[ear_style]
+	character.ear_color = ear_color
+	character.ear_color_extra = ear_color_extra
+	character.sync_tail_to_style(tail_style, tail_color, tail_color_extra)
+	character.update_icon()
