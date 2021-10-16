@@ -45,10 +45,12 @@
 		if(!tail_organ)
 			return
 		qdel(tail_organ)
-		if(BP_TAIL in species?.has_limbs)
-			var/tail_type = species.has_limbs[BP_TAIL]
-			tail_organ = new tail_type(src)
-			tail_organ.owner = src
+		var/list/tail_data = LAZYACCESS(species?.has_limbs, BP_TAIL)
+		var/tail_path = LAZYACCESS(tail_data, "path")
+		if(!tail_path)
+			return
+		tail_organ = new tail_path(src)
+		tail_organ.owner = src
 		return
 	if(!tail_organ)
 		tail_organ = new(src)
