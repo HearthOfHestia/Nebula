@@ -127,7 +127,7 @@
 		var/datum/extension/assembly/modular_computer/assembly
 		if(fabricate)
 			fabricated_tablet = new(src)
-			assembly = get_extension(fabricated_laptop, /datum/extension/assembly)
+			assembly = get_extension(fabricated_tablet, /datum/extension/assembly)
 			assembly.add_replace_component(null, PART_CPU, new/obj/item/stock_parts/computer/processor_unit/small(fabricated_tablet))
 		total_price = 199
 		switch(dev_battery)
