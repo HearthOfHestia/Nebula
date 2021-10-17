@@ -31,7 +31,7 @@
 						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
 						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/crew, /datum/job/assistant,
-						/datum/job/merchant, /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research,
+						/*/datum/job/merchant,*/ /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research,
 						/datum/job/ai/shard/command, /datum/job/ai/shard/engineering
 						)
 
