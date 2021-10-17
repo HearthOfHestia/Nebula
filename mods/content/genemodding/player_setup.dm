@@ -34,12 +34,12 @@
 
 /datum/category_item/player_setup_item/physical/cosmetics/save_character(datum/pref_record_writer/W)
 	var/decl/sprite_accessory/ears/ear = GET_DECL(pref.ear_style)
-	W.write("ear_style_name", ear.name)
+	W.write("ear_style_name", ear?.name)
 	W.write("ear_style", pref.ear_style)
 	W.write("ear_color", pref.ear_color)
 	W.write("ear_color_extra", pref.ear_color_extra)
 	var/decl/sprite_accessory/tail/tail = GET_DECL(pref.tail_style)
-	W.write("tail_style_name", tail.name)
+	W.write("tail_style_name", tail?.name)
 	W.write("tail_color", pref.tail_color)
 	W.write("tail_color_extra", pref.tail_color_extra)
 
