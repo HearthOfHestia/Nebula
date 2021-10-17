@@ -34,10 +34,10 @@
 	pref.ear_color_extra =	pref.ear_color_extra	|| COLOR_BLACK
 	pref.tail_color =		pref.tail_color			|| COLOR_BLACK
 	pref.tail_color_extra =	pref.tail_color_extra	|| COLOR_BLACK
-	if(pref.ear_style)
-		pref.ear_style	= sanitize_inlist(pref.ear_style, decls_repository.get_decls_of_subtype(/decl/sprite_accessory/ears), null)
-	if(pref.tail_style)
-		pref.tail_style	= sanitize_inlist(pref.tail_style, decls_repository.get_decls_of_subtype(/decl/sprite_accessory/tail), null)
+	if(!ispath(pref.ear_style))
+		pref.ear_style	= null
+	if(!ispath(pref.tail_style))
+		pref.tail_style	= null
 
 /mob/living/carbon/human/proc/sync_tail_to_style(var/decl/sprite_accessory/tail/tail_style, var/tail_color, var/tail_color_extra)
 	var/obj/item/organ/external/tail/tail_organ = get_organ(BP_TAIL)
