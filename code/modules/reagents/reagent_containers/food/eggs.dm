@@ -13,8 +13,8 @@
 	nutriment_type = /decl/material/liquid/nutriment/protein/egg
 
 /obj/item/chems/food/egg/afterattack(obj/O, mob/user, proximity)
-	// Don't crack eggs into appliances if you're on help intent.
-	if(istype(O,/obj/machinery/microwave))
+	// Don't crack eggs into appliances/cooking containers if you're on help intent.
+	if((user.a_intent == I_HELP) && (istype(O,/obj/machinery/microwave) || istype(O,/obj/item/chems/cooking_container)))
 		return ..()
 	if(!(proximity && ATOM_IS_OPEN_CONTAINER(O))) // Must be adjacent and open.
 		return

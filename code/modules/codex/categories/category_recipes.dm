@@ -54,14 +54,14 @@
 		var/list/reactant_values = list()
 		for(var/reactant_id in food.required_reagents)
 			var/decl/material/reactant = reactant_id
-			reactant_values += "[food.required_reagents[reactant_id]]u [lowertext(initial(reactant.name))]"
+			reactant_values += "[food.required_reagents[reactant_id]]u <l>[lowertext(initial(reactant.name))]</l>"
 		mechanics_text += " [jointext(reactant_values, " + ")]"
 		var/list/catalysts = list()
 		for(var/catalyst_id in food.catalysts)
 			var/decl/material/catalyst = catalyst_id
-			catalysts += "[food.catalysts[catalyst_id]]u [lowertext(initial(catalyst.name))]"
+			catalysts += "[food.catalysts[catalyst_id]]u <l>[lowertext(initial(catalyst.name))]</l>"
 		if(catalysts.len)
-			mechanics_text += " [jointext(reactant_values, " + ")] (catalysts: [jointext(catalysts, ", ")])]"
+			mechanics_text += " (catalysts: [jointext(catalysts, ", ")])]"
 		if(food.maximum_temperature != INFINITY)
 			mechanics_text += "<br>The recipe will not succeed if the temperature is above [food.maximum_temperature]K."
 		if(food.minimum_temperature > 0)
@@ -89,17 +89,16 @@
 		var/list/ingredients = list()
 		for(var/thing in recipe.reagents)
 			var/decl/material/thing_reagent = thing
-			ingredients += "<span codexlink='[initial(thing_reagent.name)]'>[recipe.reagents[thing]]u [initial(thing_reagent.name)]</span>"
+			ingredients += "[recipe.reagents[thing]]u <l>[initial(thing_reagent.name)]</l>"
 		for(var/thing in recipe.items)
 			var/atom/thing_atom = thing
 			var/count = recipe.items[thing]
-			var/desc_str = (count > 1) ? "[count]x [initial(thing_atom.name)]" : "\a [initial(thing_atom.name)]"
-			ingredients += "<span codexlink='[initial(thing_atom.name)]'>[desc_str]</span>"
+			ingredients += (count > 1) ? "[count]x <l>[initial(thing_atom.name)]</l>" : "\a <l>[initial(thing_atom.name)]</l>"
 		for(var/thing in recipe.fruit)
 			ingredients += "[recipe.fruit[thing]] [thing]\s"
 		if(recipe.coating)
 			var/decl/material/coating = recipe.coating
-			ingredients += "<span codexlink='[initial(coating.name)]'>\a [initial(coating.name)]</span> coating"
+			ingredients += "\a <l>[initial(coating.name)]</l> coating"
 		mechanics_text += "<ul><li>[jointext(ingredients, "</li><li>")]</li></ul>"
 		var/atom/recipe_product = recipe.result
 		var/plural = recipe.result_quantity > 1
@@ -109,7 +108,7 @@
 
 		entries_to_register += new /datum/codex_entry(             \
 		 _display_name =       "[recipe_name] (recipe)", \
-		 _associated_strings = list(lowertext(recipe_name)) + recipe.get_appliance_names(),       \
+		 _associated_strings = list(lowertext(recipe_name)),       \
 		 _lore_text =          recipe.lore_text || initial(recipe_product.desc),                          \
 		 _mechanics_text =     mechanics_text,                     \
 		 _antag_text =         recipe.antag_text                   \
@@ -117,6 +116,8 @@
 
 	for(var/datum/codex_entry/entry in entries_to_register)
 		SScodex.add_entry_by_string(entry.name, entry)
+		for(var/str in entry.associated_strings)
+			SScodex.add_entry_by_string(str, entry)
 		items |= entry.name
 
 	. = ..()

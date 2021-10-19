@@ -6,6 +6,11 @@
 	blend = ICON_MULTIPLY
 	flags = VERY_SHORT
 
+/decl/sprite_accessory/hair/lizard/bald
+	name = "Unathi Bald"
+	icon = 'icons/mob/human_races/species/human/hair.dmi'
+	icon_state = "bald"
+
 /decl/sprite_accessory/hair/lizard/fin_hawk
 	name = "Unathi Hawk Fin"
 	icon_state = "fin_hawk"

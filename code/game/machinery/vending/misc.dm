@@ -33,6 +33,8 @@
 		/obj/item/chems/cooking_container/pot = 4,
 		/obj/item/chems/cooking_container/saucepan = 4,
 		/obj/item/chems/cooking_container/skillet = 4,
+		/obj/item/kitchen/utensil/fork = 4,
+		/obj/item/kitchen/utensil/spoon = 4,
 		/obj/item/chems/glass/beaker/measuringcup = 4,
 		/obj/item/storage/tray/metal/aluminium = 8,
 		/obj/item/knife/kitchen = 3,

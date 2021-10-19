@@ -300,7 +300,6 @@
 	name = "serving bowl"
 	shortname = "bowl"
 	desc = "A bowl. You bowl foods... wait, what?"
-	icon = 'icons/obj/kitchen.dmi'
 	icon_state = "mixingbowl"
 	center_of_mass = @"{'x':17,'y':7}"
 	max_space = 30
