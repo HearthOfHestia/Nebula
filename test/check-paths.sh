@@ -32,10 +32,11 @@ exactly 2 "/mob text paths" '"/mob'
 exactly 6 "/obj text paths" '"/obj'
 exactly 8 "/turf text paths" '"/turf'
 exactly 1 "world<< uses" 'world<<|world[[:space:]]<<'
+exactly 122 "'in world' uses" 'in world'
 exactly 1 "world.log<< uses" 'world.log<<|world.log[[:space:]]<<'
 exactly 118 "<< uses" '(?<!<)<<(?!<)' -P
 exactly 0 "incorrect indentations" '^( {4,})' -P
-exactly 19 "text2path uses" 'text2path'
+exactly 20 "text2path uses" 'text2path'
 exactly 4 "update_icon() override" '/update_icon\((.*)\)'  -P
 exactly 1 "goto uses" 'goto '
 exactly 6 "atom/New uses" '^/(obj|atom|area|mob|turf).*/New\('

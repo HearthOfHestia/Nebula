@@ -11,9 +11,6 @@
 	limb_icon_intensity =    0.7
 	health_hud_intensity =   2
 	associated_gender =      FEMALE
-	tail_icon =              'mods/species/lizard/icons/tail.dmi'
-	tail =                   "sogtail"
-	tail_blend =             ICON_MULTIPLY
 	uniform_state_modifier = "_f"
 	limb_blend =             ICON_MULTIPLY
 
@@ -35,3 +32,8 @@
 	icon_deformed =          'mods/species/lizard/icons/deformed_body_male.dmi'
 	associated_gender =      MALE
 	uniform_state_modifier = null
+
+/obj/item/organ/external/tail/lizard
+	tail_icon =              'mods/species/lizard/icons/tail.dmi'
+	tail =                   "sogtail"
+	tail_blend =             ICON_MULTIPLY

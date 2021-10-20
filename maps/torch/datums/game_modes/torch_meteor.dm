@@ -10,13 +10,13 @@
 
 /datum/game_mode/meteor/post_setup()
 	..()
-	alert_title = "[using_map.full_name] Short Range Sensors"
-	alert_text = "[using_map.full_name] is on a collision course with an ultradense asteroid field. Estimated time until impact is: [meteor_grace_period / 1200] MINUTES. Emegency random jump procedure initiated."
+	alert_title = "[global.using_map.full_name] Short Range Sensors"
+	alert_text = "[global.using_map.full_name] is on a collision course with an ultradense asteroid field. Estimated time until impact is: [meteor_grace_period / 1200] MINUTES. Emegency random jump procedure initiated."
 	start_text = "Asteroid field imminent. All hands brace for multiple impacts. May %DEITY_NAME% be with you."
 
-	using_map.shuttle_called_message = "Attention all hands: Emergency Superluminal Drive spool up initiated. It will be ready for jump in %ETA%."
-	using_map.shuttle_docked_message = "Attention all hands: Superluminal Drive spooled up. Emergency bluespace jump in %ETD%."
-	using_map.shuttle_leaving_dock = "Attention all hands: Emergency superluminal jump initiated, emerging in %ETA%."
+	global.using_map.shuttle_called_message = "Attention all hands: Emergency Superluminal Drive spool up initiated. It will be ready for jump in %ETA%."
+	global.using_map.shuttle_docked_message = "Attention all hands: Superluminal Drive spooled up. Emergency bluespace jump in %ETD%."
+	global.using_map.shuttle_leaving_dock = "Attention all hands: Emergency superluminal jump initiated, emerging in %ETA%."
 
 /datum/game_mode/meteor/on_meteor_warn()
 	..()
@@ -26,26 +26,26 @@
 /datum/game_mode/meteor/declare_completion()
 	var/eng_status = 0
 	for(var/obj/machinery/atmospherics/unary/engine/E in SSmachines.machinery)
-		if((get_z(E) in using_map.station_levels) && !(E.stat & BROKEN))
+		if((get_z(E) in global.using_map.station_levels) && !(E.stat & BROKEN))
 			eng_status++
 	var/nav_status = FALSE
 	for(var/obj/machinery/computer/ship/helm/H in SSmachines.machinery)
-		if((get_z(H) in using_map.station_levels) && !(H.stat & BROKEN))
+		if((get_z(H) in global.using_map.station_levels) && !(H.stat & BROKEN))
 			nav_status = TRUE
 	var/bsd_status = FALSE
 	for(var/obj/machinery/ftl_shunt/core/C in SSmachines.machinery)
-		if((get_z(C) in using_map.station_levels) && !(C.stat & (BROKEN|NOPOWER)))
+		if((get_z(C) in global.using_map.station_levels) && !(C.stat & (BROKEN|NOPOWER)))
 			nav_status = TRUE
 
 	to_world("<h3>Damage report</h3>")
 	if(eng_status)
 		to_world("<span class='good'>At least [eng_status] thrusters remained operational.</span>")
 	else
-		to_world("<span class='bad'>All propulsion was lost, leaving \the [using_map.full_name] drifting.</span>")
+		to_world("<span class='bad'>All propulsion was lost, leaving \the [global.using_map.full_name] drifting.</span>")
 	if(nav_status)
 		to_world("<span class='good'>Navigation and helm remained operational.</span>")
 	else
-		to_world("<span class='bad'>The navigation systems were lost on [using_map.full_name].</span>")
+		to_world("<span class='bad'>The navigation systems were lost on [global.using_map.full_name].</span>")
 	if(bsd_status)
 		to_world("<span class='good'>The Superluminal drive stayed powered.</span>")
 	else
