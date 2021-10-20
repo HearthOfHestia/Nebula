@@ -145,6 +145,7 @@
 	var/obj/item/chems/beaker
 	var/iv_attached = 0
 	var/iv_stand = TRUE
+	atom_flags = ATOM_FLAG_WHEELED
 
 /obj/structure/bed/roller/on_update_icon()
 	overlays.Cut()

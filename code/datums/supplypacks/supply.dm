@@ -57,6 +57,12 @@
 	contains = list (/obj/item/storage/box/water = 2)
 	containername = "bottled water crate"
 
+/decl/hierarchy/supply_pack/supply/hand_truck
+	name = "Hand Truck"
+	contains = list(/obj/structure/hand_cart)
+	containertype = /obj/structure/largecrate
+	containername = "Hand Truck crate"
+
 /decl/hierarchy/supply_pack/supply/sodas
 	num_contained = 2
 	contains = list(/obj/item/storage/box/cola,
