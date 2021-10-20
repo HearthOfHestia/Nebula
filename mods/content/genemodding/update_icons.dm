@@ -15,7 +15,8 @@
 		var/use_tail = tail_organ.get_tail_hair()
 		if(use_tail)
 			var/icon/hair_icon = icon(tail_organ.get_tail_icon(), "[tail_organ.get_tail()]_[use_tail]")
-			hair_icon.Blend(tail_organ.get_tail_hair_colour(), tail_organ.get_tail_hair_blend())
+			if(tail_organ.get_tail_hair_colour())
+				hair_icon.Blend(tail_organ.get_tail_hair_colour(), tail_organ.get_tail_hair_blend())
 			tail_icon.Blend(hair_icon, ICON_OVERLAY)
 		tail_icon_cache[icon_key] = tail_icon
 
