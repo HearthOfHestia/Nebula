@@ -111,4 +111,4 @@
 		both the psionic skillsets of their progenitors. However, Ue-katish are unique in that they can also be hatched without any Psionic potential at all, \
 		which often forces them to leave their home-system in search of a more tolerant colony, the Directorate, Humanity or an Ue-Katish pirate flotilla."
 
-	economic_power = 0.6
+	economic_power = 0.8

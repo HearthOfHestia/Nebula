@@ -13,34 +13,33 @@
 /decl/cultural_info/faction/skrell/yiitalana
 	name = "Yii'talana"
 	description = "An SDTF from the far side of skrell territory, deep into what is, to humanity, uncharted space. Yii'talana is the SDTF for the \
-	Ri'Qora system. Heavily funded and well equipped, Yii'Talana has a number of mutual assistance and cooperation agreements with a large number of \
+	Ri'Qora system, although they also have a base of operations on the other side of skrell territory, in Harr'Kelm. Heavily funded and well equipped, Yii'Talana has a number of mutual assistance and cooperation agreements with a large number of \
 	frontier colony SDTF's, or functions as an intermediary SDTF for systems where a presence has yet to be established. The Skrell of Yii'Talana \
 	are some of the more experienced on the far skrellian frontier."
 
-/decl/cultural_info/faction/skrell/krrigli ///HEY LISTEN, THIS MENTIONS THE EXO AND WILL NEED RECTIFYING
+/decl/cultural_info/faction/skrell/krrigli
 	name = "Krri'gli"
-	description = "Krri'gli is a Skrell aerospace manufacturing and research corporation from the city-state of Tibrivuu in the Go'kal system,\
-	and one of the more well known Skrell corporations in human space as a result of its contribution to the ISEO Endeavour Project.\
-	Krri'gli is mostly concerned with the design and construction of bluespace drives, and is one of the largest providers in the human side \
-	of Skrell space. Their participation in the Torch project is their first human venture, and has resulted in their sending science staff \
-	as a part of the Expeditionary Corps Organization to provide expertise and gather mission data firsthand."
+	description = "Krri'gli is a skrell aerospace manufacturing and research corporation with its headquarters in Qerr'Vallis, despite initially being from the city-state of Tibrivuu in the Go'kal system. \
+	It is one of the more well known skrell corporations in human space as a result of its accepetance of corporate personnel exchange and contractor work.\
+	Krri'gli is mostly concerned with the design and construction of psionic faster-than-light drives, and is one of the largest providers \
+	of it Skrell space. Krri'gli also builds a number of orbital installations and vessels, which are said to be the safest in skrell space."
 	additional_langs = list(/decl/language/human/common)
 	economic_power = 1.5
-	subversive_potential = 60
+	subversive_potential = 20
 
 /decl/cultural_info/faction/skrell/qonprri
 	name = "Qon'prri"
-	description = "Qon'prri is, officially an independent security services corporation that operates in the Harr'Kelm system, providing private \
-	security services to a variety of Skrell vessels, traders and organisations, and, more recently, human corporations. Unofficially, it is rumoured that \
-	Qonn'prri is a for-profit offshoot of Qala'oa tasked with information gathering in human space and along the frontier.So far such claims have been \
+	description = "Qon'prri is, officially an independent security services corporation that operates in the Qoa'lo system, providing private \
+	security services to a variety of Skrell vessels, traders, organisations and, more recently, certain human corporations. Unofficially, it is rumoured that \
+	Qonn'prri is a for-profit offshoot of Qala'oa tasked with information gathering in human space and along the frontier. So far such claims have been \
 	unfounded, and Qonn'prri is known for offering a professional, reliable and able service to Humans and Skrell alike."
 	additional_langs = list(/decl/language/human/common)
 	economic_power = 1.4
-	subversive_potential = 60
+	subversive_potential = 40
 
 /decl/cultural_info/faction/skrell/kalimak
 	name = "Kali'mak"
-	description = "An SDTF that predates the first Ascent encounters. Financed partially by Qerr’Vallis along with numerous neighboring systems, Kali’Mak is \
-	one of the most experienced SDTFs in all Ascent-related incursions, although their task has been mostly one of deterrence since the Ascent-Skrell ceasefire. \
-	The Kali’Mak acts as a “Reserve” strike force when the border patrols of other SDTFs identify Ascent threats, and as a result, many of their members enter exchange programs with other SDTFs. \
+	description = "Kali'mak is a SDTF that predates the first Ascent encounters. Financed partially by Qerr’Vallis along with numerous neighboring systems, Kali’Mak is \
+	one of the most experienced SDTFs in all of the empire, even though their task has been mostly one of deterrence since the Ascent-Skrell ceasefire. \
+	The Kali’Mak acts as a “Reserve”, quick strike force when the border patrols of other SDTFs identify Kharmanii threats, and as a result, many of their members enter exchange programs with other SDTFs. \
 	They are based on the system of Kale’ta’q*, where the old capital of Gilkrol’Qarr exists."
