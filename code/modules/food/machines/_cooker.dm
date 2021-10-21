@@ -176,9 +176,9 @@
 			return TRUE
 		for(var/datum/cooking_item/CI in cooking_objs)
 			QUEUE_TEMPERATURE_ATOMS(CI.container)
+	if(use_power != POWER_USE_OFF && temperature < set_temp) // don't cool down if we're active
+		return TRUE
 	. = ..()
-	if(use_power == POWER_USE_ACTIVE)
-		return TRUE // Don't stop processing if we're actively heating
 
 //Cookers do differently, they use containers
 /obj/machinery/appliance/cooker/has_space(var/obj/item/I)

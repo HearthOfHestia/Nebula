@@ -320,6 +320,9 @@ var/global/list/time_prefs_fixed = list()
 
 /datum/preferences/proc/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 
+	if(!player_setup)
+		return // WHY IS THIS EVEN HAPPENING.
+
 	// Sanitizing rather than saving as someone might still be editing when copy_to occurs.
 	player_setup.sanitize_setup()
 	character.personal_aspects = list()
@@ -378,7 +381,7 @@ var/global/list/time_prefs_fixed = list()
 
 	for(var/N in character.organs_by_name)
 		var/obj/item/organ/external/O = character.organs_by_name[N]
-		O.markings.Cut()
+		LAZYCLEARLIST(O.markings)
 
 	for(var/M in body_markings)
 		var/decl/sprite_accessory/marking/mark_datum = GET_DECL(M)
@@ -387,7 +390,7 @@ var/global/list/time_prefs_fixed = list()
 		for(var/BP in mark_datum.body_parts)
 			var/obj/item/organ/external/O = character.organs_by_name[BP]
 			if(O)
-				O.markings[M] = mark_color
+				LAZYSET(O.markings, M, mark_color)
 
 	if(LAZYLEN(appearance_descriptors))
 		character.appearance_descriptors = appearance_descriptors.Copy()

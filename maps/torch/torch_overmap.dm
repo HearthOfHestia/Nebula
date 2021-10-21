@@ -1,3 +1,8 @@
+/datum/overmap/torch
+	event_areas = 34
+	map_size_x = 35
+	map_size_y = 35
+
 /obj/effect/overmap/visitable/ship/torch
 	name = "ISEO Endeavour"
 	desc = "A converted ex-military ship broadcasting the codes, \"ISEO Endeavour, HSC-4-13-X\"."
@@ -136,7 +141,7 @@
 	. = ..()
 
 	var/obj/effect/overmap/visitable/sector/residue/R = new()
-	R.forceMove(locate(src.x, src.y, using_map.overmap_z))
+	R.forceMove(locate(src.x, src.y, global.using_map.overmap_z))
 
 	for(var/obj/machinery/computer/ship/helm/H in SSmachines.machinery)
 		H.add_known_sector(R)

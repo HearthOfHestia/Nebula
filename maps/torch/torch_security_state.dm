@@ -44,7 +44,7 @@
 					V.unlock()
 				V.open()
 				V.lock()
-	
+
 
 
 /decl/security_level/default/torchdept/code_green
@@ -120,11 +120,11 @@
 /decl/security_level/default/torchdept/code_blue/switching_up_to()
 	. = ..()
 	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/unlock_armory, list(/area/security/armoury/blue))
-	
+
 /decl/security_level/default/torchdept/code_blue/switching_down_from()
 	. = ..()
 	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury/blue))
-	
+
 /decl/security_level/default/torchdept/code_red
 	name = "code red"
 	icon = 'icons/misc/security_state.dmi'
@@ -145,7 +145,7 @@
 /decl/security_level/default/torchdept/code_red/switching_up_to()
 	security_announcement_red.Announce(up_description, "Attention! Code red alert procedures now in effect!")
 	notify_station()
-	using_map.unbolt_saferooms()
+	global.using_map.unbolt_saferooms()
 	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/unlock_armory, list(/area/security/armoury, /area/security/armoury/blue))
 
 /decl/security_level/default/torchdept/code_red/switching_down_from()
@@ -159,7 +159,7 @@
 /decl/security_level/default/torchdept/code_delta
 	name = "code delta"
 	icon = 'icons/misc/security_state.dmi'
-	
+
 	light_power = 1
 	light_range = 3
 	light_color_alarm = COLOR_RED

@@ -29,12 +29,3 @@
 
 /decl/bodytype/proc/get_base_icon(var/mob/living/carbon/human/H, var/get_deform)
 	return get_deform ? icon_deformed : icon_base
-
-/decl/bodytype/proc/get_tail(var/mob/living/carbon/human/H)
-	return tail
-
-/decl/bodytype/proc/get_tail_animation(var/mob/living/carbon/human/H)
-	return tail_animation
-
-/decl/bodytype/proc/get_tail_hair(var/mob/living/carbon/human/H)
-	return tail_hair

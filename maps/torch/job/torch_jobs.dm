@@ -1,25 +1,19 @@
 /datum/map/torch
-/*
+	#define AI_SHARD_JOBS /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research, /datum/job/ai/shard/command, /datum/job/ai/shard/engineering
+	/* // TODO: decide on whether or not national council representatives can be aliens
+	job_to_species_whitelist = list(
+		/datum/job/representative = list(
+			/decl/species/human
+		)
+	)
+	*/
+
 	species_to_job_whitelist = list(
-		/datum/species/adherent = list(/datum/job/ai, /datum/job/cyborg, /datum/job/assistant, /datum/job/janitor, /datum/job/chef, /datum/job/bartender, /datum/job/cargo_tech,
-										/datum/job/engineer, /datum/job/roboticist, /datum/job/chemist, /datum/job/scientist_assistant, /datum/job/scientist, /datum/job/nt_pilot,
-										/datum/job/mining),
-		/datum/species/nabber = list(/datum/job/ai, /datum/job/cyborg, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/chemist,
-									 /datum/job/roboticist, /datum/job/cargo_tech, /datum/job/chef, /datum/job/engineer, /datum/job/doctor, /datum/job/bartender),
-		/datum/species/vox = list(/datum/job/ai, /datum/job/cyborg),
-		/datum/species/human/mule = list(/datum/job/ai, /datum/job/cyborg, /datum/job/merchant)
+		/decl/species/vox = list(
+			AI_SHARD_JOBS
+		)
 	)
 
-#define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/representative, /datum/job/sea, /datum/job/pathfinder, /datum/job/rd
-	species_to_job_blacklist = list(
-		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden), //Other jobs unavailable via branch restrictions,
-		/datum/species/unathi/yeosa = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden),
-		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
-		/datum/species/machine = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/psychiatrist),
-		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/bodyguard, /datum/job/liaison, /datum/job/warden, /datum/job/doctor, /datum/job/medical_trainee),	//Other jobs unavailable via branch restrictions,
-	)
-#undef HUMAN_ONLY_JOBS
-*/
 	allowed_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos,
 						/datum/job/liaison, /datum/job/bodyguard, /datum/job/representative, /datum/job/sea,
 						/datum/job/bridgeofficer, /datum/job/pathfinder, /datum/job/nt_pilot, /datum/job/explorer,
@@ -31,8 +25,7 @@
 						/datum/job/janitor, /datum/job/chef, /datum/job/bartender,
 						/datum/job/senior_scientist, /datum/job/scientist, /datum/job/scientist_assistant,
 						/datum/job/crew, /datum/job/assistant,
-						/datum/job/merchant, /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research,
-						/datum/job/ai/shard/command, /datum/job/ai/shard/engineering
+						/*/datum/job/merchant,*/ AI_SHARD_JOBS
 						)
 
 	access_modify_region = list(
@@ -46,30 +39,4 @@
 		ACCESS_REGION_NT = list(access_change_ids)
 	)
 
-/*
-/datum/map/torch/setup_job_lists()
-	for(var/job_type in allowed_jobs)
-		var/datum/job/job = SSjobs.get_by_path(job_type)
-		// Most species are restricted from SCG security and command roles
-		if(job && (job.department_flag & COM) && job.allowed_branches.len && !(/datum/mil_branch/civilian in job.allowed_branches))
-			for(var/species_name in list(SPECIES_IPC, SPECIES_SKRELL, SPECIES_UNATHI))
-				var/datum/species/S = all_species[species_name]
-				var/species_blacklist = species_to_job_blacklist[S.type]
-				if(!species_blacklist)
-					species_blacklist = list()
-					species_to_job_blacklist[S.type] = species_blacklist
-				species_blacklist |= job.type
-*/
-
-// Some jobs for nabber grades defined here due to map-specific job datums.
-/*
-
-/datum/job
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
-	required_language = LANGUAGE_HUMAN_EURO
-*/
+#undef AI_SHARD_JOBS

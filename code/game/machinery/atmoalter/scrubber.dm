@@ -18,6 +18,8 @@
 	var/maxrate = 10 * ONE_ATMOSPHERE
 
 	var/list/scrubbing_gas
+	atom_flags = ATOM_FLAG_WHEELED
+
 
 /obj/machinery/portable_atmospherics/powered/scrubber/Initialize()
 	. = ..()

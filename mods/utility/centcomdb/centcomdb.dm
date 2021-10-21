@@ -15,7 +15,8 @@
 		log_debug("byhttp error: [result["error"]] ([result["error_code"]])")
 		return "[result["error_code"]]"
 	if(!length(result["body"]))
-		body += "<center><b>0 bans detected for [mkey]</b></center>"
+		body += "<center><b>0 bans detected for [mkey]</b></center><br>"
+		return body
 	bans = json_decode(result["body"])
 	body += "<center><b>[bans.len] ban\s detected for [mkey]</b></center>"
 	for(var/ban in bans)
@@ -24,7 +25,7 @@
 		body += "<b>Type: </b> [sanitize_text(ban["type"])]<br>"
 		body += "<b>Banned By: </b> [sanitize_text(ban["bannedBy"])]<br>"
 		body += "<b>Reason: </b> [sanitize_text(ban["reason"])]<br>"
-		body += "<b>bodyetime: </b> [sanitize_text(ban["bannedOn"])]<br>"
+		body += "<b>Banned On: </b> [sanitize_text(ban["bannedOn"])]<br>"
 		var/expiration = ban["expires"]
 		body += "<b>Expires: </b> [expiration ? "[sanitize_text(expiration)]" : "Permanent"]<br>"
 		if(ban["type"] == "job")

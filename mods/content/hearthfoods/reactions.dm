@@ -1,4 +1,4 @@
-/datum/chemical_reaction/recipe/food/butter
+/decl/chemical_reaction/recipe/food/butter
 	name = "Butter"
 	result = null
 	mix_message = "The solution thickens and curdles into a rich yellow substance."
@@ -7,7 +7,7 @@
 	required_reagents = list(/decl/material/liquid/drink/milk/cream = 20, /decl/material/solid/sodiumchloride = 1)
 	result_amount = 1
 
-/datum/chemical_reaction/recipe/food/butter/on_reaction(var/datum/reagents/holder, var/created_volume)
+/decl/chemical_reaction/recipe/food/butter/on_reaction(var/datum/reagents/holder, var/created_volume)
 	var/location = holder.my_atom.loc
 	if(!location)
 		return
