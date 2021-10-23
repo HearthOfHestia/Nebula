@@ -1,4 +1,5 @@
 //LANGUAGES START
+/decl/language/generic/abstract_type = /decl/language/generic
 /decl/language/generic/standard
 	name = "Galactic Trade Standard"
 	desc = "Galactic Trade Standard is the working language of the larger galaxy - consisting of sounds that most species can produce. The language is periodically updated as new species are introduced to the galactic community."
@@ -30,5 +31,5 @@
 
 /decl/language/generic/standard/muddle(var/message)
 	return stars_no_html(message, 70)
-	
+
 //LANGUAGES END
