@@ -1,6 +1,6 @@
 /decl/topic_command/tgs
 	base_type = /decl/topic_command/tgs
-#ifdef TGS_V3_AI
+#ifdef TGS_V3_API
 /decl/topic_command/tgs/three
 	name = SERVICE_CMD_PARAM_COMMAND
 #endif
