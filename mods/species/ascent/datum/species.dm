@@ -217,7 +217,6 @@
 /decl/species/serpentid
 	name = SPECIES_SERPENTID
 	name_plural = "Serpentids"
-	spawn_flags = SPECIES_IS_RESTRICTED
 
 	has_organ = list(
 		BP_BRAIN =             /obj/item/organ/internal/brain/insectoid/serpentid,
@@ -303,7 +302,7 @@
 	heat_level_3 = 800 //Default 1000
 	species_flags = SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_BLOCK | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_FLAG_NEED_DIRECT_ABSORB
 	appearance_flags = HAS_SKIN_COLOR | HAS_EYE_COLOR | HAS_SKIN_TONE_NORMAL
-	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
+	spawn_flags = SPECIES_IS_RESTRICTED
 	bump_flag = HEAVY
 	push_flags = ALLMOBS
 	swap_flags = ALLMOBS
