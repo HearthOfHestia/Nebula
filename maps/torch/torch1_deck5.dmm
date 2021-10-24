@@ -48,15 +48,15 @@
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/external{
+/obj/machinery/shield_diffuser,
+/obj/machinery/atmospherics/pipe/manifold/visible{
+	dir = 1
+	},
+/obj/machinery/door/airlock/external/shuttle/opportunity{
 	autoset_access = 0;
 	id_tag = "opportunity_shuttle_outer";
 	name = "Opportunity External Access";
 	req_access = list()
-	},
-/obj/machinery/shield_diffuser,
-/obj/machinery/atmospherics/pipe/manifold/visible{
-	dir = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
@@ -311,7 +311,7 @@
 /obj/structure/cable/cyan{
 	icon_state = "2-8"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 8;
 	id_tag = "opportunity_shuttle_pump_out_internal"
 	},
@@ -419,7 +419,7 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 8;
 	id_tag = "opportunity_shuttle_pump_out_internal"
 	},
@@ -534,27 +534,27 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/external{
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/shuttle/opportunity{
 	autoset_access = 0;
 	id_tag = "opportunity_shuttle_inner";
 	name = "Opportunity External Access";
 	req_access = list()
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/opportunity_hangar/start)
 "bJ" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/atmospherics/pipe/simple/hidden,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/shuttle/opportunity{
 	autoset_access = 0;
 	id_tag = "opportunity_shuttle_inner";
 	name = "Opportunity External Access";
 	req_access = list()
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel{
-	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/opportunity_hangar/start)
@@ -799,16 +799,16 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/machinery/button/access/interior{
-	id_tag = "opportunity_shuttle";
-	pixel_x = 20;
-	pixel_y = -22
-	},
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 8;
 	icon_state = "shuttle_chair_preview"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/button/access/shuttle/opportunity/interior{
+	id_tag = "opportunity_shuttle";
+	pixel_x = 20;
+	pixel_y = -22
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
 "cj" = (
@@ -1025,13 +1025,14 @@
 /obj/structure/handrail{
 	dir = 8
 	},
-/obj/machinery/button/access/exterior{
-	id_tag = "spirit_shuttle";
-	pixel_x = 20;
-	pixel_y = 20
-	},
 /obj/machinery/oxygen_pump{
 	pixel_y = 32
+	},
+/obj/machinery/button/access/shuttle/exterior{
+	id_tag = "spirit_shuttle";
+	name = "exterior access";
+	pixel_x = 20;
+	pixel_y = 20
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1064,10 +1065,10 @@
 "cL" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
+	frequency = 1331;
 	id_tag = "spirit_shuttle";
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW");
-	tag_exterior_sensor = null
+	req_access = list("ACCESS_TORCH_CREW")
 	},
 /obj/machinery/light/small{
 	dir = 1
@@ -1085,13 +1086,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	id_tag = "spirit_shuttle_pump"
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "spirit_shuttle_sensor";
-	pixel_y = 24
-	},
 /obj/structure/handrail,
 /obj/effect/floor_decal/techfloor{
 	dir = 1
+	},
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "spirit_shuttle_sensor";
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1107,13 +1108,14 @@
 /obj/structure/handrail,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/camera/network/exploration_shuttle,
-/obj/machinery/button/access/interior{
-	id_tag = "spirit_shuttle";
-	pixel_x = -20;
-	pixel_y = 20
-	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
+	},
+/obj/machinery/button/access/shuttle/interior{
+	id_tag = "spirit_shuttle";
+	name = "interior access";
+	pixel_x = -20;
+	pixel_y = 20
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/exploration_shuttle/airlock)
@@ -1250,14 +1252,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
 "dd" = (
-/obj/machinery/door/airlock/external{
-	autoset_access = 0;
-	id_tag = "spirit_shuttle_outer";
-	name = "Spirit External Access"
-	},
 /obj/machinery/shield_diffuser,
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
+	},
+/obj/machinery/door/airlock/external/shuttle{
+	autoset_access = 0;
+	id_tag = "spirit_shuttle_outer";
+	name = "Spirit External Access"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1278,13 +1280,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
 "dh" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	id_tag = "spirit_shuttle_inner";
 	name = "Spirit External Access"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1364,17 +1366,17 @@
 	dir = 1;
 	id_tag = "spirit_shuttle_pump_out_external"
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "spirit_shuttle_sensor_external";
-	pixel_x = 25;
-	pixel_y = -25
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
 	icon_state = "warning"
 	},
 /obj/structure/handrail{
 	dir = 8
+	},
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "spirit_shuttle_sensor_exterior";
+	pixel_x = 25;
+	pixel_y = -25
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/airlock)
@@ -1430,7 +1432,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
 	},
-/obj/machinery/airlock_sensor{
+/obj/machinery/airlock_sensor/shuttle{
 	id_tag = "spirit_shuttle_sensor_interior";
 	pixel_x = -25;
 	pixel_y = -25
@@ -2189,7 +2191,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/airlock_sensor{
+/obj/machinery/airlock_sensor/shuttle{
 	id_tag = "spirit_cargo_sensor_interior";
 	pixel_x = -24;
 	pixel_y = -27
@@ -2305,10 +2307,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "fM" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	id_tag = "spirit_cargo_inner";
-	name = "Spirit Cargo Bay"
+	name = "Spirit External Access"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
@@ -2394,11 +2396,6 @@
 /turf/simulated/floor/plating,
 /area/quartermaster/hangar)
 "fZ" = (
-/obj/machinery/airlock_sensor{
-	id_tag = "spirit_cargo_sensor";
-	pixel_x = 24;
-	pixel_y = -24
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
 	id_tag = "spirit_cargo_pump"
@@ -2406,10 +2403,16 @@
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	cycle_to_external_air = 1;
 	dir = 8;
+	frequency = 1331;
 	id_tag = "spirit_cargo";
 	pixel_x = 19;
 	req_access = list("ACCESS_TORCH_CREW");
 	tag_exterior_sensor = "spirit_cargo_exterior"
+	},
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "spirit_cargo_sensor";
+	pixel_x = 24;
+	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
@@ -2441,12 +2444,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/quartermaster/expedition/storage)
 "gg" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/atmospherics/pipe/simple/visible,
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	id_tag = "spirit_cargo_inner";
-	name = "Spirit Cargo Bay"
+	name = "Spirit External Access"
 	},
-/obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
 "gi" = (
@@ -2475,7 +2478,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 10
 	},
-/obj/machinery/door/airlock/external{
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	id_tag = "spirit_cargo_outer";
 	name = "Spirit External Access"
@@ -2486,13 +2489,13 @@
 /obj/machinery/atmospherics/pipe/manifold/visible{
 	dir = 8
 	},
-/obj/machinery/door/airlock/external{
+/obj/machinery/light_switch{
+	pixel_x = -24
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	id_tag = "spirit_cargo_outer";
 	name = "Spirit External Access"
-	},
-/obj/machinery/light_switch{
-	pixel_x = -24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
@@ -2714,14 +2717,15 @@
 /obj/structure/handrail{
 	dir = 8
 	},
-/obj/machinery/button/access/exterior{
-	id_tag = "spirit_cargo";
-	pixel_x = 20;
-	pixel_y = 20
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
 	id_tag = "spirit_cargo_pump_out_external"
+	},
+/obj/machinery/button/access/shuttle/exterior{
+	id_tag = "spirit_cargo";
+	name = "exterior access";
+	pixel_x = 20;
+	pixel_y = 20
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
@@ -6436,11 +6440,11 @@
 "qb" = (
 /obj/effect/floor_decal/techfloor,
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+/obj/machinery/light,
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 8;
 	id_tag = "opportunity_shuttle_pump"
 	},
-/obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
 "qc" = (
@@ -7207,18 +7211,19 @@
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "opportunity_shuttle_exterior_sensor";
-	pixel_y = 24
-	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 4;
 	id_tag = "opportunity_shuttle_pump_out_external"
 	},
-/obj/machinery/button/access/exterior{
+/obj/machinery/button/access/shuttle/opportunity/exterior{
 	id_tag = "opportunity_shuttle";
 	pixel_x = 20;
 	pixel_y = 20
+	},
+/obj/machinery/airlock_sensor/shuttle/opportunity{
+	id_tag = "opportunity_shuttle_exterior_sensor";
+	pixel_x = null;
+	pixel_y = 24
 	},
 /turf/simulated/floor/plating,
 /area/opportunity_hangar/start)
@@ -7621,6 +7626,7 @@
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
 	cycle_to_external_air = 1;
+	frequency = 1431;
 	id_tag = "opportunity_shuttle";
 	pixel_y = 24;
 	req_access = list("ACCESS_TORCH_CREW");
@@ -9640,12 +9646,14 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/airlock_sensor{
+/obj/machinery/airlock_sensor/shuttle/opportunity{
+	default_pixel_x = null;
+	default_pixel_y = null;
 	id_tag = "opportunity_shuttle_sensor";
 	pixel_x = 24;
 	pixel_y = 24
 	},
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 8;
 	id_tag = "opportunity_shuttle_pump"
 	},
@@ -9727,7 +9735,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/curiosity_hangar/start)
 "CB" = (
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity{
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity{
 	dir = 4;
 	id_tag = "opportunity_shuttle_pump_out_external"
 	},
@@ -9831,14 +9839,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/quartermaster/shuttlefuel)
 "Dc" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/shield_diffuser,
+/obj/machinery/atmospherics/pipe/manifold/visible,
+/obj/machinery/door/airlock/external/shuttle/opportunity{
 	autoset_access = 0;
 	id_tag = "opportunity_shuttle_outer";
 	name = "Opportunity External Access";
 	req_access = list()
 	},
-/obj/machinery/shield_diffuser,
-/obj/machinery/atmospherics/pipe/manifold/visible,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
 "Df" = (
@@ -10199,14 +10207,14 @@
 /turf/simulated/floor/plating,
 /area/maintenance/fifthdeck/aftstarboard)
 "Fa" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/shield_diffuser,
+/obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/machinery/door/airlock/external/shuttle/opportunity{
 	autoset_access = 0;
 	id_tag = "opportunity_shuttle_outer";
 	name = "Opportunity External Access";
 	req_access = list()
 	},
-/obj/machinery/shield_diffuser,
-/obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
 "Fg" = (
@@ -11133,8 +11141,9 @@
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/button/access/interior{
+/obj/machinery/button/access/shuttle/interior{
 	id_tag = "spirit_cargo";
+	name = "interior access";
 	pixel_x = 20;
 	pixel_y = -22
 	},
@@ -11718,14 +11727,14 @@
 /obj/structure/handrail{
 	dir = 4
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "spirit_cargo_exterior_sensor";
-	pixel_x = -25;
-	pixel_y = 25
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 1;
 	id_tag = "spirit_cargo_pump_out_external"
+	},
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "spirit_cargo_exterior_sensor";
+	pixel_x = -25;
+	pixel_y = 25
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/exploration_shuttle/cargo)
