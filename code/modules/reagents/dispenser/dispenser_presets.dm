@@ -20,8 +20,8 @@
 			/obj/item/chems/chem_disp_cartridge/ethanol,
 			/obj/item/chems/chem_disp_cartridge/sugar,
 			/obj/item/chems/chem_disp_cartridge/sacid,
-			/obj/item/chems/chem_disp_cartridge/tungsten
-			/obj/item/chems/chem_disp_cartridge/opium,
+			/obj/item/chems/chem_disp_cartridge/tungsten,
+			/obj/item/chems/chem_disp_cartridge/opium
 		)
 
 	buildable = FALSE
