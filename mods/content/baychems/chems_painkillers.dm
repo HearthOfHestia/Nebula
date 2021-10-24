@@ -17,14 +17,14 @@
 	lore_text = "A strong, effective non-opioid alternative to tramadol"
 	color = "#cfe2f3"
 	narcotic = FALSE
-	sedation = 0.2
+	sedation = 0.01
 	breathloss_severity = 0 //Not an opioid. Should not suppress breathing.
 	slowdown_severity = 0.5
 	blurred_vision = 0.2
 	stuttering_severity = 0.2
 	slur_severity = 0.2
 	confusion_severity = 0
-	dizzyness_severity = 1
+	dizziness_severity = 1
 
 /decl/material/liquid/painkillers/morphine
 	name = "morphine" //similar to tramadol, more effective but more expensive to prepare.
@@ -41,7 +41,8 @@
 	stuttering_severity = 0
 	slur_severity = 1
 	confusion_severity = 1
-	dizzyness_severity = 1
+	dizziness_severity = 1
+	narcotic = TRUE
 
 /decl/material/liquid/painkillers/fentanyl
 	name = "fentanyl" //similar to morphine, but should hit you like a truck and prevent pain shock at all costs
@@ -58,4 +59,5 @@
 	stuttering_severity = 0.5
 	slur_severity = 1
 	confusion_severity = 1
-	dizzyness_severity = 2
+	dizziness_severity = 2
+	narcotic = TRUE

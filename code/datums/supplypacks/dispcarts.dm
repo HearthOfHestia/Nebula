@@ -22,6 +22,7 @@
 // Chemistry-restricted (raw reagents excluding sugar/water)
 //       Datum path Contents type                                    Supply pack name                      Container name                               Container access
 SEC_PACK(hydrazine, /obj/item/chems/chem_disp_cartridge/hydrazine,   "Reagent refill - Hydrazine",         "hydrazine reagent cartridge crate",         access_chemistry)
+SEC_PACK(opium,     /obj/item/chems/chem_disp_cartridge/opium,       "Reagent refill - Opium",             "opium reagent cartridge crate",             access_chemistry)
 SEC_PACK(lithium,   /obj/item/chems/chem_disp_cartridge/lithium,     "Reagent refill - Lithium",           "lithium reagent cartridge crate",           access_chemistry)
 SEC_PACK(carbon,    /obj/item/chems/chem_disp_cartridge/carbon,      "Reagent refill - Carbon",            "carbon reagent cartridge crate",            access_chemistry)
 SEC_PACK(ammonia,   /obj/item/chems/chem_disp_cartridge/ammonia,     "Reagent refill - Ammonia",           "ammonia reagent cartridge crate",           access_chemistry)

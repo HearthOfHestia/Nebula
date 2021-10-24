@@ -19,11 +19,11 @@
 	var/slur_severity = 1
 	var/confusion_severity = 0
 	var/weakness_severity = 0.5
-	var/dizzyness_severity = 1
+	var/dizziness_severity = 1
 	var/narcotic = TRUE
 
 /decl/material/liquid/painkillers/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
-
+	to_world("chem debug [type] [narcotic] [removed]")
 	var/volume = REAGENT_VOLUME(holder, type)
 	var/effectiveness = 1
 	var/dose = LAZYACCESS(M.chem_doses, type)
@@ -34,20 +34,24 @@
 
 	M.add_chemical_effect(CE_PAINKILLER, (pain_power * effectiveness))
 	M.add_chemical_effect(CE_SEDATE, (sedation * effectiveness))
-
+	SET_STATUS_MAX(M, STAT_ASLEEP, (sedation * 10))
+	SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 40))
 
 	if(!narcotic)
+		to_world("chem debug [type] [narcotic] [dose]")
 		return
 	if(dose > 0.5 * overdose)
 		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
+		to_world("chem debug [type] slowdown proc")
 		if(prob(15))
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 10))
+			to_world("chem debug [type] slur proc")
 	if(dose > 0.75 * overdose)
 		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
 		if(prob(30)) //minor side effects may start here
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 20))
 		if(prob(30))
-			SET_STATUS_MAX(M, STAT_DIZZY, (dizzyness_severity * 20))
+			SET_STATUS_MAX(M, STAT_DIZZY, (dizziness_severity * 20))
 		if(prob(30))
 			SET_STATUS_MAX(M, STAT_CONFUSE, (confusion_severity * 20))
 		if(prob(30))
@@ -56,15 +60,12 @@
 			SET_STATUS_MAX(M, STAT_STUTTER, (stuttering_severity * 20))
 		if(prob(30))
 			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 20))
-		if(prob(25))
-			SET_STATUS_MAX(M, STAT_ASLEEP, (sedation * 20))
-			SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 20))
 	if(dose > overdose) //it's an overdose, you're supposed to feel like shit
 		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
 		if(prob(75))
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 40))
 		if(prob(75))
-			SET_STATUS_MAX(M, STAT_DIZZY, (dizzyness_severity * 40))
+			SET_STATUS_MAX(M, STAT_DIZZY, (dizziness_severity * 40))
 		if(prob(75))
 			SET_STATUS_MAX(M, STAT_CONFUSE, (confusion_severity * 40))
 		if(prob(75))
@@ -73,9 +74,6 @@
 			SET_STATUS_MAX(M, STAT_STUTTER, (stuttering_severity * 40))
 		if(prob(70))
 			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 40))
-		if(prob(70))
-			SET_STATUS_MAX(M, STAT_ASLEEP, (sedation * 40))
-			SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 40))
 		if(prob(50))
 			SET_STATUS_MAX(M, STAT_WEAK, 2)
 			SET_STATUS_MAX(M, STAT_DROWSY, 5)
