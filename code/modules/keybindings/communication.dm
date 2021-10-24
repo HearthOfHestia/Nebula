@@ -3,7 +3,7 @@
 
 /datum/keybinding/client/communication/say
 	hotkey_keys = list("F3", "T")
-	name = ".Say"
+	name = "Say"
 	full_name = "IC Say"
 
 /datum/keybinding/client/communication/ooc

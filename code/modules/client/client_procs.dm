@@ -654,7 +654,7 @@ var/global/const/MAX_VIEW = 41
 				if("South")
 					movement_keys[key] = SOUTH
 				if("Say")
-					winset(src, "default-\ref[key]", "parent=default;name=[key];command=say")
+					winset(src, "default-\ref[key]", "parent=default;name=[key];command=.say")
 					communication_hotkeys += key
 				if("OOC")
 					winset(src, "default-\ref[key]", "parent=default;name=[key];command=ooc")
