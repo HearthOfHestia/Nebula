@@ -38,7 +38,7 @@
 /obj/item/chems/glass/bottle/on_update_icon()
 	..()
 	cut_overlays()
-	
+
 	if(reagents?.total_volume)
 		var/percent = round(reagents.total_volume / volume * 100, 25)
 		add_overlay(mutable_appearance(icon, "[icon_state]_filling_[percent]", reagents.get_color()))
@@ -57,7 +57,7 @@
 
 	if (!ATOM_IS_OPEN_CONTAINER(src))
 		add_overlay(mutable_appearance(icon, "[icon_state]_lid", lid_color))
-	
+
 	compile_overlays()
 
 /obj/item/chems/glass/bottle/Initialize()
@@ -87,6 +87,10 @@
 /obj/item/chems/glass/bottle/sedatives
 	desc = "A small bottle of soporific medication. Just the fumes make you sleepy."
 	initial_reagents = list(/decl/material/liquid/sedatives = 60)
+
+/obj/item/chems/glass/bottle/opium //CORE FILE MODIFICATION. REMIND ME TO DELETE THIS.
+	desc = "A small bottle of opium."
+	initial_reagents = list(/decl/material/liquid/opium = 60)
 
 /obj/item/chems/glass/bottle/antitoxin
 	desc = "A small bottle of antitoxins. Counters poisons, and repairs damage. A wonder drug."

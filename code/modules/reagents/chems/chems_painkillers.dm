@@ -10,8 +10,17 @@
 	ingest_met = 0.02
 	flags = IGNORE_MOB_SIZE
 	value = 1.8
-	var/pain_power = 80 //magnitide of painkilling effect
+	var/pain_power = 80 //magnitude of painkilling effect
 	var/effective_dose = 0.5 //how many units it need to process to reach max power
+	var/sedation = 0 //how strong is this chemical as a sedative
+	var/breathloss_severity = 0.5 //how strong will breathloss related effects be
+	var/slowdown_severity = 1
+	var/blurred_vision = 0.5
+	var/stuttering_severity = 0
+	var/slur_severity = 1
+	var/confusion_severity = 0
+	var/weakness_severity = 0.5
+	var/dizzyness_severity = 1
 	var/narcotic = TRUE
 
 /decl/material/liquid/painkillers/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
@@ -25,28 +34,57 @@
 		effectiveness = volume/effective_dose
 
 	M.add_chemical_effect(CE_PAINKILLER, (pain_power * effectiveness))
+	M.add_chemical_effect(CE_SEDATE, sedation * effectiveness)
+
 
 	if(!narcotic)
 		return
 	if(dose > 0.5 * overdose)
-		M.add_chemical_effect(CE_SLOWDOWN, 1)
-		if(prob(1))
-			SET_STATUS_MAX(M, STAT_SLUR, 10)
+		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
+		if(prob(15))
+			SET_STATUS_MAX(M, STAT_SLUR, slur_severity*10)
 	if(dose > 0.75 * overdose)
-		M.add_chemical_effect(CE_SLOWDOWN, 1)
-		if(prob(5))
-			SET_STATUS_MAX(M, STAT_SLUR, 20)
-	if(dose > overdose)
-		M.add_chemical_effect(CE_SLOWDOWN, 1)
-		SET_STATUS_MAX(M, STAT_SLUR, 30)
-		if(prob(1))
+		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
+		if(prob(30)) //minor side effects may start here
+			SET_STATUS_MAX(M, STAT_SLUR, slur_severity*20)
+		if(prob(30))
+			SET_STATUS_MAX(M, STAT_DIZZY, dizzyness_severity*20)
+		if(prob(30))
+			SET_STATUS_MAX(M, STAT_CONFUSE, confusion_severity*20)
+		if(prob(30))
+			SET_STATUS_MAX(M, STAT_BLURRY, blurred_vision*20)
+		if(prob(30))
+			SET_STATUS_MAX(M, STAT_STUTTER, stuttering_severity*20)
+		if(prob(30))
+			SET_STATUS_MAX(M, STAT_WEAK, weakness_severity*20)
+		if(prob(25))
+			SET_STATUS_MAX(M, STAT_ASLEEP, sedation*20)
+			SET_STATUS_MAX(M, STAT_DROWSY, sedation*20)
+	if(dose > overdose) //it's an overdose, you're supposed to feel like shit
+		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
+		if(prob(75))
+			SET_STATUS_MAX(M, STAT_SLUR, slur_severity*40)
+		if(prob(75))
+			SET_STATUS_MAX(M, STAT_DIZZY, dizzyness_severity*40)
+		if(prob(75))
+			SET_STATUS_MAX(M, STAT_CONFUSE, confusion_severity*40)
+		if(prob(75))
+			SET_STATUS_MAX(M, STAT_BLURRY, blurred_vision*40)
+		if(prob(75))
+			SET_STATUS_MAX(M, STAT_STUTTER, stuttering_severity*40)
+		if(prob(70))
+			SET_STATUS_MAX(M, STAT_WEAK, weakness_severity*40)
+		if(prob(70))
+			SET_STATUS_MAX(M, STAT_ASLEEP, sedation*40)
+			SET_STATUS_MAX(M, STAT_DROWSY, sedation*40)
+		if(prob(50))
 			SET_STATUS_MAX(M, STAT_WEAK, 2)
 			SET_STATUS_MAX(M, STAT_DROWSY, 5)
 
 	var/boozed = isboozed(M)
 	if(boozed)
 		M.add_chemical_effect(CE_ALCOHOL_TOXIC, 1)
-		M.add_chemical_effect(CE_BREATHLOSS, 0.1 * boozed) //drinking and opiating makes breathing kinda hard
+		M.add_chemical_effect(CE_BREATHLOSS, 0.2 * boozed) //drinking and opiating makes breathing kinda hard
 
 /decl/material/liquid/painkillers/affect_overdose(var/mob/living/M, var/alien, var/datum/reagents/holder)
 	..()
@@ -55,9 +93,9 @@
 	M.set_hallucination(120, 30)
 	SET_STATUS_MAX(M, STAT_DRUGGY, 10)
 	M.add_chemical_effect(CE_PAINKILLER, pain_power*0.5) //extra painkilling for extra trouble
-	M.add_chemical_effect(CE_BREATHLOSS, 0.6) //Have trouble breathing, need more air
+	M.add_chemical_effect(CE_BREATHLOSS, breathloss_severity*0.6) //Have trouble breathing, need more air
 	if(isboozed(M))
-		M.add_chemical_effect(CE_BREATHLOSS, 0.2) //Don't drink and OD on opiates folks
+		M.add_chemical_effect(CE_BREATHLOSS, 0.6) //Don't drink and OD on opiates folks
 
 /decl/material/liquid/painkillers/proc/isboozed(var/mob/living/carbon/M)
 	. = 0
