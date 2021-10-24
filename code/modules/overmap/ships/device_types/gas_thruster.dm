@@ -29,6 +29,8 @@
 
 /datum/extension/ship_engine/gas/proc/get_propellant(var/sample_only = TRUE, var/partial = 1)
 	var/obj/machinery/atmospherics/unary/engine/E = holder
+	if(thrust_limit <= 0)
+		return null
 	var/datum/gas_mixture/removed = E.air_contents.remove_ratio((volume_per_burn * thrust_limit * partial) / E.air_contents.volume)
 	if(sample_only)
 		var/datum/gas_mixture/sample = new(removed.volume)
