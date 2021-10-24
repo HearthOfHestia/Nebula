@@ -709,7 +709,7 @@ var/global/list/custom_ai_icons_by_ckey_and_name = list()
 	if(rig)
 		rig.force_rest(src)
 
-/mob/living/silicon/ai/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays, var/ai_show)
+/mob/living/silicon/ai/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays, var/ai_show = TRUE) // able to read everything but papers
 	. = ai_show ? ..(user, text_content, skip_delays) : stars(text_content)
 
 /mob/living/silicon/ai/proc/ai_take_image()
