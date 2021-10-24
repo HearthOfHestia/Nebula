@@ -3,6 +3,7 @@
 	name = "Galactic Trade Standard"
 	desc = "Galactic Trade Standard is the working language of the larger galaxy - consisting of sounds that most species can produce. The language is periodically updated as new species are introduced to the galactic community."
 	shorthand = "GTS"
+	key = "t"
 	space_chance = 40
 	syllables = list(
 		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
