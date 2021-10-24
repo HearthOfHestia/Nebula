@@ -46,9 +46,6 @@
 /decl/loadout_option/uniform/formal_pants
 	allowed_roles = SEMIANDFORMAL_ROLES
 
-/decl/loadout_option/uniform/formal_pants/custom
-	allowed_roles = SEMIANDFORMAL_ROLES
-
 /decl/loadout_option/uniform/formal_pants/baggycustom
 	allowed_roles = SEMIANDFORMAL_ROLES
 
