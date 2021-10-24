@@ -1,4 +1,3 @@
-
 /decl/material/liquid/painkillers
 	name = "painkillers"
 	lore_text = "A highly effective opioid painkiller. Do not mix with alcohol."
@@ -34,7 +33,7 @@
 		effectiveness = volume/effective_dose
 
 	M.add_chemical_effect(CE_PAINKILLER, (pain_power * effectiveness))
-	M.add_chemical_effect(CE_SEDATE, sedation * effectiveness)
+	M.add_chemical_effect(CE_SEDATE, (sedation * effectiveness))
 
 
 	if(!narcotic)
@@ -84,7 +83,7 @@
 	var/boozed = isboozed(M)
 	if(boozed)
 		M.add_chemical_effect(CE_ALCOHOL_TOXIC, 1)
-		M.add_chemical_effect(CE_BREATHLOSS, 0.2 * boozed) //drinking and opiating makes breathing kinda hard
+		M.add_chemical_effect(CE_BREATHLOSS, 1 * boozed) //drinking and opiating supreesses breathing.
 
 /decl/material/liquid/painkillers/affect_overdose(var/mob/living/M, var/alien, var/datum/reagents/holder)
 	..()
@@ -93,9 +92,9 @@
 	M.set_hallucination(120, 30)
 	SET_STATUS_MAX(M, STAT_DRUGGY, 10)
 	M.add_chemical_effect(CE_PAINKILLER, pain_power*0.5) //extra painkilling for extra trouble
-	M.add_chemical_effect(CE_BREATHLOSS, breathloss_severity*0.6) //Have trouble breathing, need more air
+	M.add_chemical_effect(CE_BREATHLOSS, breathloss_severity*2) //ODing on opiates is deadly.
 	if(isboozed(M))
-		M.add_chemical_effect(CE_BREATHLOSS, 0.6) //Don't drink and OD on opiates folks
+		M.add_chemical_effect(CE_BREATHLOSS, 4) //Don't drink and OD on opiates folks
 
 /decl/material/liquid/painkillers/proc/isboozed(var/mob/living/carbon/M)
 	. = 0
