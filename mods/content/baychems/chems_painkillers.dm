@@ -13,7 +13,7 @@
 	breathloss_severity = 0 //Not an opioid. Should not suppress breathing.
 
 /decl/material/liquid/painkillers/nefopam
-	name = "nefopam"
+	name = "nefopam" //better in every way than paracetamol. Very minor side effects.
 	lore_text = "A strong, effective non-opioid alternative to tramadol"
 	color = "#cfe2f3"
 	narcotic = FALSE
@@ -33,7 +33,7 @@
 	overdose = 10
 	metabolism = 0.02
 	pain_power = 160
-	effective_dose = 0.3
+	effective_dose = 0.20
 	sedation = 0.2
 	breathloss_severity = 1
 	slowdown_severity = 1
@@ -50,7 +50,7 @@
 	overdose = 5 //very easy to overdose on
 	metabolism = 0.01 //but also lasts for a long time
 	pain_power = 500
-	effective_dose = 0.2
+	effective_dose = 0.10
 	sedation = 2 //Acts as a sedative, and also prevents antags from taking fentanyl and becoming invincible.
 	breathloss_severity = 2
 	slowdown_severity = 2
