@@ -14,7 +14,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/medical/senior/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s2,
@@ -57,7 +57,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/senior
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/medical/junior/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s1,
@@ -101,7 +101,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t2,
@@ -147,7 +147,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/torch/crew/medical/doctor
 	allowed_branches = list(
 		/datum/mil_branch/iseo_issc,
-		/datum/mil_branch/espatier_corps
+		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
@@ -233,7 +233,7 @@
 	)
 
 	allowed_branches = list(
-		/datum/mil_branch/iseo_issc,
+		/datum/mil_branch/iseo_issc = /decl/hierarchy/outfit/job/torch/crew/medical/counselor/fleet,
 		/datum/mil_branch/civilian
 	)
 	allowed_ranks = list(
