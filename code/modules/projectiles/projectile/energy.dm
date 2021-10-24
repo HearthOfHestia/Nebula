@@ -62,10 +62,13 @@
 		//Everyone saw that!
 		for(var/mob/living/mob in global.living_mob_list_)
 			var/turf/T = get_turf(mob)
-			var/area/A1 = T.loc
-			if(T && (T != TO) && (TO.z == T.z) && !mob.blinded)
+			var/area/A1 = get_area(mob)
+			if(!T || !A1)
+				CHECK_TICK
+				continue
+			if((T != TO) && (TO.z == T.z) && !mob.blinded)
 				var/visible = FALSE
-				if(A1 && (A1.area_flags & AREA_FLAG_EXTERNAL))
+				if(A1.area_flags & AREA_FLAG_EXTERNAL)
 					visible = TRUE
 				else
 					var/dir = get_dir(T,TO)
@@ -74,7 +77,7 @@
 						pos = get_step(pos, dir)
 						if(pos.opacity)
 							break
-						A1 = pos.loc
+						A1 = get_area(pos)
 						if(A1 && (A1.area_flags & AREA_FLAG_EXTERNAL))
 							visible = TRUE
 							break
