@@ -9,9 +9,9 @@
 	partial_understanding = list(
 		/decl/language/human/common = 10
 	)
+	flags = RESTRICTED
 	syllables = list(
 		"hitherto", "whereof", "hereunto", "deed", "hereinbefore", "whereas", "consensus", "nonwithstanding",
 		"exonerated", "effecuate", "accord", "caveat", "stipulation", "pledgee", "covenant", "rights",
 		"lawful", "suit of law", "sequestrator", "et al", "et", "ex", "quid", "bono",	"quo", "pro", "ad"
 	)
-	
