@@ -4669,7 +4669,6 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/obj/effect/catwalk_plated,
 /turf/simulated/floor/tiled/monotile,
 /area/assembly/robotics/office)
 "ape" = (
