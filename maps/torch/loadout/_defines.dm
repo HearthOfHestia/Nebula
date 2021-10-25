@@ -59,4 +59,4 @@
 
 #define CIVILIAN_BRANCHES list(/datum/mil_branch/civilian, /datum/mil_branch/government)
 
-#define ISEO_BRANCHES list(/datum/mil_branch/espatier_corps, /datum/mil_branch/iseo_issc)
+#define ISEO_BRANCHES list(/datum/mil_branch/espatier_corps, /datum/mil_branch/iseo_issc, /datum/mil_branch/government)
