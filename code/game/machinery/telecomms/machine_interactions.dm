@@ -50,11 +50,6 @@
 			return
 		return MCS_BLOCK
 
-/obj/machinery/telecomms/dismantle()
-	for(var/obj/x in (contents - component_parts))
-		x.dropInto(loc)
-	. = ..()	
-
 // This should all be a multitool extension, but outside the scope of current rework.
 /obj/machinery/telecomms/CanUseTopic(mob/user)
 	// You need a multitool to use this, or be silicon
@@ -135,7 +130,7 @@
 
 	dat += "</font>"
 	temp = ""
-	
+
 	var/datum/browser/written/popup = new(user, "tcommmachine", "Telecommunications Machine Configuration Panel", 520, 600)
 	popup.set_content(JOINTEXT(dat))
 	popup.open()

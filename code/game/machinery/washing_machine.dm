@@ -67,7 +67,7 @@
 	addtimer(CALLBACK(src, /obj/machinery/washing_machine/proc/wash), 20 SECONDS)
 
 /obj/machinery/washing_machine/proc/wash()
-	for(var/atom/A in (contents - component_parts))
+	for(var/atom/A in get_contained_external_atoms())
 		if(detergent)
 			A.clean_blood()
 		if(isitem(A))
@@ -99,7 +99,7 @@
 		return
 	if(state & WASHER_STATE_CLOSED)
 		to_chat(usr, SPAN_WARNING("\The [src] is closed."))
-		return	
+		return
 	if(!do_after(usr, 2 SECONDS, src))
 		return
 	if(!(state & WASHER_STATE_CLOSED))
@@ -111,7 +111,7 @@
 /obj/machinery/washing_machine/clean_blood()
 	. = ..()
 	state &= ~WASHER_STATE_BLOODY
-	update_icon()	
+	update_icon()
 
 /obj/machinery/washing_machine/components_are_accessible(path)
 	return !(state & WASHER_STATE_RUNNING) && ..()
@@ -200,7 +200,7 @@
 			var/mob/M = locate(/mob/living) in src
 			if(M)
 				M.gib()
-		for(var/atom/movable/O in (contents - component_parts))
+		for(var/atom/movable/O in get_contained_external_atoms())
 			O.dropInto(loc)
 		state &= ~WASHER_STATE_FULL
 		update_icon()

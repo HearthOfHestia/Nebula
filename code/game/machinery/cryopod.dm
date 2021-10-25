@@ -185,6 +185,11 @@
 	var/open_sound = 'sound/machines/podopen.ogg'
 	var/close_sound = 'sound/machines/podclose.ogg'
 
+/obj/machinery/cryopod/get_contained_external_atoms()
+	. = ..()
+	LAZYREMOVE(., occupant)
+	LAZYREMOVE(., announce)
+
 /obj/machinery/cryopod/robot
 	name = "robotic storage unit"
 	desc = "A storage unit for robots."
@@ -345,12 +350,7 @@
 				O.forceMove(src)
 
 	//Delete all items not on the preservation list.
-	var/list/items = src.contents.Copy()
-	items -= occupant // Don't delete the occupant
-	items -= announce // or the autosay radio.
-	items -= component_parts
-
-	for(var/obj/item/W in items)
+	for(var/obj/item/W in get_contained_external_atoms())
 
 		var/preserve = null
 		// Snowflaaaake.
@@ -485,9 +485,7 @@
 	icon_state = base_icon_state
 
 	//Eject any items that aren't meant to be in the pod.
-	var/list/items = contents - component_parts
-	if(occupant) items -= occupant
-	if(announce) items -= announce
+	var/list/items = get_contained_external_atoms()
 
 	for(var/obj/item/W in items)
 		W.dropInto(loc)
