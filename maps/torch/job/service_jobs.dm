@@ -71,8 +71,8 @@
 /datum/job/chef
 	title = "Cook"
 	department_types = list(/decl/department/service)
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	supervisors = "the Deck Chief"
 	alt_titles = list(
@@ -87,6 +87,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/civ/contractor,
+		/datum/mil_rank/civ/civ,
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
