@@ -1,5 +1,6 @@
 #define SPECIES_LIZARD  "Lizard"
-#define LANGUAGE_LIZARD "Lizard Language"
+#define LANGUAGE_LIZARD "Ssallant"
+#define LANGUAGE_KRIPEN "Kripen"
 #define IS_LIZARD       "lizard"
 
 /decl/modpack/lizard
