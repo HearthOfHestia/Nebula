@@ -48,12 +48,10 @@
 /decl/recipe/Initialize()
 	. = ..()
 	complexity = length(reagents) + length(fruit)
-	var/value
 	for(var/i in items) // add the number of items total
 		if(!items[i])
 			items[i] = 1
-		value = items[i]
-		complexity += (isnum(value) ? value : 1)
+		complexity += items[i]
 	complexity += length(uniquelist(items)) // add how many unique items there are; will prioritise burgers over 2 bunbuns and 1 wasted meat, for example
 
 /decl/recipe/proc/get_appliances_string()
