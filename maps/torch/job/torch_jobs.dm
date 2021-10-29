@@ -1,5 +1,7 @@
 /datum/map/torch
 	#define AI_SHARD_JOBS /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research, /datum/job/ai/shard/command, /datum/job/ai/shard/engineering
+	#define COMMAND_JOBS /datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/liaison, /datum/job/representative, /datum/job/sea, /datum/job/bridgeofficer
+	#define VIOLENT_JOBS /datum/job/bodyguard, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/pathfinder, /datum/job/explorer
 	/* // TODO: decide on whether or not national council representatives can be aliens
 	job_to_species_whitelist = list(
 		/datum/job/representative = list(
@@ -11,6 +13,12 @@
 	species_to_job_whitelist = list(
 		/decl/species/vox = list(
 			AI_SHARD_JOBS
+		)
+	)
+	species_to_job_blacklist = list(
+		/decl/species/adherent = list(
+			VIOLENT_JOBS,
+			COMMAND_JOBS
 		)
 	)
 
@@ -40,3 +48,4 @@
 	)
 
 #undef AI_SHARD_JOBS
+#undef VIOLENT_JOBS

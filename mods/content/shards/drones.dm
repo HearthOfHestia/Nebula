@@ -9,7 +9,7 @@
 	can_pull_mobs = MOB_PULL_SAME
 	maxHealth = 250
 	health = 250
-	desc = "A six-legged remote interface drone, coequally known as a thinktank."
+	desc = "A six-legged remote interface drone, coloquially known as a thinktank."
 
 /mob/living/silicon/robot/drone/shard/Initialize()
 	. = ..()

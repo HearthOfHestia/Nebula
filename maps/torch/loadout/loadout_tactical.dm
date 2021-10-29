@@ -7,6 +7,7 @@
 /decl/loadout_option/tactical
 	category = /decl/loadout_category/tactical
 	slot = slot_tie_str
+	abstract_type = /decl/loadout_option/tactical
 
 /decl/loadout_option/tactical/holster
 	name = "holster selection"

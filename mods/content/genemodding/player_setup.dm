@@ -16,19 +16,25 @@
 	var/list/ear_styles = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/ears)
 	var/list/tail_styles = decls_repository.get_decls_of_subtype(/decl/sprite_accessory/tail)
 	var/ear_style_name = R.read("ear_style_name")
-	for(var/ear_type in ear_styles)
-		var/decl/sprite_accessory/ears/ear = GET_DECL(ear_type)
-		if(ear.name != ear_style_name)
-			continue
-		pref.ear_style = ear_type
+	if(!ear_style_name)
+		pref.ear_style = null
+	else
+		for(var/ear_type in ear_styles)
+			var/decl/sprite_accessory/ears/ear = GET_DECL(ear_type)
+			if(ear.name != ear_style_name)
+				continue
+			pref.ear_style = ear_type
 	pref.ear_color = R.read("ear_color")
 	pref.ear_color_extra = R.read("ear_color_extra")
 	var/tail_style_name = R.read("tail_style_name")
-	for(var/tail_type in tail_styles)
-		var/decl/sprite_accessory/tail/tail = GET_DECL(tail_type)
-		if(tail.name != tail_style_name)
-			continue
-		pref.tail_style = tail_type
+	if(!tail_style_name)
+		pref.tail_style = null
+	else
+		for(var/tail_type in tail_styles)
+			var/decl/sprite_accessory/tail/tail = GET_DECL(tail_type)
+			if(tail.name != tail_style_name)
+				continue
+			pref.tail_style = tail_type
 	pref.tail_color = R.read("tail_color")
 	pref.tail_color_extra = R.read("tail_color_extra")
 

@@ -177,6 +177,7 @@
 	#include "loadout/~defines.dm"
 
 	//begin HEARTH
+	#include "items\hearth_clothing\uniforms_contractor.dm"
 	#include "items\hearth_clothing\uniforms_iseo.dm"
 	#include "items\hearth_clothing\uniforms_espatier.dm"
 	#include "items\hearth_clothing\suits_iseo.dm"
@@ -208,6 +209,7 @@
 
 //	#include "../away/empty.dmm"
 //	#include "../away/ascent/ascent.dm"
+	#include "../away/liberia/liberia.dm"
 	#include "../away/mining/mining.dm"
 	#include "../away/derelict/derelict.dm"
 	#include "../away/bearcat/bearcat.dm"

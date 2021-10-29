@@ -37,6 +37,12 @@
 
 /obj/structure/hand_cart/grab_attack(var/obj/item/grab/G)
 	if(G.affecting && istype(G.affecting, /obj/))
+		if(G.affecting == src)
+			to_chat(G.assailant, SPAN_NOTICE("You can't make \the [src] carry itself!"))
+			return TRUE
+		if(carrying)
+			to_chat(G.assailant, SPAN_NOTICE("[src] already has \the [carrying] on it, it can't fit anything else!"))
+			return TRUE
 		to_chat(G.assailant, SPAN_NOTICE("You start loading \the [G.affecting] onto \the [src]."))
 		if(load_item(G.affecting, G.assailant))
 			qdel(G)
