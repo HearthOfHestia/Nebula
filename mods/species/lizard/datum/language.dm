@@ -10,6 +10,7 @@
 	space_chance = 30
 	partial_understanding = list(
 		LANGUAGE_KRIPEN = 30
+	)
 	syllables = list(
 		"za", "az", "ze", "ez", "zi", "iz", "zo", "oz", "zu", "uz", "zs", "sz",
 		"ha", "ah", "he", "eh", "hi", "ih", "ho", "oh", "hu", "uh", "hs", "sh",
