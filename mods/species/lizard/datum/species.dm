@@ -118,6 +118,7 @@
 		/decl/emote/exertion/biological,
 		/decl/emote/exertion/biological/breath,
 		/decl/emote/exertion/biological/pant
+	)
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
