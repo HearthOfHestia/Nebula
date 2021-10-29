@@ -5,7 +5,7 @@
 	name = "Tactical"
 
 /decl/loadout_option/tactical
-	category = /decl/loadout_category/accessories
+	category = /decl/loadout_category/tactical
 	slot = slot_tie_str
 
 /decl/loadout_option/tactical/holster
@@ -113,3 +113,14 @@
 	pouches["green large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/green
 	pouches["tan large armor pouches"] = /obj/item/clothing/accessory/storage/pouches/large/tan
 	gear_tweaks += new/datum/gear_tweak/path(pouches)
+
+/decl/loadout_option/tactical/knife_sheath
+	name = "knife sheath selection"
+	path = /obj/item/clothing/accessory/storage/holster/knife
+
+/decl/loadout_option/tactical/knife_sheath/Initialize()
+	. = ..()
+	var/sheaths = list()
+	sheaths["leather knife sheath"] = /obj/item/clothing/accessory/storage/holster/knife
+	sheaths["polymer knife sheath"] = /obj/item/clothing/accessory/storage/holster/knife/polymer
+	gear_tweaks += new/datum/gear_tweak/path(sheaths)

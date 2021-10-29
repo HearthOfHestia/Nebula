@@ -73,3 +73,23 @@
 		"utility knife" =             /obj/item/knife/utility,
 		"lightweight utility knife" = /obj/item/knife/utility/lightweight
 	)
+
+/decl/loadout_option/utility/cheaptablet
+	name = "tablet computer, cheap"
+	path = /obj/item/modular_computer/tablet/preset/custom_loadout/cheap
+	cost = 3
+
+/decl/loadout_option/utility/normaltablet
+	name = "tablet computer, advanced"
+	path = /obj/item/modular_computer/tablet/preset/custom_loadout/advanced
+	cost = 4
+
+/decl/loadout_option/utility/cheaplaptop
+	name = "laptop computer, cheap"
+	path = /obj/item/modular_computer/laptop/preset/custom_loadout/cheap
+	cost = 3
+
+/decl/loadout_option/utility/normallaptop
+	name = "laptop computer, advanced"
+	path = /obj/item/modular_computer/laptop/preset/custom_loadout/advanced
+	cost = 4
