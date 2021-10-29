@@ -149,17 +149,6 @@
 		"cross, gold" =   /obj/item/cross/gold
 	)
 
-/decl/loadout_option/wallet
-	name = "wallet, colour select"
-	path = /obj/item/storage/wallet
-	flags = GEAR_HAS_COLOR_SELECTION
-
-/decl/loadout_option/wallet_poly
-	name = "wallet, polychromic"
-	path = /obj/item/storage/wallet/poly
-	cost = 2
-
-
 /decl/loadout_option/swiss
 	name = "multi-tool"
 	path = /obj/item/knife/folding/swiss
