@@ -58,4 +58,4 @@
 	minor_announcement.Announce(message = "New [global.using_map.company_name] Update available at all communication consoles.")
 
 /datum/map/torch/create_trade_hubs()
-    return // no singleton hub for the Endeavour, gotta go through the Liberia
+	return // no singleton hub for the Endeavour, gotta go through the Liberia

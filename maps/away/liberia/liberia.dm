@@ -35,25 +35,25 @@
 	archetype = /decl/submap_archetype/liberia
 
 /datum/trade_hub/overmap/liberia
-    name = "Long-Range Requisition Network"
-    max_traders = 12
+	name = "Long-Range Requisition Network"
+	max_traders = 12
 
 /datum/trade_hub/overmap/liberia/get_initial_trader_count()
-    return 6
+	return 6
 
 /datum/trade_hub/overmap/liberia/get_initial_traders()
-    return list(
-        /datum/trader/medical,
-        /datum/trader/mining,
-        /datum/trader/books
-    )
+	return list(
+		/datum/trader/medical,
+		/datum/trader/mining,
+		/datum/trader/books
+	)
 
 /obj/effect/overmap/trade_hub/liberia/get_trading_post_type()
   return /datum/trade_hub/overmap/liberia
 
 /obj/effect/overmap/visitable/ship/liberia/move_to_starting_location()
-    . = ..()
-    new /obj/effect/overmap/trade_hub/liberia/(loc)
+	. = ..()
+	new /obj/effect/overmap/trade_hub/liberia/(loc)
 
 /obj/machinery/power/smes/buildable/preset/liberia
 	_input_maxed =   TRUE
