@@ -4,7 +4,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief Science Officer"
-	selection_color = "#68099e"
+	selection_color = "#7c07c0"
 	minimal_player_age = 1
 	economic_power = 10
 	minimum_character_age = list(SPECIES_HUMAN = 25)
@@ -98,6 +98,7 @@
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
+		/datum/mil_rank/espatier/e1,
 		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3
 	)

@@ -7,7 +7,7 @@ var/global/list/gear_datums = list()
 	var/list/total_loadout_selections = list()
 
 /datum/preferences/proc/Gear()
-	return gear_list[gear_slot]
+	return LAZYACCESS(gear_list, gear_slot)
 
 /datum/category_item/player_setup_item/loadout
 	name = "Loadout"
@@ -133,7 +133,7 @@ var/global/list/gear_datums = list()
 	. += "<tr><td colspan=3><center><b>"
 	var/firstcat = 1
 	var/decl/loadout_category/current_category_decl = GET_DECL(current_tab || /decl/loadout_category)
-	var/list/all_loadout_categories = decls_repository.get_decls_of_subtype(/decl/loadout_category)
+	var/list/all_loadout_categories = decls_repository.get_decls_of_type(/decl/loadout_category)
 	for(var/category in all_loadout_categories)
 
 		if(firstcat)
@@ -441,5 +441,5 @@ var/global/list/gear_datums = list()
 
 	if(flags & GEAR_NO_EQUIP)
 		return
-	
+
 	return item

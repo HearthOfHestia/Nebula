@@ -14,7 +14,6 @@
 /decl/species/lizard
 	name = SPECIES_LIZARD
 	name_plural = SPECIES_LIZARD
-	preview_icon = 'mods/species/lizard/icons/preview.dmi'
 	skin_material = /decl/material/solid/skin/lizard
 
 	available_bodytypes = list(
@@ -85,9 +84,10 @@
 	breathing_sound = 'mods/species/lizard/sound/lizard_breathing.ogg'
 
 	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/lizard,
-		BP_BRAIN = /obj/item/organ/internal/brain/lizard
+		BP_EYES = /obj/item/organ/internal/eyes/lizard
 	)
+
+	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/lizard)
 
 	appearance_descriptors = list(
 		/datum/appearance_descriptor/height = 1.25,
@@ -147,8 +147,8 @@
 		)
 	)
 
-/decl/species/lizard/New()
-	..()
+/decl/species/lizard/Initialize()
+	. = ..()
 	LAZYINITLIST(available_cultural_info)
 	LAZYDISTINCTADD(available_cultural_info[TAG_CULTURE], /decl/cultural_info/culture/lizard)
 	LAZYSET(default_cultural_info, TAG_CULTURE, /decl/cultural_info/culture/lizard)

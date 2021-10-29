@@ -3,14 +3,12 @@
 	full_name = "\improper ISEO Endeavour"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
+	welcome_sound = 'maps/torch/sounds/cryorevival.ogg'
 	//config_path = "config/torch_config.txt"
 
 	admin_levels = list(7)
-	empty_levels = list(9)
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
-	contact_levels = list(1,2,3,4,5,6)
-	overmap_size = 35
-	overmap_event_areas = 34
+	overmap_ids = list(OVERMAP_ID_SPACE = /datum/overmap/torch)
 	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
 	allowed_spawns = list(/decl/spawnpoint/cryo)
@@ -43,7 +41,6 @@
 	evac_controller_type = /datum/evacuation_controller/starship
 
 	default_law_type = /datum/ai_laws/solgov
-	use_overmap = 1
 	num_exoplanets = 1
 
 	away_site_budget = 3

@@ -10,7 +10,7 @@
 
 /datum/computer_file/report/recipient/medical/incidentreport/generate_fields()
 	..()
-	add_field(/datum/report_field/simple_text, "Vessel", using_map.station_name)
+	add_field(/datum/report_field/simple_text, "Vessel", global.using_map.station_name)
 	add_field(/datum/report_field/date, "Date of Incident")
 	add_field(/datum/report_field/time, "Time of Incident")
 	add_field(/datum/report_field/people/from_manifest, "Patient")
@@ -53,7 +53,7 @@
 
 /datum/computer_file/report/recipient/medical/autopsy/generate_fields()
 	..()
-	add_field(/datum/report_field/simple_text, "Vessel", using_map.station_name)
+	add_field(/datum/report_field/simple_text, "Vessel", global.using_map.station_name)
 	add_field(/datum/report_field/simple_text, "Patient Name")
 	add_field(/datum/report_field/text_label/header, "Death Information")
 	add_field(/datum/report_field/date, "Date of Death")
@@ -73,6 +73,6 @@
 
 	add_field(/datum/report_field/text_label/instruction, "By signing below, I affirm that I have reviewed all of the above and affirm it is factually correct to the best of my knowledge. If there is no Chief Medical Officer available, this signature may be skipped.")
 	var/datum/report_field/cmofield = add_field(/datum/report_field/people/from_manifest, "Chief Medical Officer")
-	cmofield.set_access(access_morgue, access_cmo)	
+	cmofield.set_access(access_morgue, access_cmo)
 	cmofield = add_field(/datum/report_field/signature, "Chief Medical Officer's Signature")
 	cmofield.set_access(access_morgue, access_cmo)

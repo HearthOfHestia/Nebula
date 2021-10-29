@@ -57,10 +57,7 @@
 
 /decl/hierarchy/outfit/corpse
 	name = "Corpse Clothing"
-
-/decl/hierarchy/outfit/corpse/Initialize()
-	..()
-	hierarchy_type = type
+	abstract_type = /decl/hierarchy/outfit/corpse
 
 /decl/hierarchy/outfit/corpse/slavers_base
 	name = "Basic slaver output"
@@ -134,9 +131,6 @@
 	name = "abolition extremist"
 	desc = "Vigiliant fighter against slavery."
 	icon = 'maps/away/slavers/icons/abolitionist.dmi'
-	icon_state = "extremist"
-	icon_living = "extremist"
-	icon_dead = "extremist_dead"
 	speak_chance = 0
 	turns_per_move = 5
 	speed = 4
@@ -177,8 +171,8 @@
 	icon = 'maps/away/slavers/icons/uniform.dmi'
 	body_parts_covered = SLOT_UPPER_BODY|SLOT_LOWER_BODY|SLOT_LEGS|SLOT_ARMS
 	armor = list(
-		melee = ARMOR_MELEE_KNIVES, 
-		bullet = ARMOR_BALLISTIC_PISTOL, 
-		laser = ARMOR_LASER_MINOR, 
+		melee = ARMOR_MELEE_KNIVES,
+		bullet = ARMOR_BALLISTIC_PISTOL,
+		laser = ARMOR_LASER_MINOR,
 		energy = ARMOR_ENERGY_MINOR
 		)

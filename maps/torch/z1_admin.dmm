@@ -64,7 +64,7 @@
 /turf/simulated/floor/holofloor/grass,
 /area/holodeck/source_picnicarea)
 "aay" = (
-/obj/structure/table/rack/holorack,
+/obj/structure/rack/holorack,
 /obj/effect/landmark/costume/chameleon,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_theatre)
@@ -554,7 +554,7 @@
 	},
 /area/centcom/evac)
 "acJ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/toxin{
 	pixel_x = -2;
 	pixel_y = 4
@@ -566,7 +566,7 @@
 	},
 /area/centcom/evac)
 "acK" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/fire,
 /obj/item/storage/firstaid/fire{
 	pixel_x = -2;
@@ -578,7 +578,7 @@
 	},
 /area/centcom/evac)
 "acL" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/regular{
 	pixel_x = 2;
 	pixel_y = 0
@@ -900,7 +900,7 @@
 /turf/simulated/floor/holofloor/carpet,
 /area/holodeck/source_courtroom)
 "ael" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor"
@@ -1005,7 +1005,7 @@
 /turf/space,
 /area/shuttle/escape_pod5/centcom)
 "aeC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/hand_labeler,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
@@ -1857,7 +1857,7 @@
 	},
 /area/centcom/evac)
 "ais" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/handcuffs,
 /obj/item/flash,
 /turf/unsimulated/floor{
@@ -2177,7 +2177,7 @@
 /turf/unsimulated/beach/sand,
 /area/space)
 "ano" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/bottle/small/beer,
 /obj/item/chems/drinks/bottle/small/beer,
 /obj/item/chems/drinks/bottle/small/beer,
@@ -2188,7 +2188,7 @@
 /turf/unsimulated/beach/sand,
 /area/space)
 "anp" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/clothing/head/collectable/petehat{
 	pixel_y = 5
@@ -2196,12 +2196,12 @@
 /turf/unsimulated/beach/sand,
 /area/space)
 "anP" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/food/chips,
 /turf/unsimulated/beach/sand,
 /area/space)
 "anQ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/cans/cola,
 /obj/item/chems/drinks/cans/cola,
 /obj/item/chems/drinks/cans/cola,
@@ -2280,7 +2280,7 @@
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
 "asX" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig/light/internalaffairs/equipped,
 /obj/item/rig/light/internalaffairs/equipped,
 /turf/simulated/floor/shuttle/red,
@@ -2387,7 +2387,7 @@
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
 "att" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "carpet"
@@ -2503,14 +2503,14 @@
 	pixel_x = 2;
 	pixel_y = 6
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
 /area/centcom/living)
 "atN" = (
 /obj/item/chems/drinks/cans/cola,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -2568,13 +2568,13 @@
 /area/centcom)
 "atY" = (
 /obj/item/chems/drinks/bottle/small/beer,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
 /area/centcom/living)
 "atZ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -2785,7 +2785,7 @@
 /obj/item/chems/condiment/small/saltshaker{
 	pixel_x = -6
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -2861,7 +2861,7 @@
 /turf/simulated/floor/shuttle/red,
 /area/shuttle/administration/centcom)
 "avg" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/shaker,
 /turf/unsimulated/floor{
 	dir = 2;
@@ -2869,7 +2869,7 @@
 	},
 /area/centcom/living)
 "avh" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	dir = 2;
 	icon_state = "white"
@@ -2994,7 +2994,7 @@
 	},
 /area/centcom/living)
 "avz" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
@@ -3064,7 +3064,7 @@
 	},
 /area/centcom/living)
 "avN" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/card/id/centcom,
 /turf/unsimulated/floor{
 	dir = 8;
@@ -3079,7 +3079,7 @@
 	},
 /area/centcom/living)
 "avP" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/glass/beaker,
 /obj/item/chems/condiment/enzyme,
 /turf/unsimulated/floor{
@@ -3088,7 +3088,7 @@
 	},
 /area/centcom/living)
 "avQ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/microwave{
 	pixel_x = -3;
 	pixel_y = 6
@@ -3151,7 +3151,7 @@
 	},
 /area/centcom/living)
 "awh" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/plastique,
 /obj/item/plastique,
 /obj/item/plastique,
@@ -3164,7 +3164,7 @@
 	},
 /area/space)
 "awj" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/gun/energy/ionrifle,
 /turf/unsimulated/floor{
 	dir = 1;
@@ -3172,7 +3172,7 @@
 	},
 /area/space)
 "awk" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/gun/energy/gun/nuclear,
 /obj/item/gun/energy/gun/nuclear,
 /obj/item/gun/energy/gun/nuclear,
@@ -3182,14 +3182,14 @@
 	},
 /area/space)
 "awl" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
 	},
 /area/space)
 "awm" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/box/flashbangs,
 /obj/item/storage/box/flashbangs,
 /obj/item/storage/box/emps,
@@ -3215,7 +3215,7 @@
 /obj/item/aiModule/paladin,
 /obj/item/aiModule/robocop,
 /obj/item/aiModule/safeguard,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"
@@ -3360,7 +3360,7 @@
 	},
 /area/space)
 "awM" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stock_parts/circuitboard/borgupload,
 /obj/item/stock_parts/circuitboard/aiupload{
 	pixel_x = -3;
@@ -3372,7 +3372,7 @@
 	},
 /area/space)
 "awN" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/secure/briefcase,
 /obj/item/storage/fancy/cigarettes,
 /obj/item/flame/lighter/zippo/random,
@@ -3537,7 +3537,7 @@
 	},
 /area/space)
 "axk" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/gun/energy/gun,
 /obj/item/gun/energy/gun,
 /obj/item/gun/energy/gun,
@@ -3777,7 +3777,7 @@
 	},
 /area/space)
 "axU" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/suit/armor/vest/ert/security,
 /obj/item/clothing/suit/armor/vest/ert/security,
 /obj/item/clothing/suit/armor/vest/ert/security,
@@ -3796,7 +3796,7 @@
 	},
 /area/space)
 "axV" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig/military/equipped,
 /obj/item/rig/military/equipped,
 /turf/unsimulated/floor{
@@ -3805,7 +3805,7 @@
 	},
 /area/space)
 "axX" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig_module/mounted,
 /obj/item/clothing/accessory/storage/vest/black,
 /obj/item/clothing/accessory/storage/vest/black,
@@ -4190,7 +4190,7 @@
 	},
 /area/centcom/control)
 "azo" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig/military/equipped,
 /turf/unsimulated/floor{
 	dir = 1;
@@ -4198,7 +4198,7 @@
 	},
 /area/space)
 "azp" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
 	dir = 1;
@@ -4206,7 +4206,7 @@
 	},
 /area/space)
 "azq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/flash,
 /obj/item/flash,
 /obj/item/clothing/accessory/storage/vest,
@@ -4307,7 +4307,7 @@
 	},
 /area/centcom/control)
 "azQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/rig_module/mounted/taser,
 /obj/item/rig_module/mounted/taser,
 /obj/item/rig_module/mounted/taser,
@@ -4481,7 +4481,7 @@
 	},
 /area/space)
 "aAr" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/mask/balaclava,
 /obj/item/clothing/mask/balaclava,
 /obj/item/clothing/mask/balaclava,
@@ -4565,7 +4565,7 @@
 	},
 /area/space)
 "aAH" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
@@ -4704,7 +4704,7 @@
 /turf/unsimulated/wall,
 /area/space)
 "aBg" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/lightreplacer,
 /obj/item/lightreplacer,
 /turf/unsimulated/floor{
@@ -4879,7 +4879,7 @@
 	},
 /area/space)
 "aBK" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/backpack/security,
 /obj/item/clothing/under/syndicate/combat,
 /obj/item/clothing/shoes/galoshes,
@@ -5063,7 +5063,7 @@
 	},
 /area/space)
 "aCn" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/flash,
 /obj/item/flash,
 /obj/item/clothing/accessory/storage/vest/white,
@@ -5078,7 +5078,7 @@
 	},
 /area/space)
 "aCo" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/swat,
 /turf/unsimulated/floor{
@@ -5087,7 +5087,7 @@
 	},
 /area/space)
 "aCp" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
@@ -5102,7 +5102,7 @@
 	},
 /area/space)
 "aCq" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/tank/emergency/oxygen/double,
 /obj/item/tank/emergency/oxygen/double,
 /obj/item/tank/emergency/oxygen/double,
@@ -5668,7 +5668,7 @@
 	},
 /area/centcom/ferry)
 "aFC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/paper,
 /obj/item/pen,
 /turf/unsimulated/floor{
@@ -6522,7 +6522,7 @@
 	},
 /area/tdome)
 "aIA" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/wrench,
 /turf/unsimulated/floor{
 	icon_state = "white"
@@ -6569,7 +6569,7 @@
 	},
 /area/space)
 "aIH" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6639,7 +6639,7 @@
 	},
 /area/tdome)
 "aIU" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/sutures{
 	pixel_x = -6;
 	pixel_y = 1
@@ -6649,7 +6649,7 @@
 	},
 /area/space)
 "aIV" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/cautery{
 	pixel_y = 4
 	},
@@ -6661,7 +6661,7 @@
 	},
 /area/space)
 "aIW" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/retractor{
 	pixel_x = 0;
 	pixel_y = 6
@@ -6672,7 +6672,7 @@
 	},
 /area/space)
 "aIX" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/bonesetter,
 /obj/item/bonegel{
 	pixel_x = 4;
@@ -6683,7 +6683,7 @@
 	},
 /area/space)
 "aIY" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/surgicaldrill,
 /obj/item/circular_saw,
 /turf/unsimulated/floor{
@@ -6759,7 +6759,7 @@
 	},
 /area/space)
 "aJo" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
@@ -6807,7 +6807,7 @@
 	},
 /area/tdome)
 "aJw" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
@@ -6834,7 +6834,7 @@
 	},
 /area/space)
 "aJz" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/ivbag/blood/OPlus{
 	pixel_x = 4;
 	pixel_y = 2
@@ -6872,7 +6872,7 @@
 	},
 /area/space)
 "aJC" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/regular{
 	pixel_x = 2;
 	pixel_y = 6
@@ -6893,7 +6893,7 @@
 	},
 /area/space)
 "aJD" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/firstaid/o2{
 	pixel_x = 4;
 	pixel_y = 6
@@ -6908,7 +6908,7 @@
 	},
 /area/space)
 "aJE" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/chems/spray/cleaner,
@@ -6963,7 +6963,7 @@
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
 "aJO" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /obj/machinery/light{
@@ -6995,7 +6995,7 @@
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/transport1/centcom)
 "aJY" = (
-/obj/structure/table/rack{
+/obj/structure/rack{
 	dir = 8
 	},
 /turf/simulated/floor/shuttle/blue,
@@ -7072,7 +7072,7 @@
 	},
 /area/tdome/tdomeobserve)
 "aKm" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/chems/drinks/bottle/small/beer,
 /obj/item/chems/drinks/bottle/small/beer,
 /obj/item/chems/drinks/bottle/small/beer,
@@ -7086,7 +7086,7 @@
 /obj/item/chems/drinks/cans/cola,
 /obj/item/chems/drinks/cans/cola,
 /obj/item/chems/drinks/cans/cola,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
@@ -7162,13 +7162,13 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "white"
 	},
 /area/tdome)
 "aKB" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/microwave,
 /turf/unsimulated/floor{
 	icon_state = "white"
@@ -7214,7 +7214,7 @@
 	},
 /area/acting/backstage)
 "aKK" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/box/lights/mixed,
 /obj/item/paint_sprayer,
 /turf/unsimulated/floor{
@@ -7223,7 +7223,7 @@
 	},
 /area/acting/backstage)
 "aKL" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/tile/floor{
 	amount = 50
 	},
@@ -7236,7 +7236,7 @@
 	},
 /area/acting/backstage)
 "aKM" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/tile/floor_freezer{
 	amount = 50
 	},
@@ -7249,7 +7249,7 @@
 	},
 /area/acting/backstage)
 "aKN" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/tile/carpet{
 	amount = 50
 	},
@@ -7262,7 +7262,7 @@
 	},
 /area/acting/backstage)
 "aKO" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/tile/grass{
 	amount = 50
 	},
@@ -7275,7 +7275,7 @@
 	},
 /area/acting/backstage)
 "aKP" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/sheet/mapped/steel/fifty{
 	amount = 50;
 	pixel_x = 5;
@@ -7297,7 +7297,7 @@
 	},
 /area/acting/backstage)
 "aKQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/reinforced/mapped/plasteel/ten{
 	amount = 50
 	},
@@ -7313,7 +7313,7 @@
 	},
 /area/acting/backstage)
 "aKR" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/plank/mapped/wood/fifty{
 	amount = 50
 	},
@@ -7329,7 +7329,7 @@
 	},
 /area/acting/backstage)
 "aKS" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/brick/mapped/sandstone/fifty{
 	amount = 50
 	},
@@ -7345,7 +7345,7 @@
 	},
 /area/acting/backstage)
 "aKT" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/pane/mapped/glass/fifty{
 	amount = 50;
 	pixel_x = 3;
@@ -7367,7 +7367,7 @@
 	},
 /area/acting/backstage)
 "aKU" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
 	amount = 50
 	},
@@ -7383,7 +7383,7 @@
 	},
 /area/acting/backstage)
 "aKV" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/brick/mapped/marble/fifty{
 	amount = 50
 	},
@@ -7399,7 +7399,7 @@
 	},
 /area/acting/backstage)
 "aKW" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/panel/mapped/plastic/fifty{
 	amount = 50
 	},
@@ -7415,7 +7415,7 @@
 	},
 /area/acting/backstage)
 "aKX" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/ingot/mapped/silver/ten{
 	amount = 50
 	},
@@ -7496,7 +7496,7 @@
 	},
 /area/acting/backstage)
 "aLi" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/energy_blade/axe,
@@ -7527,7 +7527,7 @@
 	},
 /area/tdome)
 "aLl" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/energy_blade/axe,
@@ -7608,7 +7608,7 @@
 	},
 /area/acting/backstage)
 "aLx" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/clothing/suit/armor/tdome/red,
@@ -7675,7 +7675,7 @@
 	},
 /area/tdome/tdome1)
 "aLE" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/clothing/suit/armor/tdome/green,
@@ -7790,7 +7790,7 @@
 /obj/effect/landmark{
 	name = "tdome2"
 	},
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Thunderdome - Red Team";
 	invisibility = 101
 	},
@@ -7817,7 +7817,7 @@
 /obj/effect/landmark{
 	name = "tdome1"
 	},
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Green Team";
 	invisibility = 101
 	},
@@ -7837,7 +7837,7 @@
 	},
 /area/acting/backstage)
 "aMe" = (
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	c_tag = "Thunderdome Arena";
 	invisibility = 101
 	},
@@ -7863,7 +7863,7 @@
 	},
 /area/acting/backstage)
 "aMn" = (
-/obj/machinery/camera/network/thunder{
+/obj/machinery/camera/network/television{
 	anchored = 0;
 	c_tag = "Television";
 	name = "Movable Camera"
@@ -8108,7 +8108,7 @@
 	},
 /area/tdome)
 "aNk" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/clothing/suit/armor/vest,
@@ -8139,7 +8139,7 @@
 	},
 /area/tdome)
 "aNn" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/color/brown,
 /obj/item/clothing/suit/armor/vest,
@@ -8611,7 +8611,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/merchant_station)
 "aOL" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/contraband,
 /obj/random/loot,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -8761,7 +8761,7 @@
 	},
 /area/acting/backstage)
 "aPC" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/tile/floor{
 	amount = 50
 	},
@@ -8785,7 +8785,7 @@
 	},
 /area/acting/backstage)
 "aPH" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
@@ -8804,7 +8804,7 @@
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/grenade/chem_grenade/cleaner,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
@@ -8844,13 +8844,13 @@
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/ointment,
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
 "aPO" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/stack/medical/bruise_pack,
 /obj/item/stack/medical/bruise_pack,
 /obj/item/stack/medical/bruise_pack,
@@ -8859,27 +8859,27 @@
 	},
 /area/tdome/tdomeadmin)
 "aPP" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/box/handcuffs,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
 "aPQ" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
 "aPR" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/toolbox/electrical,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
 /area/tdome/tdomeadmin)
 "aPS" = (
-/obj/structure/table/standard,
+/obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -9066,7 +9066,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aQo" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/card/id{
 	access = list(301);
@@ -9259,7 +9259,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRt" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/loot,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -9274,7 +9274,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aRv" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/storage/bag/cash,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
@@ -9405,7 +9405,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/merchant/home)
 "aSj" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aSk" = (
@@ -9707,7 +9707,7 @@
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aTk" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
@@ -9933,17 +9933,17 @@
 /area/shuttle/merchant/home)
 "aTT" = (
 /obj/machinery/door/window/brigdoor/northleft,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aTU" = (
 /obj/machinery/door/window/brigdoor/northright,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/simulated/floor/tiled,
 /area/shuttle/merchant/home)
 "aTX" = (
 /obj/machinery/door/window/brigdoor/northright,
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -9988,7 +9988,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUc" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
 	amount = 50
 	},
@@ -10004,7 +10004,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUd" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/panel/mapped/plastic/fifty{
 	amount = 50
 	},
@@ -10020,7 +10020,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUe" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4;
 	icon_state = "warning"
@@ -10224,7 +10224,6 @@
 /obj/machinery/cell_charger,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/structure/cable/blue{
-	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/random/powercell,
@@ -10289,7 +10288,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUY" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/reinforced/mapped/plasteel/fifty{
 	amount = 10
 	},
@@ -10305,12 +10304,11 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aUZ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/simulated/floor/tiled/airless,
 /area/merchant_station)
 "aVk" = (
 /obj/structure/cable{
-	d2 = 2;
 	icon_state = "0-2";
 	pixel_y = 0
 	},
@@ -10328,8 +10326,6 @@
 	dir = 8
 	},
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
@@ -10339,8 +10335,6 @@
 	dir = 8
 	},
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
@@ -10389,7 +10383,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVt" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/plank/mapped/wood/fifty,
 /obj/item/stack/material/plank/mapped/wood/fifty,
 /obj/item/stack/material/plank/mapped/wood/fifty,
@@ -10401,7 +10395,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVv" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVw" = (
@@ -10417,7 +10411,6 @@
 /area/merchant_station)
 "aVF" = (
 /obj/structure/cable{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/solar,
@@ -10426,21 +10419,15 @@
 /area/merchant_station)
 "aVG" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aVH" = (
 /obj/structure/cable/blue{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /obj/structure/closet/crate,
@@ -10461,8 +10448,6 @@
 /area/merchant_station)
 "aVI" = (
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/structure/reagent_dispensers/fueltank,
@@ -10470,8 +10455,6 @@
 /area/merchant_station)
 "aVJ" = (
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/vending/engivend{
@@ -10482,8 +10465,6 @@
 "aVK" = (
 /obj/structure/table/steel,
 /obj/structure/cable/blue{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/item/storage/box/lights/mixed,
@@ -10492,8 +10473,6 @@
 /area/merchant_station)
 "aVL" = (
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
@@ -10529,7 +10508,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVQ" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/pane/mapped/glass/fifty{
 	amount = 50
 	},
@@ -10545,7 +10524,7 @@
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aVR" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/stack/material/rods{
 	amount = 50
 	},
@@ -10579,7 +10558,6 @@
 /area/merchant_station)
 "aWg" = (
 /obj/structure/cable/blue{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/smes/buildable{
@@ -10596,8 +10574,6 @@
 /area/merchant_station)
 "aWh" = (
 /obj/structure/cable/blue{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -10636,13 +10612,12 @@
 /turf/simulated/floor/plating,
 /area/merchant_station)
 "aWp" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/medical,
 /turf/simulated/floor/tiled,
 /area/merchant_station)
 "aWy" = (
 /obj/structure/cable{
-	d2 = 4;
 	icon_state = "0-4"
 	},
 /obj/machinery/power/tracker,
@@ -10650,34 +10625,24 @@
 /area/merchant_station)
 "aWz" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aWA" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 4;
 	icon_state = "1-4"
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 4;
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/airless,
 /area/merchant_station)
 "aWB" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10688,8 +10653,6 @@
 /area/merchant_station)
 "aWC" = (
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10704,8 +10667,6 @@
 "aWD" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -10720,15 +10681,12 @@
 	icon_state = "term"
 	},
 /obj/structure/cable{
-	d2 = 8;
 	icon_state = "0-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
 /obj/structure/cable{
-	d1 = 2;
-	d2 = 8;
 	icon_state = "2-8"
 	},
 /obj/structure/bed/chair/comfy/brown{
@@ -10799,13 +10757,9 @@
 /area/merchant_station)
 "aWV" = (
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 2;
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	d1 = 1;
-	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/airless,
@@ -11066,7 +11020,7 @@
 	},
 /area/space)
 "bsb" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/random/action_figure,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/item/clothing/accessory/storage/holster,
@@ -11382,7 +11336,7 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
 "eRk" = (
-/obj/structure/table/rack/holorack,
+/obj/structure/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken1"
 	},
@@ -11944,7 +11898,7 @@
 	},
 /area/centcom/living)
 "rIb" = (
-/obj/structure/table/rack/holorack,
+/obj/structure/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken3"
 	},
@@ -12091,7 +12045,7 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_cafe)
 "vgY" = (
-/obj/structure/table/rack/holorack,
+/obj/structure/rack/holorack,
 /turf/simulated/floor/holofloor/wood{
 	icon_state = "wood_broken2"
 	},

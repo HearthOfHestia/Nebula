@@ -73,7 +73,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/template_noop)
 "n" = (
-/obj/machinery/cooker/oven,
+/obj/machinery/appliance/cooker/oven,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
@@ -189,7 +189,7 @@
 /turf/simulated/floor/wood,
 /area/template_noop)
 "I" = (
-/obj/structure/table/rack,
+/obj/structure/rack,
 /obj/item/gun/projectile/zipgun,
 /obj/item/storage/box/ammo/shotgunshells,
 /turf/simulated/floor/wood,

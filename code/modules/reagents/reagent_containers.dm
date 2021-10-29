@@ -1,10 +1,11 @@
 /obj/item/chems
-	name = "Container"
+	name = "container"
 	desc = "..."
 	icon = 'icons/obj/items/chem/container.dmi'
 	icon_state = null
 	w_class = ITEM_SIZE_SMALL
 
+	var/base_name
 	var/amount_per_transfer_from_this = 5
 	var/possible_transfer_amounts = @"[5,10,15,25,30]"
 	var/volume = 30
@@ -20,7 +21,9 @@
 	return FALSE
 
 /obj/item/chems/proc/get_base_name()
-	. = initial(name)
+	if(!base_name)
+		base_name = initial(name)
+	. = base_name
 
 /obj/item/chems/on_reagent_change()
 	if(atom_flags & ATOM_FLAG_SHOW_REAGENT_NAME)
@@ -55,6 +58,11 @@
 	return
 
 /obj/item/chems/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/chems/food))
+		var/obj/item/chems/food/dipped = W
+		. = dipped.attempt_apply_coating(src, user)
+		if(.)
+			return .
 	if(istype(W, /obj/item/pen) || istype(W, /obj/item/flashlight/pen))
 		var/tmp_label = sanitizeSafe(input(user, "Enter a label for [name]", "Label", label_text), MAX_NAME_LEN)
 		if(length(tmp_label) > 10)
@@ -67,10 +75,10 @@
 		return ..()
 
 /obj/item/chems/proc/update_name_label()
-	if(label_text == "")
-		SetName(initial(name))
+	if(!label_text || label_text == "")
+		SetName(get_base_name())
 	else
-		SetName("[initial(name)] ([label_text])")
+		SetName("[get_base_name()] ([label_text])")
 
 /obj/item/chems/proc/standard_dispenser_refill(var/mob/user, var/obj/structure/reagent_dispensers/target) // This goes into afterattack
 	if(!istype(target))

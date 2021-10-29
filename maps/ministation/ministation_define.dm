@@ -16,7 +16,6 @@
 	boss_short    = "Admin"
 	company_name  = "Free Trade Union Residual Delta"
 	company_short = "RD"
-	overmap_event_areas = 11
 
 	default_law_type = /datum/ai_laws/nanotrasen
 
@@ -27,21 +26,6 @@
 	emergency_shuttle_called_message = "Attention all crew members: emergency evacuation procedures are now in effect. Please make your way to the port hallway docking area in a calm and orderly manner."
 	emergency_shuttle_recall_message = "Attention all crew members: emergency evacuation sequence aborted. Return to normal operating conditions."
 	evac_controller_type = /datum/evacuation_controller/ministation_substitute
-
-	station_networks = list(
-		NETWORK_PUBLIC,
-		NETWORK_MINE,
-		NETWORK_SECURITY,
-		NETWORK_RESEARCH,
-		NETWORK_MEDICAL,
-		NETWORK_ENGINEERING,
-		NETWORK_ROBOTS,
-		"Satellite",
-		NETWORK_ALARM_ATMOS,
-		NETWORK_ALARM_CAMERA,
-		NETWORK_ALARM_FIRE,
-		NETWORK_ALARM_MOTION,
-		NETWORK_ALARM_POWER)
 
 	pray_reward_type = /obj/item/mollusc/clam
 

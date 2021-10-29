@@ -4,6 +4,9 @@
 	var/marking_color_body
 	var/marking_color_legs = COLOR_GRAY
 	var/stripe_color
+	status_flags = CANPUSH
+	can_pull_size = ITEM_SIZE_STRUCTURE
+	can_pull_mobs = MOB_PULL_SAME
 	maxHealth = 250
 	health = 250
 	desc = "A six-legged remote interface drone, coequally known as a thinktank."
@@ -58,7 +61,7 @@
 	marking_color_body = COLOR_MAROON
 	marking_color_legs = COLOR_MAROON
 	stripe_color = COLOR_GOLD
-	module_type = /obj/item/robot_module/security/shard
+	module_type = /obj/item/robot_module/security/general/shard
 
 /mob/living/silicon/robot/drone/shard/engineering
 	name = "Engineering SIC"

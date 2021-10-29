@@ -17,10 +17,10 @@
 	frontier colony SDTF's, or functions as an intermediary SDTF for systems where a presence has yet to be established. The Skrell of Yii'Talana \
 	are some of the more experienced on the far skrellian frontier."
 
-/decl/cultural_info/faction/skrell/krrigli
+/decl/cultural_info/faction/skrell/krrigli ///HEY LISTEN, THIS MENTIONS THE EXO AND WILL NEED RECTIFYING
 	name = "Krri'gli"
 	description = "Krri'gli is a Skrell aerospace manufacturing and research corporation from the city-state of Tibrivuu in the Go'kal system,\
-	and one of the more well known Skrell corporations in human space as a result of its contribution to the SEV Torch Project.\
+	and one of the more well known Skrell corporations in human space as a result of its contribution to the ISEO Endeavour Project.\
 	Krri'gli is mostly concerned with the design and construction of bluespace drives, and is one of the largest providers in the human side \
 	of Skrell space. Their participation in the Torch project is their first human venture, and has resulted in their sending science staff \
 	as a part of the Expeditionary Corps Organization to provide expertise and gather mission data firsthand."
@@ -37,3 +37,10 @@
 	additional_langs = list(/decl/language/human/common)
 	economic_power = 1.4
 	subversive_potential = 60
+
+/decl/cultural_info/faction/skrell/kalimak
+	name = "Kali'mak"
+	description = "An SDTF that predates the first Ascent encounters. Financed partially by Qerr’Vallis along with numerous neighboring systems, Kali’Mak is \
+	one of the most experienced SDTFs in all Ascent-related incursions, although their task has been mostly one of deterrence since the Ascent-Skrell ceasefire. \
+	The Kali’Mak acts as a “Reserve” strike force when the border patrols of other SDTFs identify Ascent threats, and as a result, many of their members enter exchange programs with other SDTFs. \
+	They are based on the system of Kale’ta’q*, where the old capital of Gilkrol’Qarr exists."

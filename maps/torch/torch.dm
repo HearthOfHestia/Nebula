@@ -4,20 +4,39 @@
 	#include "..\..\mods\content\corporate\_corporate.dme"
 	#include "..\..\mods\content\government\_government.dme"
 	#include "..\..\mods\content\psionics\_psionics.dme"
-	#include "..\..\mods\mobs\borers\_borers.dme"
-	#include "..\..\mods\species\ascent\_ascent.dme"
 	#include "..\..\mods\content\modern_earth\_modern_earth.dme"
-	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
-	#include "..\..\mods\species\utility_frames\_utility_frames.dme"
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
+
+	#include "..\..\mods\content\baychems\_baychems.dme"
+
+	#include "..\..\mods\mobs\borers\_borers.dme"
+	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
+
 	#include "..\..\mods\content\neural_laces\_laces.dme"
 	#include "..\..\mods\content\genemodding\_genemodding.dme"
+	#include "..\..\mods\content\hearthfoods\_hearthfoods.dme"
 	#include "..\..\mods\content\shards\_shards.dme"
+
 	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
+
 	#include "..\..\mods\utility\ooc_notes\_ooc_notes.dme"
+	#include "..\..\mods\utility\tgsv4_integration\___tgs.dme"
+	#include "..\..\mods\content\hearth_content\_hearth_content.dme"
+
+	#include "../../mods/species/ascent/_ascent.dme"
+	#include "../../mods/species/utility_frames/_utility_frames.dme"
+	#include "../../mods/species/tajaran/_tajaran.dme"
+	#include "../../mods/species/lizard/_lizard.dme"
+	#include "../../mods/species/vox/_vox.dme"
+	#include "../../mods/species/adherent/_adherent.dme"
+	#include "../../mods/species/skrell/_skrell.dme"
+
+	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
 
 	#include "../../mods/content/government/away_sites/icarus/icarus.dm"
 	#include "../../mods/content/corporate/away_sites/lar_maria/lar_maria.dm"
+
+	#include "..\..\mods\utility\centcomdb\_centcomdb.dme"
 
 	#include "torch_define.dm"
 	#include "torch_announcements.dm"
@@ -93,6 +112,7 @@
 
 
 	#include "items/unsorted_missing.dm"
+	#include "items\guns.dm"
 
 	#include "items/hearth_spacesuits.dm"
 
@@ -141,6 +161,7 @@
 	#include "structures/closets/supply.dm"
 	#include "structures/closets/exploration.dm"
 	#include "structures/lectern.dm"
+	#include "structures\railing.dm"
 
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"
@@ -150,6 +171,7 @@
 	#include "loadout/loadout_head.dm"
 	#include "loadout/loadout_shoes.dm"
 	#include "loadout/loadout_suit.dm"
+	#include "loadout/loadout_tactical.dm"
 	#include "loadout/loadout_uniform.dm"
 	#include "loadout/loadout_xeno.dm"
 	#include "loadout/~defines.dm"
@@ -171,6 +193,7 @@
 	#include "datums\music\nearest_starbase.dm"
 	#include "datums\music\lonely_satelite.dm"
 	#include "datums\music\into_hyperspace.dm"
+	#include "datums\music\toboldlygo.dm"
 	#include "items\hearth_clothing\hats_general.dm"
 	//end HEARTH
 

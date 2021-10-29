@@ -99,11 +99,8 @@
 #ifndef CUSTOM_ITEM_CONFIG
 #define CUSTOM_ITEM_CONFIG "config/custom_items/"
 #endif
-#ifndef CUSTOM_ITEM_SYNTH_CONFIG
-#define CUSTOM_ITEM_SYNTH_CONFIG "config/custom_sprites.txt"
-#endif
-#ifndef CUSTOM_ITEM_SYNTH
-#define CUSTOM_ITEM_SYNTH 'icons/mob/custom_synthetic.dmi'
+#ifndef CUSTOM_ICON_CONFIG
+#define CUSTOM_ICON_CONFIG "config/custom_icons/"
 #endif
 
 #define WALL_CAN_OPEN 1
@@ -262,7 +259,29 @@
 
 #define hex2num(X) text2num(X, 16)
 
-#define GET_DECL(D) (ispath(D, /decl) ? (decls_repository.fetched_decls[D] || decls_repository.get_decl(D)) : null)
 #define Z_ALL_TURFS(Z) block(locate(1, 1, Z), locate(world.maxx, world.maxy, Z))
 
 #define AS_ANYTHING as anything
+
+// Cooking appliances.
+#define APPLIANCE_MIX         BITFLAG(0)
+#define APPLIANCE_FRYER       BITFLAG(1)
+#define APPLIANCE_OVEN        BITFLAG(2)
+#define APPLIANCE_SKILLET     BITFLAG(3)
+#define APPLIANCE_SAUCEPAN    BITFLAG(4)
+#define APPLIANCE_POT         BITFLAG(5)
+#define APPLIANCE_MICROWAVE   BITFLAG(6)
+// Cooking misc.
+// can_insert return values
+#define CANNOT_INSERT  0
+#define CAN_INSERT     1
+#define INSERT_GRABBED 2
+// check_contents return values
+#define CONTAINER_EMPTY  0
+#define CONTAINER_SINGLE 1
+#define CONTAINER_MANY   2
+
+//NOTE: INTENT_HOTKEY_* defines are not actual intents!
+//they are here to support hotkeys
+#define INTENT_HOTKEY_LEFT  "left"
+#define INTENT_HOTKEY_RIGHT "right"

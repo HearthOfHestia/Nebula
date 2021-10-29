@@ -171,7 +171,7 @@
 /datum/unit_test/closet_test/start_test()
 	var/bad_tests = 0
 
-	for(var/obj/structure/closet/C in world)
+	for(var/obj/structure/closet/C in global.closets)
 		if(!C.opened && isPlayerLevel(C.z))
 			var/total_content_size = 0
 			for(var/atom/movable/AM in C.contents)
@@ -814,7 +814,7 @@
 	for(var/obj/machinery/door/D in world)
 		if(QDELETED(D))
 			continue
-		if(!istype(D.loc, /turf))
+		if(!isturf(D.loc))
 			bad_doors++
 			log_bad("Invalid door turf: [log_info_line(D.loc)]]")
 		else

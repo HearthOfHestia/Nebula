@@ -12,6 +12,7 @@
 	value = 1.8
 	var/pain_power = 80 //magnitide of painkilling effect
 	var/effective_dose = 0.5 //how many units it need to process to reach max power
+	var/narcotic = TRUE
 
 /decl/material/liquid/painkillers/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 
@@ -25,6 +26,8 @@
 
 	M.add_chemical_effect(CE_PAINKILLER, (pain_power * effectiveness))
 
+	if(!narcotic)
+		return
 	if(dose > 0.5 * overdose)
 		M.add_chemical_effect(CE_SLOWDOWN, 1)
 		if(prob(1))
@@ -47,6 +50,8 @@
 
 /decl/material/liquid/painkillers/affect_overdose(var/mob/living/M, var/alien, var/datum/reagents/holder)
 	..()
+	if(!narcotic)
+		return
 	M.set_hallucination(120, 30)
 	SET_STATUS_MAX(M, STAT_DRUGGY, 10)
 	M.add_chemical_effect(CE_PAINKILLER, pain_power*0.5) //extra painkilling for extra trouble
@@ -56,6 +61,8 @@
 
 /decl/material/liquid/painkillers/proc/isboozed(var/mob/living/carbon/M)
 	. = 0
+	if(!narcotic)
+		return
 	var/datum/reagents/ingested = M.get_ingested_reagents()
 	if(ingested)
 		var/list/pool = M.reagents.reagent_volumes | ingested.reagent_volumes

@@ -202,17 +202,6 @@
 /***********************************
 *   Microwave Menu Handling/Cooking
 ************************************/
-/obj/machinery/microwave/proc/select_recipe()
-	var/list/all_recipes = decls_repository.get_decls_of_subtype(/decl/recipe)
-	var/highest_count = 0
-	for(var/rtype in all_recipes)
-		var/decl/recipe/recipe = all_recipes[rtype]
-		if(!istype(recipe) || !recipe.check_reagents(reagents) || !recipe.check_items(src) || !recipe.check_fruit(src))
-			continue
-		//okay, let's select the most complicated recipe
-		if(recipe.complexity >= highest_count)
-			highest_count = recipe.complexity
-			. = recipe
 
 /obj/machinery/microwave/proc/cook()
 	cook_break = FALSE
@@ -228,7 +217,7 @@
 	if (reagents.total_volume && prob(50)) // 50% chance a liquid recipe gets messy
 		dirty += CEILING(reagents.total_volume / 10)
 
-	var/decl/recipe/recipe = select_recipe()
+	var/decl/recipe/recipe = select_recipe(src, APPLIANCE_MICROWAVE)
 	if (!recipe)
 		failed = TRUE
 		cook_time = update_cook_time()
@@ -249,23 +238,22 @@
 	return (ct / cooking_power)
 
 /obj/machinery/microwave/proc/finish_cooking()
-	var/decl/recipe/recipe = select_recipe()
+	var/decl/recipe/recipe = select_recipe(src, APPLIANCE_MICROWAVE)
 	if(!recipe)
 		return
-	var/result = recipe.result
+	var/decl/recipe/oldrecipe = recipe
 	var/list/cooked_items = list()
 	while(recipe)
 		cooked_items += recipe.make_food(src)
-		recipe = select_recipe()
-		if (!recipe || (recipe.result != result))
+		recipe = select_recipe(src, APPLIANCE_MICROWAVE)
+		if (!recipe || recipe != oldrecipe)
 			break
 
 	//Any leftover reagents are divided amongst the foods
 	var/total = reagents.total_volume
 	for (var/obj/item/I in cooked_items)
-		if(I.reagents)
-			reagents.trans_to_holder(I.reagents, total/cooked_items.len)
-			I.dropInto(loc) // since eject only ejects ingredients!
+		reagents.trans_to_obj(I, total/cooked_items.len)
+		I.dropInto(loc) // since eject only ejects ingredients!
 
 	dispose(message = FALSE) //clear out anything left
 
@@ -309,13 +297,13 @@
 		icon_state = "mw1"
 
 	set_light(1, 1.5)
-	soundloop.start()
+	soundloop.start(src)
 	update_icon()
 	SSnano.update_uis(src)
 
 /obj/machinery/microwave/proc/after_finish_loop()
 	set_light(0)
-	soundloop.stop()
+	soundloop.stop(src)
 	update_icon()
 
 /obj/machinery/microwave/proc/stop(var/abort = FALSE)

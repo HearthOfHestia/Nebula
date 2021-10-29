@@ -17,7 +17,8 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t4,
-		/datum/mil_rank/espatier/e6
+		/datum/mil_rank/espatier/e6,
+		/datum/mil_rank/espatier/e7
 	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_ADEPT,
@@ -76,9 +77,11 @@
 		/datum/mil_rank/sc/t1,
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
+		/datum/mil_rank/espatier/e1,
+		/datum/mil_rank/espatier/e2,
 		/datum/mil_rank/espatier/e3,
 		/datum/mil_rank/espatier/e4
-	
+
 	)
 	min_skill = list(   SKILL_COMPUTER     = SKILL_BASIC,
 	                    SKILL_EVA          = SKILL_BASIC,

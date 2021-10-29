@@ -6,7 +6,7 @@
 		/decl/bodytype/skrell
 		)
 
-	preview_icon = 'mods/species/skrell/icons/preview.dmi'
+	preview_icon = 'mods/species/skrell/icons/body/preview.dmi'
 
 	primitive_form = "Neaera"
 	unarmed_attacks = list(
@@ -16,16 +16,16 @@
 		/decl/natural_attack/bite
 	)
 
-	description = "An amphibious species, Skrell come from the star system known as Qerr'Vallis, which translates to 'Star of \
-	the royals' or 'Light of the Crown'.<br/><br/>Skrell are a highly advanced and logical race who live under the rule \
-	of the Qerr'Katish, a caste within their society which keeps the empire of the Skrell running smoothly. Skrell are \
-	herbivores on the whole and tend to be co-operative with the other species of the galaxy, although they rarely reveal \
-	the secrets of their empire to their allies."
+	description = "The Skrell are a highly advanced race of psionically-active amphibians hailing from the system known as Qerr'Vallis. <br/> <br/> Their society \
+	is regimented into five different castes with different psionic skillsets of which the Qerr'Katish, or Royal Caste rules over. Skrell are strict herbivores who are \
+	unable to eat large quantities of animal protein without feeling sick or even suffering from food poisoning. <br/> <br/>  Skrell value cooperation \
+	and have very communal lifestyles, and, despite their diplomatic fluency and innate curiosity, the Skrell are very leery of outside \
+	interference in their own customs and values."
 
 	meat_type = /obj/item/chems/food/fish/octopus
 	bone_material = /decl/material/solid/bone/cartilage
 	available_pronouns = list(
-		/decl/pronouns
+		/decl/pronouns/skrell
 	)
 	hidden_from_codex = FALSE
 
@@ -45,12 +45,12 @@
 	darksight_range = 4
 
 	spawn_flags = SPECIES_CAN_JOIN
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR
+	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8cd7a3"
 	blood_color = "#1d2cbf"
 	base_color = "#006666"
-	organs_icon = 'mods/species/skrell/icons/organs.dmi'
+	organs_icon = 'mods/species/skrell/icons/body/organs.dmi'
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
@@ -67,8 +67,8 @@
 
 	appearance_descriptors = list(
 		/datum/appearance_descriptor/height = 1,
-		/datum/appearance_descriptor/build = 0,
-		/datum/appearance_descriptor/headtail_length = 0
+		/datum/appearance_descriptor/build = 0.8,
+		/datum/appearance_descriptor/headtail_length = 1
 	)
 
 	available_cultural_info = list(
@@ -77,14 +77,21 @@
 			/decl/cultural_info/culture/skrell/caste_malish,
 			/decl/cultural_info/culture/skrell/caste_kanin,
 			/decl/cultural_info/culture/skrell/caste_talum,
-			/decl/cultural_info/culture/skrell/caste_raskinta
+			/decl/cultural_info/culture/skrell/caste_raskinta,
+			/decl/cultural_info/culture/skrell/caste_ue
 		),
 		TAG_HOMEWORLD = list(
-			/decl/cultural_info/location/qerrbalak,
+			/decl/cultural_info/location/qerrvallis,
 			/decl/cultural_info/location/talamira,
-			/decl/cultural_info/location/roasora,
+			/decl/cultural_info/location/gilkrolqarr,
 			/decl/cultural_info/location/mitorqi,
-			/decl/cultural_info/location/skrellspace
+			/decl/cultural_info/location/harrkelm,
+			/decl/cultural_info/location/epsilon,
+			/decl/cultural_info/location/mitorqi,
+			/decl/cultural_info/location/ueorsi,
+			/decl/cultural_info/location/free,
+			/decl/cultural_info/location/skrellspace,
+			/decl/cultural_info/location/other
 		),
 		TAG_FACTION = list(
 			/decl/cultural_info/faction/skrell,
@@ -92,9 +99,13 @@
 			/decl/cultural_info/faction/skrell/yiitalana,
 			/decl/cultural_info/faction/skrell/krrigli,
 			/decl/cultural_info/faction/skrell/qonprri,
+			/decl/cultural_info/faction/skrell/kalimak,
 			/decl/cultural_info/faction/other
 		),
 		TAG_RELIGION = list(
+			/decl/cultural_info/religion/skrell,
+			/decl/cultural_info/religion/skrell/starspiritual,
+			/decl/cultural_info/religion/skrell/psionic,
 			/decl/cultural_info/religion/other
 		)
 	)
@@ -115,24 +126,47 @@
 	exertion_reagent_scale = 5
 	exertion_reagent_path = /decl/material/liquid/lactate
 	exertion_emotes_biological = list(
-		/decl/emote/exertion/biological,
-		/decl/emote/exertion/biological/breath,
-		/decl/emote/exertion/biological/pant
+		/decl/emote/exertion/biological/breath
 	)
 	exertion_emotes_synthetic = list(
 		/decl/emote/exertion/synthetic,
 		/decl/emote/exertion/synthetic/creak
 	)
 
+/decl/species/skrell/fluid_act(var/mob/living/carbon/human/H, var/datum/reagents/fluids)
+	. = ..()
+	var/water = REAGENT_VOLUME(fluids, /decl/material/liquid/water)
+	if(water >= 40 && H.hydration < 400) //skrell passively absorb water.
+		H.hydration += 1
+
 /decl/species/skrell/get_sex(var/mob/living/carbon/human/H)
 	return istype(H) && (H.appearance_descriptors["headtail length"] == 1 ? MALE : FEMALE)
+
+/decl/species/skrell/handle_trail(mob/living/carbon/human/H, turf/simulated/T)
+	if(!H.shoes)
+		var/list/bloodDNA
+		var/list/blood_data = REAGENT_DATA(H.vessel, /decl/material/liquid/blood)
+		if(blood_data)
+			bloodDNA = list(blood_data["blood_DNA"] = blood_data["blood_type"])
+		else
+			bloodDNA = list()
+		T.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, H.dir, 0, H.skin_colour + "25") // Coming (8c is the alpha value)
+		var/turf/simulated/from = get_step(H, global.reverse_dir[H.dir])
+		if(istype(from))
+			from.AddTracks(/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints, bloodDNA, 0, H.dir, H.skin_colour + "25") // Going (8c is the alpha value)
 
 /decl/species/skrell/check_background()
 	return TRUE
 
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints
+	name = "wet footprints"
+	desc = "They look like still wet tracks left by skrellian feet."
+
+/obj/effect/decal/cleanable/blood/tracks/footprints/skrellprints/dry()
+	qdel(src)
 /obj/item/organ/internal/eyes/skrell
 	name = "amphibian eyes"
 	desc = "Large black orbs, belonging to some sort of giant frog by looks of it."
-	icon = 'mods/species/skrell/icons/organs.dmi'
-	eye_icon = 'mods/species/skrell/icons/eyes.dmi'
+	icon = 'mods/species/skrell/icons/body/organs.dmi'
+	eye_icon = 'mods/species/skrell/icons/body/eyes.dmi'
 	apply_eye_colour = FALSE

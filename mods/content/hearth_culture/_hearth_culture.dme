@@ -1,0 +1,7 @@
+#ifndef MODPACK_HEARTH_CULTURE
+#define MODPACK_HEARTH_CULTURE
+#include "generic.dm"
+#include "hearth_culture.dm"
+#include "humanity.dm"
+#include "implant.dm"
+#endif
