@@ -109,14 +109,6 @@
 					if(user_buckle_mob(affecting, user))
 						qdel(W)
 
-/obj/structure/bed/forceMove()
-	. = ..()
-	if(buckled_mob)
-		if(isturf(src.loc))
-			buckled_mob.forceMove(src.loc)
-		else
-			unbuckle_mob()
-
 /obj/structure/bed/proc/remove_padding()
 	if(reinf_material)
 		reinf_material.create_object(get_turf(src))
@@ -153,6 +145,7 @@
 	var/obj/item/chems/beaker
 	var/iv_attached = 0
 	var/iv_stand = TRUE
+	atom_flags = ATOM_FLAG_WHEELED
 
 /obj/structure/bed/roller/on_update_icon()
 	overlays.Cut()

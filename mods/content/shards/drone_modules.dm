@@ -1,4 +1,9 @@
 /obj/item/robot_module/clerical/general/shard
+	channels = list(
+		"Service" = TRUE,
+		"Supply" =  TRUE,
+		"Command" = TRUE
+	)
 	no_slip = TRUE
 	hide_on_manifest = TRUE
 	module_sprites = list()
@@ -13,7 +18,7 @@
 	hide_on_manifest = TRUE
 	module_sprites = list()
 
-/obj/item/robot_module/security/shard
+/obj/item/robot_module/security/general/shard
 	no_slip = TRUE
 	hide_on_manifest = TRUE
 	module_sprites = list()

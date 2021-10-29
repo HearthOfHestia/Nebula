@@ -1514,8 +1514,8 @@
 	pixel_y = 32
 	},
 /obj/machinery/body_scan_display{
-	pixel_y = 24;
-	id_tag = "scanner_or"
+	id_tag = "scanner_or";
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery)
@@ -2660,7 +2660,7 @@
 "agr" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/catwalk_plated,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "ags" = (
@@ -11715,8 +11715,8 @@
 	},
 /obj/machinery/optable,
 /obj/machinery/body_scan_display{
-	pixel_y = 24;
-	id_tag = "scanner_or"
+	id_tag = "scanner_or";
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/resleevelab)
@@ -11984,6 +11984,7 @@
 "cVb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
 "cVl" = (
@@ -12234,8 +12235,8 @@
 	pixel_y = 32
 	},
 /obj/machinery/body_scan_display{
-	pixel_y = 24;
-	id_tag = "scanner_or"
+	id_tag = "scanner_or";
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/surgery2)
@@ -17425,6 +17426,7 @@
 /area/hallway/primary/firstdeck/aft)
 "ltb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/computer/design_console,
 /turf/simulated/floor/tiled/dark,
 /area/rnd/development)
 "lte" = (
@@ -22534,7 +22536,7 @@
 "rQb" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/effect/catwalk_plated/white,
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
 "rQE" = (

@@ -124,12 +124,12 @@
 /obj/structure/foamedmetal
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "metalfoam"
-	density = TRUE
-	opacity = 1 // changed in New()
+	density =  TRUE
+	opacity =  TRUE
 	anchored = TRUE
-	atmos_canpass = CANPASS_NEVER
 	name = "foamed metal"
 	desc = "A lightweight foamed metal wall."
+	atmos_canpass = CANPASS_DENSITY
 	var/metal = 1 // 1 = aluminium, 2 = iron
 
 /obj/structure/foamedmetal/Initialize()

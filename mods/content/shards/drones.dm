@@ -61,7 +61,7 @@
 	marking_color_body = COLOR_MAROON
 	marking_color_legs = COLOR_MAROON
 	stripe_color = COLOR_GOLD
-	module_type = /obj/item/robot_module/security/shard
+	module_type = /obj/item/robot_module/security/general/shard
 
 /mob/living/silicon/robot/drone/shard/engineering
 	name = "Engineering SIC"

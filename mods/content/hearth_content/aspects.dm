@@ -16,7 +16,7 @@
 
 /decl/aspect/cultural/skrell/apply(mob/living/carbon/human/holder)
 	for(var/psi in psi_operancy)
-		addtimer(CALLBACK(holder, /mob/living/proc/set_psi_rank, psi_operancy[psi], PSI_RANK_OPERANT), 1 SECOND)
+		addtimer(CALLBACK(holder, /mob/living/proc/set_psi_rank, psi, PSI_RANK_OPERANT), 1 SECOND)
 
 /decl/aspect/cultural/skrell/qerr
 	name = "Qerr-Katish Coerceion Operancy"

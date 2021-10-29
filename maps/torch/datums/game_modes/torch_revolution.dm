@@ -42,4 +42,4 @@
 					To protect your way of life, those who would change it must be pacified or eliminated, and those that remain \
 					must know not to intrude on your status."
 	faction_welcome = "Defend your own authority and that of your leaders; eliminate any threats."
-	faction_descriptor = "[using_map.company_name]"
+	faction_descriptor = "[global.using_map.company_name]"

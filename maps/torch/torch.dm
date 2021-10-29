@@ -7,6 +7,8 @@
 	#include "..\..\mods\content\modern_earth\_modern_earth.dme"
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
 
+	#include "..\..\mods\content\baychems\_baychems.dme"
+
 	#include "..\..\mods\mobs\borers\_borers.dme"
 	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
 

@@ -549,6 +549,9 @@
 /obj/effect/floor_decal/corner/brown{
 	dir = 8
 	},
+/obj/structure/hand_cart{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/turbolift/cargo_lift)
 "cf" = (

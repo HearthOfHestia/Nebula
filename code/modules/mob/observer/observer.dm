@@ -20,6 +20,7 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 
 /mob/observer/Initialize()
 	. = ..()
+	glide_size = 0
 	ghost_image = image(src.icon,src)
 	ghost_image.plane = plane
 	ghost_image.layer = layer
@@ -61,7 +62,7 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 /mob/observer/set_stat()
 	stat = DEAD // They are also always dead
 
-/mob/observer/touch_map_edge()
+/mob/observer/touch_map_edge(var/overmap_id = OVERMAP_ID_SPACE)
 	if(z in global.using_map.sealed_levels)
 		return
 
@@ -91,3 +92,6 @@ var/global/const/GHOST_IMAGE_ALL = ~GHOST_IMAGE_NONE
 
 /mob/observer/get_admin_job_string()
 	return "Ghost"
+
+/mob/observer/set_glide_size(var/delay)
+	glide_size = 0
