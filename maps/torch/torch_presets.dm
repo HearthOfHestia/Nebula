@@ -196,16 +196,16 @@ var/global/const/HAIL_FREQ = 1463
 		num2text(HAIL_FREQ)  = list(),
 	)
 
-/decl/stock_part_preset/radio/receiver/vent_pump/opportunity
+/decl/stock_part_preset/radio/receiver/vent_pump/shuttle/opportunity
 	frequency = 1431
 
-/decl/stock_part_preset/radio/event_transmitter/vent_pump/opportunity
+/decl/stock_part_preset/radio/event_transmitter/vent_pump/shuttle/opportunity
 	frequency = 1431
 
-/obj/machinery/atmospherics/unary/vent_pump/high_volume/opportunity
+/obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle/opportunity
 	stock_part_presets = list(
-		/decl/stock_part_preset/radio/receiver/vent_pump/opportunity = 1,
-		/decl/stock_part_preset/radio/event_transmitter/vent_pump/opportunity = 1
+		/decl/stock_part_preset/radio/receiver/vent_pump/shuttle/opportunity = 1,
+		/decl/stock_part_preset/radio/event_transmitter/vent_pump/shuttle/opportunity = 1
 	)
 
 /decl/stock_part_preset/radio/receiver/vent_scrubber/opportunity
@@ -219,3 +219,34 @@ var/global/const/HAIL_FREQ = 1463
 		/decl/stock_part_preset/radio/receiver/vent_scrubber/opportunity = 1,
 		/decl/stock_part_preset/radio/event_transmitter/vent_scrubber/opportunity = 1
 	)
+
+/decl/stock_part_preset/radio/receiver/airlock/shuttle/opportunity
+	frequency = 1431
+
+/decl/stock_part_preset/radio/event_transmitter/airlock/shuttle/opportunity
+	frequency = 1431
+
+/obj/machinery/door/airlock/external/shuttle/opportunity
+	stock_part_presets = list(
+		/decl/stock_part_preset/radio/receiver/airlock/shuttle/opportunity = 1,
+		/decl/stock_part_preset/radio/event_transmitter/airlock/shuttle/opportunity = 1
+	)
+
+
+/decl/stock_part_preset/radio/event_transmitter/access_button/shuttle/opportunity
+	frequency = 1431
+
+/obj/machinery/button/access/shuttle/opportunity
+	stock_part_presets = list(/decl/stock_part_preset/radio/event_transmitter/access_button/shuttle/opportunity = 1)
+
+/obj/machinery/button/access/shuttle/opportunity/interior
+	command = "cycle_interior"
+
+/obj/machinery/button/access/shuttle/opportunity/exterior
+	command = "cycle_exterior"
+
+/decl/stock_part_preset/radio/basic_transmitter/airlock_sensor/shuttle/opportunity
+	frequency = 1431
+
+/obj/machinery/airlock_sensor/shuttle/opportunity
+	stock_part_presets = list(/decl/stock_part_preset/radio/basic_transmitter/airlock_sensor/shuttle/opportunity = 1)
