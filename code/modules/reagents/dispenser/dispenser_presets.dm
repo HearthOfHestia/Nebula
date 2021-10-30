@@ -44,7 +44,7 @@
 			/obj/item/chems/chem_disp_cartridge/antibiotics,
 			/obj/item/chems/chem_disp_cartridge/sedatives
 		)
-	
+
 	buildable = FALSE
 
 
@@ -116,7 +116,7 @@
 			/obj/item/chems/chem_disp_cartridge/ale,
 			/obj/item/chems/chem_disp_cartridge/mead
 		)
-	
+
 	buildable = FALSE
 
 /obj/machinery/chemical_dispenser/bar_coffee
