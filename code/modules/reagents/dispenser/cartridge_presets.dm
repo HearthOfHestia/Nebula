@@ -49,8 +49,6 @@
 	spawn_reagent = /decl/material/liquid/acid
 /obj/item/chems/chem_disp_cartridge/tungsten
 	spawn_reagent = /decl/material/solid/metal/tungsten
-/obj/item/chems/chem_disp_cartridge/opium
-	spawn_reagent = /decl/material/liquid/opium
 
 // Bar, alcoholic
 /obj/item/chems/chem_disp_cartridge/beer

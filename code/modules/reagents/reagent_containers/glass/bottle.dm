@@ -88,10 +88,6 @@
 	desc = "A small bottle of soporific medication. Just the fumes make you sleepy."
 	initial_reagents = list(/decl/material/liquid/sedatives = 60)
 
-/obj/item/chems/glass/bottle/opium //CORE FILE MODIFICATION. REMIND ME TO DELETE THIS.
-	desc = "A small bottle of opium."
-	initial_reagents = list(/decl/material/liquid/opium = 60)
-
 /obj/item/chems/glass/bottle/antitoxin
 	desc = "A small bottle of antitoxins. Counters poisons, and repairs damage. A wonder drug."
 	initial_reagents = list(/decl/material/liquid/antitoxins = 60)

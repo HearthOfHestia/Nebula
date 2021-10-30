@@ -299,6 +299,3 @@ var/global/list/plant_seed_sprites = list()
 
 /obj/item/seeds/cotton
 	seed_type = "cotton"
-
-/obj/item/seeds/opiumseed
-	seed_type = "spacepoppy"

@@ -8,6 +8,8 @@
 	#include "..\..\mods\content\xenobiology\_xenobiology.dme"
 
 	#include "..\..\mods\content\baychems\_baychems.dme"
+	#include "..\..\mods\content\hydroponics\_hydroponics.dme"
+	#include "..\..\mods\content\supplypacks\_supplypacks.dme"
 
 	#include "..\..\mods\mobs\borers\_borers.dme"
 	#include "..\..\mods\mobs\dionaea\_dionaea.dme"

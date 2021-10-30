@@ -7,4 +7,7 @@
 #include "chems_poisons.dm"
 #include "items.dm"
 #include "reactions.dm"
+#include "bottle.dm"
+#include "cartridge_presets.dm"
+#include "dispenser_presets.dm"
 #endif
