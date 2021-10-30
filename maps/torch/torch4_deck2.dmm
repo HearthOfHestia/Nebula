@@ -2167,6 +2167,9 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/tech)
 "eO" = (
@@ -3947,6 +3950,9 @@
 /area/engineering/engine_room)
 "jh" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "jj" = (
@@ -4375,6 +4381,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/seconddeck)
+"kn" = (
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/medical/morgue)
 "kp" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -4639,6 +4651,9 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engine_monitoring)
 "kY" = (
@@ -4819,6 +4834,9 @@
 "ly" = (
 /obj/effect/floor_decal/techfloor{
 	dir = 8
+	},
+/obj/machinery/status_display{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
@@ -5054,6 +5072,9 @@
 	},
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 1
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/vacant/prototype/control)
@@ -7283,53 +7304,9 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/obj/machinery/button/blast_door{
-	id_tag = "cChamber1sV";
-	name = "Deck One Starboard Chamber Vent";
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "cChamber3sV";
-	name = "Deck Three Starboard Chamber Vent";
-	pixel_x = -6;
-	pixel_y = -4
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "cChamber3pV";
-	name = "Deck Three Port Chamber Vent";
-	pixel_x = 6;
-	pixel_y = -4
-	},
-/obj/machinery/button/blast_door{
-	id_tag = "cChamber1pV";
-	name = "Deck One Port Chamber Vent";
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/obj/machinery/status_light{
-	id_tag = "cChamber1p";
-	name = "Deck One Port status indicator";
-	pixel_x = 8;
-	pixel_y = -36
-	},
-/obj/machinery/status_light{
-	id_tag = "cChamber1s";
-	name = "Deck One Starboard status indicator";
-	pixel_x = -8;
-	pixel_y = -36
-	},
-/obj/machinery/status_light{
-	id_tag = "cChamber3s";
-	name = "Deck Three Starboard status indicator";
-	pixel_x = -8;
-	pixel_y = -24
-	},
-/obj/machinery/status_light{
-	id_tag = "cChamber3p";
-	name = "Deck Three Port status indicator";
-	pixel_x = 8;
-	pixel_y = -24
+/obj/machinery/recharger,
+/obj/machinery/status_display{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/engineering_monitoring)
@@ -7743,6 +7720,22 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/tech)
+"sQ" = (
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/catwalk_plated,
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/hallway/primary/seconddeck/fore)
 "sS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8405,6 +8398,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
+"uC" = (
+/obj/structure/table/steel,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/assembly/robotics)
 "uD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -8909,7 +8909,9 @@
 "vV" = (
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/fabricator/pipe/disposal,
+/obj/machinery/fabricator/pipe/disposal{
+	anchored = 1
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4
 	},
@@ -11637,6 +11639,14 @@
 /obj/machinery/meter,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
+"DL" = (
+/obj/structure/table,
+/obj/random/maintenance/solgov,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/drone_fabrication)
 "DM" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -12922,16 +12932,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/machinery/button/access/exterior{
-	id_tag = "prototype_controller";
-	pixel_x = 23;
-	pixel_y = -23
-	},
-/obj/machinery/button/access/interior{
-	id_tag = "prototype_controller";
-	pixel_x = -23;
-	pixel_y = 23
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/prototype/control)
 "Hn" = (
@@ -13001,7 +13001,9 @@
 "Hw" = (
 /obj/structure/window/reinforced,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/fabricator/pipe,
+/obj/machinery/fabricator/pipe{
+	anchored = 1
+	},
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 4
 	},
@@ -14888,11 +14890,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/obj/machinery/button/access/interior{
-	id_tag = "prototype_controller";
-	pixel_x = 23;
-	pixel_y = 23
-	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -15295,10 +15292,6 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/hatch/maintenance/bolted{
-	id_tag = "prototype_interior";
-	name = "Fusion Maintenance"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -15306,6 +15299,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/hatch{
+	id_tag = null;
+	name = "Engine Airlock Interior"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/prototype/control)
 "Ok" = (
@@ -16028,10 +16025,6 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/hatch/maintenance/bolted{
-	id_tag = "prototype_exterior";
-	name = "Fusion Maintenance"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -16039,6 +16032,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/hatch{
+	id_tag = null;
+	name = "Engine Airlock Exterior"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/prototype/control)
 "Qk" = (
@@ -17831,15 +17828,6 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/seconddeck/fore)
 "Wj" = (
-/obj/machinery/embedded_controller/radio/airlock/access_controller{
-	dir = 1;
-	id_tag = "prototype_controller";
-	name = "Fusion Maintenance Access Controller";
-	pixel_y = -21;
-	req_access = list("ACCESS_ENGINE_EQUIP");
-	tag_exterior_door = "prototype_exterior";
-	tag_interior_door = "prototype_interior"
-	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -18572,6 +18560,9 @@
 /obj/structure/table/steel,
 /obj/machinery/firealarm{
 	pixel_y = 21
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/plating,
 /area/engineering/shieldbay)
@@ -32338,7 +32329,7 @@ SD
 lq
 mZ
 kD
-qm
+sQ
 XA
 Lp
 RL
@@ -34160,7 +34151,7 @@ Gm
 qv
 rF
 rF
-tm
+DL
 tm
 rF
 rF
@@ -36773,7 +36764,7 @@ eG
 bK
 bw
 XP
-fD
+uC
 dF
 ee
 XP
@@ -41610,7 +41601,7 @@ Hb
 Hb
 Hb
 GW
-oK
+kn
 oK
 oK
 Lk
