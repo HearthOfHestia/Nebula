@@ -10,6 +10,7 @@
 	overdose = 60
 	pain_power = 35
 	narcotic = FALSE
+	uid = "chem_paracetamol"
 
 /decl/material/liquid/painkillers/oxycodone
 	name = "oxycodone"
@@ -17,3 +18,4 @@
 	overdose = 20
 	pain_power = 200
 	effective_dose = 2
+	uid = "chem_oxycodone"

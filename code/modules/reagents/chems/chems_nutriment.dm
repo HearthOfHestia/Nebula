@@ -186,6 +186,7 @@
 	nutriment_factor = 27//The caloric ratio of carb/protein/fat is 4:4:9
 	color = "#cccccc"
 	taste_description = "fat"
+	uid = "chem_nutriment_triglyceride"
 
 /decl/material/liquid/nutriment/triglyceride/oil
 	//Having this base class in case we want to add more variants of oil
@@ -195,6 +196,7 @@
 	touch_met = 1.5
 	taste_description = "some sort of oil"
 	taste_mult = 0.1
+	uid = "chem_oil"
 
 /decl/material/liquid/nutriment/triglyceride/oil/touch_turf(var/turf/simulated/T, var/datum/reagents/holder)
 	if(!istype(T))
@@ -233,7 +235,7 @@
 	name = "corn oil"
 	lore_text = "An oil derived from corn."
 	taste_description = "corn oil"
-	uid = "chem_cornoil"
+	uid = "chem_oil_corn"
 
 // From Synnono's Cooking Expansion on Aurora
 /decl/material/liquid/nutriment/browniemix
