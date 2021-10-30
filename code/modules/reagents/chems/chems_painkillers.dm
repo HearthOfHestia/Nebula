@@ -11,19 +11,19 @@
 	value = 1.8
 	var/pain_power = 80 //magnitude of painkilling effect
 	var/effective_dose = 0.5 //how many units it need to process to reach max power
+	var/additional_effect_threshold = 15 // cumulative dosage at which slowdown and drowsiness are applied
 	var/sedation = 0 //how strong is this chemical as a sedative
 	var/breathloss_severity = 0.5 //how strong will breathloss related effects be
 	var/slowdown_severity = 1
 	var/blurred_vision = 0.5
 	var/stuttering_severity = 0
 	var/slur_severity = 1
-	var/confusion_severity = 0
-	var/weakness_severity = 0.5
+	var/confusion_severity = 0.5 //confusion randomizes your movement
+	var/weakness_severity = 0.5 //weakness makes you remain floored
 	var/dizziness_severity = 1
 	var/narcotic = TRUE
 
 /decl/material/liquid/painkillers/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
-	to_world("chem debug [type] [narcotic] [removed]")
 	var/volume = REAGENT_VOLUME(holder, type)
 	var/effectiveness = 1
 	var/dose = LAZYACCESS(M.chem_doses, type)
@@ -33,35 +33,38 @@
 		effectiveness = volume/effective_dose
 
 	M.add_chemical_effect(CE_PAINKILLER, (pain_power * effectiveness))
-	M.add_chemical_effect(CE_SEDATE, (sedation * effectiveness))
-	SET_STATUS_MAX(M, STAT_ASLEEP, (sedation * 10))
-	SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 40))
 
 	if(!narcotic)
-		to_world("chem debug [type] [narcotic] [dose]")
 		return
-	if(dose > 0.5 * overdose)
+	if(dose > 0.5 * additional_effect_threshold)
 		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
-		to_world("chem debug [type] slowdown proc")
 		if(prob(15))
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 10))
-			to_world("chem debug [type] slur proc")
-	if(dose > 0.75 * overdose)
+
+	if(dose > 0.75 * additional_effect_threshold) //minor side effects may start here
 		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
-		if(prob(30)) //minor side effects may start here
+		if(prob(30))
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 20))
 		if(prob(30))
 			SET_STATUS_MAX(M, STAT_DIZZY, (dizziness_severity * 20))
 		if(prob(30))
 			SET_STATUS_MAX(M, STAT_CONFUSE, (confusion_severity * 20))
-		if(prob(30))
+		if(prob(75))
 			SET_STATUS_MAX(M, STAT_BLURRY, (blurred_vision * 20))
 		if(prob(30))
 			SET_STATUS_MAX(M, STAT_STUTTER, (stuttering_severity * 20))
-		if(prob(30))
-			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 20))
-	if(dose > overdose) //it's an overdose, you're supposed to feel like shit
-		M.add_chemical_effect(CE_SLOWDOWN, slowdown_severity)
+		if(prob(10))
+			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 10))
+		if(sedation > 0)
+			if(prob(20))
+				M.add_chemical_effect(CE_SEDATE, (sedation * 1))
+				SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 10))
+			else
+				SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 20))
+
+	if(dose > additional_effect_threshold) //not quite an overdose yet, but it's a lot of medicine to take at once.
+		M.add_chemical_effect(CE_SLOWDOWN, (slowdown_severity * 2))
+		SET_STATUS_MAX(M, STAT_BLURRY, (blurred_vision * 40))
 		if(prob(75))
 			SET_STATUS_MAX(M, STAT_SLUR, (slur_severity * 40))
 		if(prob(75))
@@ -69,14 +72,17 @@
 		if(prob(75))
 			SET_STATUS_MAX(M, STAT_CONFUSE, (confusion_severity * 40))
 		if(prob(75))
-			SET_STATUS_MAX(M, STAT_BLURRY, (blurred_vision * 40))
-		if(prob(75))
 			SET_STATUS_MAX(M, STAT_STUTTER, (stuttering_severity * 40))
-		if(prob(70))
-			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 40))
 		if(prob(50))
-			SET_STATUS_MAX(M, STAT_WEAK, 2)
-			SET_STATUS_MAX(M, STAT_DROWSY, 5)
+			SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 20))
+		if(sedation > 0)
+			if(prob(50)) //fall asleep
+				M.add_chemical_effect(CE_SEDATE, (sedation * 1))
+				SET_STATUS_MAX(M, STAT_ASLEEP, (sedation * 20)) //is CE_SEDATE and STAT_DROWSY redundant with STAT_ASLEEP? reminder for further testing
+				SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 40))
+			else //stay awake, but immobilized.
+				SET_STATUS_MAX(M, STAT_WEAK, (weakness_severity * 40))
+				SET_STATUS_MAX(M, STAT_DROWSY, (sedation * 40))
 
 	var/boozed = isboozed(M)
 	if(boozed)
@@ -90,7 +96,7 @@
 	M.set_hallucination(120, 30)
 	SET_STATUS_MAX(M, STAT_DRUGGY, 10)
 	M.add_chemical_effect(CE_PAINKILLER, pain_power*0.5) //extra painkilling for extra trouble
-	M.add_chemical_effect(CE_BREATHLOSS, breathloss_severity*2) //ODing on opiates is deadly.
+	M.add_chemical_effect(CE_BREATHLOSS, breathloss_severity*2) //ODing on opiates can be deadly.
 	if(isboozed(M))
 		M.add_chemical_effect(CE_BREATHLOSS, 4) //Don't drink and OD on opiates folks
 

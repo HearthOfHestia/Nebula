@@ -5,7 +5,7 @@
 	name = "impedrezene"
 
 /decl/material/liquid/sedatives
-	name = "soporific"
+	name = "midazolam"
 
 /decl/material/liquid/hallucinogenics
 	name = "mindbreaker toxin"
@@ -19,8 +19,8 @@
 	value = 2
 
 /decl/material/liquid/opium/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
-	M.add_chemical_effect(CE_PAINKILLER, 60)
-	if(prob(75)) //You're taking raw opium
+	M.add_chemical_effect(CE_PAINKILLER, 40)
+	if(prob(75)) //taking raw opium isn't exactly healthy.
 		SET_STATUS_MAX(M, STAT_SLUR, 40)
 	if(prob(75))
 		SET_STATUS_MAX(M, STAT_DIZZY, 40)

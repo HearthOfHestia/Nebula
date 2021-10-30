@@ -690,7 +690,7 @@
 			healths_ma.icon_state = "blank"
 			healths_ma.overlays = null
 
-			if(has_chemical_effect(CE_PAINKILLER, 100))
+			if(has_chemical_effect(CE_PAINKILLER, 400))
 				healths_ma.icon_state = "health_numb"
 			else
 				// Generate a by-limb health display.
