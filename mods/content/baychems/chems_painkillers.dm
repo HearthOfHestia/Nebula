@@ -14,16 +14,17 @@
 
 /decl/material/liquid/painkillers/nefopam
 	name = "nefopam" //better in every way than paracetamol. Very minor side effects.
-	lore_text = "A strong, effective non-opioid alternative to tramadol"
+	lore_text = "A strong, effective non-opioid alternative to tramadol. Known to make its users incredibly confused."
 	color = "#cfe2f3"
 	narcotic = FALSE
 	sedation = 0
+	additional_effect_threshold = 5
 	breathloss_severity = 0 //Not an opioid. Should not suppress breathing.
 	slowdown_severity = 1 //we should still prevent SOME abuse.
-	blurred_vision = 0.2
+	blurred_vision = 2 //balance
 	stuttering_severity = 0.2
 	slur_severity = 0.2
-	confusion_severity = 0
+	confusion_severity = 2 //balance
 	dizziness_severity = 0.2
 
 /decl/material/liquid/painkillers/morphine
@@ -34,10 +35,10 @@
 	metabolism = 0.02
 	pain_power = 160
 	effective_dose = 0.20
-	sedation = 0.5
+	sedation = 1
 	additional_effect_threshold = 2 //160 pain power is no joke.
 	breathloss_severity = 1
-	slowdown_severity = 1
+	slowdown_severity = 2
 	blurred_vision = 0.5
 	stuttering_severity = 0.5
 	slur_severity = 1
@@ -53,7 +54,7 @@
 	metabolism = 0.01 //but also lasts for a long time
 	pain_power = 500
 	effective_dose = 0.10
-	sedation = 2 //Acts as a sedative, and also prevents antags from taking fentanyl and becoming invincible.
+	sedation = 3 //Acts as a sedative, and also prevents antags from taking fentanyl and becoming invincible.
 	additional_effect_threshold = 0.25 //Very low threshold. Hard to abuse.
 	breathloss_severity = 2
 	slowdown_severity = 2
