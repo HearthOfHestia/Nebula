@@ -11,7 +11,7 @@
 	pain_power = 35
 	narcotic = FALSE
 	breathloss_severity = 0 //Not an opioid. Should not suppress breathing.
-  uid = "chem_paracetamol"
+	uid = "chem_paracetamol"
 
 /decl/material/liquid/painkillers/nefopam
 	name = "nefopam" //better in every way than paracetamol. Very minor side effects.
@@ -27,7 +27,7 @@
 	slur_severity = 0.2
 	confusion_severity = 2 //balance
 	dizziness_severity = 0.2
-  uid = "chem_nefopam"
+	uid = "chem_nefopam"
 
 /decl/material/liquid/painkillers/morphine
 	name = "morphine" //similar to tramadol, more effective but more expensive to prepare, also greater side effects
@@ -47,7 +47,7 @@
 	confusion_severity = 1
 	dizziness_severity = 1
 	narcotic = TRUE
-  uid = "chem_morphine"
+	uid = "chem_morphine"
 
 /decl/material/liquid/painkillers/fentanyl
 	name = "fentanyl" //similar to morphine, but should hit you like a truck and prevent pain shock at all costs
@@ -67,4 +67,4 @@
 	confusion_severity = 1
 	dizziness_severity = 2
 	narcotic = TRUE
-  uid = "chem_fentanyl"
+	uid = "chem_fentanyl"
