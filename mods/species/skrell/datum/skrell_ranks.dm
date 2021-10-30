@@ -15,12 +15,10 @@
 	name = "Qrii-Zuumqix"
 	name_short = "QZQX"
 	sort_order = 1
-	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QZQX)
 
 /datum/mil_rank/skrell_fleet/vuxix
 	name = "Qrii-Vuxix"
 	name_short = "QVX"
 	sort_order = 2
-	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QVX)
 
 // This is separate from skrellscoutship.dm because otherwise we won't compile since core files require this branch

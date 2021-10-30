@@ -324,3 +324,9 @@
 	ranking = "QVX"
 	ranking_full = "Qrii-Vuxix"
 	icon = 'mods/species/skrell/icons/clothing/accessories/obj_skrell_vuxix.dmi'
+
+/datum/mil_rank/skrell_fleet/zuumqix
+	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QZQX)
+
+/datum/mil_rank/skrell_fleet/vuxix
+	accessory = list(/obj/item/clothing/accessory/rank/SDTF/QVX)
