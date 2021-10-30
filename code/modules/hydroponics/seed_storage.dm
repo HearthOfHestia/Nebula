@@ -52,7 +52,7 @@
 
 /obj/machinery/seed_storage/Destroy()
 	QDEL_NULL_LIST(piles)
-	. = ..()	
+	. = ..()
 
 /obj/machinery/seed_storage/random // This is mostly for testing, but I guess admins could spawn it
 	name = "Random seed storage"
@@ -112,6 +112,7 @@
 		/obj/item/seeds/algaeseed = 15,
 		/obj/item/seeds/clam = 15,
 		/obj/item/seeds/barnacle = 15,
+		/obj/item/seeds/opiumseed = 15,
 		/obj/item/seeds/mollusc = 15
 	)
 
@@ -167,6 +168,7 @@
 		/obj/item/seeds/wheatseed = 15,
 		/obj/item/seeds/whitebeetseed = 15,
 		/obj/item/seeds/algaeseed = 15,
+		/obj/item/seeds/opiumseed = 15,
 		/obj/item/seeds/random = 2
 	)
 
