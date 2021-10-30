@@ -1,3 +1,19 @@
+/obj/item/clothing/accessory/rank/SDTF
+	desc = "Insigna denothing some sort of position in a SDTF."
+	icon = 'mods/species/skrell/icons/clothing/accessories/obj_skrell_blank.dmi'
+	hide_on_uniform_rollsleeves = FALSE
+	slot = ACCESSORY_SLOT_RANK
+
+/obj/item/clothing/accessory/rank/SDTF/QZQX
+	ranking = "QZQX"
+	ranking_full = "Qrii-Zuumqix"
+	icon = 'mods/species/skrell/icons/clothing/accessories/obj_skrell_zuumqix.dmi'
+
+/obj/item/clothing/accessory/rank/SDTF/QVX
+	ranking = "QVX"
+	ranking_full = "Qrii-Vuxix"
+	icon = 'mods/species/skrell/icons/clothing/accessories/obj_skrell_vuxix.dmi'
+
 /obj/item/clothing/accessory/badge/tags/skrell
 	name = "\improper Skrellian holobadge"
 	desc = "A high tech Skrellian holobadge, designed to project information about the owner."
