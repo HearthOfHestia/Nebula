@@ -171,6 +171,7 @@
 	icon_cooked = "batter_cooked"
 	coated_adj = "beer-battered"
 	taste_description = "beer batter"
+	uid = "chem_nutriment_beerbatter"
 
 /decl/material/liquid/nutriment/batter/beerbatter/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed, var/datum/reagents/holder)
 	..()
@@ -187,8 +188,8 @@
 	taste_description = "fat"
 
 /decl/material/liquid/nutriment/triglyceride/oil
-	//Having this base class incase we want to add more variants of oil
-	name = "Oil"
+	//Having this base class in case we want to add more variants of oil
+	name = "oil"
 	lore_text = "Oils are liquid fats."
 	color = "#c79705"
 	touch_met = 1.5
@@ -229,26 +230,29 @@
 		to_chat(M, SPAN_DANGER("The hot oil clings to your skin and burns you!"))
 
 /decl/material/liquid/nutriment/triglyceride/oil/corn
-	name = "Corn Oil"
+	name = "corn oil"
 	lore_text = "An oil derived from corn."
 	taste_description = "corn oil"
+	uid = "chem_cornoil"
 
 // From Synnono's Cooking Expansion on Aurora
 /decl/material/liquid/nutriment/browniemix
-	name = "Brownie Mix"
+	name = "brownie mix"
 	lore_text = "A dry mix for making delicious brownies."
 	color = "#441a03"
 	nutriment_factor = 5
 	taste_mult = 1.3
 	taste_description = "chocolate"
+	uid = "chem_browniemix"
 
 // Caramel sugar from Hestia
 /decl/material/liquid/nutriment/caramelsugar
-	name = "Caramel Sugar"
+	name = "caramel sugar"
 	lore_text = "Caramelised sugar, used in various recipes."
 	taste_description = "toasty sweetness"
 	taste_mult = 1.5
 	nutriment_factor = 1.5
+	uid = "chem_caramelsugar"
 // HEARTH EDIT END
 
 /decl/material/liquid/nutriment/coffee
