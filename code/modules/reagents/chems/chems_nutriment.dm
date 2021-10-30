@@ -8,6 +8,7 @@
 	color = "#664330"
 	value = 1.2
 	fruit_descriptor = "nutritious"
+	uid = "chem_nutriment"
 
 	var/nutriment_factor = 10 // Per unit
 	var/hydration_factor = 0 // Per unit
@@ -67,23 +68,28 @@
 	taste_description = "cold, bitter slime"
 	overdose = 10
 	hydration_factor = 6
+	uid = "chem_nutriment_slime"
 
 /decl/material/liquid/nutriment/glucose
 	name = "glucose"
 	color = "#ffffff"
 	scannable = 1
 	injectable = 1
+	uid = "chem_nutriment_glucose"
 
 /decl/material/liquid/nutriment/bread
 	name = "bread"
+	uid = "chem_nutriment_bread"
 
 /decl/material/liquid/nutriment/bread/cake
 	name = "cake"
+	uid = "chem_nutriment_cake"
 
 /decl/material/liquid/nutriment/protein
 	name = "animal protein"
 	taste_description = "some sort of protein"
 	color = "#440000"
+	uid = "chem_nutriment_protein"
 
 /decl/material/liquid/nutriment/protein/adjust_nutrition(mob/living/carbon/M, alien, removed)
 	var/malus_level = M.GetTraitLevel(/decl/trait/malus/animal_protein)
@@ -96,6 +102,7 @@
 	name = "egg yolk"
 	taste_description = "egg"
 	color = "#ffffaa"
+	uid = "chem_nutriment_egg"
 
 //vegetamarian alternative that is safe for vegans to ingest//rewired it from its intended nutriment/protein/egg/softtofu because it would not actually work, going with plan B, more recipes.
 
@@ -104,6 +111,7 @@
 	lore_text = "A gooey pale paste."
 	taste_description = "healthy sadness"
 	color = "#ffffff"
+	uid = "chem_nutriment_plant"
 
 /decl/material/liquid/nutriment/honey
 	name = "honey"
@@ -112,6 +120,7 @@
 	nutriment_factor = 10
 	color = "#ffff00"
 	fruit_descriptor = "rich"
+	uid = "chem_nutriment_honey"
 
 /decl/material/liquid/nutriment/flour
 	name = "flour"
@@ -120,6 +129,7 @@
 	nutriment_factor = 1
 	color = "#ffffff"
 	slipperiness = -1
+	uid = "chem_nutriment_flour"
 
 /decl/material/liquid/nutriment/flour/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
 	..()
@@ -133,6 +143,7 @@
 	color = "#ffd592"
 	slipperiness = -1
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_batter"
 
 /decl/material/liquid/nutriment/batter/touch_turf(var/turf/T, var/amount, var/datum/reagents/holder)
 	..()
@@ -143,6 +154,7 @@
 	lore_text = "A gooey mixture of eggs, flour and sugar, a important precursor to cake!"
 	taste_description = "sweetness"
 	color = "#ffe992"
+	uid = "chem_nutriment_cakebatter"
 
 // HEARTH EDIT START
 // TODO - MODULARISE HEARTH COOKING
@@ -247,6 +259,7 @@
 	nutriment_factor = 1
 	color = "#482000"
 	fruit_descriptor = "bitter"
+	uid = "chem_nutriment_coffeepowder"
 
 /decl/material/liquid/nutriment/coffee/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	..()
@@ -256,6 +269,7 @@
 	name = "instant coffee powder"
 	lore_text = "A bitter powder made by processing coffee beans."
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_instantcoffee"
 
 /decl/material/liquid/nutriment/tea
 	name = "tea powder"
@@ -264,9 +278,11 @@
 	taste_mult = 1.3
 	nutriment_factor = 1
 	color = "#101000"
+	uid = "chem_nutriment_teapowder"
 
 /decl/material/liquid/nutriment/tea/instant
 	name = "instant tea powder"
+	uid = "chem_nutriment_instanttea"
 
 /decl/material/liquid/nutriment/coco
 	name = "coco powder"
@@ -276,6 +292,7 @@
 	nutriment_factor = 5
 	color = "#302000"
 	fruit_descriptor = "bitter"
+	uid = "chem_nutriment_cocoa"
 
 /decl/material/liquid/nutriment/instantjuice
 	name = "juice concentrate"
@@ -283,6 +300,7 @@
 	taste_mult = 1.3
 	nutriment_factor = 1
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_juice"
 
 /decl/material/liquid/nutriment/instantjuice/grape
 	name = "grape concentrate"
@@ -290,6 +308,7 @@
 	taste_description = "dry grapes"
 	color = "#863333"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_juice_grape"
 
 /decl/material/liquid/nutriment/instantjuice/orange
 	name = "orange concentrate"
@@ -297,6 +316,7 @@
 	taste_description = "dry oranges"
 	color = "#e78108"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_juice_orange"
 
 /decl/material/liquid/nutriment/instantjuice/watermelon
 	name = "watermelon concentrate"
@@ -304,6 +324,7 @@
 	taste_description = "dry sweet watermelon"
 	color = "#b83333"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_juice_watermelon"
 
 /decl/material/liquid/nutriment/instantjuice/apple
 	name = "apple concentrate"
@@ -311,6 +332,7 @@
 	taste_description = "dry sweet apples"
 	color = "#c07c40"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_juice_apple"
 
 /decl/material/liquid/nutriment/soysauce
 	name = "soy sauce"
@@ -320,6 +342,7 @@
 	nutriment_factor = 2
 	color = "#792300"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_soysauce"
 
 /decl/material/liquid/nutriment/ketchup
 	name = "ketchup"
@@ -328,6 +351,7 @@
 	nutriment_factor = 5
 	color = "#731008"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_ketchup"
 
 /decl/material/liquid/nutriment/banana_cream
 	name = "banana cream"
@@ -335,6 +359,7 @@
 	taste_description = "banana"
 	color = "#f6dfaa"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_bananacream"
 
 /decl/material/liquid/nutriment/barbecue
 	name = "barbecue sauce"
@@ -343,6 +368,7 @@
 	nutriment_factor = 5
 	color = "#4f330f"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_bbqsauce"
 
 /decl/material/liquid/nutriment/garlicsauce
 	name = "garlic sauce"
@@ -351,6 +377,7 @@
 	nutriment_factor = 4
 	color = "#d8c045"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_garlicsauce"
 
 /decl/material/liquid/nutriment/rice
 	name = "rice"
@@ -359,6 +386,7 @@
 	taste_mult = 0.4
 	nutriment_factor = 1
 	color = "#ffffff"
+	uid = "chem_nutriment_rice"
 
 /decl/material/liquid/nutriment/rice/chazuke
 	name = "chazuke"
@@ -368,6 +396,7 @@
 	nutriment_factor = 1
 	color = "#f1ffdb"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_chazuke"
 
 /decl/material/liquid/nutriment/cherryjelly
 	name = "cherry jelly"
@@ -377,6 +406,7 @@
 	nutriment_factor = 1
 	color = "#801e28"
 	fruit_descriptor = "sweet"
+	uid = "chem_nutriment_cherryjelly"
 
 /decl/material/liquid/nutriment/cornoil
 	name = "corn oil"
@@ -386,6 +416,7 @@
 	nutriment_factor = 20
 	color = "#302000"
 	slipperiness = 8
+	uid = "chem_nutriment_cornoil"
 
 /decl/material/liquid/nutriment/sprinkles
 	name = "sprinkles"
@@ -394,6 +425,7 @@
 	nutriment_factor = 1
 	color = "#ff00ff"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_sprinkles"
 
 /decl/material/liquid/nutriment/sugar
 	name = "sugar"
@@ -408,6 +440,7 @@
 	glass_icon = DRINK_ICON_NOISY
 	fruit_descriptor = "sweet"
 	hidden_from_codex = FALSE
+	uid = "chem_nutriment_sugar"
 
 /decl/material/liquid/nutriment/vinegar
 	name = "vinegar"
@@ -415,6 +448,7 @@
 	taste_description = "vinegar"
 	color = "#e8dfd0"
 	taste_mult = 3
+	uid = "chem_nutriment_vinegar"
 
 /decl/material/liquid/nutriment/mayo
 	name = "mayonnaise"
@@ -423,3 +457,4 @@
 	color = "#efede8"
 	taste_mult = 2
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_nutriment_mayonnaise"
