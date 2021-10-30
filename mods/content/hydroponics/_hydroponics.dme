@@ -1,6 +1,4 @@
 #ifndef MODPACK_HYDROPONICS
 #define MODPACK_HYDROPONICS
-#include "seed_packets.dm"
-#include "seed_storage.dm"
 #include "seeds_datum.dm"
 #endif
