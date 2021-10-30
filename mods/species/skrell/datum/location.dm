@@ -2,9 +2,10 @@
 	name = "Qerr-Vallis"
 	description = "Qerr'Vallis is the home system of the Skrell and the current capital of the Empire, whose administrative \
 	hub resides in the massive ring-world that orbits Qerr'Balak, the Skrell's homeworld, now laid in ruins following the Kali'r war. \
-	Most worlds in Qerr'Vallis are uninhabitable, and the majority of the population is concentrated in extensive orbital habitats or on \
-	the massive housing complexes in the ringworld of Qerr'Kal'ol. Contraty to what one would expect of the capital of an Empire, Qerr'Vallis \
-	has only a very small fraction of the population seen in nearby star-systems, owing to the massive exodus after and during the Kali'r war."
+	Most worlds in Qerr'Vallis are uninhabitable, and the majority of the population is concentrated on \
+	the massive housing complexes in the ringworld of Qerr'Kal'ol, with the remaining portions scattered around orbital structures and semi-permanent \
+	outposts in the system's planets. Despite the massive exodus following the Kali'mak war, Qerr'Vallis is still one of the most \
+	population-dense systems in the empire."
 	capital = "Qerr'Kal'ol"
 	ruling_body = "None"
 	distance = "410 light years"
