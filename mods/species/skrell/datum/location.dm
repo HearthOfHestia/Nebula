@@ -82,14 +82,14 @@
 /decl/cultural_info/location/epsilon
 	name = "Epsilon Directorate"
 	description = "The Epsilon Directorate is a big thorn on the side of traditional Skrellian civilization. Born out of the desire of more efficient research \
-	and development process without the burdens of excessive bureaucy, safety testings and petty moral concerns, it was estabilished in Formalhaut, far away from skrellian civilization shortly after the end of the 'Age of Expansion'. \
-	Composed mainly of huge, low-technology orbital installations in varying states of disrepair, the Directorate is today one of the most multi-cultural factions in the Galaxy, \
-	owing to its population composed mostly of Ue-Katish and close proximity to humans who often trade with them. Humans and other xeno species are minorities but not an uncommon sight in the \
-	Epsilon Directorate."
+	and development process without the burdens of excessive bureaucy, safety testings and petty moral concerns, it was estabilished in Gi’krall-Xix, far away from skrellian civilization shortly after the end of the 'Age of Expansion'. \
+	Although it has fallen behind the Oligarchy severely and due to a number of hardships, the aid of Ue-Katish Pirates and trade with other xeno entities have allowed the Directorate to \
+	slowly regain its footing in the recent decades. The population of the Epsilon Directorate is quite diverse, and although skrell ultimately still make up the majority of \
+	sapient beings within their facilities, it is not uncommon to see unathi, tajara, humans and other xenos who have decided to join them for whatever reason."
 	additional_langs = list(/decl/language/skrell/casteless)
 	capital = "None"
 	ruling_body = "The Director"
-	distance = "25 light years"
+	distance = "40 light years"
 	economic_power = 0.7
 	subversive_potential = 80
 
