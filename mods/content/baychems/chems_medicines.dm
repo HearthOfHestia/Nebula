@@ -18,6 +18,7 @@
 	name = "dexalin"
 	lore_text = "Dexalin is used in the treatment of oxygen deprivation."
 	color = "#0080ff"
+	uid = "chem_dexalin"
 
 /decl/material/liquid/oxy_meds/dexalinp
 	name = "dexalin plus"
@@ -25,6 +26,7 @@
 	color = "#0040ff"
 	overdose = REAGENTS_OVERDOSE * 0.5
 	value = 3.7
+	uid = "chem_dexalin_plus"
 
 /decl/material/liquid/oxy_meds/dexalinp/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	M.add_chemical_effect(CE_OXYGENATED, 2) // change to add_chemical_effect_max later
