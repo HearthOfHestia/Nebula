@@ -693,6 +693,7 @@
 	name = "grapes"
 	seed_name = "grape"
 	display_name = "grapevine"
+	kitchen_tag = "grape"
 	mutants = list("greengrapes")
 	chems = list(/decl/material/liquid/nutriment = list(1,10), /decl/material/liquid/nutriment/sugar = list(1,5), /decl/material/liquid/drink/juice/grape = list(10,10))
 
@@ -726,6 +727,7 @@
 	name = "peanut"
 	seed_name = "peanut"
 	display_name = "peanut vine"
+	kitchen_tag = "peanut"
 	chems = list(/decl/material/liquid/nutriment = list(1,10))
 
 /datum/seed/peanuts/New()
