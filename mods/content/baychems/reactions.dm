@@ -32,8 +32,7 @@
 /decl/chemical_reaction/nefopam
 	name = "Nefopam"
 	result = /decl/material/liquid/painkillers/nefopam
-	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/painkillers/paracetamol = 1)
-	catalysts = list(/decl/material/liquid/sedatives = 5)
+	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/painkillers/paracetamol = 3)
 	result_amount = 1
 
 /decl/chemical_reaction/painkillers
@@ -51,9 +50,8 @@
 /decl/chemical_reaction/fentanyl
 	name = "Fentanyl"
 	result = /decl/material/liquid/painkillers/fentanyl
-	required_reagents = list(/decl/material/liquid/opium = 1, /decl/material/liquid/painkillers/morphine = 1)
-	catalysts = list(/decl/material/liquid/sedatives = 5)
-	result_amount = 1
+	required_reagents = list(/decl/material/liquid/opium = 1, /decl/material/liquid/painkillers/morphine = 1, /decl/material/liquid/sedatives = 1, /decl/material/liquid/hallucinogenics = 1)
+	result_amount = 2
 
 /decl/chemical_reaction/paroxetine
 	name = "Paroxetine"

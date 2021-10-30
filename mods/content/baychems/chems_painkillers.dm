@@ -27,7 +27,7 @@
 	dizziness_severity = 0.2
 
 /decl/material/liquid/painkillers/morphine
-	name = "morphine" //similar to tramadol, more effective but more expensive to prepare.
+	name = "morphine" //similar to tramadol, more effective but more expensive to prepare, also greater side effects
 	lore_text = "An effective, strong opioid painkiller. Don't mix with alcohol."
 	color = "#864794"
 	overdose = 10
@@ -39,7 +39,7 @@
 	breathloss_severity = 1
 	slowdown_severity = 1
 	blurred_vision = 0.5
-	stuttering_severity = 0
+	stuttering_severity = 0.5
 	slur_severity = 1
 	confusion_severity = 1
 	dizziness_severity = 1
@@ -58,7 +58,7 @@
 	breathloss_severity = 2
 	slowdown_severity = 2
 	blurred_vision = 1
-	stuttering_severity = 0.5
+	stuttering_severity = 1
 	slur_severity = 1
 	confusion_severity = 1
 	dizziness_severity = 2

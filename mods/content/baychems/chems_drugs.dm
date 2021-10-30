@@ -20,7 +20,8 @@
 
 /decl/material/liquid/opium/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	M.add_chemical_effect(CE_PAINKILLER, 40)
-	if(prob(75)) //taking raw opium isn't exactly healthy.
-		SET_STATUS_MAX(M, STAT_SLUR, 40)
-	if(prob(75))
-		SET_STATUS_MAX(M, STAT_DIZZY, 40)
+	M.add_chemical_effect(CE_BLOCKAGE, 10) //raw plant matter in bloodstream
+	M.add_chemical_effect(CE_TOXIN, 1)
+	SET_STATUS_MAX(M, STAT_SLUR, 40)
+	SET_STATUS_MAX(M, STAT_DIZZY, 40)
+	SET_STATUS_MAX(M, STAT_BLURRY, 40)
