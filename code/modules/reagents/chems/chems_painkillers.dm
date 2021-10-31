@@ -9,6 +9,8 @@
 	ingest_met = 0.02
 	flags = IGNORE_MOB_SIZE
 	value = 1.8
+	uid = "chem_painkillers"
+
 	var/pain_power = 80 //magnitude of painkilling effect
 	var/effective_dose = 0.5 //how many units it need to process to reach max power
 	var/additional_effect_threshold = 15 // cumulative dosage at which slowdown and drowsiness are applied

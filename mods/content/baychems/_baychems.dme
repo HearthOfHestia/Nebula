@@ -7,4 +7,5 @@
 #include "chems_poisons.dm"
 #include "items.dm"
 #include "reactions.dm"
+#include "pills.dm"
 #endif

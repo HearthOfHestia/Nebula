@@ -24,7 +24,6 @@
 		pref.gender = pronouns.name
 
 	pref.skills_allocated = pref.sanitize_skills(pref.skills_allocated)
-	// culture is sanitised elsewhere
 
 	if(!has_flag(get_species_by_key(pref.species), HAS_UNDERWEAR))
 		pref.all_underwear.Cut()
@@ -62,11 +61,11 @@
 
 	var/icon/use_preview_icon = current_species.get_preview_icon()
 	if(use_preview_icon)
-		send_rsc(user, use_preview_icon, current_species.preview_icon_path)		
+		send_rsc(user, use_preview_icon, current_species.preview_icon_path)
 		. += "<td width = '200px' align='center'><img src='[current_species.preview_icon_path]' width='[current_species.preview_icon_width]px' height='[current_species.preview_icon_height]px'></td>"
 	else
 		. += "<td width = '200px' align='center'>No preview available.</td>"
-		
+
 	var/desc = current_species.description || "No additional details."
 	if(hide_species && length(desc) > 200)
 		desc = "[copytext(desc, 1, 194)] <small>\[...\]</small>"

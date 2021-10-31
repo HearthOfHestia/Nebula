@@ -17,6 +17,7 @@
 	color = "#a68480"
 	overdose = REAGENTS_OVERDOSE * 0.5
 	value = 2
+	uid = "chem_opium"
 
 /decl/material/liquid/opium/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	M.add_chemical_effect(CE_PAINKILLER, 40)
