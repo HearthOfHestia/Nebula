@@ -45,6 +45,13 @@
 			"[WEST]"  = list("x" = -3, "y" = 14)
 		),
 
+		"[slot_glasses_str]" =   list(
+			"[NORTH]" = list("x" = 0, "y" = 14),
+			"[EAST]"  = list("x" = 3, "y" = 14),
+			"[SOUTH]" = list("x" = 0, "y" = 14),
+			"[WEST]"  = list("x" = -3, "y" = 14)
+		),
+
 		"[slot_l_ear_str]" =  list(
 			"[NORTH]" = list("x" = 0, "y" = 14),
 			"[EAST]"  = list("x" = 0, "y" = 14),
