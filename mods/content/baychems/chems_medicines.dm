@@ -18,6 +18,7 @@
 	name = "dexalin"
 	lore_text = "Dexalin is used in the treatment of oxygen deprivation."
 	color = "#0080ff"
+	uid = "chem_dexalin"
 
 /decl/material/liquid/oxy_meds/dexalinp
 	name = "dexalin plus"
@@ -25,6 +26,7 @@
 	color = "#0040ff"
 	overdose = REAGENTS_OVERDOSE * 0.5
 	value = 3.7
+	uid = "chem_dexalin_plus"
 
 /decl/material/liquid/oxy_meds/dexalinp/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	M.add_chemical_effect(CE_OXYGENATED, 2) // change to add_chemical_effect_max later
@@ -68,6 +70,7 @@
 /decl/material/liquid/antidepressants/paroxetine
 	name = "paroxetine"
 	value = 3.5
+	uid = "chem_paroxetine"
 
 /decl/material/liquid/antidepressants/paroxetine/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	var/volume = REAGENT_VOLUME(holder, type)
@@ -94,6 +97,7 @@
 	overdose = REAGENTS_OVERDOSE * 0.5
 	scannable = 1
 	value = 3.9
+	uid = "chem_dermaline"
 
 /decl/material/liquid/burn_meds/dermaline/affect_blood(mob/living/M, alien, removed, var/datum/reagents/holder)
 	..()
@@ -104,6 +108,7 @@
 	lore_text = "Arithrazine is an unstable medication used for the most extreme cases of radiation poisoning."
 	color = "#008000"
 	value = 2.7
+	uid = "chem_arithrazine"
 
 /decl/material/liquid/antirads/arithrazine/affect_blood(var/mob/living/M, var/alien, var/removed, var/datum/reagents/holder)
 	M.radiation = max(M.radiation - 70 * removed, 0)

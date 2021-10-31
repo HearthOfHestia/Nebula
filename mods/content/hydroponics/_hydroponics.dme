@@ -1,0 +1,4 @@
+#ifndef MODPACK_HYDROPONICS
+#define MODPACK_HYDROPONICS
+#include "seeds_datum.dm"
+#endif

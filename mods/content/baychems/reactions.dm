@@ -26,15 +26,32 @@
 /decl/chemical_reaction/paracetamol
 	name = "Paracetamol"
 	result = /decl/material/liquid/painkillers/paracetamol
-	required_reagents = list(/decl/material/liquid/painkillers = 1, /decl/material/liquid/nutriment/sugar = 1, /decl/material/liquid/water = 1)
+	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/nutriment/sugar = 1, /decl/material/liquid/water = 1)
 	result_amount = 3
 
-/decl/chemical_reaction/oxycodone
-	name = "Oxycodone"
-	result = /decl/material/liquid/painkillers/oxycodone
-	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/painkillers = 1)
-	catalysts = list(/decl/material/solid/metal/tungsten = 5)
+/decl/chemical_reaction/nefopam
+	name = "Nefopam"
+	result = /decl/material/liquid/painkillers/nefopam
+	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/painkillers/paracetamol = 3)
 	result_amount = 1
+
+/decl/chemical_reaction/painkillers
+	name = "Tramadol"
+	result = /decl/material/liquid/painkillers
+	required_reagents = list(/decl/material/liquid/opium = 1, /decl/material/liquid/ethanol = 1, /decl/material/liquid/acetone = 1)
+	result_amount = 3
+
+/decl/chemical_reaction/morphine
+	name = "Morphine"
+	result = /decl/material/liquid/painkillers/morphine
+	required_reagents = list(/decl/material/liquid/opium = 1, /decl/material/liquid/painkillers = 1)
+	result_amount = 2
+
+/decl/chemical_reaction/fentanyl
+	name = "Fentanyl"
+	result = /decl/material/liquid/painkillers/fentanyl
+	required_reagents = list(/decl/material/liquid/opium = 1, /decl/material/liquid/painkillers/morphine = 1, /decl/material/liquid/sedatives = 1, /decl/material/liquid/hallucinogenics = 1)
+	result_amount = 2
 
 /decl/chemical_reaction/paroxetine
 	name = "Paroxetine"
