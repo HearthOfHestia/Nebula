@@ -7,7 +7,7 @@
 /decl/recipe/cosmicbrownies
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/browniemix = 10, /decl/material/liquid/nutriment/protein/egg = 3)
-	fruit = list("ambrosia" = 1)
+	fruit = list("biteleaf" = 1)
 	reagent_mix = REAGENT_REPLACE //No egg or mix in final recipe
 	result = /obj/item/chems/food/sliceable/cosmicbrownies
 
@@ -34,7 +34,7 @@
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise
 
 /decl/recipe/muffin/berry
-	fruit = list("berry" = 1)
+	fruit = list("berries" = 1)
 	result = /obj/item/chems/food/berrymuffin
 
 /decl/recipe/croissant
