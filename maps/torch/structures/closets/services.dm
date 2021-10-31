@@ -25,6 +25,20 @@
 		/obj/item/clothing/suit/chef/classic
 	)
 
+/obj/structure/closet/waitstaff_torch
+	name = "waitstaff closet"
+	desc = "It's a storage unit for waitstaff equipment."
+	closet_appearance = /decl/closet_appearance/wardrobe/black
+
+/obj/structure/closet/waitstaff_torch/WillContain()
+	return list(
+		/obj/item/clothing/head/soft/black,
+		/obj/item/radio/headset/headset_service = 2,
+		/obj/item/clothing/under/sundress,
+		/obj/item/clothing/under/waiter = 2,
+		/obj/item/clothing/suit/chef/classic = 2
+	)
+
 /obj/structure/closet/secure_closet/hydroponics_torch //done so that it has no access reqs
 	name = "hydroponics locker"
 	req_access = list()

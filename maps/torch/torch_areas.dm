@@ -749,6 +749,12 @@
 	sound_env = SMALL_ENCLOSED
 	req_access = list(access_research)
 
+/area/storage/service
+	name = "Service Equipment Storage"
+	icon_state = "storage"
+	sound_env = SMALL_ENCLOSED
+	req_access = list(list(access_kitchen, access_bar))
+
 // Supply
 
 /area/quartermaster

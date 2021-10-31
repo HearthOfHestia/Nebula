@@ -380,10 +380,21 @@
 /area/medical/morgue)
 "aV" = (
 /obj/structure/catwalk,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 10
+/obj/structure/disposalpipe/down,
+/obj/structure/lattice,
+/obj/structure/railing/mapped{
+	dir = 4;
+	icon_state = "railing0-1"
 	},
-/turf/simulated/floor/plating,
+/obj/structure/railing/mapped{
+	dir = 8;
+	icon_state = "railing0-1"
+	},
+/obj/structure/railing/mapped{
+	dir = 1;
+	icon_state = "railing0-1"
+	},
+/turf/simulated/open,
 /area/maintenance/seconddeck/central)
 "aW" = (
 /obj/random_multi/single_item/runtime,
@@ -655,21 +666,23 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "bD" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/structure/lattice,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
 	},
 /obj/structure/railing/mapped{
-	dir = 1;
+	dir = 8;
 	icon_state = "railing0-1"
 	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
+/obj/structure/railing/mapped,
 /turf/simulated/open,
 /area/maintenance/seconddeck/central)
 "bE" = (
@@ -1792,7 +1805,6 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -1806,11 +1818,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning,
 /obj/structure/catwalk,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "ec" = (
@@ -1822,12 +1834,10 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
 	},
+/obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "ed" = (
@@ -2108,34 +2118,23 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "eJ" = (
-/obj/structure/cable/green{
-	icon_state = "2-8"
-	},
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "eK" = (
-/obj/structure/disposalpipe/down,
-/obj/structure/lattice,
-/obj/structure/railing/mapped{
-	dir = 1;
-	icon_state = "railing0-1"
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/turf/simulated/open,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "eL" = (
 /obj/machinery/camera/network/engineering{
@@ -2403,28 +2402,17 @@
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "ft" = (
-/obj/structure/cable/green{
-	icon_state = "1-4"
-	},
 /obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4
-	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "fu" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
 /obj/structure/cable/green{
-	icon_state = "2-8"
+	icon_state = "1-2"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
-/obj/structure/lattice,
-/obj/structure/cable/green{
-	icon_state = "1-8"
-	},
-/turf/simulated/open,
+/turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "fv" = (
 /obj/machinery/door/airlock/civilian{
@@ -2765,14 +2753,15 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/structure/cable/green{
-	icon_state = "1-8"
-	},
 /obj/structure/cable/green{
 	icon_state = "1-4"
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4;
+	icon_state = "warningcorner"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -2783,10 +2772,6 @@
 	},
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
-	},
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
 	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -3482,10 +3467,6 @@
 	dir = 8;
 	name = "west bump";
 	pixel_x = -24
-	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4;
-	icon_state = "warningcorner"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -9157,6 +9138,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 10
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -15716,11 +15700,6 @@
 /area/shuttle/escape_pod10/station)
 "Pr" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/railing/mapped,
-/obj/structure/railing/mapped{
-	dir = 4;
-	icon_state = "railing0-1"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -18414,10 +18393,11 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "XJ" = (
