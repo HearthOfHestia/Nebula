@@ -44,9 +44,9 @@
 	gluttonous = GLUT_TINY
 
 	unarmed_attacks = list(
-		/decl/natural_attack/stomp, 
-		/decl/natural_attack/kick, 
-		/decl/natural_attack/punch, 
+		/decl/natural_attack/stomp,
+		/decl/natural_attack/kick,
+		/decl/natural_attack/punch,
 		/decl/natural_attack/bite/sharp
 	)
 
@@ -72,9 +72,29 @@
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			/decl/cultural_info/culture/tajaran,
+			/decl/cultural_info/culture/tajaran/newsociety,
+			/decl/cultural_info/culture/tajaran/nihilist,
 			/decl/cultural_info/culture/other
+		),
+		TAG_HOMEWORLD = list(
+			/decl/cultural_info/location/adhomai,
+			/decl/cultural_info/location/lonewanderer,
+			/decl/cultural_info/location/oldsocietycolony,
+			/decl/cultural_info/location/newsocietycolony
+		),
+		TAG_FACTION = list(
+			/decl/cultural_info/faction/tajara,
+			/decl/cultural_info/faction/tajara/colonial,
+			/decl/cultural_info/faction/tajara/highclass,
+			/decl/cultural_info/faction/tajara/lowclass
+		),
+		TAG_RELIGION = list(
+			/decl/cultural_info/religion/tajara/hadiaian,
+			/decl/cultural_info/religion/tajara/oldadhomaian,
+			/decl/cultural_info/religion/tajara/vastarrian
 		)
 	)
+
 
 	default_emotes = list(
 		/decl/emote/human/swish,
