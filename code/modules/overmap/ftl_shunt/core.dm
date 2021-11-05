@@ -136,7 +136,12 @@
 	if(chargepercent == 0 || isnull(chargepercent))
 		new_charge_color ="#fa0a0a"
 	else
+	#if DM_VERSION > 513 
 		new_charge_color = gradient("#fa0a0a", "#0de405", clamp(chargepercent/100, 0, 100))
+	#endif
+	#if DM_VERSION < 514
+		new_charge_color = HSVtoRGB(RotateHue(hsv(0, 255, 255), 120 * (1 - chargepercent/100))) 
+	#endif
 	animate(charge_indicator, color = new_charge_color, 1 SECOND)
 
 	if(stat & BROKEN)
