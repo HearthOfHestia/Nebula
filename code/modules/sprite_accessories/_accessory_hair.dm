@@ -421,6 +421,10 @@
 	icon_state = "hair_cia"
 	gender = MALE
 
+/decl/sprite_accessory/hair/wheeler
+	name = "Wheeler"
+	icon_state = "hair_wheeler"
+
 /decl/sprite_accessory/hair/mulder
 	name = "Mulder"
 	icon_state = "hair_mulder"
