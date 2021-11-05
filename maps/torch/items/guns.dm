@@ -24,12 +24,12 @@
 	req_access = list(list(access_brig, access_bridge))
 	authorized_modes = list(ALWAYS_AUTHORIZED, UNAUTHORIZED, UNAUTHORIZED)
 	magazine_type = /obj/item/ammo_magazine/pistol/stun
-	var/allowed_projectile = /obj/item/ammo_casing/pistol/stun
+	var/list/allowed_projectile = list(/obj/item/ammo_casing/pistol/stun)
 
 	firemodes = list(
-		list(mode_name="nonlethal", allowed_projectile=/obj/item/ammo_casing/pistol/stun),
-		list(mode_name="less than lethal", allowed_projectile=/obj/item/ammo_casing/pistol/rubber),
-		list(mode_name="lethal", allowed_projectile=/obj/item/ammo_casing/pistol)
+		list(mode_name="nonlethal", allowed_projectile=list(/obj/item/ammo_casing/pistol/stun)),
+		list(mode_name="less than lethal", allowed_projectile=list(/obj/item/ammo_casing/pistol/stun,/obj/item/ammo_casing/pistol/rubber)),
+		list(mode_name="lethal", allowed_projectile=list(/obj/item/ammo_casing/pistol/stun,/obj/item/ammo_casing/pistol/rubber,/obj/item/ammo_casing/pistol))
 		)
 
 /obj/item/gun/projectile/pistol/secure/preauthorized
@@ -40,7 +40,10 @@
 		audible_message(SPAN_WARNING("\The [src] buzzes, refusing to fire."), hearing_distance = 3)
 		playsound(loc, 'sound/machines/buzz-sigh.ogg', 10, 0)
 		return 0
-	if(ammo_magazine && length(ammo_magazine.contents) && ammo_magazine.contents[1].type != allowed_projectile) //Comparing the first round in the magazine to the allowed projectile.
+	var/obj/ammo
+	if(length(ammo_magazine.stored_ammo))
+		ammo = ammo_magazine.stored_ammo[1]
+	if(ammo_magazine && length(ammo_magazine.stored_ammo) && !isnull(ammo) && !(ammo.type in allowed_projectile)) //Comparing the first round in the magazine to the allowed projectile.
 		audible_message(SPAN_WARNING("\The [src] buzzes, refusing to fire."), hearing_distance = 3)
 		playsound(loc, 'sound/machines/buzz-sigh.ogg', 10, 0)
 		return 0
@@ -69,4 +72,11 @@
 	name = "box of magazines (10mm, lethal)"
 	icon_state = "ammo"
 	startswith = list(/obj/item/ammo_magazine/pistol = 7)
+
+/obj/item/gun/energy/gun
+	firemodes = list(
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun, indicator_color=COLOR_CYAN, charge_cost = 20),
+		list(mode_name="shock", projectile_type=/obj/item/projectile/beam/stun/shock, indicator_color=COLOR_YELLOW, charge_cost = 20),
+		list(mode_name="kill", projectile_type=/obj/item/projectile/beam/smalllaser, indicator_color=COLOR_RED, charge_cost = 10),
+		)
 
