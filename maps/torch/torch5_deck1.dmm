@@ -12640,7 +12640,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -13578,7 +13578,7 @@
 /area/rnd/xenoarch/analysis)
 "fvb" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -14616,7 +14616,7 @@
 /area/security/opscheck)
 "hqi" = (
 /obj/effect/floor_decal/corner/paleblue/mono,
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /obj/structure/cable/green{
@@ -23445,7 +23445,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/paleblue/mono,

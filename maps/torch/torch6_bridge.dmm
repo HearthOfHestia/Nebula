@@ -5236,7 +5236,7 @@
 /turf/simulated/wall/prepainted,
 /area/security/bridgecheck)
 "pH" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -13758,7 +13758,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "WB" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,

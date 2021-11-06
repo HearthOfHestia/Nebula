@@ -3632,7 +3632,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod11/station)
 "is" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 1
 	},
 /obj/machinery/vending/wallmed1{
@@ -8972,7 +8972,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod10/station)
 "wn" = (
-/obj/machinery/sleeper,
+/obj/machinery/sleeper/standard,
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
 	pixel_y = 32
