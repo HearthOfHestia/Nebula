@@ -56,5 +56,4 @@
 	var/datum/extension/interactive/os/os = get_extension(src, /datum/extension/interactive/os)
 	if(os)
 		return os.check_eye(user)
-	else
-		return ..()
+	return ..()

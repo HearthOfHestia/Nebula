@@ -186,8 +186,8 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	var/dyabs=abs(dy)
 	var/sdx=sign(dx)	//Sign of x distance (+ or -)
 	var/sdy=sign(dy)
-	var/x=dxabs>>1	//Counters for steps taken, setting to distance/2
-	var/y=dyabs>>1	//Bit-shifting makes me l33t.  It also makes getline() unnessecarrily fast.
+	var/x=BITSHIFT_RIGHT(dxabs,1)	//Counters for steps taken, setting to distance/2
+	var/y=BITSHIFT_RIGHT(dyabs,1)	//Bit-shifting makes me l33t.  It also makes getline() unnessecarrily fast.
 	var/j			//Generic integer for counting
 	if(dxabs>=dyabs)	//x distance is greater than y
 		for(j=0;j<dxabs;j++)//It'll take dxabs steps to get there
@@ -694,13 +694,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	else if (zone == BP_L_FOOT) return "left foot"
 	else if (zone == BP_R_FOOT) return "right foot"
 	else return zone
-
-/proc/get(atom/loc, type)
-	while(loc)
-		if(istype(loc, type))
-			return loc
-		loc = loc.loc
-	return null
 
 //Whether or not the given item counts as sharp in terms of dealing damage
 /proc/is_sharp(obj/O)

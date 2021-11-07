@@ -52,7 +52,7 @@
 
 /obj/machinery/seed_storage/Destroy()
 	QDEL_NULL_LIST(piles)
-	. = ..()	
+	. = ..()
 
 /obj/machinery/seed_storage/random // This is mostly for testing, but I guess admins could spawn it
 	name = "Random seed storage"

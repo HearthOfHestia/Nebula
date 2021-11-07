@@ -148,7 +148,7 @@
 		for(var/atom/A in below)
 			if(!A.CanPass(src, location_override))
 				return FALSE
-		
+
 		//We cannot sink if we can swim
 		if(location_override.get_fluid_depth() >= FLUID_DEEP && (below == loc))
 			if(!(below.get_fluid_depth() >= 0.95 * FLUID_MAX_DEPTH)) //No salmon skipping up a stream of falling water
@@ -281,7 +281,7 @@
 			z_eye = null
 			return
 		var/turf/above = GetAbove(src)
-		if(istype(above) && (above.z_flags & ZM_MIMIC_BELOW))
+		if(istype(above) && TURF_IS_MIMICKING(above))
 			z_eye = new /atom/movable/z_observer/z_up(src, src)
 			to_chat(src, "<span class='notice'>You look up.</span>")
 			reset_view(z_eye)
@@ -302,7 +302,7 @@
 			z_eye = null
 			return
 		var/turf/T = get_turf(src)
-		if((T?.z_flags & ZM_MIMIC_BELOW) && HasBelow(T.z))
+		if(T && TURF_IS_MIMICKING(T) && HasBelow(T.z))
 			z_eye = new /atom/movable/z_observer/z_down(src, src)
 			to_chat(src, "<span class='notice'>You look down.</span>")
 			reset_view(z_eye)
@@ -349,7 +349,7 @@
 	forceMove(get_step(owner, UP))
 	if(isturf(src.loc))
 		var/turf/T = src.loc
-		if(T.z_flags & ZM_MIMIC_BELOW)
+		if(T && TURF_IS_MIMICKING(T))
 			return
 	owner.reset_view(null)
 	owner.z_eye = null
@@ -358,7 +358,7 @@
 /atom/movable/z_observer/z_down/follow()
 	forceMove(get_step(owner, DOWN))
 	var/turf/T = get_turf(owner)
-	if(T?.z_flags & ZM_MIMIC_BELOW)
+	if(T && TURF_IS_MIMICKING(T))
 		return
 	owner.reset_view(null)
 	owner.z_eye = null
