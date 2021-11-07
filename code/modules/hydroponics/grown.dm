@@ -184,8 +184,8 @@ var/global/list/_wood_materials = list(
 					for(var/wood_mat in global._wood_materials)
 						if(!isnull(seed.chems[wood_mat]))
 							user.visible_message("<span class='notice'>\The [user] makes planks out of \the [src].</span>")
-							var/obj/item/stack/material/stack = SSmaterials.create_object(wood_mat, user.loc, rand(1,2))
-							stack.add_to_stacks(user, TRUE)
+							for(var/obj/item/stack/material/stack in SSmaterials.create_object(wood_mat, user.loc, rand(1,2)))
+								stack.add_to_stacks(user, TRUE)
 							qdel(src)
 							return TRUE
 
@@ -362,3 +362,22 @@ var/global/list/fruit_icon_cache = list()
 		user.visible_message(SPAN_DANGER("\The [user] reflexively hurls \the [src] at \the [aiming_at]!"))
 		user.throw_item(get_turf(aiming_at), src)
 		user.trigger_aiming(TARGET_CAN_CLICK)
+
+/obj/item/chems/food/proc/get_kitchen_tags()
+	if(dry)
+		LAZYADD(., "dried")
+
+/obj/item/chems/food/grown/get_kitchen_tags()
+	. = ..()
+	if(!seed)
+		return
+	if(seed.kitchen_tag)
+		LAZYADD(., seed.kitchen_tag)
+
+/obj/item/chems/food/fruit_slice/get_kitchen_tags()
+	. = ..()
+	if(!seed)
+		return
+	if(seed.kitchen_tag)
+		LAZYADD(., seed.kitchen_tag)
+	LAZYADD(., "slice")

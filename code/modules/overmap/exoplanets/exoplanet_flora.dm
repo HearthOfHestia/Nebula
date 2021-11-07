@@ -32,7 +32,7 @@
 			if(color == "RANDOM")
 				color = get_random_colour(0,75,190)
 			S.set_trait(TRAIT_LEAVES_COLOUR,color)
-			S.chems[/decl/material/solid/wood] = 1
+			S.chems[/decl/material/solid/wood] = list(1, 1)
 			adapt_seed(S)
 			big_flora_types += S
 

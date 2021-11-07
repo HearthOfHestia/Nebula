@@ -56,9 +56,9 @@
 	worn_underwear = null
 	QDEL_NULL(attack_selector)
 	LAZYCLEARLIST(smell_cooldown)
-	for(var/organ in organs)
-		qdel(organ)
-	return ..()
+	. = ..()
+	QDEL_NULL_LIST(organs)
+	QDEL_NULL_LIST(internal_organs)
 
 /mob/living/carbon/human/get_ingested_reagents()
 	if(should_have_organ(BP_STOMACH))
@@ -157,7 +157,7 @@
 	L.imp_in = M
 	L.implanted = 1
 	var/obj/item/organ/external/affected = M.organs_by_name[BP_HEAD]
-	affected.implants += L
+	LAZYDISTINCTADD(affected.implants, L)
 	L.part = affected
 	L.implanted(src)
 
@@ -388,8 +388,10 @@
 	var/list/EMP = list()
 	for(var/obj/item/organ/external/limb in limbs)
 		EMP += limb
-		EMP += limb.internal_organs
-		EMP += limb.implants
+		if(LAZYLEN(limb.internal_organs))
+			EMP += limb.internal_organs
+		if(LAZYLEN(limb.implants))
+			EMP += limb.implants
 	for(var/atom/E in EMP)
 		E.emp_act(severity)
 
@@ -818,7 +820,7 @@
 		src.verbs -= /mob/living/carbon/human/proc/remotesay
 		return
 	var/list/creatures = list()
-	for(var/mob/living/carbon/h in world)
+	for(var/mob/living/carbon/h in global.player_list)
 		creatures += h
 	var/mob/target = input("Who do you want to project your mind to ?") as null|anything in creatures
 	if (isnull(target))
@@ -831,7 +833,7 @@
 		target.show_message("<span class='notice'>You hear a voice that seems to echo around the room: [say]</span>")
 	usr.show_message("<span class='notice'>You project your mind into [target.real_name]: [say]</span>")
 	log_say("[key_name(usr)] sent a telepathic message to [key_name(target)]: [say]")
-	for(var/mob/observer/ghost/G in world)
+	for(var/mob/observer/ghost/G in global.player_list)
 		G.show_message("<i>Telepathic message from <b>[src]</b> to <b>[target]</b>: [say]</i>")
 
 /mob/living/carbon/human/proc/remoteobserve()
@@ -856,7 +858,7 @@
 
 	var/list/mob/creatures = list()
 
-	for(var/mob/living/carbon/h in world)
+	for(var/mob/living/carbon/h in global.living_mob_list_)
 		var/turf/temp_turf = get_turf(h)
 		if((temp_turf.z != 1 && temp_turf.z != 5) || h.stat!=CONSCIOUS) //Not on mining or the station. Or dead
 			continue
@@ -884,13 +886,11 @@
 	reset_blood()
 
 	if(!client || !key) //Don't boot out anyone already in the mob.
-		for (var/obj/item/organ/internal/brain/H in world)
-			if(H.brainmob)
-				if(H.brainmob.real_name == src.real_name)
-					if(H.brainmob.mind)
-						H.brainmob.mind.transfer_to(src)
-						qdel(H)
-
+		for(var/mob/living/carbon/brain/brain in global.player_list) // This is really nasty, does it even work anymore?
+			if(brain.real_name == src.real_name && brain.mind)
+				brain.mind.transfer_to(src)
+				qdel(brain.loc)
+				break
 	losebreath = 0
 	UpdateAppearance()
 	..()
@@ -1086,11 +1086,11 @@
 
 	var/decl/pronouns/new_pronouns = get_pronouns_by_gender(get_sex())
 	if(!istype(new_pronouns) || !(new_pronouns in species.available_pronouns))
-		new_pronouns = pick(species.available_pronouns)
+		new_pronouns = species.default_pronouns
 		set_gender(new_pronouns.name)
 
 	icon_state = lowertext(species.name)
-	set_bodytype(pick(species.available_bodytypes), TRUE)
+	set_bodytype(species.default_bodytype, TRUE)
 
 	species.create_organs(src)
 	species.handle_post_spawn(src)
@@ -1670,10 +1670,13 @@
 		return (!L || L.can_drown())
 	return FALSE
 
-/mob/living/carbon/human/get_breath_from_environment(var/volume_needed = STD_BREATH_VOLUME)
-	var/datum/gas_mixture/breath = ..(volume_needed)
+/mob/living/carbon/human/get_breath_from_environment(var/volume_needed = STD_BREATH_VOLUME, var/atom/location = src.loc)
+	var/datum/gas_mixture/breath = ..(volume_needed, location)
 	var/turf/T = get_turf(src)
 	if(istype(T) && T.is_flooded(lying) && should_have_organ(BP_LUNGS))
+		if(T == location) //Can we surface?
+			if(!lying && T.above && !T.above.is_flooded() && T.above.CanZPass(src, UP) && can_overcome_gravity())
+				return ..(volume_needed, T.above)
 		var/can_breathe_water = (istype(wear_mask) && wear_mask.filters_water()) ? TRUE : FALSE
 		if(!can_breathe_water)
 			var/obj/item/organ/internal/lungs/lungs = get_internal_organ(BP_LUNGS)

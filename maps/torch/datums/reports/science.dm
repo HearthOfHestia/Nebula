@@ -10,7 +10,7 @@
 
 /datum/computer_file/report/recipient/sci/anomaly/generate_fields()
 	..()
-	add_field(/datum/report_field/simple_text, "Vessel", using_map.station_name)
+	add_field(/datum/report_field/simple_text, "Vessel", global.using_map.station_name)
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 	add_field(/datum/report_field/simple_text, "Index")

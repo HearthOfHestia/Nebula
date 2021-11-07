@@ -45,7 +45,7 @@
 	usr.client.eye = src
 
 /obj/machinery/bodyscanner/proc/drop_contents()
-	for(var/obj/O in (contents - component_parts))
+	for(var/obj/O in get_contained_external_atoms())
 		O.dropInto(loc)
 
 /obj/machinery/bodyscanner/proc/go_out()

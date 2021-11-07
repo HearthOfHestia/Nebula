@@ -34,12 +34,12 @@
 /decl/sprite_accessory/tail/tiger_white
 	name = "tiger, colorable"
 	icon_state = "tiger"
-	extra_overlay = "tigerinnerwhite"
+	extra_overlay = "inner"
 
 /decl/sprite_accessory/tail/stripey
 	name = "stripey taj, colorable"
 	icon_state = "stripeytail"
-	extra_overlay = "stripeytail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/chameleon
 	name = "Chameleon, colorable"
@@ -62,7 +62,7 @@
 /decl/sprite_accessory/tail/wolf
 	name = "wolf, colorable"
 	icon_state = "wolf"
-	extra_overlay = "wolfinner"
+	extra_overlay = "inner"
 
 /decl/sprite_accessory/tail/mouse
 	name = "mouse, colorable"
@@ -89,11 +89,6 @@
 	icon_state = "crossfox"
 	do_colouration = FALSE
 
-/decl/sprite_accessory/tail/beethorax
-	name = "bee thorax"
-	icon_state = "beethorax"
-	do_colouration = FALSE
-
 /decl/sprite_accessory/tail/doublekitsune
 	name = "double kitsune tail, colorable"
 	icon_state = "doublekitsune"
@@ -106,12 +101,12 @@
 /decl/sprite_accessory/tail/eboop
 	name = "EGN mech tail (dual color)"
 	icon_state = "eboop"
-	extra_overlay = "eboop_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/ringtail
 	name = "ringtail, colorable"
 	icon_state = "ringtail"
-	extra_overlay = "ringtail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/satyr
 	name = "goat legs, colorable"
@@ -120,7 +115,7 @@
 /decl/sprite_accessory/tail/curltail
 	name = "curltail (vwag)"
 	icon_state = "curltail"
-	extra_overlay = "curltail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/shorttail
 	name = "shorttail (vwag)"
@@ -129,21 +124,17 @@
 /decl/sprite_accessory/tail/sneptail
 	name = "Snep/Furry Tail (vwag)"
 	icon_state = "sneptail"
-	extra_overlay = "sneptail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/tiger_new
 	name = "tiger tail (vwag)"
 	icon_state = "tigertail"
-	extra_overlay = "tigertail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/vulp_new
 	name = "new vulp tail (vwag)"
 	icon_state = "vulptail"
-	extra_overlay = "vulptail_mark"
-
-/decl/sprite_accessory/tail/otietail
-	name = "otie tail (vwag)"
-	icon_state = "otie"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/ztail
 	name = "jagged flufftail"
@@ -160,26 +151,21 @@
 /decl/sprite_accessory/tail/sergaltaildc
 	name = "sergal, dual-color"
 	icon_state = "sergal"
-	extra_overlay = "sergal_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/skunktail
 	name = "skunk, dual-color"
 	icon_state = "skunktail"
-	extra_overlay = "skunktail_mark"
+	extra_overlay = "mark"
 
 /decl/sprite_accessory/tail/deertail
 	name = "deer, dual-color"
 	icon_state = "deertail"
-	extra_overlay = "deertail_mark"
+	extra_overlay = "mark"
 
-/decl/sprite_accessory/tail/special/tajaran
-	name = "tajaran tail"
+/decl/sprite_accessory/tail/tajanim
+	name = "animated tajaran tail"
 	icon_state = "tajtail_loop1"
-
-/decl/sprite_accessory/tail/zenghu_taj
-	name = "Zeng-Hu Tajaran Synth tail"
-	icon_state = "zenghu_taj"
-	do_colouration = FALSE
 
 /decl/sprite_accessory/tail/tail_smooth
 	name = "Smooth Lizard Tail, Colorable"
@@ -188,7 +174,7 @@
 /decl/sprite_accessory/tail/tripplekitsune_colorable_yw
 	name = "Kitsune 3 tails - colorable"
 	icon_state = "triplekitsune"
-	extra_overlay = "triplekitsune_tips"
+	extra_overlay = "tips"
 
 /decl/sprite_accessory/tail/lizard_tail_smooth
 	name = "Lizard Tail (Smooth)"
@@ -213,12 +199,12 @@
 /decl/sprite_accessory/tail/ninekitsune_colorable_yw
 	name = "Kitsune 9 tails - colorable"
 	icon_state = "ninekitsune"
-	extra_overlay = "ninekitsune-tips"
+	extra_overlay = "tips"
 
 /decl/sprite_accessory/tail/vulpkanin_alt_color
 	name = "Vulpkanin alt"
 	icon_state = "vulpkanin_alt_color"
-	extra_overlay = "vulpkanin_alt_color_tips"
+	extra_overlay = "tips"
 
 /decl/sprite_accessory/tail/raccoon_tail
 	name = "Raccoon gray tail"
@@ -226,31 +212,31 @@
 
 /decl/sprite_accessory/tail/Easterntail
 	name = "Eastern Dragon (Animated)"
-	icon_state = "Easterntail"
-	extra_overlay = "EasterntailColorTip"
+	icon_state = "easterntail"
+	extra_overlay = "tips"
 
-/decl/sprite_accessory/tail/m_tail_synthliz_BEHINDstatic
+/decl/sprite_accessory/tail/synthliz
 	name = "Synthetic lizard tail"
 	icon_state = "m_tail_synthliz_BEHIND"
 
-/decl/sprite_accessory/tail/m_tail_synthliz_BEHIND
+/decl/sprite_accessory/tail/synthliz_animated
 	name = "Synthetic lizard tail, animated"
-	icon_state = "m_tail_synthliz_BEHIND"
+	icon_state = "m_tailwag_synthliz_BEHIND"
 
-/decl/sprite_accessory/tail/Segmentedtail
-	name = "Segmented tail, animated"
-	icon_state = "Segmentedtail"
-	extra_overlay = "Segmentedtailmarking"
+/decl/sprite_accessory/tail/segmentedtail
+	name = "Segmented tail"
+	icon_state = "segmentedtail"
+	extra_overlay = "marking"
 
-/decl/sprite_accessory/tail/Segmentedlights
-	name = "Segmented tail, animated synth"
-	icon_state = "Segmentedtail"
-	extra_overlay = "Segmentedlights"
+/decl/sprite_accessory/tail/segmentedtail/synth
+	name = "Segmented tail, synth"
+	icon_state = "segmentedtail"
+	extra_overlay = "lights"
 
 /decl/sprite_accessory/tail/fox_tail_s
 	name = "Fox tail"
-	icon_state = "fox_tail_s"
+	icon_state = "fox_tail"
 
 /decl/sprite_accessory/tail/fennec_tail_s
 	name = "Fennec tail"
-	icon_state = "fennec_tail_s"
+	icon_state = "fennec_tail"

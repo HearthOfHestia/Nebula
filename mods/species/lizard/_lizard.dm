@@ -1,5 +1,6 @@
 #define SPECIES_LIZARD  "Unathi"
-#define LANGUAGE_LIZARD "Sinta'Unathi"
+#define LANGUAGE_LIZARD "Ssallant"
+#define LANGUAGE_KRIPEN "Kripen"
 #define IS_LIZARD       "lizard"
 #define BODYTYPE_UNATHI "unathi body"
 

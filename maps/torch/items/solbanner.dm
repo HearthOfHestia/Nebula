@@ -13,7 +13,7 @@
 	icon_state = "steel"
 	obj_flags = 0
 	var/plantedby
-	
+
 /obj/structure/solbanner/exo/Initialize()
 	. = ..()
 	flick("deploy",src)
@@ -44,8 +44,8 @@
 		return
 	if(user.unEquip(src))
 		forceMove(T)
-		if(using_map.use_overmap)
-			var/obj/effect/overmap/visitable/sector/exoplanet/P = map_sectors["[z]"]
+		if(length(global.using_map.overmap_ids))
+			var/obj/effect/overmap/visitable/sector/exoplanet/P = global.overmap_sectors["[z]"]
 			if(istype(P))
 				SSstatistics.add_field(STAT_FLAGS_PLANTED, 1)
 		qdel(src)
@@ -54,6 +54,5 @@
 		var/dudename = ID.registered_name
 		if(istype(ID.military_rank))
 			dudename = "[ID.military_rank.name] [dudename]"
-		E.plantedby = "Planted on [stationdate2text()] by [dudename], [user.get_assignment()] of [using_map.full_name]."
+		E.plantedby = "Planted on [stationdate2text()] by [dudename], [user.get_assignment()] of [global.using_map.full_name]."
 		T.visible_message("<span class='notice'>[user] successfully claims this world with \the [E]!</span>")
-		

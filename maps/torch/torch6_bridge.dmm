@@ -2655,19 +2655,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"gf" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/machinery/firealarm{
-	pixel_y = 24
-	},
-/obj/effect/floor_decal/corner/darkblue{
-	dir = 5
-	},
-/turf/simulated/floor/tiled,
-/area/hallway/primary/bridge/fore)
 "gg" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -3761,16 +3748,16 @@
 	dir = 4;
 	id_tag = "perseverance_shuttle_pump_out_external"
 	},
-/obj/machinery/airlock_sensor{
+/obj/structure/handrail{
+	dir = 8
+	},
+/obj/machinery/airlock_sensor/shuttle{
 	dir = 4;
 	id_tag = "perseverance_shuttle_sensor_external";
 	pixel_x = 25;
 	pixel_y = -6
 	},
-/obj/structure/handrail{
-	dir = 8
-	},
-/obj/machinery/button/access/exterior{
+/obj/machinery/button/access/shuttle/exterior{
 	id_tag = "perseverance_shuttle";
 	name = "exterior access button";
 	pixel_x = 23;
@@ -4298,16 +4285,16 @@
 /area/space)
 "lX" = (
 /obj/machinery/shield_diffuser,
-/obj/machinery/door/airlock/external{
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	icon_state = "closed";
 	id_tag = "perseverance_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list("ACCESS_TORCH_CREW")
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -4665,14 +4652,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 5
 	},
-/obj/machinery/airlock_sensor{
-	id_tag = "perseverance_shuttle_sensor";
-	pixel_y = -24
-	},
 /obj/structure/handrail{
 	dir = 1
 	},
 /obj/effect/floor_decal/techfloor,
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "perseverance_shuttle_sensor";
+	pixel_y = -24
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/perseverance/airlock)
 "no" = (
@@ -4695,18 +4682,18 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/obj/machinery/button/access/interior{
-	id_tag = "perseverance_shuttle";
-	name = "interior access button";
-	pixel_x = -24;
-	pixel_y = -24;
-	req_access = newlist()
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
+	},
+/obj/machinery/button/access/shuttle/interior{
+	id_tag = "perseverance_shuttle";
+	name = "interior access button";
+	pixel_x = -24;
+	pixel_y = -24;
+	req_access = newlist()
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/airlock)
@@ -8066,6 +8053,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
+/obj/machinery/firealarm{
+	pixel_y = 24
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "xX" = (
@@ -10884,16 +10874,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	icon_state = "closed";
 	id_tag = "perseverance_shuttle_dock_inner";
 	locked = 1;
 	name = "Docking Port Airlock";
 	req_access = list("ACCESS_TORCH_CREW")
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -11486,6 +11476,7 @@
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	dir = 8;
 	display_name = "Bridge Deck Dock";
+	frequency = 1331;
 	id_tag = "perseverance_shuttle_dock_airlock";
 	pixel_x = 24;
 	pixel_y = 24;
@@ -11834,10 +11825,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/office/co)
 "NM" = (
-/obj/machinery/airlock_sensor{
-	id_tag = "perseverance_shuttle_dock_sensor";
-	pixel_y = 24
-	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
 	dir = 8;
 	id_tag = "perseverance_shuttle_dock_pump"
@@ -11852,6 +11839,10 @@
 /obj/item/radio/intercom{
 	dir = 1;
 	pixel_y = -28
+	},
+/obj/machinery/airlock_sensor/shuttle{
+	id_tag = "perseverance_shuttle_dock_sensor";
+	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -12400,6 +12391,7 @@
 "Qz" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	cycle_to_external_air = 1;
+	frequency = 1331;
 	id_tag = "perseverance_shuttle";
 	pixel_y = 24;
 	req_access = list("ACCESS_TORCH_CREW");
@@ -12587,16 +12579,16 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	icon_state = "closed";
 	id_tag = "perseverance_shuttle_inner";
 	locked = 1;
 	name = "Perseverance External Access";
 	req_access = list("ACCESS_TORCH_CREW")
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/perseverance/airlock)
@@ -14453,17 +14445,17 @@
 /turf/simulated/floor/carpet/blue2,
 /area/crew_quarters/heads/office/cmo)
 "ZA" = (
-/obj/machinery/door/airlock/external{
+/obj/machinery/shield_diffuser,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/external/shuttle{
 	autoset_access = 0;
 	icon_state = "closed";
 	id_tag = "perseverance_shuttle_outer";
 	locked = 1;
-	name = "Perseverance External Access";
+	name = "Perseverance External Airlock";
 	req_access = list("ACCESS_TORCH_CREW")
-	},
-/obj/machinery/shield_diffuser,
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/perseverance/airlock)
@@ -27373,7 +27365,7 @@ Ve
 na
 Tm
 hg
-gf
+Qe
 gM
 fD
 il

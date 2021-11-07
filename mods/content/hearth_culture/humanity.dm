@@ -21,7 +21,7 @@
 			/decl/cultural_info/culture/human/extrasolar,
 			/decl/cultural_info/culture/human/europa,
 			/decl/cultural_info/culture/human/belter,
-			/decl/cultural_info/culture/human/vatgrown	
+			/decl/cultural_info/culture/human/vatgrown
 		),
 		TAG_HOMEWORLD = list(
 			/decl/cultural_info/location/sol,
@@ -51,7 +51,7 @@
 		)
 	)
 
-//SPECIES OVERWRITES END 
+//SPECIES OVERWRITES END
 
 //FACTIONS START
 
@@ -79,16 +79,16 @@
 	You were potentially born into affluence, bought your way off the planet through corruption, or are one of the precious skilled laborers so desperately required \
 	 for Humanity's continuing expansion into the stars. Individuals from Earth tend to be somewhat unhealthy due to pollution, lingering radiation from various conflicts\
 	 and potential malnutrition during childhood."
-	default_language = /decl/language/human/euro
+	default_language = /decl/language/human/common // formerly /decl/language/human/common, repath if it stops being hardcoded everywhere
 	secondary_langs = list(
 		/decl/language/human/russian,
 		/decl/language/human/pan_asian,
 		/decl/language/human/spanish,
 		/decl/language/human/arabic,
 		/decl/language/human/spacer,
-		/decl/language/generic/standard
+		/decl/language/standard
 	)
-	
+
 /decl/cultural_info/culture/human/mars
 	name = "Marsborn"
 	description = " You are from Mars, a barren and inhospitable world that has become an important colony for humanity, first settled in the mid-to-late 21st Century. \
@@ -272,7 +272,8 @@
 		"zong", "zou", "zuan", "zui", "zun", "zuo", "zu"
 	)
 
-/decl/language/human/euro
+// formerly /decl/language/human/euro, but /decl/language/human/common is hardcoded everywhere atm
+/decl/language/human/common
 	name = LANGUAGE_ENGLISH
 	desc = "English has remained the lingua franca for a considerable portion of the world for the greater portion of a few centuries, with no signs of going away."
 	speech_verb = "says"

@@ -109,14 +109,6 @@
 					if(user_buckle_mob(affecting, user))
 						qdel(W)
 
-/obj/structure/bed/forceMove()
-	. = ..()
-	if(buckled_mob)
-		if(isturf(src.loc))
-			buckled_mob.forceMove(src.loc)
-		else
-			unbuckle_mob()
-
 /obj/structure/bed/proc/remove_padding()
 	if(reinf_material)
 		reinf_material.create_object(get_turf(src))
@@ -149,10 +141,12 @@
 	icon_state = "down"
 	anchored = 0
 	buckle_pixel_shift = list("x" = 0, "y" = 0, "z" = 6)
+	atom_flags = ATOM_FLAG_WHEELED
 	var/item_form_type = /obj/item/roller	//The folded-up object path.
 	var/obj/item/chems/beaker
 	var/iv_attached = 0
 	var/iv_stand = TRUE
+	atom_flags = ATOM_FLAG_WHEELED
 
 /obj/structure/bed/roller/on_update_icon()
 	overlays.Cut()

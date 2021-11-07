@@ -517,12 +517,11 @@
 			. += THERMAL_PROTECTION_HAND_RIGHT
 	return min(1,.)
 
-/mob/living/carbon/human/handle_chemicals_in_body()
+/mob/living/carbon/human/apply_chemical_effects()
 	. = ..()
-	if(.)
-		if(has_chemical_effect(CE_GLOWINGEYES, 1))
-			update_eyes()
-		updatehealth()
+	if(has_chemical_effect(CE_GLOWINGEYES, 1))
+		update_eyes()
+		return TRUE
 
 // Check if we should die.
 /mob/living/carbon/human/proc/handle_death_check()
@@ -691,7 +690,7 @@
 			healths_ma.icon_state = "blank"
 			healths_ma.overlays = null
 
-			if(has_chemical_effect(CE_PAINKILLER, 100))
+			if(has_chemical_effect(CE_PAINKILLER, 400))
 				healths_ma.icon_state = "health_numb"
 			else
 				// Generate a by-limb health display.

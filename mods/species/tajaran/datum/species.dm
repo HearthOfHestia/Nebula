@@ -25,11 +25,14 @@
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
-	preview_icon = 'mods/species/tajaran/icons/preview.dmi'
-	default_h_style = /decl/sprite_accessory/hair/taj
 
 	flesh_color = "#afa59e"
-	base_color = "#333333"
+	base_markings = list(/decl/sprite_accessory/marking/tajaran = "#888888")
+	base_hair_color = "#515151"
+	base_color = "#787878"
+	base_eye_color = "#00aa00"
+	default_h_style = /decl/sprite_accessory/hair/taj
+
 	blood_color = "#862a51"
 	organs_icon = 'mods/species/tajaran/icons/organs.dmi'
 
@@ -41,9 +44,9 @@
 	gluttonous = GLUT_TINY
 
 	unarmed_attacks = list(
-		/decl/natural_attack/stomp, 
-		/decl/natural_attack/kick, 
-		/decl/natural_attack/punch, 
+		/decl/natural_attack/stomp,
+		/decl/natural_attack/kick,
+		/decl/natural_attack/punch,
 		/decl/natural_attack/bite/sharp
 	)
 
@@ -69,9 +72,29 @@
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			/decl/cultural_info/culture/tajaran,
+			/decl/cultural_info/culture/tajaran/newsociety,
+			/decl/cultural_info/culture/tajaran/nihilist,
 			/decl/cultural_info/culture/other
+		),
+		TAG_HOMEWORLD = list(
+			/decl/cultural_info/location/adhomai,
+			/decl/cultural_info/location/lonewanderer,
+			/decl/cultural_info/location/oldsocietycolony,
+			/decl/cultural_info/location/newsocietycolony
+		),
+		TAG_FACTION = list(
+			/decl/cultural_info/faction/tajara,
+			/decl/cultural_info/faction/tajara/colonial,
+			/decl/cultural_info/faction/tajara/highclass,
+			/decl/cultural_info/faction/tajara/lowclass
+		),
+		TAG_RELIGION = list(
+			/decl/cultural_info/religion/tajara/hadiaian,
+			/decl/cultural_info/religion/tajara/oldadhomaian,
+			/decl/cultural_info/religion/tajara/vastarrian
 		)
 	)
+
 
 	default_emotes = list(
 		/decl/emote/human/swish,
@@ -104,18 +127,11 @@
 		BP_EYES =     /obj/item/organ/internal/eyes/taj
 	)
 
+	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/cat)
+
 /obj/item/organ/internal/eyes/taj
 	eye_blend = ICON_MULTIPLY
 	eye_icon = 'mods/species/tajaran/icons/eyes.dmi'
 
 /decl/species/tajaran/handle_additional_hair_loss(var/mob/living/carbon/human/H, var/defer_body_update = TRUE)
 	. = H && H.change_skin_color(189, 171, 143)
-
-/decl/species/tajaran/handle_post_species_pref_set(var/datum/preferences/pref)
-	pref.body_markings = pref.body_markings || list()
-	if(!pref.body_markings["Tajaran Wide Ears"])
-		pref.body_markings["Tajaran Wide Ears"] = "#888888"
-	pref.skin_colour = "#787878"
-	pref.hair_colour = "#515151"
-	pref.facial_hair_colour = "#515151"
-	pref.eye_colour = "#00aa00"

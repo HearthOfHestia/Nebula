@@ -37,6 +37,11 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	head = /obj/item/clothing/head/espatier/beret/engineering
 
+/decl/hierarchy/outfit/job/torch/crew/engineering/engineer/contractor
+	name = "Job - Engineer - Contractor"
+	uniform = /obj/item/clothing/under/hazard/contractor
+	head = /obj/item/clothing/head/hardhat
+
 /decl/hierarchy/outfit/job/torch/crew/engineering/contractor
 	name = "Job - Engineering Assistant"
 	uniform = /obj/item/clothing/under/engineer

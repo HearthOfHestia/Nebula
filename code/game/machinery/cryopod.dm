@@ -185,6 +185,11 @@
 	var/open_sound = 'sound/machines/podopen.ogg'
 	var/close_sound = 'sound/machines/podclose.ogg'
 
+/obj/machinery/cryopod/get_contained_external_atoms()
+	. = ..()
+	LAZYREMOVE(., occupant)
+	LAZYREMOVE(., announce)
+
 /obj/machinery/cryopod/robot
 	name = "robotic storage unit"
 	desc = "A storage unit for robots."
@@ -230,13 +235,13 @@
 			break
 
 	var/list/possible_locations = list()
-	if(global.using_map.use_overmap)
-		var/obj/effect/overmap/visitable/O = map_sectors["[z]"]
+	var/obj/effect/overmap/visitable/O = global.overmap_sectors["[z]"]
+	if(istype(O))
 		for(var/obj/effect/overmap/visitable/OO in range(O,2))
 			if((OO.sector_flags & OVERMAP_SECTOR_IN_SPACE) || istype(OO,/obj/effect/overmap/visitable/sector/exoplanet))
 				possible_locations |= text2num(level)
 
-	var/newz = global.using_map.get_empty_zlevel()
+	var/newz = get_empty_zlevel(/turf/space)
 	if(possible_locations.len && prob(10))
 		newz = pick(possible_locations)
 	var/turf/nloc = locate(rand(TRANSITIONEDGE, world.maxx-TRANSITIONEDGE), rand(TRANSITIONEDGE, world.maxy-TRANSITIONEDGE),newz)
@@ -267,8 +272,9 @@
 
 /obj/machinery/cryopod/proc/find_control_computer()
 	if(!control_computer)
-		control_computer = locate(/obj/machinery/computer/cryopod) in src.loc.loc
-		events_repository.register(/decl/observ/destroyed, control_computer, src, .proc/clear_control_computer)
+		control_computer = locate(/obj/machinery/computer/cryopod) in get_area(src)
+		if(control_computer)
+			events_repository.register(/decl/observ/destroyed, control_computer, src, .proc/clear_control_computer)
 	return control_computer
 
 /obj/machinery/cryopod/proc/clear_control_computer()
@@ -345,12 +351,7 @@
 				O.forceMove(src)
 
 	//Delete all items not on the preservation list.
-	var/list/items = src.contents.Copy()
-	items -= occupant // Don't delete the occupant
-	items -= announce // or the autosay radio.
-	items -= component_parts
-
-	for(var/obj/item/W in items)
+	for(var/obj/item/W in get_contained_external_atoms())
 
 		var/preserve = null
 		// Snowflaaaake.
@@ -485,9 +486,7 @@
 	icon_state = base_icon_state
 
 	//Eject any items that aren't meant to be in the pod.
-	var/list/items = contents - component_parts
-	if(occupant) items -= occupant
-	if(announce) items -= announce
+	var/list/items = get_contained_external_atoms()
 
 	for(var/obj/item/W in items)
 		W.dropInto(loc)

@@ -48,12 +48,10 @@
 /decl/recipe/Initialize()
 	. = ..()
 	complexity = length(reagents) + length(fruit)
-	var/value
 	for(var/i in items) // add the number of items total
 		if(!items[i])
 			items[i] = 1
-		value = items[i]
-		complexity += (isnum(value) ? value : 1)
+		complexity += items[i]
 	complexity += length(uniquelist(items)) // add how many unique items there are; will prioritise burgers over 2 bunbuns and 1 wasted meat, for example
 
 /decl/recipe/proc/get_appliances_string()
@@ -106,23 +104,15 @@
 	SHOULD_BE_PURE(TRUE)
 	if(!length(fruit))
 		return TRUE
-	var/container_contents = container?.get_contained_external_atoms()
+	var/list/container_contents = container?.get_contained_external_atoms()
 	if(length(container_contents) < length(fruit))
 		return FALSE
 	var/list/needed_fruits = fruit.Copy()
 	for(var/obj/item/chems/food/S in container_contents)
-		var/use_tag
-		if(istype(S, /obj/item/chems/food/grown))
-			var/obj/item/chems/food/grown/G = S
-			if(!G.seed || !G.seed.kitchen_tag)
-				continue
-			use_tag = G.dry ? "dried [G.seed.kitchen_tag]" : G.seed.kitchen_tag
-		else if(istype(S, /obj/item/chems/food/fruit_slice))
-			var/obj/item/chems/food/fruit_slice/FS = S
-			if(!FS.seed || !FS.seed.kitchen_tag)
-				continue
-			use_tag = "[FS.seed.kitchen_tag] slice"
-		use_tag = "[S.dry ? "dried " : ""][use_tag]"
+		var/list/tags = S.get_kitchen_tags()
+		if(!LAZYLEN(tags))
+			continue
+		var/use_tag = tags.Join(" ")
 		if(isnull(needed_fruits[use_tag]))
 			continue
 		if(check_coating(S))

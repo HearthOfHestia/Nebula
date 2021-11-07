@@ -29,6 +29,8 @@
 
 /datum/extension/ship_engine/gas/proc/get_propellant(var/sample_only = TRUE, var/partial = 1)
 	var/obj/machinery/atmospherics/unary/engine/E = holder
+	if(thrust_limit <= 0)
+		return null
 	var/datum/gas_mixture/removed = E.air_contents.remove_ratio((volume_per_burn * thrust_limit * partial) / E.air_contents.volume)
 	if(sample_only)
 		var/datum/gas_mixture/sample = new(removed.volume)
@@ -40,12 +42,13 @@
 /datum/extension/ship_engine/gas/get_exhaust_velocity(var/datum/gas_mixture/propellant)
 	if(!is_on() || !has_fuel())
 		return 0
+	propellant = propellant || get_propellant()
 	if(!propellant)
-		propellant = get_propellant()
+		return 0
 
 	var/exit_pressure = get_nozzle_exit_pressure()
 	var/ratio_specific_heat = get_ratio_specific_heat(propellant)
-	if(propellant.return_pressure() <= MINIMUM_PRESSURE_DIFFERENCE_TO_SUSPEND)
+	if((propellant.return_pressure() - exit_pressure) <= MINIMUM_PRESSURE_DIFFERENCE_TO_SUSPEND)
 		return 0
 	var/mm = propellant.specific_mass()
 	if(mm == 0)
@@ -68,9 +71,8 @@
 
 /datum/extension/ship_engine/gas/proc/get_ratio_specific_heat(var/datum/gas_mixture/propellant)
 	var/ratio_specific_heat = 0
-	if(!propellant)
-		propellant = get_propellant()
-	if(!length(propellant.gas) || !propellant.total_moles)
+	propellant = propellant || get_propellant()
+	if(!propellant || !length(propellant.gas) || !propellant.total_moles)
 		return 0.01 // Divide by zero protection.
 
 	for(var/mat in propellant.gas)

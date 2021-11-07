@@ -20,17 +20,17 @@
 		<li>Mix flour and protein (ground meat) to make meatballs.</li>
 		</ul>"}
 
-	for(var/reactiontype in subtypesof(/datum/chemical_reaction/recipe))
-		var/datum/chemical_reaction/recipe/food = SSmaterials.chemical_reactions[reactiontype]
-		if(!food || !food.name || food.hidden_from_codex)
+	for(var/reactiontype in subtypesof(/decl/chemical_reaction/recipe))
+		var/decl/chemical_reaction/recipe/food = GET_DECL(reactiontype)
+		if(!food || !food.name || food.hidden_from_codex || food.is_abstract())
 			continue
 
 		var/mechanics_text
 		var/lore_text
 		var/product_name
 		var/category_name
-		if(istype(food, /datum/chemical_reaction/recipe/food))
-			var/datum/chemical_reaction/recipe/food/food_ref = food
+		if(istype(food, /decl/chemical_reaction/recipe/food))
+			var/decl/chemical_reaction/recipe/food/food_ref = food
 			var/obj/item/product = food_ref.obj_result
 			if(!product)
 				continue

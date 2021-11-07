@@ -38,7 +38,7 @@
 	for(var/mob/M in player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "Executive Assistant")
-				to_chat(M, SPAN_NOTICE("<b>One of your employers, [my_title] named [person.real_name], is present on [using_map.full_name].</b>"))
+				to_chat(M, SPAN_NOTICE("<b>One of your employers, [my_title] named [person.real_name], is present on [global.using_map.full_name].</b>"))
 	..()
 
 /datum/job/bodyguard
@@ -93,5 +93,5 @@
 	for(var/mob/M in player_list)
 		if(M.client && M.mind)
 			if(M.mind.assigned_role == "Workplace Liaison")
-				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [using_map.full_name].</b>"))
+				to_chat(M, SPAN_NOTICE("<b>Your bodyguard, [my_title] named [person.real_name], is present on [global.using_map.full_name].</b>"))
 	..()

@@ -9,7 +9,7 @@
 /datum/job/submap/merchant
 	title = "Merchant"
 	total_positions = 4
-	info = "You are free traders who have drifted into unknown distances in search of profit. Travel, trade, make profit!"
+	info = "You are free traders who have voyaged into the vast unknown in search of profit. Travel, trade, make profit!"
 	supervisors = "the invisible hand of the market"
 	selection_color = "#515151"
 
@@ -26,7 +26,7 @@
 	)
 
 /datum/job/submap/merchant/equip(var/mob/living/carbon/human/H)
-	to_chat(H, "Your connections helped you learn about the words that will help you identify a locals... Particularly interested buyers:")
+	to_chat(H, "Your connections taught you some code phrases that will help you identify buyers with... <em>particular interests</em>:")
 	to_chat(H, "<b>Code phases</b>: <span class='danger'>[syndicate_code_phrase]</span>")
 	to_chat(H, "<b>Responses to phrases</b>: <span class='danger'>[syndicate_code_response]</span>")
 	H.StoreMemory("<b>Code phase</b>: [syndicate_code_phrase]", /decl/memory_options/system)
@@ -51,7 +51,7 @@
 
 /obj/item/card/id/merchant
 	name = "identification card"
-	desc = "A card issued to Merchants, indicating their right to sell and buy goods."
+	desc = "A card issued to merchants, indicating their right to sell and buy goods."
 	access = list(access_merchant)
 	color = COLOR_OFF_WHITE
 	detail_color = COLOR_BEIGE
