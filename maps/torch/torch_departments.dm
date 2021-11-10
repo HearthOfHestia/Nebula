@@ -11,9 +11,6 @@
 /obj/machinery/network/pager/engineering
 	department = /decl/department/engineering
 
-/datum/job/ai/shard/engineering
-	department_types = list(/decl/department/engineering)
-
 /decl/department/security
 	name = "Security"
 	announce_channel = "Security"
@@ -26,9 +23,6 @@
 
 /obj/machinery/network/pager/security
 	department = /decl/department/security
-
-/datum/job/ai/shard/security
-	department_types = list(/decl/department/security)
 
 /decl/department/medical
 	name = "Medical"
@@ -44,9 +38,6 @@
 /obj/machinery/network/pager/medical
 	department = /decl/department/medical
 
-/datum/job/ai/shard/medical
-	department_types = list(/decl/department/medical)
-
 /decl/department/science
 	name = "Science"
 	goals = list(/datum/goal/department/extract_slime_cores)
@@ -61,9 +52,6 @@
 /obj/machinery/network/pager/science
 	department = /decl/department/science
 
-/datum/job/ai/shard/research
-	department_types = list(/decl/department/science)
-
 /decl/department/civilian
 	name = "Civilian"
 	display_priority = 1
@@ -77,9 +65,6 @@
 
 /obj/machinery/network/pager
 	department = /decl/department/command
-
-/datum/job/ai/shard/command
-	department_types = list(/decl/department/command)
 
 /decl/department/miscellaneous
 	name = "Misc"

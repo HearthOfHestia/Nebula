@@ -1,10 +1,12 @@
 /datum/job/ai
 	hud_icon = "hudblank"
 	outfit_type = /decl/hierarchy/outfit/job/generic/scientist
+	create_record = FALSE
+	account_allowed = FALSE
 
-/datum/job/ai/shard
+/datum/job/ai/shard // DO NOT USE THIS DIRECTLY
 	title = "Shard AI"
-	department_types = list(/decl/department/miscellaneous)
+	department_types = list()
 	var/shard_type //decl type
 
 /datum/job/ai/shard/is_position_available()
@@ -39,35 +41,3 @@
 
 	qdel(core)
 	return TRUE
-
-/datum/job/ai/shard/security
-	title = "Security AI Shard"
-	shard_type = /decl/ai_type/security
-	spawn_positions = 1
-	selection_color = COMMS_COLOR_SECURITY
-
-/datum/job/ai/shard/engineering
-	title = "Engineering AI Shard"
-	shard_type = /decl/ai_type/engineering
-	spawn_positions = 1
-	selection_color = COMMS_COLOR_ENGINEER
-
-/datum/job/ai/shard/command
-	title = "Command AI Shard"
-	shard_type = /decl/ai_type/command
-	spawn_positions = 1
-	selection_color = COMMS_COLOR_COMMAND
-
-/datum/job/ai/shard/medical
-	title = "Medical AI Shard"
-	shard_type = /decl/ai_type/medical
-	spawn_positions = 1
-	selection_color = COMMS_COLOR_MEDICAL
-
-/datum/job/ai/shard/research
-	title = "Research AI Shard"
-	shard_type = /decl/ai_type/science
-	spawn_positions = 1
-	selection_color = "#633d63"
-
-
