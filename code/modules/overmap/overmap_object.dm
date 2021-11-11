@@ -1,3 +1,5 @@
+var/global/list/overmap_unknown_ids = list()
+
 /obj/effect/overmap
 	name = "map object"
 	icon = 'icons/obj/overmap.dmi'
@@ -6,7 +8,7 @@
 	animate_movement = NO_STEPS
 
 	var/scannable                       // if set to TRUE will show up on ship sensors for detailed scans, and will ping when detected by scanners.
-
+	var/unknown_id                      // A unique identifier used when this entity is scanned. Assigned in Initialize().
 	var/requires_contact = FALSE        // whether or not the effect must be identified by ship sensors before being seen.
 	var/instant_contact  = FALSE        // do we instantly identify ourselves to any ship in sensors range?
 	var/halted = FALSE
@@ -25,6 +27,9 @@
 
 	var/overmap_id = OVERMAP_ID_SPACE
 
+/obj/effect/overmap/touch_map_edge(var/overmap_id)
+	return
+
 //Overlay of how this object should look on other skyboxes
 /obj/effect/overmap/proc/get_skybox_representation()
 	return
@@ -40,6 +45,10 @@
 
 	if(requires_contact)
 		invisibility = INVISIBILITY_OVERMAP // Effects that require identification have their images cast to the client via sensors.
+
+	if(scannable)
+		unknown_id = "[pick(global.phonetic_alphabet)]-[random_id(/obj/effect/overmap, 100, 999)]"
+
 	update_icon()
 
 /obj/effect/overmap/Crossed(var/obj/effect/overmap/visitable/other)

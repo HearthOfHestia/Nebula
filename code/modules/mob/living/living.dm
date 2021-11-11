@@ -522,10 +522,11 @@ default behaviour is:
 			process_resist()
 
 /mob/living/proc/process_resist()
+
 	//Getting out of someone's inventory.
 	if(istype(src.loc, /obj/item/holder))
 		escape_inventory(src.loc)
-		return
+		return TRUE
 
 	//unbuckling yourself
 	if(buckled)
@@ -537,6 +538,11 @@ default behaviour is:
 		var/obj/structure/C = loc
 		if(C.mob_breakout(src))
 			return TRUE
+
+	// Get rid of someone riding around on you.
+	if(buckled_mob)
+		unbuckle_mob()
+		return TRUE
 
 /mob/living/proc/escape_inventory(obj/item/holder/H)
 	if(H != src.loc) return
@@ -630,8 +636,8 @@ default behaviour is:
 
 /mob/living/carbon/get_contained_external_atoms()
 	. = ..()
-	. -= internal_organs
-	. -= organs
+	LAZYREMOVE(., internal_organs)
+	LAZYREMOVE(., organs)
 
 /mob/proc/can_be_possessed_by(var/mob/observer/ghost/possessor)
 	return istype(possessor) && possessor.client
@@ -736,14 +742,16 @@ default behaviour is:
 	return TRUE
 
 /mob/living/handle_drowning()
+	var/turf/T = get_turf(src)
 	if(!can_drown() || !loc.is_flooded(lying))
+		return FALSE
+	if(!lying && T.above && !T.above.is_flooded() && T.above.CanZPass(src, UP) && can_overcome_gravity())
 		return FALSE
 	if(prob(5))
 		var/obj/effect/fluid/F = locate() in loc
 		to_chat(src, SPAN_DANGER("You choke and splutter as you inhale [(F?.reagents && F.reagents.get_primary_reagent_name()) || "liquid"]!"))
 		F?.reagents?.trans_to_holder(get_ingested_reagents(), min(F.reagents.total_volume, rand(2,5)))
 
-	var/turf/T = get_turf(src)
 	T.show_bubbles()
 	return TRUE // Presumably chemical smoke can't be breathed while you're underwater.
 
@@ -797,10 +805,20 @@ default behaviour is:
 	magnitude += GET_CHEMICAL_EFFECT(src, effect)
 	LAZYSET(chem_effects, effect, magnitude)
 
+/mob/living/proc/add_chemical_effect_max(var/effect, var/magnitude = 1)
+	magnitude = max(LAZYACCESS(chem_effects, effect), magnitude)
+	LAZYSET(chem_effects, effect, magnitude)
+
+/mob/living/proc/add_chemical_effect_min(var/effect, var/magnitude = 1)
+	var/old_magnitude = LAZYACCESS(chem_effects, effect)
+	if(!isnull(old_magnitude))
+		magnitude = min(old_magnitude, magnitude)
+	LAZYSET(chem_effects, effect, magnitude)
+
 /mob/living/proc/adjust_immunity(var/amt)
 	return
 
-/mob/living/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays)
+/mob/living/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays, var/digital = FALSE)
 	if(skill_check(SKILL_LITERACY, SKILL_ADEPT))
 		. = text_content
 	else

@@ -81,7 +81,7 @@
 	var/decl/slime_colour/slime_data = GET_DECL(slime_type)
 	SetName("[slime_data.name] [is_adult ? "adult" : "baby"] slime ([number])")
 
-/mob/living/slime/movement_delay()
+/mob/living/slime/get_movement_delay(var/travel_dir)
 	if (bodytemperature >= 330.23) // 135 F
 		return -1	// slimes become supercharged at high temperatures
 
@@ -334,8 +334,11 @@
 		return FALSE
 	. = ..()
 
-/mob/living/slime/airflow_stun()
-	return
+/mob/living/slime/handle_airflow(differential, list/connecting_turfs, repelled)
+	return FALSE
+
+/mob/living/slime/handle_airflow_stun(differential)
+	return FALSE
 
 /mob/living/slime/xenobio_scan_results()
 	var/decl/slime_colour/slime_data = GET_DECL(slime_type)

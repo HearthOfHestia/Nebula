@@ -214,6 +214,7 @@
 /atom/movable/proc/refresh_buckled_mob()
 	if(buckled_mob)
 		buckled_mob.set_dir(buckle_dir || dir)
+		buckled_mob.reset_offsets(4)
 		buckled_mob.reset_plane_and_layer()
 
 /atom/movable/Move(...)
@@ -380,7 +381,8 @@
 	return
 
 /atom/movable/proc/get_mob()
-	return
+	return buckled_mob
+
 /atom/movable/proc/can_buckle_mob(var/mob/living/dropping)
 	. = (can_buckle && istype(dropping) && !dropping.buckled && !dropping.buckled_mob && !buckled_mob)
 
@@ -429,8 +431,7 @@
 		M.reset_offsets(4)
 		M.reset_plane_and_layer()
 	if(buckled_mob && buckled_mob != M)
-		buckled_mob.reset_offsets(4)
-		buckled_mob.reset_plane_and_layer()
+		refresh_buckled_mob()
 
 /atom/movable/proc/user_buckle_mob(mob/living/M, mob/user)
 	if(M != user && user.incapacitated())

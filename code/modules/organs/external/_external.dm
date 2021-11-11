@@ -102,6 +102,8 @@
 
 /obj/item/organ/external/Initialize()
 	. = ..()
+	if(. == INITIALIZE_HINT_QDEL)
+		return
 	if(isnull(pain_disability_threshold))
 		pain_disability_threshold = (max_damage * 0.75)
 	if(owner)
@@ -939,10 +941,12 @@ Note that amputating the affected organ does in fact remove the infection from t
 		damaged_organ.update_damages()
 
 	spawn(1)
-		victim.updatehealth()
-		victim.UpdateDamageIcon()
-		victim.refresh_visible_overlays()
-		set_dir(SOUTH, TRUE)
+		if(!QDELETED(victim))
+			victim.updatehealth()
+			victim.UpdateDamageIcon()
+			victim.refresh_visible_overlays()
+		if(!QDELETED(src))
+			set_dir(SOUTH, TRUE)
 
 	switch(disintegrate)
 		if(DISMEMBER_METHOD_EDGE)
@@ -1437,7 +1441,7 @@ Note that amputating the affected organ does in fact remove the infection from t
 	return !BP_IS_PROSTHETIC(src) && bodytype?.get_vulnerable_location() == organ_tag
 
 // Added to the mob's move delay tally if this organ is being used to move with.
-/obj/item/organ/external/proc/movement_delay(max_delay)
+/obj/item/organ/external/proc/get_movement_delay(max_delay)
 	. = 0
 	if(is_stump())
 		. += max_delay

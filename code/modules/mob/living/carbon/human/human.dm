@@ -858,7 +858,7 @@
 
 	var/list/mob/creatures = list()
 
-	for(var/mob/living/carbon/h in world)
+	for(var/mob/living/carbon/h in global.living_mob_list_)
 		var/turf/temp_turf = get_turf(h)
 		if((temp_turf.z != 1 && temp_turf.z != 5) || h.stat!=CONSCIOUS) //Not on mining or the station. Or dead
 			continue
@@ -886,13 +886,11 @@
 	reset_blood()
 
 	if(!client || !key) //Don't boot out anyone already in the mob.
-		for (var/obj/item/organ/internal/brain/H in world)
-			if(H.brainmob)
-				if(H.brainmob.real_name == src.real_name)
-					if(H.brainmob.mind)
-						H.brainmob.mind.transfer_to(src)
-						qdel(H)
-
+		for(var/mob/living/carbon/brain/brain in global.player_list) // This is really nasty, does it even work anymore?
+			if(brain.real_name == src.real_name && brain.mind)
+				brain.mind.transfer_to(src)
+				qdel(brain.loc)
+				break
 	losebreath = 0
 	UpdateAppearance()
 	..()
@@ -1088,11 +1086,11 @@
 
 	var/decl/pronouns/new_pronouns = get_pronouns_by_gender(get_sex())
 	if(!istype(new_pronouns) || !(new_pronouns in species.available_pronouns))
-		new_pronouns = pick(species.available_pronouns)
+		new_pronouns = species.default_pronouns
 		set_gender(new_pronouns.name)
 
 	icon_state = lowertext(species.name)
-	set_bodytype(pick(species.available_bodytypes), TRUE)
+	set_bodytype(species.default_bodytype, TRUE)
 
 	species.create_organs(src)
 	species.handle_post_spawn(src)
@@ -1672,10 +1670,13 @@
 		return (!L || L.can_drown())
 	return FALSE
 
-/mob/living/carbon/human/get_breath_from_environment(var/volume_needed = STD_BREATH_VOLUME)
-	var/datum/gas_mixture/breath = ..(volume_needed)
+/mob/living/carbon/human/get_breath_from_environment(var/volume_needed = STD_BREATH_VOLUME, var/atom/location = src.loc)
+	var/datum/gas_mixture/breath = ..(volume_needed, location)
 	var/turf/T = get_turf(src)
 	if(istype(T) && T.is_flooded(lying) && should_have_organ(BP_LUNGS))
+		if(T == location) //Can we surface?
+			if(!lying && T.above && !T.above.is_flooded() && T.above.CanZPass(src, UP) && can_overcome_gravity())
+				return ..(volume_needed, T.above)
 		var/can_breathe_water = (istype(wear_mask) && wear_mask.filters_water()) ? TRUE : FALSE
 		if(!can_breathe_water)
 			var/obj/item/organ/internal/lungs/lungs = get_internal_organ(BP_LUNGS)
@@ -1766,6 +1767,9 @@
 	if(isnull(force_active_hand))
 		force_active_hand = get_active_held_item_slot()
 	var/obj/item/organ/external/active_hand = organs_by_name[force_active_hand]
+	var/dex_malus = 0
+	if(getBrainLoss() && getBrainLoss() > config.dex_malus_brainloss_threshold) ///brainloss shouldn't instantly cripple you, so the effects only start once past the threshold and escalate from there.
+		dex_malus = round(clamp(round(getBrainLoss()-config.dex_malus_brainloss_threshold)/10, DEXTERITY_NONE, DEXTERITY_FULL))
 	if(!active_hand)
 		if(!silent)
 			to_chat(src, SPAN_WARNING("Your hand is missing!"))
@@ -1773,9 +1777,11 @@
 	if(!active_hand.is_usable())
 		to_chat(src, SPAN_WARNING("Your [active_hand.name] is unusable!"))
 		return
-	if(active_hand.get_dexterity() < dex_level)
-		if(!silent)
+	if((active_hand.get_dexterity()-dex_malus) < dex_level)
+		if(!silent && !dex_malus)
 			to_chat(src, SPAN_WARNING("Your [active_hand.name] doesn't have the dexterity to use that!"))
+		else if(!silent)
+			to_chat(src, SPAN_WARNING("Your [active_hand.name] doesn't respond properly!"))
 		return FALSE
 	return TRUE
 

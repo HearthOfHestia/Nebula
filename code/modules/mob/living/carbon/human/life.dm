@@ -310,6 +310,9 @@
 	return !failed_last_breath
 
 /mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
+
+	..()
+
 	if(!environment || (MUTATION_SPACERES in mutations))
 		return
 
@@ -517,12 +520,11 @@
 			. += THERMAL_PROTECTION_HAND_RIGHT
 	return min(1,.)
 
-/mob/living/carbon/human/handle_chemicals_in_body()
+/mob/living/carbon/human/apply_chemical_effects()
 	. = ..()
-	if(.)
-		if(has_chemical_effect(CE_GLOWINGEYES, 1))
-			update_eyes()
-		updatehealth()
+	if(has_chemical_effect(CE_GLOWINGEYES, 1))
+		update_eyes()
+		return TRUE
 
 // Check if we should die.
 /mob/living/carbon/human/proc/handle_death_check()

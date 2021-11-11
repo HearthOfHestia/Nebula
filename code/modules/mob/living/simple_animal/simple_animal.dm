@@ -209,7 +209,7 @@
 		if(!incapacitated())
 			lying = FALSE
 			update_icon()
-	else if(!stop_automated_movement && wander && !anchored)
+	else if(!stop_automated_movement && !buckled_mob && wander && !anchored)
 		if(isturf(src.loc) && !resting)		//This is so it only moves if it's not inside a closet, gentics machine, etc.
 			turns_since_move++
 			if(turns_since_move >= turns_per_move && (!(stop_automated_movement_when_pulled) || !LAZYLEN(grabbed_by))) //Some animals don't move when pulled
@@ -415,7 +415,7 @@
 
 	return 1
 
-/mob/living/simple_animal/movement_delay()
+/mob/living/simple_animal/get_movement_delay(var/travel_dir)
 	var/tally = ..() //Incase I need to add stuff other than "speed" later
 
 	tally += speed

@@ -50,6 +50,11 @@
 	if(species && species.can_overcome_gravity(src))
 		return 1
 	else
+		var/turf/T = loc
+		if(((T.get_physical_height() + T.get_fluid_depth()) >= FLUID_DEEP) || T.get_fluid_depth() >= FLUID_MAX_DEPTH)
+			if(can_float())
+				return 1
+
 		for(var/atom/a in src.loc)
 			if(a.atom_flags & ATOM_FLAG_CLIMBABLE)
 				return 1
@@ -143,6 +148,12 @@
 		for(var/atom/A in below)
 			if(!A.CanPass(src, location_override))
 				return FALSE
+		
+		//We cannot sink if we can swim
+		if(location_override.get_fluid_depth() >= FLUID_DEEP && (below == loc))
+			if(!(below.get_fluid_depth() >= 0.95 * FLUID_MAX_DEPTH)) //No salmon skipping up a stream of falling water
+				return TRUE
+			return !can_float()
 
 
 	return TRUE
@@ -173,8 +184,18 @@
 		return species.can_fall(src)
 
 /atom/movable/proc/handle_fall(var/turf/landing)
+	var/turf/previous = get_turf(loc)
 	forceMove(landing)
 	if(locate(/obj/structure/stairs) in landing)
+		return 1
+	if(landing.get_fluid_depth() >= FLUID_DEEP)
+		var/primary_fluid = landing.reagents.get_primary_reagent_name()
+		if(previous.get_fluid_depth() >= FLUID_DEEP) //We're sinking further
+			visible_message(SPAN_NOTICE("\The [src] sinks deeper down into \the [primary_fluid]!"), SPAN_NOTICE("\The [primary_fluid] rushes around you as you sink!"))
+			playsound(previous, pick(SSfluids.gurgles), 50, 1)
+		else
+			visible_message(SPAN_NOTICE("\The [src] falls into the [primary_fluid]!"), SPAN_NOTICE("What a splash!"))
+			playsound(src,  'sound/effects/watersplash.ogg', 30, TRUE)
 		return 1
 	else
 		handle_fall_effect(landing)
@@ -260,7 +281,7 @@
 			z_eye = null
 			return
 		var/turf/above = GetAbove(src)
-		if(istype(above) && above.is_open())
+		if(istype(above) && TURF_IS_MIMICKING(above))
 			z_eye = new /atom/movable/z_observer/z_up(src, src)
 			to_chat(src, "<span class='notice'>You look up.</span>")
 			reset_view(z_eye)
@@ -281,7 +302,7 @@
 			z_eye = null
 			return
 		var/turf/T = get_turf(src)
-		if(T && T.is_open() && HasBelow(T.z))
+		if(T && TURF_IS_MIMICKING(T) && HasBelow(T.z))
 			z_eye = new /atom/movable/z_observer/z_down(src, src)
 			to_chat(src, "<span class='notice'>You look down.</span>")
 			reset_view(z_eye)
@@ -289,6 +310,22 @@
 		to_chat(src, "<span class='notice'>You can see \the [T ? T : "floor"].</span>")
 	else
 		to_chat(src, "<span class='notice'>You can't look below right now.</span>")
+
+//Swimming and floating
+/atom/movable/proc/can_float()
+	return FALSE
+
+/mob/living/can_float()
+	return !is_physically_disabled()
+
+/mob/living/aquatic/can_float()
+	return TRUE
+
+/mob/living/carbon/human/can_float()
+	return species.can_float(src)
+
+/mob/living/silicon/can_float()
+	return FALSE //If they can fly otherwise it will be checked first
 
 /mob/living
 	var/atom/movable/z_observer/z_eye
@@ -312,7 +349,7 @@
 	forceMove(get_step(owner, UP))
 	if(isturf(src.loc))
 		var/turf/T = src.loc
-		if(T.is_open())
+		if(T && TURF_IS_MIMICKING(T))
 			return
 	owner.reset_view(null)
 	owner.z_eye = null
@@ -321,7 +358,7 @@
 /atom/movable/z_observer/z_down/follow()
 	forceMove(get_step(owner, DOWN))
 	var/turf/T = get_turf(owner)
-	if(T && T.is_open())
+	if(T && TURF_IS_MIMICKING(T))
 		return
 	owner.reset_view(null)
 	owner.z_eye = null

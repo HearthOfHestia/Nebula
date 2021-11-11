@@ -484,10 +484,10 @@ SUBSYSTEM_DEF(jobs)
 		H.skillset.obtain_from_client(job, H.client)
 
 		//Equip job items.
-		job.setup_account(H)
 		job.equip(H, H.mind ? H.mind.role_alt_title : "", H.char_branch, H.char_rank)
 		job.apply_fingerprints(H)
 		spawn_in_storage = equip_custom_loadout(H, job)
+		job.setup_account(H)
 	else
 		to_chat(H, "Your job is [rank] and the game just can't handle it! Please report this bug to an administrator.")
 
@@ -571,7 +571,7 @@ SUBSYSTEM_DEF(jobs)
 	return positions_by_department[dept] || list()
 
 /datum/controller/subsystem/jobs/proc/spawn_empty_ai()
-	for(var/obj/effect/landmark/start/S in landmarks_list)
+	for(var/obj/effect/landmark/start/S in global.landmarks_list)
 		if(S.name != "AI")
 			continue
 		if(locate(/mob/living) in S.loc)
@@ -612,5 +612,6 @@ SUBSYSTEM_DEF(jobs)
 /proc/fade_location_blurb(client/C, obj/T)
 	animate(T, alpha = 0, time = 5)
 	sleep(5)
-	C.screen -= T
+	if(C)
+		C.screen -= T
 	qdel(T)
