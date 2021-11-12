@@ -289,7 +289,7 @@
 /turf/simulated/floor/tiled/skrell/white,
 /area/space)
 "JV" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/skrell/white,

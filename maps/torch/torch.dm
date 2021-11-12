@@ -128,6 +128,7 @@
 	#include "job/research_jobs.dm"
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
+	#include "job/shard_jobs.dm"
 	#include "job/supply_jobs.dm"
 
 	#include "job/outfits/torch_outfits.dm"

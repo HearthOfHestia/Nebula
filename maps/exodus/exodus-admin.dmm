@@ -814,7 +814,7 @@
 	},
 /area/centcom)
 "aHp" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /turf/unsimulated/floor{
@@ -1355,7 +1355,7 @@
 /turf/simulated/wall/titanium,
 /area/shuttle/escape_shuttle)
 "aLD" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /obj/effect/floor_decal/corner/blue/border{
@@ -2451,7 +2451,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_shuttle)
 "fsI" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /obj/effect/floor_decal/corner/blue/border{

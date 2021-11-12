@@ -50,6 +50,6 @@
 	. = ..()
 	Retaliate()
 
-/mob/living/simple_animal/hostile/retaliate/try_make_grab(mob/living/user)
+/mob/living/simple_animal/hostile/retaliate/try_make_grab(mob/living/user, defer_hand = FALSE)
 	. = ..()
 	Retaliate()
