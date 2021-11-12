@@ -15154,10 +15154,6 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/hatch/maintenance/bolted{
-	id_tag = "prototype_interior";
-	name = "Fusion Maintenance"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -15165,6 +15161,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "prototype_interior";
+	name = "Fusion Maintenance"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/prototype/control)
 "Ok" = (
@@ -15910,10 +15910,6 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/hatch/maintenance/bolted{
-	id_tag = "prototype_exterior";
-	name = "Fusion Maintenance"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
@@ -15921,6 +15917,10 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "prototype_exterior";
+	name = "Fusion Maintenance"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/vacant/prototype/control)
 "Qk" = (
