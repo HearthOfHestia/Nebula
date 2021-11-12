@@ -1032,7 +1032,9 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_starboard"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "cx" = (
@@ -1324,6 +1326,9 @@
 	},
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
@@ -2052,8 +2057,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
 /obj/effect/paint_stripe/command,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_port"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "eY" = (
@@ -2840,6 +2847,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "gS" = (
@@ -3841,6 +3851,9 @@
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 5
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -5230,11 +5243,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
-"pG" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/prepainted,
-/area/security/bridgecheck)
 "pH" = (
 /obj/machinery/sleeper/standard{
 	dir = 8
@@ -5454,6 +5462,9 @@
 /obj/machinery/light,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -8263,7 +8274,9 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_starboard"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "yW" = (
@@ -8532,6 +8545,9 @@
 	opacity = 0
 	},
 /obj/effect/floor_decal/corner/red/mono,
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Ab" = (
@@ -10435,6 +10451,9 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "HC" = (
@@ -10454,11 +10473,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/passenger)
-"HE" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/r_wall/prepainted,
-/area/bridge)
 "HF" = (
 /obj/machinery/computer/modular/preset/dock{
 	wired_connection = 1
@@ -10650,11 +10664,6 @@
 /obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
-"Ip" = (
-/obj/effect/paint_stripe/command,
-/obj/machinery/status_display,
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/safe_room/bridge)
 "Iq" = (
 /obj/structure/sign/warning/nosmoking_1{
 	dir = 4;
@@ -10835,6 +10844,9 @@
 	},
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge)
@@ -11958,6 +11970,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Oi" = (
@@ -12373,7 +12388,7 @@
 /area/crew_quarters/heads/office/rd)
 "Qp" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass/command{
+/obj/machinery/door/airlock/command{
 	name = "Bridge Storage"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -13538,13 +13553,11 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"Vn" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/r_wall/prepainted,
-/area/bridge/meeting_room)
 "Vs" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
 "Vw" = (
@@ -13593,11 +13606,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
-"VN" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/prepainted,
-/area/bridge)
 "VP" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -14396,8 +14404,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
 /obj/effect/paint_stripe/command,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_port"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "Zs" = (
@@ -22115,7 +22125,7 @@ Se
 Se
 TB
 sm
-HE
+Ie
 Ra
 CE
 BE
@@ -23939,7 +23949,7 @@ Fv
 AH
 yf
 LG
-VN
+yf
 AH
 Fv
 AH
@@ -23947,7 +23957,7 @@ fa
 fy
 fQ
 sz
-Ip
+ZR
 kv
 Is
 vk
@@ -25145,7 +25155,7 @@ DF
 sW
 Qe
 qg
-Vn
+hs
 hs
 hs
 Xe
@@ -25155,7 +25165,7 @@ Xe
 Xe
 hs
 hs
-Vn
+hs
 Og
 Vl
 sB
@@ -27982,7 +27992,7 @@ ck
 mO
 oK
 zM
-pG
+yW
 yW
 rk
 qz

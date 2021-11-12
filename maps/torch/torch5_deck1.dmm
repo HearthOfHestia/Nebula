@@ -261,14 +261,15 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "abv" = (
-/obj/machinery/light{
-	dir = 1
-	},
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
 	},
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
+	},
+/obj/structure/hygiene/sink{
+	dir = 1;
+	pixel_y = 16
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/chemistry)
@@ -1278,7 +1279,7 @@
 	dir = 10
 	},
 /obj/machinery/button/alternate/door{
-	id_tag = "ETC_hall";
+	id_tag = "main_etc";
 	name = "Treatment Center Exit";
 	pixel_x = 7;
 	pixel_y = 24
@@ -1326,7 +1327,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/glass/medical{
-	id_tag = "ETC_hall"
+	id_tag = "main_etc"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -2072,7 +2073,7 @@
 	opacity = 0
 	},
 /obj/machinery/door/airlock/glass/medical{
-	id_tag = "ETC_hall"
+	id_tag = "main_etc"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/sleeper)
@@ -4856,14 +4857,16 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
 	},
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/white,
 /area/medical/medicalhallway)
 "aqM" = (
-/obj/machinery/status_display,
 /obj/effect/paint/eggshell,
 /obj/effect/paint_stripe/medical,
-/turf/simulated/wall/map_preset/tan,
-/area/medical/medicalhallway)
+/turf/simulated/wall/r_wall/map_preset/tan,
+/area/medical/sleeper)
 "aqP" = (
 /obj/effect/floor_decal/corner/paleblue/three_quarters{
 	dir = 4
@@ -5151,6 +5154,9 @@
 	},
 /obj/effect/floor_decal/corner/blue/half{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
@@ -6537,11 +6543,14 @@
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/head/aux)
 "aAs" = (
-/obj/machinery/status_display,
-/obj/effect/paint/eggshell,
-/obj/effect/paint_stripe/science,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/rnd/xenoarch/analysis)
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/firstdeck/aft)
 "aAI" = (
 /obj/structure/bed/chair/office/comfy/red,
 /obj/machinery/button/windowtint{
@@ -6795,6 +6804,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
 "aCA" = (
@@ -7007,10 +7019,14 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/storage/emergency)
 "aDN" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/r_wall/prepainted,
-/area/security/nuke_storage)
+/obj/effect/floor_decal/corner/green{
+	dir = 10
+	},
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/firstdeck/center)
 "aDP" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -7855,6 +7871,9 @@
 	pixel_y = -25
 	},
 /obj/effect/floor_decal/corner/research/mono,
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenoarch/analysis)
 "aIt" = (
@@ -11921,11 +11940,17 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
 "cPW" = (
-/obj/machinery/status_display,
-/obj/effect/paint/eggshell,
-/obj/effect/paint_stripe/science,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/rnd/xenoarch/equipment)
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/corner/blue{
+	dir = 6
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/firstdeck/fore)
 "cQb" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -13881,6 +13906,9 @@
 	health = 1e+007
 	},
 /obj/machinery/reagent_temperature/cooler,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/misc_lab)
 "geb" = (
@@ -15413,11 +15441,14 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/aftport)
 "ivh" = (
-/obj/machinery/status_display,
-/obj/effect/paint/eggshell,
-/obj/effect/paint_stripe/science,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/rnd/misc_lab)
+/obj/effect/floor_decal/corner/research{
+	dir = 5
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/white,
+/area/rnd/research)
 "ivT" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
@@ -15710,11 +15741,11 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/analysis)
 "iRb" = (
-/obj/machinery/status_display,
-/obj/effect/paint/eggshell,
-/obj/effect/paint_stripe/science,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/rnd/research)
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled,
+/area/security/brig)
 "iSb" = (
 /obj/structure/table,
 /obj/structure/window/reinforced{
@@ -18364,6 +18395,10 @@
 /obj/item/radio/intercom{
 	pixel_y = 23
 	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/chemistry)
 "mKq" = (
@@ -19550,6 +19585,9 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/self_destruct,
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "ouI" = (
@@ -19629,6 +19667,9 @@
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/self_destruct,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/nuke_storage)
 "ozm" = (
@@ -24580,11 +24621,6 @@
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/emergency)
-"vpA" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/security,
-/turf/simulated/wall/prepainted,
-/area/security/brig)
 "vpJ" = (
 /obj/effect/floor_decal/corner/research{
 	dir = 5
@@ -25874,6 +25910,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
+	},
+/obj/machinery/status_display{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)
@@ -37695,7 +37734,7 @@ hNW
 aqd
 mib
 aXb
-aDN
+aXb
 otb
 mHb
 mNb
@@ -37703,7 +37742,7 @@ mVb
 neb
 nob
 oyb
-aDN
+aXb
 aXb
 obZ
 aFV
@@ -38116,7 +38155,7 @@ aIi
 aJy
 aKL
 aLL
-eVQ
+iRb
 rGU
 aGP
 aPw
@@ -38318,7 +38357,7 @@ asx
 aJz
 iuB
 aKH
-vpA
+aKH
 aKH
 aGP
 aGP
@@ -39722,7 +39761,7 @@ awZ
 axY
 xJP
 aAl
-nHf
+cPW
 nHf
 aDP
 aEZ
@@ -42144,8 +42183,8 @@ auO
 uSl
 rsV
 ayg
-ure
-aAs
+aDN
+wBV
 aBy
 aCP
 aDX
@@ -44164,8 +44203,8 @@ amh
 amh
 koX
 ayg
-ure
-cPW
+aDN
+bsu
 aFh
 aCX
 aFh
@@ -46981,7 +47020,7 @@ dDb
 dDb
 aby
 abH
-dDb
+aqM
 adO
 dZb
 afY
@@ -47183,7 +47222,7 @@ abl
 abr
 abA
 abK
-dDb
+aqM
 adQ
 afb
 afZ
@@ -48008,8 +48047,8 @@ hIb
 hZb
 aFb
 iHb
-iRb
-jWb
+pzb
+ivh
 mTb
 qtb
 qHb
@@ -48196,7 +48235,7 @@ dDb
 dDb
 aeo
 afi
-aqM
+acz
 nCb
 nCb
 gEb
@@ -49616,7 +49655,7 @@ nCb
 nCb
 avq
 nCb
-ivT
+aAs
 hib
 tiz
 agl
@@ -51851,7 +51890,7 @@ aHQ
 aHQ
 aHQ
 aHQ
-ivh
+aHQ
 aHQ
 aHQ
 aHQ

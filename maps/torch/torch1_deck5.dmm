@@ -2211,6 +2211,12 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/exploration_shuttle/power)
+"fv" = (
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/monotile,
+/area/quartermaster/hangar)
 "fx" = (
 /obj/machinery/power/apc/shuttle/spirit{
 	dir = 4;
@@ -2840,10 +2846,12 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "hy" = (
-/obj/machinery/status_display/supply_display,
-/obj/effect/paint_stripe/supply,
-/turf/simulated/wall/r_wall/map_preset/tan,
-/area/quartermaster/storage)
+/obj/effect/catwalk_plated,
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "hz" = (
 /turf/simulated/floor/tiled,
 /area/quartermaster/exploration)
@@ -2992,6 +3000,9 @@
 "hY" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/hangar)
@@ -3301,6 +3312,9 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/status_display/supply_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/storage)
 "iS" = (
@@ -3596,6 +3610,9 @@
 "jD" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/suit_cycler/pilot/prepared,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "jE" = (
@@ -4196,14 +4213,23 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/exploration)
 "kR" = (
-/obj/machinery/status_display,
-/turf/simulated/wall/r_wall/map_preset/tan,
+/obj/effect/floor_decal/corner/brown/half{
+	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/fore)
 "kS" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/science,
-/turf/simulated/wall/map_preset/tan,
-/area/quartermaster/exploration)
+/obj/effect/floor_decal/corner/purple/half{
+	dir = 1
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/bridge/ai/ai)
 "kT" = (
 /obj/effect/catwalk_plated,
 /obj/machinery/light/spot{
@@ -6005,6 +6031,9 @@
 "oZ" = (
 /obj/effect/floor_decal/corner/mauve/half{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/fore)
@@ -8018,6 +8047,9 @@
 /area/maintenance/fifthdeck/aftport)
 "tF" = (
 /obj/effect/floor_decal/corner/brown/half,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
 "tG" = (
@@ -8684,6 +8716,12 @@
 /obj/random/junk,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/fifthdeck/aftport)
+"vZ" = (
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/bridge/ai/ai_upload)
 "wc" = (
 /obj/structure/rack,
 /obj/random/tech_supply,
@@ -8992,6 +9030,13 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/disperser)
+"xY" = (
+/obj/effect/catwalk_plated,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
+/turf/simulated/floor/plating,
+/area/quartermaster/hangar)
 "ya" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -11505,6 +11550,15 @@
 /obj/item/stool/bar,
 /turf/simulated/floor/wood/walnut,
 /area/vacant/bar)
+"MJ" = (
+/obj/machinery/door/airlock/external/bolted{
+	id_tag = "endeavour_dock_door"
+	},
+/obj/machinery/status_display/supply_display{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/quartermaster/storage)
 "MK" = (
 /obj/item/radio/intercom{
 	dir = 8;
@@ -11674,6 +11728,9 @@
 /obj/effect/floor_decal/corner/orange/half,
 /obj/structure/cable{
 	icon_state = "1-4"
+	},
+/obj/machinery/status_display{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
@@ -12579,6 +12636,9 @@
 	},
 /obj/structure/cable/green{
 	icon_state = "0-2"
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -27183,7 +27243,7 @@ fl
 so
 mN
 sm
-ii
+kR
 gv
 rO
 oY
@@ -27385,11 +27445,11 @@ Sd
 Sd
 Sd
 Sd
-kR
+Sd
 oH
 rP
 oH
-kS
+eu
 hl
 hl
 hl
@@ -31844,7 +31904,7 @@ bi
 bi
 aj
 Bm
-UH
+fv
 qG
 mL
 Gu
@@ -33028,7 +33088,7 @@ mf
 Xk
 WD
 qG
-aX
+hy
 ee
 ga
 hG
@@ -33258,7 +33318,7 @@ UD
 WA
 Ec
 fS
-aX
+xY
 qG
 mU
 vO
@@ -34464,7 +34524,7 @@ UO
 Vz
 xl
 UO
-hy
+HG
 iR
 ou
 ou
@@ -36693,7 +36753,7 @@ ws
 ws
 ws
 ws
-Ha
+MJ
 Ha
 ws
 ws
@@ -37286,7 +37346,7 @@ XX
 XX
 Sz
 va
-Og
+vZ
 XX
 XX
 LQ
@@ -38293,7 +38353,7 @@ Vm
 He
 xc
 Cu
-Vx
+kS
 MD
 ZX
 Ao
