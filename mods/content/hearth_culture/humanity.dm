@@ -196,7 +196,7 @@
 	description = "The Sol System is the beating heart of Humanity, serving as the cradle for the newest race to enter the galactic stage. The Sol System is largely \
 	populated by Humans spread among the eight planetary bodies which orbit around the central G-Class star. Earth holds one life-bearing world, Earth, where Humanity stems from.\
 	A majority of the Sol System's infrastructure is still being developed as the native species continues it's expansion into space."
-	distance = "0"
+	distance = null // just don't list distance from Sol for Sol
 	capital = "Earth"
 	economic_power = 1
 	ruling_body = "ISEO"
