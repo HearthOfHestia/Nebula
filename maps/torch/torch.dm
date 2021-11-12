@@ -106,7 +106,6 @@
 	#include "items/uniform_vendor.dm"
 	#include "items/solbanner.dm"
 	#include "items/explo_shotgun.dm"
-	#include "items/mecha.dm"
 	#include "items/summarydocuments.dm"
 
 	#include "items/clothing/ec_skillbadges.dm"
