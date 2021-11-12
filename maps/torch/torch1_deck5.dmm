@@ -724,7 +724,7 @@
 /turf/simulated/floor/tiled,
 /area/exploration_shuttle/crew)
 "cb" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
@@ -2895,7 +2895,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
 "hL" = (
-/obj/machinery/sleeper,
+/obj/machinery/sleeper/standard,
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
 	pixel_y = 32
@@ -12213,7 +12213,7 @@
 /turf/simulated/floor/bluegrid,
 /area/bridge/ai/ai_upload)
 "So" = (
-/obj/machinery/sleeper,
+/obj/machinery/sleeper/standard,
 /obj/machinery/vending/wallmed1{
 	name = "Emergency NanoMed";
 	pixel_y = 32

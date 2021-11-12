@@ -7434,7 +7434,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/machinery/sleeper,
+/obj/machinery/sleeper/standard,
 /turf/simulated/floor/tiled/skrell/white,
 /area/ship/skrellscoutship/crew/medbay)
 "Ta" = (

@@ -41688,7 +41688,7 @@
 	pixel_x = -22
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_grid,
@@ -44803,7 +44803,7 @@
 	pixel_x = 24
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_grid,

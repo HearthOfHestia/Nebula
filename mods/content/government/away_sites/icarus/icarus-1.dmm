@@ -860,7 +860,7 @@
 /turf/simulated/floor/tiled,
 /area/icarus/open)
 "cZ" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /turf/simulated/floor/tiled,

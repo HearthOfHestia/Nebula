@@ -22,6 +22,7 @@
 	boss_short    = "Command"
 	company_name  = "International Stellar Exploration Organization"
 	company_short = "ISEO"
+	game_year = 184
 
 	map_admin_faxes = list(
 		"ISEO National Council",
