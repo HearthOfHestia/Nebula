@@ -32,7 +32,7 @@
 /decl/chemical_reaction/nefopam
 	name = "Nefopam"
 	result = /decl/material/liquid/painkillers/nefopam
-	required_reagents = list(/decl/material/liquid/ethanol = 1, /decl/material/liquid/painkillers/paracetamol = 3)
+	required_reagents = list(/decl/material/solid/carbon = 1, /decl/material/liquid/painkillers/paracetamol = 3)
 	result_amount = 1
 
 /decl/chemical_reaction/painkillers
