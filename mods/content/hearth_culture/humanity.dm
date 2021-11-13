@@ -21,7 +21,10 @@
 			/decl/cultural_info/culture/human/extrasolar,
 			/decl/cultural_info/culture/human/europa,
 			/decl/cultural_info/culture/human/belter,
-			/decl/cultural_info/culture/human/vatgrown
+			/decl/cultural_info/culture/human/vatgrown,
+			/decl/cultural_info/culture/human/aaronite,
+			/decl/cultural_info/culture/human/oort,
+			/decl/cultural_info/culture/human/kuiper
 		),
 		TAG_HOMEWORLD = list(
 			/decl/cultural_info/location/sol,
