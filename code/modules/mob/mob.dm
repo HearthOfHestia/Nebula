@@ -26,6 +26,7 @@
 		client.screen = list()
 	if(mind)
 		mind.handle_mob_deletion(src)
+	teleop = null
 	ghostize()
 	return ..()
 
