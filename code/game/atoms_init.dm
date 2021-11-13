@@ -71,6 +71,8 @@
 	LAZYCLEARLIST(our_overlays)
 	LAZYCLEARLIST(priority_overlays)
 
+	LAZYCLEARLIST(climbers)
+
 	QDEL_NULL(light)
 
 	if(opacity)
