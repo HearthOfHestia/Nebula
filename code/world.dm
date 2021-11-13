@@ -3,6 +3,9 @@
 //This file is just for the necessary /world definition
 //Try looking in game/world.dm
 
+#define TESTING
+#define GC_FAILURE_HARD_LOOKUP
+
 /world
 	mob = /mob/new_player
 	turf = /turf/space

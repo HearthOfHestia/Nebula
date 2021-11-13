@@ -141,24 +141,3 @@ var/global/list/admin_ranks = list()								//list of all ranks with associated 
 		msg += "\t[ckey] - [rank]\n"
 	testing(msg)
 	#endif
-
-
-#ifdef TESTING
-/client/verb/changerank(newrank in admin_ranks)
-	if(holder)
-		holder.rank = newrank
-		holder.rights = admin_ranks[newrank]
-	else
-		holder = new /datum/admins(newrank,admin_ranks[newrank],ckey)
-	remove_admin_verbs()
-	holder.associate(src)
-
-/client/verb/changerights(newrights as num)
-	if(holder)
-		holder.rights = newrights
-	else
-		holder = new /datum/admins("testing",newrights,ckey)
-	remove_admin_verbs()
-	holder.associate(src)
-
-#endif
