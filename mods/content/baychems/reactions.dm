@@ -58,3 +58,9 @@
 	result = /decl/material/liquid/antidepressants/paroxetine
 	required_reagents = list(/decl/material/liquid/hallucinogenics = 1, /decl/material/liquid/acetone = 1, /decl/material/liquid/stabilizer = 1)
 	result_amount = 3
+
+/decl/chemical_reaction/plasticide
+	name = "Plasticide"
+	result = /decl/material/liquid/plasticide
+	required_reagents = list(/decl/material/solid/silicon = 2, /decl/material/liquid/mercury = 1, /decl/material/solid/sulfur = 1)
+	result_amount = 2
