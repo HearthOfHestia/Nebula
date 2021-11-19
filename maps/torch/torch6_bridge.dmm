@@ -572,7 +572,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bw" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
@@ -3608,6 +3608,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cobed)
 "jB" = (
@@ -3838,6 +3841,15 @@
 /obj/effect/paint_stripe/science,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/rd)
+"kq" = (
+/obj/effect/floor_decal/corner/darkblue{
+	dir = 10
+	},
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/bridge/aft)
 "kv" = (
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "bridgesafe_front";
@@ -4378,6 +4390,9 @@
 /obj/structure/cable/green,
 /obj/structure/bed/chair/padded/blue{
 	dir = 1
+	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
@@ -5160,7 +5175,7 @@
 /area/bridge)
 "pf" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -5330,6 +5345,9 @@
 	dir = 4
 	},
 /obj/machinery/recharger,
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "pY" = (
@@ -6263,7 +6281,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/item/radio/intercom{
 	pixel_y = 23
 	},
@@ -6361,6 +6379,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "sV" = (
@@ -6909,6 +6928,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "uC" = (
@@ -7131,7 +7153,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	dir = 4;
@@ -8268,6 +8290,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "yV" = (
@@ -9050,7 +9075,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 9
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -9270,7 +9295,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -9461,7 +9486,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "Dy" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
@@ -11189,7 +11214,7 @@
 /obj/effect/floor_decal/corner/darkblue/three_quarters{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
@@ -12010,6 +12035,9 @@
 /turf/simulated/floor/plating,
 /area/command/captainmess)
 "OK" = (
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
 "OM" = (
@@ -12273,7 +12301,7 @@
 "PX" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/machinery/light,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "PY" = (
@@ -13737,7 +13765,7 @@
 	pixel_y = 24
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "Ws" = (
@@ -31827,7 +31855,7 @@ Ec
 Fc
 Kj
 Ug
-mX
+kq
 fI
 Zj
 ad
