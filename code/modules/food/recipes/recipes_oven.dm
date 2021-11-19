@@ -406,3 +406,105 @@
 	reagents = list(/decl/material/liquid/drink/milk/chocolate = 10, /decl/material/liquid/nutriment/coco = 5, /decl/material/liquid/nutriment/sugar = 5)
 	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/chocolatebar
+
+//Recipes for Breadkinds
+
+/decl/recipe/breadloaf
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/largedough = 1
+	)
+	result = /obj/item/chems/food/sliceable/breadloaf
+
+/decl/recipe/breadbun
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/mediumdough = 1
+	)
+	result = /obj/item/chems/food/bun
+
+/decl/recipe/breadeoll
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/smalldough = 1
+	)
+	result = /obj/item/chems/food/breadroll
+
+/decl/recipe/flatmediumbread
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/flatmediumdough = 1
+	)
+	result = /obj/item/chems/food/flatmediumbread
+
+/decl/recipe/flatsmallbread
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/flatsmalldough = 1
+	)
+	result = /obj/item/chems/food/flatsmallbread
+
+/decl/recipe/plainbaguette
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/baguettedough = 1
+	)
+	result = /obj/item/chems/food/plainbaguette
+
+/decl/recipe/plainsausagebun
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sausagebundough = 1
+	)
+	result = /obj/item/chems/food/sausagebun
+
+/decl/recipe/plainpretzel
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/pretzeldough = 1
+	)
+	result = /obj/item/chems/food/plainpretzel
+
+//Recipes for Meatkinds
+
+/decl/recipe/largemeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/largemeat = 1
+	)
+	result = /obj/item/chems/food/meatloaf
+
+/decl/recipe/mediummeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/mediummeat = 1
+	)
+	result = /obj/item/chems/food/frikadelle
+
+/decl/recipe/smallmeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/smallmeat = 1
+	)
+	result = /obj/item/chems/food/meatball
+
+/decl/recipe/largeflatmeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/flatlargemeat = 1
+	)
+	result = /obj/item/chems/food/largepatty
+
+/decl/recipe/mediumflatmeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/sliceable/flatmediummeat = 1
+	)
+	result = /obj/item/chems/food/mediumpatty
+
+/decl/recipe/smallflatmeat
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/flatsmallmeat = 1
+	)
+	result = /obj/item/chems/food/smallpatty
