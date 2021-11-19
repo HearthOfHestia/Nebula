@@ -73,7 +73,7 @@ var/global/list/slot_equipment_priority = list( \
 //puts the item "W" into an appropriate slot in a human's inventory
 //returns 0 if it cannot, 1 if successful
 /mob/proc/equip_to_appropriate_slot(obj/item/W, var/skip_store = 0)
-	if(!istype(W)) 
+	if(!istype(W))
 		return FALSE
 	for(var/slot in slot_equipment_priority)
 		if(skip_store)
@@ -252,12 +252,13 @@ var/global/list/slot_equipment_priority = list( \
 //Attemps to remove an object on a mob.
 /mob/proc/remove_from_mob(var/obj/O, var/atom/target)
 	if(!O) // Nothing to remove, so we succeed.
-		return 1
-	src.u_equip(O)
+		return TRUE
 	if (src.client)
 		src.client.screen -= O
 	O.reset_plane_and_layer()
 	O.screen_loc = null
+	if(!src.u_equip(O))
+		return TRUE
 	if(istype(O, /obj/item))
 		var/obj/item/I = O
 		if(target)
@@ -265,7 +266,7 @@ var/global/list/slot_equipment_priority = list( \
 		else
 			I.dropInto(loc)
 		I.dropped(src)
-	return 1
+	return TRUE
 
 /mob/proc/drop_held_items()
 	for(var/thing in get_held_items())
@@ -275,9 +276,9 @@ var/global/list/slot_equipment_priority = list( \
 /mob/proc/get_equipped_item(var/slot)
 	SHOULD_CALL_PARENT(TRUE)
 	switch(slot)
-		if(slot_back_str) 
+		if(slot_back_str)
 			return back
-		if(slot_wear_mask_str) 
+		if(slot_wear_mask_str)
 			return wear_mask
 
 /mob/proc/get_equipped_items(var/include_carried = 0)

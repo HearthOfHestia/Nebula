@@ -167,7 +167,7 @@
 		var/obj/machinery/portable_atmospherics/canister/C = dropping
 		if(pilot_coverage < 100)
 			to_chat(user, SPAN_NOTICE("This type of chassis doesn't support internals."))
-			return TRUE	
+			return TRUE
 		if(!C.anchored && do_after(user, 5, src))
 			if(C.anchored)
 				return
