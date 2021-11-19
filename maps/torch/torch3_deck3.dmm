@@ -4148,9 +4148,6 @@
 /area/tcommsat/chamber)
 "jB" = (
 /obj/structure/cable/green{
-	icon_state = "2-4"
-	},
-/obj/structure/cable/green{
 	icon_state = "1-4"
 	},
 /obj/structure/cable/green{
