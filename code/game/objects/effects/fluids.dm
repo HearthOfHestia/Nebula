@@ -37,7 +37,7 @@
 	ADD_ACTIVE_FLUID(src)
 	for(var/checkdir in global.cardinal)
 		var/obj/effect/fluid/F = locate() in get_step(loc, checkdir)
-		if(F)
+		if(!QDELETED(F))
 			ADD_ACTIVE_FLUID(F)
 	update_lighting = TRUE
 	update_icon()
@@ -46,7 +46,7 @@
 	var/turf/simulated/T = get_turf(src)
 	for(var/checkdir in global.cardinal)
 		var/obj/effect/fluid/F = locate() in get_step(T, checkdir)
-		if(F)
+		if(!QDELETED(F))
 			ADD_ACTIVE_FLUID(F)
 	REMOVE_ACTIVE_FLUID(src)
 	SSfluids.pending_flows -= src
