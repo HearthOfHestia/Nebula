@@ -24024,7 +24024,8 @@
 /area/security/brig)
 "tTS" = (
 /obj/machinery/power/port_gen/pacman{
-	anchored = 1
+	anchored = 1;
+	sheets = 25
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/light/small{
@@ -25919,7 +25920,8 @@
 "ylp" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/power/port_gen/pacman{
-	anchored = 1
+	anchored = 1;
+	sheets = 25
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/emergency)
