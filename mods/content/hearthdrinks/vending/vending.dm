@@ -1,5 +1,4 @@
 /obj/machinery/vending/boozeomat/Initialize()
-	. = ..()
 	var/list/new_products = list(
 		/obj/item/chems/drinks/bottle/arak = 5,
 		/obj/item/chems/drinks/bottle/baijiu = 5,
@@ -37,17 +36,17 @@
 	LAZYADD(products, new_products)
 	LAZYREMOVE(contraband, new_contraband)
 	LAZYADD(contraband, new_contraband)
+	. = ..()
 
 /obj/machinery/vending/coffee/Initialize()
-	. = ..()
 	var/list/new_products = list(
 	/obj/item/chems/drinks/decaf = 15
 	)
 	LAZYREMOVE(products, new_products)
 	LAZYADD(products, new_products)
+	. = ..()
 
 /obj/machinery/vending/cola/Initialize()
-	. = ..()
 	var/list/new_products = list(
 		/obj/item/chems/drinks/cans/coffeecola = 10,
 		/obj/item/chems/drinks/cans/vanillacola = 10,
@@ -56,3 +55,4 @@
 	)
 	LAZYREMOVE(products, new_products)
 	LAZYADD(products, new_products)
+	. = ..()
