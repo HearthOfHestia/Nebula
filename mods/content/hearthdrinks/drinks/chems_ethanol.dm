@@ -157,6 +157,7 @@
 	taste_description = "strong, spicy fireball!"
 	color = "#7c2b00"
 	strength = 20
+	uid = "chem_ethanol_mars"
 
 /decl/material/liquid/ethanol/wine/jupiter
 	name = "Jovian wine"
