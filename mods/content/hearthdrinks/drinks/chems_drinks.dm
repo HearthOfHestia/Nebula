@@ -94,6 +94,7 @@
 	taste_description = "thick and sweet syrup"
 	color = "#ac43e0"
 	coffee_priority = 5
+	uid = "chem_drink_affelerin"
 
 	glass_name = "affelerin nectar"
 	glass_desc = "A glass of sweet affelerin nectar."
