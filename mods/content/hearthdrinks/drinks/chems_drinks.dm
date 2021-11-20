@@ -43,6 +43,7 @@
 	lore_text = "Juice from the Iridast, a plant native to Adhomai."
 	taste_description = "incredible sweetness"
 	color = "#fa68ff"
+	uid = "chem_nutriment_juice_iridast"
 
 	glass_name = "iridast juice"
 	glass_desc = "A glass of iridast juice."
