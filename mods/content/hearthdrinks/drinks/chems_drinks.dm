@@ -23,6 +23,7 @@
 	lore_text = "Juice from a pineapple."
 	taste_description = "delicious pineapple juice"
 	color = "#f6e12d"
+	uid = "chem_nutriment_juice_pineapple"
 
 	glass_name = "pineapple juice"
 	glass_desc = "A glass of tropical pineapple juice."
