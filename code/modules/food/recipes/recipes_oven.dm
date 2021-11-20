@@ -89,7 +89,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("tomato" = 1)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/cheesewedge = 3,
 	)
 	result = /obj/item/chems/food/sliceable/pizza/margherita
@@ -98,7 +98,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("tomato" = 1)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/cutlet = 2,
 		/obj/item/chems/food/cheesewedge
 	)
@@ -108,7 +108,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("mushroom" = 5, "tomato" = 1)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/cheesewedge
 	)
 	result = /obj/item/chems/food/sliceable/pizza/mushroompizza
@@ -117,7 +117,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("eggplant" = 1, "carrot" = 1, "corn" = 1, "tomato" = 1)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/cheesewedge
 	)
 	result = /obj/item/chems/food/sliceable/pizza/vegetablepizza
@@ -169,7 +169,7 @@
 /decl/recipe/meatpie
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/cutlet
 	)
 	result = /obj/item/chems/food/meatpie
@@ -177,7 +177,7 @@
 /decl/recipe/tofupie
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/tofu,
 	)
 	result = /obj/item/chems/food/tofupie
@@ -185,7 +185,7 @@
 /decl/recipe/xemeatpie
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 		/obj/item/chems/food/xenomeat,
 	)
 	result = /obj/item/chems/food/xemeatpie
@@ -194,7 +194,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("banana" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	reagent_mix = REAGENT_REPLACE // Don't include the sugar
 	result = /obj/item/chems/food/bananapie
 
@@ -203,7 +203,7 @@
 	fruit = list("cherries" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 10)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 	)
 	reagent_mix = REAGENT_REPLACE // Don't include the sugar
 	result = /obj/item/chems/food/cherrypie
@@ -212,7 +212,7 @@
 	appliance = APPLIANCE_OVEN
 	fruit = list("berries" = 1)
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough,
+		/obj/item/chems/food/sliceable/flatlargedough,
 	)
 	result = /obj/item/chems/food/berryclafoutis
 
@@ -228,13 +228,13 @@
 /decl/recipe/amanita_pie
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/amatoxin = 5)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	result = /obj/item/chems/food/amanita_pie
 
 /decl/recipe/plump_pie
 	appliance = APPLIANCE_OVEN
 	fruit = list("plumphelmet" = 1)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	result = /obj/item/chems/food/plump_pie
 
 /decl/recipe/enchiladas
@@ -279,7 +279,7 @@
 /decl/recipe/flatbread
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatdough
+		/obj/item/chems/food/sliceable/flatlargedough
 	)
 	result = /obj/item/chems/food/flatbread
 
@@ -300,14 +300,14 @@
 /decl/recipe/applepie
 	appliance = APPLIANCE_OVEN
 	fruit = list("apple" = 1)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	result = /obj/item/chems/food/applepie
 
 /decl/recipe/pumpkinpie
 	appliance = APPLIANCE_OVEN
 	fruit = list("pumpkin" = 1)
 	reagents = list(/decl/material/liquid/nutriment/sugar = 5)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	reagent_mix = REAGENT_REPLACE // Remove the sugar
 	result = /obj/item/chems/food/sliceable/pumpkinpie
 
@@ -353,7 +353,7 @@
 /decl/recipe/appletart
 	appliance = APPLIANCE_OVEN
 	fruit = list("goldapple" = 1)
-	items = list(/obj/item/chems/food/sliceable/flatdough)
+	items = list(/obj/item/chems/food/sliceable/flatlargedough)
 	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/appletart
 
