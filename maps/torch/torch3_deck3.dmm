@@ -3177,7 +3177,7 @@
 /obj/structure/catwalk,
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/plating,
-/area/crew_quarters/mess)
+/area/maintenance/thirddeck/starboard)
 "hz" = (
 /obj/structure/catwalk,
 /obj/structure/cable/green{
@@ -6063,11 +6063,10 @@
 	dir = 1
 	},
 /obj/machinery/door/window/brigdoor/eastleft{
-	dir = 8;
 	name = "Bar"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/crew_quarters/mess)
+/area/crew_quarters/bar)
 "pc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11500,12 +11499,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
-"Eq" = (
-/obj/structure/glass_tank/aquarium,
-/mob/living/simple_animal/aquatic/fish/grump,
-/obj/machinery/door/firedoor,
-/turf/simulated/floor/plating,
-/area/crew_quarters/mess)
 "Er" = (
 /obj/machinery/newscaster{
 	pixel_x = -32
@@ -34171,7 +34164,7 @@ CH
 Yi
 RF
 oZ
-Eq
+nN
 Xn
 pr
 dP
@@ -36785,8 +36778,8 @@ TX
 wn
 Rn
 bA
-fB
-fB
+AU
+AU
 hy
 Yx
 Yx
