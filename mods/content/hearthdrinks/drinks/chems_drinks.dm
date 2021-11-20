@@ -13,6 +13,7 @@
 	lore_text = "Juice from a freshly squeezed melon"
 	taste_description = "tangy melon"
 	color = "#e9ba33"
+	uid = "chem_nutriment_juice_melon"
 
 	glass_name = "melon juice"
 	glass_desc = "A glass of melon juice."
