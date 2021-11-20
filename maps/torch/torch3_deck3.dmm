@@ -3557,6 +3557,23 @@
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/crew_quarters/pool)
+"iy" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/effect/floor_decal/corner/green/half,
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Mess Hall - Bar Counter";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/crew_quarters/mess)
 "iA" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -4528,9 +4545,8 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/item/radio/intercom{
-	dir = 4;
-	pixel_x = -22
+/obj/structure/noticeboard{
+	pixel_x = -32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/mess)
@@ -4683,6 +4699,22 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/thirddeck/aftstarboard)
+"ll" = (
+/obj/effect/floor_decal/corner/green/half{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Mess Hall - Dining";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/crew_quarters/mess)
 "lm" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -12452,10 +12484,6 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
-/obj/machinery/camera/network/third_deck{
-	c_tag = "Mess Hall - Bar";
-	dir = 4
-	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
 "GY" = (
@@ -13777,6 +13805,9 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/item/radio/intercom{
+	pixel_y = 23
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/mess)
 "Lg" = (
@@ -16092,6 +16123,10 @@
 	},
 /obj/machinery/light/small{
 	dir = 1
+	},
+/obj/machinery/camera/network/third_deck{
+	c_tag = "Mess Hall - Bar";
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/bar)
@@ -34971,7 +35006,7 @@ oP
 Zs
 dY
 Lv
-pd
+iy
 fB
 qS
 sn
@@ -36582,7 +36617,7 @@ gA
 ZV
 jf
 YD
-ZQ
+ll
 yn
 Ha
 ZQ
