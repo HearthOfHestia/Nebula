@@ -147,6 +147,7 @@
 /decl/material/liquid/drink/cola/coffee
 	taste_description = "delicious coffee cola"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_drink_cola_coffee"
 
 /decl/material/liquid/drink/float
 	name = "cola float"
