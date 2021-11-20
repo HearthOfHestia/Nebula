@@ -3,12 +3,25 @@
 	icon = 'icons/obj/shunt_drive.dmi'
 	var/initial_id_tag = "ftl"
 
+/obj/effect/shunt_dummy
+	icon = 'icons/obj/ftl_drive_96x96.dmi'
+	vis_flags = VIS_INHERIT_ID
+	appearance_flags = KEEP_TOGETHER
+	layer = EMISSIVE_LAYER
+	plane = EMISSIVE_PLANE
+
 /obj/machinery/ftl_shunt/core
 	name = "superluminal shunt core"
 	desc = "An immensely powerful transdimensional superluminal bridge initiator capable of forming a micro-wormhole and shunting an entire ship through it in a nanosecond."
 	base_type = /obj/machinery/ftl_shunt/core
 	uncreated_component_parts = list(/obj/item/stock_parts/ftl_core = 1)
 	construct_state = /decl/machine_construction/default/no_deconstruct
+	icon = 'icons/obj/ftl_drive_96x96.dmi'
+	icon_state = "ftl_core"
+	pixel_x = -32
+	pixel_y = -32
+	bound_x = -32
+	bound_y = -32
 
 	var/list/fuel_ports = list() //We mainly use fusion fuels.
 	var/charge_time //Actually, we do use power now. This is here for the console.
@@ -37,6 +50,12 @@
 	var/jump_delay = 2 MINUTES
 	var/jump_timer //used to cancel the jump.
 
+	var/power_on_animation_played = FALSE
+	var/power_off_animation_played = FALSE
+
+	var/width = 3
+	var/height = 3
+
 	var/static/datum/announcement/priority/ftl_announcement = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
 	var/static/shunt_start_text = "Attention! Superluminal shunt warm-up initiated! Spool-up ETA: %%TIME%%"
@@ -48,10 +67,15 @@
 	var/static/shunt_sabotage_text_major = "Warning! Critical electromagnetic flux in accelerator core! Dumping core and aborting shunt!"
 	var/static/shunt_sabotage_text_critical = "ALERT! Critical malfunction in microsingularity containment core! Safety systems offline!"
 
+	var/obj/effect/shunt_dummy/breakers
+	var/obj/effect/shunt_dummy/conduits
+	var/obj/effect/shunt_dummy/portal
+	var/obj/effect/shunt_dummy/charge_indicator
+	var/obj/effect/shunt_dummy/pumps
+
 	use_power = POWER_USE_OFF
 	power_channel = EQUIP
 	idle_power_usage = 1600
-	icon_state = "bsd"
 	light_color = COLOR_BLUE
 
 //Base procs
@@ -62,13 +86,35 @@
 	if(initial_id_tag)
 		var/datum/extension/local_network_member/local_network = get_extension(src, /datum/extension/local_network_member)
 		local_network.set_tag(null, initial_id_tag)
-	find_ports()
-	set_light(2)
 	target_charge = max_charge * 0.25 //Target charge set to a quarter of our maximum charge, just for weirdness prevention
-	if(populate_parts)
-		var/obj/item/stock_parts/power/terminal/term = get_component_of_type(/obj/item/stock_parts/power/terminal)
-		if(!term.terminal)
-			term.make_terminal(src)
+	breakers = new
+	breakers.icon_state = "breakers_off"
+	conduits = new
+	conduits.icon_state = "conduits"
+	portal = new
+	portal.icon_state = "loop-base"
+	charge_indicator = new 
+	charge_indicator.icon_state = null
+	pumps = new
+	pumps.icon_state = "coolant_pumps_composite_off"
+	pumps.layer = STRUCTURE_LAYER
+	pumps.plane = DEFAULT_PLANE
+	portal.add_filter("glow",1,list(type = "drop_shadow", size = 2, x = 0, y = 0, offset = 2, color = COLOR_CYAN_BLUE))
+	vis_contents += breakers
+	vis_contents += conduits
+	vis_contents += portal
+	vis_contents += charge_indicator
+	vis_contents += pumps
+
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/machinery/ftl_shunt/core/proc/SetBounds()
+	bound_width = width * world.icon_size
+	bound_height = height * world.icon_size
+
+/obj/machinery/ftl_shunt/core/LateInitialize()
+	. = ..()
+	find_ports()
 
 /obj/machinery/ftl_shunt/core/modify_mapped_vars(map_hash)
 	..()
@@ -85,22 +131,91 @@
 
 /obj/machinery/ftl_shunt/core/on_update_icon()
 	cut_overlays()
+	var/new_charge_color
 
-	if(charging)
-		var/image/I = image('icons/obj/shunt_drive.dmi', "activating")
-		var/matrix/M = new()
-		I.transform = M
-		add_overlay(I)
+	if(chargepercent == 0 || isnull(chargepercent))
+		new_charge_color ="#fa0a0a"
+	else
+	#if DM_VERSION > 513 
+		new_charge_color = gradient("#fa0a0a", "#0de405", clamp(chargepercent/100, 0, 100))
+	#endif
+	#if DM_VERSION < 514
+		new_charge_color = HSVtoRGB(RotateHue(hsv(0, 255, 255), 120 * (1 - chargepercent/100))) 
+	#endif
+	animate(charge_indicator, color = new_charge_color, 1 SECOND)
+
+	if(stat & BROKEN)
+		add_overlay(image(icon, "right_breaker_malf"))
+		add_overlay(image(icon, "left_breaker_malf"))
+		return
+
+	if((stat & NOPOWER) && !power_off_animation_played)
+		flick("breakers_turn_off", breakers)
+		breakers.icon_state = "breakers_off"
+		flick("loop-turn-off", portal)
+		portal.icon_state = null
+		flick("charge_state_turn_off", charge_indicator)
+		charge_indicator.icon_state = "null"
+		if(charging)
+			flick("coolant_pumps_composite_turn_off", pumps)
+			pumps.icon_state = "coolant_pumps_composite_off"
+		conduits.icon_state = null
+
+		power_off_animation_played = TRUE
+		power_on_animation_played = FALSE
+
+	if(!(stat & NOPOWER) && !power_on_animation_played)
+		flick("breakers_turn_on", breakers)
+		breakers.icon_state = "breakers_on"
+		flick("loop-turn-on", portal)
+		portal.icon_state = "loop-idle-off"
+		flick("charge_state_turn_on", charge_indicator)
+		charge_indicator.icon_state = "charge_state"
+		if(charging)
+			flick("coolant_pumps_composite_turn_on", pumps)
+			pumps.icon_state = "coolant_pumps_composite_on"
+
+		power_off_animation_played = FALSE
+		power_on_animation_played = TRUE
+
+	if(charging && !(stat & NOPOWER))
+		add_overlay(image(icon, "turbine_on"))
+		if(!conduits.filter_data)
+			conduits.add_filter("glow", 1, list(type="drop_shadow", x=0,y=0,size=2,color=COLOR_ORANGE))
+		conduits.icon_state = "conduits_glow"
+		pumps.icon_state = "coolant_pumps_composite_on"
+		portal.icon_state = "loop-charging"
+
+	if(!charging)
+		conduits.icon_state = null
 
 	if(jumping)
-		add_overlay(image('icons/obj/shunt_drive.dmi', "activated"))
-		var/image/S = image('icons/obj/objects.dmi', "bhole3")
-		var/matrix/M = new()
-		M.Scale(0.75)
-		S.transform = M
-		S.alpha = 0
-		animate(S, alpha = 255, time = 5.9 SECONDS)
-		add_overlay(S)
+		add_overlay(image(icon, "loop-idle-on"))
+
+	if(sabotaged)
+		if(portal.filter_data)
+			if(portal.filter_data["glow"]["color"] != COLOR_RED)
+				portal.animate_filter("glow", list(color = COLOR_RED, time = 1))
+				portal.update_filters()
+			if(rand(15))
+				portal.animate_filter("glow", list(size = sabotaged*3, time = 1 SECONDS, offset = sabotaged*rand(1,3)))
+				addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "glow", list(size = 2, time = 1 SECONDS, offset = 2)), 2 SECONDS)
+
+	if(!sabotaged)
+		if(portal.filter_data)
+			if(portal.filter_data["glow"]["color"] != COLOR_CYAN_BLUE)
+				portal.animate_filter("glow", list(color = COLOR_CYAN_BLUE, time = 1))
+				portal.update_filters()
+			if(rand(15))
+				portal.animate_filter("glow", list(size = rand(1,2)*2, time = 1 SECONDS, offset = 2*rand(1,3)))
+				addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "glow", list(size = 2, time = 1 SECONDS, offset = 2)), 2 SECONDS)
+
+/*
+		if(!filter_data)
+			add_filter("ripple", 1, list(type="ripple", size = 5, repeat = 10, radius = 1))
+		animate_filter("ripple", list(time = 0.5 SECONDS, radius = 25, size = 5))
+		addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "ripple",list(time = 0.5 SECONDS, size = 0, radius = 0)), 0.6 SECONDS)
+*/
 
 /obj/machinery/ftl_shunt/core/examine(mob/user)
 	. = ..()
@@ -516,6 +631,8 @@
 /obj/machinery/ftl_shunt/core/proc/get_charge_time()
 	if(isnull(last_power_drawn))
 		return "UNKNOWN"
+	if(last_power_drawn == 0)
+		return "UNKNOWN"
 	return "[clamp(round((target_charge-accumulated_charge)/((last_power_drawn*CELLRATE) * 1 SECOND / SSmachines.wait), 0.1),0, INFINITY)] Seconds"
 
 /obj/machinery/ftl_shunt/core/proc/check_charge()
@@ -526,11 +643,13 @@
 	if(stat & NOPOWER)
 		return FALSE
 
-	var/drawn_charge = use_power_oneoff(input)
-	last_power_drawn = drawn_charge
-	accumulated_charge += drawn_charge * CELLRATE
+	if(!use_power_oneoff(input,EQUIP))
+		last_power_drawn = input
+		accumulated_charge += input * CELLRATE
 	
-	return TRUE
+		return TRUE
+	else
+		return FALSE
 
 /obj/machinery/ftl_shunt/core/proc/get_total_fuel_conversion_rate()
 	var/rate
@@ -555,6 +674,7 @@
 	name = "superluminal shunt fuel port"
 	desc = "A fuel port for an FTL shunt."
 	icon_state = "empty"
+	icon = 'icons/obj/ftlshunt_fuelport.dmi'
 
 	var/static/list/fuels = list(
 		/decl/material/gas/hydrogen/tritium = 25000,
@@ -599,6 +719,7 @@
 				return
 			fuel = O
 			max_fuel = get_fuel_joules(TRUE)
+			flick("insert", src)
 			update_icon()
 			return TRUE
 
@@ -653,7 +774,6 @@
 	board_type = "machine"
 	build_path = /obj/machinery/ftl_shunt/core
 	origin_tech = "{'programming':3,'magnets':5,'materials':5,'wormholes':5}"
-	additional_spawn_components = list(/obj/item/stock_parts/power/terminal = 1)
 
 /obj/item/stock_parts/ftl_core
 	name = "exotic matter bridge"

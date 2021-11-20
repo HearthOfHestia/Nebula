@@ -2696,7 +2696,7 @@
 /obj/effect/floor_decal/corner/blue/three_quarters{
 	dir = 8
 	},
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -2705,7 +2705,7 @@
 /obj/effect/floor_decal/corner/blue/three_quarters{
 	dir = 1
 	},
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,

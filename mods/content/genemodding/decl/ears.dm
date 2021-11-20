@@ -202,3 +202,12 @@
 /decl/sprite_accessory/ears/bunny_floppy
 	name = "floppy bunny ears (colorable)"
 	icon_state = "floppy_bun"
+
+/decl/sprite_accessory/ears/hyena
+	name = "hyena, dual-color"
+	icon_state = "hyena"
+	extra_overlay = "hyena-inner"
+
+/decl/sprite_accessory/ears/moth
+	name = "moth antennae"
+	icon_state = "moth"

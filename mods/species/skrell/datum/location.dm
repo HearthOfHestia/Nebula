@@ -9,7 +9,6 @@
 	capital = "Qerr'Kal'ol"
 	ruling_body = "None"
 	distance = "410 light years"
-	economic_power = 2.5
 
 /decl/cultural_info/location/talamira
 	name = "Talamira"
@@ -22,7 +21,6 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "543 light years"
-	economic_power = 2.2
 
 /decl/cultural_info/location/mitorqi
 	name = "Mi'tor'qi"
@@ -34,7 +32,6 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "122 light years"
-	economic_power = 1.7
 
 /decl/cultural_info/location/skrellspace
 	name = "Militarized Space"
@@ -45,7 +42,6 @@
 	capital = "None"
 	ruling_body = "Your local SDTF"
 	distance = "80 to 600 light years"
-	economic_power = 2.0
 
 /decl/cultural_info/location/free
 	name = "Skrell Space"
@@ -54,7 +50,6 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "130 to 550 light years"
-	economic_power = 2.0
 
 /decl/cultural_info/location/gilkrolqarr
 	name = "Gilkrol-Qarr"
@@ -67,7 +62,6 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "372 light years"
-	economic_power = 2.3
 
 /decl/cultural_info/location/harrkelm
 	name = "Harr'Kelm"
@@ -78,7 +72,6 @@
 	capital = "None"
 	ruling_body = "None"
 	distance = "135 light years"
-	economic_power = 1.7
 
 /decl/cultural_info/location/epsilon
 	name = "Epsilon Directorate"
@@ -91,7 +84,6 @@
 	capital = "None"
 	ruling_body = "The Director"
 	distance = "40 light years"
-	economic_power = 0.7
 	subversive_potential = 80
 
 /decl/cultural_info/location/ueorsi

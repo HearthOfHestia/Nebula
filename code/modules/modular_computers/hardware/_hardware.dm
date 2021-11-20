@@ -30,6 +30,8 @@
 /obj/item/stock_parts/computer/Destroy()
 	if(istype(loc, /obj/item/modular_computer))
 		var/datum/extension/assembly/modular_computer/assembly = get_extension(loc, /datum/extension/assembly)
+		if(assembly.is_critical_part(src))
+			assembly.shutdown_device() // avoid the critical failure message
 		if(assembly)
 			assembly.uninstall_component(null, src)
 	return ..()

@@ -27,9 +27,6 @@
 /decl/loadout_option/head/beret
 	allowed_branches = CIVILIAN_BRANCHES
 
-/decl/loadout_option/mask/bandana
-	allowed_branches = CIVILIAN_BRANCHES
-
 /decl/loadout_option/head/bandana
 	allowed_branches = CIVILIAN_BRANCHES
 

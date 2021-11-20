@@ -21,7 +21,7 @@
 /obj/item/robot_module/security
 	associated_department = /decl/department/security
 
-/obj/machinery/network/pager/security 
+/obj/machinery/network/pager/security
 	department = /decl/department/security
 
 /decl/department/medical
@@ -85,7 +85,7 @@
 	display_color = "#f0e68c"
 	display_priority = 2
 
-/obj/machinery/network/pager/cargo 
+/obj/machinery/network/pager/cargo
 	department = /decl/department/supply
 
 /decl/department/support

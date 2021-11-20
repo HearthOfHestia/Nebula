@@ -95,7 +95,7 @@
 			var/count = recipe.items[thing]
 			ingredients += (count > 1) ? "[count]x <l>[initial(thing_atom.name)]</l>" : "\a <l>[initial(thing_atom.name)]</l>"
 		for(var/thing in recipe.fruit)
-			ingredients += "[recipe.fruit[thing]] [thing]\s"
+			ingredients += "[recipe.fruit[thing]]x [thing]"
 		if(recipe.coating)
 			var/decl/material/coating = recipe.coating
 			ingredients += "\a <l>[initial(coating.name)]</l> coating"
