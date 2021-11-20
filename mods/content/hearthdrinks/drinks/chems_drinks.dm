@@ -2,7 +2,7 @@
 	name = "Europa Punch"
 	lore_text = "Delicious juice made from a blend of various alien species found on Europa."
 	taste_description = "syrupy fruit"
-	color = "#9608AF"
+	color = "#9608af"
 	glass_name = "star juice"
 	glass_desc = "A tall glass of Europa Punch."
 	exoplanet_rarity = MAT_RARITY_NOWHERE
