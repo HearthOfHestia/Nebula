@@ -1,7 +1,7 @@
 /obj/item/chems/drinks/cans/europa
 	name = "Europa Punch!"
 	desc = "A can of Europa Punch, a delicious juice made from various aquatic plants!"
-	icon_state = "europa"
+	DRINK_STATE("europa")
 	center_of_mass = @"{'x':16,'y':10}"
 
 /obj/item/chems/drinks/cans/europa/Initialize()
@@ -11,7 +11,7 @@
 /obj/item/chems/drinks/cans/ionbru
 	name = "Ion-Bru"
 	desc = "A can of Ion-Bru, the drink of shipbuilders."
-	icon_state = "ionbru"
+	DRINK_STATE("ionbru")
 	center_of_mass = @"{'x':16,'y':10}"
 
 /obj/item/chems/drinks/cans/ionbru/Initialize()
@@ -21,7 +21,7 @@
 /obj/item/chems/drinks/cans/vanillacola
 	name = "Vanilla Cola"
 	desc = "A can of vanilla cola."
-	icon_state = "vcola"
+	DRINK_STATE("vcola")
 	center_of_mass = @"{'x':16,'y':10}"
 
 /obj/item/chems/drinks/cans/vanillacola/Initialize()
@@ -31,7 +31,7 @@
 /obj/item/chems/drinks/cans/coffeecola
 	name = "Coffee Cola"
 	desc = "A can of coffee cola."
-	icon_state = "ccola"
+	DRINK_STATE("ccola")
 	center_of_mass = @"{'x':16,'y':10}"
 
 /obj/item/chems/drinks/cans/coffeecola/Initialize()
@@ -41,7 +41,7 @@
 /obj/item/chems/drinks/cans/zazkis
 	name = "Hsstik Zazkis"
 	desc = "A chilled can of zazkis, a Moghsian delight."
-	icon_state = "zazkis"
+	DRINK_STATE("zazkis")
 	center_of_mass = @"{'x':16,'y':10}"
 
 /obj/item/chems/drinks/cans/zazkis/Initialize()

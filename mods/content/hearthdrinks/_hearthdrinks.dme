@@ -1,7 +1,7 @@
 #ifndef CONTENT_PACK_HEARTHDRINKS
 #define CONTENT_PACK_HEARTHDRINKS
 // BEGIN_INCLUDE
-#include "hearthdrinks.dm"
+#include "_hearthdrinks.dm"
 #include "reactions.dm"
 #include "cocktails.dm"
 #include "drinks\dispcarts.dm"

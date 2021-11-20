@@ -17,6 +17,7 @@
 	result = /decl/material/liquid/drink/eggnog
 	required_reagents = list(/decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/sugar = 5)
 	result_amount = 13
+	inhibitors = list(/decl/material/liquid/nutriment/flour)
 	mix_message = "The mixture turns a creamy white."
 
 /decl/chemical_reaction/recipe/vanillacola

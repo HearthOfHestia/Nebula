@@ -56,7 +56,7 @@
 	glass_name = "ginger beer"
 	glass_desc = "A glass of refreshing ginger beer"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
-	uid = "chem_drink_gingerbeer"
+	uid = "chem_drink_rootbeer"
 
 /decl/material/liquid/drink/doogh
 	name = "doogh"
