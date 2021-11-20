@@ -15,7 +15,6 @@
 	available_cultural_info = list(
 		TAG_CULTURE = list(
 			/decl/cultural_info/culture/human,
-			/decl/cultural_info/culture/human/dysonite,
 			/decl/cultural_info/culture/human/mars,
 			/decl/cultural_info/culture/human/venus,
 			/decl/cultural_info/culture/human/spacerborn,
@@ -40,7 +39,6 @@
 			/decl/cultural_info/faction/humanity/iseo,
 			/decl/cultural_info/faction/humanity/ec,
 			/decl/cultural_info/faction/humanity/contractor,
-			/decl/cultural_info/faction/humanity/dysonite
 		),
 		TAG_RELIGION = list(
 			/decl/cultural_info/religion/other,
