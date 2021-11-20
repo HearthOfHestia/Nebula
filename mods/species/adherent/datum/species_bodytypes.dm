@@ -4,8 +4,7 @@
 	icon_template =     'mods/species/adherent/icons/template.dmi'
 	icon_base =         'mods/species/adherent/icons/body_turquoise.dmi'
 	damage_overlays =   'mods/species/adherent/icons/damage_overlay.dmi'
-	damage_mask =       'mods/species/adherent/icons/damage_mask.dmi'
-	blood_mask =        'mods/species/adherent/icons/blood_mask.dmi'
+	blood_overlays =    'mods/species/adherent/icons/blood_overlays.dmi'
 	antaghud_offset_y = 14
 
 /decl/bodytype/adherent/Initialize()
@@ -39,6 +38,13 @@
 		),
 
 		"[slot_head_str]" =   list(
+			"[NORTH]" = list("x" = 0, "y" = 14),
+			"[EAST]"  = list("x" = 3, "y" = 14),
+			"[SOUTH]" = list("x" = 0, "y" = 14),
+			"[WEST]"  = list("x" = -3, "y" = 14)
+		),
+
+		"[slot_glasses_str]" =   list(
 			"[NORTH]" = list("x" = 0, "y" = 14),
 			"[EAST]"  = list("x" = 3, "y" = 14),
 			"[SOUTH]" = list("x" = 0, "y" = 14),

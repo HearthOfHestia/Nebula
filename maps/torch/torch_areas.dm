@@ -960,15 +960,6 @@
 /area/tcommsat/network_relay/d5
 	name = "\improper Fifth Deck Network Relay"
 
-
-// Borg Upload
-
-/area/synth/borg_upload
-	name = "\improper Cyborg Upload Chamber"
-	icon_state = "ai_upload"
-	ambience = list('sound/ambience/ambimalf.ogg')
-	req_access = list(access_ai_upload)
-
 // Security
 
 /area/security

@@ -1,4 +1,4 @@
-/decl/loadout_option/mask/gas/skrell
+/decl/loadout_option/mask/skrell
 	name = "skrellian gill cover"
 	path = /obj/item/clothing/mask/gas/skrell
 	whitelisted = list(BODYTYPE_SKRELL)

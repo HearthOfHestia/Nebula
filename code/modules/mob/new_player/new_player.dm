@@ -23,7 +23,12 @@
 
 /mob/new_player/Initialize()
 	. = ..()
+	forceMove(null)
 	verbs += /mob/proc/toggle_antag_pool
+
+/mob/new_player/Destroy()
+	QDEL_NULL(panel)
+	. = ..()
 
 /mob/new_player/proc/show_lobby_menu(force = FALSE)
 	if(!SScharacter_setup.initialized && !force)
@@ -469,7 +474,7 @@
 	if(new_track)
 		new_track.play_to(src)
 
-/mob/new_player/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays)
+/mob/new_player/handle_reading_literacy(var/mob/user, var/text_content, var/skip_delays, var/digital = FALSE)
 	. = text_content
 
 /mob/new_player/handle_writing_literacy(var/mob/user, var/text_content, var/skip_delays)

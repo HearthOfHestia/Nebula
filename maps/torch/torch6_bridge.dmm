@@ -572,7 +572,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bw" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
@@ -1032,7 +1032,9 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_starboard"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "cx" = (
@@ -1324,6 +1326,9 @@
 	},
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/meeting_room)
@@ -2052,8 +2057,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
 /obj/effect/paint_stripe/command,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_port"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "eY" = (
@@ -2840,6 +2847,9 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/status_display{
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "gS" = (
@@ -3598,6 +3608,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cobed)
 "jB" = (
@@ -3828,6 +3841,15 @@
 /obj/effect/paint_stripe/science,
 /turf/simulated/wall/prepainted,
 /area/crew_quarters/heads/office/rd)
+"kq" = (
+/obj/effect/floor_decal/corner/darkblue{
+	dir = 10
+	},
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/hallway/primary/bridge/aft)
 "kv" = (
 /obj/machinery/button/alternate/door/bolts{
 	id_tag = "bridgesafe_front";
@@ -3841,6 +3863,9 @@
 	},
 /obj/effect/floor_decal/techfloor{
 	dir = 5
+	},
+/obj/machinery/status_display{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/bridge)
@@ -4365,6 +4390,9 @@
 /obj/structure/cable/green,
 /obj/structure/bed/chair/padded/blue{
 	dir = 1
+	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
@@ -5147,7 +5175,7 @@
 /area/bridge)
 "pf" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -5230,13 +5258,8 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/bridgecheck)
-"pG" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/prepainted,
-/area/security/bridgecheck)
 "pH" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -5322,6 +5345,9 @@
 	dir = 4
 	},
 /obj/machinery/recharger,
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "pY" = (
@@ -5454,6 +5480,9 @@
 /obj/machinery/light,
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
@@ -6252,7 +6281,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/item/radio/intercom{
 	pixel_y = 23
 	},
@@ -6350,6 +6379,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "sV" = (
@@ -6898,6 +6928,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "uC" = (
@@ -7120,7 +7153,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	dir = 4;
@@ -8257,13 +8290,18 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
+/obj/structure/closet/walllocker/skinsuit/command{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "yV" = (
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_starboard"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "yW" = (
@@ -8532,6 +8570,9 @@
 	opacity = 0
 	},
 /obj/effect/floor_decal/corner/red/mono,
+/obj/machinery/status_display{
+	pixel_x = -32
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
 "Ab" = (
@@ -9034,7 +9075,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 9
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -9254,7 +9295,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -9445,7 +9486,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "Dy" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
@@ -10435,6 +10476,9 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge)
 "HC" = (
@@ -10454,11 +10498,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/passenger)
-"HE" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/r_wall/prepainted,
-/area/bridge)
 "HF" = (
 /obj/machinery/computer/modular/preset/dock{
 	wired_connection = 1
@@ -10650,11 +10689,6 @@
 /obj/effect/paint_stripe/command,
 /turf/simulated/wall/r_wall/prepainted,
 /area/bridge/storage)
-"Ip" = (
-/obj/effect/paint_stripe/command,
-/obj/machinery/status_display,
-/turf/simulated/wall/r_wall/prepainted,
-/area/crew_quarters/safe_room/bridge)
 "Iq" = (
 /obj/structure/sign/warning/nosmoking_1{
 	dir = 4;
@@ -10835,6 +10869,9 @@
 	},
 /obj/machinery/light/spot{
 	dir = 4
+	},
+/obj/machinery/status_display{
+	pixel_x = 32
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/bridge)
@@ -11177,7 +11214,7 @@
 /obj/effect/floor_decal/corner/darkblue/three_quarters{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
@@ -11958,6 +11995,9 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 5
 	},
+/obj/machinery/status_display{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
 "Oi" = (
@@ -11995,6 +12035,9 @@
 /turf/simulated/floor/plating,
 /area/command/captainmess)
 "OK" = (
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftport)
 "OM" = (
@@ -12258,7 +12301,7 @@
 "PX" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/machinery/light,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "PY" = (
@@ -12373,7 +12416,7 @@
 /area/crew_quarters/heads/office/rd)
 "Qp" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/glass/command{
+/obj/machinery/door/airlock/command{
 	name = "Bridge Storage"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -13538,13 +13581,11 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/fore)
-"Vn" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/r_wall/prepainted,
-/area/bridge/meeting_room)
 "Vs" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
+/obj/machinery/status_display{
+	pixel_x = 32
+	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/xo)
 "Vw" = (
@@ -13593,11 +13634,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/bridge/fore)
-"VN" = (
-/obj/machinery/status_display,
-/obj/effect/paint_stripe/command,
-/turf/simulated/wall/prepainted,
-/area/bridge)
 "VP" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -13729,7 +13765,7 @@
 	pixel_y = 24
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "Ws" = (
@@ -13758,7 +13794,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "WB" = (
-/obj/machinery/sleeper{
+/obj/machinery/sleeper/standard{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/white/monotile,
@@ -14396,8 +14432,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
-/obj/effect/wallframe_spawn/reinforced/hull,
 /obj/effect/paint_stripe/command,
+/obj/effect/wallframe_spawn/reinforced/polarized{
+	id = "bridge_port"
+	},
 /turf/simulated/floor/plating,
 /area/bridge)
 "Zs" = (
@@ -22115,7 +22153,7 @@ Se
 Se
 TB
 sm
-HE
+Ie
 Ra
 CE
 BE
@@ -23939,7 +23977,7 @@ Fv
 AH
 yf
 LG
-VN
+yf
 AH
 Fv
 AH
@@ -23947,7 +23985,7 @@ fa
 fy
 fQ
 sz
-Ip
+ZR
 kv
 Is
 vk
@@ -25145,7 +25183,7 @@ DF
 sW
 Qe
 qg
-Vn
+hs
 hs
 hs
 Xe
@@ -25155,7 +25193,7 @@ Xe
 Xe
 hs
 hs
-Vn
+hs
 Og
 Vl
 sB
@@ -27982,7 +28020,7 @@ ck
 mO
 oK
 zM
-pG
+yW
 yW
 rk
 qz
@@ -31817,7 +31855,7 @@ Ec
 Fc
 Kj
 Ug
-mX
+kq
 fI
 Zj
 ad
