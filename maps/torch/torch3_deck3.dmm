@@ -6724,6 +6724,9 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/machinery/atm{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/center)
 "qV" = (
@@ -13432,9 +13435,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/machinery/atm{
-	pixel_y = 32
-	},
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/center)
 "JR" = (
