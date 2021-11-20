@@ -50,7 +50,6 @@
 		var/new_ear_style = input(user, "Pick ears", "Character Preference", pref.ear_style) as null|anything in pretty_ear_styles
 		if(new_ear_style)
 			pref.ear_style = pretty_ear_styles[new_ear_style]
-
 		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["ear_color"])
@@ -58,14 +57,14 @@
 			pref.ear_color) as color|null
 		if(new_earc)
 			pref.ear_color = new_earc
-			return TOPIC_REFRESH_UPDATE_PREVIEW
+		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["ear_color2"])
 		var/new_earc2 = input(user, "Choose your character's ear colour:", "Character Preference",
 			pref.ear_color_extra) as color|null
 		if(new_earc2)
 			pref.ear_color_extra = new_earc2
-			return TOPIC_REFRESH_UPDATE_PREVIEW
+		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["tail_style"])
 		// Construct the list of names allowed for this user.
@@ -78,11 +77,11 @@
 		var/new_tail_style = input(user, "Pick tails", "Character Preference", pref.tail_style) as null|anything in pretty_tail_styles
 		if(new_tail_style)
 			pref.tail_style = pretty_tail_styles[new_tail_style]
-			return TOPIC_REFRESH_UPDATE_PREVIEW
+		return TOPIC_REFRESH_UPDATE_PREVIEW
 
 	else if(href_list["tail_color"])
 		var/new_tailc = input(user, "Choose your character's tail colour:", "Character Preference",
-			) as color|null
+			pref.tail_color) as color|null
 		if(new_tailc)
 			pref.tail_color = new_tailc
 			return TOPIC_REFRESH_UPDATE_PREVIEW
@@ -92,5 +91,5 @@
 			pref.tail_color_extra) as color|null
 		if(new_tailc2)
 			pref.tail_color_extra = new_tailc2
-			return TOPIC_REFRESH_UPDATE_PREVIEW
+		return TOPIC_REFRESH_UPDATE_PREVIEW
 	return ..()
