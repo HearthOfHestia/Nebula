@@ -143,6 +143,7 @@
 /decl/material/liquid/drink/cola/vanilla
 	taste_description = "tasty vanilla cola"
 	exoplanet_rarity = MAT_RARITY_NOWHERE
+	uid = "chem_drink_cola_vanilla"
 
 /decl/material/liquid/drink/cola/coffee
 	taste_description = "delicious coffee cola"
