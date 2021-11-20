@@ -33,6 +33,7 @@
 	lore_text = "Processed milk from a coconut."
 	taste_description = "cool coconut milk"
 	color = "#fcffe1"
+	uid = "chem_nutriment_juice_coconut"
 
 	glass_name = "coconut milk"
 	glass_desc = "Delicious milk from a coconut."
