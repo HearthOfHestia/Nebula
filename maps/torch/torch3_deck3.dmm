@@ -4186,7 +4186,6 @@
 /obj/effect/floor_decal/corner/green/half{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment,
 /obj/machinery/hologram/holopad,
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 1;
@@ -4249,6 +4248,7 @@
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/mess)
 "kc" = (
@@ -5465,6 +5465,9 @@
 	name = "Service Equipment"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
@@ -6844,10 +6847,6 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "rq" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
 /obj/structure/cable/green{
 	icon_state = "1-8"
 	},
@@ -6860,6 +6859,10 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/catwalk_plated,
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/thirddeck/center)
 "rr" = (
@@ -7633,7 +7636,6 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "sY" = (
-/obj/item/stool/bar/padded,
 /obj/structure/disposalpipe/sortjunction/flipped{
 	dir = 1;
 	name = "Bar";
@@ -11913,11 +11915,11 @@
 /obj/structure/cable/green{
 	icon_state = "1-8"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
 	},
 /turf/simulated/floor/tiled/dark,
 /area/storage/service)
@@ -17083,6 +17085,9 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/mess)
 "VU" = (
@@ -17195,6 +17200,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
+"Wy" = (
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/carpet/blue,
+/area/storage/service)
 "Wz" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -37368,7 +37377,7 @@ yQ
 zK
 Ls
 vl
-Sv
+Wy
 Ke
 Yx
 qP
