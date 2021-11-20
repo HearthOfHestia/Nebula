@@ -97,6 +97,7 @@
 
 	glass_name = "affelerin nectar"
 	glass_desc = "A glass of sweet affelerin nectar."
+
 /decl/material/liquid/drink/decafcoffee
 	name = "decaffeinated coffee"
 	lore_text = "Coffee without the caffeine."
