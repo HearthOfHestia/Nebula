@@ -25,9 +25,6 @@
 
 	pref.skills_allocated = pref.sanitize_skills(pref.skills_allocated)
 
-	if(!has_flag(get_species_by_key(pref.species), HAS_UNDERWEAR))
-		pref.all_underwear.Cut()
-
 /datum/category_item/player_setup_item/background/species/proc/has_flag(var/decl/species/mob_species, var/flag)
 	return mob_species && (mob_species.appearance_flags & flag)
 
@@ -80,7 +77,6 @@
 
 /datum/category_item/player_setup_item/background/species/OnTopic(var/href,var/list/href_list, var/mob/user)
 
-	var/decl/species/mob_species = get_species_by_key(pref.species)
 	if(href_list["toggle_species_verbose"])
 		hide_species = !hide_species
 		return TOPIC_REFRESH
@@ -91,16 +87,14 @@
 		if(choice != pref.species)
 
 			pref.species = choice
-			sanitize_species()
-			mob_species = get_species_by_key(pref.species)
-
-			prune_occupation_prefs()
+			pref.sanitize_preferences()
 
 			//reset hair colour and skin colour
 			ResetAllHair()
 			pref.hair_colour = COLOR_BLACK
 			pref.skin_tone = 0
 			pref.body_markings.Cut() // Basically same as above.
+			var/decl/species/mob_species = get_species_by_key(pref.species)
 			mob_species.handle_post_species_pref_set(pref)
 
 			return TOPIC_REFRESH_UPDATE_PREVIEW
