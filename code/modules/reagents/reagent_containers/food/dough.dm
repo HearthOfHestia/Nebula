@@ -11,33 +11,6 @@
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/bread
 
-// Roller interactions
-
-// Dough + rolling pin = flat dough
-/obj/item/chems/food/largedough/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatlargedough/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the dough.")
-		qdel(src)
-
-// Dough + rolling pin = flat dough
-/obj/item/chems/food/mediumdough/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatmediumdough/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the dough.")
-		qdel(src)
-
-// Dough + rolling pin = flat dough
-/obj/item/chems/food/smalldough/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/flatsmalldough/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the dough.")
-		qdel(src)
-
-//Cutter interactions
 
 // large dough becomes two medium doughs
 /obj/item/chems/food/sliceable/largedough
@@ -71,7 +44,50 @@
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/bread
 
+
+
+// Roller interactions
+
+// Dough + rolling pin = flat dough
+/obj/item/chems/food/largedough/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/sliceable/flatlargedough/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the dough.")
+		qdel(src)
+	. = ..()
+
+// Dough + rolling pin = flat dough
+/obj/item/chems/food/mediumdough/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/sliceable/flatmediumdough/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the dough.")
+		qdel(src)
+	. = ..()
+
+// Dough + rolling pin = flat dough
+/obj/item/chems/food/smalldough/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/flatsmalldough/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the dough.")
+		qdel(src)
+	. = ..()
+
+//Cutter interactions
+
 // slicable into 2x doughslices
+
+/obj/item/chems/food/sliceable/flatdough
+	name = "flat dough"
+	desc = "A large flattened dough."
+	icon = 'icons/obj/food_ingredients.dmi'
+	icon_state = "flat_large_dough"
+	slice_path = /obj/item/chems/food/sliceable/flatmediumdough
+	slices_num = 2
+	center_of_mass = @"{'x':16,'y':16}"
+
 /obj/item/chems/food/sliceable/flatlargedough
 	name = "flat dough"
 	desc = "A large flattened dough."
@@ -112,6 +128,8 @@
 /obj/item/chems/food/smalldough/attack_products = list(/obj/item/chems/food/smalldough = /obj/item/chems/food/sliceable/mediumdough)
 
 /obj/item/chems/food/sliceable/mediumdough/attack_products = list(/obj/item/chems/food/sliceable/mediumdough = /obj/item/chems/food/sliceable/largedough)
+
+/obj/item/chems/food/plainburger/attack_products = list(/obj/item/chems/food/cheesewedge = /obj/item/chems/food/cheeseburger)
 
 //slicables defines for dough
 

@@ -1,65 +1,33 @@
 //meatkind and its various interactions with itself. Recipes are in a different .dm
 
-/obj/item/chems/food/largemeat
+//The large pile of mince becomes two medium sized piles of mince
+/obj/item/chems/food/sliceable/largemeat
 	name = "minced meat"
 	desc = "A large pile of of minced meat."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "meat"
-	bitesize = 2
-	center_of_mass = @"{'x':16,'y':13}"
-	nutriment_desc = list("meat" = 3)
-	nutriment_amt = 3
-	nutriment_type = /decl/material/liquid/nutriment/protein
-
-// Roller interactions
-
-// meat + rolling pin = flat meat
-/obj/item/chems/food/largemeat/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatlargemeat/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the meat.")
-		qdel(src)
-
-// meat + rolling pin = flat meat
-/obj/item/chems/food/mediummeat/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatmediummeat/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the meat.")
-		qdel(src)
-
-// meat + rolling pin = flat meat
-/obj/item/chems/food/smallmeat/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/flatsmallmeat/result = new()
-		result.dropInto(loc)
-		to_chat(user, "You flatten the meat.")
-		qdel(src)
-
-//Cutter interactions
-
-// large meat becomes two medium meats
-/obj/item/chems/food/sliceable/largemeat
-	name = "minced meat"
-	desc = "A large wad of meat."
-	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "large_mince"
-	slice_path = /obj/item/chems/food/mediummeat
-	slices_num = 2
+	bitesize = 2
 	center_of_mass = @"{'x':16,'y':16}"
+	nutriment_desc = list("meat" = 6)
+	nutriment_amt = 6
+	nutriment_type = /decl/material/liquid/nutriment/protein
+	slice_path = /obj/item/chems/food/sliceable/mediummeat
+	slices_num = 2
 
-// medium meat becomes two small meats
+// medium sized minced meat becomes two small minced meats
 /obj/item/chems/food/sliceable/mediummeat
 	name = "minced meat"
 	desc = "A medium sized wad of meat."
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "medium_mince"
+	center_of_mass = @"{'x':16,'y':16}"
+	nutriment_desc = list("meat" = 3)
+	nutriment_amt = 3
 	slice_path = /obj/item/chems/food/smallmeat
 	slices_num = 2
-	center_of_mass = @"{'x':16,'y':16}"
+	attack_products = list(/obj/item/chems/food/sliceable/mediummeat = /obj/item/chems/food/sliceable/largemeat)
 
-//like atoms, it can no longer be sliced
+//like atoms, the small minced meat can no longer be sliced
 /obj/item/chems/food/smallmeat
 	name = "minced meat"
 	desc = "A small ball of minced meat. Commonly known as a meatball."
@@ -70,6 +38,42 @@
 	nutriment_desc = list("meat" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/protein
+	attack_products = list(/obj/item/chems/food/smallmeat = /obj/item/chems/food/sliceable/mediummeat)
+
+
+// Roller interactions
+
+// meat + rolling pin = flat meat
+/obj/item/chems/food/sliceable/largemeat/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/sliceable/flatlargemeat/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the meat.")
+		qdel(src)
+	. = ..()
+
+// meat + rolling pin = flat meat
+/obj/item/chems/food/sliceable/mediummeat/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/sliceable/flatmediummeat/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the meat.")
+		qdel(src)
+	. = ..()
+
+// meat + rolling pin = flat meat
+/obj/item/chems/food/smallmeat/attackby(obj/item/W, mob/user)
+	if(istype(W,/obj/item/kitchen/rollingpin))
+		var/obj/item/chems/food/flatsmallmeat/result = new()
+		result.dropInto(loc)
+		to_chat(user, "You flatten the meat.")
+		qdel(src)
+	. = ..()
+
+//Cutter interactions
+
+// large meat becomes two medium meats
+
 
 // slicable into 2x meatslices
 /obj/item/chems/food/sliceable/flatlargemeat
@@ -90,6 +94,7 @@
 	slice_path = /obj/item/chems/food/flatsmallmeat
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
+/obj/item/chems/food/sliceable/flatmediummeat/attack_products = list(/obj/item/chems/food/sliceable/flatmediummeat = /obj/item/chems/food/sliceable/flatlargemeat)
 
 //a unslicable small flat piece of meat
 /obj/item/chems/food/flatsmallmeat
@@ -107,11 +112,11 @@
 
 /obj/item/chems/food/flatsmallmeat/attack_products = list(/obj/item/chems/food/flatsmallmeat = /obj/item/chems/food/sliceable/flatmediummeat)
 
-/obj/item/chems/food/sliceable/flatmediummeat/attack_products = list(/obj/item/chems/food/sliceable/flatmediummeat = /obj/item/chems/food/sliceable/flatlargemeat)
 
-/obj/item/chems/food/smallmeat/attack_products = list(/obj/item/chems/food/smallmeat = /obj/item/chems/food/sliceable/mediummeat)
 
-/obj/item/chems/food/sliceable/mediummeat/attack_products = list(/obj/item/chems/food/sliceable/mediummeat = /obj/item/chems/food/sliceable/largemeat)
+
+
+
 
 //slicables defines for meat
 
