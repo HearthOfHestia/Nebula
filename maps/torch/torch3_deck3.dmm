@@ -12134,7 +12134,6 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
 "Gb" = (
-/obj/effect/catwalk_plated,
 /obj/machinery/door/firedoor,
 /obj/structure/cable/green{
 	icon_state = "4-8"
