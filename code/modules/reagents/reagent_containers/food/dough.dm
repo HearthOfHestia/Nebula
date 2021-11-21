@@ -1,5 +1,7 @@
 //Breadkind and its various interactions with itself. Recipes are in a different .dm
 
+
+//only here for testing, remove when done
 /obj/item/chems/food/dough
 	name = "dough"
 	desc = "A piece of dough."
@@ -31,6 +33,7 @@
 	slice_path = /obj/item/chems/food/smalldough
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
+	attack_products = list(/obj/item/chems/food/sliceable/mediumdough = /obj/item/chems/food/sliceable/largedough)
 
 //like atoms, it can no longer be sliced
 /obj/item/chems/food/smalldough
@@ -43,6 +46,7 @@
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/bread
+	attack_products = list(/obj/item/chems/food/smalldough = /obj/item/chems/food/sliceable/mediumdough)
 
 
 
@@ -76,6 +80,8 @@
 	. = ..()
 
 //Cutter interactions
+//Cutter interactions have been replaced with
+
 
 // slicable into 2x doughslices
 
@@ -106,6 +112,7 @@
 	slice_path = /obj/item/chems/food/flatsmalldough
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
+	attack_products = list(/obj/item/chems/food/sliceable/flatmediumdough = /obj/item/chems/food/sliceable/flatlargedough)
 
 //a unslicable small flat piece of dough
 /obj/item/chems/food/flatsmalldough
@@ -118,18 +125,7 @@
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/bread
-
-//slap interactions to undo the cutting ones
-
-/obj/item/chems/food/flatsmalldough/attack_products = list(/obj/item/chems/food/flatsmalldough = /obj/item/chems/food/sliceable/flatmediumdough)
-
-/obj/item/chems/food/sliceable/flatmediumdough/attack_products = list(/obj/item/chems/food/sliceable/flatmediumdough = /obj/item/chems/food/sliceable/flatlargedough)
-
-/obj/item/chems/food/smalldough/attack_products = list(/obj/item/chems/food/smalldough = /obj/item/chems/food/sliceable/mediumdough)
-
-/obj/item/chems/food/sliceable/mediumdough/attack_products = list(/obj/item/chems/food/sliceable/mediumdough = /obj/item/chems/food/sliceable/largedough)
-
-/obj/item/chems/food/plainburger/attack_products = list(/obj/item/chems/food/cheesewedge = /obj/item/chems/food/cheeseburger)
+	attack_products = list(/obj/item/chems/food/flatsmalldough = /obj/item/chems/food/sliceable/flatmediumdough)
 
 //slicables defines for dough
 
@@ -221,8 +217,6 @@
 		to_chat(user, "You roll up the baguette dough into a doughy lump.")
 		qdel(src)
 
-
-
 /obj/item/chems/food/doughslice
 	name = "dough slice"
 	desc = "A building block of an impressive dish."
@@ -235,22 +229,6 @@
 	nutriment_desc = list("dough" = 1)
 	nutriment_amt = 1
 	nutriment_type = /decl/material/liquid/nutriment/bread
-
-/obj/item/chems/food/bun
-	name = "bun"
-	desc = "A base for any self-respecting burger."
-	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "bun"
-	bitesize = 2
-	center_of_mass = @"{'x':16,'y':12}"
-	nutriment_desc = list("bun" = 4)
-	nutriment_amt = 4
-	nutriment_type = /decl/material/liquid/nutriment/bread
-	attack_products = list(
-		/obj/item/chems/food/meatball = /obj/item/chems/food/plainburger,
-		/obj/item/chems/food/cutlet = /obj/item/chems/food/hamburger,
-		/obj/item/chems/food/sausage = /obj/item/chems/food/hotdog
-	)
 
 /obj/item/chems/food/plainburger/attack_products = list(/obj/item/chems/food/cheesewedge = /obj/item/chems/food/cheeseburger)
 /obj/item/chems/food/hamburger/attack_products = list(/obj/item/chems/food/cheesewedge = /obj/item/chems/food/cheeseburger)
@@ -275,7 +253,7 @@
 /obj/item/chems/food/sliceable/breadloaf
 	name = "bread"
 	desc = "Some plain old loaf of bread."
-	icon_state = "bread"
+	icon_state = "large_bun"
 	slice_path = /obj/item/chems/food/slice/bread
 	slices_num = 5
 	filling_color = "#ffe396"
@@ -285,9 +263,25 @@
 	bitesize = 2
 	nutriment_type = /decl/material/liquid/nutriment/bread
 
+/obj/item/chems/food/bun
+	name = "bun"
+	desc = "A base for any self-respecting burger."
+	icon = 'icons/obj/food_ingredients.dmi'
+	icon_state = "medium_bun"
+	bitesize = 2
+	center_of_mass = @"{'x':16,'y':12}"
+	nutriment_desc = list("bun" = 4)
+	nutriment_amt = 4
+	nutriment_type = /decl/material/liquid/nutriment/bread
+	attack_products = list(
+		/obj/item/chems/food/meatball = /obj/item/chems/food/plainburger,
+		/obj/item/chems/food/cutlet = /obj/item/chems/food/hamburger,
+		/obj/item/chems/food/sausage = /obj/item/chems/food/hotdog
+	)
+
 /obj/item/chems/food/breadroll
 	name = "bread"
-	desc = "Some adorably tiny breadroll."
+	desc = "A adorably tiny breadroll."
 	icon_state = "small_bun"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
@@ -296,7 +290,7 @@
 	bitesize = 2
 	nutriment_type = /decl/material/liquid/nutriment/bread
 
-/obj/item/chems/food/flatmediumbread
+/obj/item/chems/food/largeflatbread
 	name = "flat bread"
 	desc = "A medium sized flat bread."
 	icon_state = "bread"
@@ -307,7 +301,18 @@
 	bitesize = 2
 	nutriment_type = /decl/material/liquid/nutriment/bread
 
-/obj/item/chems/food/flatsmallbread
+/obj/item/chems/food/mediumflatbread
+	name = "flat bread"
+	desc = "A medium sized flat bread."
+	icon_state = "bread"
+	filling_color = "#ffe396"
+	center_of_mass = @"{'x':16,'y':9}"
+	nutriment_desc = list("bread" = 4)
+	nutriment_amt = 4
+	bitesize = 2
+	nutriment_type = /decl/material/liquid/nutriment/bread
+
+/obj/item/chems/food/smallflatbread
 	name = "flat bread"
 	desc = "A small flat bread."
 	icon_state = "breadroll"

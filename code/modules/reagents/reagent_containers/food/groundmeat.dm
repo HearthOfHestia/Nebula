@@ -27,7 +27,7 @@
 	slices_num = 2
 	attack_products = list(/obj/item/chems/food/sliceable/mediummeat = /obj/item/chems/food/sliceable/largemeat)
 
-//like atoms, the small minced meat can no longer be sliced
+//like atoms, the small minced meat can no longer be sliced, but it may be merged to form a larger one
 /obj/item/chems/food/smallmeat
 	name = "minced meat"
 	desc = "A small ball of minced meat. Commonly known as a meatball."
@@ -94,9 +94,9 @@
 	slice_path = /obj/item/chems/food/flatsmallmeat
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
-/obj/item/chems/food/sliceable/flatmediummeat/attack_products = list(/obj/item/chems/food/sliceable/flatmediummeat = /obj/item/chems/food/sliceable/flatlargemeat)
+	attack_products = list(/obj/item/chems/food/sliceable/flatmediummeat = /obj/item/chems/food/sliceable/flatlargemeat)
 
-//a unslicable small flat piece of meat
+//a unslicable small flat piece of meat, it too can be combined to form a larger one
 /obj/item/chems/food/flatsmallmeat
 	name = "meat patty"
 	desc = "A small flat piece of meat."
@@ -107,16 +107,7 @@
 	nutriment_desc = list("meat" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/protein
-
-//slap interactions to undo the cutting ones
-
-/obj/item/chems/food/flatsmallmeat/attack_products = list(/obj/item/chems/food/flatsmallmeat = /obj/item/chems/food/sliceable/flatmediummeat)
-
-
-
-
-
-
+	attack_products = list(/obj/item/chems/food/flatsmallmeat = /obj/item/chems/food/sliceable/flatmediummeat)
 
 //slicables defines for meat
 
@@ -212,8 +203,8 @@
 
 /obj/item/chems/food/meatbaguette
 	name = "meat baguette"
-	desc = "Some adorably tiny meatroll."
-	icon_state = "meatroll"
+	desc = "A baguette wrought from redolent processed meat."
+	icon_state = "baguette_mince"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -223,8 +214,8 @@
 
 /obj/item/chems/food/meatsausagebun
 	name = "meat bun"
-	desc = "Some plain old meat."
-	icon_state = "meat"
+	desc = "A elongated bun fashioned from minced uncooked meat. How bold."
+	icon_state = "sausagebun_mince"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_amt = 6
@@ -234,7 +225,7 @@
 /obj/item/chems/food/meatpretzel
 	name = "meat pretzel"
 	desc = "A uncooked pretzel of meat."
-	icon_state = "meatpretzel"
+	icon_state = "pretzel_mince"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -242,10 +233,12 @@
 	bitesize = 2
 	nutriment_type = /decl/material/liquid/nutriment/protein
 
+//cooked variants
+
 /obj/item/chems/food/largepatty
 	name = "cooked patty"
 	desc = "A enormous slab of cooked processed meat."
-	icon_state = "meatroll"
+	icon_state = "flat_large_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -256,7 +249,7 @@
 /obj/item/chems/food/mediumpatty
 	name = "cooked patty"
 	desc = "A normal sized cooked meat patty."
-	icon_state = "meatroll"
+	icon_state = "flat_medium_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -267,7 +260,7 @@
 /obj/item/chems/food/smallpatty
 	name = "cooked patty"
 	desc = "A tiny cooked meat patty."
-	icon_state = "meatroll"
+	icon_state = "flat_small_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -276,9 +269,9 @@
 	nutriment_type = /decl/material/liquid/nutriment/protein
 
 /obj/item/chems/food/meatloaf
-	name = "cooked meat"
-	desc = "A loaf of meat."
-	icon_state = "meatroll"
+	name = "meat loaf"
+	desc = "A loaf of meat. Decidedly non-vegan."
+	icon_state = "large_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -289,7 +282,7 @@
 /obj/item/chems/food/frikadelle
 	name = "cooked meat"
 	desc = "A slightly larger meatball."
-	icon_state = "meatroll"
+	icon_state = "medium_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)
@@ -300,7 +293,7 @@
 /obj/item/chems/food/meatball
 	name = "cooked meat"
 	desc = "Meatroll, or a meat ball, if you will."
-	icon_state = "meatroll"
+	icon_state = "small_mince_cooked"
 	filling_color = "#ffe396"
 	center_of_mass = @"{'x':16,'y':9}"
 	nutriment_desc = list("meat" = 2)

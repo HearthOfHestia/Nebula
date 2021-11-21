@@ -79,6 +79,7 @@
 	nutriment_desc = list("bun" = 2)
 	nutriment_amt = 3
 	bitesize = 2
+	attack_products = list(/obj/item/chems/food/cheesewedge = /obj/item/chems/food/cheeseburger)
 
 /obj/item/chems/food/plainburger/Initialize()
 	. = ..()

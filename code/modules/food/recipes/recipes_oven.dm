@@ -430,19 +430,19 @@
 	)
 	result = /obj/item/chems/food/breadroll
 
-/decl/recipe/flatmediumbread
+/decl/recipe/mediumflatbread
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/sliceable/flatmediumdough = 1
 	)
-	result = /obj/item/chems/food/flatmediumbread
+	result = /obj/item/chems/food/mediumflatbread
 
-/decl/recipe/flatsmallbread
+/decl/recipe/flatbread
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/flatsmalldough = 1
 	)
-	result = /obj/item/chems/food/flatsmallbread
+	result = /obj/item/chems/food/flatbread
 
 /decl/recipe/plainbaguette
 	appliance = APPLIANCE_OVEN
