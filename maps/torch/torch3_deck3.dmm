@@ -4503,11 +4503,6 @@
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/vacant/cargo)
-"ko" = (
-/obj/machinery/space_heater,
-/obj/effect/floor_decal/industrial/outline/grey,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/port)
 "kp" = (
 /obj/machinery/atmospherics/portables_connector{
 	dir = 4
@@ -5637,12 +5632,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
-"ny" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/structure/ladder,
-/obj/structure/catwalk,
-/turf/simulated/floor/tiled/techfloor,
-/area/maintenance/thirddeck/port)
 "nz" = (
 /obj/structure/railing/mapped{
 	dir = 4;
@@ -6116,6 +6105,13 @@
 /obj/random/drinkbottle,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/recreation)
+"oQ" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 5
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "oT" = (
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -6609,8 +6605,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/aft)
 "qg" = (
+/obj/machinery/atmospherics/pipe/simple/visible,
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/binary/pump/on,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "qh" = (
@@ -7103,10 +7099,8 @@
 /obj/structure/rack{
 	dir = 8
 	},
-/obj/random/action_figure,
-/obj/random/action_figure,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
+/obj/random/material,
+/obj/random/material,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "rE" = (
@@ -8138,13 +8132,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
-"ug" = (
-/obj/structure/railing/mapped{
-	dir = 8;
-	icon_state = "railing0-1"
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/port)
 "uh" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/rack{
@@ -8468,16 +8455,6 @@
 /obj/machinery/power/apc/critical,
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
-"vk" = (
-/obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
-/obj/machinery/light/small{
-	dir = 1
-	},
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/port)
 "vm" = (
 /obj/machinery/door/airlock/chaplain{
 	name = "Chapel"
@@ -9259,8 +9236,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/hardstorage)
 "xw" = (
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
 /obj/structure/catwalk,
-/obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "xx" = (
@@ -9596,6 +9575,20 @@
 /obj/effect/floor_decal/corner/green,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
+"yn" = (
+/obj/machinery/power/apc{
+	name = "south bump";
+	pixel_y = -24
+	},
+/obj/structure/cable/green,
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "yp" = (
 /obj/item/radio/intercom{
 	dir = 8;
@@ -10158,10 +10151,15 @@
 /area/thruster/d3starboard)
 "Al" = (
 /obj/random/torchcloset,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/target/syndicate,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/random/drinkbottle,
+/obj/random/drinkingglass,
+/obj/random/drinkingglass,
+/obj/random/drinkingglass,
+/obj/random/drinkingglass,
+/obj/random/drinkingglass,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "Am" = (
@@ -10494,6 +10492,12 @@
 /obj/structure/closet/secure_closet/personal,
 /turf/simulated/floor/tiled/white/monotile,
 /area/crew_quarters/sleep/cryo)
+"Bx" = (
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/ladder,
+/obj/structure/catwalk,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "By" = (
 /obj/structure/hygiene/shower{
 	dir = 8
@@ -10671,6 +10675,12 @@
 /obj/random/tank,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
+"Ci" = (
+/obj/machinery/atmospherics/binary/pump/on{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "Cj" = (
 /obj/machinery/light/spot{
 	dir = 4
@@ -11785,18 +11795,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/maintenance/thirddeck/port)
-"Fg" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/random/bomb_supply,
-/obj/random/bomb_supply,
-/obj/random/bomb_supply,
-/obj/random/bomb_supply,
-/obj/random/bomb_supply,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
 "Fh" = (
 /obj/structure/rack{
 	dir = 8
@@ -11804,7 +11802,11 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/obj/random/junk,
+/obj/random/maintenance/solgov/clean,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
@@ -11942,6 +11944,17 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/security/habcheck)
+"FA" = (
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/obj/random/maintenance/solgov,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "FB" = (
 /obj/effect/paint/eggshell,
 /obj/effect/paint_stripe/common,
@@ -12146,18 +12159,7 @@
 /obj/machinery/alarm{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
-"Gk" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
+/obj/random/single/cola,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
 "Gl" = (
@@ -12168,10 +12170,6 @@
 /obj/random/trash,
 /turf/simulated/floor/plating,
 /area/vacant/cabin)
-"Gn" = (
-/obj/item/toy/desk/fan,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
 "Gp" = (
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/tiled/dark,
@@ -12354,16 +12352,10 @@
 /obj/structure/rack{
 	dir = 8
 	},
-/obj/random/junk,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
-"GK" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/random/single/cola,
-/obj/random/maintenance/solgov,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/vacant/cargo)
@@ -12618,20 +12610,6 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
-"HF" = (
-/obj/structure/rack{
-	dir = 8
-	},
-/obj/structure/cable/green,
-/obj/machinery/power/apc{
-	name = "south bump";
-	pixel_y = -24
-	},
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/tiled/techfloor,
-/area/vacant/cargo)
 "HG" = (
 /obj/structure/largecrate,
 /obj/random/maintenance/solgov,
@@ -13437,11 +13415,6 @@
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/habcheck)
-"Kf" = (
-/obj/random/torchcloset,
-/obj/random/maintenance/solgov,
-/turf/simulated/floor/plating,
-/area/maintenance/thirddeck/port)
 "Kg" = (
 /turf/simulated/floor/reinforced/carbon_dioxide,
 /area/thruster/d3starboard)
@@ -14450,6 +14423,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
+"Oi" = (
+/obj/random/torchcloset,
+/obj/random/maintenance/solgov/clean,
+/obj/random/maintenance/solgov/clean,
+/obj/random/maintenance/solgov/clean,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/aftport)
 "Oj" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/table/steel,
@@ -15222,6 +15202,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/crew_quarters/gym)
+"QW" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/visible{
+	dir = 10
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "QX" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
 /obj/structure/cable/green{
@@ -15491,6 +15481,19 @@
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
+"RU" = (
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "RV" = (
 /obj/structure/hygiene/shower{
 	dir = 1
@@ -15616,6 +15619,12 @@
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/carpet,
 /area/crew_quarters/sleep/dorms/two)
+"Ss" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/universal{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/maintenance/thirddeck/port)
 "St" = (
 /obj/machinery/door/airlock/external/bolted{
 	id_tag = "3rd_port_ext"
@@ -16879,6 +16888,10 @@
 	},
 /turf/simulated/open,
 /area/maintenance/thirddeck/aftport)
+"Ws" = (
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "Wu" = (
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 5
@@ -17740,6 +17753,13 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
+"Zq" = (
+/obj/structure/rack{
+	dir = 8
+	},
+/obj/item/toy/desk/fan,
+/turf/simulated/floor/tiled/techfloor,
+/area/vacant/cargo)
 "Zr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -38454,7 +38474,7 @@ GN
 GN
 CV
 GN
-HD
+Ss
 Ts
 Hf
 Hf
@@ -38656,7 +38676,7 @@ FI
 Gi
 Hk
 Fi
-HD
+Ci
 Ts
 HE
 Hf
@@ -38858,8 +38878,8 @@ Gj
 GI
 Hi
 Fi
-HD
-UZ
+QW
+oQ
 qK
 TT
 Yh
@@ -39060,7 +39080,7 @@ la
 Hj
 Hj
 GN
-vk
+GN
 xw
 qg
 TT
@@ -39259,10 +39279,10 @@ qi
 So
 Fi
 FJ
-Gk
+GI
 GJ
-Fi
-Ts
+yn
+GN
 Ts
 HG
 Hf
@@ -39462,10 +39482,10 @@ JV
 kl
 qp
 td
-HF
-Fi
-ko
-ny
+GI
+Bx
+GN
+Ts
 Hf
 Hf
 Hf
@@ -39664,10 +39684,10 @@ zl
 Fi
 qW
 wm
-GK
-Fi
-ug
-Hf
+Gl
+si
+GN
+xm
 Hf
 aa
 aa
@@ -39865,12 +39885,12 @@ tZ
 EB
 GN
 GN
+GN
 zx
 GN
 GN
 xm
 Hf
-aa
 aa
 aa
 aa
@@ -40067,12 +40087,12 @@ jt
 uX
 Fi
 rD
+RU
 Gl
 Fi
-Kf
+xm
 xm
 Hf
-aa
 aa
 aa
 aa
@@ -40268,13 +40288,13 @@ Nq
 CE
 xm
 Fi
-Fg
-Gl
+GI
+GI
+GI
 Fi
-uX
 zZ
-jZ
-aa
+uX
+Hf
 aa
 aa
 aa
@@ -40471,12 +40491,12 @@ CE
 xm
 Fi
 Fh
-Gl
+FA
+GI
 GN
 Ba
-Ba
+Oi
 jZ
-aa
 aa
 aa
 aa
@@ -40672,13 +40692,13 @@ Nq
 CE
 xm
 Fi
-si
-Gn
+GI
+GI
+GI
 GN
 Ba
-Ba
 jZ
-aa
+jZ
 aa
 aa
 aa
@@ -40874,10 +40894,10 @@ Nq
 CE
 xm
 Fi
-si
+Ws
 Al
+Zq
 GN
-Ba
 Ba
 jZ
 aa
@@ -41079,7 +41099,7 @@ GN
 GN
 GN
 GN
-Bc
+GN
 Ba
 jZ
 aa
