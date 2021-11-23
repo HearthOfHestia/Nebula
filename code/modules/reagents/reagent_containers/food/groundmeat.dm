@@ -1,7 +1,7 @@
 //meatkind and its various interactions with itself. Recipes are in a different .dm
 
 //The large pile of mince becomes two medium sized piles of mince
-/obj/item/chems/food/sliceable/largemeat
+/obj/item/chems/food/sliceable/largemince
 	name = "minced meat"
 	desc = "A large pile of of minced meat."
 	icon = 'icons/obj/food_ingredients.dmi'
@@ -11,11 +11,11 @@
 	nutriment_desc = list("meat" = 6)
 	nutriment_amt = 6
 	nutriment_type = /decl/material/liquid/nutriment/protein
-	slice_path = /obj/item/chems/food/sliceable/mediummeat
+	slice_path = /obj/item/chems/food/sliceable/mediummince
 	slices_num = 2
 
 // medium sized minced meat becomes two small minced meats
-/obj/item/chems/food/sliceable/mediummeat
+/obj/item/chems/food/sliceable/mediummince
 	name = "minced meat"
 	desc = "A medium sized wad of meat."
 	icon = 'icons/obj/food_ingredients.dmi'
@@ -23,12 +23,12 @@
 	center_of_mass = @"{'x':16,'y':16}"
 	nutriment_desc = list("meat" = 3)
 	nutriment_amt = 3
-	slice_path = /obj/item/chems/food/smallmeat
+	slice_path = /obj/item/chems/food/smallmince
 	slices_num = 2
-	attack_products = list(/obj/item/chems/food/sliceable/mediummeat = /obj/item/chems/food/sliceable/largemeat)
+	attack_products = list(/obj/item/chems/food/sliceable/mediummince = /obj/item/chems/food/sliceable/largemince)
 
 //like atoms, the small minced meat can no longer be sliced, but it may be merged to form a larger one
-/obj/item/chems/food/smallmeat
+/obj/item/chems/food/smallmince
 	name = "minced meat"
 	desc = "A small ball of minced meat. Commonly known as a meatball."
 	icon = 'icons/obj/food_ingredients.dmi'
@@ -38,36 +38,39 @@
 	nutriment_desc = list("meat" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/protein
-	attack_products = list(/obj/item/chems/food/smallmeat = /obj/item/chems/food/sliceable/mediummeat)
+	attack_products = list(/obj/item/chems/food/smallmince = /obj/item/chems/food/sliceable/mediummince)
 
 
 // Roller interactions
 
 // meat + rolling pin = flat meat
-/obj/item/chems/food/sliceable/largemeat/attackby(obj/item/W, mob/user)
+/obj/item/chems/food/sliceable/largemince/attackby(obj/item/W, mob/user)
 	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatlargemeat/result = new()
+		var/obj/item/chems/food/sliceable/flatlargemince/result = new()
 		result.dropInto(loc)
 		to_chat(user, "You flatten the meat.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 // meat + rolling pin = flat meat
-/obj/item/chems/food/sliceable/mediummeat/attackby(obj/item/W, mob/user)
+/obj/item/chems/food/sliceable/mediummince/attackby(obj/item/W, mob/user)
 	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/sliceable/flatmediummeat/result = new()
+		var/obj/item/chems/food/sliceable/flatmediummince/result = new()
 		result.dropInto(loc)
 		to_chat(user, "You flatten the meat.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 // meat + rolling pin = flat meat
-/obj/item/chems/food/smallmeat/attackby(obj/item/W, mob/user)
+/obj/item/chems/food/smallmince/attackby(obj/item/W, mob/user)
 	if(istype(W,/obj/item/kitchen/rollingpin))
-		var/obj/item/chems/food/flatsmallmeat/result = new()
+		var/obj/item/chems/food/flatsmallmince/result = new()
 		result.dropInto(loc)
 		to_chat(user, "You flatten the meat.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 //Cutter interactions
@@ -76,28 +79,29 @@
 
 
 // slicable into 2x meatslices
-/obj/item/chems/food/sliceable/flatlargemeat
+/obj/item/chems/food/sliceable/flatlargemince
 	name = "meat patty"
 	desc = "A large flattened meat."
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "large_flat_meat"
-	slice_path = /obj/item/chems/food/sliceable/flatmediummeat
+	slice_path = /obj/item/chems/food/sliceable/flatmediummince
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
+	attack_products = list(/obj/item/chems/food/sliceable/largedough = /obj/item/chems/food/rawbellington)
 
 // slicable into 2x smaller meatslices
-/obj/item/chems/food/sliceable/flatmediummeat
+/obj/item/chems/food/sliceable/flatmediummince
 	name = "meat patty"
 	desc = "A medium sized flattened meat."
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "medium_flat_meat"
-	slice_path = /obj/item/chems/food/flatsmallmeat
+	slice_path = /obj/item/chems/food/flatsmallmince
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
-	attack_products = list(/obj/item/chems/food/sliceable/flatmediummeat = /obj/item/chems/food/sliceable/flatlargemeat)
+	attack_products = list(/obj/item/chems/food/sliceable/flatmediummince = /obj/item/chems/food/sliceable/flatlargemince)
 
 //a unslicable small flat piece of meat, it too can be combined to form a larger one
-/obj/item/chems/food/flatsmallmeat
+/obj/item/chems/food/flatsmallmince
 	name = "meat patty"
 	desc = "A small flat piece of meat."
 	icon = 'icons/obj/food_ingredients.dmi'
@@ -107,7 +111,7 @@
 	nutriment_desc = list("meat" = 3)
 	nutriment_amt = 3
 	nutriment_type = /decl/material/liquid/nutriment/protein
-	attack_products = list(/obj/item/chems/food/flatsmallmeat = /obj/item/chems/food/sliceable/flatmediummeat)
+	attack_products = list(/obj/item/chems/food/flatsmallmince = /obj/item/chems/food/sliceable/flatmediummince)
 
 //slicables defines for meat
 
@@ -121,7 +125,7 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 3)
 	reagents.add_reagent(/decl/material/liquid/nutriment, 1)
 
-/obj/item/chems/food/sliceable/flatsmallmeat/Initialize()
+/obj/item/chems/food/sliceable/flatsmallmince/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 3)
 	reagents.add_reagent(/decl/material/liquid/nutriment, 1)
@@ -146,55 +150,55 @@
 //Hand interactions with the meat
 
 /obj/item/chems/food/sliceable/largeflatmeat/attack_self(mob/user)
-		var/obj/item/chems/food/sliceable/largemeat/result = new()
+		var/obj/item/chems/food/sliceable/largemince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the flat meat into a lump.")
 		qdel(src)
 
 /obj/item/chems/food/sliceable/mediumflatmeat/attack_self(mob/user)
-		var/obj/item/chems/food/sliceable/mediummeat/result = new()
+		var/obj/item/chems/food/sliceable/mediummince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the flat meat into a lump.")
 		qdel(src)
 
-/obj/item/chems/food/flatsmallmeat/attack_self(mob/user)
-		var/obj/item/chems/food/smallmeat/result = new()
+/obj/item/chems/food/flatsmallmince/attack_self(mob/user)
+		var/obj/item/chems/food/smallmince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the flat meat into a lump.")
 		qdel(src)
 
-/obj/item/chems/food/smallmeat/attack_self(mob/user)
+/obj/item/chems/food/smallmince/attack_self(mob/user)
 		var/obj/item/chems/food/rawpretzel/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the meat into a pretzel.")
 		qdel(src)
 
 /obj/item/chems/food/rawpretzel/attack_self(mob/user)
-		var/obj/item/chems/food/smallmeat/result = new()
+		var/obj/item/chems/food/smallmince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the uncooked pretzel into a meat wad.")
 		qdel(src)
 
-/obj/item/chems/food/sliceable/mediummeat/attack_self(mob/user)
+/obj/item/chems/food/sliceable/mediummince/attack_self(mob/user)
 		var/obj/item/chems/food/rawsausagebun/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the meat into a sausage bun.")
 		qdel(src)
 
 /obj/item/chems/food/rawsausagebun/attack_self(mob/user)
-		var/obj/item/chems/food/sliceable/mediummeat/result = new()
+		var/obj/item/chems/food/sliceable/mediummince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the sausage bun into a meat wad.")
 		qdel(src)
 
-/obj/item/chems/food/sliceable/largemeat/attack_self(mob/user)
+/obj/item/chems/food/sliceable/largemince/attack_self(mob/user)
 		var/obj/item/chems/food/rawbaguette/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the meat into a baguette shape.")
 		qdel(src)
 
 /obj/item/chems/food/rawbaguette/attack_self(mob/user)
-		var/obj/item/chems/food/sliceable/largemeat/result = new()
+		var/obj/item/chems/food/sliceable/largemince/result = new()
 		user.put_in_hands(result)
 		to_chat(user, "You roll up the baguette meat into a meaty lump.")
 		qdel(src)

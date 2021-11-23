@@ -56,7 +56,7 @@
 	desc = "A strip of meat."
 	icon = 'icons/obj/food_ingredients.dmi'
 	icon_state = "rawstrip"
-	slice_path = /obj/item/chems/food/smallmeat
+	slice_path = /obj/item/chems/food/smallmince
 	slices_num = 3
 	health = 60
 	filling_color = "#ff1c1c"

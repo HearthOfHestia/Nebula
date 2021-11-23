@@ -59,6 +59,7 @@
 		result.dropInto(loc)
 		to_chat(user, "You flatten the dough.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 // Dough + rolling pin = flat dough
@@ -68,6 +69,7 @@
 		result.dropInto(loc)
 		to_chat(user, "You flatten the dough.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 // Dough + rolling pin = flat dough
@@ -77,13 +79,12 @@
 		result.dropInto(loc)
 		to_chat(user, "You flatten the dough.")
 		qdel(src)
+		return TRUE
 	. = ..()
 
 //Cutter interactions
-//Cutter interactions have been replaced with
-
-
-// slicable into 2x doughslices
+//Cutter interactions have been replaced with slice paths
+// slicable into 2x doughs in scaling order
 
 /obj/item/chems/food/sliceable/flatdough
 	name = "flat dough"
@@ -102,6 +103,7 @@
 	slice_path = /obj/item/chems/food/sliceable/flatmediumdough
 	slices_num = 2
 	center_of_mass = @"{'x':16,'y':16}"
+	attack_products = list(/obj/item/chems/food/sliceable/largemince = /obj/item/chems/food/rawwellington)
 
 // slicable into 2x smaller doughslices
 /obj/item/chems/food/sliceable/flatmediumdough

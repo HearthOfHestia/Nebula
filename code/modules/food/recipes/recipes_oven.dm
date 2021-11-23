@@ -467,44 +467,46 @@
 
 //Recipes for Meatkinds
 
-/decl/recipe/largemeat
+/decl/recipe/largemince
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/largemeat = 1
+		/obj/item/chems/food/sliceable/largemince = 1
 	)
 	result = /obj/item/chems/food/meatloaf
 
-/decl/recipe/mediummeat
+/decl/recipe/mediummince
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/mediummeat = 1
+		/obj/item/chems/food/sliceable/mediummince = 1
 	)
 	result = /obj/item/chems/food/frikadelle
 
-/decl/recipe/smallmeat
+/decl/recipe/smallmince
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/smallmeat = 1
+		/obj/item/chems/food/smallmince = 1
 	)
 	result = /obj/item/chems/food/meatball
 
 /decl/recipe/largeflatmeat
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatlargemeat = 1
+		/obj/item/chems/food/sliceable/flatlargemince = 1
 	)
 	result = /obj/item/chems/food/largepatty
 
 /decl/recipe/mediumflatmeat
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/sliceable/flatmediummeat = 1
+		/obj/item/chems/food/sliceable/flatmediummince = 1
 	)
 	result = /obj/item/chems/food/mediumpatty
 
 /decl/recipe/smallflatmeat
 	appliance = APPLIANCE_OVEN
 	items = list(
-		/obj/item/chems/food/flatsmallmeat = 1
+		/obj/item/chems/food/flatsmallmince = 1
 	)
 	result = /obj/item/chems/food/smallpatty
+
+//And whenever the two shall meat.. meet. I meant meet.
