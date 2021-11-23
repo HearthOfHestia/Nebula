@@ -3091,7 +3091,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/engineering/atmos/aux)
@@ -3331,7 +3331,7 @@
 /area/vacant/mess)
 "hF" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
@@ -3492,7 +3492,7 @@
 /area/tcommsat/computer)
 "ib" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
@@ -4446,7 +4446,7 @@
 /area/hydroponics/storage)
 "kd" = (
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
@@ -5896,7 +5896,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
@@ -6094,7 +6094,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -15009,7 +15009,7 @@
 	dir = 1
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
@@ -15115,7 +15115,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
@@ -17484,7 +17484,7 @@
 "Xx" = (
 /obj/structure/table,
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)

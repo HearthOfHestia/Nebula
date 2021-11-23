@@ -1396,7 +1396,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/fourthdeck/fore)
@@ -5530,7 +5530,7 @@
 	dir = 1
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/center)
@@ -5888,7 +5888,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/teleporter/fourthdeck)
@@ -7326,7 +7326,7 @@
 	pixel_x = 21
 	},
 /obj/structure/closet/walllocker/skinsuit/security{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
@@ -8363,7 +8363,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/effect/catwalk_plated,
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/fore)
@@ -8508,7 +8508,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/fourthdeck/aft)
@@ -9060,7 +9060,7 @@
 /obj/effect/catwalk_plated/dark,
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/hallway/primary/fourthdeck/aft)
@@ -14863,7 +14863,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/hallway/primary/fourthdeck/aft)

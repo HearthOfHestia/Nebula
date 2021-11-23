@@ -1705,7 +1705,7 @@
 /obj/machinery/flasher/portable,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/walllocker/skinsuit/security{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
@@ -5429,7 +5429,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit/medical{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/medical/locker)
@@ -8010,9 +8010,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aIG" = (
@@ -9422,9 +9420,7 @@
 	},
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/catwalk,
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPP" = (
@@ -9814,9 +9810,7 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/firstdeck/foreport)
 "aRr" = (
@@ -13099,7 +13093,7 @@
 /area/medical/morgue/autopsy)
 "eso" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1port)
@@ -13894,7 +13888,7 @@
 	dir = 9
 	},
 /obj/structure/closet/walllocker/skinsuit/security{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/security/wing)
@@ -21923,7 +21917,7 @@
 	icon_state = "1-8"
 	},
 /obj/structure/closet/walllocker/skinsuit/science{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/rnd/research)
@@ -24344,7 +24338,7 @@
 /area/medical/equipstorage)
 "uxR" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d1starboard)
@@ -24440,7 +24434,7 @@
 	dir = 8
 	},
 /obj/structure/closet/walllocker/skinsuit/security{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/security/wing)

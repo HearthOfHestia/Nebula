@@ -3609,7 +3609,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cobed)
@@ -4392,7 +4392,7 @@
 	dir = 1
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
@@ -5346,7 +5346,7 @@
 	},
 /obj/machinery/recharger,
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
@@ -6929,7 +6929,7 @@
 	dir = 10
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
@@ -8291,7 +8291,7 @@
 	dir = 10
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 1
+	dir = 2
 	},
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
