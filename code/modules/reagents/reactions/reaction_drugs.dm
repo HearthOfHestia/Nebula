@@ -30,13 +30,6 @@
 	minimum_temperature = 50 CELSIUS
 	maximum_temperature = (50 CELSIUS) + 100
 
-/decl/chemical_reaction/lube
-	name = "Lubricant"
-	result = /decl/material/liquid/lube
-	required_reagents = list(/decl/material/liquid/water = 1, /decl/material/solid/silicon = 1, /decl/material/liquid/acetone = 1)
-	result_amount = 4
-	mix_message = "The solution becomes thick and slimy."
-
 /decl/chemical_reaction/pacid
 	name = "Polytrinic acid"
 	result = /decl/material/liquid/acid/polyacid
@@ -110,7 +103,7 @@
 /decl/chemical_reaction/nanitefluid
 	name = "Nanite Fluid"
 	result = /decl/material/liquid/nanitefluid
-	required_reagents = list(/decl/material/liquid/plasticide = 1, /decl/material/solid/metal/aluminium = 1, /decl/material/liquid/lube = 1)
+	required_reagents = list(/decl/material/liquid/plasticide = 1, /decl/material/solid/metal/aluminium = 1, /decl/material/liquid/water = 1)
 	catalysts = list(/decl/material/liquid/crystal_agent = 1)
 	result_amount = 3
 	minimum_temperature = (-25 CELSIUS) - 100

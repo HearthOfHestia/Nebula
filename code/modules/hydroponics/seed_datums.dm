@@ -242,7 +242,7 @@
 	seed_name = "blue tomato"
 	display_name = "blue tomato plant"
 	mutants = list("quantumato")
-	chems = list(/decl/material/liquid/nutriment = list(1,20), /decl/material/liquid/lube = list(1,5))
+	chems = list(/decl/material/liquid/nutriment = list(1,20), /decl/material/liquid/water = list(1,5))
 
 /datum/seed/tomato/blue/New()
 	..()

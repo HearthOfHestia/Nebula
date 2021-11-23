@@ -30,7 +30,7 @@
 	. = ..()
 	spawning_id = pick(
 		/decl/material/liquid/blood,     \
-		/decl/material/liquid/lube,      \
+		/decl/material/liquid/water,      \
 		/decl/material/liquid/sedatives, \
 		/decl/material/liquid/ethanol,   \
 		/decl/material/liquid/water,   \
