@@ -3312,6 +3312,10 @@
 /obj/structure/cable/green,
 /obj/effect/floor_decal/industrial/warning,
 /obj/structure/catwalk,
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 4;
+	pixel_x = -21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/firstdeck)
 "ahS" = (

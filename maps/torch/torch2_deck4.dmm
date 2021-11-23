@@ -4608,6 +4608,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 8;
+	pixel_x = 21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/fourthdeck)
 "rP" = (
@@ -5529,9 +5533,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 2
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/center)
 "uo" = (
@@ -7325,9 +7327,7 @@
 	dir = 8;
 	pixel_x = 21
 	},
-/obj/structure/closet/walllocker/skinsuit/security{
-	dir = 2
-	},
+/obj/structure/closet/walllocker/skinsuit/security,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/hangcheck)
 "AP" = (

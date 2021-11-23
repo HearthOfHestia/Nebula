@@ -1538,6 +1538,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 4;
+	pixel_x = -21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "dv" = (
@@ -6928,9 +6932,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
-/obj/structure/closet/walllocker/skinsuit/command{
-	dir = 2
-	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "uC" = (
@@ -8290,9 +8292,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
-/obj/structure/closet/walllocker/skinsuit/command{
-	dir = 2
-	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "yV" = (
