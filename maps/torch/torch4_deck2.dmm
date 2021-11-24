@@ -4147,9 +4147,7 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
 	},
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "jQ" = (
@@ -5317,7 +5315,7 @@
 /area/engineering/engine_room)
 "mU" = (
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/seconddeck)
@@ -6134,7 +6132,7 @@
 "pm" = (
 /obj/machinery/computer/modular/preset/engineering,
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
@@ -10452,6 +10450,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 4;
+	pixel_x = -21
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "Ay" = (
@@ -11579,7 +11581,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/shieldbay)
@@ -12292,7 +12294,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/plating,
 /area/engineering/atmos/storage)
@@ -15254,7 +15256,7 @@
 	dir = 4
 	},
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
@@ -16717,9 +16719,7 @@
 	dir = 1;
 	icon_state = "warningcorner"
 	},
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/seconddeck/fore)
 "Sz" = (
@@ -16836,9 +16836,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
 "SO" = (
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/seconddeck/fore)
 "SP" = (

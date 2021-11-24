@@ -158,13 +158,13 @@
 	if (temperature < set_temp)
 		if (use_power == POWER_USE_IDLE && ((set_temp - temperature) > 5))
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
-			use_power = POWER_USE_ACTIVE //If we're heating we use the active power
+			update_use_power(POWER_USE_ACTIVE) //If we're heating we use the active power
 			update_icon()
 		ADJUST_ATOM_TEMPERATURE(src, temperature + heating_power / resistance)
 		update_cooking_power()
 	else
 		if (use_power == POWER_USE_ACTIVE)
-			use_power = POWER_USE_IDLE
+			update_use_power(POWER_USE_IDLE)
 			playsound(src, 'sound/machines/click.ogg', 20, 1)
 			update_icon()
 	QUEUE_TEMPERATURE_ATOMS(src)

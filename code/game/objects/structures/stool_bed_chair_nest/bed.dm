@@ -142,12 +142,11 @@
 	icon_state = "down"
 	anchored = 0
 	buckle_pixel_shift = list("x" = 0, "y" = 0, "z" = 6)
-	atom_flags = ATOM_FLAG_WHEELED
+	movable_flags = MOVABLE_FLAG_WHEELED
 	var/item_form_type = /obj/item/roller	//The folded-up object path.
 	var/obj/item/chems/beaker
 	var/iv_attached = 0
 	var/iv_stand = TRUE
-	atom_flags = ATOM_FLAG_WHEELED
 
 /obj/structure/bed/roller/on_update_icon()
 	overlays.Cut()

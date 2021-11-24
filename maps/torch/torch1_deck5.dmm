@@ -6935,6 +6935,10 @@
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 8;
+	pixel_x = 21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/fifthdeck)
 "rd" = (

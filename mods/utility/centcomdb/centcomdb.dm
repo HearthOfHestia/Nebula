@@ -14,10 +14,11 @@
 	if (result["error"])
 		log_debug("byhttp error: [result["error"]] ([result["error_code"]])")
 		return "[result["error_code"]]"
-	if(!length(result["body"]))
+	if(length(result["body"]))
+		bans = json_decode(result["body"])
+	if(!length(bans))
 		body += "<center><b>0 bans detected for [mkey]</b></center><br>"
 		return body
-	bans = json_decode(result["body"])
 	body += "<center><b>[bans.len] ban\s detected for [mkey]</b></center>"
 	for(var/ban in bans)
 		body += "<b>Server: </b> [sanitize_text(ban["sourceName"])]<br>"

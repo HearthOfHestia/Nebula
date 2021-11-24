@@ -20,10 +20,6 @@
 	verbs -= /obj/machinery/portable_atmospherics/hydroponics/verb/close_lid_verb
 	verbs -= /obj/machinery/portable_atmospherics/hydroponics/verb/setlight
 
-/obj/machinery/portable_atmospherics/hydroponics/soil/Initialize()
-	. = ..()
-	return INITIALIZE_HINT_LATELOAD
-
 // Holder for vine plants.
 // Icons for plants are generated as overlays, so setting it to invisible wouldn't work.
 // Hence using a blank icon.
@@ -38,7 +34,7 @@
 	return ..() && seed.get_trait(TRAIT_HEAT_TOLERANCE) < 1000
 
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible/Initialize(mapload,var/datum/seed/newseed, var/start_mature)
-	. = ..()
+	. = ..(mapload) // avoid passing newseed as dir
 	seed = newseed
 	dead = 0
 	age = start_mature ? seed.get_trait(TRAIT_MATURATION) : 1

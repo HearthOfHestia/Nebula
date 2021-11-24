@@ -21,7 +21,7 @@
 /datum/category_item/player_setup_item/physical/ooc_notes/OnTopic(var/href,var/list/href_list, var/mob/user)
 	if(href_list["ooc_notes"])
 		var/new_notes = input(user, "Input your OOC notes.", "OOC Notes", pref.ooc_notes) as message
-		if(length_char(new_notes) >= 4256)
+		if(length_char(new_notes) >= (MAX_MESSAGE_LEN * 4))
 			to_chat(user, SPAN_WARNING("Your OOC notes are too long!"))
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 		pref.ooc_notes = sanitize_text(new_notes)
@@ -30,9 +30,11 @@
 
 /datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = FALSE)
 	..()
+	if(is_preview_copy)
+		return
 	addtimer(CALLBACK(src, .proc/copy_ooc_notes), 2 SECONDS)
 
 /datum/preferences/proc/copy_ooc_notes()
 	for(var/datum/mind/M in SSticker.minds) //Need to iterate minds, unfortunately.
-		if(lowertext(M.key) == client_ckey)
+		if(ckey(M.key) == client_ckey)
 			M.ooc_notes = ooc_notes
