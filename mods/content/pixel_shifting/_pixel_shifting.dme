@@ -1,8 +1,7 @@
-#ifndef MODPACK_OOC_NOTES
-#define MODPACK_OOC_NOTES
-#include "mind_overwrites.dm"
-#include "mob_overwrites.dm"
-#include "player_setup.dm"
+#ifndef MODPACK_PIXELSHIFTING
+#define MODPACK_PIXELSHIFTING
+#include "pixel_shifting.dm"
+#include "keybindings\mob.dm"
 #endif
 // BEGIN_INTERNALS
 // END_INTERNALS

@@ -23,6 +23,7 @@
 	#include "../../mods/content/psionics/_psionics.dme"
 	#include "../../mods/content/shards/_shards.dme"
 	#include "../../mods/content/xenobiology/_xenobiology.dme"
+	#include "../../mods/content/pixel_shifting/_pixel_shifting.dme"
 
 	#include "../../mods/mobs/dionaea/_dionaea.dme"
 	#include "../../mods/mobs/borers/_borers.dme"

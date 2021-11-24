@@ -501,9 +501,16 @@ default behaviour is:
 			if(affecting_mob)
 				affecting_mob.handle_grab_damage()
 
-/mob/living/Move(a, b, flag)
+/mob/living/Move(newloc, direct, flag)
 	if (buckled)
 		return
+	// Modpack edit - pixel shifting
+	if(shifting)
+		pixel_shift(direct)
+		return FALSE
+	else if(is_shifted)
+		unpixel_shift()
+	// end modpack edit
 	. = ..()
 	handle_grabs_after_move()
 	if (s_active && !( s_active in contents ) && get_turf(s_active) != get_turf(src))	//check !( s_active in contents ) first so we hopefully don't have to call get_turf() so much.
