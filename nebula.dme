@@ -3023,6 +3023,7 @@
 #include "code\modules\reagents\reagent_containers\food\rice.dm"
 #include "code\modules\reagents\reagent_containers\food\rotten.dm"
 #include "code\modules\reagents\reagent_containers\food\sandwich.dm"
+#include "code\modules\reagents\reagent_containers\food\slap_recipes.dm"
 #include "code\modules\reagents\reagent_containers\food\sliceable.dm"
 #include "code\modules\reagents\reagent_containers\food\soup.dm"
 #include "code\modules\reagents\reagent_containers\food\soy.dm"
