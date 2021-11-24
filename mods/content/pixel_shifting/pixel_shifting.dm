@@ -1,20 +1,20 @@
 /mob
-    /// Wether the mob is currently pixel shifted or not
-    var/is_shifted
-    /// If the mob is currently pixel shifting
-    var/shifting
+	/// Wether the mob is currently pixel shifted or not
+	var/is_shifted
+	/// If the mob is currently pixel shifting
+	var/shifting
 
 /mob/proc/unpixel_shift()
-    return
+	return
 
 /mob/living/unpixel_shift()
-    if(is_shifted)
-        is_shifted = FALSE
-        pixel_x = initial(pixel_x)
-        pixel_y = initial(pixel_y)
+	if(is_shifted)
+		is_shifted = FALSE
+		pixel_x = initial(pixel_x)
+		pixel_y = initial(pixel_y)
 
 /mob/proc/pixel_shift(direction)
-    return
+	return
 
 /mob/living/pixel_shift(direction)
 	switch(direction)
