@@ -4922,6 +4922,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"lS" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/cargo)
 "lT" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
 /obj/structure/cable/cyan{
@@ -10966,6 +10972,13 @@
 	name = "north bump";
 	pixel_y = 24
 	},
+/obj/structure/table/steel,
+/obj/machinery/cell_charger,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/item/crowbar/gold,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "Ce" = (
@@ -10978,13 +10991,27 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
 "Cf" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/structure/rack,
+/obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
+	amount = 30
 	},
-/obj/machinery/alarm{
-	pixel_y = 23;
-	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+/obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
+	amount = 30
 	},
+/obj/item/stack/material/reinforced/mapped/fiberglass/fifty{
+	amount = 30
+	},
+/obj/item/stack/material/reinforced/mapped/plasteel/fifty,
+/obj/item/stack/material/sheet/mapped/steel/fifty{
+	amount = 30
+	},
+/obj/item/stack/material/sheet/mapped/steel/fifty{
+	amount = 30
+	},
+/obj/item/stack/material/sheet/mapped/steel/fifty{
+	amount = 30
+	},
+/obj/item/stack/material/shiny/mapped/aluminium/fifty,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "Cg" = (
@@ -11117,7 +11144,8 @@
 /turf/simulated/floor/reinforced/airless,
 /area/engineering/fuelbay/aux)
 "CB" = (
-/obj/random/toolbox,
+/obj/structure/table/steel,
+/obj/item/storage/toolbox/repairs,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "CC" = (
@@ -11327,15 +11355,19 @@
 /area/storage/cargo)
 "Dd" = (
 /obj/structure/table/steel,
-/obj/machinery/cell_charger,
-/obj/item/cell/high,
-/obj/random/powercell,
-/obj/random/powercell,
+/obj/item/flashlight/lamp/lava/red,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "De" = (
-/obj/structure/closet/secure_closet/decktech,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/rack,
+/obj/item/clothing/suit/poncho/roles/cargo,
+/obj/item/clothing/suit/poncho/roles/cargo,
+/obj/item/clothing/accessory/armband/cargo,
+/obj/item/clothing/accessory/armband/cargo,
+/obj/item/clothing/suit/storage/hooded/wintercoat/cargo,
+/obj/item/clothing/suit/storage/hooded/wintercoat/cargo,
+/obj/item/radio,
+/obj/item/radio,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "Df" = (
@@ -11493,13 +11525,13 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/rnd/xenobiology/entry)
 "Dw" = (
-/obj/structure/dispenser/oxygen,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/item/key/cargo_train,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "Dx" = (
-/obj/machinery/portable_atmospherics/powered/scrubber,
-/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "Dy" = (
@@ -11562,6 +11594,10 @@
 /obj/item/storage/box/matches,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
+"DI" = (
+/obj/item/stool/padded,
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/cargo)
 "DK" = (
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 4
@@ -11620,11 +11656,16 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/entry)
 "DT" = (
-/obj/random/tank,
-/turf/simulated/floor/tiled/techfloor,
-/area/storage/cargo)
-"DU" = (
-/obj/structure/filingcabinet/filingcabinet,
+/obj/structure/rack,
+/obj/item/stack/package_wrap/twenty_five,
+/obj/item/stack/package_wrap/twenty_five,
+/obj/item/stack/package_wrap/twenty_five,
+/obj/item/stamp/supply,
+/obj/item/stamp/supply,
+/obj/item/stamp/supply,
+/obj/item/stamp/denied,
+/obj/item/stamp/denied,
+/obj/item/stamp/denied,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "DV" = (
@@ -17151,6 +17192,11 @@
 "TV" = (
 /obj/structure/ladder,
 /obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/machinery/alarm{
+	pixel_y = 23;
+	req_access = list(list("ACCESS_ENGINE_EQUIP","ACCESS_ATMOS"))
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/cargo)
 "TW" = (
@@ -18106,6 +18152,15 @@
 	},
 /turf/simulated/open,
 /area/engineering/foyer)
+"WW" = (
+/obj/effect/floor_decal/industrial/outline/grey,
+/obj/structure/closet/secure_closet/decktech,
+/obj/item/coin/silver{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/storage/cargo)
 "WX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -38327,7 +38382,7 @@ wU
 Hb
 Hb
 Hb
-Hb
+ag
 ED
 ZY
 Uu
@@ -38527,9 +38582,9 @@ AN
 AN
 Dc
 Dc
-ag
 Hb
 Hb
+af
 ED
 HI
 IJ
@@ -38730,7 +38785,7 @@ CB
 Dd
 Dc
 Dc
-Hb
+Dc
 Hb
 ED
 WY
@@ -38929,9 +38984,9 @@ SM
 AO
 NB
 Bs
-Bs
+DI
 Dw
-Dc
+WW
 Dc
 Hb
 Hb
@@ -39332,10 +39387,10 @@ Yy
 zS
 AN
 Cf
-Bs
+lS
 De
 Dx
-DU
+WW
 Dc
 Hb
 Hb
