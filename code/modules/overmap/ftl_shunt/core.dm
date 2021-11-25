@@ -48,7 +48,9 @@
 	var/jump_delay = 2 MINUTES
 	var/jump_timer //used to cancel the jump.
 	var/required_jump_cores = 0
+	//HEARTH EXCLUSIVE
 	var/cached_security_level
+	//HEARTH EXCLUSIVE END
 
 	var/power_on_animation_played = FALSE
 	var/power_off_animation_played = FALSE
@@ -60,7 +62,7 @@
 
 	var/static/shunt_start_text = "Attention! Superluminal shunt warm-up initiated! ETA to subsector jump: %%TIME%%"
 	var/static/shunt_cancel_text = "Attention! Subsector superluminal transition cancelled."
-	var/static/shunt_complete_text = "Attention! Subsector superluminal transition cancelled."
+	var/static/shunt_complete_text = "Attention! Subsector superluminal transition completed."
 	var/static/shunt_spooling_text = "Attention! Superluminal shunt warm-up complete, spooling up."
 
 	var/static/shunt_sabotage_text_minor = "Warning! Electromagnetic flux beyond safety limits - aborting shunt!"
@@ -369,7 +371,7 @@
 		var/shunt_turf = locate(shunt_x, shunt_y, O.z)
 		shunt_distance = get_dist(get_turf(ftl_computer.linked), shunt_turf)
 		required_jump_cores = shunt_distance
-		required_charge = (shunt_distance * vessel_mass)* REQUIRED_CHARGE_MULTIPLIER
+		required_charge = ((shunt_distance * vessel_mass)* REQUIRED_CHARGE_MULTIPLIER)*1000
 
 //Cancels the in-progress shunt.
 /obj/machinery/ftl_shunt/core/proc/cancel_shunt(var/silent = FALSE)
@@ -384,7 +386,9 @@
 		ftl_announcement.Announce(shunt_cancel_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	update_icon()
 	jump_timer = null
+	//HEARTH EXCLUSIVE
 	security_state.set_security_level(cached_security_level, TRUE)
+	//END HEARTH EXCLUSIVE
 
 //Starts the shunt, and then hands off to do_shunt to finish it.
 /obj/machinery/ftl_shunt/core/proc/execute_shunt()
@@ -395,12 +399,9 @@
 		ftl_computer.jump_plotted = FALSE
 		return
 
-	world << "shitcock"
-
 	if(can_use_fuel(required_jump_cores))
 		use_fuel(required_jump_cores)
 	else
-		world << "shitcockasstits"
 		cancel_shunt()
 		return //If for some reason we don't have fuel now, just return.
 
@@ -430,7 +431,9 @@
 	accumulated_charge -= required_charge
 	jump_timer = null
 	ftl_computer.jump_plotted = FALSE
-	security_state.set_security_level(cached_security_level, TRUE)
+	//HEARTH EXCLUSIVE
+	addtimer(CALLBACK(security_state, /decl/security_state/.proc/set_security_level, cached_security_level, TRUE), 4 SECONDS)
+	//END HEARTH EXCLUSIVE
 
 //Handles all the effects of the jump.
 /obj/machinery/ftl_shunt/core/proc/do_effects(var/distance) //If we're jumping too far, have some !!FUN!! with people and ship systems.
@@ -460,7 +463,7 @@
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MINOR)
 				to_chat(H, SPAN_NOTICE("You feel your insides flutter about inside of you as you are briefly shunted into an alternate dimension.")) //No major effects.
-				shake_camera(H, 2, 1)
+				shake_camera(H, 3, 3)
 
 			if(SHUNT_SEVERITY_MAJOR)
 				to_chat(H, SPAN_WARNING("You feel your insides twisted inside and out as you are violently shunted between dimensions, and you feel like something is watching you!"))
@@ -468,7 +471,7 @@
 					H.set_hallucination(50, 50)
 				if(prob(15))
 					H.vomit()
-				shake_camera(H, 2, 1)
+				shake_camera(H, 3, 3)
 
 			if(SHUNT_SEVERITY_CRITICAL)
 				to_chat(H, SPAN_DANGER("You feel an overwhelming sense of nausea and vertigo wash over you, your instincts screaming that something is wrong!"))
@@ -483,10 +486,10 @@
 			continue
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MINOR)
-				if(prob(15))
+				if(prob(25))
 					L.flicker()
 			if(SHUNT_SEVERITY_MAJOR)
-				if(prob(35))
+				if(prob(45))
 					L.flicker()
 
 	for(var/obj/machinery/power/apc/A in SSmachines.machinery)
@@ -494,9 +497,9 @@
 			continue
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MAJOR)
-				if(prob(15))
+				if(prob(25))
 					A.energy_fail(rand(30, 80))
-				if(prob(10))
+				if(prob(35))
 					A.overload_lighting(25)
 
 			if(SHUNT_SEVERITY_CRITICAL)

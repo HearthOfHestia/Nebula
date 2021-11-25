@@ -40,7 +40,7 @@
 		return INFINITY
 
 	var/jump_dist = get_dist(linked, locate(linked_core.shunt_x, linked_core.shunt_y, sector.z))
-	var/jump_cost_power = (jump_dist * linked.vessel_mass)* REQUIRED_CHARGE_MULTIPLIER
+	var/jump_cost_power = ((jump_dist * linked.vessel_mass)* REQUIRED_CHARGE_MULTIPLIER)*1000
 	return jump_cost_power
 
 /obj/machinery/computer/ship/ftl/proc/get_status()
@@ -123,7 +123,7 @@
 	data["to_plot_y"] = to_plot_y
 	data["fuel_joules"] = linked_core.get_charges() || 0
 	data["jumpcost"] = recalc_cost()
-	data["powercost"] = recalc_cost_power()
+	data["powercost"] = recalc_cost_power()/1000
 	data["chargetime"] = linked_core.get_charge_time()
 	data["chargepercent"] = linked_core.chargepercent
 	data["maxfuel"] = linked_core.get_max_charges()

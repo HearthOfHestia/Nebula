@@ -117,8 +117,8 @@
 
 	psionic_control_level = PSI_IMPLANT_LOG
 
-	up_description = "Subsector FTL Proceedures are now in effect; observe modified Code Orange protocols, brace for superluminal transition."
-	down_description = "Subsector FTL Proceedures are now in effect; observe modified Code Orange protocols, brace for superluminal transition."
+	up_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition."
+	down_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition."
 
 	selectable = FALSE
 
