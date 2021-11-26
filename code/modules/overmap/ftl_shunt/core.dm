@@ -51,6 +51,8 @@
 	//HEARTH EXCLUSIVE
 	var/cached_security_level
 	//HEARTH EXCLUSIVE END
+	var/datum/event/ftl_event
+	var/last_stress_sound
 
 	var/power_on_animation_played = FALSE
 	var/power_off_animation_played = FALSE
@@ -62,6 +64,7 @@
 
 	var/static/shunt_start_text = "Attention! Superluminal shunt warm-up initiated! ETA to subsector jump: %%TIME%%"
 	var/static/shunt_cancel_text = "Attention! Subsector superluminal transition cancelled."
+	var/static/shunt_entered_text = "Attention! Vessel has completed superluminal translation; FTL exit in %%TIME%% seconds."
 	var/static/shunt_complete_text = "Attention! Subsector superluminal transition completed."
 	var/static/shunt_spooling_text = "Attention! Superluminal shunt warm-up complete, spooling up."
 
@@ -74,6 +77,19 @@
 	var/obj/effect/shunt_dummy/portal
 	var/obj/effect/shunt_dummy/charge_indicator
 	var/obj/effect/shunt_dummy/pumps
+
+	var/static/ftl_sounds = list(
+		'sound/effects/thunder/thunder1.ogg',
+		'sound/effects/thunder/thunder2.ogg',
+		'sound/effects/thunder/thunder3.ogg',
+		'sound/effects/thunder/thunder4.ogg',
+		'sound/effects/thunder/thunder5.ogg',
+		'sound/effects/thunder/thunder6.ogg',
+		'sound/effects/thunder/thunder7.ogg',
+		'sound/effects/thunder/thunder8.ogg',
+		'sound/effects/thunder/thunder9.ogg',
+		'sound/effects/thunder/thunder10.ogg'
+		)
 
 	use_power = POWER_USE_OFF
 	power_channel = EQUIP
@@ -211,13 +227,6 @@
 			if(rand(15))
 				portal.animate_filter("glow", list(size = rand(1,2)*2, time = 1 SECONDS, offset = 2*rand(1,3)))
 				addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "glow", list(size = 2, time = 1 SECONDS, offset = 2)), 2 SECONDS)
-
-/*
-		if(!filter_data)
-			add_filter("ripple", 1, list(type="ripple", size = 5, repeat = 10, radius = 1))
-		animate_filter("ripple", list(time = 0.5 SECONDS, radius = 25, size = 5))
-		addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "ripple",list(time = 0.5 SECONDS, size = 0, radius = 0)), 0.6 SECONDS)
-*/
 
 /obj/machinery/ftl_shunt/core/examine(mob/user)
 	. = ..()
@@ -390,7 +399,7 @@
 	security_state.set_security_level(cached_security_level, TRUE)
 	//END HEARTH EXCLUSIVE
 
-//Starts the shunt, and then hands off to do_shunt to finish it.
+//Starts the shunt, and then hands off to enter_shunt to finish it.
 /obj/machinery/ftl_shunt/core/proc/execute_shunt()
 	ftl_announcement.Announce(shunt_spooling_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	if(sabotaged)
@@ -409,9 +418,7 @@
 	if(O)
 		var/destination = locate(shunt_x, shunt_y, O.z)
 		var/jumpdist = get_dist(get_turf(ftl_computer.linked), destination)
-		var/obj/effect/portal/wormhole/W = new(destination) //Generate a wormhole effect on overmap to give some indication that something is about to happen.
-		QDEL_IN(W, 6 SECONDS)
-		addtimer(CALLBACK(src, .proc/do_shunt, shunt_x, shunt_y, jumpdist, destination), 6 SECONDS)
+		addtimer(CALLBACK(src, .proc/enter_shunt, shunt_x, shunt_y, jumpdist, destination), 6 SECONDS)
 		jumping = TRUE
 		update_icon()
 		for(var/mob/living/carbon/M in global.living_mob_list_)
@@ -419,9 +426,23 @@
 				continue
 			sound_to(M, 'sound/machines/hyperspace_begin.ogg')
 
-/obj/machinery/ftl_shunt/core/proc/do_shunt(var/turfx, var/turfy, var/jumpdist, var/destination) //this does the actual teleportation, execute_shunt is there to give us time to do our fancy effects
+/obj/machinery/ftl_shunt/core/proc/enter_shunt(var/shunt_x, var/shunt_x, var/jumpdist, var/destination)
+	var/announcetxt = replacetext(shunt_entered_text, "%%TIME%%", "[round((jumpdist*JUMP_TIME_PER_TILE)/60)]")
+	var/datum/event_meta/EM = new(EVENT_LEVEL_MUNDANE, "FTL", /datum/event/ftl, add_to_queue = FALSE, is_one_shot = TRUE)
+	ftl_event = new /datum/event/ftl(EM)
+	ftl_event.startWhen = 0
+	ftl_event.endWhen = INFINITY
+	ftl_event.affecting_z = ftl_computer.linked.map_z
+	ftl_computer.linked.loc = null
+	ftl_computer.linked.halted = TRUE
+
+	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
+	addtimer(CALLBACK(src, .proc/end_shunt, shunt_x, shunt_y, jumpdist, destination),jumpdist*JUMP_TIME_PER_TILE)
+
+/obj/machinery/ftl_shunt/core/proc/end_shunt(var/turfx, var/turfy, var/jumpdist, var/destination) //this does the actual teleportation, execute_shunt is there to give us time to do our fancy effects
 	var/decl/security_state/security_state = GET_DECL(global.using_map.security_state)
 	ftl_computer.linked.forceMove(destination)
+	ftl_computer.linked.halted = FALSE
 	ftl_announcement.Announce(shunt_complete_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	cooldown = world.time + cooldown_delay
 	do_effects(jumpdist)
@@ -434,6 +455,9 @@
 	//HEARTH EXCLUSIVE
 	addtimer(CALLBACK(security_state, /decl/security_state/.proc/set_security_level, cached_security_level, TRUE), 4 SECONDS)
 	//END HEARTH EXCLUSIVE
+	if(ftl_event)
+		ftl_event.kill()
+		ftl_event = null
 
 //Handles all the effects of the jump.
 /obj/machinery/ftl_shunt/core/proc/do_effects(var/distance) //If we're jumping too far, have some !!FUN!! with people and ship systems.
@@ -637,6 +661,15 @@
 			accumulated_charge = clamp(accumulated_charge, 0, max_charge)
 		SSradiation.radiate(src, (active_power_usage / 1000))
 	chargepercent = round(100*(accumulated_charge/max_charge), 0.1)
+
+	if(jumping)
+		if(prob(15) && last_stress_sound < world.time + 2 SECONDS)
+			for(var/mob/living/carbon/M in global.living_mob_list_)
+				if(!(M.z in ftl_computer.linked.map_z))
+					continue
+				sound_to(M, pick(ftl_sounds))
+				shake_camera(M, rand(1,2), rand(1,2))
+			last_stress_sound = world.time
 
 // 
 // Construction MacGuffins down here.
