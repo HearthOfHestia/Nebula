@@ -3430,6 +3430,7 @@
 /area/hallway/primary/thirddeck/aft)
 "hV" = (
 /obj/effect/floor_decal/industrial/outline/grey,
+/obj/machinery/design_database,
 /turf/simulated/floor/bluegrid,
 /area/tcommsat/chamber)
 "hW" = (
