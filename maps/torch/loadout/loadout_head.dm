@@ -60,3 +60,22 @@
 
 /decl/loadout_option/head/corporateberet
 	allowed_branches = CIVILIAN_BRANCHES
+
+/decl/loadout_option/head/pilot_helmet
+	name = "ISSC pilot helmet"
+	description = "A customized pilot's helmet."
+	path = /obj/item/clothing/head/helmet/pilot/alternate
+	allowed_branches = ISEO_BRANCHES
+	allowed_roles = list(/datum/job/nt_pilot)
+
+/decl/loadout_option/head/pilot_helmet/Initialize()
+	. = ..()
+	var/helmets = list()
+	helmets["mobius pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/mobius
+	helmets["viper pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/viper
+	helmets["red one pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/luke
+	helmets["shark pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/shark
+	helmets["corvid pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/corvid
+	helmets["ace of spades pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/ace
+	helmets["checker pattern"] = /obj/item/clothing/head/helmet/pilot/alternate/checker
+	gear_tweaks += new/datum/gear_tweak/path(helmets)
