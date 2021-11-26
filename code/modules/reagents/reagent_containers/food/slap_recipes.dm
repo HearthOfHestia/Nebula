@@ -45,7 +45,7 @@
 	name = "uncooked meat dumpling"
 	desc = "A uncooked meat dumpling."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "raw_bellington"
+	icon_state = "raw_dumpling"
 	bitesize = 2
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
@@ -55,7 +55,7 @@
 	name = "uncooked rissole"
 	desc = "A uncooked rissole."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "raw_bellington"
+	icon_state = "raw_rissole"
 	bitesize = 2
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
@@ -85,9 +85,9 @@
 
 /obj/item/chems/food/pirogi
 	name = "pirogi"
-	desc = "A slab of weef bellington... Wait."
+	desc = "A bready crust hiding some mushy goodness."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "raw_bellington"
+	icon_state = "pirogi"
 	bitesize = 2
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
@@ -97,7 +97,7 @@
 	name = "unknown"
 	desc = "A fried meat wrapped around some bread."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "raw_bellington"
+	icon_state = ""
 	bitesize = 2
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
@@ -107,7 +107,7 @@
 	name = "dumpling"
 	desc = "A dumples."
 	icon = 'icons/obj/food_ingredients.dmi'
-	icon_state = "raw_bellington"
+	icon_state = "dumpling"
 	bitesize = 2
 	nutriment_desc = list("dough" = 3)
 	nutriment_amt = 3
