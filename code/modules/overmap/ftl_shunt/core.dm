@@ -365,7 +365,7 @@
 	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 
 	cached_security_level = security_state.current_security_level
-	security_state.set_security_level(GET_DECL(/decl/security_level/default/torchdept/code_yellow), TRUE)
+	security_state.set_security_level(GET_DECL(/decl/security_level/default/code_yellow), TRUE)
 	update_icon()
 
 	if(check_charge())

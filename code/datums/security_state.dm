@@ -296,6 +296,21 @@
 	alarm_icon = "alarm_normal"
 	alarm_icon_color = PIPE_COLOR_GREEN
 
+/decl/security_level/default/code_yellow
+	name = "code yellow"
+	icon = 'icons/misc/security_state.dmi'
+
+	light_color_alarm = COLOR_YELLOW_GRAY
+	light_color_status_display = COLOR_YELLOW_GRAY
+	overlay_alarm = "alarm_orange"
+	overlay_status_display = "status_display_orange"
+	alarm_appearance = /datum/alarm_appearance/yellow
+
+	up_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition. EVA Ban in effect."
+	down_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition. EVA Ban in effect."
+
+	selectable = FALSE
+
 /datum/alarm_appearance/blue
 	display_icon = "status_display_lines"
 	display_icon_color = COLOR_BLUE
@@ -331,3 +346,13 @@
 
 	alarm_icon_twotone = "alarm_blinking_twotone2"
 	alarm_icon_twotone_color = PIPE_COLOR_YELLOW
+
+/datum/alarm_appearance/yellow
+	display_icon = "status_display_lines"
+	display_icon_color = COLOR_YELLOW_GRAY
+
+	display_emblem = "status_display_ftl"
+	display_emblem_color = COLOR_WHITE
+
+	alarm_icon = "alarm_normal"
+	alarm_icon_color = COLOR_YELLOW_GRAY

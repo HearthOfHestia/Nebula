@@ -19,7 +19,7 @@
 
 //Torch map alert levels. Refer to security_state.dm.
 /decl/security_state/default/torchdept
-	all_security_levels = list(/decl/security_level/default/torchdept/code_green, /decl/security_level/default/torchdept/code_violet, /decl/security_level/default/torchdept/code_orange, /decl/security_level/default/torchdept/code_yellow, /decl/security_level/default/torchdept/code_blue, /decl/security_level/default/torchdept/code_red, /decl/security_level/default/torchdept/code_delta)
+	all_security_levels = list(/decl/security_level/default/torchdept/code_green, /decl/security_level/default/torchdept/code_violet, /decl/security_level/default/torchdept/code_orange, /decl/security_level/default/code_yellow, /decl/security_level/default/torchdept/code_blue, /decl/security_level/default/torchdept/code_red, /decl/security_level/default/torchdept/code_delta)
 
 	
 /decl/security_level/default/torchdept
@@ -104,23 +104,6 @@
 /decl/security_level/default/torchdept/code_orange/switching_down_to()
 	. = ..()
 	INVOKE_ASYNC(src, /decl/security_level/default/torchdept/proc/lock_armory, list(/area/security/armoury, /area/security/armoury/blue))
-
-/decl/security_level/default/torchdept/code_yellow
-	name = "code yellow"
-	icon = 'icons/misc/security_state.dmi'
-
-	light_color_alarm = COLOR_YELLOW_GRAY
-	light_color_status_display = COLOR_YELLOW_GRAY
-	overlay_alarm = "alarm_orange"
-	overlay_status_display = "status_display_orange"
-	alarm_appearance = /datum/alarm_appearance/yellow
-
-	psionic_control_level = PSI_IMPLANT_LOG
-
-	up_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition. EVA Ban in effect."
-	down_description = "Subsector FTL Procedures are now in effect; observe modified Code Orange protocols, secure all stations for superluminal transition. EVA Ban in effect."
-
-	selectable = FALSE
 
 /decl/security_level/default/torchdept/code_blue
 	name = "code blue"
@@ -216,16 +199,6 @@
 
 	alarm_icon = "alarm_normal"
 	alarm_icon_color = COLOR_VIOLET
-
-/datum/alarm_appearance/yellow
-	display_icon = "status_display_lines"
-	display_icon_color = COLOR_YELLOW_GRAY
-
-	display_emblem = "status_display_ftl"
-	display_emblem_color = COLOR_WHITE
-
-	alarm_icon = "alarm_normal"
-	alarm_icon_color = COLOR_YELLOW_GRAY
 
 #undef PSI_IMPLANT_AUTOMATIC
 #undef PSI_IMPLANT_SHOCK
