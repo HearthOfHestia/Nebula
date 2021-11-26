@@ -174,12 +174,10 @@
 		sheets_input = clamp(sheets_input, 1, ST.amount)
 
 		var/free_space = BIOPRINTER_MAX_MATERIALS - materials[ST.matter[1]]
-
-		if(free_space == 0)
-			to_chat(user, SPAN_WARNING("\The [src] is full of [ST]!"))
-			return
-
 		var/max_input = round((free_space / SHEET_MATERIAL_AMOUNT))
+		if(max_input == 0)
+			to_chat(user, SPAN_WARNING("\The [src] is too full to add \the [ST]!"))
+			return
 
 		sheets_input = min(sheets_input, max_input)
 
