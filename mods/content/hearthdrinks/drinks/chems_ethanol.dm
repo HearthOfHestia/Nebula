@@ -201,7 +201,7 @@
 	name = "Yek'ala"
 	lore_text = "Yek'ala is a Yeosa'Unathi delicacy, made from various Moghsian fish. It is strongly alcoholic."
 	taste_description = "alcoholic anchovies"
-	color = "7052dd"
+	color = "#7052dd"
 	strength = 25
 	exoplanet_rarity = MAT_RARITY_NOWHERE
 	uid = "chem_ethanol_yekla"
