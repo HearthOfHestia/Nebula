@@ -433,7 +433,7 @@
 	ftl_event.startWhen = 0
 	ftl_event.endWhen = INFINITY
 	ftl_event.affecting_z = ftl_computer.linked.map_z
-	ftl_computer.linked.loc = null
+	ftl_computer.linked.forceMove(null)
 	ftl_computer.linked.halted = TRUE
 
 	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
