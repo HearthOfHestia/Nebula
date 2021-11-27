@@ -10,6 +10,7 @@
 	maxHealth = 250
 	health = 250
 	desc = "A six-legged remote interface drone, coloquially known as a thinktank."
+	holder_type = null
 
 /mob/living/silicon/robot/drone/shard/Initialize()
 	. = ..()
@@ -120,7 +121,7 @@
 	if(stat & NOPOWER)
 		return
 
-	if(!produce_drones || !config.allow_drone_spawn || count_drones() >= config.max_maint_drones)
+	if(!produce_drones)
 		return
 
 	if(player && !isghost(player.mob))
@@ -133,7 +134,7 @@
 
 	var/mob/living/silicon/robot/drone/new_drone = new temp_drone_type(get_turf(src))
 	if(player)
-		announce_ghost_joinleave(player, 0, "They have taken control over a maintenance drone.")
+		announce_ghost_joinleave(player, 0, "They have taken control over a shard interface chassis.")
 		if(player.mob && player.mob.mind) player.mob.mind.reset()
 		new_drone.transfer_personality(player)
 

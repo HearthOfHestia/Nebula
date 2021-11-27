@@ -19,8 +19,9 @@
 
 //Torch map alert levels. Refer to security_state.dm.
 /decl/security_state/default/torchdept
-	all_security_levels = list(/decl/security_level/default/torchdept/code_green, /decl/security_level/default/torchdept/code_violet, /decl/security_level/default/torchdept/code_orange, /decl/security_level/default/torchdept/code_blue, /decl/security_level/default/torchdept/code_red, /decl/security_level/default/torchdept/code_delta)
+	all_security_levels = list(/decl/security_level/default/torchdept/code_green, /decl/security_level/default/torchdept/code_violet, /decl/security_level/default/torchdept/code_orange, /decl/security_level/default/code_yellow, /decl/security_level/default/torchdept/code_blue, /decl/security_level/default/torchdept/code_red, /decl/security_level/default/torchdept/code_delta)
 
+	
 /decl/security_level/default/torchdept
 	icon = 'maps/torch/icons/security_state.dmi'
 	alarm_appearance = /datum/alarm_appearance/green
@@ -67,6 +68,7 @@
 
 /decl/security_level/default/torchdept/code_violet
 	name = "code violet"
+	icon = 'icons/misc/security_state.dmi'
 
 	light_color_alarm = COLOR_VIOLET
 	light_color_status_display = COLOR_VIOLET
@@ -86,6 +88,7 @@
 
 /decl/security_level/default/torchdept/code_orange
 	name = "code orange"
+	icon = 'icons/misc/security_state.dmi'
 
 	light_color_alarm = COLOR_ORANGE
 	light_color_status_display = COLOR_ORANGE

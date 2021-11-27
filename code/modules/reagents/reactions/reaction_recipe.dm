@@ -154,3 +154,20 @@
 	required_reagents = list(/decl/material/liquid/drink/juice/pumpkinpulp = 2, /decl/material/liquid/drink/syrup/sugar = 3)
 	result_amount = 5
 	mix_message = "The solution takes on an orange hue and the aroma of pumpkin spice."
+
+// HEARTH EDIT START
+/decl/chemical_reaction/recipe/browniemix
+	name = "Brownie Mix"
+	result = /decl/material/liquid/nutriment/browniemix
+	required_reagents = list(/decl/material/liquid/nutriment/flour = 5, /decl/material/liquid/nutriment/coco = 5, /decl/material/liquid/nutriment/sugar = 5)
+	result_amount = 15
+	mix_message = "The solution is mixed into a light brown powder."
+
+/decl/chemical_reaction/recipe/beerbatter
+	name = "Beer Batter Mix"
+	result = /decl/material/liquid/nutriment/batter/beerbatter
+	required_reagents = list(/decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/ethanol/beer = 5,/decl/material/solid/sodiumchloride = 2)
+	result_amount = 20
+	mix_message = "The solution thickens into a light batter."
+
+	//HEARTH EDIT END

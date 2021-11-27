@@ -1538,6 +1538,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 4;
+	pixel_x = -21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/bridge)
 "dv" = (
@@ -3609,7 +3613,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/heads/cobed)
@@ -4392,7 +4396,7 @@
 	dir = 1
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
@@ -5346,7 +5350,7 @@
 	},
 /obj/machinery/recharger,
 /obj/structure/closet/walllocker/skinsuit{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
@@ -6928,9 +6932,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
-/obj/structure/closet/walllocker/skinsuit/command{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "uC" = (
@@ -8290,9 +8292,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 10
 	},
-/obj/structure/closet/walllocker/skinsuit/command{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit/command,
 /turf/simulated/floor/tiled/dark,
 /area/bridge/storage)
 "yV" = (

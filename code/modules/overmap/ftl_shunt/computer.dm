@@ -29,8 +29,7 @@
 	if(!istype(sector))
 		return INFINITY
 	var/jump_dist = get_dist(linked, locate(linked_core.shunt_x, linked_core.shunt_y, sector.z))
-	var/jump_cost = ((linked.vessel_mass * JOULES_PER_TON) / 1000) * jump_dist
-	return jump_cost
+	return jump_dist
 
 /obj/machinery/computer/ship/ftl/proc/recalc_cost_power()
 	if(!linked_core)
@@ -41,8 +40,7 @@
 		return INFINITY
 
 	var/jump_dist = get_dist(linked, locate(linked_core.shunt_x, linked_core.shunt_y, sector.z))
-	var/jump_cost = ((linked.vessel_mass * JOULES_PER_TON) / 1000) * jump_dist
-	var/jump_cost_power = jump_cost * REQUIRED_CHARGE_MULTIPLIER
+	var/jump_cost_power = ((jump_dist * linked.vessel_mass)* REQUIRED_CHARGE_MULTIPLIER)*1000
 	return jump_cost_power
 
 /obj/machinery/computer/ship/ftl/proc/get_status()
@@ -123,13 +121,12 @@
 	data["shunt_y"] = linked_core.shunt_y
 	data["to_plot_x"] = to_plot_x
 	data["to_plot_y"] = to_plot_y
-	data["fuel_joules"] = (linked_core.get_fuel(linked_core.fuel_ports) / 1000)
-	data["fuel_conversion"] = linked_core.get_total_fuel_conversion_rate()
+	data["fuel_joules"] = linked_core.get_charges() || 0
 	data["jumpcost"] = recalc_cost()
-	data["powercost"] = recalc_cost_power()
+	data["powercost"] = recalc_cost_power()/1000
 	data["chargetime"] = linked_core.get_charge_time()
 	data["chargepercent"] = linked_core.chargepercent
-	data["maxfuel"] = linked_core.get_fuel_maximum(linked_core.fuel_ports)
+	data["maxfuel"] = linked_core.get_max_charges()
 	data["jump_status"] = get_status()
 	data["power_input"] = linked_core.allowed_power_usage / 1000
 	data["max_power"] = linked_core.max_power_usage / 1000

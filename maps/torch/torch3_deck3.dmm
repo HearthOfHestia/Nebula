@@ -1039,6 +1039,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "cR" = (
@@ -3035,7 +3038,7 @@
 	},
 /obj/structure/catwalk,
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/engineering/atmos/aux)
@@ -3080,6 +3083,10 @@
 	dir = 1
 	},
 /obj/structure/catwalk,
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 8;
+	pixel_x = 21
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "hl" = (
@@ -3228,7 +3235,7 @@
 /area/vacant/mess)
 "hF" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3port)
@@ -3389,7 +3396,7 @@
 /area/tcommsat/computer)
 "ib" = (
 /obj/structure/closet/walllocker/skinsuit/engineering{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/thruster/d3starboard)
@@ -4291,9 +4298,7 @@
 /turf/simulated/floor/tiled,
 /area/hydroponics/storage)
 "kd" = (
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "ke" = (
@@ -5946,7 +5951,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/closet/walllocker/skinsuit/command{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/command/disperser)
@@ -15062,9 +15067,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/crew_quarters/safe_room/thirddeck)
 "Px" = (
@@ -15167,9 +15170,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
 "PQ" = (
@@ -17575,9 +17576,7 @@
 /area/hallway/primary/thirddeck/aft)
 "Xx" = (
 /obj/structure/table,
-/obj/structure/closet/walllocker/skinsuit{
-	dir = 1
-	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/dark,
 /area/teleporter/thirddeck)
 "Xz" = (

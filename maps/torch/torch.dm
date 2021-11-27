@@ -200,6 +200,7 @@
 	#include "items\hearth_clothing\hats_general.dm"
 	#include "structures\closets\suit_lockers.dm"
 	#include "items\hearth_clothing\skinsuits.dm"
+	#include "items\hearth_clothing\hats.dm"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"

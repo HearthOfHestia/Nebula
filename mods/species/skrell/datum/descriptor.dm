@@ -17,6 +17,22 @@
 		"very long (Qerr-Katish)" = 5
 		)
 
+	comparative_value_descriptor_equivalent = "as long as yours"
+
+	comparative_value_descriptors_smaller = list(
+		"slightly shorter than yours",
+		"shorter than yours",
+		"much shorter than yours",
+		"tiny and insignificant next to yours"
+	)
+
+	comparative_value_descriptors_larger = list(
+		"slightly longer than yours",
+		"longer than yours",
+		"much longer than yours",
+		"gigantic compared to yours"
+	)
+
 /datum/appearance_descriptor/headtail_length/get_first_person_message_start()
 	. = "Your headtails are"
 
