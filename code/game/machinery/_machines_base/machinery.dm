@@ -86,6 +86,7 @@ Class Procs:
 		/decl/material/solid/metal/steel = MATTER_AMOUNT_PRIMARY
 	)
 
+	var/register_for_area_power_change = TRUE
 	var/stat = 0
 	var/waterproof = TRUE
 	var/reason_broken = 0

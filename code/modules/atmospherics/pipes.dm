@@ -2,6 +2,8 @@
 
 /obj/machinery/atmospherics/pipe
 
+	register_for_area_power_change = FALSE
+
 	var/datum/gas_mixture/air_temporary    // used when reconstructing a pipeline that broke
 	var/datum/reagents/liquid_temporary // used when reconstructing a pipeline that broke
 
