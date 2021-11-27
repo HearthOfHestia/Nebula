@@ -17,6 +17,7 @@
 	#include "..\..\mods\content\neural_laces\_laces.dme"
 	#include "..\..\mods\content\genemodding\_genemodding.dme"
 	#include "..\..\mods\content\hearthfoods\_hearthfoods.dme"
+	#include "..\..\mods\content\hearthdrinks\_hearthdrinks.dme"
 	#include "..\..\mods\content\shards\_shards.dme"
 
 	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
