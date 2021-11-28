@@ -215,12 +215,12 @@
 	return TRUE
 
 /obj/machinery/appliance/attackby(var/obj/item/I, var/mob/user)
+	if(component_attackby(I, user))
+		return TRUE
+
 	if(!cook_type || (stat & (BROKEN)))
 		to_chat(user, SPAN_WARNING("[src] is not working."))
 		return
-
-	if(component_attackby(I, user))
-		return TRUE
 
 	var/result = can_insert(I, user)
 	if(result == CANNOT_INSERT)

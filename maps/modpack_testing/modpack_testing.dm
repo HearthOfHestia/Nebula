@@ -16,6 +16,7 @@
 	#include "../../mods/content/hearth_content/_hearth_content.dme"
 	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
 	#include "../../mods/content/hearthfoods/_hearthfoods.dme"
+	#include "../../mods/content/hearthdrinks/_hearthdrinks.dme"
 	#include "../../mods/content/matchmaking/_matchmaking.dme"
 	#include "../../mods/content/modern_earth/_modern_earth.dme"
 	#include "../../mods/content/mouse_highlights/_mouse_highlight.dme"

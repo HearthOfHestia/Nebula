@@ -9,6 +9,8 @@
 
 	unset_machine()
 	QDEL_NULL(hud_used)
+	if(s_active)
+		s_active.close(src)
 	if(istype(ability_master))
 		QDEL_NULL(ability_master)
 	if(istype(skillset))
@@ -17,18 +19,18 @@
 	clear_fullscreen()
 	if(istype(ai))
 		QDEL_NULL(ai)
+	remove_screen_obj_references()
 	if(client)
-		remove_screen_obj_references()
 		for(var/atom/movable/AM in client.screen)
 			var/obj/screen/screenobj = AM
-			if(!istype(screenobj) || !screenobj.globalscreen)
+			if(istype(screenobj) && !screenobj.globalscreen)
 				qdel(screenobj)
 		client.screen = list()
-	if(mind && mind.current == src)
-		spellremove(src)
+	if(mind)
+		mind.handle_mob_deletion(src)
+	teleop = null
 	ghostize()
-	..()
-	return QDEL_HINT_HARDDEL
+	return ..()
 
 /mob/proc/remove_screen_obj_references()
 	hands = null
@@ -43,9 +45,12 @@
 	healths = null
 	throw_icon = null
 	nutrition_icon = null
+	hydration_icon = null
 	pressure = null
 	pain = null
+	up_hint = null
 	item_use_icon = null
+	radio_use_icon = null
 	gun_move_icon = null
 	gun_setting_icon = null
 	ability_master = null
@@ -222,6 +227,8 @@
 
 /mob/proc/Life()
 	SHOULD_NOT_SLEEP(TRUE)
+	if(QDELETED(src))
+		return PROCESS_KILL
 	if(ability_master)
 		ability_master.update_spells(0)
 
@@ -1030,7 +1037,7 @@
 		return
 
 	client.mouse_pointer_icon = initial(client.mouse_pointer_icon)
-	
+
 	if(examine_cursor_icon && client.keys_held["Shift"])
 		client.mouse_pointer_icon = examine_cursor_icon
 
@@ -1079,11 +1086,11 @@
 	var/turf/T = loc
 
 	// We're inside something else.
-	if(!istype(T)) 
+	if(!istype(T))
 		return WEATHER_PROTECTED
-	
+
 	// Either we're outside being rained on, or we're in turf-local weather being rained on.
-	if(T.is_outside() || T.weather == weather) 
+	if(T.is_outside() || T.weather == weather)
 		var/list/weather_protection = get_weather_protection()
 		if(LAZYLEN(weather_protection))
 			return WEATHER_PROTECTED

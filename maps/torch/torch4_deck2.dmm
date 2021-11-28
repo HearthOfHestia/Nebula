@@ -468,7 +468,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "bj" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
@@ -4147,6 +4147,7 @@
 /obj/effect/floor_decal/corner/yellow{
 	dir = 10
 	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "jQ" = (
@@ -4608,7 +4609,7 @@
 /turf/space,
 /area/space)
 "kW" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8
 	},
@@ -5312,6 +5313,12 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"mU" = (
+/obj/structure/closet/walllocker/skinsuit{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/teleporter/seconddeck)
 "mW" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/blast/shutters{
@@ -5515,7 +5522,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "nr" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
@@ -6124,6 +6131,9 @@
 /area/space)
 "pm" = (
 /obj/machinery/computer/modular/preset/engineering,
+/obj/structure/closet/walllocker/skinsuit/engineering{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/central)
 "pn" = (
@@ -7315,7 +7325,7 @@
 /obj/effect/floor_decal/corner/purple{
 	dir = 9
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "rM" = (
@@ -7329,7 +7339,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
 "rO" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
@@ -10440,6 +10450,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
+/obj/machinery/network/relay/wall_mounted/endeavour{
+	dir = 4;
+	pixel_x = -21
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
 "Ay" = (
@@ -10706,6 +10720,10 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/foreport)
+"Bk" = (
+/obj/structure/closet/walllocker/skinsuit,
+/turf/simulated/floor/tiled/techfloor,
+/area/maintenance/seconddeck/foreport)
 "Bo" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
@@ -10720,6 +10738,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
 "Bs" = (
@@ -11561,6 +11580,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/closet/walllocker/skinsuit/engineering{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/shieldbay)
 "DN" = (
@@ -11688,7 +11710,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
 "Ee" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftport)
@@ -12271,6 +12293,9 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/structure/closet/walllocker/skinsuit/engineering{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/engineering/atmos/storage)
 "FH" = (
@@ -15230,6 +15255,9 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
+/obj/structure/closet/walllocker/skinsuit/engineering{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "Ow" = (
@@ -16351,6 +16379,10 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/aftport)
+"RA" = (
+/obj/structure/closet/walllocker/skinsuit/engineering,
+/turf/simulated/floor/tiled/techfloor,
+/area/engineering/engine_room)
 "RB" = (
 /obj/machinery/door/blast/regular{
 	id_tag = "xenobio2_vent";
@@ -16466,7 +16498,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	alarm_id = "misc_research";
@@ -16687,6 +16719,7 @@
 	dir = 1;
 	icon_state = "warningcorner"
 	},
+/obj/structure/closet/walllocker/skinsuit,
 /turf/simulated/floor/tiled/techfloor,
 /area/hallway/primary/seconddeck/fore)
 "Sz" = (
@@ -16802,6 +16835,10 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/atmos)
+"SO" = (
+/obj/structure/closet/walllocker/skinsuit,
+/turf/simulated/floor/tiled/techfloor,
+/area/hallway/primary/seconddeck/fore)
 "SP" = (
 /obj/machinery/light{
 	dir = 8
@@ -18290,7 +18327,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
 "XB" = (
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
@@ -18799,7 +18836,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5
 	},
-/obj/structure/closet/emcloset,
+/obj/structure/closet/emcloset/torch,
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "east bump";
@@ -30182,7 +30219,7 @@ hB
 is
 fU
 JX
-xR
+SO
 Qe
 Mi
 Sf
@@ -30192,7 +30229,7 @@ qi
 Qj
 VL
 Qe
-ZV
+Bk
 Wp
 vt
 wn
@@ -39891,7 +39928,7 @@ WV
 NI
 sb
 BU
-vS
+mU
 FI
 Yy
 Yy
@@ -44520,7 +44557,7 @@ eZ
 GM
 GM
 ZM
-if
+RA
 if
 ig
 jL
@@ -44722,7 +44759,7 @@ hu
 do
 gy
 ZM
-if
+RA
 if
 td
 kw

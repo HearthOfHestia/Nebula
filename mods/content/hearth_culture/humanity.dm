@@ -5,6 +5,7 @@
 #define LANGUAGE_RUSSIAN "Russian"
 #define LANGUAGE_ASIAN "Pan-Asian Intermediate"
 #define LANGUAGE_SPACER "Spacer"
+#define LANGUAGE_FRENCH "French"
 
 //DEFINES END
 
@@ -21,15 +22,23 @@
 			/decl/cultural_info/culture/human/extrasolar,
 			/decl/cultural_info/culture/human/europa,
 			/decl/cultural_info/culture/human/belter,
-			/decl/cultural_info/culture/human/vatgrown
+			/decl/cultural_info/culture/human/forumite,
+			/decl/cultural_info/culture/human/vatgrown,
+			/decl/cultural_info/culture/human/aaronite,
+			/decl/cultural_info/culture/human/oort,
+			/decl/cultural_info/culture/human/kuiper
 		),
 		TAG_HOMEWORLD = list(
 			/decl/cultural_info/location/sol,
-			/decl/cultural_info/location/proxima_centauri
+			/decl/cultural_info/location/proxima_centauri,
+			/decl/cultural_info/location/forum,
+			/decl/cultural_info/location/human_other
 		),
 		TAG_FACTION = list(
 			/decl/cultural_info/faction/humanity,
-			/decl/cultural_info/faction/humanity/dysonite
+			/decl/cultural_info/faction/humanity/iseo,
+			/decl/cultural_info/faction/humanity/ec,
+			/decl/cultural_info/faction/humanity/contractor,
 		),
 		TAG_RELIGION = list(
 			/decl/cultural_info/religion/other,
@@ -60,14 +69,34 @@
 	description = "You belong to one of the many other factions that operate in the galaxy. Numerous, too numerous to list, these factions represent a variety of interests, purposes, intents and goals."
 	subversive_potential = 25
 
-/decl/cultural_info/faction/humanity/dysonite
-	name = "Dysonite"
-	description = "The Dyson Hub is a burgeoning megaproject located in orbit around the Sun. As its name suggests, it is an attempt to harness the incredible power of \
-	the Sun, and has been funded by a number of nations and NGOs. The project has been running since the 2150s, but as it is such a gargantuan task, the project is \
-	nowhere near completion. Many scientists and engineers live here for several years, getting valuable experience and contributing to humanity in some way. \
-	Similarly, it is home to a growing number of artists and wanderers, choosing to live in the Hub's residential complex and contributing to it's finances. \
-	As a multinational and multicultural project, it has developed its own political system, largely considered technocratic. Highly influential scientists \
-	and academics hold considerable influence, often leading to minor conflicts of interest between the civilian and scientific residents of the Hub."
+/decl/cultural_info/faction/humanity/iseo
+	name = "ISEO"
+	description = "You are part of the International Stellar Exploration Organization, better known as the ISEO. It is a intergovernmental project established by the \
+	various nations of Earth, and responsible for the governing of the colonial worlds of Mars and Jupiter. It is at the forefront of space exploration and colonisation. \
+	Much of its history has been relatively cushy, until First Contact around a generation ago. Since then, the ISEO has been steadily expanded into all parts of life, with \
+	a significant powerbase in Sol.	<br><br>Maybe you're a fresh recruit, promised adventure and a plot of land in the ISEO-owned Martian district of Arcadia. Maybe you're a \
+	veteran of the pre-contact days who's seen the rise of the ISEO, leading up to perhaps its most important mission yet, the Endeavour Project. Optimism runs high within the ISEO \
+	and its personnel are a varied, widely divergent collection of humans, unified in the aim of an interstellar humanity."
+
+/decl/cultural_info/faction/humanity/ec
+	name = "Espatier Corps"
+	description = "You are part of the Espatier Corps, also known as the EC. It is comprised of various national military units from all the member states of the ISEO, \
+	specially trained to handle low and zero-G missions. It serves two roles, one as a peacekeeping mission for the various colonies under direct ISEO control, and one \
+	as military police for various exploration missions, such as the Endeavour. The EC have proven themselves capable of protecting both the ISEO, and Humanity's interests, \
+	such as their intervention on the side of colonists against the corporations during the Jovian Riots of the mid-60s, or bringing an end to the Martian Cold War. \
+	<br><br>As a member of the Espatier Corps, your loyalty is to the ISEO primarily, and your parent nation second. Members of the Espatier Corps volunteered to be \
+	part of the EC, but might not have had any say in their deployment to the Endeavour. The legacy of the EC as Humanity's United Military has attracted many new recruits \
+	who outnumber veteran members almost ten to one. Those that have remained in service to the EC have been rewarded with high ranking roles onboard the Endeavour project, \
+	where their skills can be put to good use."
+
+/decl/cultural_info/faction/humanity/contractor
+	name = "ISEO Civilian Branch"
+	description = "You are a civilian member of the ISEO, who serves onboard the Endeavour either as a specialist in your specific field, or as a low-priority worker. You \
+	are considered a member of the crew, but not technically part of the ISEO. For the duration of the mission, they are responsible for your wages, your shifts, and your \
+	living space. Being a civilian has its perks however, with a much laxer uniform code, and a generally more tolerent atmosphere. However, contractors that fail to recognise \
+	the authority of the ISEO, either from Command staff, or from an enlisted member of their department, will often be quietly dropped off home at the next shoreleave. Your \
+	position on the Endeavour is one to be proud of, and something to brag about with your friends and family back home. But never forget there are likely a hundred other people \
+	applying for your role. Be unreplacable."
 
 //FACTIONS END
 
@@ -75,10 +104,16 @@
 
 /decl/cultural_info/culture/human/
 	name = "Earthborn"
-	description = "You are from Earth, the dying cradle of Humanity. You are among the precious few who have managed to make it off Humanity's dying homeworld. \
-	You were potentially born into affluence, bought your way off the planet through corruption, or are one of the precious skilled laborers so desperately required \
-	 for Humanity's continuing expansion into the stars. Individuals from Earth tend to be somewhat unhealthy due to pollution, lingering radiation from various conflicts\
-	 and potential malnutrition during childhood."
+	description = "You are from Earth, the scarred and battered homeworld of Humanity. Earth remains just as divided as it has ever been, with \
+	many new powers taking the place of the old ones. Your parents and grandparents speak of the horrors of the Climate Catastrophe of the 21st \
+	Century, and the damage it has taken is very clear no matter where you are from. However, you are also the first Earthers in a long time to \
+	feel optimistic about the future, as the damage caused in the past slowly starts to heal. Earth is effectively divided into two spheres of influence, \
+	the ISEO, and the Non-ISEO States (NIS). The various states of Africa are the key leaders of the ISEO's sphere, being their primary nations and effectively \
+	the dominant continent on the planet. Most states on Earth are part of the ISEO, either directly contributing, or as an Observer. Some states remain outside \
+	the influence of the ISEO, and lack a presence onboard the Endeavour. However, migration into ISEO territory is not uncommon, with many people fleeing \
+	both North America and Europe in search of a better life in the Cradle of Civilization. <br><br> Aging Earthers will remember a time of great suffering, \
+	with high child mortality rates, instability, and radioactive fallout. As such, the modern Earther effectively lives on a cocktail of gene therapy and medication, \
+	which allows them to live extremely healthy lives, well into their one hundreds."
 	default_language = /decl/language/human/common // formerly /decl/language/human/common, repath if it stops being hardcoded everywhere
 	secondary_langs = list(
 		/decl/language/human/russian,
@@ -95,7 +130,7 @@
 	The planet's surface remains as lifeless as it has for millennia, with any terraforming efforts only around fifty years into a centuries long project. Instead, \
 	humanity lives under massive biodome structures that keeps the air in and the deadly Martian conditions out. Though these biodomes are fitted to earth atmosphere, \
 	Martians tend to suffer from a various medical issues stemming from lower gravity and higher ambient radiation levels. Most of these issues have been solved in the \
-	modern day through living fit and active lifestyles, combating the 'void-waste', as the effects of low gravity have been termed.Mars is a disunited planet, comprised \
+	modern day through living fit and active lifestyles, combating the 'void-waste', as the effects of low gravity have been termed. Mars is a disunited planet, comprised \
 	of districts and colonies, some loyal to their Earthly benefactor, others dismissive, some owned by corporations, and a lucky few governed by themselves.  \
 	To prevent any sort of conflict between the colonies, the Martial Council convene every month, serving as an intranational organisation, similar to an old UN. The \
 	Martian Council has its own Secretary-General, General Assembly, Security Council, and Trans-Martian Court of Justice."
@@ -126,11 +161,13 @@
 
 /decl/cultural_info/culture/human/europa
 	name = "Europan"
-	description = "You are from Europa, a child one of the first generations of colonists in the early 21st century. The average Europan usually has a cautious spirit \
-	bolstered by their pragmatic attitudes, they also have an affinity towards enclosed spaces, a by-product of their time spent underneath the moon's ice sheets within \
-	the expansive man-made underwater habitats. Europans are typically average when it comes to general intelligence, however they excel in the fields of agriculture and \
-	engineering. Health-wise Europans are healthy for the most part with the exception of often suffering from severe vitamin-D deficiency, \
-	leading to them acquiring a sickly pale look."
+	description = "You are from Europa, a child one of the first generations of colonists in the 21st century. The average Europan is extremely tolerant of genetic alterations, \
+	cautious of corporate influence, and supportive of the ISEO. They have an affinity towards enclosed spaces, and are effectively comprised of countless different Earther cultures, \
+	and ethnicities that migrated to Europe in search of a better life. The Jovian Riots of the 2160s are still heavily engrained in their culture, when the Europans rose up against \
+	their corporate leaders after a failed anti-radiation genetherapy treatment resulted in the accidental mutation of a large number of people. The ISEO has spent a great deal of time and money \
+	helping to treat these people, and many of them have since returned the favour by becoming part of the ISEO. <br><br>Europan culture is best described as reminiscent of 1960s West Germany, with \
+	a widespread synthwave movement and a rejection of tradition. They wear bright colours, play strange music, and stay out all night partying. They are the first generation to live \
+	without a Corporation breathing down their neck, and they live it to the fullest."
 
 /decl/cultural_info/culture/human/belter
 	name = "Belter"
@@ -187,6 +224,14 @@
 	Finding communication with other stations within the Belt difficult, many inhabitants looked inward, and developed a greater connection to their fellow colonists. \
 	Even when leaving it all behind, most Brinkers continue to place great amounts of trust and care into those they work alongside."
 
+/decl/cultural_info/culture/human/forumite
+	name = "Forumite"
+	description = "You are a Forumite, from the alien world of Forum. Your family moved here some time after first contact, either as part of the Human ambassador mission,\
+	or as an immigrant to the planet's growing Human District. Forum, also known as Fahzi to the Unathi, Qoloc’ux to the Skrell, and Ashragi to the Tajaran, is home to the \
+	Galactic Community, where the many nations of the Milky Way have gathered to conduct diplomatic business. Some of these species do not yet have treaties with Humanity, \
+	making Forum a unique sight to many Human visitors. The Humans on Forum have begun to slowly diverge from their original cultures, with some having adopted the traditions \
+	of the various aliens they now rub shoulders with. Forum is a xenophilic melting pot, with new fashions, music, and cuisine invented almost every day."
+
 // CULTURES END
 
 // LOCATIONS START
@@ -211,6 +256,27 @@
 	capital = "New Aaron"
 	economic_power = 1
 	ruling_body = "ISEO"
+
+/decl/cultural_info/location/forum
+	name = "Forum"
+	description = "Forum, also known as Fahzi to the Unathi, Qoloc’ux to the Skrell, and Ashragi to the Tajaran, is a colonised world around 32 light years from Earth. It was first colonised \
+	by the Unathi roughly 150 years ago and has since grown to become the capital of the Galactic Community, home to many species that inhabit the Milky Way. Humans first arrived here some years \
+	after first contact, and many decided to stay, finding its xenophilic and tolerant nature more welcoming than Sol. Its largest city, also called Forum, has a sizeable Human District, and is \
+	the location of the ISEO's Embassy to the other members of the Galactic Community. It is here that its various ambassadors to the Skrell, Unathi, and Tajaran reside."
+	distance = "32"
+	capital = "Forum"
+	economic_power = 1
+	ruling_body = "Galactic Community"
+
+/decl/cultural_info/location/human_other
+	name = "Other"
+	description = "Since the first generation ships were launched almost one hundred years ago, people have been born far out in the voids of space. Being almost entirely self-sustaining, the \
+	people living out here often go entirely undetected, with their existence unknown by the greater Human community. With the advent of FTL travel a generation ago, some of these vessels have \
+	been reintergrated into Humanity, having developed divergent and strange cultures while in extreme isolation."
+	distance = "N/a"
+	capital = "N/a"
+	economic_power = 1
+	ruling_body = "N/a"
 
 // LOCATIONS END
 
@@ -346,5 +412,25 @@
 		"ada", "zir", "bian", "ach", "usk", "ado", "ich", "cuan", "iga", "qing", "le", "que", "ki", "qaf", "dei", "eta"
 	)
 	colour = COLOR_ORANGE
+
+/decl/language/human/french
+	name = LANGUAGE_FRENCH
+	desc = "The French language has existed for hundreds of years, becoming the Lingua Franca of much of Western Africa during the late 21st Century. It is considered the dominant language of \
+	the ISEO, alongside English."
+	colour = COLOR_BLUE
+	key = "fr"
+	shorthand = "FR"
+	space_chance = 20
+	partial_understanding = list(
+		LANGUAGE_ENGLISH = 20
+	)
+	syllables = list(
+		"al", "an", "ar", "as", "at", "ea", "ed", "en", "et", "es", "ha", "he", "hi", "in", "is", "it",
+		"le", "me", "nd", "ne", "ng", "nt", "on", "or", "ou", "re", "se", "st", "te", "th", "ti", "to",
+		"ve", "wa", "all", "and", "cou", "but", "ent", "era", "fou", "eve", "for", "had", "zou", "hen", "her", "hin",
+		"ch", "de", "ge", "be", "vous", "abe", "ich", "ein", "die", "gnou", "pou", "tout", "ber", "che", "ent", "que",
+		"ait", "les", "lle", "men", "ais", "ans", "mou", "ave", "con", "com", "des", "tre", "eta", "eur", "est",
+		"ing", "the", "ver", "was", "ith", "nous"
+	)
 
 // LANGUAGES END

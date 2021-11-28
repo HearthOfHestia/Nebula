@@ -26,6 +26,10 @@
 	forceMove(null)
 	verbs += /mob/proc/toggle_antag_pool
 
+/mob/new_player/Destroy()
+	panel = null
+	. = ..()
+
 /mob/new_player/proc/show_lobby_menu(force = FALSE)
 	if(!SScharacter_setup.initialized && !force)
 		return // Not ready yet.
@@ -54,7 +58,7 @@
 	panel = new(src, "Welcome","Welcome to [global.using_map.full_name]", 560, 280, src)
 	panel.set_window_options("can_close=0")
 	panel.set_content(JOINTEXT(output))
-	panel.open()
+	panel.open(FALSE)
 
 /mob/new_player/Stat()
 	. = ..()
@@ -341,7 +345,7 @@
 	dat = header + dat
 	var/datum/browser/popup = new(src, "latechoices", "Choose Profession", 450, 640)
 	popup.set_content(jointext(dat, null))
-	popup.open(0)
+	popup.open(FALSE)
 
 /mob/new_player/proc/create_character(var/turf/spawn_turf)
 	spawning = 1
@@ -410,7 +414,7 @@
 	//show_browser(src, dat, "window=manifest;size=370x420;can_close=1")
 	var/datum/browser/popup = new(src, "Crew Manifest", "Crew Manifest", 370, 420, src)
 	popup.set_content(dat)
-	popup.open()
+	popup.open(FALSE)
 
 /mob/new_player/Move()
 	return 0
