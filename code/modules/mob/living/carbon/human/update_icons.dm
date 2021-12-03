@@ -231,7 +231,14 @@ Please contact me on #coderbus IRC. ~Carn x
 	// Scale/translate/rotate and apply the transform.
 	var/matrix/M = matrix()
 	if(lying)
-		M.Turn(pick(90, -90))
+		var/turn_angle
+		if(dir & WEST)
+			turn_angle = -90
+		else if(dir & EAST)
+			turn_angle = 90
+		else 
+			turn_angle = pick(-90, 90)
+		M.Turn(turn_angle)
 		M.Scale(desired_scale_y, desired_scale_x)
 		M.Translate(1, -6-default_pixel_z)
 	else
@@ -269,7 +276,7 @@ var/global/list/damage_icon_parts = list()
 		O.update_icon()
 		if(O.damage_state == "00") continue
 		var/icon/DI
-		var/use_colour = (BP_IS_PROSTHETIC(O) ? SYNTH_BLOOD_COLOUR : O.species.get_blood_colour(src))
+		var/use_colour = (BP_IS_PROSTHETIC(O) ? SYNTH_BLOOD_COLOR : O.species.get_blood_color(src))
 		var/cache_index = "[O.damage_state]/[O.icon_name]/[use_colour]/[species.name]"
 		if(damage_icon_parts[cache_index] == null)
 			DI = new /icon(bodytype.get_damage_overlays(src), O.damage_state) // the damage icon for whole human
@@ -834,7 +841,7 @@ var/global/list/damage_icon_parts = list()
 		overlay_state = "[base_state]-blood"
 		if(overlay_state in surgery_states)
 			var/image/blood = image(icon = surgery_icon, icon_state = overlay_state, layer = -HO_SURGERY_LAYER)
-			blood.color = E.species.get_blood_colour(src)
+			blood.color = E.species.get_blood_color(src)
 			LAZYADD(overlays_to_add, blood)
 		overlay_state = "[base_state]-bones"
 		if(overlay_state in surgery_states)
@@ -845,6 +852,18 @@ var/global/list/damage_icon_parts = list()
 	overlays_standing[HO_SURGERY_LAYER] = total
 	if(update_icons)
 		queue_icon_update()
+
+//Ported from hud login stuff
+//
+/mob/living/carbon/hud_reset(full_reset = FALSE)
+	if(!(. = ..()))
+		return .
+	for(var/obj/item/gear in get_equipped_items(TRUE))
+		client.screen |= gear
+	if(hud_used)
+		hud_used.hidden_inventory_update()
+		hud_used.persistant_inventory_update()
+		update_action_buttons()
 
 //Human Overlays Indexes/////////
 #undef HO_MUTATIONS_LAYER
