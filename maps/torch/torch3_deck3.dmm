@@ -8509,7 +8509,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
@@ -18314,7 +18314,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/cable/green,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
