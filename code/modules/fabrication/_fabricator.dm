@@ -128,15 +128,19 @@
 	if(length(installed_designs))
 		design_cache |= installed_designs
 
-	if(!known_tech)
-		known_tech = get_default_initial_tech_levels()
-		var/datum/extension/network_device/device = get_extension(src, /datum/extension/network_device)
-		var/datum/computer_network/network = device.get_network()
-		if(network)
-			for(var/obj/machinery/design_database/db in network.get_devices_by_type(/obj/machinery/design_database))
-				for(var/tech in db.tech_levels)
-					if(db.tech_levels[tech] > known_tech[tech])
-						known_tech[tech] = db.tech_levels[tech]
+	// This is necessary to prevent database consoles from overwriting the default tech levels.
+	var/list/default_tech = get_default_initial_tech_levels()
+	LAZYINITLIST(known_tech)
+	for(var/tech_key in known_tech)
+		known_tech[tech_key] = max(default_tech[tech_key], known_tech[tech_key])
+
+	var/datum/extension/network_device/device = get_extension(src, /datum/extension/network_device)
+	var/datum/computer_network/network = device.get_network()
+	if(network)
+		for(var/obj/machinery/design_database/db in network.get_devices_by_type(/obj/machinery/design_database))
+			for(var/tech in db.tech_levels)
+				if(db.tech_levels[tech] > known_tech[tech])
+					known_tech[tech] = db.tech_levels[tech]
 
 	var/list/unlocked_tech = SSfabrication.get_unlocked_recipes(fabricator_class, known_tech)
 	if(length(unlocked_tech))

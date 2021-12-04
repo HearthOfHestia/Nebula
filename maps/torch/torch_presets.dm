@@ -250,3 +250,6 @@ var/global/const/HAIL_FREQ = 1463
 
 /obj/machinery/airlock_sensor/shuttle/opportunity
 	stock_part_presets = list(/decl/stock_part_preset/radio/basic_transmitter/airlock_sensor/shuttle/opportunity = 1)
+
+/obj/machinery/fabricator/bioprinter/filled
+	prefilled = TRUE

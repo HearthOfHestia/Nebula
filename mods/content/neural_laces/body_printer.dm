@@ -1,5 +1,5 @@
 #define MAX_PRINTING_PASSES 5
-#define COST_PER_PRINT 15000 //in cm3 
+#define COST_PER_PRINT 15000 //in cm3
 #define BIOPRINTER_MAX_MATERIALS 30000
 #define MATERIAL_LOW 1
 #define MATERIAL_VERY_LOW 2
@@ -12,7 +12,7 @@
 	icon_state = "base"
 	density = TRUE
 	anchored = TRUE
-	idle_power_usage = 200 
+	idle_power_usage = 200
 	active_power_usage = 15 KILOWATTS
 	stat_immune = 0
 
@@ -45,7 +45,7 @@
 
 	var/increment_delay //The time between y increments for the alpha masking of the mob icon and the print head. This is based on the printing time, hence why it is configurable.
 	var/next_increment = 0
-	var/total_passes = 0 
+	var/total_passes = 0
 	var/obj/item/disk/dna/diskette
 	var/datum/sound_token/sound_token
 	var/sound_id
@@ -53,8 +53,8 @@
 	var/list/materials = list(/decl/material/solid/meat = 0, /decl/material/solid/bone = 0)
 
 	var/list/technobabble_systems = list(
-		"microservo positioning system", 
-		"flash-sterilization subsystem", 
+		"microservo positioning system",
+		"flash-sterilization subsystem",
 		"flash-differentiation feed system",
 		"print laser power regulation system",
 		"biomass circulation subsystem",
@@ -151,7 +151,8 @@
 			D.forceMove(src)
 			diskette = D
 			to_chat(user, SPAN_NOTICE("You insert \the [D] into \the [src]."))
-	if(I.matter[1] in materials)
+		return TRUE
+	if(isitem(I) && LAZYLEN(I.matter) && (I.matter[1] in materials))
 		accept_materials(I, user)
 
 /obj/machinery/bioprinter/proc/accept_materials(var/obj/item/S, var/user)
@@ -162,7 +163,7 @@
 
 	if(materials[S.matter[1]] == BIOPRINTER_MAX_MATERIALS)
 		to_chat(user, SPAN_WARNING("\The [src] is full of [S]!"))
-		return 
+		return
 	if(isstack(S))
 		var/obj/item/stack/ST = S
 		var/sheets_input = input(user, "How many sheets do you wish to input?", "Sheet Input", 0) as num|null
@@ -173,16 +174,14 @@
 		sheets_input = clamp(sheets_input, 1, ST.amount)
 
 		var/free_space = BIOPRINTER_MAX_MATERIALS - materials[ST.matter[1]]
-		
-		if(free_space == 0)
-			to_chat(user, SPAN_WARNING("\The [src] is full of [ST]!"))
+		var/max_input = round((free_space / SHEET_MATERIAL_AMOUNT))
+		if(max_input == 0)
+			to_chat(user, SPAN_WARNING("\The [src] is too full to add \the [ST]!"))
 			return
 
-		var/max_input = round((free_space / SHEET_MATERIAL_AMOUNT))
-
 		sheets_input = min(sheets_input, max_input)
-		
-		var/input_amt = sheets_input * SHEET_MATERIAL_AMOUNT 
+
+		var/input_amt = sheets_input * SHEET_MATERIAL_AMOUNT
 
 		if((materials[ST.matter[1]] + input_amt) >= BIOPRINTER_MAX_MATERIALS) //doublecheck sanity
 			return
@@ -218,7 +217,7 @@
 	materials[material1] -= mat1amt
 	materials[material2] -= mat2amt
 	return TRUE
-	
+
 /obj/machinery/bioprinter/proc/open_pod_start()
 	animate(lid, pixel_y = 38, time = 3 SECONDS, easing = SINE_EASING)
 	addtimer(CALLBACK(src, .proc/open_pod_finish), 3 SECONDS)
@@ -269,7 +268,7 @@
 			add_overlay(image(icon, "reactor_low"))
 		if(MATERIAL_FULL)
 			add_overlay(image(icon, "reactor_full"))
-	
+
 	if(!printing && !cleaning)
 		add_overlay(image(icon, "computer_standby"))
 	if(printing && !needs_attention)
@@ -333,7 +332,7 @@
 		.["start_print"] = cached_choices["start_print"]
 	if(needs_attention)
 		.["interact"] = cached_choices["interact"]
-	
+
 
 /obj/machinery/bioprinter/proc/get_printing_increment()
 	. = round((printing_time / MAX_PRINTING_PASSES))
@@ -462,7 +461,7 @@
 
 /obj/machinery/bioprinter/proc/do_fakemob_animation(var/fakemob_name, var/filter_name, var/stage_name, var/fakemob_layer_increment, var/fade_out = FALSE)
 	var/obj/structure/fake_clone_mob/fakemob = clone_mobs[fakemob_name]
-	
+
 	if(!fakemob)
 		return
 
