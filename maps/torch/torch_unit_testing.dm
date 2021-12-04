@@ -35,6 +35,7 @@
 		/area/storage/primary = 0,
 		/area/storage/tech = 0,
 		/area/storage/tools = 0,
+		/area/storage/service = 0,
 		/area/supply = NO_SCRUBBER|NO_VENT|NO_APC,
 		/area/thruster = NO_SCRUBBER,
 		/area/turbolift = NO_SCRUBBER|NO_VENT|NO_APC,

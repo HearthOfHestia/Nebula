@@ -17,6 +17,7 @@
 	#include "..\..\mods\content\neural_laces\_laces.dme"
 	#include "..\..\mods\content\genemodding\_genemodding.dme"
 	#include "..\..\mods\content\hearthfoods\_hearthfoods.dme"
+	#include "..\..\mods\content\hearthdrinks\_hearthdrinks.dme"
 	#include "..\..\mods\content\shards\_shards.dme"
 
 	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
@@ -200,6 +201,7 @@
 	#include "items\hearth_clothing\hats_general.dm"
 	#include "structures\closets\suit_lockers.dm"
 	#include "items\hearth_clothing\skinsuits.dm"
+	#include "items\hearth_clothing\hats.dm"
 	//end HEARTH
 
 	#include "torch1_deck5.dmm"

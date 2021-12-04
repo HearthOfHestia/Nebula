@@ -2743,6 +2743,8 @@
 #include "code\modules\overmap\ftl_shunt\_shunt.dm"
 #include "code\modules\overmap\ftl_shunt\computer.dm"
 #include "code\modules\overmap\ftl_shunt\core.dm"
+#include "code\modules\overmap\ftl_shunt\ftl_event.dm"
+#include "code\modules\overmap\ftl_shunt\fuel_port.dm"
 #include "code\modules\overmap\ships\circuits.dm"
 #include "code\modules\overmap\ships\created.dm"
 #include "code\modules\overmap\ships\landable.dm"
