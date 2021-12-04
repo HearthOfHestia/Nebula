@@ -1,0 +1,14 @@
+#ifndef MODPACK_PIXELSHIFTING
+#define MODPACK_PIXELSHIFTING
+#include "pixel_shifting.dm"
+#include "keybindings\mob.dm"
+#endif
+// BEGIN_INTERNALS
+// END_INTERNALS
+// BEGIN_FILE_DIR
+#define FILE_DIR .
+// END_FILE_DIR
+// BEGIN_PREFERENCES
+// END_PREFERENCES
+// BEGIN_INCLUDE
+// END_INCLUDE

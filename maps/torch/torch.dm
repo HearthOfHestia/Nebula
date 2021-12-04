@@ -19,6 +19,7 @@
 	#include "..\..\mods\content\hearthfoods\_hearthfoods.dme"
 	#include "..\..\mods\content\hearthdrinks\_hearthdrinks.dme"
 	#include "..\..\mods\content\shards\_shards.dme"
+	#include "..\..\mods\content\pixel_shifting\_pixel_shifting.dme"
 
 	#include "..\..\mods\verbs\antighost\_subtle_antighost.dme"
 
