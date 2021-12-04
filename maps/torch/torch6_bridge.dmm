@@ -4066,7 +4066,7 @@
 /area/perseverance/medical)
 "lm" = (
 /obj/machinery/hologram/holopad/longrange,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/effect/floor_decal/corner/darkblue{
@@ -4169,7 +4169,7 @@
 	c_tag = "Command Hallway - Center Aft";
 	dir = 4
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/structure/disposalpipe/segment{
@@ -8048,7 +8048,7 @@
 /turf/simulated/open,
 /area/crew_quarters/heads/office/ce)
 "xP" = (
-/obj/effect/landmark/map_data{
+/obj/abstract/map_data{
 	height = 6
 	},
 /turf/space,

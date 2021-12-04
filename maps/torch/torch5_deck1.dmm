@@ -424,7 +424,7 @@
 	c_tag = "Command Hallway - Aft";
 	dir = 4
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/effect/catwalk_plated,
@@ -5875,7 +5875,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -8076,7 +8076,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11345,7 +11345,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -11499,7 +11499,7 @@
 /turf/simulated/floor/tiled,
 /area/security/processing)
 "cgu" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/effect/floor_decal/corner/paleblue{
@@ -12011,7 +12011,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "cTb" = (
@@ -17421,7 +17421,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/effect/catwalk_plated,
@@ -19294,10 +19294,10 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "nVe" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "JoinLateCyborg"
 	},
-/obj/effect/landmark/start{
+/obj/abstract/landmark/start{
 	name = "Cyborg"
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -22233,7 +22233,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/office)
 "rsb" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -23187,7 +23187,7 @@
 /obj/machinery/air_sensor{
 	id_tag = "testchamber_sensor"
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "bluespacerift"
 	},
 /obj/item/radio/beacon,
@@ -24994,7 +24994,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "whm" = (

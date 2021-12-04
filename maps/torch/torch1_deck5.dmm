@@ -7589,7 +7589,7 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/hallway/primary/fifthdeck/aft)
 "sI" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},

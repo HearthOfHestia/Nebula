@@ -65,7 +65,7 @@
 /area/holodeck/source_picnicarea)
 "aay" = (
 /obj/structure/rack/holorack,
-/obj/effect/landmark/costume/chameleon,
+/obj/abstract/landmark/costume/chameleon,
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_theatre)
 "aaz" = (
@@ -153,7 +153,7 @@
 /turf/simulated/floor/holofloor/wood,
 /area/holodeck/source_courtroom)
 "aaW" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "Holocarp Spawn"
 	},
 /turf/simulated/floor/holofloor/reinforced,
@@ -1203,7 +1203,7 @@
 	},
 /area/centcom/evac)
 "afj" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "Holocarp Spawn Random"
 	},
 /turf/simulated/floor/holofloor/space,
@@ -2171,7 +2171,7 @@
 /turf/unsimulated/beach/sand,
 /area/space)
 "anb" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "endgame_exit"
 	},
 /turf/unsimulated/beach/sand,
@@ -2216,7 +2216,7 @@
 /area/space)
 "aph" = (
 /obj/structure/bed/chair,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "endgame_exit"
 	},
 /turf/unsimulated/beach/sand,
@@ -2416,7 +2416,7 @@
 /turf/unsimulated/wall,
 /area/centcom/suppy)
 "atA" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "prisonwarp"
 	},
 /turf/unsimulated/floor{
@@ -4834,7 +4834,7 @@
 	},
 /area/space)
 "aBA" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "Commando"
 	},
 /turf/unsimulated/floor{
@@ -7122,7 +7122,7 @@
 /area/tdome)
 "aKv" = (
 /obj/structure/bed/chair,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdomeobserve"
 	},
 /turf/unsimulated/floor{
@@ -7198,7 +7198,7 @@
 	},
 /area/space)
 "aKI" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "ActorSpawn"
 	},
 /turf/unsimulated/floor{
@@ -7478,7 +7478,7 @@
 "aLf" = (
 /obj/structure/bed/chair,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdomeobserve"
 	},
 /turf/unsimulated/floor{
@@ -7631,7 +7631,7 @@
 	},
 /area/tdome)
 "aLz" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome2"
 	},
 /turf/unsimulated/floor{
@@ -7666,7 +7666,7 @@
 	},
 /area/tdome)
 "aLD" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome1"
 	},
 /turf/unsimulated/floor{
@@ -7720,7 +7720,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome2"
 	},
 /turf/unsimulated/floor{
@@ -7732,7 +7732,7 @@
 /obj/machinery/recharger{
 	pixel_y = 4
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome1"
 	},
 /turf/unsimulated/floor{
@@ -7787,7 +7787,7 @@
 	},
 /area/acting/backstage)
 "aLS" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome2"
 	},
 /obj/machinery/camera/network/television{
@@ -7814,7 +7814,7 @@
 	},
 /area/tdome)
 "aLV" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdome1"
 	},
 /obj/machinery/camera/network/television{
@@ -7924,7 +7924,7 @@
 "aMu" = (
 /obj/structure/bed,
 /obj/item/bedsheet/hop,
-/obj/effect/landmark/start{
+/obj/abstract/landmark/start{
 	name = "Merchant"
 	},
 /turf/simulated/floor/carpet,
@@ -7976,7 +7976,7 @@
 "aMG" = (
 /obj/structure/bed,
 /obj/item/bedsheet/rd,
-/obj/effect/landmark/start{
+/obj/abstract/landmark/start{
 	name = "Merchant"
 	},
 /turf/simulated/floor/carpet/blue,
@@ -8289,7 +8289,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdomeadmin"
 	},
 /turf/unsimulated/floor{
@@ -8313,7 +8313,7 @@
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "tdomeadmin"
 	},
 /turf/unsimulated/floor{
@@ -11184,7 +11184,7 @@
 /turf/simulated/floor/holofloor/concrete,
 /area/holodeck/source_plaza)
 "cjX" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "Syndicate-Commando"
 	},
 /turf/unsimulated/floor{
