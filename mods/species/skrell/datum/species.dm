@@ -48,9 +48,19 @@
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR
 
 	flesh_color = "#8cd7a3"
-	blood_color = "#1d2cbf"
 	base_color = "#006666"
 	organs_icon = 'mods/species/skrell/icons/body/organs.dmi'
+
+	blood_types = list(
+		/decl/blood_type/skrell/yplus,
+		/decl/blood_type/skrell/yminus,
+		/decl/blood_type/skrell/zplus,
+		/decl/blood_type/skrell/zminus,
+		/decl/blood_type/skrell/yzplus,
+		/decl/blood_type/skrell/yzminus,
+		/decl/blood_type/skrell/noplus,
+		/decl/blood_type/skrell/nominus
+	)
 
 	cold_level_1 = 280 //Default 260 - Lower is better
 	cold_level_2 = 220 //Default 200
