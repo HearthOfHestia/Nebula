@@ -337,6 +337,7 @@
 	key = "spin"
 	check_restraints = TRUE
 	emote_message_3p = "USER spins!"
+	emote_range = -1
 
 /decl/emote/visible/spin/do_extra(mob/user)
 	if(istype(user))
