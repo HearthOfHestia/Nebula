@@ -19,7 +19,7 @@
 
 /obj/machinery/appliance/cooker/examine(var/mob/user)
 	. = ..()
-	if (.)	//no need to duplicate adjacency check
+	if (Adjacent(user))
 		if (use_power == POWER_USE_OFF)
 			to_chat(user, SPAN_WARNING("It is switched off."))
 		else
@@ -28,6 +28,8 @@
 			else
 				to_chat(user, SPAN_NOTICE("It is running at [round(get_efficiency(), 0.1)]% efficiency!"))
 			to_chat(user, "Temperature: [round(temperature - T0C, 0.1)]C / [round(optimal_temp - T0C, 0.1)]C")
+	if(panel_open)
+		to_chat(user, "The panel is open.")
 
 /obj/machinery/appliance/cooker/MouseEntered(location, control, params)
 	. = ..()
