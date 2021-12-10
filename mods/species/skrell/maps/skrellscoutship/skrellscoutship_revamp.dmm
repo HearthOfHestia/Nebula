@@ -8351,7 +8351,7 @@
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/atmos)
 "Ys" = (
-/obj/effect/landmark/map_data,
+/obj/abstract/map_data,
 /obj/effect/overmap/visitable/sector/skrellscoutspace,
 /turf/space,
 /area/space)

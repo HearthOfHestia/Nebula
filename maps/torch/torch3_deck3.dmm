@@ -609,7 +609,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/tcommsat/storage)
 "bV" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -2820,7 +2820,7 @@
 /turf/simulated/floor/plating,
 /area/vacant/mess)
 "gH" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -4093,7 +4093,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -8509,7 +8509,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
@@ -8636,7 +8636,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "vT" = (
@@ -8653,7 +8653,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "vW" = (
@@ -9764,7 +9764,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/item/radio/beacon,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "Observer-Start"
 	},
 /obj/structure/cable/green{
@@ -10504,7 +10504,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "Bt" = (
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
@@ -10725,7 +10725,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "Co" = (
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
@@ -11043,7 +11043,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/structure/cable/green{
@@ -11271,7 +11271,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/machinery/light/spot{
 	dir = 4
 	},
@@ -11740,7 +11740,7 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 8
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -11777,7 +11777,7 @@
 /turf/simulated/floor/carpet,
 /area/crew_quarters/recreation)
 "EV" = (
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
@@ -12277,7 +12277,7 @@
 /obj/structure/closet/hydrant{
 	pixel_y = 32
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo)
 "Gw" = (
@@ -12989,7 +12989,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/thirddeck/aftstarboard)
 "IT" = (
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
@@ -13828,7 +13828,7 @@
 /area/crew_quarters/sleep/cryo)
 "Lj" = (
 /obj/machinery/hologram/holopad,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/structure/railing/mapped{
@@ -13875,7 +13875,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/crew_quarters/mess)
 "Lw" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -18286,7 +18286,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/landmark/latejoin/cryo,
+/obj/abstract/landmark/latejoin/cryo,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -18314,7 +18314,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/cable/green,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /turf/simulated/floor/tiled/dark/monotile,

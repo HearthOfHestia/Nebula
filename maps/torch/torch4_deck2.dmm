@@ -1528,7 +1528,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
 "dw" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -2475,7 +2475,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "fC" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -5782,7 +5782,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/engineering/foyer)
 "oc" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7641,7 +7641,7 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 1
 	},
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -8154,7 +8154,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "tZ" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "lightsout"
 	},
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
@@ -12848,7 +12848,7 @@
 /area/vacant/prototype/control)
 "Hn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
@@ -13489,7 +13489,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/vacant/prototype/control)
 "Ji" = (
-/obj/effect/landmark{
+/obj/abstract/landmark{
 	name = "xeno_spawn";
 	pixel_x = -1
 	},
