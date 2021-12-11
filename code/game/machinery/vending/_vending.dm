@@ -141,7 +141,7 @@
 	if (!emagged)
 		emagged = 1
 		req_access.Cut()
-		to_chat(user, "You short out the product lock on \the [src]")
+		to_chat(user, "You short out the product lock on \the [src].")
 		return 1
 
 /obj/machinery/vending/attackby(obj/item/W, mob/user)

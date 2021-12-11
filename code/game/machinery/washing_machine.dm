@@ -180,7 +180,7 @@
 			else
 				to_chat(user, SPAN_NOTICE("You can't put the item in right now."))
 		else
-			to_chat(user, SPAN_NOTICE("\The [src] is full"))
+			to_chat(user, SPAN_NOTICE("\The [src] is full."))
 		return TRUE
 
 	if(state & WASHER_STATE_RUNNING)
