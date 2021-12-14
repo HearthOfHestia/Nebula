@@ -17,6 +17,11 @@
 	name = "green utility fatigues"
 	desc = "A set of green fatigues made from sturdy, durable synthetic fibers. Mildly flash and stain resistant. Tailored for forested climates."
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_green_espatiers.dmi'
+	siemens_coefficient = 0.8
+	armor = list(
+		melee = ARMOR_MELEE_MINOR,
+		energy = ARMOR_ENERGY_MINOR
+	)
 
 /obj/item/clothing/under/espatier/utility/command
 	starting_accessories = list(/obj/item/clothing/accessory/department/espatier/command)

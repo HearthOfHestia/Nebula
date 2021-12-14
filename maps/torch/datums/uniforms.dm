@@ -45,7 +45,7 @@
 	)
 	service_under = /obj/item/clothing/under/iseo/service/uniform
 	service_skirt = /obj/item/clothing/under/iseo/service/skirt
-	service_over = /obj/item/clothing/suit/iseo/service
+	service_over = /obj/item/clothing/suit/storage/iseo/service
 	service_shoes = /obj/item/clothing/shoes/dress
 	service_hat = /obj/item/clothing/head/iseo/garrison_cap
 
@@ -69,7 +69,7 @@
 	utility_hat = /obj/item/clothing/head/espatier/utility
 	utility_extra = list(
 		/obj/item/clothing/head/espatier/beret,
-		/obj/item/clothing/suit/espatier/jacket
+		/obj/item/clothing/suit/storage/espatier/jacket
 		)
 
 	service_under = /obj/item/clothing/under/espatier/service/uniform
