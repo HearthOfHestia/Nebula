@@ -171,13 +171,17 @@ var/global/list/slot_equipment_priority = list( \
 
 // Removes an item from inventory and places it in the target atom.
 // If canremove or other conditions need to be checked then use unEquip instead.
-/mob/proc/drop_from_inventory(var/obj/item/W, var/atom/target = null)
-	if(W)
-		remove_from_mob(W, target)
-		if(!(W && W.loc)) return 1 // self destroying objects (tk, grabs)
-		update_icon()
-		return 1
-	return 0
+/mob/proc/drop_from_inventory(var/obj/item/item_to_drop, var/atom/target = null)
+	if(!item_to_drop)
+		return FALSE
+
+	remove_from_mob(item_to_drop, target)
+
+	if (!item_to_drop.loc) // self destroying objects (tk, grabs)
+		return TRUE
+
+	update_icon()
+	return TRUE
 
 // Drops a held item from a given slot.
 /mob/proc/drop_from_hand(var/slot, var/atom/Target)
@@ -250,22 +254,24 @@ var/global/list/slot_equipment_priority = list( \
 	return TRUE
 
 //Attemps to remove an object on a mob.
-/mob/proc/remove_from_mob(var/obj/O, var/atom/target)
-	if(!O) // Nothing to remove, so we succeed.
+/mob/proc/remove_from_mob(var/obj/object, var/atom/target)
+	if(!object) // Nothing to remove, so we succeed.
 		return TRUE
-	if (src.client)
-		src.client.screen -= O
-	O.reset_plane_and_layer()
-	O.screen_loc = null
-	if(!src.u_equip(O))
-		return TRUE
-	if(istype(O, /obj/item))
-		var/obj/item/I = O
+
+	src.u_equip(object)
+	src.client?.screen -= object
+	object.reset_plane_and_layer()
+	object.screen_loc = null
+
+	if(istype(object, /obj/item))
+		var/obj/item/item_to_remove = object
 		if(target)
-			I.forceMove(target)
+			item_to_remove.forceMove(target)
 		else
-			I.dropInto(loc)
-		I.dropped(src)
+			item_to_remove.dropInto(loc)
+
+		item_to_remove.dropped(src)
+
 	return TRUE
 
 /mob/proc/drop_held_items()
