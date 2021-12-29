@@ -177,7 +177,7 @@ var/global/list/slot_equipment_priority = list( \
 
 	remove_from_mob(item_to_drop, target)
 
-	if (!item_to_drop.loc) // self destroying objects (tk, grabs)
+	if (!item_to_drop?.loc) // self destroying objects (tk, grabs)
 		return TRUE
 
 	update_icon()
