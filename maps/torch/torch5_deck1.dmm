@@ -16700,7 +16700,7 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/item/folder/yellow,
-/obj/item/tape_roll,
+/obj/item/taperoll,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},

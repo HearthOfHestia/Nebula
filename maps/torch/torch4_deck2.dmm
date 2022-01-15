@@ -3441,8 +3441,8 @@
 	pixel_x = 6;
 	pixel_y = 4
 	},
-/obj/item/tape_roll,
-/obj/item/tape_roll,
+/obj/item/taperoll,
+/obj/item/taperoll,
 /turf/simulated/floor/tiled,
 /area/engineering/engineering_bay)
 "hX" = (

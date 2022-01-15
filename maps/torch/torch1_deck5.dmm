@@ -3449,7 +3449,7 @@
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
-/obj/item/tape_roll,
+/obj/item/taperoll,
 /obj/machinery/light/small,
 /obj/machinery/alarm{
 	dir = 1;

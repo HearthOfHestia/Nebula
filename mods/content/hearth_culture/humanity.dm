@@ -191,8 +191,8 @@
 /decl/cultural_info/culture/human/vatgrown/get_random_name(var/mob/M, var/gender)
 	return capitalize(pick(gender==FEMALE ? global.first_names_female : global.first_names_male)) + "-" + "[rand(0,9999)]"
 
-/decl/cultural_info/culture/human/vatgrown/sanitize_name(var/new_name)
-	return sanitizeName(new_name, allow_numbers = TRUE)
+/decl/cultural_info/culture/human/vatgrown/sanitize_cultural_name(var/new_name)
+	return sanitize_name(new_name, allow_numbers = TRUE)
 
 /decl/cultural_info/culture/human/aaronite
 	name = "Aaronite"

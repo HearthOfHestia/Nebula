@@ -255,7 +255,7 @@
 			var/response = input(user, "New Window ID:", name, id) as null | text
 			if (isnull(response) || user.incapacitated() || !user.Adjacent(src) || user.get_active_hand() != W)
 				return
-			id = sanitizeSafe(response, MAX_NAME_LEN)
+			id = sanitize_safe(response, MAX_NAME_LEN)
 			to_chat(user, SPAN_NOTICE("The new ID of \the [src] is [id]."))
 		return
 	else if(istype(W, /obj/item/gun/energy/plasmacutter) && anchored)
@@ -421,7 +421,8 @@
 		basestate = reinf_basestate
 	else
 		basestate = initial(basestate)
-	overlays.Cut()
+	
+	..()
 
 	if (paint_color)
 		color = paint_color
@@ -447,7 +448,7 @@
 			else
 				I = image(icon, "[basestate]_onframe[conn]", dir = BITFLAG(i-1))
 			I.color = paint_color
-			overlays += I
+			add_overlay(I)
 	else
 		for(var/i = 1 to 4)
 			var/conn = connections ? connections[i] : "0"
@@ -456,7 +457,7 @@
 			else
 				I = image(icon, "[basestate][conn]", dir = BITFLAG(i-1))
 			I.color = paint_color
-			overlays += I
+			add_overlay(I)
 
 /obj/structure/window/fire_act(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	var/melting_point = material.melting_point
@@ -567,10 +568,10 @@
 
 /obj/machinery/button/windowtint/attackby(obj/item/W, mob/user)
 	if(isMultitool(W))
-		var/t = sanitizeSafe(input(user, "Enter the ID for the button.", name, id_tag), MAX_NAME_LEN)
+		var/t = sanitize_safe(input(user, "Enter the ID for the button.", name, id_tag), MAX_NAME_LEN)
 		if(!CanPhysicallyInteract(user))
 			return TRUE
-		t = sanitizeSafe(t, MAX_NAME_LEN)
+		t = sanitize_safe(t, MAX_NAME_LEN)
 		if (t)
 			id_tag = t
 			to_chat(user, SPAN_NOTICE("The new ID of the button is '[id_tag]'."))
