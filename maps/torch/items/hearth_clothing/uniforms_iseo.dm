@@ -19,6 +19,11 @@
 	name = "utility fatigues"
 	desc = "A set of black fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
 	icon = 'maps/torch/icons/converted_icons/under/under_utility_iseo.dmi'
+	siemens_coefficient = 0.8
+	armor = list(
+		melee = ARMOR_MELEE_MINOR,
+		energy = ARMOR_ENERGY_MINOR
+	)
 
 /obj/item/clothing/under/iseo/utility/command
 	desc = "A set of blue fatigues made from sturdy, durable synthetic fibers used by the ISEO Surveyor Corps. Mildly flash and stain resistant."
