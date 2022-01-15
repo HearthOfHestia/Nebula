@@ -255,7 +255,7 @@ var/global/const/access_skrellscoutship = "ACCESS_SKRELLSCOUT"
 
 //Skrell Devices
 
-/obj/item/tape_roll/skrell
+/obj/item/taperoll/skrell
 	name = "modular adhesive dispenser"
 	desc = "A roll of sticky tape. Possibly for taping ducks... or was that ducts?"
 	icon = 'icons/obj/bureaucracy.dmi'

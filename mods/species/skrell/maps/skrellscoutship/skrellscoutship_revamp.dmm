@@ -392,16 +392,16 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
 /turf/simulated/floor/tiled/skrell/blue,
 /area/ship/skrellscoutship/command/armory)
 "cD" = (
@@ -1350,7 +1350,7 @@
 /area/ship/skrellscoutship/command/armory)
 "if" = (
 /obj/structure/closet/cabinet,
-/obj/item/tape_roll/skrell,
+/obj/item/taperoll/skrell,
 /turf/simulated/floor/tiled/skrell/green,
 /area/ship/skrellscoutship/crew/dormitories)
 "ig" = (
@@ -1371,13 +1371,13 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
-/obj/item/tape_roll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
+/obj/item/taperoll/skrell,
 /turf/simulated/floor/tiled/skrell/orange,
 /area/ship/skrellscoutship/maintenance/power)
 "in" = (
