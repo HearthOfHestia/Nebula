@@ -1713,7 +1713,7 @@
 /area/particle_accelerator/engine)
 "Gz" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/computer,
+/obj/machinery/computer/modular/preset/full,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "GI" = (

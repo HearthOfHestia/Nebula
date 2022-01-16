@@ -22,6 +22,9 @@
 	cost = 1
 	generate_mining_by_z = 1
 	area_usage_test_exempted_root_areas = list(/area/particle_accelerator)
+	apc_test_exempt_areas = list(
+		/area/particle_accelerator/emitter = NO_VENT,
+	)
 
 /obj/effect/shuttle_landmark/particle_accelerator/nav1
 	name = "Circumsolar Accelerator Navpoint #1"
