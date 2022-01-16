@@ -70,7 +70,8 @@ TORCH_ESCAPE_POD(19)
 		"nav_magshield_antag",
 		"nav_casino_antag",
 		"nav_yacht_antag",
-		"nav_slavers_base_antag"
+		"nav_slavers_base_antag",
+		"nav_particle_accelerator_antag",
 		)
 
 /obj/effect/shuttle_landmark/ninja/hanger
@@ -186,6 +187,7 @@ TORCH_ESCAPE_POD(19)
 		"nav_casino_antag",
 		"nav_yacht_antag",
 		"nav_slavers_base_antag",
+		"nav_particle_accelerator_antag",
 		)
 
 /obj/effect/shuttle_landmark/skipjack/hanger
@@ -234,6 +236,7 @@ TORCH_ESCAPE_POD(19)
 		"nav_casino_antag",
 		"nav_yacht_antag",
 		"nav_slavers_base_antag",
+		"nav_particle_accelerator_antag",
 		)
 
 /obj/effect/shuttle_landmark/ert/hanger

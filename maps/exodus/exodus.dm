@@ -38,6 +38,7 @@
 	#include "../away/slavers/slavers_base.dm"
 	#include "../away/unishi/unishi.dm"
 	#include "../away/yacht/yacht.dm"
+	#include "../away/particle_accelerator/particle_accelerator.dm"
 
 	#include "jobs/_goals.dm"
 	#include "jobs/captain.dm"

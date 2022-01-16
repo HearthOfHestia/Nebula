@@ -224,6 +224,7 @@
 	#include "../away/magshield/magshield.dm"
 	#include "../away/casino/casino.dm"
 	#include "../away/yacht/yacht.dm"
+	#include "../away/particle_accelerator/particle_accelerator.dm"
 //	#include "../away/blueriver/blueriver.dm"
 	#include "../away/slavers/slavers_base.dm"
 	#include "../away/mobius_rift/mobius_rift.dm"
