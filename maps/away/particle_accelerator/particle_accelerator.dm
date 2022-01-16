@@ -17,7 +17,7 @@
 /datum/map_template/ruin/away_site/particle_accelerator
 	name = "Circumsolar Particle Accelerator"
 	id = "awaysite_particle_accelerator"
-	description = "Large linear structure with radiation"
+	description = "Large, almost empty, linear structure"
 	suffixes = list("particle_accelerator/particle_accelerator.dmm")
 	cost = 1
 	generate_mining_by_z = 1

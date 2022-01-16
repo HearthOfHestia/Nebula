@@ -1433,10 +1433,8 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 5
 	},
-/obj/item/gun/projectile/revolver/medium{
-	pixel_y = -1
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/random/projectile,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "BP" = (
