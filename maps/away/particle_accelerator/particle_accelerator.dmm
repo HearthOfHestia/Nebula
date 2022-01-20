@@ -19,9 +19,6 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 10
-	},
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -34,9 +31,15 @@
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "aw" = (
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
+/obj/structure/closet/secure_closet/personal/empty,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/chameleon,
+/obj/item/paper/crumpled/bloody/particle_accelerator_1,
+/turf/simulated/floor/tiled/steel_grid,
+/area/particle_accelerator/dorms)
 "ax" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
@@ -60,24 +63,38 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 8;
+	id_tag = "particle_accelerator_outer";
+	name = "Outer Shielding";
+	pixel_x = 24
+	},
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/area/particle_accelerator/emitter)
 "aM" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "aU" = (
-/obj/structure/closet/crate/uranium,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/random/energy,
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/particle_accelerator/engine)
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 4;
+	id_tag = "particle_accelerator_outer";
+	name = "Outer Shielding";
+	pixel_x = -24
+	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
 "aV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/airlock/external/bolted{
 	id_tag = "particle_accelerator_north_inner"
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
@@ -91,6 +108,7 @@
 "bm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/space_heater,
+/obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "bo" = (
@@ -128,6 +146,10 @@
 "bS" = (
 /turf/unsimulated/mask,
 /area/mine/unexplored)
+"cb" = (
+/obj/effect/overmap/visitable/ship/particle_accelerator,
+/turf/space,
+/area/space)
 "cw" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -218,17 +240,20 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/papershredder{
+	pixel_x = 8
+	},
+/obj/item/shreddedp{
+	pixel_x = -12;
+	pixel_y = -1
+	},
+/obj/item/paper/particle_accelerator_3{
+	layer = 2;
+	pixel_x = -14;
+	pixel_y = -1
+	},
 /turf/simulated/floor/wood/ebony,
 /area/particle_accelerator/office)
-"ez" = (
-/obj/structure/closet/secure_closet/personal/empty,
-/obj/effect/floor_decal/borderfloor{
-	dir = 9
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/item/chameleon,
-/turf/simulated/floor/tiled/steel_grid,
-/area/particle_accelerator/dorms)
 "eC" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 4
@@ -276,6 +301,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/splatter,
 /turf/simulated/floor/tiled/freezer,
 /area/particle_accelerator/dorms)
 "gg" = (
@@ -289,6 +315,10 @@
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "gq" = (
+/turf/simulated/wall/r_wall,
+/area/particle_accelerator/maintenance_north)
+"gy" = (
+/obj/structure/sign/warning/lethal_turrets,
 /turf/simulated/wall/r_wall,
 /area/particle_accelerator/maintenance_north)
 "gz" = (
@@ -313,7 +343,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "gZ" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/suit/chef/classic,
@@ -330,17 +360,9 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "hu" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	name = "circumsolar accelerator engine";
-	pixel_y = 24
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
@@ -351,12 +373,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
-"hF" = (
-/obj/structure/inflatable/door,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
 "hZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -372,6 +388,15 @@
 /obj/effect/shuttle_landmark/particle_accelerator/nav4,
 /turf/space,
 /area/space)
+"id" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun/energy/toxgun{
+	icon_rotation = 20;
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "ie" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -385,6 +410,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
+"iE" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/effect/decal/cleanable/molten_item,
+/turf/simulated/floor/reinforced,
+/area/space)
 "iH" = (
 /obj/item/storage/mirror{
 	pixel_y = 24
@@ -445,8 +478,19 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/maintenance/clean,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
+"jd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/floor_dark{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/particle_accelerator/engine)
 "jw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -474,23 +518,14 @@
 "jC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/material/puck/mapped/uranium,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
 /obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "jP" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 9
 	},
@@ -535,7 +570,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "ks" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -600,7 +635,20 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/away_mission/circumsolar_particle_accelerator/centerright,
+/obj/structure/away_mission/circumsolar_particle_accelerator/centerright{
+	icon_rotation = 2
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
+"mi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 8;
+	id_tag = "particle_accelerator_inner";
+	name = "Inner Shielding";
+	pixel_x = 24
+	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "mr" = (
@@ -609,7 +657,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/area/particle_accelerator/emitter)
 "mw" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -624,12 +672,17 @@
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 4
 	},
+/obj/item/stack/tile/floor_dark{
+	pixel_x = 5;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "mM" = (
-/obj/effect/overmap/visitable/ship/particle_accelerator,
-/turf/space,
-/area/space)
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "mQ" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -644,7 +697,7 @@
 /area/particle_accelerator/maintenance_south)
 "mS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/abstract/landmark/corpse/engineer,
+/obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "nk" = (
@@ -653,8 +706,14 @@
 	icon_state = "bulb1"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	id_tag = "particle_accelerator_outer";
+	name = "Outer Shielding";
+	pixel_y = 24
+	},
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "np" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -664,6 +723,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/flour,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "nA" = (
@@ -678,11 +738,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
-"nG" = (
-/mob/living/simple_animal/hostile/giant_spider/hunter,
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
+/area/particle_accelerator/emitter)
 "nJ" = (
 /obj/structure/closet/secure_closet/personal/empty,
 /obj/effect/floor_decal/borderfloor{
@@ -691,6 +747,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
+"nL" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/structure/lattice,
+/obj/machinery/light/small/red{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_south)
 "nN" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -698,7 +762,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/area/particle_accelerator/emitter)
+"nU" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
 "nW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -714,6 +782,7 @@
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/molten_item,
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "oM" = (
@@ -724,25 +793,16 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
-"pe" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
 "pf" = (
-/obj/machinery/power/smes/buildable,
 /obj/machinery/light{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable{
-	dir = 4;
-	icon_state = "0-2"
+/obj/machinery/power/terminal{
+	dir = 8
 	},
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/cable/green{
+	icon_state = "0-4"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
@@ -784,15 +844,11 @@
 /obj/machinery/button/blast_door{
 	desc = "A remote control-switch for shutters.";
 	id_tag = "particle_accelerator_shutters";
-	name = "Radiation Shutters";
+	name = "Window Radiation Shielding";
 	pixel_y = 24
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
-"qd" = (
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
 "qs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -819,7 +875,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "qS" = (
 /obj/effect/decal/cleanable/ash,
 /obj/effect/floor_decal/industrial/warning/dust{
@@ -851,6 +907,16 @@
 /obj/structure/cable/green,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
+"rK" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/particle_accelerator/engine)
 "rN" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -858,7 +924,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "rP" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled/steel_grid,
@@ -885,6 +951,7 @@
 	},
 /obj/structure/curtain/open/shower,
 /obj/effect/decal/cleanable/dirt,
+/obj/abstract/landmark/corpse/chef,
 /turf/simulated/floor/tiled/freezer,
 /area/particle_accelerator/dorms)
 "sT" = (
@@ -893,8 +960,19 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
+"tb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/particle_accelerator/engine)
 "tc" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -934,6 +1012,7 @@
 	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "ud" = (
@@ -955,6 +1034,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_south)
+"ug" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "uv" = (
@@ -1013,7 +1097,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "vj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
@@ -1047,6 +1131,9 @@
 "vy" = (
 /obj/machinery/door/airlock,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "wa" = (
@@ -1093,7 +1180,7 @@
 "wI" = (
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "wR" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -1141,10 +1228,27 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/ebony,
 /area/particle_accelerator/office)
+"xr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/apc{
+	dir = 4;
+	name = "circumsolar accelerator engine";
+	pixel_x = 24
+	},
+/obj/structure/cable,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/particle_accelerator/engine)
 "xu" = (
 /obj/machinery/light,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/material/puck/mapped/uranium,
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/particle_accelerator/engine)
+"xv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/radiation,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/item/paper/particle_accelerator_2,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "xW" = (
@@ -1155,13 +1259,13 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "xX" = (
-/obj/machinery/power/smes/buildable,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/power/smes/buildable/preset/particle_accelerator,
 /obj/structure/cable{
-	dir = 4;
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -1301,33 +1405,36 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
+"zX" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/machinery/door/blast/shutters/open{
+	id_tag = ""particle_accelerator_outer";
+	name = "outer ring shielding"
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
+"zY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/floor_dark{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
 "Ah" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
-"Ai" = (
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
 "Aj" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/techfloor{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/techfloor,
-/area/particle_accelerator/engine)
-"Ak" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/inflatable/door,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/steel_grid,
+/area/particle_accelerator/dorms)
 "Al" = (
 /turf/space,
 /area/space)
@@ -1351,6 +1458,8 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/vomit,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/freezer,
 /area/particle_accelerator/dorms)
@@ -1378,36 +1487,45 @@
 /area/particle_accelerator/emitter)
 "AR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
 /obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "AW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "AZ" = (
 /obj/effect/wallframe_spawn/reinforced_borosilicate,
-/obj/machinery/door/blast/shutters/open{
+/obj/machinery/door/blast/shutters{
 	id_tag = "particle_accelerator_shutters";
-	name = "radiation shutters"
+	name = "radiation shielding"
 	},
 /turf/simulated/floor/reinforced/oxygen,
-/area/particle_accelerator/emitter)
+/area/particle_accelerator/engine)
 "Bb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "Bf" = (
 /obj/machinery/door/airlock,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/freezer,
+/turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "Bw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1419,9 +1537,6 @@
 /area/particle_accelerator/dorms)
 "Bz" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
 /obj/effect/floor_decal/corner_techfloor_grid{
 	dir = 1
 	},
@@ -1442,12 +1557,9 @@
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "Cx" = (
-/obj/machinery/power/terminal{
-	dir = 1
-	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "0-4"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
@@ -1472,6 +1584,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
+"CG" = (
+/obj/structure/sign/warning/lethal_turrets,
+/turf/simulated/wall/r_wall,
+/area/particle_accelerator/maintenance_south)
 "CU" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1512,6 +1628,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "Do" = (
@@ -1520,10 +1639,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "Ds" = (
 /obj/machinery/atmospherics/unary/tank/air,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "Dw" = (
@@ -1534,7 +1654,17 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
+"DD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/material/puck/mapped/uranium,
+/obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/obj/structure/cable,
+/turf/simulated/floor/tiled/techfloor,
+/area/particle_accelerator/engine)
 "DK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -1578,6 +1708,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
 "El" = (
@@ -1666,10 +1799,14 @@
 /obj/random/maintenance/clean,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
-"FI" = (
-/mob/living/simple_animal/hostile/giant_spider,
-/turf/simulated/floor/asteroid,
-/area/mine/explored)
+"FQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/techfloor,
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/particle_accelerator/engine)
 "FS" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -1683,6 +1820,34 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
+"FW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/techfloor,
+/area/particle_accelerator/engine)
+"Gh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 4;
+	id_tag = "particle_accelerator_inner";
+	name = "Inner Shielding";
+	pixel_x = -24
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
+"Gi" = (
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot/range{
+	name = "repurposed minebot"
+	},
+/turf/simulated/floor/tiled/steel_grid,
+/area/particle_accelerator/dorms)
 "Gk" = (
 /obj/effect/decal/cleanable/ash,
 /obj/effect/floor_decal/industrial/warning/dust{
@@ -1712,15 +1877,29 @@
 "Gz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/modular/preset/full,
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
+"GD" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/structure/lattice,
+/obj/machinery/light/small/red,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_north)
 "GI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/green{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/techfloor,
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
+"GS" = (
+/obj/effect/shuttle_landmark/particle_accelerator/nav3,
+/turf/space,
+/area/space)
 "He" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/reinforced,
@@ -1781,11 +1960,11 @@
 /area/particle_accelerator/dorms)
 "Ip" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
 /obj/effect/floor_decal/techfloor{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
@@ -1812,11 +1991,8 @@
 /area/space)
 "IS" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/green{
-	icon_state = "2-8"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
@@ -1876,31 +2052,46 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
-	icon_state = "1-4"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "Jv" = (
-/obj/effect/shuttle_landmark/particle_accelerator/nav3,
-/turf/space,
-/area/space)
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/drip{
+	pixel_x = 7;
+	pixel_y = 23
+	},
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/steel_grid,
+/area/particle_accelerator/dorms)
 "JI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "JL" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "JY" = (
-/obj/machinery/door/airlock,
-/turf/simulated/wall/iron,
+/obj/structure/bed/padded,
+/obj/item/bedsheet,
+/obj/effect/floor_decal/borderfloor{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/cobweb2,
+/turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "Kb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/abstract/landmark/corpse/russian,
 /obj/effect/decal/cleanable/blood,
+/obj/abstract/landmark/corpse/engineer,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "Kp" = (
@@ -1990,10 +2181,6 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/paper/particle_accelerator_1{
-	pixel_x = 6;
-	pixel_y = 2
-	},
 /turf/simulated/floor/carpet,
 /area/particle_accelerator/office)
 "LS" = (
@@ -2012,9 +2199,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "Mc" = (
@@ -2022,7 +2206,12 @@
 /turf/space,
 /area/space)
 "Mn" = (
-/turf/simulated/wall/iron,
+/turf/simulated/wall/prepainted,
+/area/particle_accelerator/dorms)
+"Ms" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/trash,
+/turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "Mw" = (
 /obj/structure/closet/secure_closet/personal/empty,
@@ -2043,6 +2232,12 @@
 /obj/machinery/door/airlock/vault/bolted,
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
+"MD" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/machinery/light/small/red,
+/obj/structure/lattice,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_south)
 "MY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/ebony,
@@ -2052,6 +2247,12 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/floor_decal/techfloor{
 	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
@@ -2102,13 +2303,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
+"Ox" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/structure/lattice,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_south)
 "OD" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/area/particle_accelerator/emitter)
 "OE" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -2178,6 +2387,10 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/warning,
+/obj/machinery/door/blast/shutters{
+	id_tag = "particle_accelerator_inner";
+	name = "inner ring shielding"
+	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "Pz" = (
@@ -2234,8 +2447,8 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
@@ -2298,12 +2511,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/monotile,
 /area/particle_accelerator/dorms)
+"Sp" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/obj/structure/lattice,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_north)
 "Ss" = (
 /obj/structure/inflatable/door,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/area/particle_accelerator/emitter)
 "SE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/red,
 /turf/simulated/wall/r_wall,
@@ -2316,6 +2537,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
+"SG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/abstract/landmark/corpse/radiation_tech,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_north)
+"Tk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
 "Tn" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet,
@@ -2366,13 +2597,26 @@
 /obj/structure/away_mission/circumsolar_particle_accelerator,
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
+"TM" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "particle_accelerator_inner";
+	name = "inner ring shielding"
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "TZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/structure/closet/secure_closet/personal/empty,
+/obj/effect/floor_decal/borderfloor{
+	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_south)
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/tiled/steel_grid,
+/area/particle_accelerator/dorms)
 "Up" = (
 /turf/simulated/wall/r_wall,
 /area/particle_accelerator/engine)
@@ -2393,8 +2637,8 @@
 /area/particle_accelerator/maintenance_south)
 "Uu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/abstract/landmark/corpse/scientist,
 /obj/effect/decal/cleanable/blood,
+/obj/abstract/landmark/corpse/radiation_tech,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "UA" = (
@@ -2414,9 +2658,9 @@
 "UO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/material/puck/mapped/uranium,
-/obj/abstract/landmark/corpse/scientist,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/floor_decal/techfloor,
+/obj/abstract/landmark/corpse/radiation_tech,
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
 "UT" = (
@@ -2438,9 +2682,9 @@
 	id_tag = "particle_accelerator_north_pump"
 	},
 /obj/machinery/embedded_controller/radio/airlock/airlock_controller{
-	dir = 8;
+	dir = 4;
 	id_tag = "particle_accelerator_north_airlock";
-	pixel_x = 24;
+	pixel_x = -24;
 	tag_airpump = "particle_accelerator_north_pump";
 	tag_chamber_sensor = "particle_accelerator_north_sensor";
 	tag_exterior_door = "particle_accelerator_north_outer";
@@ -2453,7 +2697,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airlock_sensor{
 	id_tag = "particle_accelerator_north_sensor";
-	pixel_x = -24
+	pixel_x = 24
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
@@ -2521,6 +2765,9 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "Wg" = (
@@ -2543,6 +2790,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/monotile,
 /area/particle_accelerator/dorms)
+"Wm" = (
+/obj/machinery/porta_turret/stationary/particle_accelerator,
+/obj/structure/lattice,
+/obj/machinery/light/small/red,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/maintenance_south)
 "Wq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable{
@@ -2568,9 +2821,9 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
-/obj/abstract/landmark/corpse/russian,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
+/obj/abstract/landmark/corpse/scientist,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "WK" = (
@@ -2614,13 +2867,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
 "XD" = (
@@ -2650,11 +2903,24 @@
 	},
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/maintenance_north)
+/area/particle_accelerator/emitter)
+"YT" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/door/blast/shutters/open{
+	id_tag = ""particle_accelerator_outer";
+	name = "outer ring shielding"
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "YU" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_animal/hostile/hivebot/range,
+/mob/living/simple_animal/hostile/hivebot/range{
+	name = "repurposed minebot"
+	},
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
 "YX" = (
@@ -2700,6 +2966,9 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/particle_accelerator/engine)
 "ZS" = (
@@ -2717,7 +2986,13 @@
 /area/particle_accelerator/dorms)
 "ZW" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/green{
+/obj/effect/floor_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor,
@@ -3119,9 +3394,9 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3220,11 +3495,11 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3321,14 +3596,14 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3423,14 +3698,14 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3524,15 +3799,15 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3611,7 +3886,6 @@ Al
 Al
 Al
 Al
-Jv
 Al
 Al
 Al
@@ -3626,16 +3900,17 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3729,15 +4004,15 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3832,14 +4107,14 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -3934,14 +4209,14 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -4037,12 +4312,12 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -4137,14 +4412,14 @@ Al
 Al
 Al
 Al
+GS
 Al
 Al
-bS
-bS
-bS
-bS
-bS
-bS
+Al
+Al
+Al
+Al
+Al
 Al
 Al
 Al
@@ -4242,9 +4517,9 @@ Al
 Al
 Al
 Al
-bS
-bS
-bS
+Al
+Al
+Al
 Al
 Al
 Al
@@ -4381,7 +4656,7 @@ Al
 Al
 Al
 Al
-Al
+yC
 Al
 Al
 Al
@@ -4823,13 +5098,13 @@ KE
 Mc
 Al
 Al
-Al
-Al
-lv
+Mc
+Mc
+CG
 WZ
 lv
-Al
-Al
+Mc
+Mc
 Al
 Al
 Al
@@ -4925,13 +5200,13 @@ KE
 Mc
 Al
 Al
-Al
-Al
+Mc
+MD
 lv
 zk
 lv
-Al
-Al
+Ox
+Mc
 Al
 Al
 Al
@@ -5002,7 +5277,7 @@ Al
 Al
 Al
 Al
-yC
+Al
 Al
 Al
 Al
@@ -5027,13 +5302,13 @@ KE
 Mc
 Al
 Al
-Al
-Al
+Mc
+Mc
 lv
 wU
 lv
 lv
-Al
+Mc
 Al
 Al
 Al
@@ -5446,11 +5721,11 @@ Al
 Al
 Al
 rW
-ez
+Ry
 YX
 Eu
 Mn
-CA
+Aj
 Mn
 Ry
 YX
@@ -5552,7 +5827,7 @@ WA
 YU
 CA
 bC
-aM
+Jv
 kb
 CA
 CA
@@ -5854,13 +6129,13 @@ Al
 Al
 Al
 rW
-Ry
+aw
 YX
 Mw
 Mn
 CA
 Mn
-Ry
+TZ
 iV
 nJ
 rW
@@ -5957,13 +6232,13 @@ Al
 Al
 rW
 VR
+Gi
 CA
-CA
-JY
+bC
 CA
 kb
 CA
-CA
+Ms
 bL
 rW
 Al
@@ -6051,14 +6326,14 @@ Al
 Al
 Vc
 Hr
-CC
+ug
 lv
 Al
 Al
 Al
 Al
 rW
-Ou
+JY
 ef
 Tn
 Mn
@@ -6454,7 +6729,7 @@ Mc
 eU
 Mc
 lv
-TZ
+CC
 Fy
 wR
 CC
@@ -6466,7 +6741,7 @@ lv
 wj
 CC
 lv
-Ou
+JY
 ef
 Tn
 Mn
@@ -6652,13 +6927,13 @@ Al
 gq
 gq
 gq
-gq
-gq
-gq
-VK
-lv
-lv
-lv
+bR
+bR
+bR
+zX
+bR
+bR
+bR
 lV
 Up
 Up
@@ -6754,12 +7029,12 @@ Al
 gq
 bm
 rb
-Ak
-CE
-qd
+JI
+aU
+wI
 Gk
 wI
-CC
+aU
 rN
 Us
 Up
@@ -6856,12 +7131,12 @@ Al
 gq
 Oo
 CE
-Ak
-CE
-qd
+JI
+nU
+wI
 VK
 wI
-Fp
+Tk
 JI
 Zn
 Up
@@ -6956,19 +7231,19 @@ Al
 Al
 Al
 gq
-CE
+SG
 SF
 bR
 bR
 bR
-wY
-bR
+TM
 bR
 bR
 bR
 Up
+Up
 hu
-Aj
+aq
 LT
 zx
 wf
@@ -7062,17 +7337,17 @@ CE
 CE
 bR
 Eb
-He
+Gh
 wY
-He
+Gh
 He
 He
 AZ
 ze
-JL
+GI
 Ip
 Di
-Ol
+FQ
 vv
 Up
 CU
@@ -7174,7 +7449,7 @@ JL
 Ld
 Bz
 LF
-Ol
+tb
 eY
 Up
 ks
@@ -7254,9 +7529,9 @@ Al
 Al
 Al
 Al
-Al
-Al
-Al
+Mc
+Mc
+Mc
 Al
 Al
 Al
@@ -7274,9 +7549,9 @@ He
 AZ
 Uu
 aq
-ZW
-LF
-Aq
+Pz
+rK
+DD
 Gs
 Up
 PC
@@ -7356,9 +7631,9 @@ Al
 Al
 Al
 Al
-Al
-Al
-Al
+Mc
+Sp
+Mc
 Al
 Al
 Al
@@ -7370,7 +7645,7 @@ VP
 He
 aD
 ax
-He
+mM
 He
 He
 AZ
@@ -7458,7 +7733,7 @@ Al
 Al
 Al
 Al
-gq
+gy
 gq
 gq
 gq
@@ -7477,14 +7752,14 @@ He
 He
 AZ
 Gz
-aq
-IS
-QM
+ZW
+Pz
+LF
 AR
 rc
 Up
 EU
-mS
+CC
 eC
 lv
 Al
@@ -7557,9 +7832,9 @@ Al
 Al
 Al
 Al
+cb
 Al
 Al
-mM
 IX
 Vf
 aV
@@ -7579,9 +7854,9 @@ qs
 He
 AZ
 Gz
-aq
-GI
-QM
+FW
+Pz
+LF
 jC
 cQ
 Up
@@ -7764,8 +8039,8 @@ Al
 Al
 Al
 Al
-Al
-Al
+Mc
+GD
 gq
 gq
 gq
@@ -7782,7 +8057,7 @@ He
 Pg
 He
 AZ
-JL
+jd
 aq
 Pz
 LF
@@ -7866,9 +8141,9 @@ Al
 Al
 Al
 Al
-Al
-Al
-Al
+Mc
+Mc
+Mc
 Al
 Al
 Al
@@ -7877,10 +8152,10 @@ gq
 tL
 yH
 bR
-He
-He
+id
+mi
 og
-He
+mi
 gg
 He
 AZ
@@ -7985,13 +8260,13 @@ Py
 VP
 Mx
 IT
-bR
+Up
 pS
 JL
 aq
 LF
 Ol
-aU
+Kt
 Up
 PC
 Fy
@@ -8084,12 +8359,12 @@ nN
 OD
 Yl
 Hk
-pe
+Yl
 qA
 Do
-lv
+bR
 Up
-vq
+xv
 gz
 LF
 Aq
@@ -8097,7 +8372,7 @@ Kt
 Up
 PC
 CC
-lv
+Vc
 Al
 Al
 Al
@@ -8184,7 +8459,7 @@ lR
 dN
 mr
 aH
-hF
+Ss
 mw
 Ss
 ko
@@ -8199,7 +8474,7 @@ Ea
 Up
 yd
 hB
-lv
+Vc
 Al
 Al
 Al
@@ -8284,23 +8559,23 @@ Al
 gq
 BP
 BP
-gq
-gq
-gq
-Py
-lv
+bR
+bR
+bR
+YT
+bR
 nk
-TD
+zY
 nA
 Up
 vq
 XD
 Wd
-JL
+xr
 QH
 Up
 PC
-CC
+ug
 lv
 Al
 Al
@@ -8390,8 +8665,8 @@ Al
 Al
 Mc
 KE
-lv
-lv
+bR
+bR
 JI
 uS
 Up
@@ -8596,12 +8871,12 @@ Mc
 KE
 Mc
 lv
-CC
+mS
 Fy
 Fp
 TD
 VV
-CC
+ug
 pC
 CC
 lv
@@ -9142,10 +9417,10 @@ bS
 bS
 bS
 bS
-Ai
-nG
-Ai
-Ai
+bS
+bS
+bS
+bS
 Al
 Al
 "}
@@ -9245,7 +9520,7 @@ bS
 bS
 bS
 bS
-aw
+bS
 bS
 bS
 Al
@@ -9347,7 +9622,7 @@ bS
 bS
 bS
 bS
-FI
+bS
 bS
 bS
 Al
@@ -9448,8 +9723,8 @@ bS
 bS
 bS
 bS
-FI
-Ai
+bS
+bS
 bS
 bS
 Al
@@ -9520,13 +9795,13 @@ Al
 Al
 Al
 Al
-Al
-Al
+Mc
+Mc
 lv
 uf
 lv
 lv
-Al
+Mc
 Al
 Al
 Al
@@ -9622,13 +9897,13 @@ Al
 Al
 Al
 Al
-Al
-Al
+Mc
+Wm
 lv
 po
 lv
-Al
-Al
+nL
+Mc
 Al
 Al
 Al
@@ -9724,13 +9999,13 @@ Al
 Al
 Al
 Al
-Al
-Al
-lv
+Mc
+Mc
+CG
 qW
 lv
-Al
-Al
+Mc
+Mc
 Al
 Al
 Al
@@ -12061,7 +12336,7 @@ zf
 Al
 Al
 Al
-qS
+iE
 Al
 Al
 Al
