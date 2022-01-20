@@ -84,6 +84,7 @@
 /obj/item/paper/particle_accelerator_3
 	name = "shredded scrap"
 	info = "--recent difficulties with ███ █████ ██████ ███ ███ ████ ████████████ have made a continuation of project ███████████ ████████ ███████████-- <BR> We implore you--<BR><BR><BR> --unfeasible and uneconomic--"
+	layer = 3
 
 //turrets
 
@@ -114,6 +115,7 @@
 	corpse_outfits = list(/decl/hierarchy/outfit/job/particle_accelerator/radiation_tech)
 
 /decl/hierarchy/outfit/job/particle_accelerator/radiation_tech
+	name = "Radiation Technician"
 	l_ear = /obj/item/radio/headset
 	suit = /obj/item/clothing/suit/radiation
 	head = /obj/item/clothing/head/radiation

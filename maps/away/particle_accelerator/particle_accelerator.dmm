@@ -248,8 +248,7 @@
 	pixel_y = -1
 	},
 /obj/item/paper/particle_accelerator_3{
-	layer = 2;
-	pixel_x = -14;
+	pixel_x = -13;
 	pixel_y = -1
 	},
 /turf/simulated/floor/wood/ebony,
@@ -388,15 +387,6 @@
 /obj/effect/shuttle_landmark/particle_accelerator/nav4,
 /turf/space,
 /area/space)
-"id" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/gun/energy/toxgun{
-	icon_rotation = 20;
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/turf/simulated/floor/reinforced,
-/area/particle_accelerator/emitter)
 "ie" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1;
@@ -442,6 +432,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/carpet,
 /area/particle_accelerator/office)
+"iR" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/door/blast/shutters{
+	id_tag = "particle_accelerator_inner";
+	name = "inner ring shielding"
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "iV" = (
 /obj/structure/closet/secure_closet/personal/empty,
 /obj/effect/floor_decal/borderfloor{
@@ -483,14 +484,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
-"jd" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stack/tile/floor_dark{
-	pixel_x = 5;
-	pixel_y = -3
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/particle_accelerator/engine)
 "jw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -640,17 +633,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
-"mi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/blast_door{
-	desc = "A remote control-switch for shutters.";
-	dir = 8;
-	id_tag = "particle_accelerator_inner";
-	name = "Inner Shielding";
-	pixel_x = 24
-	},
-/turf/simulated/floor/reinforced,
-/area/particle_accelerator/emitter)
 "mr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -726,6 +708,17 @@
 /obj/effect/decal/cleanable/flour,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
+"nt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 4;
+	id_tag = "particle_accelerator_inner";
+	name = "Inner Shielding";
+	pixel_x = -24
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "nA" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -790,6 +783,17 @@
 /obj/effect/floor_decal/industrial/warning/dust,
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
+"pb" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/door/blast/shutters/open{
+	id_tag = ""particle_accelerator_outer";
+	name = "outer ring shielding"
 	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
@@ -983,6 +987,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
+"tn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/floor_dark{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
 "tF" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
@@ -1298,11 +1310,31 @@
 	},
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
+"ym" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/gun/energy/toxgun{
+	icon_rotation = 20;
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "yu" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/cyan,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_south)
+"yw" = (
+/obj/effect/floor_decal/industrial/warning/dust{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/dust,
+/obj/machinery/door/blast/shutters/open{
+	id_tag = ""particle_accelerator_outer";
+	name = "outer ring shielding"
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "yC" = (
 /obj/effect/shuttle_landmark/particle_accelerator/nav1,
 /turf/space,
@@ -1405,25 +1437,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
-"zX" = (
-/obj/effect/floor_decal/industrial/warning/dust{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning/dust,
-/obj/machinery/door/blast/shutters/open{
-	id_tag = ""particle_accelerator_outer";
-	name = "outer ring shielding"
-	},
-/turf/simulated/floor/reinforced,
-/area/particle_accelerator/emitter)
-"zY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stack/tile/floor_dark{
-	pixel_x = 5;
-	pixel_y = -3
-	},
-/turf/simulated/floor/plating,
-/area/particle_accelerator/emitter)
 "Ah" = (
 /obj/machinery/light/small,
 /obj/effect/floor_decal/borderfloor,
@@ -1830,17 +1843,6 @@
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/particle_accelerator/engine)
-"Gh" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/button/blast_door{
-	desc = "A remote control-switch for shutters.";
-	dir = 4;
-	id_tag = "particle_accelerator_inner";
-	name = "Inner Shielding";
-	pixel_x = -24
-	},
-/turf/simulated/floor/reinforced,
-/area/particle_accelerator/emitter)
 "Gi" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/hivebot/range{
@@ -2341,6 +2343,14 @@
 /obj/machinery/door/airlock/vault/bolted,
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
+"OL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/tile/floor_dark{
+	pixel_x = 5;
+	pixel_y = -3
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
+/area/particle_accelerator/engine)
 "OP" = (
 /obj/structure/hygiene/sink/kitchen{
 	dir = 4;
@@ -2484,6 +2494,22 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel_grid,
 /area/particle_accelerator/dorms)
+"RZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/plating,
+/area/particle_accelerator/emitter)
+"Sa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/button/blast_door{
+	desc = "A remote control-switch for shutters.";
+	dir = 8;
+	id_tag = "particle_accelerator_inner";
+	name = "Inner Shielding";
+	pixel_x = 24
+	},
+/turf/simulated/floor/reinforced,
+/area/particle_accelerator/emitter)
 "Sm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -2542,11 +2568,6 @@
 /obj/abstract/landmark/corpse/radiation_tech,
 /turf/simulated/floor/plating,
 /area/particle_accelerator/maintenance_north)
-"Tk" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/plating,
-/area/particle_accelerator/emitter)
 "Tn" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet,
@@ -2595,17 +2616,6 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable,
 /obj/structure/away_mission/circumsolar_particle_accelerator,
-/turf/simulated/floor/reinforced,
-/area/particle_accelerator/emitter)
-"TM" = (
-/obj/effect/floor_decal/industrial/warning,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/machinery/door/blast/shutters{
-	id_tag = "particle_accelerator_inner";
-	name = "inner ring shielding"
-	},
 /turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "TZ" = (
@@ -2903,17 +2913,6 @@
 	},
 /obj/structure/inflatable/door,
 /turf/simulated/floor/plating,
-/area/particle_accelerator/emitter)
-"YT" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/door/blast/shutters/open{
-	id_tag = ""particle_accelerator_outer";
-	name = "outer ring shielding"
-	},
-/turf/simulated/floor/reinforced,
 /area/particle_accelerator/emitter)
 "YU" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -6930,7 +6929,7 @@ gq
 bR
 bR
 bR
-zX
+yw
 bR
 bR
 bR
@@ -7136,7 +7135,7 @@ nU
 wI
 VK
 wI
-Tk
+RZ
 JI
 Zn
 Up
@@ -7236,7 +7235,7 @@ SF
 bR
 bR
 bR
-TM
+iR
 bR
 bR
 bR
@@ -7337,9 +7336,9 @@ CE
 CE
 bR
 Eb
-Gh
+nt
 wY
-Gh
+nt
 He
 He
 AZ
@@ -8057,7 +8056,7 @@ He
 Pg
 He
 AZ
-jd
+OL
 aq
 Pz
 LF
@@ -8152,10 +8151,10 @@ gq
 tL
 yH
 bR
-id
-mi
+ym
+Sa
 og
-mi
+Sa
 gg
 He
 AZ
@@ -8562,10 +8561,10 @@ BP
 bR
 bR
 bR
-YT
+pb
 bR
 nk
-zY
+tn
 nA
 Up
 vq
