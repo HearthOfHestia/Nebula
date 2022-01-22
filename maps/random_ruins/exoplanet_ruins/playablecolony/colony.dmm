@@ -3017,7 +3017,7 @@
 /obj/item/storage/box/cola/drgibb,
 /obj/item/chems/drinks/shaker,
 /obj/item/chems/drinks/pitcher,
-/obj/item/chems/glass/beaker/bowl,
+/obj/item/chems/cooking_container/plate/bowl,
 /obj/item/chems/condiment/salt,
 /obj/item/chems/condiment/enzyme,
 /turf/simulated/floor/tiled/freezer,

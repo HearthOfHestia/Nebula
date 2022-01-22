@@ -88,7 +88,7 @@
 	rich_material_weight = 1
 	dissolves_into = list(
 		/decl/material/solid/sulfur = 0.75,
-		/decl/material/solid/metal/iron = 0.25		
+		/decl/material/solid/metal/iron = 0.25
 	)
 
 /decl/material/solid/spodumene

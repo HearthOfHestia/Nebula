@@ -52,7 +52,7 @@
 	else
 		var/atom/movable/H = holder
 		P.dropInto(H.loc)
-	if(P.type in critical_parts)
+	if(enabled && (P.type in critical_parts))
 		critical_shutdown()
 
 /datum/extension/assembly/proc/add_replace_component(var/mob/living/user, var/part_type, var/obj/item/stock_parts/P)
@@ -105,6 +105,11 @@
 		return
 
 	handle_power()
+
+/datum/extension/assembly/proc/is_critical_part(var/obj/item/stock_parts/P)
+	if(is_type_in_list(P, critical_parts))
+		return TRUE
+	return FALSE
 
 /datum/extension/assembly/proc/has_critical_parts()
 	for(var/crit_type in critical_parts)

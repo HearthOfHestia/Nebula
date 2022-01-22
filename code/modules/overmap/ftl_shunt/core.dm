@@ -3,12 +3,24 @@
 	icon = 'icons/obj/shunt_drive.dmi'
 	var/initial_id_tag = "ftl"
 
+/obj/effect/shunt_dummy
+	icon = 'icons/obj/ftl_drive_96x96.dmi'
+	vis_flags = VIS_INHERIT_ID
+	appearance_flags = KEEP_TOGETHER
+	layer = EMISSIVE_LAYER
+	plane = EMISSIVE_PLANE
+
 /obj/machinery/ftl_shunt/core
 	name = "superluminal shunt core"
 	desc = "An immensely powerful transdimensional superluminal bridge initiator capable of forming a micro-wormhole and shunting an entire ship through it in a nanosecond."
 	base_type = /obj/machinery/ftl_shunt/core
 	uncreated_component_parts = list(/obj/item/stock_parts/ftl_core = 1)
 	construct_state = /decl/machine_construction/default/no_deconstruct
+	icon = 'icons/obj/ftl_drive_96x96.dmi'
+	icon_state = "ftl_core"
+	pixel_x = -32
+	pixel_y = -32
+	density = TRUE
 
 	var/list/fuel_ports = list() //We mainly use fusion fuels.
 	var/charge_time //Actually, we do use power now. This is here for the console.
@@ -19,8 +31,7 @@
 	var/chargepercent = 0
 	var/last_percent_tick = 0
 	var/obj/machinery/computer/ship/ftl/ftl_computer
-	var/required_fuel_joules
-	var/required_charge //This is a function of the required fuel joules.
+	var/required_charge
 	var/accumulated_charge
 	var/max_charge = 2000000
 	var/target_charge
@@ -36,22 +47,53 @@
 	var/last_power_drawn
 	var/jump_delay = 2 MINUTES
 	var/jump_timer //used to cancel the jump.
+	var/required_jump_cores = 0
+	//HEARTH EXCLUSIVE
+	var/cached_security_level
+	//HEARTH EXCLUSIVE END
+	var/datum/event/ftl_event
+	var/last_stress_sound
+
+	var/power_on_animation_played = FALSE
+	var/power_off_animation_played = FALSE
+
+	var/width = 3
+	var/height = 3
 
 	var/static/datum/announcement/priority/ftl_announcement = new(do_log = 0, do_newscast = 1, new_sound = sound('sound/misc/notice2.ogg'))
 
-	var/static/shunt_start_text = "Attention! Superluminal shunt warm-up initiated! Spool-up ETA: %%TIME%%"
-	var/static/shunt_cancel_text = "Attention! Faster-than-light transition cancelled."
-	var/static/shunt_complete_text = "Attention! Faster-than-light transition completed."
+	var/static/shunt_start_text = "Attention! Superluminal shunt warm-up initiated! ETA to subsector jump: %%TIME%%"
+	var/static/shunt_cancel_text = "Attention! Subsector superluminal transition cancelled."
+	var/static/shunt_entered_text = "Attention! Vessel has completed superluminal translation; FTL exit in %%TIME%% seconds."
+	var/static/shunt_complete_text = "Attention! Subsector superluminal transition completed."
 	var/static/shunt_spooling_text = "Attention! Superluminal shunt warm-up complete, spooling up."
 
 	var/static/shunt_sabotage_text_minor = "Warning! Electromagnetic flux beyond safety limits - aborting shunt!"
 	var/static/shunt_sabotage_text_major = "Warning! Critical electromagnetic flux in accelerator core! Dumping core and aborting shunt!"
 	var/static/shunt_sabotage_text_critical = "ALERT! Critical malfunction in microsingularity containment core! Safety systems offline!"
 
+	var/obj/effect/shunt_dummy/breakers
+	var/obj/effect/shunt_dummy/conduits
+	var/obj/effect/shunt_dummy/portal
+	var/obj/effect/shunt_dummy/charge_indicator
+	var/obj/effect/shunt_dummy/pumps
+
+	var/static/ftl_sounds = list(
+		'sound/effects/thunder/thunder1.ogg',
+		'sound/effects/thunder/thunder2.ogg',
+		'sound/effects/thunder/thunder3.ogg',
+		'sound/effects/thunder/thunder4.ogg',
+		'sound/effects/thunder/thunder5.ogg',
+		'sound/effects/thunder/thunder6.ogg',
+		'sound/effects/thunder/thunder7.ogg',
+		'sound/effects/thunder/thunder8.ogg',
+		'sound/effects/thunder/thunder9.ogg',
+		'sound/effects/thunder/thunder10.ogg'
+		)
+
 	use_power = POWER_USE_OFF
 	power_channel = EQUIP
 	idle_power_usage = 1600
-	icon_state = "bsd"
 	light_color = COLOR_BLUE
 
 //Base procs
@@ -62,13 +104,35 @@
 	if(initial_id_tag)
 		var/datum/extension/local_network_member/local_network = get_extension(src, /datum/extension/local_network_member)
 		local_network.set_tag(null, initial_id_tag)
-	find_ports()
-	set_light(2)
 	target_charge = max_charge * 0.25 //Target charge set to a quarter of our maximum charge, just for weirdness prevention
-	if(populate_parts)
-		var/obj/item/stock_parts/power/terminal/term = get_component_of_type(/obj/item/stock_parts/power/terminal)
-		if(!term.terminal)
-			term.make_terminal(src)
+	breakers = new
+	breakers.icon_state = "breakers_off"
+	conduits = new
+	conduits.icon_state = "conduits"
+	portal = new
+	portal.icon_state = "loop-base"
+	charge_indicator = new 
+	charge_indicator.icon_state = null
+	pumps = new
+	pumps.icon_state = "coolant_pumps_composite_off"
+	pumps.layer = STRUCTURE_LAYER
+	pumps.plane = DEFAULT_PLANE
+	portal.add_filter("glow",1,list(type = "drop_shadow", size = 2, x = 0, y = 0, offset = 2, color = COLOR_CYAN_BLUE))
+	vis_contents += breakers
+	vis_contents += conduits
+	vis_contents += portal
+	vis_contents += charge_indicator
+	vis_contents += pumps
+
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/machinery/ftl_shunt/core/proc/SetBounds()
+	bound_width = width * world.icon_size
+	bound_height = height * world.icon_size
+
+/obj/machinery/ftl_shunt/core/LateInitialize()
+	. = ..()
+	find_ports()
 
 /obj/machinery/ftl_shunt/core/modify_mapped_vars(map_hash)
 	..()
@@ -85,22 +149,84 @@
 
 /obj/machinery/ftl_shunt/core/on_update_icon()
 	cut_overlays()
+	var/new_charge_color
 
-	if(charging)
-		var/image/I = image('icons/obj/shunt_drive.dmi', "activating")
-		var/matrix/M = new()
-		I.transform = M
-		add_overlay(I)
+	if(chargepercent == 0 || isnull(chargepercent))
+		new_charge_color ="#fa0a0a"
+	else
+	#if DM_VERSION > 513 
+		new_charge_color = gradient("#fa0a0a", "#0de405", clamp(chargepercent/100, 0, 100))
+	#endif
+	#if DM_VERSION < 514
+		new_charge_color = HSVtoRGB(RotateHue(hsv(0, 255, 255), 120 * (1 - chargepercent/100))) 
+	#endif
+	animate(charge_indicator, color = new_charge_color, 1 SECOND)
+
+	if(stat & BROKEN)
+		add_overlay(image(icon, "right_breaker_malf"))
+		add_overlay(image(icon, "left_breaker_malf"))
+		return
+
+	if((stat & NOPOWER) && !power_off_animation_played)
+		flick("breakers_turn_off", breakers)
+		breakers.icon_state = "breakers_off"
+		flick("loop-turn-off", portal)
+		portal.icon_state = null
+		flick("charge_state_turn_off", charge_indicator)
+		charge_indicator.icon_state = "null"
+		if(charging)
+			flick("coolant_pumps_composite_turn_off", pumps)
+			pumps.icon_state = "coolant_pumps_composite_off"
+		conduits.icon_state = null
+
+		power_off_animation_played = TRUE
+		power_on_animation_played = FALSE
+
+	if(!(stat & NOPOWER) && !power_on_animation_played)
+		flick("breakers_turn_on", breakers)
+		breakers.icon_state = "breakers_on"
+		flick("loop-turn-on", portal)
+		portal.icon_state = "loop-idle-off"
+		flick("charge_state_turn_on", charge_indicator)
+		charge_indicator.icon_state = "charge_state"
+		if(charging)
+			flick("coolant_pumps_composite_turn_on", pumps)
+			pumps.icon_state = "coolant_pumps_composite_on"
+
+		power_off_animation_played = FALSE
+		power_on_animation_played = TRUE
+
+	if(charging && !(stat & NOPOWER))
+		add_overlay(image(icon, "turbine_on"))
+		if(!conduits.filter_data)
+			conduits.add_filter("glow", 1, list(type="drop_shadow", x=0,y=0,size=2,color=COLOR_ORANGE))
+		conduits.icon_state = "conduits_glow"
+		pumps.icon_state = "coolant_pumps_composite_on"
+		portal.icon_state = "loop-charging"
+
+	if(!charging)
+		conduits.icon_state = null
 
 	if(jumping)
-		add_overlay(image('icons/obj/shunt_drive.dmi', "activated"))
-		var/image/S = image('icons/obj/objects.dmi', "bhole3")
-		var/matrix/M = new()
-		M.Scale(0.75)
-		S.transform = M
-		S.alpha = 0
-		animate(S, alpha = 255, time = 5.9 SECONDS)
-		add_overlay(S)
+		add_overlay(image(icon, "loop-idle-on"))
+
+	if(sabotaged)
+		if(portal.filter_data)
+			if(portal.filter_data["glow"]["color"] != COLOR_RED)
+				portal.animate_filter("glow", list(color = COLOR_RED, time = 1))
+				portal.update_filters()
+			if(rand(15))
+				portal.animate_filter("glow", list(size = sabotaged*3, time = 1 SECONDS, offset = sabotaged*rand(1,3)))
+				addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "glow", list(size = 2, time = 1 SECONDS, offset = 2)), 2 SECONDS)
+
+	if(!sabotaged)
+		if(portal.filter_data)
+			if(portal.filter_data["glow"]["color"] != COLOR_CYAN_BLUE)
+				portal.animate_filter("glow", list(color = COLOR_CYAN_BLUE, time = 1))
+				portal.update_filters()
+			if(rand(15))
+				portal.animate_filter("glow", list(size = rand(1,2)*2, time = 1 SECONDS, offset = 2*rand(1,3)))
+				addtimer(CALLBACK(src, /atom/movable/proc/animate_filter, "glow", list(size = 2, time = 1 SECONDS, offset = 2)), 2 SECONDS)
 
 /obj/machinery/ftl_shunt/core/examine(mob/user)
 	. = ..()
@@ -196,6 +322,8 @@
 //Starts the teleport process, returns 1-6, with 6 being the all-clear.
 /obj/machinery/ftl_shunt/core/proc/start_shunt()
 
+	var/decl/security_state/security_state = GET_DECL(global.using_map.security_state)
+
 	if(isnull(ftl_computer))
 		return
 
@@ -222,7 +350,7 @@
 	if(max_charge < required_charge)
 		return FTL_START_FAILURE_POWER
 
-	if(required_fuel_joules > get_fuel(fuel_ports))
+	if(required_jump_cores > get_charges())
 		return FTL_START_FAILURE_FUEL
 
 	if(sabotaged)
@@ -235,6 +363,9 @@
 	var/announcetxt = replacetext(shunt_start_text, "%%TIME%%", "[round(jump_delay/600)] minutes.")
 	
 	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
+
+	cached_security_level = security_state.current_security_level
+	security_state.set_security_level(GET_DECL(/decl/security_level/default/code_yellow), TRUE)
 	update_icon()
 
 	if(check_charge())
@@ -248,23 +379,27 @@
 		var/vessel_mass = ftl_computer.linked.get_vessel_mass()
 		var/shunt_turf = locate(shunt_x, shunt_y, O.z)
 		shunt_distance = get_dist(get_turf(ftl_computer.linked), shunt_turf)
-		required_fuel_joules = (vessel_mass * JOULES_PER_TON) * shunt_distance
-		required_charge = required_fuel_joules * REQUIRED_CHARGE_MULTIPLIER
+		required_jump_cores = shunt_distance
+		required_charge = ((shunt_distance * vessel_mass)* REQUIRED_CHARGE_MULTIPLIER)*1000
 
 //Cancels the in-progress shunt.
 /obj/machinery/ftl_shunt/core/proc/cancel_shunt(var/silent = FALSE)
+	var/decl/security_state/security_state = GET_DECL(global.using_map.security_state)
 	if(!jump_timer)
 		return
 	deltimer(jump_timer)
 	charge_time = null
 	cooldown = null
-	required_fuel_joules = null
+	required_jump_cores = null
 	if(!silent)
 		ftl_announcement.Announce(shunt_cancel_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	update_icon()
 	jump_timer = null
+	//HEARTH EXCLUSIVE
+	security_state.set_security_level(cached_security_level, TRUE)
+	//END HEARTH EXCLUSIVE
 
-//Starts the shunt, and then hands off to do_shunt to finish it.
+//Starts the shunt, and then hands off to enter_shunt to finish it.
 /obj/machinery/ftl_shunt/core/proc/execute_shunt()
 	ftl_announcement.Announce(shunt_spooling_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	if(sabotaged)
@@ -273,8 +408,8 @@
 		ftl_computer.jump_plotted = FALSE
 		return
 
-	if(use_fuel(required_fuel_joules))
-		jump_timer = addtimer(CALLBACK(src, .proc/execute_shunt), jump_delay, TIMER_STOPPABLE)
+	if(can_use_fuel(required_jump_cores))
+		use_fuel(required_jump_cores)
 	else
 		cancel_shunt()
 		return //If for some reason we don't have fuel now, just return.
@@ -283,9 +418,7 @@
 	if(O)
 		var/destination = locate(shunt_x, shunt_y, O.z)
 		var/jumpdist = get_dist(get_turf(ftl_computer.linked), destination)
-		var/obj/effect/portal/wormhole/W = new(destination) //Generate a wormhole effect on overmap to give some indication that something is about to happen.
-		QDEL_IN(W, 6 SECONDS)
-		addtimer(CALLBACK(src, .proc/do_shunt, shunt_x, shunt_y, jumpdist, destination), 6 SECONDS)
+		addtimer(CALLBACK(src, .proc/enter_shunt, shunt_x, shunt_y, jumpdist, destination), 6 SECONDS)
 		jumping = TRUE
 		update_icon()
 		for(var/mob/living/carbon/M in global.living_mob_list_)
@@ -293,8 +426,23 @@
 				continue
 			sound_to(M, 'sound/machines/hyperspace_begin.ogg')
 
-/obj/machinery/ftl_shunt/core/proc/do_shunt(var/turfx, var/turfy, var/jumpdist, var/destination) //this does the actual teleportation, execute_shunt is there to give us time to do our fancy effects
+/obj/machinery/ftl_shunt/core/proc/enter_shunt(var/shunt_x, var/shunt_x, var/jumpdist, var/destination)
+	var/announcetxt = replacetext(shunt_entered_text, "%%TIME%%", "[round((jumpdist*JUMP_TIME_PER_TILE)/60)]")
+	var/datum/event_meta/EM = new(EVENT_LEVEL_MUNDANE, "FTL", /datum/event/ftl, add_to_queue = FALSE, is_one_shot = TRUE)
+	ftl_event = new /datum/event/ftl(EM)
+	ftl_event.startWhen = 0
+	ftl_event.endWhen = INFINITY
+	ftl_event.affecting_z = ftl_computer.linked.map_z
+	ftl_computer.linked.forceMove(null)
+	ftl_computer.linked.halted = TRUE
+
+	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
+	addtimer(CALLBACK(src, .proc/end_shunt, shunt_x, shunt_y, jumpdist, destination),jumpdist*JUMP_TIME_PER_TILE)
+
+/obj/machinery/ftl_shunt/core/proc/end_shunt(var/turfx, var/turfy, var/jumpdist, var/destination) //this does the actual teleportation, execute_shunt is there to give us time to do our fancy effects
+	var/decl/security_state/security_state = GET_DECL(global.using_map.security_state)
 	ftl_computer.linked.forceMove(destination)
+	ftl_computer.linked.halted = FALSE
 	ftl_announcement.Announce(shunt_complete_text, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 	cooldown = world.time + cooldown_delay
 	do_effects(jumpdist)
@@ -304,6 +452,12 @@
 	accumulated_charge -= required_charge
 	jump_timer = null
 	ftl_computer.jump_plotted = FALSE
+	//HEARTH EXCLUSIVE
+	addtimer(CALLBACK(security_state, /decl/security_state/.proc/set_security_level, cached_security_level, TRUE), 4 SECONDS)
+	//END HEARTH EXCLUSIVE
+	if(ftl_event)
+		ftl_event.kill()
+		ftl_event = null
 
 //Handles all the effects of the jump.
 /obj/machinery/ftl_shunt/core/proc/do_effects(var/distance) //If we're jumping too far, have some !!FUN!! with people and ship systems.
@@ -333,7 +487,7 @@
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MINOR)
 				to_chat(H, SPAN_NOTICE("You feel your insides flutter about inside of you as you are briefly shunted into an alternate dimension.")) //No major effects.
-				shake_camera(H, 2, 1)
+				shake_camera(H, 3, 3)
 
 			if(SHUNT_SEVERITY_MAJOR)
 				to_chat(H, SPAN_WARNING("You feel your insides twisted inside and out as you are violently shunted between dimensions, and you feel like something is watching you!"))
@@ -341,7 +495,7 @@
 					H.set_hallucination(50, 50)
 				if(prob(15))
 					H.vomit()
-				shake_camera(H, 2, 1)
+				shake_camera(H, 3, 3)
 
 			if(SHUNT_SEVERITY_CRITICAL)
 				to_chat(H, SPAN_DANGER("You feel an overwhelming sense of nausea and vertigo wash over you, your instincts screaming that something is wrong!"))
@@ -356,10 +510,10 @@
 			continue
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MINOR)
-				if(prob(15))
+				if(prob(25))
 					L.flicker()
 			if(SHUNT_SEVERITY_MAJOR)
-				if(prob(35))
+				if(prob(45))
 					L.flicker()
 
 	for(var/obj/machinery/power/apc/A in SSmachines.machinery)
@@ -367,9 +521,9 @@
 			continue
 		switch(shunt_sev)
 			if(SHUNT_SEVERITY_MAJOR)
-				if(prob(15))
+				if(prob(25))
 					A.energy_fail(rand(30, 80))
-				if(prob(10))
+				if(prob(35))
 					A.overload_lighting(25)
 
 			if(SHUNT_SEVERITY_CRITICAL)
@@ -431,7 +585,6 @@
 
 	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/ftlsiren.ogg'))
 
-
 //Returns status to ftl computer.
 /obj/machinery/ftl_shunt/core/proc/get_status()
 	if(stat & (BROKEN|NOPOWER))
@@ -443,78 +596,41 @@
 	else
 		return FTL_STATUS_GOOD
 
-/obj/machinery/ftl_shunt/core/proc/get_fuel(var/list/input)
-	. = 0
-	for(var/obj/machinery/ftl_shunt/fuel_port/F in input)
-		. += F.get_fuel_joules(FALSE)
-
-/obj/machinery/ftl_shunt/core/proc/get_fuel_maximum(var/list/input)
-	. = 0
-	for(var/obj/machinery/ftl_shunt/fuel_port/F in input)
-		. += F.get_fuel_joules(TRUE)
-
-/obj/machinery/ftl_shunt/core/proc/fuelpercentage()
-	if(!length(fuel_ports))
-		return 0
-	var/fuel_max = get_fuel_maximum(fuel_ports)
-	if(fuel_max == 0)
-		return 0
-	return round(100.0*get_fuel(fuel_ports)/fuel_max, 0.1)
-
-
-/obj/machinery/ftl_shunt/core/proc/use_fuel(var/joules_req)
-	var/avail_fuel = get_fuel(fuel_ports)
-
-	if(joules_req > avail_fuel) //Not enough fuel in the system.
+/obj/machinery/ftl_shunt/core/proc/can_use_fuel(var/charges_required)
+	var/avaliable_charges
+	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
+		avaliable_charges += F.get_charge()
+	if(avaliable_charges >= charges_required)
+		return TRUE
+	else
 		return FALSE
 
-	var/list/fueled_ports = list()
-	var/total_joules
-	var/joules_per_port
-	var/joule_debt
+/obj/machinery/ftl_shunt/core/proc/use_fuel(var/charges_required)
+	var/avaliable_charges
+	var/used_charges
 
-	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports) //Step one, loop through ports, sort them by those who are fully fueled and those that are not.
-		if(!F.has_fuel())
-			continue
-		fueled_ports += F
+	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
+		avaliable_charges += F.get_charge()
+	if(avaliable_charges >= charges_required)
+		for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
+			F.use_charge()
+			F.update_icon()
+			used_charges++
+			if(used_charges == charges_required)
+				break
 
-	joules_per_port = (joules_req / length(fueled_ports))
+/obj/machinery/ftl_shunt/core/proc/get_charges()
+	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
+		. += F.get_charge()
 
-	for(var/obj/machinery/ftl_shunt/fuel_port/F in fueled_ports) //Loop through all our ports, use fuel from those that have enough and those that are partially empty.
-		if(F.get_fuel_joules() >= joules_per_port) //Enough fuel in this one!
-			if(F.use_fuel_joules(joules_per_port))
-				total_joules += joules_per_port
-				continue
-		else //Not enough fuel in this port to meet the per-port quota - take as much as we can and pick up the slack with others.
-			var/available_fuel = F.get_fuel_joules()
-			if(F.use_fuel_joules(available_fuel))
-				total_joules += available_fuel
-				joule_debt += joules_per_port - available_fuel
-				fueled_ports -= F //Remove this one from the pool of avaliable ports, since it's used up.
-				continue
-
-	if(total_joules == joules_req)
-		return TRUE //All ports supplied enough fuel first go around, return early.
-
-	if(joule_debt) //We haven't rallied up enough energy for the jump, probably from ports that were only partially fueled.
-		var/fuel_debt_spread = joule_debt / length(fueled_ports)
-		for(var/obj/machinery/ftl_shunt/fuel_port/F in fueled_ports) //Loop through all our ports, use fuel from those that have enough and those that are partially empty.
-			if(F.get_fuel_joules() >= fuel_debt_spread) //Enough fuel in this one!
-				if(F.use_fuel_joules(fuel_debt_spread))
-					total_joules += fuel_debt_spread
-					continue
-			else //Not enough fuel in this port to meet the per-port quota - take as much as we can and pick up the slack with others.
-				var/available_fuel_debt = F.get_fuel_joules()
-				if(F.use_fuel_joules(available_fuel_debt))
-					total_joules += available_fuel_debt
-					joule_debt -= available_fuel_debt
-					continue
-
-	if(total_joules == joules_req && !joule_debt)
-		return TRUE
+/obj/machinery/ftl_shunt/core/proc/get_max_charges()
+	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
+		. += 1
 
 /obj/machinery/ftl_shunt/core/proc/get_charge_time()
 	if(isnull(last_power_drawn))
+		return "UNKNOWN"
+	if(last_power_drawn == 0)
 		return "UNKNOWN"
 	return "[clamp(round((target_charge-accumulated_charge)/((last_power_drawn*CELLRATE) * 1 SECOND / SSmachines.wait), 0.1),0, INFINITY)] Seconds"
 
@@ -526,18 +642,13 @@
 	if(stat & NOPOWER)
 		return FALSE
 
-	var/drawn_charge = use_power_oneoff(input)
-	last_power_drawn = drawn_charge
-	accumulated_charge += drawn_charge * CELLRATE
+	if(!use_power_oneoff(input,EQUIP))
+		last_power_drawn = input
+		accumulated_charge += input * CELLRATE
 	
-	return TRUE
-
-/obj/machinery/ftl_shunt/core/proc/get_total_fuel_conversion_rate()
-	var/rate
-	for(var/obj/machinery/ftl_shunt/fuel_port/F in fuel_ports)
-		rate += F.get_fuel_conversion_rate()
-	. = round((rate / length(fuel_ports)), 0.1)
-
+		return TRUE
+	else
+		return FALSE
 
 /obj/machinery/ftl_shunt/core/Process()
 	if(stat & (BROKEN|NOPOWER))
@@ -551,98 +662,14 @@
 		SSradiation.radiate(src, (active_power_usage / 1000))
 	chargepercent = round(100*(accumulated_charge/max_charge), 0.1)
 
-/obj/machinery/ftl_shunt/fuel_port
-	name = "superluminal shunt fuel port"
-	desc = "A fuel port for an FTL shunt."
-	icon_state = "empty"
-
-	var/static/list/fuels = list(
-		/decl/material/gas/hydrogen/tritium = 25000,
-		/decl/material/gas/hydrogen/deuterium = 25000,
-		/decl/material/gas/hydrogen = 25000,
-		/decl/material/solid/exotic_matter = 50000
-		)
-	var/obj/item/fuel_assembly/fuel
-	var/obj/machinery/ftl_shunt/core/master
-	var/max_fuel = 0
-
-/obj/machinery/ftl_shunt/fuel_port/on_update_icon()
-	if(fuel)
-		icon_state = "full"
-	else
-		icon_state = "empty"
-
-/obj/machinery/ftl_shunt/fuel_port/Initialize()
-	set_extension(src, /datum/extension/local_network_member)
-	if(initial_id_tag)
-		var/datum/extension/local_network_member/local_network = get_extension(src, /datum/extension/local_network_member)
-		local_network.set_tag(null, initial_id_tag)
-	. = ..()
-
-/obj/machinery/ftl_shunt/fuel_port/modify_mapped_vars(map_hash)
-	..()
-	ADJUST_TAG_VAR(initial_id_tag, map_hash)
-
-/obj/machinery/ftl_shunt/fuel_port/Destroy()
-	. = ..()
-	if(master)
-		master.fuel_ports -= src
-	master = null
-	QDEL_NULL(fuel)
-
-/obj/machinery/ftl_shunt/fuel_port/attackby(var/obj/item/O, var/mob/user)
-	if(istype(O, /obj/item/fuel_assembly))
-		if(!fuel)
-			if(!do_after(user, 2 SECONDS, src) || fuel)
-				return
-			if(!user || !user.unEquip(O, src))
-				return
-			fuel = O
-			max_fuel = get_fuel_joules(TRUE)
-			update_icon()
-			return TRUE
-
-	. = ..()
-
-/obj/machinery/ftl_shunt/fuel_port/physical_attack_hand(var/mob/user)
-	if(fuel)
-		to_chat(user, SPAN_NOTICE("You begin to remove the fuel assembly from [src]..."))
-		if(!do_after(user, 2 SECONDS, src) || !fuel || fuel.loc != src)
-			return FALSE
-		fuel.dropInto(loc)
-		user.put_in_hands(fuel)
-		fuel = null
-		max_fuel = 0
-		to_chat(user, SPAN_NOTICE("You remove the fuel assembly!"))
-		return TRUE
-
-	. = ..()
-
-/obj/machinery/ftl_shunt/fuel_port/proc/has_fuel()
-	return !!fuel
-
-/obj/machinery/ftl_shunt/fuel_port/proc/get_fuel_joules(var/get_fuel_maximum)
-	if(fuel)
-		for(var/G in fuel.matter)
-			if(G in fuels)
-				. += (get_fuel_maximum ? 10000 : fuel.matter[G]) * fuels[G]
-
-/obj/machinery/ftl_shunt/fuel_port/proc/get_fuel_conversion_rate() //This is mostly a fluff proc, since internally everything is done in joules.
-	if(fuel)
-		for(var/G in fuel.matter)
-			if(G in fuels)
-				. = fuels[G]
-
-/obj/machinery/ftl_shunt/fuel_port/proc/use_fuel_joules(var/joules)
-	if(!fuel)
-		return FALSE
-
-	for(var/G in fuel.matter)
-		if(G in fuels)
-			var/fuel_to_use = joules / fuels[G]
-			fuel.matter[G] -= fuel_to_use
-
-	return TRUE
+	if(jumping)
+		if(prob(15) && last_stress_sound < world.time + 2 SECONDS)
+			for(var/mob/living/carbon/M in global.living_mob_list_)
+				if(!(M.z in ftl_computer.linked.map_z))
+					continue
+				sound_to(M, pick(ftl_sounds))
+				shake_camera(M, rand(1,2), rand(1,2))
+			last_stress_sound = world.time
 
 // 
 // Construction MacGuffins down here.
@@ -653,7 +680,6 @@
 	board_type = "machine"
 	build_path = /obj/machinery/ftl_shunt/core
 	origin_tech = "{'programming':3,'magnets':5,'materials':5,'wormholes':5}"
-	additional_spawn_components = list(/obj/item/stock_parts/power/terminal = 1)
 
 /obj/item/stock_parts/ftl_core
 	name = "exotic matter bridge"
@@ -663,3 +689,5 @@
 	icon_state = "smes_coil"
 	color = COLOR_YELLOW
 	matter = list(/decl/material/solid/exotic_matter = MATTER_AMOUNT_REINFORCEMENT, /decl/material/solid/metal/plasteel = MATTER_AMOUNT_PRIMARY)
+
+

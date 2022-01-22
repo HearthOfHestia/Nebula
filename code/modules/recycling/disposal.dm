@@ -113,7 +113,7 @@ var/global/list/diversion_junctions = list()
 	update_icon()
 
 /obj/machinery/disposal/receive_mouse_drop(atom/dropping, mob/user)
-	
+
 	. = (user?.a_intent != I_HURT && ..())
 
 	if(!. && !(stat & BROKEN))
@@ -292,8 +292,8 @@ var/global/list/diversion_junctions = list()
 
 // eject the contents of the disposal unit
 /obj/machinery/disposal/proc/eject()
-	for(var/atom/movable/AM in (contents - component_parts))
-		AM.forceMove(src.loc)
+	for(var/atom/movable/AM in get_contained_external_atoms())
+		AM.dropInto(loc)
 		AM.pipe_eject(0)
 	update_icon()
 
@@ -377,7 +377,7 @@ var/global/list/diversion_junctions = list()
 	var/wrapcheck = 0
 	var/obj/structure/disposalholder/H = new()	// virtual holder object which actually
 												// travels through the pipes.
-	var/list/stuff = contents - component_parts
+	var/list/stuff = get_contained_external_atoms()
 	//Hacky test to get drones to mail themselves through disposals.
 	for(var/mob/living/silicon/robot/drone/D in stuff)
 		wrapcheck = 1

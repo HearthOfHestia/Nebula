@@ -34,6 +34,14 @@
 		auto_align(O, click_params)
 		return TRUE
 
+/obj/structure/rack/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
+	if(air_group || height==0)
+		return TRUE
+	if(istype(mover) && mover.checkpass(PASS_FLAG_TABLE))
+		return TRUE
+	var/obj/structure/rack/R = (locate() in get_turf(mover))
+	return R
+
 /obj/structure/rack/holorack/dismantle()
 	material = null
 	reinf_material = null

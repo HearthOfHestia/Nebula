@@ -484,6 +484,34 @@
 
 //=======================================================================================
 
+/datum/unit_test/disposal_overlap_test
+	name = "MAP: Disposal Pipe Overlap Test"
+
+/datum/unit_test/disposal_overlap_test/start_test()
+	var/disposal_test_count = 0
+	var/bad_tests = 0
+	var/turf/T = null
+	var/obj/structure/disposalpipe/D = null
+	var/list/pipe_turfs = list()
+
+	for(D in world)
+		disposal_test_count++
+		T = get_turf(D)
+		if(pipe_turfs[T])
+			var/bad_msg = "[ascii_red]--------------- [T.name] \[[T.x] / [T.y] / [T.z]\]"
+			bad_tests++
+			log_unit_test("[bad_msg] contains multiple pipes overlapping.")
+		pipe_turfs |= T
+
+	if(bad_tests)
+		fail("\[[bad_tests] / [disposal_test_count]\] Some turfs had overlapping pipes.")
+	else
+		pass("All \[[disposal_test_count]\] pipes did not overlap.")
+
+	return 1
+
+//=======================================================================================
+
 // Having them face north or west is now supported fully in code; this is for map consistency.
 /datum/unit_test/simple_pipes_shall_not_face_north_or_west
 	name = "MAP: Simple pipes shall not face north or west"

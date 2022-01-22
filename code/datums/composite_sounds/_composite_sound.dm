@@ -67,9 +67,8 @@
 		timerid = addtimer(CALLBACK(src, .proc/sound_loop, world.time), mid_length, TIMER_CLIENT_TIME | TIMER_STOPPABLE | TIMER_LOOP)
 
 /datum/composite_sound/proc/play(soundfile)
-	var/sound/S = sound(soundfile)
-	for(var/atom/thing AS_ANYTHING in output_atoms)
-		playsound(thing, S, volume)
+	for(var/atom/thing as anything in output_atoms)
+		playsound(thing, soundfile, volume)
 
 /datum/composite_sound/proc/get_sound(starttime, _mid_sounds)
 	. = _mid_sounds || mid_sounds

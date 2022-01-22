@@ -7,7 +7,7 @@
 	W.write("species", pref.species)
 
 /datum/category_item/player_setup_item/background/species/load_character(datum/pref_record_reader/R)
-	pref.species = R.read("species") 
+	pref.species = R.read("species")
 
 /datum/category_item/player_setup_item/background/species/sanitize_character()
 	. = ..()
@@ -35,7 +35,7 @@
 	var/decl/species/current_species = get_species_by_key(pref.species)
 	var/list/prefilter = get_playable_species()
 	var/list/playables = list()
-	
+
 	for(var/s in prefilter)
 		if(!check_rights(R_ADMIN, 0) && config.usealienwhitelist)
 			var/decl/species/checking_species = get_species_by_key(s)
@@ -61,11 +61,11 @@
 
 	var/icon/use_preview_icon = current_species.get_preview_icon()
 	if(use_preview_icon)
-		send_rsc(user, use_preview_icon, current_species.preview_icon_path)		
+		send_rsc(user, use_preview_icon, current_species.preview_icon_path)
 		. += "<td width = '200px' align='center'><img src='[current_species.preview_icon_path]' width='[current_species.preview_icon_width]px' height='[current_species.preview_icon_height]px'></td>"
 	else
 		. += "<td width = '200px' align='center'>No preview available.</td>"
-		
+
 	var/desc = current_species.description || "No additional details."
 	if(hide_species && length(desc) > 200)
 		desc = "[copytext(desc, 1, 194)] <small>\[...\]</small>"

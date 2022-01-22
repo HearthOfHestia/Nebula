@@ -406,7 +406,8 @@ var/global/list/localhost_addresses = list(
 		'html/panels.css',
 		'html/spacemag.css',
 		'html/images/loading.gif',
-		'html/images/talisman.png'
+		'html/images/talisman.png',
+		'html/images/iseo.png'
 		)
 
 	var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache)
@@ -653,7 +654,7 @@ var/global/const/MAX_VIEW = 41
 				if("South")
 					movement_keys[key] = SOUTH
 				if("Say")
-					winset(src, "default-\ref[key]", "parent=default;name=[key];command=say")
+					winset(src, "default-\ref[key]", "parent=default;name=[key];command=.say")
 					communication_hotkeys += key
 				if("OOC")
 					winset(src, "default-\ref[key]", "parent=default;name=[key];command=ooc")

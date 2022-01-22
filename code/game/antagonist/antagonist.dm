@@ -1,12 +1,11 @@
 /decl/special_role
 	abstract_type = /decl/special_role
-
 	// Text shown when becoming this antagonist.
 	var/list/restricted_jobs = 		list() // Jobs that cannot be this antagonist at roundstart (depending on config)
 	var/list/protected_jobs = 		list() // As above.
 	var/list/blocked_job_event_categories  // Job event categories that blacklist a job from being this antagonist.
 	// Jobs that can NEVER be this antagonist
-	var/list/blacklisted_jobs =	(/datum/job/submap) 
+	var/list/blacklisted_jobs =	(/datum/job/submap)
 
 	// Strings.
 	var/welcome_text = "Cry havoc and let slip the dogs of war!"
@@ -85,7 +84,7 @@
 		and before taking extreme actions, please try to also contact the administration! \
 		Think through your actions and make the roleplay immersive! <b>Please remember all \
 		rules aside from those without explicit exceptions apply to antagonists.</b>"
-	
+
 	// Map template that antag needs to load before spawning. Nulled after it's loaded.
 	var/datum/map_template/base_to_load
 
@@ -104,9 +103,9 @@
 	if(antaghud_indicator)
 		if(!global.hud_icon_reference)
 			global.hud_icon_reference = list()
-		if(name) 
+		if(name)
 			global.hud_icon_reference[name] = antaghud_indicator
-		if(faction_name) 
+		if(faction_name)
 			global.hud_icon_reference[faction_name] = antaghud_indicator
 
 /decl/special_role/proc/get_antag_text(mob/recipient)

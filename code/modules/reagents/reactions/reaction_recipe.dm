@@ -115,3 +115,59 @@
 	required_reagents = list(/decl/material/liquid/nutriment/rice = 10, /decl/material/liquid/drink/tea/green = 1)
 	result_amount = 10
 	mix_message = "The tea mingles with the rice."
+
+/decl/chemical_reaction/recipe/caramelisation
+	name = "Caramelised Sugar"
+	result = /decl/material/liquid/nutriment/caramelsugar
+	required_reagents = list(/decl/material/liquid/nutriment/sugar = 1)
+	result_amount = 1
+	minimum_temperature = T0C + 82
+	// no maximum! i mean technically it should burn at some point but ehh
+	mix_message = "The sugar melts into a sticky, brown liquid."
+
+/decl/chemical_reaction/recipe/simplesyrup
+	name = "Simple Syrup"
+	result = /decl/material/liquid/drink/syrup/sugar
+	required_reagents = list(/decl/material/liquid/nutriment/sugar = 2, /decl/material/liquid/water = 1) // rich simple syrup, technically, but still
+	result_amount = 3
+	minimum_temperature = T20C + 10
+	maximum_temperature = T0C + 82 // Sugar caramelises after this point.
+	mix_message = "The sugar dissolves into the solution."
+
+/decl/chemical_reaction/recipe/caramelsyrup
+	name = "Caramel Syrup"
+	result = /decl/material/liquid/drink/syrup/caramel
+	required_reagents = list(/decl/material/liquid/nutriment/caramelsugar = 2, /decl/material/liquid/drink/syrup/sugar = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a light brown hue and the aroma of caramel."
+
+/decl/chemical_reaction/recipe/chocosyrup
+	name = "Chocolate Syrup"
+	result = /decl/material/liquid/drink/syrup/chocolate
+	required_reagents = list(/decl/material/liquid/nutriment/coco = 2, /decl/material/liquid/drink/syrup/sugar = 3)
+	result_amount = 5
+	mix_message = "The solution takes on a brown hue and the aroma of chocolate."
+
+/decl/chemical_reaction/recipe/pumpkinsyrup
+	name = "Pumpkin Spice Syrup"
+	result = /decl/material/liquid/drink/syrup/pumpkin
+	required_reagents = list(/decl/material/liquid/drink/juice/pumpkinpulp = 2, /decl/material/liquid/drink/syrup/sugar = 3)
+	result_amount = 5
+	mix_message = "The solution takes on an orange hue and the aroma of pumpkin spice."
+
+// HEARTH EDIT START
+/decl/chemical_reaction/recipe/browniemix
+	name = "Brownie Mix"
+	result = /decl/material/liquid/nutriment/browniemix
+	required_reagents = list(/decl/material/liquid/nutriment/flour = 5, /decl/material/liquid/nutriment/coco = 5, /decl/material/liquid/nutriment/sugar = 5)
+	result_amount = 15
+	mix_message = "The solution is mixed into a light brown powder."
+
+/decl/chemical_reaction/recipe/beerbatter
+	name = "Beer Batter Mix"
+	result = /decl/material/liquid/nutriment/batter/beerbatter
+	required_reagents = list(/decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/ethanol/beer = 5,/decl/material/solid/sodiumchloride = 2)
+	result_amount = 20
+	mix_message = "The solution thickens into a light batter."
+
+	//HEARTH EDIT END

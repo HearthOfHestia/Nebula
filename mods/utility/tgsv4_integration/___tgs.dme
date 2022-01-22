@@ -1,0 +1,10 @@
+#ifndef UTILITY_TGSV4
+#define UTILITY_TGSV4
+#include "__tgs.dm"
+#include "tgs/includes.dm"
+#include "hooks.dm"
+#include "webhook_defines.dm"
+#include "chat_commands.dm"
+#include "tgs2webhook_manifest.dm"
+//#include "decls.dm"
+#endif

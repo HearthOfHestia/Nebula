@@ -925,7 +925,7 @@ var/global/list/admin_verbs_mod = list(
 		if("Upload custom")
 			var/file = input(usr) as icon|null
 
-			if(!file) 
+			if(!file)
 				return
 
 			global.using_map.update_titlescreen(file)

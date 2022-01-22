@@ -362,8 +362,9 @@
 /datum/fabricator_recipe/imprinter/circuit/gibber
 	path = /obj/item/stock_parts/circuitboard/gibber
 
-/datum/fabricator_recipe/imprinter/circuit/cooker
-	path = /obj/item/stock_parts/circuitboard/cooker
+// HEARTH OF HESTIA EDIT
+/datum/fabricator_recipe/imprinter/circuit/appliance
+	path = /obj/item/stock_parts/circuitboard/appliance
 
 /datum/fabricator_recipe/imprinter/circuit/honey_extractor
 	path = /obj/item/stock_parts/circuitboard/honey

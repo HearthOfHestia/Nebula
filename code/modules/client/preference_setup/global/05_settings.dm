@@ -83,7 +83,7 @@
 /client/proc/get_preference_value(var/preference)
 	if(prefs)
 		var/datum/client_preference/cp = get_client_preference(preference)
-		if(cp)
+		if(cp && LAZYLEN(prefs.preference_values))
 			return prefs.preference_values[cp.key]
 		else
 			return null
@@ -93,7 +93,7 @@
 /client/proc/set_preference(var/preference, var/set_preference)
 	var/datum/client_preference/cp = get_client_preference(preference)
 
-	if(!cp)
+	if(!cp || !LAZYLEN(prefs.preference_values))
 		return FALSE
 
 	if((prefs.preference_values[cp.key] != set_preference) && (set_preference in cp.options))
@@ -106,7 +106,7 @@
 /client/proc/cycle_preference(var/preference)
 	var/datum/client_preference/cp = get_client_preference(preference)
 
-	if(!cp)
+	if(!cp || !LAZYLEN(prefs.preference_values))
 		return FALSE
 
 	var/next_option = next_in_list(prefs.preference_values[cp.key], cp.options)

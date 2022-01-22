@@ -476,6 +476,7 @@
 	t = replacetext(t, "\[row\]", "</td><tr>")
 	t = replacetext(t, "\[cell\]", "<td>")
 	t = replacetext(t, "\[editorbr\]", "")
+	t = replacetext(t, "\[iseologo\]", "<img src = 'iseo.png'>")
 	return t
 
 //pencode translation to html for tags exclusive to digital files (currently email, nanoword, report editor fields,

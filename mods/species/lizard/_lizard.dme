@@ -1,10 +1,14 @@
 #ifndef MODPACK_LIZARD
 #define MODPACK_LIZARD
 #include "_lizard.dm"
+#include "clothing.dm"
 #include "datum\autohiss.dm"
 #include "datum\blood.dm"
 #include "datum\culture.dm"
 #include "datum\language.dm"
+#include "datum\faction.dm"
+#include "datum\religion.dm"
+#include "datum\location.dm"
 #include "datum\species.dm"
 #include "datum\species_bodytypes.dm"
 #include "datum\sprite_accessory.dm"

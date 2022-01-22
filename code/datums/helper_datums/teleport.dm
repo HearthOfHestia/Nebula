@@ -29,7 +29,7 @@
 	if(sector)
 
 		var/list/neighbors_to_add = list()
-		for(var/obj/effect/overmap/visitable/neighbor in sector.loc)
+		for(var/obj/effect/overmap/visitable/neighbor in /*HEARTH EDIT START*/ range(sector.loc, 2) /*HEARTH EDIT END*/)
 			neighbors_to_add |= neighbor
 
 		var/list/neighboring_sectors = list()
@@ -45,7 +45,7 @@
 			accessible_z_levels |= neighbor.map_z
 
 	return (tz in accessible_z_levels)
-	
+
 /decl/teleport/proc/can_teleport(var/atom/movable/target, var/atom/destination)
 	if(!destination || !target?.loc)
 		return FALSE

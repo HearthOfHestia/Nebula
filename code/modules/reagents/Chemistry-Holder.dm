@@ -157,6 +157,7 @@ var/global/obj/temp_reagents_holder = new
 	update_total()
 	if(!safety)
 		HANDLE_REACTIONS(src)
+	SSfluids.holders_to_update -= src
 	if(my_atom)
 		my_atom.on_reagent_change()
 

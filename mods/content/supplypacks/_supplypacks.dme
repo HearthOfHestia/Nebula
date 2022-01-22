@@ -1,0 +1,4 @@
+#ifndef MODPACK_SUPPLYPACKS
+#define MODPACK_SUPPLYPACKS
+#include "dispcarts.dm"
+#endif

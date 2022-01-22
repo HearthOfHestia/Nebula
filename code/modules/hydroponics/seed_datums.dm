@@ -121,8 +121,8 @@
 	display_name = "poison berry bush"
 	mutants = list("deathberries")
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/bromide = list(3,5), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/bromide = list(3,5),
 		/decl/material/liquid/poisonberryjuice = list(10,5)
 	)
 
@@ -138,8 +138,8 @@
 	display_name = "death berry bush"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/bromide = list(3,3), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/bromide = list(3,3),
 		/decl/material/gas/carbon_monoxide = list(1,5)
 	)
 
@@ -255,7 +255,7 @@
 	display_name = "quantumato plant"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1,20), 
+		/decl/material/liquid/nutriment = list(1,20),
 		/decl/material/liquid/ethanol/bluecuracao = list(10,5)
 	)
 
@@ -339,10 +339,10 @@
 	display_name = "biteleaf patch"
 	mutants = list("biteleafdeus")
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/psychoactives = list(1,8), 
-		/decl/material/liquid/burn_meds = list(1,8,1), 
-		/decl/material/liquid/brute_meds = list(1,10,1), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/psychoactives = list(1,8),
+		/decl/material/liquid/burn_meds = list(1,8,1),
+		/decl/material/liquid/brute_meds = list(1,10,1),
 		/decl/material/liquid/bromide = list(1,10)
 	)
 	kitchen_tag = "biteleaf"
@@ -365,11 +365,11 @@
 	display_name = "biteleaf deus patch"
 	mutants = null
 	chems = list(
-		/decl/material/liquid/nutriment = list(1), 
-		/decl/material/liquid/brute_meds = list(1,8), 
-		/decl/material/liquid/antidepressants = list(1,8,1), 
-		/decl/material/liquid/stimulants = list(1,8,1), 
-		/decl/material/liquid/amphetamines = list(1,10,1), 
+		/decl/material/liquid/nutriment = list(1),
+		/decl/material/liquid/brute_meds = list(1,8),
+		/decl/material/liquid/antidepressants = list(1,8,1),
+		/decl/material/liquid/stimulants = list(1,8,1),
+		/decl/material/liquid/amphetamines = list(1,10,1),
 		/decl/material/liquid/psychoactives = list(1,10)
 	)
 	kitchen_tag = "biteleafdeus"
@@ -693,6 +693,7 @@
 	name = "grapes"
 	seed_name = "grape"
 	display_name = "grapevine"
+	kitchen_tag = "grape"
 	mutants = list("greengrapes")
 	chems = list(/decl/material/liquid/nutriment = list(1,10), /decl/material/liquid/nutriment/sugar = list(1,5), /decl/material/liquid/drink/juice/grape = list(10,10))
 
@@ -726,6 +727,7 @@
 	name = "peanut"
 	seed_name = "peanut"
 	display_name = "peanut vine"
+	kitchen_tag = "peanut"
 	chems = list(/decl/material/liquid/nutriment = list(1,10))
 
 /datum/seed/peanuts/New()
@@ -1038,7 +1040,7 @@
 	name = "pumpkin"
 	seed_name = "pumpkin"
 	display_name = "pumpkin vine"
-	chems = list(/decl/material/liquid/nutriment = list(1,6))
+	chems = list(/decl/material/liquid/nutriment = list(1,6), /decl/material/liquid/drink/juice/pumpkinpulp = list(1,6))
 	kitchen_tag = "pumpkin"
 
 /datum/seed/pumpkin/New()

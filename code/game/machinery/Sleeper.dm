@@ -35,7 +35,7 @@
 
 /obj/machinery/sleeper/standard/Initialize(mapload, d, populate_parts)
 	. = ..()
-	add_reagent_canister(null, new /obj/item/chems/chem_disp_cartridge/stabilizer()) 
+	add_reagent_canister(null, new /obj/item/chems/chem_disp_cartridge/stabilizer())
 	add_reagent_canister(null, new /obj/item/chems/chem_disp_cartridge/sedatives())
 	add_reagent_canister(null, new /obj/item/chems/chem_disp_cartridge/painkillers())
 	add_reagent_canister(null, new /obj/item/chems/chem_disp_cartridge/antitoxins())
@@ -263,7 +263,7 @@
 			to_chat(user, SPAN_WARNING("Unbuckle the subject before attempting to move them."))
 		else if(panel_open)
 			to_chat(user, SPAN_WARNING("Close the maintenance panel before attempting to place the subject in the sleeper."))
-		else 
+		else
 			go_in(target, user)
 		return TRUE
 
@@ -318,6 +318,11 @@
 		if(close_sound)
 			playsound(src, close_sound, 40)
 
+/obj/machinery/sleeper/get_contained_external_atoms()
+	. = ..()
+	LAZYREMOVE(., loaded_canisters)
+	LAZYREMOVE(., beaker)
+
 /obj/machinery/sleeper/proc/go_out()
 	if(!occupant)
 		return
@@ -329,9 +334,6 @@
 	if(open_sound)
 		playsound(src, open_sound, 40)
 
-	for(var/obj/O in (contents - (component_parts + loaded_canisters))) // In case an object was dropped inside or something. Excludes the beaker and component parts.
-		if(O != beaker)
-			O.dropInto(loc)
 	toggle_filter()
 
 /obj/machinery/sleeper/proc/set_occupant(var/mob/living/carbon/occupant)

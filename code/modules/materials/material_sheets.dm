@@ -218,7 +218,7 @@
 	stack_merge_type = /obj/item/stack/material/pane
 
 /obj/item/stack/material/pane/update_state_from_amount()
-	if(reinf_material) 
+	if(reinf_material)
 		icon_state = "sheet-glass-reinf"
 		base_state = icon_state
 		plural_icon_state = "sheet-glass-reinf-mult"

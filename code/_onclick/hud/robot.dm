@@ -237,7 +237,7 @@ var/global/obj/screen/robot_inventory
 	else
 		//Modules display is hidden
 		//R.client.screen -= robot_inventory	//"store" icon
-		for(var/atom/A in R.module.equipment)
+		for(var/atom/A in R.module?.equipment)
 			if( (A != R.module_state_1) && (A != R.module_state_2) && (A != R.module_state_3) )
 				//Module is not currently active
 				R.client.screen -= A

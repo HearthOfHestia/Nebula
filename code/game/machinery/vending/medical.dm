@@ -41,6 +41,7 @@
 	icon_deny = "wallmed-deny"
 	icon_vend = "wallmed-vend"
 	base_type = /obj/machinery/vending/wallmed1
+	markup = 0
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	products = list(
 		/obj/item/stack/medical/bruise_pack = 3,
@@ -60,6 +61,7 @@
 	icon_state = "wallmed"
 	icon_deny = "wallmed-deny"
 	icon_vend = "wallmed-vend"
+	markup = 0
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
 	base_type = /obj/machinery/vending/wallmed2
 	products = list(

@@ -85,7 +85,7 @@
 		var/mechanics_text = ""
 		if(recipe.mechanics_text)
 			mechanics_text = "[recipe.mechanics_text]<br><br>"
-		mechanics_text += "This recipe requires the following ingredients:<br>"
+		mechanics_text += "This recipe requires the following ingredients:<br><ul>"
 		var/list/ingredients = list()
 		for(var/thing in recipe.reagents)
 			var/decl/material/thing_reagent = thing
@@ -95,27 +95,29 @@
 			var/count = recipe.items[thing]
 			ingredients += (count > 1) ? "[count]x <l>[initial(thing_atom.name)]</l>" : "\a <l>[initial(thing_atom.name)]</l>"
 		for(var/thing in recipe.fruit)
-			ingredients += "[recipe.fruit[thing]] [thing]\s"
+			ingredients += "[recipe.fruit[thing]]x [thing]"
+		if(recipe.coating)
+			var/decl/material/coating = recipe.coating
+			ingredients += "\a <l>[initial(coating.name)]</l> coating"
 		mechanics_text += "<ul><li>[jointext(ingredients, "</li><li>")]</li></ul>"
 		var/atom/recipe_product = recipe.result
-		mechanics_text += "<br>This recipe takes [CEILING(recipe.time/10)] second\s to cook in a microwave and creates \a [initial(recipe_product.name)]."
-		var/lore_text = recipe.lore_text
-		if(!lore_text)
-			lore_text = initial(recipe_product.desc)
-
+		var/plural = recipe.result_quantity > 1
+		mechanics_text += "<br>This recipe takes [CEILING(recipe.time/10)] second\s to cook in [recipe.get_appliances_string()] and creates [plural ? recipe.result_quantity : "a(n)"] [initial(recipe_product.name)][plural ? "s" : ""]."
 		var/recipe_name = recipe.display_name || sanitize(initial(recipe_product.name))
-		guide_html += "<h3>[capitalize(recipe_name)]</h3>Place [english_list(ingredients)] into a microwave for [CEILING(recipe.time/10)] second\s."
+		guide_html += "<h3>[capitalize(recipe_name)]</h3>Place [english_list(ingredients)] into [recipe.get_appliances_string()] for [CEILING(recipe.time/10)] second\s."
 
 		entries_to_register += new /datum/codex_entry(             \
-		 _display_name =       "[recipe_name] (microwave recipe)", \
+		 _display_name =       "[recipe_name] (recipe)", \
 		 _associated_strings = list(lowertext(recipe_name)),       \
-		 _lore_text =          lore_text,                          \
+		 _lore_text =          recipe.lore_text || initial(recipe_product.desc),                          \
 		 _mechanics_text =     mechanics_text,                     \
 		 _antag_text =         recipe.antag_text                   \
 		)
 
 	for(var/datum/codex_entry/entry in entries_to_register)
 		SScodex.add_entry_by_string(entry.name, entry)
+		for(var/str in entry.associated_strings)
+			SScodex.add_entry_by_string(str, entry)
 		items |= entry.name
 
 	. = ..()

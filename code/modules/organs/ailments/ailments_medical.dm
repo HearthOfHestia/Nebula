@@ -82,8 +82,8 @@
 	specific_organ_subtype = /obj/item/organ/internal/lungs
 	applies_to_organ = list(BP_LUNGS)
 	treated_by_reagent_type = /decl/material/liquid/antiseptic
-	medication_treatment_message = "The tickling in your throat fades away."
-	manual_diagnosis_string = "$USER_HIS$ throat is red and inflamed."
+	medication_treatment_message = "Your lungs no longer ache."
+	scanner_diagnosis_string = "$USER$ displays some inflammation in $USER_HIS$ lungs."
 
 /datum/ailment/coughing/can_apply_to(obj/item/organ/_organ)
 	. = ..()
@@ -130,6 +130,7 @@
 	applies_to_organ = list(BP_STOMACH)
 	treated_by_reagent_type = /decl/material/solid/carbon
 	medication_treatment_message = "The nausea in your $ORGAN$ slowly fades away."
+	scanner_diagnosis_string = "$USER$'s $ORGAN$ appears inflamed."
 
 /datum/ailment/stomach_ache/on_ailment_event()
 	to_chat(organ.owner, SPAN_DANGER("Your stomach roils unpleasantly."))

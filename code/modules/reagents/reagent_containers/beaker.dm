@@ -78,19 +78,6 @@
 	material_force_multiplier = 0.5
 	w_class = ITEM_SIZE_LARGE
 
-/obj/item/chems/glass/beaker/bowl
-	name = "mixing bowl"
-	desc = "A large mixing bowl."
-	icon = 'icons/obj/items/chem/mixingbowl.dmi'
-	center_of_mass = @"{'x':16,'y':10}"
-	volume = 180
-	amount_per_transfer_from_this = 10
-	possible_transfer_amounts = @"[5,10,15,25,30,60,180]"
-	atom_flags = ATOM_FLAG_OPEN_CONTAINER
-	unacidable = 0
-	material = /decl/material/solid/metal/steel
-	material_force_multiplier = 0.2
-
 /obj/item/chems/glass/beaker/noreact
 	name = "cryostasis beaker"
 	desc = "A cryostasis beaker that allows for chemical storage without reactions."
@@ -168,3 +155,11 @@
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/acid, 60)
 	update_icon()
+
+/obj/item/chems/glass/beaker/measuringcup
+	name = "measuring cup"
+	desc = "A measuring cup, used to measure ingredients for cooking."
+	icon = 'icons/obj/items/chem/beakers/measuringcup.dmi'
+
+/obj/item/chems/glass/beaker/measuringcup/attack_self()
+	return

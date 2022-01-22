@@ -156,7 +156,6 @@
 	var/mob/occupant = null       // Person waiting to be despawned.
 	var/time_till_despawn = 9000  // Down to 15 minutes //30 minutes-ish is too long
 	var/time_entered = 0          // Used to keep track of the safe period.
-	var/obj/item/radio/intercom/announce //
 
 	var/obj/machinery/computer/cryopod/control_computer
 	var/last_no_computer_message = 0
@@ -184,6 +183,10 @@
 	stat_immune = 0
 	var/open_sound = 'sound/machines/podopen.ogg'
 	var/close_sound = 'sound/machines/podclose.ogg'
+
+/obj/machinery/cryopod/get_contained_external_atoms()
+	. = ..()
+	LAZYREMOVE(., occupant)
 
 /obj/machinery/cryopod/robot
 	name = "robotic storage unit"
@@ -262,7 +265,6 @@
 
 /obj/machinery/cryopod/Initialize()
 	. = ..()
-	announce = new /obj/item/radio/intercom(src)
 	find_control_computer()
 
 /obj/machinery/cryopod/proc/find_control_computer()
@@ -324,7 +326,7 @@
 
 	qdel(R.mmi)
 	for(var/obj/item/I in R.module) // the tools the borg has; metal, glass, guns etc
-		for(var/obj/item/O in I) // the things inside the tools, if anything; mainly for janiborg trash bags
+		for(var/obj/item/O in I.get_contained_external_atoms()) // the things inside the tools, if anything; mainly for janiborg trash bags
 			O.forceMove(R)
 		qdel(I)
 	qdel(R.module)
@@ -335,23 +337,18 @@
 // Also make sure there is a valid control computer
 /obj/machinery/cryopod/proc/despawn_occupant()
 	//Drop all items into the pod.
-	for(var/obj/item/W in occupant)
+	for(var/obj/item/W in occupant.get_equipped_items(include_carried = TRUE))
 		occupant.drop_from_inventory(W)
 		W.forceMove(src)
 
-		if(W.contents.len) //Make sure we catch anything not handled by qdel() on the items.
-			for(var/obj/item/O in W.contents)
-				if(istype(O,/obj/item/storage/internal)) //Stop eating pockets, you fuck!
-					continue
-				O.forceMove(src)
+		//Make sure we catch anything not handled by qdel() on the items.
+		for(var/obj/item/O in W.get_contained_external_atoms())
+			if(istype(O,/obj/item/storage/internal)) //Stop eating pockets, you fuck!
+				continue
+			O.forceMove(src)
 
 	//Delete all items not on the preservation list.
-	var/list/items = src.contents.Copy()
-	items -= occupant // Don't delete the occupant
-	items -= announce // or the autosay radio.
-	items -= component_parts
-
-	for(var/obj/item/W in items)
+	for(var/obj/item/W in get_contained_external_atoms())
 
 		var/preserve = null
 		// Snowflaaaake.
@@ -374,7 +371,7 @@
 				control_computer.frozen_items += W
 				W.forceMove(null)
 			else
-				W.forceMove(src.loc)
+				W.forceMove(get_turf(src))
 
 	//Update any existing objectives involving this mob.
 	for(var/datum/objective/O in global.all_objectives)
@@ -417,7 +414,8 @@
 		control_computer._admin_logs += "[key_name(occupant)] ([role_alt_title]) at [stationtime2text()]"
 	log_and_message_admins("[key_name(occupant)] ([role_alt_title]) entered cryostorage.")
 
-	announce.autosay("[occupant.real_name], [role_alt_title], [on_store_message]", "[on_store_name]")
+	var/obj/item/radio/announcer = get_global_announcer()
+	announcer.autosay("[occupant.real_name], [role_alt_title], [on_store_message]", "[on_store_name]")
 	visible_message("<span class='notice'>\The [initial(name)] hums and hisses as it moves [occupant.real_name] into storage.</span>", range = 3)
 
 	//This should guarantee that ghosts don't spawn.
@@ -486,9 +484,7 @@
 	icon_state = base_icon_state
 
 	//Eject any items that aren't meant to be in the pod.
-	var/list/items = contents - component_parts
-	if(occupant) items -= occupant
-	if(announce) items -= announce
+	var/list/items = get_contained_external_atoms()
 
 	for(var/obj/item/W in items)
 		W.dropInto(loc)

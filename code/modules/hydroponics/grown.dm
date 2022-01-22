@@ -362,3 +362,22 @@ var/global/list/fruit_icon_cache = list()
 		user.visible_message(SPAN_DANGER("\The [user] reflexively hurls \the [src] at \the [aiming_at]!"))
 		user.throw_item(get_turf(aiming_at), src)
 		user.trigger_aiming(TARGET_CAN_CLICK)
+
+/obj/item/chems/food/proc/get_kitchen_tags()
+	if(dry)
+		LAZYADD(., "dried")
+
+/obj/item/chems/food/grown/get_kitchen_tags()
+	. = ..()
+	if(!seed)
+		return
+	if(seed.kitchen_tag)
+		LAZYADD(., seed.kitchen_tag)
+
+/obj/item/chems/food/fruit_slice/get_kitchen_tags()
+	. = ..()
+	if(!seed)
+		return
+	if(seed.kitchen_tag)
+		LAZYADD(., seed.kitchen_tag)
+	LAZYADD(., "slice")

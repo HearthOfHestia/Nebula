@@ -93,8 +93,7 @@
 	breathing_sound = 'mods/species/lizard/sound/lizard_breathing.ogg'
 
 	override_organ_types = list(
-		BP_EYES = /obj/item/organ/internal/eyes/lizard,
-		BP_BRAIN = /obj/item/organ/internal/brain/lizard
+		BP_EYES = /obj/item/organ/internal/eyes/lizard
 	)
 
 	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/lizard)
@@ -128,6 +127,34 @@
 		/decl/emote/exertion/biological,
 		/decl/emote/exertion/biological/breath,
 		/decl/emote/exertion/biological/pant
+	)
+
+	available_cultural_info = list(
+		TAG_CULTURE = list(
+			/decl/cultural_info/culture/lizard,
+			/decl/cultural_info/culture/lizard/ahat,
+			/decl/cultural_info/culture/lizard/hrad,
+			/decl/cultural_info/culture/lizard/tzeg,
+			/decl/cultural_info/culture/lizard/lessik,
+			/decl/cultural_info/culture/lizard/sundar,
+			/decl/cultural_info/culture/lizard/yeosa
+		),
+		TAG_HOMEWORLD = list(
+			/decl/cultural_info/location/moghes,
+			/decl/cultural_info/location/unathi_offworld
+		),
+		TAG_FACTION = list(
+			/decl/cultural_info/faction/lizard,
+			/decl/cultural_info/faction/lizard/sstrak,
+			/decl/cultural_info/faction/lizard/kruz,
+			/decl/cultural_info/faction/lizard/other
+		),
+		TAG_RELIGION = list(
+			/decl/cultural_info/religion/lizard/basaan,
+			/decl/cultural_info/religion/lizard/oldhrek,
+			/decl/cultural_info/religion/lizard/newhrek,
+			/decl/cultural_info/religion/lizard/gozi
+		)
 	)
 
 /decl/species/lizard/Initialize()

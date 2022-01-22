@@ -12,7 +12,7 @@
 	qdel(src)
 
 /obj/item/implant/AttemptAugmentation(mob/user, target_zone)
-	if(can_implant(user, user, target_zone) && implant_in_mob(user, user, target_zone))
+	if(can_implant(user, user, target_zone) && user.get_organ(target_zone) && implant_in_mob(user, user, target_zone))
 		var/obj/item/organ/organ = user.get_organ(target_zone)
 		to_chat(user, SPAN_NOTICE("You have \a [src] implanted in your [organ.name]."))
 	else

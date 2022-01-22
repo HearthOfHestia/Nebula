@@ -20,6 +20,7 @@
 
 	var/list/scrubbing_gas
 
+
 /obj/machinery/portable_atmospherics/powered/scrubber/Initialize()
 	. = ..()
 	if(!scrubbing_gas)

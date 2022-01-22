@@ -1,5 +1,6 @@
 /turf/proc/ReplaceWithLattice(var/material)
 	var/base_turf = get_base_turf_by_area(src)
+	. = src
 	if(base_turf && type != base_turf)
 		. = ChangeTurf(base_turf)
 	if(!(locate(/obj/structure/lattice) in .))
@@ -124,14 +125,14 @@
 /turf/simulated/floor/transport_properties_from(turf/simulated/floor/other)
 	if(!..())
 		return FALSE
-	
+
 	broken = other.broken
 	burnt = other.burnt
 	if(broken || burnt)
 		queue_icon_update()
 	set_flooring(other.flooring)
 	return TRUE
-	
+
 //I would name this copy_from() but we remove the other turf from their air zone for some reason
 /turf/simulated/transport_properties_from(turf/simulated/other)
 	if(!..())

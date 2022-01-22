@@ -8,4 +8,7 @@
 #include "datum/language.dm"
 #include "datum/species.dm"
 #include "datum/species_bodytypes.dm"
+#include "datum/faction.dm"
+#include "datum/religion.dm"
+#include "datum/location.dm"
 #endif
