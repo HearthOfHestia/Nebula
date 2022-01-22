@@ -257,8 +257,7 @@ var/global/list/slot_equipment_priority = list( \
 		src.client.screen -= O
 	O.reset_plane_and_layer()
 	O.screen_loc = null
-	if(!src.u_equip(O))
-		return TRUE
+	src.u_equip(O)
 	if(istype(O, /obj/item))
 		var/obj/item/I = O
 		if(target)
