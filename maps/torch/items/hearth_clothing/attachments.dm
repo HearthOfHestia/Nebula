@@ -22,6 +22,10 @@
 	ranking = "T1"
 	ranking_full = "Technician First Class"
 
+/obj/item/clothing/accessory/rank/iseo/t5
+	ranking = "TNC"
+	ranking_full = "Chief Technician"
+
 /obj/item/clothing/accessory/rank/iseo/officer
 	icon = 'maps/torch/icons/converted_icons/accessories/rank_specialist_iseo.dmi'
 

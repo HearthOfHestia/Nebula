@@ -12,7 +12,7 @@
 	)
 	department_types = list(/decl/department/command)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s6,
+		/datum/mil_rank/sc/s5,
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_SCIENCE     = SKILL_ADEPT,
@@ -91,7 +91,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/espatier/o5
+		/datum/mil_rank/espatier/o4
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_COMPUTER    = SKILL_BASIC,
@@ -148,7 +148,7 @@
 
 /datum/job/rd
 	title = "Chief Science Officer"
-	supervisors = "the Commanding Officer"
+	supervisors = "the Commanding Officer and the Executive Officer"
 	economic_power = 12
 	minimal_player_age = 14
 	minimum_character_age = list(SPECIES_HUMAN = 35)
@@ -161,8 +161,8 @@
 		/datum/mil_branch/espatier_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/espatier/o4
+		/datum/mil_rank/sc/s3,
+		/datum/mil_rank/espatier/o3
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
@@ -203,7 +203,7 @@
 	head_position = TRUE
 
 /datum/job/rd/get_description_blurb()
-	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the corporate interests of the Expeditionary Corps Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
+	return "You are the Chief Science Officer. You are responsible for the research department. You handle the science aspects of the project and liase with the corporate interests of the International Stellar Exploration Organisation. Make sure science gets done, do some yourself, and get your scientists on away missions to find things to benefit the project. Advise the CO on science matters."
 
 /datum/job/cmo
 	title = "Chief Medical Officer"
@@ -220,8 +220,8 @@
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/cmo/espatier
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/espatier/o4
+		/datum/mil_rank/sc/s3,
+		/datum/mil_rank/espatier/o3
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
 	                    SKILL_MEDICAL     = SKILL_EXPERT,
@@ -274,8 +274,8 @@
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/chief_engineer/espatier
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/espatier/o4
+		/datum/mil_rank/sc/s3,
+		/datum/mil_rank/espatier/o3
 	)
 	min_skill = list(   SKILL_BUREAUCRACY  = SKILL_BASIC,
 	                    SKILL_COMPUTER     = SKILL_ADEPT,
@@ -345,8 +345,8 @@
 		/datum/mil_branch/espatier_corps = /decl/hierarchy/outfit/job/torch/crew/command/cos/espatier
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/espatier/o4
+		/datum/mil_rank/sc/s3,
+		/datum/mil_rank/espatier/o3
 	)
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_ADEPT,
 	                    SKILL_EVA         = SKILL_BASIC,
@@ -382,7 +382,7 @@
 	head_position = TRUE
 
 /datum/job/hos/get_description_blurb()
-	return "You are the Chief of Security. You manage ship security. The Masters at Arms and the Military Police, as well as the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the SCMJ and Sol law and Alert Procedure to a very high degree along with general regulations."
+	return "You are the Chief of Security. You manage ship security. The Masters at Arms, the Brig Chief and the Forensic Technician. You keep the vessel safe. You handle both internal and external security matters. You are the law. You are subordinate to the CO and the XO. You are expected to know the Ship Procedures and Standard Operating Procedures to a very high degree."
 
 /datum/job/representative
 	title = "National Council Representative"
@@ -432,9 +432,8 @@
 		/datum/mil_branch/espatier_corps
 	)
 	allowed_ranks = list(
-		/datum/mil_rank/espatier/e8,
-		/datum/mil_rank/espatier/e9_alt1,
-		/datum/mil_rank/espatier/e9
+		/datum/mil_rank/espatier/e8_alt,
+		/datum/mil_rank/espatier/e9_alt2
 	)
 	min_skill = list(   SKILL_EVA        = SKILL_BASIC,
 	                    SKILL_COMBAT     = SKILL_BASIC,
@@ -464,7 +463,7 @@
 	selection_color = COMMS_COLOR_COMMAND
 
 /datum/job/sea/get_description_blurb()
-	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
+	return "You are the Senior Enlisted Advisor. You are the highest enlisted person on the ship. You are directly subordinate to the CO and XO. You advise them on enlisted concerns and provide expertise and advice to officers. You are responsible for ensuring discipline and good conduct among enlisted, as well as notifying officers of any issues and \"advising\" them on mistakes they make. You also handle various duties on behalf of the CO and XO. You are an experienced enlisted person, very likely equal only in experience to the CO and XO. You know the regulations better than anyone."
 
 /datum/job/bridgeofficer
 	title = "Bridge Officer"

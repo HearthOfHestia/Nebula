@@ -27,7 +27,7 @@
 	species_to_rank_blacklist = list(
 		/decl/species/utility_frame = list(
 			/datum/mil_branch/iseo_issc = list(
-				/datum/mil_rank/sc/s6
+				/datum/mil_rank/sc/s5
 			),
 			/datum/mil_branch/government = list(
 				/datum/mil_rank/government/gov
@@ -35,7 +35,7 @@
 		),
 		/decl/species/lizard = list(
 			/datum/mil_branch/iseo_issc = list(
-				/datum/mil_rank/sc/s6
+				/datum/mil_rank/sc/s5
 			),
 			/datum/mil_branch/government = list(
 				/datum/mil_rank/government/gov
@@ -43,7 +43,7 @@
 		),
 		/decl/species/tajaran = list(
 			/datum/mil_branch/iseo_issc = list(
-				/datum/mil_rank/sc/s6
+				/datum/mil_rank/sc/s5
 			),
 			/datum/mil_branch/government = list(
 				/datum/mil_rank/government/gov
@@ -51,7 +51,7 @@
 		),
 		/decl/species/skrell = list(
 			/datum/mil_branch/iseo_issc = list(
-				/datum/mil_rank/sc/s6
+				/datum/mil_rank/sc/s5
 			),
 			/datum/mil_branch/government = list(
 				/datum/mil_rank/government/gov
@@ -140,11 +140,12 @@
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/sc/t4,
+		/datum/mil_rank/sc/t5,
 		/datum/mil_rank/sc/s1,
 		/datum/mil_rank/sc/s2,
 		/datum/mil_rank/sc/s3,
 		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/sc/s6
+		/datum/mil_rank/sc/s5
 	)
 
 	spawn_rank_types = list(
@@ -152,11 +153,12 @@
 		/datum/mil_rank/sc/t2,
 		/datum/mil_rank/sc/t3,
 		/datum/mil_rank/sc/t4,
+		/datum/mil_rank/sc/t5,
 		/datum/mil_rank/sc/s1,
 		/datum/mil_rank/sc/s2,
 		/datum/mil_rank/sc/s3,
 		/datum/mil_rank/sc/s4,
-		/datum/mil_rank/sc/s6
+		/datum/mil_rank/sc/s5
 	)
 
 	assistant_job = /datum/job/crew
@@ -181,7 +183,7 @@
 		/datum/mil_rank/espatier/e8,
 		/datum/mil_rank/espatier/e8_alt,
 		/datum/mil_rank/espatier/e9,
-		/datum/mil_rank/espatier/e9_alt1,
+		/datum/mil_rank/espatier/e9_alt,
 		/datum/mil_rank/espatier/e9_alt2,
 		/datum/mil_rank/espatier/o1,
 		/datum/mil_rank/espatier/o2,
@@ -206,12 +208,11 @@
 		/datum/mil_rank/espatier/e7,
 		/datum/mil_rank/espatier/e8,
 		/datum/mil_rank/espatier/e8_alt,
-		/datum/mil_rank/espatier/e9,
+		/datum/mil_rank/espatier/e9_alt2,
 		/datum/mil_rank/espatier/o1,
 		/datum/mil_rank/espatier/o2,
 		/datum/mil_rank/espatier/o3,
 		/datum/mil_rank/espatier/o4,
-		/datum/mil_rank/espatier/o5
 	)
 
 	assistant_job = /datum/job/crew
@@ -324,91 +325,91 @@
 	name = "First Sergeant"
 	name_short = "1SG"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/e8_alt)
-	sort_order = 8
+	sort_order = 9
 
 /datum/mil_rank/espatier/e9
 	name = "Master Gunnery Sergeant"
 	name_short = "MGSG"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/e9)
-	sort_order = 9
+	sort_order = 10
 
-/datum/mil_rank/espatier/e9_alt1
+/datum/mil_rank/espatier/e9_alt
 	name = "Command Sergeant Major"
 	name_short = "CSM"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/e9_alt)
-	sort_order = 9
+	sort_order = 11
 
 /datum/mil_rank/espatier/e9_alt2
 	name = "Sergeant Major"
 	name_short = "SMA"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/e9_alt2)
-	sort_order = 9
+	sort_order = 12
 
 /datum/mil_rank/espatier/o1
 	name = "Second Lieutenant"
 	name_short = "2LT"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/officer/o1)
-	sort_order = 11
+	sort_order = 13
 
 /datum/mil_rank/espatier/o2
 	name = "First Lieutenant"
 	name_short = "1LT"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/officer/o2)
-	sort_order = 12
+	sort_order = 14
 
 /datum/mil_rank/espatier/o3
-	name = "Captain"
+	name = "Captain " //This has a space due to BYOND displaying s5 as an option when this rank is enabled. It is most likely due to the exact same name as testing revealed. This is a band-aid as I can't fix the issue at its root.
 	name_short = "CPT"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/officer/o3)
-	sort_order = 13
+	sort_order = 15
 
 /datum/mil_rank/espatier/o4
 	name = "Major"
 	name_short = "MAJ"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o4)
-	sort_order = 14
+	sort_order = 16
 
 /datum/mil_rank/espatier/o5
 	name = "Lieutenant Colonel"
 	name_short = "LTC"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o5)
-	sort_order = 15
+	sort_order = 17
 
 /datum/mil_rank/espatier/o6
 	name = "Colonel"
 	name_short = "COL"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o6)
-	sort_order = 16
+	sort_order = 18
 
 /datum/mil_rank/espatier/o7
 	name = "Brigadier General"
 	name_short = "BG"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o7)
-	sort_order = 17
+	sort_order = 19
 
 /datum/mil_rank/espatier/o8
 	name = "Major General"
 	name_short = "MG"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o8)
-	sort_order = 18
+	sort_order = 20
 
 /datum/mil_rank/espatier/o9
 	name = "Lieutenant General"
 	name_short = "LTG"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o9)
-	sort_order = 19
+	sort_order = 21
 
 /datum/mil_rank/espatier/o10
 	name = "General"
 	name_short = "GEN"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o10)
-	sort_order = 20
+	sort_order = 22
 
 /datum/mil_rank/espatier/o10_alt
 	name = "General of the Corps"
 	name_short = "GC"
 	accessory = list(/obj/item/clothing/accessory/rank/espatier/command/o10_alt)
-	sort_order = 20
+	sort_order = 23
 
 /*
  *  Surveyor Corps
@@ -439,35 +440,41 @@
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/t4)
 	sort_order = 4
 
+/datum/mil_rank/sc/t5
+	name = "Chief Technician"
+	name_short = "TNC"
+	accessory = list(/obj/item/clothing/accessory/rank/iseo/t5)
+	sort_order = 5
+
 /datum/mil_rank/sc/s1
 	name = "Ensign"
 	name_short = "ENS"
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/officer/s1)
-	sort_order = 5
+	sort_order = 6
 
 /datum/mil_rank/sc/s2
 	name = "Lieutenant"
 	name_short = "LT"
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/officer/s2)
-	sort_order = 6
+	sort_order = 7
 
 /datum/mil_rank/sc/s3
 	name = "Lieutenant-Commander"
 	name_short = "LCDR"
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/officer/s3)
-	sort_order = 7
+	sort_order = 8
 
 /datum/mil_rank/sc/s4
 	name = "Commander"
 	name_short = "CDR"
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/command/s4)
-	sort_order = 8
+	sort_order = 9
 
-/datum/mil_rank/sc/s6
+/datum/mil_rank/sc/s5
 	name = "Captain"
 	name_short = "CAPT"
 	accessory = list(/obj/item/clothing/accessory/rank/iseo/command/s5)
-	sort_order = 9
+	sort_order = 10
 
 /*
  *  Civilians

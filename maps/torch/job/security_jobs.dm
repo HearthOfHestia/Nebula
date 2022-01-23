@@ -15,6 +15,7 @@
 	)
 	allowed_ranks = list(
 		/datum/mil_rank/sc/t4,
+		/datum/mil_rank/sc/t5,
 		/datum/mil_rank/espatier/e5,
 		/datum/mil_rank/espatier/e6,
 		/datum/mil_rank/espatier/e7
