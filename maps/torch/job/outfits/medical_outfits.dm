@@ -17,6 +17,12 @@
 	id_type = /obj/item/card/id/torch/crew/medical/senior
 	head = /obj/item/clothing/head/iseo/beret/medical
 
+/decl/hierarchy/outfit/job/torch/crew/medical/senior/civilian
+	name = "Job - Physician - Contractor"
+	uniform = /obj/item/clothing/under/sterile
+	shoes = /obj/item/clothing/shoes
+	head = null
+
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/fleet
 	name = "Job - Physician - Espatier Corps"
 	uniform = /obj/item/clothing/under/espatier/utility/medical
@@ -41,6 +47,13 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	l_ear = /obj/item/radio/headset/headset_corpsman
 	head = /obj/item/clothing/head/iseo/beret/medical
+
+/decl/hierarchy/outfit/job/torch/crew/medical/doctor/civilian
+	name = "Job - Medical Technician - Contractor"
+	uniform = /obj/item/clothing/under/sterile
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_ear = /obj/item/radio/headset/headset_corpsman
+	head = null
 
 /decl/hierarchy/outfit/job/torch/crew/medical/doctor/fleet
 	name = "Job - Medical Technician - Espatier Corps"
