@@ -15,12 +15,12 @@
 	name = SPECIES_TAJARA
 	name_plural = "Tajaran"
 
-	description = "A small mammalian carnivore. If you are reading this, you are probably a Tajaran."
+	description = "A mammalian carnivore. If you are reading this, you are probably a Tajara."
 	hidden_from_codex = FALSE
 
 	age_descriptor = /datum/appearance_descriptor/age/tajaran
 
-	available_bodytypes = list(/decl/bodytype/feline)
+	available_bodytypes = list(/decl/bodytype/feline, /decl/bodytype/feline/masculine)
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
