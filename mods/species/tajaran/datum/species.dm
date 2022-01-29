@@ -15,12 +15,12 @@
 	name = SPECIES_TAJARA
 	name_plural = "Tajaran"
 
-	description = "A small mammalian carnivore. If you are reading this, you are probably a Tajaran."
+	description = "A mammalian carnivore. If you are reading this, you are probably a Tajara."
 	hidden_from_codex = FALSE
 
 	age_descriptor = /datum/appearance_descriptor/age/tajaran
 
-	available_bodytypes = list(/decl/bodytype/feline)
+	available_bodytypes = list(/decl/bodytype/feline, /decl/bodytype/feline/masculine)
 
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
@@ -37,7 +37,6 @@
 	)
 
 	flesh_color = "#afa59e"
-	base_markings = list(/decl/sprite_accessory/marking/tajaran = "#888888")
 	base_hair_color = "#515151"
 	base_color = "#787878"
 	base_eye_color = "#00aa00"
@@ -139,8 +138,7 @@
 	override_limb_types = list(BP_TAIL = /obj/item/organ/external/tail/cat)
 
 /obj/item/organ/internal/eyes/taj
-	eye_blend = ICON_MULTIPLY
-	eye_icon = 'mods/species/tajaran/icons/eyes.dmi'
+	name = "tajaran eyes"
 
 /decl/species/tajaran/handle_additional_hair_loss(var/mob/living/carbon/human/H, var/defer_body_update = TRUE)
 	. = H && H.change_skin_color(189, 171, 143)
