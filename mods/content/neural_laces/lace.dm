@@ -1,6 +1,6 @@
 
 /mob/living/carbon/human/proc/create_lace()
-	internal_organs_by_name[BP_NEURAL_LACE] = new /obj/item/organ/internal/neural_lace(src,1)
+	add_organ(new /obj/item/organ/internal/neural_lace(src), BP_HEAD)
 	to_chat(src, SPAN_NOTICE("You feel a faint sense of vertigo as your neural lace boots."))
 
 /obj/item/organ/internal/neural_lace
@@ -63,28 +63,34 @@
 /obj/item/organ/internal/neural_lace/proc/backup_inviable()
 	return 	(!istype(backup) || backup == owner.mind || (backup.current && backup.current.stat != DEAD))
 
-/obj/item/organ/internal/neural_lace/replaced()
-	if(!..()) return 0
+/obj/item/organ/internal/neural_lace/proc/prompt_player(mob/living/carbon/human/target)
 	if(prompting) // Don't spam the player with twenty dialogs because someone doesn't know what they're doing or panicking.
-		return 0
+		return FALSE
 	if(owner && !backup_inviable())
 		var/current_owner = owner
 		prompting = TRUE
 		var/response = alert(find_dead_player(ownerckey, 1), "Your neural backup has been placed into a new body. Do you wish to return to life as the mind of [backup.name]?", "Resleeving", "Yes", "No")
 		prompting = FALSE
-		if(src && response == "Yes" && owner == current_owner)
+		if(response == "Yes" && owner == current_owner)
 			overwrite()
-	sleep(-1)
+	return TRUE
+
+/obj/item/organ/internal/neural_lace/do_install(mob/living/carbon/human/target, obj/item/organ/external/affected, in_place)
+	if(!(. = ..()))
+		return FALSE
+	if(prompting)
+		return FALSE
+	INVOKE_ASYNC(src, .proc/prompt_player, target)
 	do_backup()
 	if(!backup_inviable())
 		to_chat(owner,SPAN_WARNING("You feel sluggish and your limbs are heavy as your new body adjusts to the neural lace - you'll probably be pretty useless until your lace has acclimated."))
 		owner.buff_skill(skilldecay, 30 MINUTES, buff_type)//Debuff applied
 		relacetime = world.time
-	return 1
+	return TRUE
 
-/obj/item/organ/internal/neural_lace/removed()
+/obj/item/organ/internal/neural_lace/do_uninstall(var/in_place = FALSE, var/detach = FALSE, var/ignore_children = FALSE, var/update_icon = TRUE)
 	do_backup()
-	..()
+	. = ..()
 
 /obj/item/organ/internal/neural_lace/proc/overwrite()
 	if(owner.mind && owner.ckey) //Someone is already in this body!

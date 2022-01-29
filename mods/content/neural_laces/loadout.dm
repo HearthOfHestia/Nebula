@@ -12,5 +12,5 @@
 	if(!istype(organ_to_implant_into))
 		return ..()
 
-	replaced(user, organ_to_implant_into)
+	do_install(user, organ_to_implant_into)
 	to_chat(user, SPAN_NOTICE("You feel a faint sense of vertigo as your neural lace boots."))
