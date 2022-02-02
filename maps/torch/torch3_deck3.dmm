@@ -16,7 +16,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/substation/thirddeck)
 "ad" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/structure/sign/warning/airlock{
 	pixel_y = 32
@@ -50,7 +50,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/hydroponics_torch,
+/obj/structure/closet/secure_closet/hydroponics_endeavour,
 /obj/machinery/light_switch{
 	pixel_y = 24
 	},
@@ -200,7 +200,7 @@
 /turf/simulated/wall/r_wall/map_preset/tan,
 /area/hydroponics)
 "aX" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/starboard)
@@ -347,7 +347,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/tcommsat/storage)
 "bp" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/forestarboard)
@@ -392,7 +392,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/obj/structure/closet/secure_closet/hydroponics_torch,
+/obj/structure/closet/secure_closet/hydroponics_endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -1286,7 +1286,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
 "do" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
@@ -1630,7 +1630,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
 "eg" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/item/storage/box/lights/mixed,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
@@ -4109,7 +4109,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/obj/structure/closet/secure_closet/atmos_torch,
+/obj/structure/closet/secure_closet/atmos_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos/aux)
@@ -4138,7 +4138,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/crew_quarters/safe_room/thirddeck)
 "jO" = (
@@ -4488,7 +4488,7 @@
 /turf/simulated/floor/plating,
 /area/engineering/atmos/aux)
 "kH" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos/aux)
@@ -4656,7 +4656,7 @@
 /obj/effect/floor_decal/corner/green/half{
 	dir = 8
 	},
-/obj/structure/closet/chefcloset_torch,
+/obj/structure/closet/chefcloset_endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -4949,7 +4949,7 @@
 /area/crew_quarters/cryolocker)
 "lT" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
 "lU" = (
@@ -5271,7 +5271,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -5364,7 +5364,7 @@
 /area/hallway/primary/thirddeck/fore)
 "na" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/thirddeck/fore)
@@ -7441,7 +7441,7 @@
 /area/hallway/primary/thirddeck/aft)
 "sx" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/port)
 "sy" = (
@@ -8104,7 +8104,7 @@
 	dir = 1
 	},
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/reinforced/airless,
@@ -8396,7 +8396,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/closet/waitstaff_torch,
+/obj/structure/closet/waitstaff_endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/storage/service)
@@ -9446,7 +9446,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/alarm{
 	dir = 1;
 	pixel_y = -25
@@ -10179,7 +10179,7 @@
 /turf/simulated/floor/plating,
 /area/thruster/d3starboard)
 "Al" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -11952,7 +11952,7 @@
 	dir = 9;
 	icon_state = "intact"
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -12730,7 +12730,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
 "HE" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/structure/sign/warning/airlock{
 	dir = 1;
@@ -13589,7 +13589,7 @@
 /turf/simulated/floor/carpet/blue,
 /area/storage/service)
 "Kf" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/port)
@@ -15134,7 +15134,7 @@
 /turf/simulated/floor/wood,
 /area/crew_quarters/gym)
 "PH" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
 "PI" = (
@@ -16108,7 +16108,7 @@
 	},
 /obj/machinery/pointdefense{
 	id_tag = null;
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/structure/cable/green{
 	icon_state = "0-8"
@@ -16646,7 +16646,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/office)
 "Ux" = (
-/obj/structure/closet/secure_closet/bar_torch,
+/obj/structure/closet/secure_closet/bar_endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark,
@@ -17541,7 +17541,7 @@
 "Xr" = (
 /obj/machinery/pointdefense{
 	id_tag = null;
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/machinery/power/terminal,
 /obj/structure/cable/green{
@@ -17702,7 +17702,7 @@
 /turf/simulated/floor/tiled,
 /area/crew_quarters/cryolocker)
 "XS" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/plating,
 /area/maintenance/thirddeck/foreport)
@@ -18068,7 +18068,7 @@
 /area/maintenance/thirddeck/foreport)
 "Zg" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftstarboard)
 "Zh" = (

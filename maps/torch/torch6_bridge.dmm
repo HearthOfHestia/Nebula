@@ -572,7 +572,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/bridge/forestarboard)
 "bw" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
@@ -1294,7 +1294,7 @@
 /area/bridge/meeting_room)
 "cV" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_y = -38
 	},
 /obj/machinery/firealarm{
@@ -4323,7 +4323,7 @@
 	id_tag = "perseverance_shuttle_dock_outer";
 	locked = 1;
 	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_ENDEAVOUR_CREW")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -4379,8 +4379,8 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/perseverance/medical)
 "mq" = (
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Commanding Officer"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Commanding Officer"
 	},
 /obj/structure/table/woodentable_reinforced/ebony/walnut,
 /turf/simulated/floor/wood/walnut,
@@ -4611,13 +4611,13 @@
 /area/perseverance/cockpit)
 "ne" = (
 /obj/machinery/computer/ship/helm{
-	req_access = list(list("ACCESS_TORCH_PERSEVERANCE_HELM"))
+	req_access = list(list("ACCESS_ENDEAVOUR_PERSEVERANCE_HELM"))
 	},
 /turf/simulated/floor/tiled/dark,
 /area/perseverance/cockpit)
 "nf" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_y = 38
 	},
 /obj/machinery/recharger/wallcharger{
@@ -5179,7 +5179,7 @@
 /area/bridge)
 "pf" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
@@ -5620,7 +5620,7 @@
 /obj/structure/noticeboard{
 	pixel_x = -32
 	},
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -6173,7 +6173,7 @@
 	enabled = 0;
 	name = "Perseverance point defense control";
 	pixel_x = 32;
-	req_access = list("ACCESS_TORCH_PERSEVERANCE_HELM")
+	req_access = list("ACCESS_ENDEAVOUR_PERSEVERANCE_HELM")
 	},
 /obj/structure/bed/chair/shuttle/blue{
 	dir = 1;
@@ -6285,7 +6285,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/item/radio/intercom{
 	pixel_y = 23
 	},
@@ -6868,11 +6868,11 @@
 /obj/structure/table{
 	name = "plastic table frame"
 	},
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = 26
 	},
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Engineer"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Chief Engineer"
 	},
 /obj/effect/floor_decal/corner/orange/mono,
 /turf/simulated/floor/tiled/dark/monotile,
@@ -7155,7 +7155,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	dir = 4;
@@ -7368,15 +7368,15 @@
 	name = "SEA's Office Door Control";
 	pixel_x = -6;
 	pixel_y = -25;
-	req_access = list("ACCESS_TORCH_SENIOR_ADVISOR")
+	req_access = list("ACCESS_ENDEAVOUR_SENIOR_ADVISOR")
 	},
 /obj/machinery/button/windowtint{
 	id_tag = "sea_windows";
 	pixel_x = 9;
 	pixel_y = -24
 	},
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Senior Enlisted Advisor"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Senior Enlisted Advisor"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/sea)
@@ -7794,8 +7794,8 @@
 	dir = 8;
 	pixel_x = 20
 	},
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief of Security"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Chief of Security"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/cos)
@@ -8224,7 +8224,7 @@
 /obj/item/chems/drinks/bottle/orangejuice,
 /obj/item/chems/drinks/ice,
 /obj/machinery/light,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_y = -24
 	},
 /obj/machinery/button/alternate/door{
@@ -8384,7 +8384,7 @@
 "zx" = (
 /obj/structure/catwalk,
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/machinery/power/terminal{
 	dir = 4
@@ -8919,7 +8919,7 @@
 /area/hallway/primary/bridge/fore)
 "By" = (
 /obj/machinery/pointdefense_control{
-	initial_id_tag = "torch_primary_pd";
+	initial_id_tag = "endeavour_primary_pd";
 	name = "Point Defense Controller"
 	},
 /turf/simulated/floor/blackgrid,
@@ -9075,7 +9075,7 @@
 /obj/effect/floor_decal/corner/darkblue{
 	dir = 9
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled,
@@ -9246,7 +9246,7 @@
 	name = "plastic table frame"
 	},
 /obj/effect/floor_decal/corner/red/mono,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = 26
 	},
 /obj/item/paper_bin{
@@ -9295,7 +9295,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -9486,7 +9486,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "Dy" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/firealarm{
@@ -9767,7 +9767,7 @@
 /area/crew_quarters/heads/office/sgr)
 "EP" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
-/obj/structure/closet/secure_closet/CMO_torch,
+/obj/structure/closet/secure_closet/CMO_endeavour,
 /obj/item/storage/belt/medical,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/heads/office/cmo)
@@ -10920,7 +10920,7 @@
 	id_tag = "perseverance_shuttle_dock_inner";
 	locked = 1;
 	name = "Docking Port Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_ENDEAVOUR_CREW")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/bridge/aft)
@@ -11214,7 +11214,7 @@
 /obj/effect/floor_decal/corner/darkblue/three_quarters{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/bridge/aft)
@@ -11274,8 +11274,8 @@
 "KP" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/glass,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Medical Officer"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Chief Medical Officer"
 	},
 /obj/item/stamp/cmo,
 /obj/item/radio{
@@ -11517,7 +11517,7 @@
 	id_tag = "perseverance_shuttle_dock_airlock";
 	pixel_x = 24;
 	pixel_y = 24;
-	req_access = list(list("ACCESS_BRIDGE","ACCESS_TORCH_CREW"));
+	req_access = list(list("ACCESS_BRIDGE","ACCESS_ENDEAVOUR_CREW"));
 	tag_airpump = "perseverance_shuttle_dock_pump";
 	tag_chamber_sensor = "perseverance_shuttle_dock_sensor";
 	tag_exterior_door = "perseverance_shuttle_dock_outer";
@@ -11707,7 +11707,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/meeting_room)
 "Nh" = (
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_y = 24
 	},
 /obj/machinery/button/alternate/door{
@@ -12263,7 +12263,7 @@
 "PJ" = (
 /obj/machinery/computer/ship/helm{
 	dir = 4;
-	req_access = list(list("ACCESS_TORCH_HELM"))
+	req_access = list(list("ACCESS_ENDEAVOUR_HELM"))
 	},
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/structure/cable/green{
@@ -12301,7 +12301,7 @@
 "PX" = (
 /obj/effect/floor_decal/corner/darkblue/mono,
 /obj/machinery/light,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/hallway/port)
 "PY" = (
@@ -12437,7 +12437,7 @@
 	frequency = 1331;
 	id_tag = "perseverance_shuttle";
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_ENDEAVOUR_CREW");
 	tag_exterior_sensor = "perseverance_shuttle_sensor_external"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/high_volume/shuttle{
@@ -12631,7 +12631,7 @@
 	id_tag = "perseverance_shuttle_inner";
 	locked = 1;
 	name = "Perseverance External Access";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_ENDEAVOUR_CREW")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/perseverance/airlock)
@@ -12802,7 +12802,7 @@
 	name = "SCGR's Office Door Control";
 	pixel_x = 27;
 	pixel_y = 5;
-	req_access = list("ACCESS_TORCH_REPRESENTATIVE")
+	req_access = list("ACCESS_ENDEAVOUR_REPRESENTATIVE")
 	},
 /obj/machinery/button/windowtint{
 	id_tag = "sgr_windows";
@@ -13130,7 +13130,7 @@
 /turf/simulated/floor/plating,
 /area/crew_quarters/heads/cobed)
 "TE" = (
-/obj/structure/closet/secure_closet/engineering_chief_torch,
+/obj/structure/closet/secure_closet/engineering_chief_endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/heads/office/ce)
@@ -13325,7 +13325,7 @@
 	pixel_y = 30
 	},
 /obj/effect/floor_decal/corner/research/mono,
-/obj/structure/closet/secure_closet/RD_torch,
+/obj/structure/closet/secure_closet/RD_endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/heads/office/rd)
 "Uk" = (
@@ -13721,8 +13721,8 @@
 /area/security/bridgecheck)
 "Wi" = (
 /obj/structure/table/glass,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Chief Science Officer"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Chief Science Officer"
 	},
 /obj/machinery/newscaster{
 	pixel_y = 32
@@ -13749,8 +13749,8 @@
 /area/crew_quarters/heads/office/ce)
 "Wm" = (
 /obj/structure/table/woodentable/walnut,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - SolGov Representative"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - SolGov Representative"
 	},
 /obj/item/radio/intercom{
 	dir = 4;
@@ -13765,7 +13765,7 @@
 	pixel_y = 24
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/perseverance/storage)
 "Ws" = (
@@ -14377,7 +14377,7 @@
 	preset_channels = list("Command","Research")
 	},
 /obj/machinery/papershredder,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = 26
 	},
 /turf/simulated/floor/tiled/dark,
@@ -14493,7 +14493,7 @@
 	id_tag = "perseverance_shuttle_outer";
 	locked = 1;
 	name = "Perseverance External Airlock";
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_ENDEAVOUR_CREW")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/perseverance/airlock)

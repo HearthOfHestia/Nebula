@@ -1,7 +1,7 @@
 /decl/hierarchy/outfit/job/torch/crew/medical
 	abstract_type = /decl/hierarchy/outfit/job/torch/crew/medical
 	l_ear = /obj/item/radio/headset/headset_med
-	id_type = /obj/item/card/id/torch/crew/medical
+	id_type = /obj/item/card/id/endeavour/crew/medical
 	pda_type = /obj/item/modular_computer/pda/medical
 	pda_slot = slot_l_store_str
 	gloves = /obj/item/clothing/gloves/duty/med
@@ -14,7 +14,7 @@
 	name = "Job - Physician"
 	uniform = /obj/item/clothing/under/iseo/utility/medical
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/medical/senior
+	id_type = /obj/item/card/id/endeavour/crew/medical/senior
 	head = /obj/item/clothing/head/iseo/beret/medical
 
 /decl/hierarchy/outfit/job/torch/crew/medical/senior/civilian
@@ -63,7 +63,7 @@
 	head = /obj/item/clothing/head/espatier/beret/medical
 
 /decl/hierarchy/outfit/job/torch/crew/medical/chemist
-	name = "Job - Chemist - Torch"
+	name = "Job - Chemist - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/medical
 	shoes = /obj/item/clothing/shoes/color/white
 	pda_type = /obj/item/modular_computer/pda/medical

@@ -1062,7 +1062,7 @@
 	frequency = 1331;
 	id_tag = "spirit_shuttle";
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW")
+	req_access = list("ACCESS_ENDEAVOUR_CREW")
 	},
 /obj/machinery/light/small{
 	dir = 1
@@ -1189,7 +1189,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/secure/shuttle{
 	dir = 8;
-	req_access = list("ACCESS_TORCH_GUP")
+	req_access = list("ACCESS_ENDEAVOUR_GUP")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
@@ -1511,7 +1511,7 @@
 /obj/machinery/button/blast_door{
 	id_tag = "opportunity_hatch";
 	name = "Rear Hatch Control";
-	req_access = list("ACCESS_TORCH_GUP")
+	req_access = list("ACCESS_ENDEAVOUR_GUP")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/opportunity_hangar/start)
@@ -1528,7 +1528,7 @@
 "dM" = (
 /obj/machinery/computer/ship/helm{
 	dir = 1;
-	req_access = list(list("ACCESS_TORCH_GUP_HELM"))
+	req_access = list(list("ACCESS_ENDEAVOUR_GUP_HELM"))
 	},
 /obj/machinery/light{
 	dir = 8
@@ -2413,7 +2413,7 @@
 	frequency = 1331;
 	id_tag = "spirit_cargo";
 	pixel_x = 19;
-	req_access = list("ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_ENDEAVOUR_CREW");
 	tag_exterior_sensor = "spirit_cargo_exterior"
 	},
 /obj/machinery/airlock_sensor/shuttle{
@@ -3328,7 +3328,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/crew_quarters/observation)
 "iX" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -3704,7 +3704,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
@@ -4272,7 +4272,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
 "ld" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "east bump";
@@ -4431,7 +4431,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
 "lv" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/quartermaster/hangar)
@@ -6328,7 +6328,7 @@
 /area/quartermaster/expedition)
 "pQ" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance,
 /obj/random/maintenance,
 /turf/simulated/floor/tiled/techmaint,
@@ -6442,7 +6442,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition)
 "qf" = (
-/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch,
+/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_endeavour,
 /obj/effect/floor_decal/corner/brown/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -6551,7 +6551,7 @@
 	dir = 1
 	},
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/reinforced/airless,
@@ -7556,7 +7556,7 @@
 	frequency = 1431;
 	id_tag = "opportunity_shuttle";
 	pixel_y = 24;
-	req_access = list("ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_ENDEAVOUR_CREW");
 	tag_exterior_sensor = "opportunity_shuttle_exterior_sensor"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -10457,7 +10457,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/aft)
 "HR" = (
@@ -10663,7 +10663,7 @@
 /area/maintenance/fifthdeck/aftstarboard)
 "Jh" = (
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/machinery/power/terminal{
 	dir = 1
@@ -12431,7 +12431,7 @@
 	dir = 8;
 	id_tag = "curiosity";
 	pixel_x = 19;
-	req_access = list("ACCESS_TORCH_CREW");
+	req_access = list("ACCESS_ENDEAVOUR_CREW");
 	tag_exterior_sensor = null
 	},
 /turf/simulated/floor/tiled/white,

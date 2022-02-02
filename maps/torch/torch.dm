@@ -12,8 +12,6 @@
 	#include "../../mods/content/supplypacks/_supplypacks.dme"
 
 	#include "../../mods/content/iseo/_iseo.dme"
-	#include "..\..\mods\mobs\borers\_borers.dme"
-	#include "..\..\mods\mobs\dionaea\_dionaea.dme"
 
 	#include "../../mods/content/neural_laces/_laces.dme"
 	#include "../../mods/content/genemodding/_genemodding.dme"
@@ -41,7 +39,6 @@
 
 	#include "../../mods/utility/centcomdb/_centcomdb.dme"
 
-	#include "torch_define.dm"
 	#include "torch_announcements.dm"
 	#include "torch_antagonism.dm"
 	#include "torch_areas.dm"
@@ -66,7 +63,6 @@
 	#include "torch_paint.dm"
 	#include "torch_floor_decals.dm"
 	#include "torch_cyclers.dm"
-	#include "machinery/rtg.dm"
 	#include "torch_departments.dm"
 
 	#include "datums/game_modes/torch_traitor.dm"

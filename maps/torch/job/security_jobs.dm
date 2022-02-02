@@ -34,7 +34,7 @@
 	access = list(
 		access_security, access_brig, access_armory, access_forensics_lockers,
 		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
-		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_torch_fax,
+		access_eva, access_sec_doors, access_solgov_crew, access_gun, access_endeavour_fax,
 		access_radio_sec
 	)
 
@@ -86,7 +86,7 @@
 		access_security, access_brig, access_forensics_lockers,
 		access_maint_tunnels, access_emergency_storage,
 		access_sec_doors, access_solgov_crew, access_morgue,
-		access_torch_fax, access_radio_sec
+		access_endeavour_fax, access_radio_sec
 	)
 
 	minimal_access = list()

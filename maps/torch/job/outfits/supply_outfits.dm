@@ -12,7 +12,7 @@
 	l_ear = /obj/item/radio/headset/headset_deckofficer
 	uniform = /obj/item/clothing/under/iseo/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/supply/deckofficer
+	id_type = /obj/item/card/id/endeavour/crew/supply/deckofficer
 	pda_type = /obj/item/modular_computer/pda/cargo
 	head = /obj/item/clothing/head/iseo/beret/supply
 
@@ -26,7 +26,7 @@
 	name = "Job - Deck Technician"
 	uniform = /obj/item/clothing/under/iseo/utility/supply
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/supply
+	id_type = /obj/item/card/id/endeavour/crew/supply
 	pda_type = /obj/item/modular_computer/pda/cargo
 	head = /obj/item/clothing/head/iseo/beret/supply
 
@@ -40,14 +40,14 @@
 	name = "Job - Supply Assistant"
 	uniform = /obj/item/clothing/under/cargotech
 	shoes = /obj/item/clothing/shoes/color/brown
-	id_type = /obj/item/card/id/torch/contractor/supply
+	id_type = /obj/item/card/id/endeavour/contractor/supply
 	pda_type = /obj/item/modular_computer/pda/cargo
 
 /decl/hierarchy/outfit/job/torch/passenger/research/prospector
 	name = "Job - Prospector"
 	uniform = /obj/item/clothing/under/work
 	shoes = /obj/item/clothing/shoes/workboots
-	id_type = /obj/item/card/id/torch/contractor/supply
+	id_type = /obj/item/card/id/endeavour/contractor/supply
 	pda_type = /obj/item/modular_computer/pda/mining
 	l_ear = /obj/item/radio/headset/headset_mining
 

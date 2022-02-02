@@ -24,7 +24,7 @@
 
 	access = list(
 		access_liaison, access_bridge, access_solgov_crew,
-		access_nanotrasen, access_commissary, access_torch_fax,
+		access_nanotrasen, access_commissary, access_endeavour_fax,
 		access_radio_comm, access_radio_serv
 	)
 
@@ -73,7 +73,7 @@
 	access = list(
 		access_liaison, access_bridge, access_solgov_crew,
 		access_nanotrasen, access_commissary,
-		access_sec_guard, access_torch_fax, access_radio_serv
+		access_sec_guard, access_endeavour_fax, access_radio_serv
 	)
 
 	defer_roundstart_spawn = TRUE

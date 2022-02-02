@@ -1,3 +1,6 @@
+/datum/map/torch
+	overmap_ids = list(OVERMAP_ID_SPACE = /datum/overmap/torch) // must be here, not in torch_define.dm
+
 /datum/overmap/torch
 	event_areas = 34
 	map_size_x = 35

@@ -25,7 +25,7 @@
 		access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen, access_solgov_crew,
 		access_expedition_shuttle, access_opportunity, access_hangar, access_curiosity, access_curiosity_helm, access_opportunity_helm,
 		access_curiosity_analysis, access_curiosity_phoron, access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security,
-		access_curiosity_maint, access_torch_fax, access_radio_sci, access_radio_exp
+		access_curiosity_maint, access_endeavour_fax, access_radio_sci, access_radio_exp
 	)
 
 	min_skill = list(   SKILL_BUREAUCRACY = SKILL_BASIC,
@@ -81,7 +81,7 @@
 		access_tox, access_tox_storage, access_research, access_curiosity, access_curiosity_helm,
 		access_mining_office, access_mining_station, access_xenobiology, access_opportunity_helm,
 		access_xenoarch, access_nanotrasen, access_solgov_crew, access_expedition_shuttle, access_opportunity, access_hangar,
-		access_curiosity_analysis, access_curiosity_phoron, access_curiosity_toxins, access_curiosity_chemistry, access_torch_fax,
+		access_curiosity_analysis, access_curiosity_phoron, access_curiosity_toxins, access_curiosity_chemistry, access_endeavour_fax,
 		access_curiosity_maint, access_radio_sci, access_radio_exp
 	)
 

@@ -8,7 +8,7 @@
 	name = "Job - Pathfinder"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/pathfinder
+	id_type = /obj/item/card/id/endeavour/crew/pathfinder
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/radio/headset/pathfinder
 	head = /obj/item/clothing/head/iseo/beret/exploration
@@ -23,7 +23,7 @@
 	name = "Job - Explorer"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/explorer
+	id_type = /obj/item/card/id/endeavour/crew/explorer
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/radio/headset/exploration
 	head = /obj/item/clothing/head/iseo/beret/exploration
@@ -38,7 +38,7 @@
 	name = "Job - Shuttle Pilot"
 	uniform = /obj/item/clothing/under/iseo/utility/science
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/pilot
+	id_type = /obj/item/card/id/endeavour/crew/pilot
 	pda_type = /obj/item/modular_computer/pda/explorer
 	l_ear = /obj/item/radio/headset/headset_pilot
 	head = /obj/item/clothing/head/iseo/beret/exploration

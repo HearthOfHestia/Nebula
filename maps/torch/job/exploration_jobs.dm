@@ -37,7 +37,7 @@
 		access_opportunity_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm,
 		access_opportunity, access_hangar, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_maint, access_tox, access_tox_storage, access_research,
-		access_xenobiology, access_xenoarch, access_torch_fax, access_radio_comm, access_radio_exp, access_radio_sci
+		access_xenobiology, access_xenoarch, access_endeavour_fax, access_radio_comm, access_radio_exp, access_radio_sci
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,

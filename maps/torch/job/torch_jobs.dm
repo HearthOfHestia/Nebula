@@ -10,11 +10,6 @@
 	)
 	*/
 
-	species_to_job_whitelist = list(
-		/decl/species/vox = list(
-			AI_SHARD_JOBS
-		)
-	)
 	species_to_job_blacklist = list(
 		/decl/species/adherent = list(
 			VIOLENT_JOBS,

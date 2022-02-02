@@ -1,10 +1,10 @@
 /decl/hierarchy/outfit/job/torch/passenger/passenger
-	name = "Job - Passenger - Torch"
+	name = "Job - Passenger - Endeavour"
 	uniform = /obj/item/clothing/under/color/grey
 	l_ear = /obj/item/radio/headset
 	shoes = /obj/item/clothing/shoes/color/black
 	pda_type = /obj/item/modular_computer/pda
-	id_type = /obj/item/card/id/torch/passenger
+	id_type = /obj/item/card/id/endeavour/passenger
 
 /decl/hierarchy/outfit/job/torch/passenger/passenger/psychologist
 	name = "Job - Passenger - Psychologist"
@@ -12,12 +12,12 @@
 	shoes = /obj/item/clothing/shoes/dress
 
 /decl/hierarchy/outfit/job/torch/passenger/passenger/journalist
-	name = "Job - Journalist - Torch"
+	name = "Job - Journalist - Endeavour"
 	backpack_contents = list(/obj/item/camera/tvcamera = 1,
 	/obj/item/clothing/accessory/badge/press = 1)
 
 /decl/hierarchy/outfit/job/torch/passenger/passenger/investor
-	name = "Job - Investor - Torch"
+	name = "Job - Investor - Endeavour"
 
 /decl/hierarchy/outfit/job/torch/passenger/passenger/investor/post_equip(var/mob/living/carbon/human/H)
 	..()
@@ -25,15 +25,15 @@
 	H.put_in_hands(case)
 
 /decl/hierarchy/outfit/job/torch/merchant
-	name = "Job - Merchant - Torch"
+	name = "Job - Merchant - Endeavour"
 	uniform = /obj/item/clothing/under/color/black
 	l_ear = null
 	shoes = /obj/item/clothing/shoes/color/black
 	pda_type = /obj/item/modular_computer/pda
-	id_type = /obj/item/card/id/torch/merchant
+	id_type = /obj/item/card/id/endeavour/merchant
 
 /decl/hierarchy/outfit/job/torch/ert
-	name = "Job - ERT - Torch"
+	name = "Job - ERT - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/security
 	gloves = /obj/item/clothing/gloves/thick
 	id_type = /obj/item/card/id/centcom/ERT
@@ -42,5 +42,5 @@
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 
 /decl/hierarchy/outfit/job/torch/ert/leader
-	name = "Job - ERT Leader - Torch"
+	name = "Job - ERT Leader - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/security

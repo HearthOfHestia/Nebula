@@ -1,7 +1,7 @@
 /datum/map/torch/setup_map()
 	..()
 	system_name = generate_system_name()
-	minor_announcement = new(new_sound = sound('maps/torch/sounds/commandreport.ogg', volume = 45))
+	minor_announcement = new(new_sound = sound('mods/content/hearth_maps/sounds/commandreport.ogg', volume = 45))
 
 /datum/map/torch/get_map_info()
 	. = list()
