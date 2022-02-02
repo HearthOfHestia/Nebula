@@ -5,7 +5,7 @@
 /obj/item/clothing/suit/storage/espatier/jacket
 	name = "espatier jacket"
 	desc = "A green jacket, typically used in casual occasions. Fitted for both sexes."
-	icon = 'maps/torch/icons/converted_icons/suits/suit_service_espatiers.dmi'
+	icon = 'mods/content/iseo/icons/suits/suit_service_espatiers.dmi'
 	allowed = list (/obj/item/tank/emergency,/obj/item/flashlight,/obj/item/handcuffs,/obj/item/taperecorder,/obj/item/crowbar,/obj/item/radio)
 
 /obj/item/clothing/suit/storage/espatier/jacket/engineering
@@ -33,9 +33,9 @@
 /obj/item/clothing/suit/espatier/dress
 	name = "dress jacket"
 	desc = "A black and red dress jacket, typically used in formal occasions. Fitted for both sexes."
-	icon = 'maps/torch/icons/converted_icons/suits/suit_dress_espatiers.dmi'
+	icon = 'mods/content/iseo/icons/suits/suit_dress_espatiers.dmi'
 
 /obj/item/clothing/suit/espatier/dress/command
 	name = "dress jacket"
 	desc = "A black and red dress jacket, typically used in formal occasions. Fitted for both sexes. This one has gold highlights."
-	icon = 'maps/torch/icons/converted_icons/suits/suit_dress_command_espatiers.dmi'
+	icon = 'mods/content/iseo/icons/suits/suit_dress_command_espatiers.dmi'

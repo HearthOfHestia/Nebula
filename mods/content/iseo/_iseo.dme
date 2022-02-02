@@ -1,0 +1,23 @@
+#ifndef MODPACK_ISEO
+#define MODPACK_ISEO
+#ifndef MODPACK_MIL_CORE
+#include "../mil_core/_mil_core.dme"
+#endif
+#include "iseo.dm"
+#include "iseo_ranks.dm"
+#include "clothing/armor.dm"
+#include "clothing/attachments.dm"
+#include "clothing/gloves.dm"
+#include "clothing/hats_espatier.dm"
+#include "clothing/hats_iseo.dm"
+#include "clothing/hats_general.dm"
+#include "clothing/skillbadges.dm"
+#include "clothing/suits_espatier.dm"
+#include "clothing/suits_iseo.dm"
+#include "clothing/uniforms_espatier.dm"
+#include "clothing/uniforms_iseo.dm"
+#include "datums/iseo_reports.dm"
+#include "decls/supplypacks.dm"
+#include "loadout/loadout_skillbadges.dm"
+#include "obj/decals.dm"
+#endif

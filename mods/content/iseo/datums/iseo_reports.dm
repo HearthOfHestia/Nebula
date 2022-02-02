@@ -1,14 +1,14 @@
 
-/datum/computer_file/report/recipient/sol
-	logo = "\[solcrest\]"
-	form_name = "SCG-REP-00"
+/datum/computer_file/report/recipient/iseo
+	logo = "\[iseologo\]"
+	form_name = "ISEO-REP-00"
 
-/datum/computer_file/report/recipient/sol/audit
-	form_name = "SCG-REP-12"
+/datum/computer_file/report/recipient/iseo/audit
+	form_name = "ISEO-REP-12"
 	title = "ISEO Endeavour Department Audit"
 	available_on_network = 1
 
-/datum/computer_file/report/recipient/sol/audit/generate_fields()
+/datum/computer_file/report/recipient/iseo/audit/generate_fields()
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 	add_field(/datum/report_field/simple_text, "Name of Department")
@@ -21,12 +21,12 @@
 	set_access(access_edit = access_nanotrasen, override = 0)
 	..()
 
-/datum/computer_file/report/recipient/sol/crewman_incident
-	form_name = "SCG-REP-4"
+/datum/computer_file/report/recipient/iseo/crewman_incident
+	form_name = "ISEO-REP-4"
 	title = "Crewman Incident Report"
 	available_on_network = 1
 
-/datum/computer_file/report/recipient/sol/crewman_incident/generate_fields()
+/datum/computer_file/report/recipient/iseo/crewman_incident/generate_fields()
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
 	add_field(/datum/report_field/people/from_manifest, "Crewman Involved in Incident")
@@ -37,12 +37,12 @@
 	set_access(access_edit = list(access_heads, access_solgov_crew))
 	..()
 
-/datum/computer_file/report/recipient/sol/work_visa
-	form_name = "SCG-REP-03b"
+/datum/computer_file/report/recipient/iseo/work_visa
+	form_name = "ISEO-REP-03b"
 	title = "Work Visa Issuing Form"
 	available_on_network = 1
 
-/datum/computer_file/report/recipient/sol/work_visa/generate_fields()
+/datum/computer_file/report/recipient/iseo/work_visa/generate_fields()
 	var/datum/report_field/temp_field
 	add_field(/datum/report_field/date, "Date")
 	add_field(/datum/report_field/time, "Time")
