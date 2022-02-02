@@ -18,7 +18,7 @@
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
 	set_access(access_edit = access_representative, override = 0)
-	set_access(access_edit = access_nanotrasen, override = 0)
+	set_access(access_edit = access_corporate, override = 0)
 	..()
 
 /datum/computer_file/report/recipient/iseo/crewman_incident
@@ -34,7 +34,7 @@
 	add_field(/datum/report_field/pencode_text, "Description of incident")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(access_edit = list(access_heads, access_solgov_crew))
+	set_access(access_edit = list(access_heads, access_iseo_crew))
 	..()
 
 /datum/computer_file/report/recipient/iseo/work_visa

@@ -25,7 +25,7 @@
 
 /datum/computer_file/report/recipient/corp/memo/internal/New()
 	..()
-	set_access(access_nanotrasen, access_nanotrasen)
+	set_access(access_corporate, access_corporate)
 
 /datum/computer_file/report/recipient/corp/memo/external
 	form_name = "C-0005"
@@ -34,7 +34,7 @@
 
 /datum/computer_file/report/recipient/corp/memo/external/New()
 	..()
-	set_access(access_edit = access_nanotrasen)
+	set_access(access_edit = access_corporate)
 
 //No access restrictions for easier use.
 /datum/computer_file/report/recipient/corp/sales
@@ -71,7 +71,7 @@
 	add_field(/datum/report_field/text_label, "To be shipped and delivered directly to the employee's next of kin without delay.")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(access_edit = access_nanotrasen)
+	set_access(access_edit = access_corporate)
 
 /datum/computer_file/report/recipient/corp/fire
 	form_name = "C-0102"
@@ -81,7 +81,7 @@
 /datum/computer_file/report/recipient/corp/fire/New()
 	..()
 	set_access(access_heads, access_heads)
-	set_access(access_nanotrasen, override = 0)
+	set_access(access_corporate, override = 0)
 
 /datum/computer_file/report/recipient/corp/fire/generate_fields()
 	..()
@@ -95,7 +95,7 @@
 
 /datum/computer_file/report/recipient/corp/incident/New()
 	..()
-	set_access(access_edit = access_nanotrasen)
+	set_access(access_edit = access_corporate)
 
 /datum/computer_file/report/recipient/corp/incident/generate_fields()
 	..()
@@ -134,7 +134,7 @@
 	temp_fields += add_field(/datum/report_field/signature, "Corporate Representative's Signature")
 	temp_fields += add_field(/datum/report_field/options/yes_no, "Approved")
 	for(var/datum/report_field/temp_field in temp_fields)
-		temp_field.set_access(access_edit = access_nanotrasen)
+		temp_field.set_access(access_edit = access_corporate)
 
 /datum/computer_file/report/recipient/corp/deny
 	form_name = "C-1443D"
@@ -152,4 +152,4 @@
 	add_field(/datum/report_field/options/yes_no, "Project Cancellation")
 	add_field(/datum/report_field/simple_text, "Other")
 	add_field(/datum/report_field/options/yes_no, "Report Approved")
-	set_access(access_edit = access_nanotrasen)
+	set_access(access_edit = access_corporate)

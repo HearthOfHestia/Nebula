@@ -31,15 +31,15 @@
 	desc = "Perseverance Helm"
 	region = ACCESS_REGION_GENERAL
 
-/var/global/const/access_solgov_crew = "ACCESS_ENDEAVOUR_CREW" //80
-/datum/access/solgov_crew
-	id = access_solgov_crew
+/var/global/const/access_iseo_crew = "ACCESS_ENDEAVOUR_CREW" //80
+/datum/access/iseo_crew
+	id = access_iseo_crew
 	desc = "SolGov Crew"
 	region = ACCESS_REGION_GENERAL
 
-/var/global/const/access_nanotrasen = "ACCESS_ENDEAVOUR_CORP" //81
-/datum/access/nanotrasen
-	id = access_nanotrasen
+/var/global/const/access_corporate = "ACCESS_ENDEAVOUR_CORP" //81
+/datum/access/corporate
+	id = access_corporate
 	desc = "Corporate Personnel"
 	region = ACCESS_REGION_RESEARCH
 

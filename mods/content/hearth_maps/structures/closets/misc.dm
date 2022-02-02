@@ -107,7 +107,7 @@
 
 /obj/structure/closet/secure_closet/crew
 	name = "crew equipment locker"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_iseo_crew)
 	closet_appearance = /decl/closet_appearance/secure_closet/endeavour/sol
 
 /obj/structure/closet/secure_closet/crew/WillContain()
@@ -120,7 +120,7 @@
 
 /obj/structure/closet/secure_closet/crew/research
 	name = "research equipment locker"
-	req_access = list(access_nanotrasen)
+	req_access = list(access_corporate)
 	closet_appearance = /decl/closet_appearance/secure_closet/endeavour/corporate
 
 

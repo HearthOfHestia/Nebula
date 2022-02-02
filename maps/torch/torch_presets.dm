@@ -253,3 +253,10 @@ var/global/const/HAIL_FREQ = 1463
 
 /obj/machinery/fabricator/bioprinter/filled
 	prefilled = TRUE
+
+/*
+ Overrides for standard mapset rig items
+ */
+
+/obj/item/clothing/head/helmet/space/rig/industrial
+	camera = /obj/machinery/camera/network/supply

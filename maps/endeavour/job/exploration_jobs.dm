@@ -34,9 +34,9 @@
 
 	access = list(
 		access_pathfinder, access_explorer, access_eva, access_maint_tunnels, access_bridge, access_emergency_storage,
-		access_opportunity_helm, access_solgov_crew, access_expedition_shuttle, access_expedition_shuttle_helm,
-		access_opportunity, access_hangar, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
-		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_maint, access_tox, access_tox_storage, access_research,
+		access_iseo_crew, access_expedition_shuttle, access_expedition_shuttle_helm,
+		access_perseverance, access_hangar, 
+		access_tox, access_tox_storage, access_research,
 		access_xenobiology, access_xenoarch, access_endeavour_fax, access_radio_comm, access_radio_exp, access_radio_sci
 	)
 
@@ -68,9 +68,9 @@
 	)
 
 	access = list(
-		access_mining_office, access_curiosity, access_curiosity_helm, access_curiosity_maint, access_mining_station,
-		access_expedition_shuttle, access_expedition_shuttle_helm, access_opportunity, access_hangar, access_opportunity_helm,
-		access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer, access_research,
+		access_mining_office, access_mining_station,
+		access_expedition_shuttle, access_expedition_shuttle_helm, access_perseverance, access_hangar,
+		access_mining, access_pilot, access_iseo_crew, access_eva, access_explorer, access_research,
 		access_radio_exp, access_radio_sci, access_radio_sup
 	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
@@ -111,8 +111,8 @@
 
 	access = list(
 		access_explorer, access_maint_tunnels, access_eva, access_emergency_storage,
-		access_opportunity_helm, access_solgov_crew, access_expedition_shuttle, access_opportunity, access_hangar,
-		access_curiosity, access_curiosity_maint, access_research, access_radio_exp
+		access_iseo_crew, access_expedition_shuttle, access_perseverance, access_hangar,
+		access_research, access_radio_exp
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)

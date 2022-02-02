@@ -444,3 +444,16 @@ ENDEAVOUR_ESCAPE_POD(19)
 	name = "Space near Third Deck"
 	landmark_tag = "nav_deck2_perseverance"
 
+// Shuttle APCs
+
+/obj/machinery/power/apc/shuttle/spirit
+	req_access = list(list(access_engine_equip, access_expedition_shuttle_helm))
+
+/obj/machinery/power/apc/high/shuttle/spirit
+	req_access = list(list(access_engine_equip, access_expedition_shuttle_helm))
+
+/obj/machinery/power/apc/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))
+
+/obj/machinery/power/apc/hyper/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))

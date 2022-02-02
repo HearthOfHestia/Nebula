@@ -5,13 +5,8 @@
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	welcome_sound = 'mods/content/hearth_maps/sounds/cryorevival.ogg'
 
-	admin_levels = list(4)
-	accessible_z_levels = list("1"=1,"2"=1,"3"=1,"5"=30)
-
 	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
-	allowed_spawns = list(/decl/spawnpoint/cryo)
-	default_spawn = /decl/spawnpoint/cryo
 	default_job_type = /datum/job/assistant
 
 	station_name  = "ISEO Endeavour"

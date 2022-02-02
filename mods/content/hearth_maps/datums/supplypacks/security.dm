@@ -7,7 +7,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "corporate armor crate"
-	access = access_nanotrasen
+	access = access_corporate
 
 /decl/hierarchy/supply_pack/security/lightnanoarmor
 	name = "Armor - Corporate light"
@@ -18,7 +18,7 @@
 	cost = 15
 	containertype = /obj/structure/closet/crate/secure
 	containername = "corporate light armor crate"
-	access = access_nanotrasen
+	access = access_corporate
 
 /*
 /decl/hierarchy/supply_pack/security/pistol
@@ -118,7 +118,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "holster crate"
-	access = access_solgov_crew
+	access = access_iseo_crew
 
 /decl/hierarchy/supply_pack/security/securityextragear
 	name = "Gear - Master at Arms equipment"
@@ -165,4 +165,4 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "practice laser carbine crate"
-	access = access_solgov_crew
+	access = access_iseo_crew

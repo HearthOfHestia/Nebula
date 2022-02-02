@@ -40,16 +40,22 @@
 	#include "endeavour_lobby.dm"
 
 	#include "endeavour_announcements.dm"
+	#include "endeavour_antag.dm"
 	#include "endeavour_areas.dm"
 	#include "endeavour_branches.dm"
+	#include "endeavour_cameras.dm"
 	#include "endeavour_departments.dm"
 	#include "endeavour_overmap.dm"
 	#include "endeavour_paint.dm"
 	#include "endeavour_pets.dm"
 	#include "endeavour_presets.dm"
-	#include "endeavour_procs.dm"
 	#include "endeavour_setup.dm"
+	#include "endeavour_shuttles.dm"
+	#include "endeavour_spawns.dm"
 	#include "endeavour_turfs.dm"
+	#include "endeavour_unit_tests.dm"
+	
+	#include "decals/floor_decals.dm"
 
 	#include "job/command_jobs.dm"
 	#include "job/corporate_jobs.dm"
@@ -76,11 +82,26 @@
 	#include "job/outfits/service_outfits.dm"
 	#include "job/outfits/supply_outfits.dm"
 
+	#include "machines/atmos_machinery.dm"
+	#include "machines/autoset_doors.dm"
+	#include "machines/coffeemachine.dm"
+	#include "machines/consoles.dm"
+	#include "machines/smes.dm"
+	#include "machines/suit_cyclers.dm"
+	#include "machines/telecomms.dm"
+
+	#include "structures/lockers.dm"
+
+	#include "turfs/fuel_tank.dm"
+
 	#include "../../mods/content/hearth_maps/_hearth_maps.dme"
 
 	#include "endeavour-1.dmm"
 	#include "endeavour-2.dmm"
 	#include "endeavour-3.dmm"
+	#include "endeavour-4.dmm"
+	#include "extras.dmm"
+	#include "supply.dmm"
 
 	#define USING_MAP_DATUM /datum/map/endeavour
 

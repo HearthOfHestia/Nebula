@@ -39,7 +39,7 @@
 		access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
 		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_opportunity_helm,
-		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_solgov_crew, access_nanotrasen,
+		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_iseo_crew, access_corporate,
 		access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_opportunity, access_seneng, access_senmed, access_senadv,
 		access_explorer, access_pathfinder, access_pilot, access_commissary, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security, access_curiosity_maint, access_rd, access_curiosity_rd, access_endeavour_fax, access_endeavour_helm,
@@ -55,7 +55,7 @@
 		access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
 		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_opportunity_helm,
-		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_solgov_crew, access_nanotrasen,
+		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_iseo_crew, access_corporate,
 		access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_opportunity, access_seneng, access_senmed, access_senadv,
 		access_explorer, access_pathfinder, access_pilot, access_commissary, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security, access_curiosity_maint, access_rd, access_curiosity_rd, access_endeavour_fax, access_endeavour_helm,
@@ -111,7 +111,7 @@
 		access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
 		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_opportunity_helm,
-		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_solgov_crew, access_nanotrasen,
+		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_iseo_crew, access_corporate,
 		access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_opportunity, access_seneng, access_senmed, access_senadv,
 		access_explorer, access_pathfinder, access_pilot, access_commissary, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security, access_curiosity_maint, access_rd, access_curiosity_rd, access_endeavour_fax, access_endeavour_helm,
@@ -127,7 +127,7 @@
 		access_qm, access_network, access_surgery, access_research, access_mining, access_mining_office, access_mailsorting, access_heads_vault,
 		access_mining_station, access_xenobiology, access_ce, access_hop, access_hos, access_RC_announce, access_keycard_auth, access_tcomsat,
 		access_gateway, access_sec_doors, access_psychiatrist, access_xenoarch, access_medical_equip, access_heads, access_hangar, access_opportunity_helm,
-		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_solgov_crew, access_nanotrasen,
+		access_expedition_shuttle_helm, access_perseverance, access_perseverance_helm, access_iseo_crew, access_corporate,
 		access_emergency_armory, access_sec_guard, access_gun, access_expedition_shuttle, access_opportunity, access_seneng, access_senmed, access_senadv,
 		access_explorer, access_pathfinder, access_pilot, access_commissary, access_curiosity, access_curiosity_helm, access_curiosity_analysis, access_curiosity_phoron,
 		access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_security, access_curiosity_maint, access_rd, access_curiosity_rd, access_endeavour_fax, access_endeavour_helm,
@@ -182,10 +182,10 @@
 	access = list(
 		access_tox, access_tox_storage, access_emergency_storage, access_teleporter, access_bridge, access_rd,
 		access_research, access_mining, access_mining_office, access_mining_station, access_xenobiology, access_perseverance,
-		access_RC_announce, access_keycard_auth, access_xenoarch, access_nanotrasen, access_sec_guard, access_heads,
+		access_RC_announce, access_keycard_auth, access_xenoarch, access_corporate, access_sec_guard, access_heads,
 		access_expedition_shuttle, access_opportunity, access_hangar, access_curiosity, access_curiosity_helm, access_opportunity_helm,
 		access_curiosity_analysis, access_curiosity_phoron, access_curiosity_toxins, access_curiosity_chemistry, access_curiosity_rd,
-		access_curiosity_security, access_curiosity_maint, access_pathfinder, access_explorer, access_eva, access_solgov_crew,
+		access_curiosity_security, access_curiosity_maint, access_pathfinder, access_explorer, access_eva, access_iseo_crew,
 		access_expedition_shuttle, access_expedition_shuttle_helm, access_maint_tunnels, access_endeavour_fax, access_radio_comm,
 		access_radio_sci, access_radio_exp
 	)
@@ -240,7 +240,7 @@
 		access_teleporter, access_eva, access_bridge, access_heads,
 		access_chapel_office, access_crematorium, access_chemistry, access_virology, access_perseverance,
 		access_cmo, access_surgery, access_RC_announce, access_keycard_auth, access_psychiatrist,
-		access_medical_equip, access_solgov_crew, access_senmed, access_hangar, access_endeavour_fax, access_radio_comm,
+		access_medical_equip, access_iseo_crew, access_senmed, access_hangar, access_endeavour_fax, access_radio_comm,
 		access_radio_med
 	)
 
@@ -297,7 +297,7 @@
 		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
 		access_tech_storage, access_robotics, access_atmospherics, access_janitor, access_construction,
 		access_network, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_solgov_crew, access_perseverance, access_seneng, access_hangar, access_endeavour_fax, access_endeavour_helm, access_radio_comm,
+		access_iseo_crew, access_perseverance, access_seneng, access_hangar, access_endeavour_fax, access_endeavour_helm, access_radio_comm,
 		access_radio_eng
 		)
 
@@ -307,7 +307,7 @@
 		access_ai_upload, access_teleporter, access_eva, access_bridge, access_heads,
 		access_tech_storage, access_atmospherics, access_janitor, access_construction,
 		access_network, access_ce, access_RC_announce, access_keycard_auth, access_tcomsat,
-		access_solgov_crew, access_seneng, access_hangar, access_robotics, access_endeavour_fax, access_endeavour_helm, access_radio_comm,
+		access_iseo_crew, access_seneng, access_hangar, access_robotics, access_endeavour_fax, access_endeavour_helm, access_radio_comm,
 		access_radio_eng
 	)
 
@@ -365,7 +365,7 @@
 		access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 		access_teleporter, access_eva, access_bridge, access_heads, access_perseverance,
 		access_hos, access_RC_announce, access_keycard_auth, access_sec_doors,
-		access_solgov_crew, access_gun, access_emergency_armory, access_hangar, access_endeavour_fax,
+		access_iseo_crew, access_gun, access_emergency_armory, access_hangar, access_endeavour_fax,
 		access_radio_comm, access_radio_sec
 	)
 
@@ -405,7 +405,7 @@
 
 	access = list(
 		access_representative, access_security, access_medical,
-		access_bridge, access_cargo, access_solgov_crew,
+		access_bridge, access_cargo, access_iseo_crew,
 		access_hangar, access_endeavour_fax, access_radio_comm
 	)
 
@@ -455,7 +455,7 @@
 		access_security, access_medical, access_engine, access_maint_tunnels, access_external_airlocks, access_emergency_storage,
 		access_teleporter, access_eva, access_bridge, access_all_personal_lockers, access_janitor,
 		access_kitchen, access_cargo, access_RC_announce, access_keycard_auth, access_perseverance, access_opportunity_helm,
-		access_solgov_crew, access_gun, access_expedition_shuttle, access_opportunity, access_senadv, access_hangar, access_endeavour_fax,
+		access_iseo_crew, access_gun, access_expedition_shuttle, access_opportunity, access_senadv, access_hangar, access_endeavour_fax,
 		access_radio_comm, access_radio_eng, access_radio_med, access_radio_sec, access_radio_serv, access_radio_sup, access_radio_exp
 		)
 
@@ -500,7 +500,7 @@
 	access = list(
 		access_security, access_medical, access_engine, access_maint_tunnels, access_emergency_storage,
 		access_bridge, access_janitor, access_kitchen, access_cargo, access_mailsorting, access_RC_announce, access_keycard_auth,
-		access_solgov_crew, access_perseverance, access_perseverance_helm, access_opportunity, access_opportunity_helm, access_external_airlocks,
+		access_iseo_crew, access_perseverance, access_perseverance_helm, access_opportunity, access_opportunity_helm, access_external_airlocks,
 		access_eva, access_hangar, access_cent_creed, access_explorer, access_expedition_shuttle, access_expedition_shuttle_helm, access_teleporter,
 		access_endeavour_fax, access_endeavour_helm, access_radio_comm, access_radio_eng, access_radio_exp, access_radio_serv, access_radio_sci, access_radio_sup
 	)

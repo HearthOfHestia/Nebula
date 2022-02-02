@@ -24,7 +24,7 @@
 
 	access = list(
 		access_morgue, access_chapel_office,
-		access_crematorium, access_solgov_crew,
+		access_crematorium, access_iseo_crew,
 		access_radio_serv
 	)
 
@@ -61,7 +61,7 @@
 
 	access = list(
 		access_maint_tunnels, access_emergency_storage,
-		access_janitor, access_solgov_crew,
+		access_janitor, access_iseo_crew,
 		access_radio_serv
 	)
 
@@ -104,7 +104,7 @@
 
 	access = list(
 		access_hydroponics, access_kitchen,
-		access_solgov_crew, access_bar,
+		access_iseo_crew, access_bar,
 		access_commissary, access_radio_serv
 	)
 
@@ -125,7 +125,7 @@
 
 	access = list(
 		access_hydroponics, access_bar,
-		access_solgov_crew, access_kitchen,
+		access_iseo_crew, access_kitchen,
 		access_commissary, access_radio_serv
 	)
 
@@ -163,6 +163,6 @@
 
 	access = list(
 		access_maint_tunnels, access_emergency_storage,
-		access_solgov_crew, access_radio_serv
+		access_iseo_crew, access_radio_serv
 	)
 	selection_color = "#254c25"

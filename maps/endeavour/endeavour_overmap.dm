@@ -10,20 +10,27 @@
 	name = "ISEO Endeavour"
 	desc = "A converted ex-military ship broadcasting the codes, \"ISEO Endeavour, HSC-4-13-X\"."
 	fore_dir = WEST
-	vessel_mass = 100000
 	burn_delay = 2 SECONDS
 	sector_flags = OVERMAP_SECTOR_BASE | OVERMAP_SECTOR_IN_SPACE
 
 	initial_restricted_waypoints = list(
-		// TODO: ADD SHIP STARTING WAYPOINTS
+		"Perseverance" = list("endeavour_hangar"), //pod can only dock starboard-side, b/c there's only one door.
 	)
 
 	initial_generic_waypoints = list(
-        // TODO: ADD ENDEAVOUR WAYPOINTS
+		"nav_endeavour_near_bow_third",
+		"nav_endeavour_near_bow_bridge"
 	)
 
-/obj/effect/overmap/visitable/sector/residue
-	name = "Space-time Distortion"
-	desc = "Trace radiation emanating from this sector is consistent with the aftermath of a superluminal jump."
-	icon_state = "event"
-	sector_flags = OVERMAP_SECTOR_KNOWN
+/obj/effect/overmap/visitable/sector/supply_station
+	name = "Automated Supply Station"
+	desc = "A supply station. These are usually deployed en-masse for the occasional explorer to resupply at."
+	color = "#00ffff"
+	start_x = 4
+	start_y = 4
+	initial_generic_waypoints = list("nav_supply_station_1")
+	color = "#d6a724"
+
+/obj/effect/overmap/visitable/sector/supply_station/Initialize()
+	name = "Automated Supply Station [rand(1,999)] - [docking_codes]"
+	. = ..()

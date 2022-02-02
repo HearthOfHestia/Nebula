@@ -8,8 +8,8 @@
 	lawset = /datum/ai_laws/directive/iseo_command
 	department = /decl/department/command
 	access = list(
-		access_solgov_crew,
-		access_nanotrasen,
+		access_iseo_crew,
+		access_corporate,
 		access_security,
 		access_sec_doors,
 		access_brig,
@@ -54,8 +54,8 @@
 	lawset = /datum/ai_laws/directive/iseo_security
 	department = /decl/department/security
 	access = list(
-		access_solgov_crew,
-		access_nanotrasen,
+		access_iseo_crew,
+		access_corporate,
 		access_security,
 		access_eva,
 		access_sec_doors,
@@ -82,8 +82,8 @@
 	lawset = /datum/ai_laws/directive/iseo_engineering
 	department = /decl/department/engineering
 	access = list(
-		access_solgov_crew,
-		access_nanotrasen,
+		access_iseo_crew,
+		access_corporate,
 		access_engine,
 		access_engine_equip,
 		access_tech_storage,
@@ -111,8 +111,8 @@
 	lawset = /datum/ai_laws/directive/iseo_medical
 	department = /decl/department/medical
 	access = list(
-		access_solgov_crew,
-		access_nanotrasen,
+		access_iseo_crew,
+		access_corporate,
 		access_medical,
 		access_medical_equip,
 		access_morgue,
@@ -139,8 +139,8 @@
 	lawset = /datum/ai_laws/directive/iseo_research
 	department = /decl/department/science
 	access = list(
-		access_solgov_crew,
-		access_nanotrasen,
+		access_iseo_crew,
+		access_corporate,
 		access_rd,
 		access_bridge,
 		access_tox,
