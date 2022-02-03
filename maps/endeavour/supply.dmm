@@ -81,11 +81,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/effect/catwalk_plated/dark,
 /turf/simulated/floor/plating,
@@ -121,7 +121,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -156,18 +156,18 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/carpet/green,
 /area/supply_station)
 "aP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -180,7 +180,7 @@
 /obj/item/bedsheet/hos,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/carpet/green,
 /area/supply_station)
@@ -335,11 +335,11 @@
 "bp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/supply_station)
@@ -353,7 +353,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/supply_station)
@@ -364,7 +364,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/supply_station)
@@ -372,7 +372,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -382,7 +382,7 @@
 "bt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/tiled/freezer,
 /area/supply_station)
@@ -411,7 +411,7 @@
 "bw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/supply_station)
@@ -421,7 +421,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/supply_station)
@@ -441,7 +441,7 @@
 "bF" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 6;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/supply_station)
@@ -449,14 +449,14 @@
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/supply_station)
 "bH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/wall/r_wall/prepainted,
 /area/supply_station)
@@ -464,7 +464,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/effect/floor_decal/corner/yellow{
 	dir = 9
@@ -488,7 +488,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1;
@@ -517,7 +517,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -561,7 +561,7 @@
 "cf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -599,11 +599,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/supply_station)
@@ -663,7 +663,7 @@
 /obj/item/bedsheet/rd,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/carpet/green,
 /area/supply_station)
@@ -738,7 +738,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/alarm{
 	dir = 1;
@@ -965,7 +965,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -993,7 +993,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 9;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/plating,
 /area/supply_station)
@@ -1225,7 +1225,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 10;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/supply_station)
@@ -1263,11 +1263,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1282,7 +1282,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1296,7 +1296,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -1310,7 +1310,7 @@
 "sH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1325,7 +1325,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1346,7 +1346,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1571,7 +1571,7 @@
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1611,7 +1611,7 @@
 "Bo" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1622,11 +1622,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/carpet/green,
 /area/supply_station)
@@ -1644,7 +1644,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -1656,7 +1656,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -1816,11 +1816,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/supply_station)
@@ -1831,7 +1831,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/supply_station)
@@ -1842,7 +1842,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/supply_station)
@@ -1856,7 +1856,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/supply_station)
@@ -1867,14 +1867,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/supply_station)
 "IB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -1946,7 +1946,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 5;
-	icon_state = "intact"
+	icon_state = "11"
 	},
 /obj/machinery/button/access/interior{
 	id_tag = "ts_big_airlock";
@@ -1980,7 +1980,7 @@
 /obj/effect/decal/cleanable/champagne,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/supply_station)
@@ -2011,11 +2011,11 @@
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-4"
@@ -2038,7 +2038,7 @@
 "MZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/catwalk_plated/dark,
@@ -2069,7 +2069,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/structure/cable/yellow{
@@ -2102,11 +2102,11 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
@@ -2313,7 +2313,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/tiled/white,
 /area/supply_station)
@@ -2350,7 +2350,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /turf/simulated/floor/tiled,
 /area/supply_station)
@@ -2382,7 +2382,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6;
-	icon_state = "intact-supply"
+	icon_state = "11-supply"
 	},
 /obj/effect/catwalk_plated/dark,
 /obj/structure/cable/yellow{
@@ -2454,7 +2454,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -2477,7 +2477,7 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled/white,
 /area/supply_station)
@@ -2511,7 +2511,7 @@
 "Yl" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9;
-	icon_state = "intact-scrubbers"
+	icon_state = "11-scrubbers"
 	},
 /turf/simulated/floor/tiled,
 /area/supply_station)
