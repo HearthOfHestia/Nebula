@@ -32,7 +32,10 @@
 /decl/hierarchy/mil_uniform/civilian
 	name = "Master civilian outfit"		//Basically just here for the rent-a-tux, ahem, I mean... dress uniform.
 	abstract_type = /decl/hierarchy/mil_uniform/civilian
-	branches = list(/datum/mil_branch/civilian,/datum/mil_branch/government)
+	branches = list(
+		/datum/mil_branch/civilian,
+		/datum/mil_branch/government,
+	)
 
 	service_under = /obj/item/clothing/under/suit_jacket/really_black
 	service_skirt = /obj/item/clothing/under/skirt_c/dress/black

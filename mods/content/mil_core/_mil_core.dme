@@ -1,5 +1,7 @@
 #ifndef MODPACK_MIL_CORE
 #define MODPACK_MIL_CORE
+#include "civilian.dm"
+#include "government.dm"
 #include "mil_core.dm"
 #include "uniform_vendor.dm"
 #include "uniforms.dm"
