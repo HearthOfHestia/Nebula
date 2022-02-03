@@ -1,4 +1,6 @@
 /datum/map/endeavour
+	default_job_type = /datum/job/assistant
+
 	#define AI_SHARD_JOBS /datum/job/ai/shard/security, /datum/job/ai/shard/medical, /datum/job/ai/shard/research, /datum/job/ai/shard/command, /datum/job/ai/shard/engineering
 	#define COMMAND_JOBS /datum/job/captain, /datum/job/hop, /datum/job/rd, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/liaison, /datum/job/representative, /datum/job/sea, /datum/job/bridgeofficer
 	#define VIOLENT_JOBS /datum/job/bodyguard, /datum/job/hos, /datum/job/officer, /datum/job/warden, /datum/job/detective, /datum/job/pathfinder, /datum/job/explorer

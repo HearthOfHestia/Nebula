@@ -12,7 +12,6 @@
 
 	allowed_spawns = list(/decl/spawnpoint/cryo)
 	default_spawn = /decl/spawnpoint/cryo
-	default_job_type = /datum/job/assistant
 
 	station_name  = "ISEO Endeavour"
 	station_short = "Endeavour"
@@ -40,7 +39,6 @@
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
-	default_law_type = /datum/ai_laws/solgov
 	num_exoplanets = 1
 
 	away_site_budget = 3

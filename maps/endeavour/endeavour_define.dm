@@ -7,8 +7,6 @@
 
 	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
-	default_job_type = /datum/job/assistant
-
 	station_name  = "ISEO Endeavour"
 	station_short = "Endeavour"
 	boss_name     = "ISEO Central Command"
