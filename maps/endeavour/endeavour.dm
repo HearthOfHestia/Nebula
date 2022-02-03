@@ -91,6 +91,7 @@
 	#include "machines/telecomms.dm"
 
 	#include "structures/lockers.dm"
+	#include "structures/wall_morgue.dm"
 
 	#include "turfs/fuel_tank.dm"
 

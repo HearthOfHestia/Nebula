@@ -3293,8 +3293,7 @@
 	dir = 8;
 	icon_state = "map_scrubber_on"
 	},
-/obj/structure/morgue{
-	icon_state = "morgue_closed";
+/obj/structure/morgue/wall{
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark/monotile,
@@ -3363,8 +3362,7 @@
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "gQ" = (
-/obj/structure/morgue{
-	icon_state = "morgue_closed";
+/obj/structure/morgue/wall{
 	pixel_y = 32
 	},
 /obj/machinery/light{
@@ -5588,9 +5586,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/hallway/upper)
 "kL" = (
-/obj/structure/crematorium{
+/obj/structure/crematorium/wall{
 	dir = 8;
-	icon_state = "crematorium_closed";
 	pixel_x = 32
 	},
 /obj/effect/floor_decal/industrial/warning{
@@ -7467,7 +7464,7 @@
 /area/ship/endeavour/medical)
 "oh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/morgue{
+/obj/structure/morgue/wall{
 	pixel_x = -32
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -8725,7 +8722,7 @@
 /area/ship/endeavour/engineering/shield_generator)
 "qy" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/structure/morgue{
+/obj/structure/morgue/wall{
 	pixel_x = -32
 	},
 /obj/structure/cable/green{
