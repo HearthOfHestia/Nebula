@@ -1,6 +1,6 @@
 /obj/structure/morgue/wall
-    name = "wall-mounted morgue tray"
-    density = FALSE
+	name = "wall-mounted morgue tray"
+	density = FALSE
 
 /obj/structure/morgue/wall/open()
 	if(open)
@@ -20,8 +20,8 @@
 	update_icon()
 
 /obj/structure/crematorium/wall
-    name = "wall-mounted crematorium"
-    density = FALSE
+	name = "wall-mounted crematorium"
+	density = FALSE
 
 /obj/structure/crematorium/wall/open()
 	if(cremating || locked || open)

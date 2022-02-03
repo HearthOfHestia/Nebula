@@ -1,4 +1,4 @@
-#if !defined(using_map_DATUM)
+#if !defined(USING_MAP_DATUM)
 
 	#include "../../mods/content/mundane.dm"
 	#include "../../mods/content/corporate/_corporate.dme"
@@ -36,7 +36,7 @@
 
 	#include "../../mods/utility/centcomdb/_centcomdb.dme"
 
-    #include "lobby/endeavour_music.dm"
+	#include "lobby/endeavour_music.dm"
 	#include "endeavour_lobby.dm"
 
 	#include "endeavour_announcements.dm"
@@ -103,6 +103,19 @@
 	#include "endeavour-4.dmm"
 	#include "extras.dmm"
 	#include "supply.dmm"
+
+	#include "../away/liberia/liberia.dm"
+	#include "../away/mining/mining.dm"
+	#include "../away/derelict/derelict.dm"
+	#include "../away/bearcat/bearcat.dm"
+	#include "../away/lost_supply_base/lost_supply_base.dm"
+	#include "../away/smugglers/smugglers.dm"
+	#include "../away/magshield/magshield.dm"
+	#include "../away/casino/casino.dm"
+	#include "../away/yacht/yacht.dm"
+	#include "../away/slavers/slavers_base.dm"
+	#include "../away/mobius_rift/mobius_rift.dm"
+	#include "../away/errant_pisces/errant_pisces.dm"
 
 	#define USING_MAP_DATUM /datum/map/endeavour
 
