@@ -559,9 +559,6 @@
 	icon_state = "map_vent_out"
 	},
 /obj/structure/bed/chair/comfy/blue,
-/obj/abstract/landmark/start{
-	name = "First Officer"
-	},
 /turf/simulated/floor/carpet/green,
 /area/ship/endeavour/command/office/xo)
 "bw" = (
@@ -641,9 +638,6 @@
 	pixel_y = 24
 	},
 /obj/structure/curtain/open/bed,
-/obj/abstract/landmark/start{
-	name = "Chief Engineer"
-	},
 /turf/simulated/floor/carpet/orange,
 /area/ship/endeavour/command/office/ce/bedroom)
 "bD" = (
@@ -888,9 +882,6 @@
 	pixel_x = 24
 	},
 /obj/structure/curtain/open/bed,
-/obj/abstract/landmark/start{
-	name = "Captain"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/office/captain/bedroom)
 "ca" = (
@@ -1612,9 +1603,6 @@
 /area/ship/endeavour/command/meetingroom)
 "dh" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/obj/abstract/landmark/start{
-	name = "First Officer"
-	},
 /turf/simulated/floor/wood,
 /area/ship/endeavour/command/office/xo/bedroom)
 "di" = (
@@ -1821,9 +1809,6 @@
 	dir = 1;
 	icon_state = "comfychair"
 	},
-/obj/abstract/landmark/start{
-	name = "Bridge Officer"
-	},
 /turf/simulated/floor/tiled/monotile,
 /area/ship/endeavour/command/bridge)
 "dD" = (
@@ -1956,9 +1941,6 @@
 	icon_state = "computer";
 	pixel_y = -32
 	},
-/obj/abstract/landmark/start{
-	name = "Chief Engineer"
-	},
 /turf/simulated/floor/carpet/orange,
 /area/ship/endeavour/command/office/ce)
 "dO" = (
@@ -1977,9 +1959,6 @@
 /obj/structure/bed/chair/comfy/purple{
 	dir = 1;
 	icon_state = "comfychair"
-	},
-/obj/abstract/landmark/start{
-	name = "Technology Director"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
@@ -2569,17 +2548,11 @@
 /area/ship/endeavour/command/hallway)
 "eJ" = (
 /obj/structure/bed/chair/comfy/yellow,
-/obj/abstract/landmark/start{
-	name = "Chief Engineer"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "eK" = (
 /obj/structure/bed/chair/office/comfy/blue,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/abstract/landmark/start{
-	name = "Chief Medical Officer"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "eL" = (
@@ -3184,9 +3157,6 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/abstract/landmark/start{
-	name = "Ship Security Commander"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "fU" = (
@@ -3506,9 +3476,6 @@
 	icon_state = "computer";
 	pixel_y = -32
 	},
-/obj/abstract/landmark/start{
-	name = "Chief Medical Officer"
-	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/command/office/cmo)
 "gz" = (
@@ -3569,9 +3536,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	icon_state = "11-supply"
-	},
-/obj/abstract/landmark/start{
-	name = "Chief Medical Officer"
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/command/office/cmo/bedroom)
@@ -3700,9 +3664,6 @@
 	density = 0;
 	pixel_y = 32
 	},
-/obj/abstract/landmark/start{
-	name = "Captain"
-	},
 /turf/simulated/floor/carpet/blue,
 /area/ship/endeavour/command/office/captain)
 "gX" = (
@@ -3793,9 +3754,6 @@
 /area/ship/endeavour/command/office/maa/bedroom)
 "he" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/abstract/landmark/start{
-	name = "Ship Security Commander"
-	},
 /turf/simulated/floor/carpet/red,
 /area/ship/endeavour/command/office/maa/bedroom)
 "hf" = (
@@ -3854,9 +3812,6 @@
 	dir = 1;
 	icon_state = "computer";
 	pixel_y = -32
-	},
-/obj/abstract/landmark/start{
-	name = "Ship Security Commander"
 	},
 /turf/simulated/floor/carpet/red,
 /area/ship/endeavour/command/office/maa)
@@ -5088,9 +5043,6 @@
 	dir = 1;
 	icon_state = "comfychair"
 	},
-/obj/abstract/landmark/start{
-	name = "First Officer"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "MK" = (
@@ -5226,9 +5178,6 @@
 	dir = 4;
 	icon_state = "pipe-s"
 	},
-/obj/abstract/landmark/start{
-	name = "Captain"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "SJ" = (
@@ -5259,9 +5208,6 @@
 	icon_state = "comfychair"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/abstract/landmark/start{
-	name = "Bosun"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
 "UI" = (
@@ -5381,9 +5327,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/ship/endeavour/command/bathroom)
 "Yt" = (
-/obj/machinery/network/relay{
-	initial_network_id = "wolfnet"
-	},
+/obj/machinery/network/relay/endeavour,
 /obj/structure/cable/green{
 	icon_state = "0-8"
 	},
@@ -5400,12 +5344,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/habitation/garden)
-"Zh" = (
-/obj/abstract/landmark/start{
-	name = "Bridge Officer"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/command/bridge)
 "Zn" = (
 /obj/structure/table/woodentable_reinforced/walnut/maple,
 /obj/machinery/power/apc{
@@ -13112,7 +13050,7 @@ gm
 fd
 eY
 fe
-Zh
+gm
 aR
 fK
 aE

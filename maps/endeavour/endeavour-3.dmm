@@ -189,9 +189,6 @@
 	dir = 8;
 	icon_state = "comfychair"
 	},
-/obj/abstract/landmark/start{
-	name = "Passenger"
-	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/observation)
 "ax" = (
@@ -212,9 +209,6 @@
 	},
 /obj/machinery/light{
 	dir = 1
-	},
-/obj/abstract/landmark/start{
-	name = "Passenger"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/observation)
@@ -308,9 +302,10 @@
 /turf/simulated/floor/tiled/freezer,
 /area/ship/endeavour/habitation/bathroom/one)
 "aP" = (
-/obj/machinery/door/airlock/maintenance,
-/turf/simulated/floor/plating,
-/area/ship/endeavour/habitation/bar)
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "aQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/structure/hygiene/sink{
@@ -363,9 +358,6 @@
 /obj/structure/bed/chair/comfy/green{
 	dir = 8;
 	icon_state = "comfychair"
-	},
-/obj/abstract/landmark/start{
-	name = "Passenger"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/observation)
@@ -519,7 +511,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "bs" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -830,8 +822,15 @@
 /turf/simulated/wall/prepainted,
 /area/ship/endeavour/habitation/bar)
 "ch" = (
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/habitation/bar)
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/shutters{
+	dir = 4;
+	id_tag = "kitchenshut"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "ci" = (
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/fore/starboard)
@@ -854,9 +853,6 @@
 /obj/machinery/door/airlock/autoname/endeavour/glass/civilian,
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/habitation/observation)
-"cl" = (
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
 "cm" = (
 /obj/effect/floor_decal/corner/b_green{
 	dir = 6;
@@ -1017,13 +1013,15 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/closet,
-/obj/item/chems/condiment/flour,
-/obj/item/chems/condiment/flour,
-/obj/item/chems/condiment/flour,
-/obj/item/chems/condiment/flour,
-/obj/item/chems/condiment/salt,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/power/apc{
+	dir = 1;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
+/obj/structure/closet/secure_closet/freezer/kitchen,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "cF" = (
@@ -1034,15 +1032,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/atmospherics)
 "cG" = (
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair"
+/obj/machinery/door/firedoor,
+/obj/structure/table/marble,
+/obj/effect/floor_decal/spline/plain/black,
+/obj/machinery/door/blast/shutters{
+	id_tag = "kitchenshut"
 	},
-/obj/abstract/landmark/start{
-	name = "Crewmember"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "cH" = (
 /obj/machinery/appliance/cooker/oven,
 /obj/effect/floor_decal/corner/red/diagonal,
@@ -1051,8 +1049,9 @@
 "cI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/habitation/bar)
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "cJ" = (
 /obj/structure/cable/green{
 	icon_state = "0-4"
@@ -1259,6 +1258,7 @@
 "db" = (
 /obj/machinery/appliance/cooker/fryer,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/camera/network/third_deck,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "dc" = (
@@ -1272,9 +1272,8 @@
 "dd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
-/obj/structure/table,
-/obj/machinery/recharger,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "de" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1304,9 +1303,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/structure/table,
-/obj/item/binoculars,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "di" = (
 /obj/structure/cable/green{
@@ -1319,13 +1317,22 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "dj" = (
-/obj/machinery/appliance/mixer/cereal,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/vending/dinnerware,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "dk" = (
-/obj/structure/closet/secure_closet/freezer/meat,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/reagent_temperature{
+	pixel_x = 8
+	},
+/obj/machinery/reagent_temperature/cooler{
+	pixel_x = -8
+	},
+/obj/machinery/reagentgrinder/juicer{
+	pixel_y = 21
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "dl" = (
@@ -1492,11 +1499,14 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "dz" = (
-/obj/structure/disposalpipe/junction/mirrored,
-/turf/simulated/floor/tiled/dark,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "dA" = (
 /obj/effect/wallframe_spawn/reinforced,
@@ -1509,6 +1519,9 @@
 	pixel_x = -24
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "dC" = (
@@ -1675,14 +1688,14 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "dU" = (
-/obj/structure/bed/chair{
-	dir = 8
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
+/obj/machinery/door/blast/shutters{
+	id_tag = "kitchenshut"
 	},
-/obj/abstract/landmark/start{
-	name = "Crewmember"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "dV" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -1696,13 +1709,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/engineering/shield_generator)
-"dX" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
 "dY" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
@@ -1768,8 +1774,9 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/security)
 "ed" = (
-/obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/effect/floor_decal/spline/plain/black,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "ee" = (
 /obj/structure/cable/green{
@@ -1784,11 +1791,8 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "ef" = (
-/obj/structure/hygiene/sink/kitchen{
-	pixel_x = 32;
-	pixel_y = 0
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "eg" = (
@@ -1863,11 +1867,12 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/habitation/bar)
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/spline/plain/black,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/smartfridge/foods,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "em" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1887,14 +1892,8 @@
 	dir = 4;
 	icon_state = "map_vent_out"
 	},
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair"
-	},
-/obj/abstract/landmark/start{
-	name = "Crewmember"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "ep" = (
 /obj/structure/cable/green{
@@ -2110,10 +2109,10 @@
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "eF" = (
-/obj/structure/cable/green{
-	icon_state = "2-4"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "eG" = (
@@ -2176,12 +2175,11 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/engineering/shield_generator)
 "eM" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
 /obj/structure/table/marble,
-/obj/machinery/microwave,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/knife/kitchen/cleaver{
+	pixel_z = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "eN" = (
@@ -2207,10 +2205,11 @@
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "eP" = (
-/obj/machinery/smartfridge/foods,
-/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/autoname/endeavour/civilian,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/area/ship/endeavour/habitation/bar)
 "eQ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4;
@@ -2257,23 +2256,15 @@
 	icon_state = "11-scrubbers"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
 /obj/structure/table/marble,
-/obj/item/knife/kitchen/cleaver{
-	pixel_z = 4
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/kitchen/rollingpin,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "eU" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 8;
-	icon_state = "pipe-t"
-	},
-/obj/machinery/disposal,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/newscaster/bump/east,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "eV" = (
 /obj/machinery/door/firedoor,
@@ -2373,8 +2364,9 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "fe" = (
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/endeavour/maintenance/deckthree/fore/starboard)
+/obj/machinery/door/airlock/maintenance,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/habitation/bar)
 "ff" = (
 /obj/machinery/door/firedoor,
 /obj/effect/wallframe_spawn/reinforced,
@@ -2452,13 +2444,7 @@
 	dir = 8;
 	icon_state = "map_scrubber_on"
 	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/table/marble,
-/obj/item/kitchen/rollingpin,
 /obj/effect/floor_decal/corner/red/diagonal,
-/obj/item/eftpos,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "fm" = (
@@ -2547,16 +2533,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security)
 "fw" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 8;
+	icon_state = "map_vent_out"
 	},
-/obj/structure/bed/chair{
-	dir = 8
-	},
-/obj/abstract/landmark/start{
-	name = "Crewmember"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/item/stool/bar/padded,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "fx" = (
 /obj/structure/reagent_dispensers/peppertank{
@@ -2596,11 +2578,8 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/security/armory)
 "fC" = (
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 8;
-	icon_state = "map_vent_out"
-	},
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "fD" = (
 /obj/machinery/power/apc{
@@ -2644,14 +2623,10 @@
 /turf/simulated/floor/carpet,
 /area/ship/endeavour/habitation/cabins/one)
 "fF" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/obj/structure/table/marble,
-/obj/machinery/reagentgrinder/juicer,
-/obj/effect/floor_decal/corner/red/diagonal,
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/ship/endeavour/habitation/bar)
 "fG" = (
 /obj/machinery/light{
 	dir = 4
@@ -2780,8 +2755,9 @@
 	icon_state = "alarm0";
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/habitation/bar)
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "fQ" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -2821,13 +2797,8 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/hallway/third_deck/fore)
 "fS" = (
-/obj/structure/bed/chair,
-/obj/machinery/camera/network/third_deck{
-	dir = 8;
-	icon_state = "camera"
-	},
-/obj/item/radio/intercom/bump/east,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/hologram/holopad,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "fT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3006,7 +2977,7 @@
 	dir = 4;
 	icon_state = "pipe-s"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "gl" = (
 /obj/structure/cable/green{
@@ -3113,7 +3084,7 @@
 	dir = 4;
 	icon_state = "pipe-s"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "gw" = (
 /obj/structure/cable{
@@ -3211,14 +3182,14 @@
 	dir = 4;
 	icon_state = "pipe-s"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "gD" = (
-/obj/structure/disposalpipe/junction/yjunction{
+/obj/structure/disposalpipe/junction/mirrored{
 	dir = 8;
-	icon_state = "pipe-y"
+	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "gE" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -3358,7 +3329,9 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/machinery/reagentgrinder/juicer,
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	dir = 1
+	},
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "gQ" = (
@@ -3563,6 +3536,9 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
+/obj/machinery/chemical_dispenser/bar_alc/full{
+	dir = 1
+	},
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "hg" = (
@@ -3584,9 +3560,6 @@
 /obj/machinery/camera/network/medbay{
 	dir = 1;
 	icon_state = "camera"
-	},
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical)
@@ -3687,8 +3660,10 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/endeavour/security)
 "hq" = (
-/obj/machinery/newscaster/bump/north,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "hr" = (
 /obj/machinery/computer/station_alert/security,
@@ -3838,11 +3813,12 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/command/hallway)
 "hG" = (
-/obj/abstract/landmark/start{
-	name = "Engineer"
+/obj/structure/bed/chair{
+	dir = 4;
+	icon_state = "chair"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/engineering/atmospherics)
+/turf/simulated/floor/wood/walnut,
+/area/ship/endeavour/habitation/bar)
 "hH" = (
 /obj/machinery/door/airlock/highsecurity,
 /obj/machinery/door/firedoor,
@@ -3880,9 +3856,6 @@
 	icon_state = "11-scrubbers"
 	},
 /obj/structure/bed/chair/comfy/red,
-/obj/abstract/landmark/start{
-	name = "Brig Chief"
-	},
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/endeavour/security/maa_office)
 "hM" = (
@@ -4285,12 +4258,10 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/chemistry)
 "iy" = (
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/engineering/atmospherics)
+/obj/structure/table,
+/obj/machinery/recharger,
+/turf/simulated/floor/wood/walnut,
+/area/ship/endeavour/habitation/bar)
 "iz" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
@@ -4299,9 +4270,6 @@
 	dir = 8
 	},
 /obj/item/stool/padded,
-/obj/abstract/landmark/start{
-	name = "Armsman"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/lockers)
 "iA" = (
@@ -4325,7 +4293,9 @@
 	icon_state = "camera"
 	},
 /obj/item/radio/intercom/bump/south,
-/obj/item/eftpos,
+/obj/machinery/chemical_dispenser/bar_coffee/full{
+	dir = 1
+	},
 /turf/simulated/floor/lino,
 /area/ship/endeavour/habitation/bar)
 "iB" = (
@@ -4336,15 +4306,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/security/armory)
 "iC" = (
-/obj/structure/cable/green{
-	icon_state = "4-8"
+/obj/structure/bed/chair{
+	dir = 8
 	},
-/obj/effect/floor_decal/corner/red/diagonal,
-/obj/abstract/landmark/start{
-	name = "Mess Cook"
-	},
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/turf/simulated/floor/wood/walnut,
+/area/ship/endeavour/habitation/bar)
 "iD" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1;
@@ -4354,13 +4320,19 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/foreport)
 "iE" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/light{
 	dir = 8
 	},
 /obj/machinery/hologram/holopad,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6;
+	icon_state = "11-scrubbers"
+	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "iF" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
@@ -5072,15 +5044,11 @@
 	dir = 8;
 	icon_state = "map_vent_out"
 	},
-/obj/structure/bed/chair/padded/black{
-	dir = 4;
-	icon_state = "chair"
-	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "jR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5;
@@ -5143,7 +5111,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "jX" = (
 /obj/structure/cable{
@@ -5540,23 +5508,19 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "kG" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced,
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "kH" = (
-/obj/machinery/atmospherics/pipe/simple/visible/red,
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1
+/obj/structure/disposalpipe/segment/bent{
+	dir = 8;
+	icon_state = "pipe-c"
 	},
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/engineering/atmospherics)
+/turf/simulated/floor/wood/walnut,
+/area/ship/endeavour/habitation/bar)
 "kI" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -5768,8 +5732,12 @@
 /obj/structure/cable/green{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/reinforced/airless,
-/area/space)
+/obj/structure/catwalk,
+/obj/structure/sign/warning/airlock{
+	pixel_y = 24
+	},
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
 "le" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -6043,9 +6011,6 @@
 /obj/structure/cable/green{
 	icon_state = "2-8"
 	},
-/obj/abstract/landmark/start{
-	name = "Robotics Specialist"
-	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/science/robotics)
 "lH" = (
@@ -6190,20 +6155,14 @@
 /turf/simulated/floor/carpet,
 /area/ship/endeavour/habitation/cabins/four)
 "lT" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/green{
-	icon_state = "0-8"
-	},
-/obj/effect/floor_decal/corner/red/diagonal,
-/obj/machinery/camera/network/third_deck{
+/obj/structure/shuttle/engine/propulsion/burst/left{
 	dir = 8;
-	icon_state = "camera"
+	icon_state = "burst_l";
+	pixel_x = -12
 	},
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/obj/effect/paint/sun,
+/turf/simulated/wall/titanium,
+/area/ship/endeavour/medical/counselor)
 "lU" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8;
@@ -6459,7 +6418,7 @@
 "mr" = (
 /obj/structure/table,
 /obj/item/board,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "ms" = (
 /obj/structure/cable/green{
@@ -6474,11 +6433,17 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/foreport)
 "mt" = (
+/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
+/obj/structure/table/marble,
+/obj/effect/floor_decal/spline/plain/black,
+/obj/machinery/door/blast/shutters{
+	id_tag = "kitchenshut"
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "mu" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6621,7 +6586,7 @@
 	dir = 4;
 	icon_state = "map-supply"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "mG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -6946,9 +6911,15 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/chemistry)
 "nq" = (
-/obj/structure/table,
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/habitation/bar)
+/obj/structure/table/marble,
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/spline/plain/black,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/door/blast/shutters{
+	id_tag = "kitchenshut"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/habitation/kitchen)
 "nr" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -7034,12 +7005,9 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical)
 "nv" = (
-/obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/autoname/endeavour/civilian,
-/obj/structure/disposalpipe/segment,
-/obj/effect/floor_decal/spline/plain/black,
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/obj/effect/paint/sun,
+/turf/simulated/wall/titanium,
+/area/ship/endeavour/medical/counselor)
 "nw" = (
 /obj/machinery/alarm{
 	dir = 4;
@@ -7208,9 +7176,7 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/eva)
 "nL" = (
-/obj/structure/disposalpipe/segment,
-/obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/dark/monotile,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "nM" = (
 /obj/structure/shuttle/engine/propulsion/burst/left{
@@ -7669,7 +7635,7 @@
 /area/ship/endeavour/eva)
 "oB" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "oC" = (
 /obj/structure/cable/green{
@@ -7834,9 +7800,6 @@
 	dir = 8
 	},
 /obj/item/stool/padded,
-/obj/abstract/landmark/start{
-	name = "Armsman"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/lockers)
 "oS" = (
@@ -8424,9 +8387,9 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "pY" = (
-/obj/structure/table,
-/obj/item/deck/cards,
-/turf/simulated/floor/tiled/dark,
+/obj/item/radio/intercom/bump/north,
+/obj/machinery/camera/network/third_deck,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "pZ" = (
 /obj/effect/floor_decal/corner/red{
@@ -8469,6 +8432,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "qc" = (
@@ -8582,6 +8546,8 @@
 	dir = 8;
 	icon_state = "map_scrubber_on"
 	},
+/obj/structure/table/marble,
+/obj/machinery/reagentgrinder/juicer,
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/habitation/bar/backroom)
 "ql" = (
@@ -8610,9 +8576,6 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/abstract/landmark/start{
-	name = "Bartender"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/habitation/bar/backroom)
 "qo" = (
@@ -8646,6 +8609,7 @@
 	dir = 4
 	},
 /obj/structure/closet/chefcloset,
+/obj/item/eftpos,
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/habitation/bar/backroom)
 "qr" = (
@@ -8830,6 +8794,7 @@
 	dir = 4;
 	icon_state = "11-supply"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/ship/endeavour/medical/treatment)
 "qJ" = (
@@ -9316,11 +9281,17 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical)
 "rJ" = (
-/obj/structure/disposalpipe/segment/bent{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 4;
+	icon_state = "pipe-t"
+	},
+/obj/machinery/button/blast_door{
+	id_tag = "kitchenshut";
+	name = "kitchen shutter control";
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "rK" = (
@@ -9331,20 +9302,8 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/habitation/hydroponics)
 "rL" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/disposalpipe/trunk{
-	dir = 8;
-	icon_state = "pipe-t"
-	},
-/obj/machinery/disposal,
-/obj/machinery/button/blast_door{
-	id_tag = "kitchenshut";
-	name = "bar shutter control";
-	pixel_y = -32
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/disposalpipe/segment/bent,
 /obj/structure/extinguisher_cabinet{
 	dir = 1;
 	icon_state = "extinguisher_closed";
@@ -9724,9 +9683,6 @@
 	dir = 8;
 	icon_state = "map_vent_out"
 	},
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/storage)
 "sr" = (
@@ -9765,9 +9721,6 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/foreport)
 "sw" = (
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/storage)
 "sx" = (
@@ -10443,19 +10396,8 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "tO" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/table/marble,
-/obj/effect/floor_decal/spline/plain/black,
-/obj/machinery/fabricator/micro,
-/obj/machinery/door/blast/shutters{
-	id_tag = "kitchenshut"
-	},
-/obj/effect/floor_decal/corner/red/diagonal,
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/habitation/kitchen)
+/turf/simulated/wall,
+/area/ship/endeavour/medical/counselor)
 "tP" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -10484,9 +10426,6 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 8;
 	icon_state = "corner_white"
-	},
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
@@ -10535,35 +10474,27 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/eva)
 "tW" = (
-/obj/machinery/door/firedoor,
-/obj/structure/table/marble,
-/obj/effect/floor_decal/spline/plain/black,
-/obj/machinery/door/blast/shutters{
-	id_tag = "kitchenshut"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/chem_master/condimaster,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "tX" = (
-/obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/structure/table/marble,
-/obj/effect/floor_decal/spline/plain/black,
-/obj/machinery/door/blast/shutters{
-	id_tag = "kitchenshut"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/table/marble,
+/obj/item/eftpos,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "tY" = (
-/obj/structure/table/marble,
-/obj/machinery/door/firedoor,
-/obj/effect/floor_decal/spline/plain/black,
-/obj/machinery/door/blast/shutters{
-	id_tag = "kitchenshut"
-	},
 /obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/hygiene/sink/kitchen{
+	pixel_x = 32;
+	pixel_y = 0
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/habitation/kitchen)
 "tZ" = (
@@ -10591,7 +10522,7 @@
 	icon_state = "1-8"
 	},
 /obj/effect/floor_decal/spline/plain/black,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "ud" = (
 /obj/machinery/door/airlock/autoname/endeavour/civilian,
@@ -10607,9 +10538,6 @@
 "uf" = (
 /obj/item/stool/bar/padded,
 /obj/effect/floor_decal/spline/plain/black,
-/obj/abstract/landmark/start{
-	name = "Passenger"
-	},
 /turf/simulated/floor/carpet/red,
 /area/ship/endeavour/habitation/bar)
 "ug" = (
@@ -10617,9 +10545,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/item/stool/bar/padded,
 /obj/effect/floor_decal/spline/plain/black,
-/obj/abstract/landmark/start{
-	name = "Passenger"
-	},
 /turf/simulated/floor/carpet/red,
 /area/ship/endeavour/habitation/bar)
 "uh" = (
@@ -10658,17 +10583,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security)
 "uk" = (
-/obj/structure/disposalpipe/segment,
 /obj/item/stool/bar/padded,
 /obj/effect/floor_decal/spline/plain/black,
-/obj/abstract/landmark/start{
-	name = "Passenger"
+/obj/structure/disposalpipe/junction{
+	dir = 1;
+	icon_state = "pipe-j1"
 	},
 /turf/simulated/floor/carpet/red,
 /area/ship/endeavour/habitation/bar)
 "ul" = (
 /obj/effect/floor_decal/spline/plain/black,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "um" = (
 /obj/structure/disposalpipe/segment,
@@ -11057,9 +10986,6 @@
 	dir = 8;
 	icon_state = "camera"
 	},
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
-	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6;
 	icon_state = "corner_white"
@@ -11175,12 +11101,13 @@
 /area/ship/endeavour/medical/morgue)
 "vd" = (
 /obj/machinery/door/airlock/autoname/endeavour/medical,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "ve" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "vf" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1;
@@ -11215,7 +11142,12 @@
 	dir = 1;
 	icon_state = "camera"
 	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8;
+	icon_state = "pipe-t"
+	},
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "vi" = (
 /obj/structure/cable/green{
@@ -11241,17 +11173,25 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "vl" = (
-/obj/machinery/door/firedoor,
-/obj/effect/wallframe_spawn/reinforced,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "11-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "11-scrubbers"
+	},
+/obj/structure/catwalk,
 /turf/simulated/floor/plating,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "vm" = (
 /obj/machinery/door/airlock/autoname/endeavour/medical,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "vn" = (
 /obj/structure/cable/green{
 	icon_state = "2-4"
@@ -11274,23 +11214,24 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/operating/two)
 "vp" = (
-/obj/structure/bed/chair/padded/black{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4;
-	icon_state = "chair"
+	icon_state = "11-supply"
 	},
-/turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
-"vq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4;
 	icon_state = "11-scrubbers"
 	},
+/turf/simulated/floor/tiled/dark/monotile,
+/area/ship/endeavour/medical/counselor)
+"vq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	icon_state = "11-supply"
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "vr" = (
 /obj/machinery/alarm{
 	dir = 1;
@@ -11331,10 +11272,6 @@
 	dir = 8;
 	icon_state = "map_scrubber_on"
 	},
-/obj/structure/bed/chair/padded/black{
-	dir = 4;
-	icon_state = "chair"
-	},
 /obj/machinery/alarm{
 	dir = 1;
 	icon_state = "alarm0";
@@ -11342,7 +11279,7 @@
 	pixel_y = -24
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/morgue/viewing)
+/area/ship/endeavour/medical/counselor)
 "vv" = (
 /obj/structure/cable/green{
 	icon_state = "0-8"
@@ -11562,7 +11499,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/table,
 /obj/item/cell/crap/empty,
-/turf/simulated/floor/tiled/dark/monotile,
+/obj/item/binoculars,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "vS" = (
 /obj/structure/catwalk,
@@ -12286,9 +12224,6 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 8
 	},
-/obj/abstract/landmark/start{
-	name = "Armsman"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/lockers)
 "xu" = (
@@ -12438,6 +12373,21 @@
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/wall/prepainted,
 /area/ship/endeavour/medical)
+"yo" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10;
+	icon_state = "11-scrubbers"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	icon_state = "11-supply"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
 "yv" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
@@ -12456,21 +12406,50 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/science/network_closet/third_deck)
 "zP" = (
-/obj/abstract/landmark/start{
-	name = "Pharmacist"
+/obj/machinery/embedded_controller/radio/simple_docking_controller/escape_pod{
+	name = "broken escape pod controller";
+	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical/chemistry)
+/obj/structure/cable/green{
+	icon_state = "2-4"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"Ag" = (
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
+"Al" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/reinforced/airless,
+/area/ship/endeavour/medical/counselor)
+"Bn" = (
+/obj/structure/bed/chair/office/comfy/brown{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "BB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/abstract/landmark/start{
-	name = "Medical Support Technician"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/medtech)
+"Ck" = (
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/reinforced/airless,
+/area/space)
 "Cu" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -12485,6 +12464,10 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"Du" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "Eh" = (
 /obj/effect/floor_decal/spline/plain/brown{
 	dir = 4;
@@ -12493,16 +12476,23 @@
 /obj/machinery/camera/network/third_deck,
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/observation)
+"FO" = (
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "Gb" = (
-/obj/effect/floor_decal/corner/b_green{
-	dir = 6;
-	icon_state = "corner_white"
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = 32
 	},
-/obj/abstract/landmark/start{
-	name = "Botanist"
+/obj/structure/cable/green{
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
-/area/ship/endeavour/habitation/hydroponics)
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"Gd" = (
+/obj/structure/filingcabinet/chestdrawer,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "Gu" = (
 /obj/structure/catwalk,
 /obj/random/maintenance,
@@ -12547,11 +12537,49 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "Iu" = (
-/obj/abstract/landmark/start{
-	name = "Brig Chief"
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb_map"
 	},
-/turf/simulated/floor/tiled/techfloor/grid,
-/area/ship/endeavour/security/armory)
+/obj/machinery/power/apc{
+	dir = 4;
+	icon_state = "apc0"
+	},
+/obj/structure/cable/green{
+	icon_state = "0-8"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"Jy" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "11-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "11-scrubbers"
+	},
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"Lt" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"LH" = (
+/obj/structure/bed/chair/armchair/brown,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "LT" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -12612,6 +12640,25 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/hallway/third_deck/fore)
+"ND" = (
+/obj/effect/wallframe_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"NG" = (
+/obj/machinery/door/airlock/external/escapepod{
+	id_tag = "escape_pod_4_hatch"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4;
+	icon_state = "11-supply"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4;
+	icon_state = "11-scrubbers"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/ship/endeavour/medical/counselor)
 "Ot" = (
 /obj/structure/extinguisher_cabinet{
 	dir = 1;
@@ -12624,6 +12671,11 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/escape_pod/four)
+"Rh" = (
+/obj/structure/table/woodentable/ebony,
+/obj/item/modular_computer/laptop/preset/custom_loadout/standard,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "Rl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4;
@@ -12665,6 +12717,18 @@
 /obj/item/gun/energy/taser,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/security/armory)
+"RV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1;
+	icon_state = "map_scrubber_on"
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
+"Tc" = (
+/obj/structure/table/woodentable/ebony,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "Td" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 10
@@ -12679,6 +12743,10 @@
 /obj/item/ammo_magazine/rifle,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/security/armory)
+"Tn" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
 "Ty" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 6
@@ -12737,9 +12805,7 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/engineering/hallway/upper)
 "VX" = (
-/obj/machinery/network/relay{
-	initial_network_id = "wolfnet"
-	},
+/obj/machinery/network/relay/endeavour,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -12771,7 +12837,7 @@
 	dir = 4;
 	icon_state = "camera"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/bar)
 "Yl" = (
 /obj/machinery/camera/network/third_deck{
@@ -12781,18 +12847,10 @@
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/habitation/observation)
 "Yw" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/corner/paleblue{
-	dir = 6;
-	icon_state = "corner_white"
-	},
-/obj/abstract/landmark/start{
-	name = "Medical Doctor"
-	},
-/turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical/treatment)
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/structure/catwalk,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/counselor)
 "ZQ" = (
 /obj/effect/floor_decal/techfloor/orange/corner{
 	dir = 8;
@@ -19091,7 +19149,7 @@ gO
 fz
 fB
 wb
-Iu
+oN
 xP
 fB
 aA
@@ -19572,7 +19630,7 @@ au
 dD
 cm
 dq
-Gb
+cm
 rK
 wl
 oF
@@ -19858,7 +19916,7 @@ eG
 hU
 ji
 sX
-kH
+rl
 mu
 nj
 oa
@@ -20117,7 +20175,7 @@ hW
 nk
 pq
 rm
-hG
+aY
 sP
 sW
 tA
@@ -20235,7 +20293,7 @@ gh
 ag
 ar
 cF
-iy
+jy
 jv
 tH
 jz
@@ -20845,8 +20903,8 @@ bZ
 fs
 ud
 bZ
-cg
-dA
+bZ
+bZ
 dA
 cg
 lJ
@@ -20971,12 +21029,12 @@ cE
 dB
 eF
 oM
-tO
+oM
 fP
 el
 dy
 XM
-dy
+hq
 gk
 uc
 eq
@@ -21097,13 +21155,13 @@ bZ
 cH
 dF
 eM
-dF
+aP
 tW
-ch
+dF
 cG
 eo
-cG
-cG
+nL
+hG
 gv
 uf
 ev
@@ -21229,7 +21287,7 @@ tX
 cI
 mt
 dd
-mt
+fF
 vR
 mF
 ug
@@ -21353,11 +21411,11 @@ ea
 fl
 dF
 tY
-ch
+dF
 nq
 dh
-nq
-nq
+nL
+iy
 gC
 uf
 ev
@@ -21477,14 +21535,14 @@ po
 bZ
 dj
 dF
-fF
 dF
-eP
+dF
+cd
 ch
 dU
 fw
-dU
-dU
+fS
+iC
 gC
 uf
 ev
@@ -21604,14 +21662,14 @@ sY
 cd
 dk
 dF
-iC
+dF
 rJ
-nv
+cj
 dz
 ed
-dX
 nL
-ed
+nL
+nL
 gD
 uk
 eC
@@ -21620,7 +21678,7 @@ hf
 ax
 hx
 aI
-zP
+aI
 jq
 fH
 uu
@@ -21731,15 +21789,15 @@ en
 cd
 do
 ef
-lT
+dF
 rL
-cd
+eP
 eU
-cl
 fC
-cl
-cl
-cl
+fC
+fC
+fC
+kH
 ul
 eD
 fG
@@ -21860,9 +21918,9 @@ cd
 cd
 cd
 cd
-cd
-hq
-fS
+cj
+cj
+cj
 pY
 jW
 oB
@@ -21987,10 +22045,10 @@ gz
 aB
 gz
 lH
-fe
-aP
+ci
+ci
 cj
-oJ
+fe
 oJ
 oJ
 uG
@@ -22765,7 +22823,7 @@ oh
 qy
 vc
 uX
-Yw
+me
 mm
 nt
 nY
@@ -23274,10 +23332,10 @@ cM
 ve
 kG
 vl
-vl
+Tn
 ve
-ab
-ab
+vn
+rH
 ab
 ab
 ab
@@ -23398,12 +23456,12 @@ aa
 cM
 qr
 cM
-ab
+tO
 ld
-le
-le
-rH
-ab
+Jy
+Lt
+Al
+Ck
 aa
 aa
 aa
@@ -23524,13 +23582,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+lT
+nv
+nv
+NG
+nv
+nv
+lT
 aa
 aa
 aa
@@ -23651,13 +23709,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nv
+zP
+Yw
+yo
+RV
+Tn
+nv
 aa
 aa
 aa
@@ -23778,13 +23836,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nv
+Gb
+LH
+Tc
+Tc
+Du
+nv
 aa
 aa
 aa
@@ -23905,13 +23963,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nv
+Iu
+LH
+Rh
+Bn
+Ag
+nv
 aa
 aa
 aa
@@ -24032,13 +24090,13 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+nv
+nv
+FO
+Gd
+FO
+nv
+nv
 aa
 aa
 aa
@@ -24160,11 +24218,11 @@ aa
 aa
 aa
 aa
-aa
-aa
-aa
-aa
-aa
+nv
+ND
+ND
+ND
+nv
 aa
 aa
 aa

@@ -525,9 +525,6 @@
 /area/ship/endeavour/engineering/atmospherics)
 "bm" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red,
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/atmospherics)
 "bn" = (
@@ -1153,9 +1150,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering)
 "cH" = (
-/obj/machinery/network/relay{
-	initial_network_id = "wolfnet"
-	},
+/obj/machinery/network/relay/endeavour,
 /turf/simulated/floor/bluegrid,
 /area/ship/endeavour/command/bridge/cic)
 "cI" = (
@@ -1468,9 +1463,6 @@
 /area/ship/endeavour/engineering/atmospherics)
 "dm" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
 /obj/effect/floor_decal/corner/orange{
 	dir = 5;
 	icon_state = "corner_white"
@@ -2484,9 +2476,6 @@
 /area/ship/endeavour/command/bridge/cic)
 "fl" = (
 /obj/effect/floor_decal/borderfloorblack/corner,
-/obj/abstract/landmark/start{
-	name = "Bridge Officer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/command/bridge/cic)
 "fm" = (
@@ -3728,13 +3717,6 @@
 /obj/machinery/door/firedoor,
 /turf/simulated/open,
 /area/ship/endeavour/engineering/engine_room)
-"hH" = (
-/obj/effect/catwalk_plated/dark,
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
-/turf/simulated/floor/plating,
-/area/ship/endeavour/engineering/EVA)
 "hI" = (
 /obj/structure/cable/green{
 	icon_state = "2-8"
@@ -6557,9 +6539,6 @@
 "mq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/green,
 /obj/structure/bed/chair/office/comfy/yellow,
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/engine_room)
 "mr" = (
@@ -6803,9 +6782,6 @@
 /area/ship/endeavour/engineering/engine_room)
 "mQ" = (
 /obj/structure/bed/chair/office/comfy/yellow,
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/engine_room)
 "mR" = (
@@ -7417,9 +7393,6 @@
 	dir = 8;
 	icon_state = "map-scrubbers"
 	},
-/obj/abstract/landmark/start{
-	name = "Engineer"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/atmospherics)
 "og" = (
@@ -7627,9 +7600,6 @@
 "ow" = (
 /obj/structure/cable/green{
 	icon_state = "1-4"
-	},
-/obj/abstract/landmark/start{
-	name = "Engineer"
 	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -10807,15 +10777,6 @@
 /obj/random/contraband,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/security/weapons_bay/two)
-"Mi" = (
-/obj/effect/floor_decal/borderfloorblack{
-	dir = 8
-	},
-/obj/abstract/landmark/start{
-	name = "Bridge Officer"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/command/bridge/cic)
 "NR" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -18501,7 +18462,7 @@ eN
 bo
 fc
 fk
-Mi
+fp
 fs
 fr
 fW
@@ -20301,7 +20262,7 @@ eC
 ag
 bD
 lI
-hH
+cL
 cL
 tU
 tV

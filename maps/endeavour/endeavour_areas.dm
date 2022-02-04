@@ -6,12 +6,12 @@
 //Engineering
 
 /area/ship/endeavour/engineering
-	name = "Engineering Bay"
+	name = "\improper Engineering Bay"
 	icon_state = "enghall"
 	req_access = list(access_engine)
 
 /area/ship/endeavour/engineering/secure_storage
-	name = "Secure Storage"
+	name = "\improper Secure Storage"
 	icon_state = "secstore"
 	req_access = list(access_engine)
 
@@ -63,11 +63,11 @@
 	req_access = list(access_engine, access_atmospherics)
 
 /area/ship/endeavour/engineering/atmospherics/pump_room
-	name = "Coolant Pump Bay"
+	name = "\improper Coolant Pump Bay"
 	req_access = list(access_engine, access_engine_equip)
 
 /area/ship/endeavour/engineering/atmospherics/monitoring_room
-	name = "Atmospherics Monitoring Room"
+	name = "\improper Atmospherics Monitoring Room"
 
 /area/ship/endeavour/engineering/EVA
 	name = "\improper EVA Bay"
@@ -99,7 +99,7 @@
 	name = "\improper Third Deck Thruster Bay"
 
 /area/ship/endeavour/engineering/inertial_damper
-	name = "Inertial Damper Bay"
+	name = "\improper Inertial Damper Bay"
 	icon_state = "damper"
 
 //Habitation
@@ -109,7 +109,7 @@
 
 /area/ship/endeavour/habitation/gentool
 	icon_state = "gentool"
-	name = "General Tool Storage"
+	name = "\improper General Tool Storage"
 
 /area/ship/endeavour/habitation/bar
 	icon_state = "bar"
@@ -117,7 +117,7 @@
 
 /area/ship/endeavour/habitation/bar/backroom
 	icon_state = "barback"
-	name = "Bar Backroom"
+	name = "\improper Bar Backroom"
 	req_access = list(access_bar)
 
 /area/ship/endeavour/habitation/kitchen
@@ -158,28 +158,28 @@
 	icon_state = "cryo"
 
 /area/ship/endeavour/habitation/cryo/one
-	name = "Cryo Bay One"
+	name = "\improper Cryo Bay One"
 
 /area/ship/endeavour/habitation/cryo/two
-	name = "Cryo Bay Two"
+	name = "\improper Cryo Bay Two"
 
 /area/ship/endeavour/habitation/observation
-	name = "Observation Lounge"
+	name = "\improper Observation Lounge"
 	icon_state = "observation"
 
 /area/ship/endeavour/habitation/garden
-	name = "Garden"
+	name = "\improper Garden"
 	icon_state = "garden"
 
 //Security
 
 /area/ship/endeavour/security
 	icon_state = "sec"
-	name = "Security"
+	name = "\improper Security"
 	req_access = list(access_sec_doors)
 
 /area/ship/endeavour/security/lockers
-	name = "Locker Room"
+	name = "\improper Locker Room"
 	icon_state = "lockers"
 	req_access = list(access_sec_doors, access_brig)
 
@@ -235,21 +235,37 @@
 	req_access = list(access_chemistry, access_medical)
 
 /area/ship/endeavour/medical/storage
-	name = "Medical Storage"
+	name = "\improper Medical Storage"
 	icon_state = "medstore"
 	req_access = list(access_medical, access_medical_equip)
 
 /area/ship/endeavour/medical/morgue
-	name = "Morgue"
+	name = "\improper Morgue"
 	icon_state = "morgue"
 
 /area/ship/endeavour/medical/morgue/viewing
-	name = "Burial Observation"
+	name = "\improper Burial Observation"
 	icon_state = "morgueview"
 
 /area/ship/endeavour/medical/medtech
-	name = "Medical Technician Bay"
+	name = "\improper Medical Technician Bay"
 	icon_state = "medtech"
+
+/area/ship/endeavour/medical/medtech
+	name = "\improper Medical Technician Bay"
+	icon_state = "medtech"
+
+/area/ship/endeavour/medical/counselor
+	name = "\improper Counselor's Office"
+	icon_state = "medbay3"
+	ambience = list('sound/ambience/signal.ogg')
+	req_access = list(access_psychiatrist)
+	sound_env = SMALL_SOFTFLOOR
+
+/area/ship/endeavour/medical/relacelab
+	name = "\improper Relacing Lab"
+	icon_state = "locker"
+	req_access = list(access_medical_equip)
 
 //Command
 
@@ -283,7 +299,7 @@
 	req_access = list(access_heads, access_captain)
 
 /area/ship/endeavour/command/office/captain/bedroom
-	name = "Captain's Quarters"
+	name = "\improper Captain's Quarters"
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/xo
@@ -319,50 +335,50 @@
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/bosun
-	name = "Bosun's Office"
+	name = "\improper Quartermaster's Office"
 	icon_state = "bosunoffice"
 	req_access = list(access_heads, access_qm)
 
 /area/ship/endeavour/command/office/bosun/bed
-	name = "Bosun's Quarters"
+	name = "\improper Quartermaster's Quarters"
 	icon_state = "bosunbed"
 
 /area/ship/endeavour/command/office/rd
-	name = "Technology Director's Office"
+	name = "\improper Technology Director's Office"
 	icon_state = "rdoffice"
 	req_access = list(access_heads, access_rd)
 
 /area/ship/endeavour/command/office/rd/bed
-	name = "Technology Director's Quarters"
+	name = "\improper Technology Director's Quarters"
 	icon_state = "rdoffice"
 
 /area/ship/endeavour/command/bathroom
-	name = "Officer Bathroom"
+	name = "\improper Officer Bathroom"
 	icon_state = "headbath"
 	req_access = list(access_heads)
 
 /area/ship/endeavour/command/meetingroom
-	name = "Meeting Room"
+	name = "\improper Meeting Room"
 	icon_state = "meetingroom"
 	req_access = list(access_bridge)
 
 /area/ship/endeavour/command/vault
-	name = "Vault"
+	name = "\improper Vault"
 	icon_state = "vault"
 	req_access = list(access_heads_vault)
 
 /area/ship/endeavour/command/sensitive_storage
-	name = "Sensitive Storage"
+	name = "\improper Sensitive Storage"
 	icon_state = "selfdestruct"
 	req_access = list(access_heads_vault)
 
 /area/ship/endeavour/command/ofd
-	name = "OFD Bay"
+	name = "\improper OFD Bay"
 	icon_state = "ofd"
 	req_access = list(access_bridge)
 
 /area/ship/endeavour/command/ofdstorage
-	name = "OFD Charge Storage"
+	name = "\improper OFD Charge Storage"
 	icon_state = "ofdammo"
 	req_access = list(access_bridge)
 
@@ -375,28 +391,28 @@
 	req_access = list(access_cargo)
 
 /area/ship/endeavour/cargo/general
-	name = "Cargo Bay"
+	name = "\improper Cargo Bay"
 
 /area/ship/endeavour/cargo/lobby
-	name = "Cargo Lobby"
+	name = "\improper Cargo Lobby"
 	icon_state = "cargolobby"
 	req_access = null
 
 /area/ship/endeavour/cargo/disposals
-	name = "Disposals Bay"
+	name = "\improper Disposals Bay"
 	icon_state = "disposal"
 
 /area/ship/endeavour/cargo/salvage
-	name = "Salvage Technician Bay"
+	name = "\improper Salvage Technician Bay"
 	icon_state = "salvageprep"
 	req_access = list(access_mining, access_cargo)
 
 /area/ship/endeavour/cargo/lockers
-	name = "Cargo Locker Room"
+	name = "\improper Cargo Locker Room"
 	icon_state = "cargolocker"
 
 /area/ship/endeavour/cargo/comissary
-	name = "Comissary"
+	name = "\improper Comissary"
 	icon_state = "commiss"
 
 //Science
@@ -407,41 +423,41 @@
 
 /area/ship/endeavour/science/robotics
 	icon_state = "robotics"
-	name = "Robotics Bay"
+	name = "\improper Robotics Bay"
 	req_access = list(access_robotics, access_research)
 
 /area/ship/endeavour/science/science_hall
-	name = "Science Hallway"
+	name = "\improper Science Hallway"
 	icon_state = "sciencehall"
 
 /area/ship/endeavour/science/materials_lab
-	name = "Materials Laboratory"
+	name = "\improper Materials Laboratory"
 	icon_state = "matlab"
 
 /area/ship/endeavour/science/circuit_lab
-	name = "Electrical Engineering"
+	name = "\improper Electrical Engineering"
 	icon_state = "science"
 
 /area/ship/endeavour/science/xenobio
-	name = "Xenobioflora Laboratory"
+	name = "\improper Xenobioflora Laboratory"
 	icon_state = "science"
 	req_access = list(access_xenobiology)
 
 /area/ship/endeavour/science/xenoarch
-	name = "Xenoarcheology"
+	name = "\improper Xenoarcheology"
 	icon_state = "science"
 	req_access = list(access_research, access_xenoarch)
 
 /area/ship/endeavour/science/xenoarch/storage
-	name = "Xenoarcheology Storage"
+	name = "\improper Xenoarcheology Storage"
 	icon_state = "science"
 
 /area/ship/endeavour/science/xenoarch/lab
-	name = "Xenoarcheology Lab"
+	name = "\improper Xenoarcheology Lab"
 	icon_state = "science"
 
 /area/ship/endeavour/science/server_room
-	name = "Server Room"
+	name = "\improper Server Room"
 	icon_state = "server"
 	req_access = list(access_tcomsat)
 
@@ -450,10 +466,10 @@
 	icon_state = "netcloset"
 
 /area/ship/endeavour/science/network_closet/third_deck
-	name = "Third Deck Network Node"
+	name = "\improper Third Deck Network Node"
 
 /area/ship/endeavour/science/network_closet/bridge_deck
-	name = "Bridge Deck Network Node"
+	name = "\improper Bridge Deck Network Node"
 
 //Hallways.
 
@@ -461,7 +477,7 @@
 	icon_state = "hallway"
 
 /area/ship/endeavour/hallway/first_deck
-	name = "First Deck Hallway"
+	name = "\improper First Deck Hallway"
 
 /area/ship/endeavour/hallway/second_deck
 	name = "\improper Second Deck Hallway"
@@ -475,16 +491,16 @@
 	icon_state = "escpod"
 
 /area/ship/endeavour/escape_pod/one
-	name = "Escape Pod Bay One"
+	name = "\improper Escape Pod Bay One"
 
 /area/ship/endeavour/escape_pod/two
-	name = "Escape Pod Bay Two"
+	name = "\improper Escape Pod Bay Two"
 
 /area/ship/endeavour/escape_pod/three
-	name = "Escape Pod Bay Three"
+	name = "\improper Escape Pod Bay Three"
 
 /area/ship/endeavour/escape_pod/four
-	name = "Escape Pod Bay Four"
+	name = "\improper Escape Pod Bay Four"
 
 //Maintenance
 
@@ -495,74 +511,74 @@
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
 
 /area/ship/endeavour/maintenance/deckone/aft
-	name = "First Deck Aft Maintenance"
+	name = "\improper First Deck Aft Maintenance"
 
 /area/ship/endeavour/maintenance/deckone/aft/port
-	name = "First Deck Aft Port Maintenance"
+	name = "\improper First Deck Aft Port Maintenance"
 
 /area/ship/endeavour/maintenance/deckone/aft/starboard
-	name = "First Deck Aft Starboard Maintenance"
+	name = "\improper First Deck Aft Starboard Maintenance"
 
 /area/ship/endeavour/maintenance/deckone/fore/starboard
-	name = "First Deck Fore Starboard Maintenance"
+	name = "\improper First Deck Fore Starboard Maintenance"
 
 /area/ship/endeavour/maintenance/deckone/fore/port
-	name = "First Deck Fore Port Maintenance"
+	name = "\improper First Deck Fore Port Maintenance"
 
 /area/ship/endeavour/maintenance/deckone/amidships/port
-	name = "First Deck Amidships Port Maintenance"
+	name = "\improper First Deck Amidships Port Maintenance"
 
 //Second Deck Maint
 
 /area/ship/endeavour/maintenance/decktwo/fore/port
-	name = "Second Deck Fore Port Maintenance"
+	name = "\improper Second Deck Fore Port Maintenance"
 
 /area/ship/endeavour/maintenance/decktwo/fore/starboard
-	name = "Second Deck Fore Starboard Maintenance"
+	name = "\improper Second Deck Fore Starboard Maintenance"
 
 /area/ship/endeavour/maintenance/decktwo/amidship/starboard
-	name = "Second Deck Amidships Starboard Maintenance"
+	name = "\improper Second Deck Amidships Starboard Maintenance"
 
 /area/ship/endeavour/maintenance/decktwo/aft/port
-	name = "Second Deck Aft Port Maintenance"
+	name = "\improper Second Deck Aft Port Maintenance"
 
 /area/ship/endeavour/maintenance/decktwo/aft/starboard
-	name = "Second Deck Aft Starboard Maintenance"
+	name = "\improper Second Deck Aft Starboard Maintenance"
 
 //Third Deck Maint
 
 /area/ship/endeavour/maintenance/deckthree/aft
-	name = "Third Deck Aft Maintenance"
+	name = "\improper Third Deck Aft Maintenance"
 
 /area/ship/endeavour/maintenance/deckthree/aftport
-	name = "Third Deck Aft Port Maintenance"
+	name = "\improper Third Deck Aft Port Maintenance"
 
 /area/ship/endeavour/maintenance/deckthree/foreport
-	name = "Third Deck Fore Port Maintenance"
+	name = "\improper Third Deck Fore Port Maintenance"
 
 /area/ship/endeavour/maintenance/deckthree/fore/starboard
-	name = "Third Deck Fore Starboard Maintenance"
+	name = "\improper Third Deck Fore Starboard Maintenance"
 
 /area/ship/endeavour/maintenance/deckthree/aft/starboard
-	name = "Third Deck Aft Starboard Maintenance"
+	name = "\improper Third Deck Aft Starboard Maintenance"
 
 //Misc areas
 
 /area/ship/endeavour/eva
-	name = "General EVA Bay"
+	name = "\improper General EVA Bay"
 	icon_state = "gen_eva"
 	req_access = list(access_eva)
 
 /area/ship/endeavour/hangar
-	name = "Hangar Bay"
+	name = "\improper Hangar Bay"
 	icon_state = "hangar"
 
 /area/ship/endeavour/ladderwell
-	name = "Ladderwell"
+	name = "\improper Ladderwell"
 	icon_state = "ladder"
 
 /area/ship/endeavour/janitorial
-	name = "Janitorial Closet"
+	name = "\improper Janitorial Closet"
 	icon_state = "janitor"
 	req_access = list(access_janitor)
 
@@ -572,27 +588,27 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 
 /area/ship/endeavour/shuttle/perseverance/cockpit
-	name = "Perseverance - Cockpit"
+	name = "\improper Perseverance - Cockpit"
 	icon_state = "perseverancepilot"
 
 /area/ship/endeavour/shuttle/perseverance/passenger
-	name = "Perseverance - Passenger Bay"
+	name = "\improper Perseverance - Passenger Bay"
 	icon_state = "perseverancepass"
 
 /area/ship/endeavour/shuttle/perseverance/cargo
-	name = "Perseverance - Cargo Bay"
+	name = "\improper Perseverance - Cargo Bay"
 	icon_state = "perseverancecargo"
 
 /area/ship/endeavour/shuttle/perseverance/maint
-	name = "Perseverance - Atmos Compartment"
+	name = "\improper Perseverance - Atmos Compartment"
 	icon_state = "perseverancemaint"
 
 //Supply station stuff.
 /area/supply
-	name = "Supply Lift"
+	name = "\improper Supply Lift"
 	requires_power = FALSE
 	dynamic_lighting = TRUE
 
 /area/supply_station
-	name = "Supply Station"
+	name = "\improper Supply Station"
 	icon_state = "supplystation"

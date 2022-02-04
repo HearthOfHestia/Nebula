@@ -426,9 +426,6 @@
 /obj/structure/cable/green{
 	icon_state = "0-2"
 	},
-/obj/abstract/landmark/start{
-	name = "Janitor"
-	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/janitorial)
 "bf" = (
@@ -713,9 +710,6 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/bed/chair,
-/obj/abstract/landmark/start{
-	name = "Research Technician"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/science/science_hall)
 "bN" = (
@@ -1792,9 +1786,6 @@
 /obj/effect/floor_decal/corner/brown{
 	dir = 5;
 	icon_state = "corner_white"
-	},
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/general)
@@ -2950,9 +2941,6 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
-	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
@@ -3656,9 +3644,6 @@
 "hG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/abstract/landmark/start{
-	name = "Research Technician"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/science/materials_lab)
 "hH" = (
@@ -4474,9 +4459,6 @@
 /obj/effect/floor_decal/corner/brown{
 	dir = 10;
 	icon_state = "corner_white"
-	},
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
 	},
 /obj/item/radio/intercom/bump/south,
 /obj/machinery/light,
@@ -6870,9 +6852,6 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/corner/brown/three_quarters,
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
-	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/lockers)
 "ob" = (
@@ -6906,9 +6885,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9;
 	icon_state = "11-supply"
-	},
-/obj/abstract/landmark/start{
-	name = "Bosun"
 	},
 /turf/simulated/floor/carpet,
 /area/ship/endeavour/command/office/bosun/bed)
@@ -6947,9 +6923,6 @@
 	icon_state = "computer";
 	pixel_y = -32
 	},
-/obj/abstract/landmark/start{
-	name = "Bosun"
-	},
 /turf/simulated/floor/carpet,
 /area/ship/endeavour/command/office/bosun)
 "oi" = (
@@ -6974,9 +6947,6 @@
 /obj/machinery/camera/network/mining{
 	dir = 1;
 	icon_state = "camera"
-	},
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/lockers)
@@ -7055,9 +7025,6 @@
 	dir = 4;
 	icon_state = "corner_white_three_quarters"
 	},
-/obj/abstract/landmark/start{
-	name = "Deck Hand"
-	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/lockers)
 "ou" = (
@@ -7104,9 +7071,6 @@
 	icon_state = "corner_white"
 	},
 /obj/structure/bed/chair/comfy/brown,
-/obj/abstract/landmark/start{
-	name = "Salvage Technician"
-	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/salvage)
 "oz" = (
@@ -7125,9 +7089,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 4;
 	icon_state = "comfychair"
-	},
-/obj/abstract/landmark/start{
-	name = "Salvage Technician"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/salvage)
@@ -7430,9 +7391,6 @@
 /obj/structure/bed/chair/comfy/brown{
 	dir = 4;
 	icon_state = "comfychair"
-	},
-/obj/abstract/landmark/start{
-	name = "Salvage Technician"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/salvage)
@@ -8627,7 +8585,7 @@
 /area/shuttle/escape_pod_2)
 "sm" = (
 /obj/machinery/network/acl{
-	initial_network_id = "wolfnet"
+	initial_network_id = "endeavour_network"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/science/server_room)
@@ -10458,9 +10416,6 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/science/xenobio)
 "Fs" = (
-/obj/abstract/landmark/start{
-	name = "Research Technician"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/science/xenoarch)
 "Fw" = (
@@ -10604,9 +10559,6 @@
 /area/ship/endeavour/science/xenobio)
 "Iu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/obj/abstract/landmark/start{
-	name = "Research Technician"
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/science/xenoarch)
 "Iy" = (
@@ -10761,9 +10713,6 @@
 	id_tag = "tdoffice";
 	pixel_x = 24;
 	pixel_y = -30
-	},
-/obj/abstract/landmark/start{
-	name = "Technology Director"
 	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd)
@@ -11107,9 +11056,6 @@
 /obj/structure/bed/chair/office/comfy/purple{
 	dir = 4;
 	icon_state = "comfyofficechair"
-	},
-/obj/abstract/landmark/start{
-	name = "Research Technician"
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/science/circuit_lab)
@@ -11548,9 +11494,6 @@
 /turf/space,
 /area/space)
 "Xy" = (
-/obj/abstract/landmark/start{
-	name = "Technology Director"
-	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd/bed)
 "XN" = (
