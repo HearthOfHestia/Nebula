@@ -492,10 +492,6 @@
 	icon_state = "11-scrubbers"
 	},
 /obj/machinery/door/airlock/autoname/endeavour/engineering,
-/obj/machinery/atmospherics/pipe/simple/visible/black{
-	dir = 4;
-	icon_state = "11"
-	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/engineering/atmospherics/pump_room)
 "bo" = (
@@ -2141,8 +2137,8 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
 /obj/structure/disposalpipe/segment,
-/obj/effect/catwalk_plated,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/obj/effect/catwalk_plated,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/hallway/first_deck)
 "eK" = (
@@ -2687,7 +2683,6 @@
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/first_deck)
 "fQ" = (
-/obj/machinery/atmospherics/pipe/simple/visible/green,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/autoname/endeavour/engineering,
 /turf/simulated/floor/plating,
@@ -4794,10 +4789,6 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckone/aft/port)
 "jM" = (
-/obj/machinery/atmospherics/pipe/simple/visible/black{
-	dir = 4;
-	icon_state = "11"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},

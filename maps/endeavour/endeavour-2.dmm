@@ -1748,13 +1748,6 @@
 /obj/item/radio/intercom/bump/east,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/security/hallway/weapons_bay/starboard)
-"dN" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 9;
-	icon_state = "11"
-	},
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/endeavour/engineering/reactor)
 "dO" = (
 /obj/machinery/power/smes/buildable/max_cap_in_out,
 /obj/structure/cable/green{
@@ -5962,10 +5955,6 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/engineering/reactor)
 "lk" = (
-/obj/machinery/atmospherics/pipe/simple/heat_exchanging{
-	dir = 5;
-	icon_state = "11"
-	},
 /obj/machinery/atmospherics/pipe/simple/visible/fuel{
 	dir = 4;
 	icon_state = "11"
@@ -7345,7 +7334,6 @@
 "ob" = (
 /obj/structure/ladder,
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/open,
 /area/ship/endeavour/ladderwell)
 "oc" = (
@@ -9598,7 +9586,6 @@
 "tf" = (
 /obj/structure/ladder,
 /obj/structure/lattice,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/sign/deck/second{
 	dir = 4;
 	icon_state = "deck-2";
@@ -19140,7 +19127,7 @@ dZ
 kK
 og
 mv
-dN
+aq
 sj
 sj
 sj

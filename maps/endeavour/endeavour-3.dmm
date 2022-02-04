@@ -498,11 +498,6 @@
 	dir = 6;
 	icon_state = "11-supply"
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	icon_state = "apc0"
-	},
-/obj/structure/cable/green,
 /obj/machinery/camera/network/medbay{
 	dir = 4;
 	icon_state = "camera"
@@ -10397,7 +10392,7 @@
 /area/ship/endeavour/hallway/third_deck/fore)
 "tO" = (
 /turf/simulated/wall,
-/area/ship/endeavour/medical/counselor)
+/area/ship/endeavour/medical/morgue)
 "tP" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -11103,7 +11098,7 @@
 /obj/machinery/door/airlock/autoname/endeavour/medical,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/counselor)
+/area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "ve" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
@@ -11191,7 +11186,7 @@
 	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/medical/counselor)
+/area/ship/endeavour/medical/morgue)
 "vn" = (
 /obj/structure/cable/green{
 	icon_state = "2-4"
@@ -12657,6 +12652,9 @@
 	icon_state = "11-scrubbers"
 	},
 /obj/machinery/door/firedoor,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/medical/counselor)
 "Ot" = (
@@ -12849,6 +12847,9 @@
 "Yw" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/structure/catwalk,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/medical/counselor)
 "ZQ" = (
@@ -23202,11 +23203,11 @@ cM
 cM
 gg
 cM
-ve
+cM
 jQ
 vp
 vu
-ve
+wZ
 gj
 gj
 wX
@@ -23329,7 +23330,7 @@ cM
 cM
 qm
 cM
-ve
+cM
 kG
 vl
 Tn
