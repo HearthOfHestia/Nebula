@@ -25,9 +25,9 @@
 	screen.transform = null
 	if(screen && client)
 		if(screen.screen_loc != ui_entire_screen)
-			if(max(client.last_view_x_dim, client.last_view_y_dim) > 7)
+			if(max(client.last_view_x_dim, client.last_view_y_dim) > 15)
 				var/matrix/M = matrix()
-				M.Scale(CEILING(client.last_view_x_dim/7),CEILING(client.last_view_y_dim/7))
+				M.Scale(client.last_view_x_dim/15,client.last_view_y_dim/15)
 				screen.transform = M
 		if(stat != DEAD || screen.allstate)
 			client.screen += screen
@@ -70,9 +70,9 @@
 		for(var/category in screens)
 			var/obj/screen/fullscreen/screen = screens[category]
 			screen.transform = null
-			if(screen.screen_loc != ui_entire_screen && largest_bound > 7)
+			if(screen.screen_loc != ui_entire_screen && largest_bound > 15)
 				var/matrix/M = matrix()
-				M.Scale(CEILING(client.last_view_x_dim/7), CEILING(client.last_view_y_dim/7))
+				M.Scale(client.last_view_x_dim/15, client.last_view_y_dim/15)
 				screen.transform = M
 			client.screen |= screen
 
