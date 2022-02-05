@@ -1,40 +1,6 @@
 #if !defined(USING_MAP_DATUM)
 
-	#include "../../mods/content/mundane.dm"
-	#include "../../mods/content/corporate/_corporate.dme"
-	#include "../../mods/content/government/_government.dme"
-	#include "../../mods/content/psionics/_psionics.dme"
-	#include "../../mods/content/modern_earth/_modern_earth.dme"
-	#include "../../mods/content/xenobiology/_xenobiology.dme"
-
-	#include "../../mods/content/baychems/_baychems.dme"
-	#include "../../mods/content/hydroponics/_hydroponics.dme"
-	#include "../../mods/content/supplypacks/_supplypacks.dme"
-
-	#include "../../mods/content/neural_laces/_laces.dme"
-	#include "../../mods/content/genemodding/_genemodding.dme"
-	#include "../../mods/content/hearthfoods/_hearthfoods.dme"
-	#include "../../mods/content/hearthdrinks/_hearthdrinks.dme"
-	#include "../../mods/content/shards/_shards.dme"
-
-	#include "../../mods/verbs/antighost/_subtle_antighost.dme"
-
-	#include "../../mods/utility/ooc_notes/_ooc_notes.dme"
-	#include "../../mods/utility/tgsv4_integration/___tgs.dme"
-	#include "../../mods/content/hearth_content/_hearth_content.dme"
-
-	#include "../../mods/species/ascent/_ascent.dme"
-	#include "../../mods/species/utility_frames/_utility_frames.dme"
-	#include "../../mods/species/tajaran/_tajaran.dme"
-	#include "../../mods/species/lizard/_lizard.dme"
-	#include "../../mods/species/vox/_vox.dme"
-	#include "../../mods/species/adherent/_adherent.dme"
-	#include "../../mods/species/skrell/_skrell.dme"
-
-	#include "../../mods/content/hearth_culture/_hearth_culture.dme"
-	#include "../../mods/content/iseo/_iseo.dme"
-
-	#include "../../mods/utility/centcomdb/_centcomdb.dme"
+	#include "../../mods/content/hearth_maps/_hearth_maps.dme"
 
 	#include "lobby/endeavour_music.dm"
 	#include "endeavour_lobby.dm"
@@ -94,8 +60,6 @@
 	#include "structures/wall_morgue.dm"
 
 	#include "turfs/fuel_tank.dm"
-
-	#include "../../mods/content/hearth_maps/_hearth_maps.dme"
 
 	#include "endeavour-1.dmm"
 	#include "endeavour-2.dmm"

@@ -1,5 +1,41 @@
 #ifndef MODPACK_HEARTH_MAPS
 #define MODPACK_HEARTH_MAPS
+// MODPACKS
+	#include "../mundane.dm"
+	#include "../corporate/_corporate.dme"
+	#include "../psionics/_psionics.dme"
+	#include "../modern_earth/_modern_earth.dme"
+	#include "../xenobiology/_xenobiology.dme"
+
+	#include "../baychems/_baychems.dme"
+	#include "../hydroponics/_hydroponics.dme"
+	#include "../supplypacks/_supplypacks.dme"
+
+	#include "../neural_laces/_laces.dme"
+	#include "../genemodding/_genemodding.dme"
+	#include "../hearthfoods/_hearthfoods.dme"
+	#include "../hearthdrinks/_hearthdrinks.dme"
+	#include "../shards/_shards.dme"
+
+	#include "../../verbs/antighost/_subtle_antighost.dme"
+
+	#include "../../utility/ooc_notes/_ooc_notes.dme"
+	#include "../../utility/tgsv4_integration/___tgs.dme"
+	#include "../hearth_content/_hearth_content.dme"
+
+	#include "../../species/ascent/_ascent.dme"
+	#include "../../species/utility_frames/_utility_frames.dme"
+	#include "../../species/tajaran/_tajaran.dme"
+	#include "../../species/lizard/_lizard.dme"
+	#include "../../species/vox/_vox.dme"
+	#include "../../species/adherent/_adherent.dme"
+	#include "../../species/skrell/_skrell.dme"
+
+	#include "../hearth_culture/_hearth_culture.dme"
+	#include "../iseo/_iseo.dme"
+
+	#include "../../utility/centcomdb/_centcomdb.dme"
+// FILES
 #include "datums/department_exploration.dm"
 #include "datums/license_decls.dm"
 #include "datums/music/heard_of_a_place.dm"
