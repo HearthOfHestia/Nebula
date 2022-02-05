@@ -71,8 +71,8 @@
 /datum/job/chef
 	title = "Cook"
 	department_types = list(/decl/department/service)
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	minimum_character_age = list(SPECIES_HUMAN = 18)
 	supervisors = "the Deck Chief"
 	alt_titles = list(
