@@ -43,3 +43,6 @@
 
 	away_site_budget = 3
 	id_hud_icons = 'mods/content/hearth_maps/icons/assignment_hud.dmi'
+
+/datum/map/torch/preferences_key() // for compatibility with the Endeavour
+	return "iseo"
