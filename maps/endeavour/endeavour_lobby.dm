@@ -1,5 +1,5 @@
 /datum/map/endeavour
-	lobby_screens = list('maps/endeavour/lobby/iseo-endeavour.gif', 'maps/endeavour/lobby/clearskies-symbol-lobby.png')
+	lobby_screens = list('maps/endeavour/lobby/iseo-endeavour.gif')
 	lobby_tracks = list(
 		/decl/music_track/cloudsofneptune,
 		/decl/music_track/chasing_time, 
