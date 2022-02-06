@@ -410,6 +410,9 @@
 /obj/structure/cable/green{
 	icon_state = "2-4"
 	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/brig)
 "bl" = (
@@ -583,9 +586,8 @@
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "bI" = (
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/plating,
-/area/ship/endeavour/medical)
+/turf/simulated/wall/prepainted,
+/area/ship/endeavour/medical/public)
 "bJ" = (
 /turf/simulated/wall/prepainted,
 /area/ship/endeavour/medical)
@@ -1477,6 +1479,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/structure/closet/walllocker/skinsuit/security,
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/brig)
 "dO" = (
@@ -1609,7 +1612,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "ed" = (
 /obj/effect/floor_decal/spline/plain/black,
 /obj/item/stool/bar/padded,
@@ -2076,7 +2079,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "eW" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -2606,7 +2609,7 @@
 /obj/item/storage/box/donut,
 /obj/structure/table,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "fZ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/window/brigdoor/eastleft,
@@ -2928,7 +2931,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "gI" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -3093,7 +3096,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/autoname/endeavour/glass/medical,
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "gX" = (
 /obj/effect/floor_decal/corner/white,
 /obj/structure/bed,
@@ -3227,7 +3230,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "hh" = (
 /obj/structure/cable/green{
 	icon_state = "4-8"
@@ -3353,6 +3356,9 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	icon_state = "1-4"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
 "hv" = (
@@ -3394,7 +3400,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "hz" = (
 /obj/structure/disposalpipe/segment/bent,
 /turf/simulated/floor/tiled/white,
@@ -3570,7 +3576,7 @@
 	initial_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "hT" = (
 /obj/effect/catwalk_plated/dark,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -3751,7 +3757,7 @@
 	initial_access = list("ACCESS_MEDICAL")
 	},
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "in" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4618,7 +4624,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "jV" = (
 /obj/effect/wallframe_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -4765,7 +4771,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/structure/closet/walllocker/emerglocker/west,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/escape_pod/four)
 "kk" = (
@@ -4806,6 +4811,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
+/obj/structure/closet/walllocker/emerglocker/west,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/escape_pod/four)
 "ko" = (
@@ -4840,7 +4846,12 @@
 	dir = 1
 	},
 /obj/machinery/newscaster/bump/west,
-/obj/structure/closet/walllocker/skinsuit/security,
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/security/brig)
 "kr" = (
@@ -5410,7 +5421,7 @@
 	},
 /obj/structure/closet/walllocker/emerglocker/north,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "lB" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -5509,7 +5520,7 @@
 	pixel_x = 24
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "lM" = (
 /obj/effect/floor_decal/techfloor/orange,
 /obj/structure/cable/green,
@@ -5918,7 +5929,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "mA" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/junction{
@@ -6265,6 +6276,9 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/public)
 "np" = (
@@ -6395,7 +6409,7 @@
 "nz" = (
 /obj/effect/wallframe_spawn/reinforced,
 /turf/simulated/floor/tiled,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "nA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -6689,7 +6703,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "oa" = (
 /obj/machinery/atmospherics/omni/filter{
 	tag_north = 1;
@@ -6745,7 +6759,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "oh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/morgue/wall{
@@ -6822,7 +6836,7 @@
 	},
 /obj/item/radio/intercom/bump/west,
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "oq" = (
 /obj/machinery/light{
 	dir = 4
@@ -6856,7 +6870,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "ot" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -7470,7 +7484,7 @@
 	pixel_x = 32
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pG" = (
 /obj/machinery/light{
 	dir = 8
@@ -7499,7 +7513,7 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pI" = (
 /obj/machinery/light{
 	dir = 8
@@ -7548,7 +7562,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pO" = (
 /obj/effect/floor_decal/corner/red,
 /obj/machinery/light{
@@ -7565,7 +7579,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pQ" = (
 /obj/structure/cable/green{
 	icon_state = "2-4"
@@ -7580,7 +7594,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 9
@@ -7604,7 +7618,7 @@
 	icon_state = "1-4"
 	},
 /turf/simulated/floor/tiled/dark/monotile,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "pT" = (
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/habitation/bar/backroom)
@@ -8067,7 +8081,7 @@
 	},
 /obj/structure/closet/walllocker/skinsuit/security,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "qQ" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
@@ -8405,7 +8419,7 @@
 	},
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "rE" = (
 /obj/structure/cable/green{
 	icon_state = "1-2"
@@ -9228,7 +9242,7 @@
 "tl" = (
 /obj/structure/sign/warning/nosmoking_2,
 /turf/simulated/wall/prepainted,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "tm" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/plating,
@@ -9243,7 +9257,7 @@
 "to" = (
 /obj/structure/sign/bluecross_1,
 /turf/simulated/wall/prepainted,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "tp" = (
 /obj/machinery/light{
 	dir = 4
@@ -9640,7 +9654,7 @@
 	pixel_y = 32
 	},
 /turf/simulated/floor/tiled/dark,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "uk" = (
 /obj/item/stool/bar/padded,
 /obj/effect/floor_decal/spline/plain/black,
@@ -9731,9 +9745,11 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/alarm{
-	dir = 8;
-	pixel_x = 24
+/obj/machinery/power/apc{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/public)
@@ -9746,7 +9762,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/tiled/white,
-/area/ship/endeavour/medical)
+/area/ship/endeavour/medical/public)
 "uw" = (
 /obj/machinery/light{
 	dir = 4
@@ -11308,6 +11324,14 @@
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
 /area/ship/endeavour/medical/counselor)
+"zX" = (
+/obj/machinery/door/firedoor,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/ship/endeavour/science/robotics/public)
 "Ag" = (
 /obj/machinery/alarm{
 	dir = 8;
@@ -11513,7 +11537,7 @@
 /area/ship/endeavour/medical/counselor)
 "Kx" = (
 /turf/simulated/wall/r_wall/prepainted,
-/area/ship/endeavour/security/public)
+/area/ship/endeavour/security)
 "KG" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/machinery/washing_machine,
@@ -11823,6 +11847,10 @@
 "Zw" = (
 /obj/effect/floor_decal/corner/mauve{
 	dir = 10
+	},
+/obj/machinery/power/apc,
+/obj/structure/cable/green{
+	icon_state = "0-8"
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/science/robotics/public)
@@ -20404,9 +20432,9 @@ ax
 PH
 wn
 wo
-bI
+PH
 to
-bJ
+bI
 bJ
 bJ
 bJ
@@ -20425,7 +20453,7 @@ jG
 hm
 jj
 rX
-jj
+zX
 Ao
 tr
 ts
@@ -20533,7 +20561,7 @@ mS
 nu
 nZ
 hg
-bJ
+bI
 qA
 qs
 qK
@@ -20660,7 +20688,7 @@ no
 nQ
 og
 uv
-bJ
+bI
 py
 jM
 ru
@@ -20785,9 +20813,9 @@ ax
 tl
 hS
 im
-bJ
+bI
 gW
-bJ
+bI
 wh
 qE
 bN

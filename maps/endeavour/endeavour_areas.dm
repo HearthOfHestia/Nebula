@@ -178,11 +178,6 @@
 	name = "\improper Security"
 	req_access = list(access_sec_doors)
 
-/area/ship/endeavour/security/public
-	icon_state = "sec"
-	name = "\improper Public Security Annex"
-	req_access = null
-
 /area/ship/endeavour/security/lockers
 	name = "\improper Locker Room"
 	icon_state = "lockers"
