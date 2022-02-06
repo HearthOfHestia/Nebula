@@ -144,10 +144,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/atmospherics)
-"as" = (
-/obj/effect/paint/black,
-/turf/simulated/wall/r_wall/prepainted,
-/area/ship/endeavour/security)
 "at" = (
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
@@ -17247,7 +17243,7 @@ aa
 aa
 aa
 aa
-as
+zl
 pi
 pi
 pi
@@ -17374,7 +17370,7 @@ aa
 aa
 aa
 aa
-as
+zl
 pi
 oO
 oO
@@ -17501,7 +17497,7 @@ aa
 aa
 ab
 ab
-as
+zl
 oO
 XE
 xv
