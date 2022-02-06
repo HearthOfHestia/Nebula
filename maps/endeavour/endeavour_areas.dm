@@ -509,6 +509,7 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	turf_initializer = /decl/turf_initializer/maintenance
 	ambience = list('sound/ambience/ambigen3.ogg','sound/ambience/ambigen4.ogg','sound/ambience/ambigen5.ogg','sound/ambience/ambigen6.ogg','sound/ambience/ambimo1.ogg','sound/ambience/ambimo2.ogg')
+	req_access = list(access_maint_tunnels)
 
 /area/ship/endeavour/maintenance/deckone/aft
 	name = "\improper First Deck Aft Maintenance"
