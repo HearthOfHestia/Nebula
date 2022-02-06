@@ -65,18 +65,17 @@
 	if(!tail_style)
 		if(!tail_organ)
 			return
-		qdel(tail_organ)
+		qdel(tail_organ) // will call remove_organ silently
 		var/list/tail_data = LAZYACCESS(species?.has_limbs, BP_TAIL)
 		var/tail_path = LAZYACCESS(tail_data, "path")
 		if(!tail_path)
 			return
 		tail_organ = new tail_path(src)
-		tail_organ.owner = src
+		add_organ(tail_organ)
 		return
 	if(!tail_organ)
 		tail_organ = new(src)
-		tail_organ.owner = src
-		// everything with adding the tail organ will be handled in its Initialize
+		add_organ(tail_organ)
 	tail_organ.tail_icon = tail_style.icon
 	tail_organ.tail = tail_style.icon_state
 	if(tail_style.do_colouration)
