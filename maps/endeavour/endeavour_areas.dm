@@ -178,15 +178,25 @@
 	name = "\improper Security"
 	req_access = list(access_sec_doors)
 
+/area/ship/endeavour/security/public
+	icon_state = "sec"
+	name = "\improper Public Security Annex"
+	req_access = null
+
 /area/ship/endeavour/security/lockers
 	name = "\improper Locker Room"
 	icon_state = "lockers"
+	req_access = list(access_sec_doors)
+
+/area/ship/endeavour/security/brig
+	name = "\improper Brig"
 	req_access = list(access_sec_doors, access_brig)
+	secure = TRUE // so prisoners can't escape their cells
 
 /area/ship/endeavour/security/maa_office
 	icon_state = "maa"
 	name = "\improper Brig Chief's Office"
-	req_access = list(access_armory, access_brig, access_sec_doors)
+	req_access = list(access_armory, access_sec_doors)
 
 /area/ship/endeavour/security/armory
 	icon_state = "armory"
@@ -216,6 +226,11 @@
 	name = "\improper Medbay"
 	req_access = list(access_medical)
 
+/area/ship/endeavour/medical/public
+	icon_state = "medbay"
+	name = "\improper Public Medbay Annex"
+	req_access = null
+
 /area/ship/endeavour/medical/treatment
 	icon_state = "etc"
 	name = "\improper Treatment Center"
@@ -233,6 +248,7 @@
 	icon_state = "chem"
 	name = "\improper Chemistry Lab"
 	req_access = list(access_chemistry, access_medical)
+	secure = TRUE
 
 /area/ship/endeavour/medical/storage
 	name = "\improper Medical Storage"
@@ -242,6 +258,7 @@
 /area/ship/endeavour/medical/morgue
 	name = "\improper Morgue"
 	icon_state = "morgue"
+	req_access = list(access_morgue)
 
 /area/ship/endeavour/medical/morgue/viewing
 	name = "\improper Burial Observation"
@@ -257,7 +274,6 @@
 
 /area/ship/endeavour/medical/counselor
 	name = "\improper Counselor's Office"
-	icon_state = "medbay3"
 	ambience = list('sound/ambience/signal.ogg')
 	req_access = list(access_psychiatrist)
 	sound_env = SMALL_SOFTFLOOR
@@ -282,6 +298,7 @@
 	icon_state = "cic"
 	name = "\improper Combat Information Center"
 	req_access = list(access_bridge)
+	secure = TRUE
 
 /area/ship/endeavour/command/hallway
 	name = "\improper Bridge Hallway"
@@ -426,6 +443,11 @@
 	name = "\improper Robotics Bay"
 	req_access = list(access_robotics, access_research)
 
+/area/ship/endeavour/science/robotics/public
+	icon_state = "robotics"
+	name = "\improper Public Robotics Annex"
+	req_access = null
+
 /area/ship/endeavour/science/science_hall
 	name = "\improper Science Hallway"
 	icon_state = "sciencehall"
@@ -442,6 +464,7 @@
 	name = "\improper Xenobioflora Laboratory"
 	icon_state = "science"
 	req_access = list(access_xenobiology)
+	secure = TRUE // so slimes can't escape their cells
 
 /area/ship/endeavour/science/xenoarch
 	name = "\improper Xenoarcheology"
@@ -573,6 +596,7 @@
 /area/ship/endeavour/hangar
 	name = "\improper Hangar Bay"
 	icon_state = "hangar"
+	req_access = list(access_hangar)
 
 /area/ship/endeavour/ladderwell
 	name = "\improper Ladderwell"
@@ -587,6 +611,7 @@
 
 /area/ship/endeavour/shuttle/perseverance
 	area_flags = AREA_FLAG_RAD_SHIELDED
+	req_access = list(access_perseverance)
 
 /area/ship/endeavour/shuttle/perseverance/cockpit
 	name = "\improper Perseverance - Cockpit"
