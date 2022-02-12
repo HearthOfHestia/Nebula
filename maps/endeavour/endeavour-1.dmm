@@ -3911,6 +3911,10 @@
 	dir = 4
 	},
 /obj/machinery/newscaster/bump/east,
+/obj/structure/flora/pottedplant/smallcactus{
+	desc = "Cargo's beloved pet, Prickles. Do not feed after midnight. Do not dry-wash. Do not expose to large quantities of radiation.";
+	name = "Prickles"
+	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/cargo/general)
 "iS" = (
@@ -5221,19 +5225,6 @@
 "lH" = (
 /obj/machinery/door/firedoor,
 /obj/structure/table/reinforced,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/blast/shutters{
-	id_tag = "cargodesk"
-	},
-/turf/simulated/floor/tiled,
-/area/ship/endeavour/cargo/general)
-"lI" = (
-/obj/machinery/door/firedoor,
-/obj/structure/table/reinforced,
-/obj/structure/flora/pottedplant/smallcactus{
-	desc = "Cargo's beloved pet, Prickles. Do not feed after midnight. Do not dry-wash. Do not expose to large quantities of radiation.";
-	name = "Prickles"
-	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/door/blast/shutters{
 	id_tag = "cargodesk"
@@ -19319,7 +19310,7 @@ cW
 eN
 dY
 px
-lI
+lH
 ef
 fx
 eD

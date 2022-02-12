@@ -4636,10 +4636,6 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/habitation/observation)
 "jW" = (
-/obj/structure/bed/chair{
-	dir = 1;
-	icon_state = "chair_preview"
-	},
 /obj/machinery/light{
 	dir = 4
 	},
@@ -5100,6 +5096,9 @@
 	},
 /obj/machinery/body_scanconsole{
 	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
@@ -7624,15 +7623,23 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "pV" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
 /obj/structure/cable/green{
 	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
@@ -7930,9 +7937,6 @@
 	pixel_y = 24
 	},
 /obj/structure/hygiene/drain,
-/obj/structure/closet/walllocker/skinsuit/medical{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical)
 "qB" = (
@@ -8596,6 +8600,9 @@
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 9
 	},
+/obj/structure/closet/walllocker/skinsuit/medical{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical)
 "rU" = (
@@ -8830,11 +8837,15 @@
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "ss" = (
-/obj/machinery/light/small/red{
-	dir = 4
+/obj/machinery/firealarm{
+	dir = 8
 	},
-/turf/simulated/floor/plating,
-/area/ship/endeavour/maintenance/deckthree/aft/starboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "st" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -10032,9 +10043,10 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/atmospherics/unary/vent_scrubber/on{
-	dir = 8
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "uW" = (
@@ -11259,6 +11271,12 @@
 /obj/structure/curtain/medical,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"yp" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "yv" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
@@ -11290,6 +11308,14 @@
 /obj/effect/paint/sun,
 /turf/simulated/wall/titanium,
 /area/ship/endeavour/medical/counselor)
+"zT" = (
+/obj/machinery/door/airlock/maintenance,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/maintenance/deckthree/aft/starboard)
+"zU" = (
+/obj/machinery/bioprinter/filled,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "zX" = (
 /obj/machinery/door/firedoor,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -11321,6 +11347,9 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/hallway/third_deck/fore)
+"AR" = (
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "AS" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -11335,10 +11364,33 @@
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/hallway/third_deck/fore)
+"Bc" = (
+/obj/structure/bed/chair/office/comfy/black,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Bn" = (
 /obj/structure/table/woodentable/ebony,
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/medical/counselor)
+"Bq" = (
+/obj/machinery/power/apc{
+	dir = 8
+	},
+/obj/structure/cable/green,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
+"Br" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/autoname/endeavour/medical,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/medical/treatment)
 "BB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
@@ -11360,6 +11412,12 @@
 /obj/structure/bed,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"CO" = (
+/obj/structure/table,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Du" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -11398,7 +11456,8 @@
 /area/ship/endeavour/medical/treatment)
 "Gb" = (
 /obj/structure/bed/chair/office/comfy/brown{
-	dir = 8
+	dir = 1;
+	icon_state = "comfyofficechair_preview"
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/medical/counselor)
@@ -11489,8 +11548,13 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/turf/simulated/floor/plating,
-/area/ship/endeavour/maintenance/deckthree/aft/starboard)
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "JI" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -11505,6 +11569,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"JV" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Ka" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 10
@@ -11512,6 +11582,11 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/structure/cable/green{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "Kx" = (
@@ -11552,6 +11627,13 @@
 /obj/machinery/light/small,
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/medical/counselor)
+"Ma" = (
+/obj/effect/wallframe_spawn/reinforced,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/reinforced/airless,
+/area/ship/endeavour/medical/treatment)
 "Mh" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/corner/b_green{
@@ -11564,6 +11646,10 @@
 /obj/effect/paint/red,
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/security/maa_office)
+"MV" = (
+/obj/machinery/alarm,
+/turf/simulated/floor/plating,
+/area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "Ne" = (
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 6
@@ -11645,6 +11731,9 @@
 	dir = 4
 	},
 /obj/structure/bed,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "PF" = (
@@ -11669,6 +11758,11 @@
 /obj/effect/paint/black,
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/escape_pod/four)
+"Rf" = (
+/obj/structure/table,
+/obj/item/modular_computer/laptop/preset/records,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Rh" = (
 /obj/structure/bed/chair/armchair/brown,
 /turf/simulated/floor/carpet/blue2,
@@ -11790,6 +11884,15 @@
 /obj/item/ammo_magazine/smg,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/security/armory)
+"Ub" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/treatment)
 "Ue" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/cable/green{
@@ -11808,6 +11911,11 @@
 /obj/structure/curtain/medical,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"UR" = (
+/obj/structure/table,
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Vp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 4
@@ -11903,10 +12011,14 @@
 	dir = 10
 	},
 /obj/structure/cable/green{
-	icon_state = "2-8"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"ZO" = (
+/obj/effect/paint/black,
+/turf/simulated/wall/r_wall/prepainted,
+/area/ship/endeavour/medical/relacelab)
 "ZQ" = (
 /obj/effect/floor_decal/techfloor/orange/corner{
 	dir = 8
@@ -11914,12 +12026,15 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/security/armory)
 "ZR" = (
-/obj/structure/cable/green{
-	icon_state = "1-2"
+/obj/structure/table,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
 	},
-/obj/effect/wallframe_spawn/reinforced,
-/turf/simulated/floor/reinforced/airless,
-/area/ship/endeavour/maintenance/deckthree/aft/starboard)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/treatment)
 
 (1,1,1) = {"
 aa
@@ -18803,8 +18918,8 @@ aa
 aa
 aa
 aa
-ab
-ab
+aa
+aa
 qN
 jV
 jV
@@ -20709,7 +20824,7 @@ aa
 aa
 aa
 aa
-aa
+ab
 at
 aE
 aE
@@ -21763,7 +21878,7 @@ qC
 va
 qt
 qC
-bH
+hI
 uV
 lR
 aK
@@ -21898,7 +22013,7 @@ gR
 uT
 xx
 qL
-pX
+MV
 wZ
 ab
 ab
@@ -22018,14 +22133,14 @@ yh
 bH
 Yw
 tf
-tf
+ZR
 JI
 bM
 qL
 qL
 qL
 qL
-pX
+zT
 wZ
 aa
 aa
@@ -22145,15 +22260,15 @@ vd
 bH
 bH
 bH
-bH
+Ub
 Ka
-qO
+Br
 JE
-pX
+Bq
 ss
-pX
-pX
-wZ
+JV
+AR
+ZO
 aa
 aa
 aa
@@ -22274,13 +22389,13 @@ bH
 Jy
 bH
 IL
-wZ
-wZ
-wZ
-wZ
-wZ
-wZ
-wZ
+bM
+AR
+zU
+yp
+Bc
+CO
+ZO
 aa
 aa
 aa
@@ -22401,13 +22516,13 @@ bH
 Jy
 bH
 ZC
-ZR
-rH
-aa
-aa
-aa
-aa
-aa
+bM
+AR
+AR
+AR
+Rf
+UR
+ZO
 aa
 aa
 aa
@@ -22528,13 +22643,13 @@ NR
 UK
 WM
 OW
-wZ
-aa
-aa
-aa
-aa
-aa
-aa
+qm
+ZO
+ZO
+ZO
+ZO
+ZO
+ZO
 aa
 aa
 aa
@@ -22654,8 +22769,8 @@ bM
 qm
 VR
 FZ
-FZ
-wZ
+Ma
+qm
 aa
 aa
 aa
@@ -22780,8 +22895,8 @@ nv
 nv
 zP
 RG
-aa
-aa
+ab
+wA
 aa
 aa
 aa
