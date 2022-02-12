@@ -18,6 +18,8 @@
 #include "clothing/uniforms_iseo.dm"
 #include "datums/iseo_reports.dm"
 #include "decls/supplypacks.dm"
+#include "decls/uniforms_base.dm"
+#include "decls/uniforms_iseo.dm"
 #include "loadout/loadout_skillbadges.dm"
 #include "obj/decals.dm"
 #endif

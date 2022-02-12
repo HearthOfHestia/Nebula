@@ -1,30 +1,3 @@
-/decl/hierarchy/mil_uniform/iseo
-	name = "Master ISEO outfit"
-	abstract_type = /decl/hierarchy/mil_uniform/iseo
-	branches = list(/datum/mil_branch/iseo_issc)
-
-	pt_under = /obj/item/clothing/under/iseo/pt
-	pt_shoes = /obj/item/clothing/shoes/color/black
-
-	utility_under = /obj/item/clothing/under/iseo/utility
-	utility_shoes = /obj/item/clothing/shoes/jackboots/duty
-	utility_hat = /obj/item/clothing/head/iseo/utility
-	utility_extra = list(
-		/obj/item/clothing/head/iseo/beret
-	)
-	service_under = /obj/item/clothing/under/iseo/service/uniform
-	service_skirt = /obj/item/clothing/under/iseo/service/skirt
-	service_over = /obj/item/clothing/suit/storage/iseo/service
-	service_shoes = /obj/item/clothing/shoes/dress
-	service_hat = /obj/item/clothing/head/iseo/garrison_cap
-
-	dress_under = /obj/item/clothing/under/iseo/service/uniform
-	dress_skirt = /obj/item/clothing/under/iseo/service/skirt
-	dress_over = /obj/item/clothing/suit/iseo/dress
-	dress_shoes = /obj/item/clothing/shoes/dress
-	dress_hat = /obj/item/clothing/head/iseo/wheel_cap
-	dress_gloves = /obj/item/clothing/gloves/color/white
-
 //
 // ISEO Technician Outfits
 //
@@ -32,35 +5,35 @@
 /decl/hierarchy/mil_uniform/iseo/technician/engineering
 	name = "Engineering Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/engineering
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/engineering
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/engineering
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/engineering,
 						 /obj/item/clothing/gloves/duty/eng)
 
 /decl/hierarchy/mil_uniform/iseo/technician/supply
 	name = "Supply Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/supply
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/supply
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/supply
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/supply,
 						 /obj/item/clothing/gloves/duty/sup)
 
 /decl/hierarchy/mil_uniform/iseo/technician/medical
 	name = "Medical Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/medical
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/medical
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/medical
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/medical,
 						 /obj/item/clothing/gloves/duty/med)
 
 /decl/hierarchy/mil_uniform/iseo/technician/service
 	name = "Service Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/service
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/service
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/service
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/service,
 						 /obj/item/clothing/gloves/duty/srv)
 
 /decl/hierarchy/mil_uniform/iseo/technician/security
 	name = "Security Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/security
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/security
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/security
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/security,
 						 /obj/item/clothing/gloves/duty/sec,
 						 /obj/item/clothing/suit/storage/iseo/utility/security)
@@ -68,7 +41,7 @@
 /decl/hierarchy/mil_uniform/iseo/technician/exploration
 	name = "Exploration Technician"
 	utility_under = /obj/item/clothing/under/iseo/utility/exploration
-	utility_over = /obj/item/clothing/suit/storage/iseo/utility/science
+	// utility_over = /obj/item/clothing/suit/storage/iseo/utility/science
 	utility_extra = list(/obj/item/clothing/head/iseo/beret/exploration,
 						 /obj/item/clothing/gloves/duty/sci,
 						 /obj/item/clothing/suit/storage/iseo/utility/science)
