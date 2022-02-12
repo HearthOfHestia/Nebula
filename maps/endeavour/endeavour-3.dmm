@@ -10160,7 +10160,9 @@
 /area/ship/endeavour/habitation/bar)
 "vi" = (
 /obj/structure/catwalk,
-/obj/machinery/door/airlock/external/escapepod,
+/obj/machinery/door/airlock/external/escapepod{
+	name = "Counselor's Office"
+	},
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11554,6 +11556,10 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
+"Ib" = (
+/obj/structure/curtain/open/medical,
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/treatment)
 "Ii" = (
 /obj/machinery/power/apc{
 	dir = 1
@@ -11878,7 +11884,9 @@
 	icon_state = "4-8"
 	},
 /obj/structure/catwalk,
-/obj/machinery/door/airlock/external/escapepod,
+/obj/machinery/door/airlock/external/escapepod{
+	name = "Counselor's Office"
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/medical/counselor)
 "Se" = (
@@ -22456,9 +22464,9 @@ Jy
 Tn
 yo
 Jy
-bH
+Ib
 Jy
-bH
+Ib
 IL
 bM
 AR
@@ -22579,7 +22587,7 @@ cM
 cL
 Ri
 bH
-bH
+Ib
 Tn
 Jy
 bH
