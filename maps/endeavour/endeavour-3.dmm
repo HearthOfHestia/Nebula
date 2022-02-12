@@ -8844,6 +8844,9 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
 "st" = (
@@ -11310,6 +11313,9 @@
 /area/ship/endeavour/medical/counselor)
 "zT" = (
 /obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "zU" = (
@@ -11379,6 +11385,9 @@
 /obj/structure/cable/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
 "Br" = (
@@ -11461,6 +11470,12 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/medical/counselor)
+"Gi" = (
+/obj/structure/cable/green{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/relacelab)
 "Gu" = (
 /obj/structure/catwalk,
 /obj/random/maintenance,
@@ -11525,6 +11540,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/third_deck/fore)
+"Ii" = (
+/obj/machinery/power/apc{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "Iu" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating,
@@ -11572,6 +11596,9 @@
 "JV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
@@ -11648,6 +11675,9 @@
 /area/ship/endeavour/security/maa_office)
 "MV" = (
 /obj/machinery/alarm,
+/obj/structure/cable/green{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "Ne" = (
@@ -21886,7 +21916,7 @@ qB
 sw
 us
 qL
-pX
+Ii
 wZ
 wZ
 wZ
@@ -22267,7 +22297,7 @@ JE
 Bq
 ss
 JV
-AR
+Gi
 ZO
 aa
 aa
