@@ -10,8 +10,8 @@
 	icon = 'icons/obj/machines/heat_sources.dmi'
 	icon_state = "hotplate"
 	atom_flags = ATOM_FLAG_CLIMBABLE
-	density =    TRUE
-	anchored =   TRUE
+	density = FALSE
+	anchored = TRUE
 	idle_power_usage = 0
 	active_power_usage = 1.2 KILOWATTS
 	construct_state = /decl/machine_construction/default/panel_closed
