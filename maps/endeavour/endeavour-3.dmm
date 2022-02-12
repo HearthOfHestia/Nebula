@@ -201,7 +201,7 @@
 	pixel_x = -24
 	},
 /obj/machinery/light/small/red{
-	dir = 8
+	dir = 4
 	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/fore/starboard)
@@ -8847,6 +8847,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
 "st" = (
@@ -9182,6 +9185,9 @@
 	dir = 8
 	},
 /obj/item/broken_bottle,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/maintenance/deckthree/fore/starboard)
 "te" = (
@@ -11280,6 +11286,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
+"ys" = (
+/obj/structure/table/woodentable/ebony,
+/obj/item/flashlight/lamp/green,
+/turf/simulated/floor/carpet/blue2,
+/area/ship/endeavour/medical/counselor)
 "yv" = (
 /obj/effect/catwalk_plated,
 /obj/structure/disposalpipe/segment,
@@ -11404,6 +11415,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/cable/green{
 	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/medtech)
@@ -11624,6 +11638,13 @@
 /obj/machinery/washing_machine,
 /turf/simulated/floor/tiled/freezer,
 /area/ship/endeavour/habitation/bathroom/one)
+"Lm" = (
+/obj/structure/catwalk,
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/endeavour/maintenance/deckthree/aft/starboard)
 "Lt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11797,6 +11818,15 @@
 /obj/structure/bed/chair/armchair/brown,
 /turf/simulated/floor/carpet/blue2,
 /area/ship/endeavour/medical/counselor)
+"Ri" = (
+/obj/effect/floor_decal/corner/paleblue{
+	dir = 5
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/ship/endeavour/medical/treatment)
 "Rl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 4
@@ -11866,6 +11896,9 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/plating,
 /area/ship/endeavour/medical/counselor)
 "Td" = (
@@ -11893,6 +11926,12 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
+"Ts" = (
+/obj/machinery/light/small/red{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/ship/endeavour/maintenance/deckthree/fore/starboard)
 "Ty" = (
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 6
@@ -11944,6 +11983,7 @@
 "UR" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/relacelab)
 "Vp" = (
@@ -12043,6 +12083,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
+/obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/ship/endeavour/medical/treatment)
 "ZO" = (
@@ -21380,7 +21421,7 @@ mq
 mq
 ci
 ci
-ci
+Ts
 lI
 ci
 ci
@@ -21922,7 +21963,7 @@ wZ
 wZ
 wX
 qS
-zw
+Lm
 Gu
 zw
 wZ
@@ -22536,7 +22577,7 @@ cM
 cM
 cM
 cL
-kc
+Ri
 bH
 bH
 Tn
@@ -23174,7 +23215,7 @@ lT
 nv
 ru
 Rh
-Bn
+ys
 Bn
 LT
 nv
