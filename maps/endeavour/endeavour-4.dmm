@@ -1339,12 +1339,12 @@
 	dir = 4
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/door/airlock/vault/bolted{
-	autoset_access = 0;
-	req_access = list("ACCESS_VAULT")
-	},
 /obj/structure/cable/green{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/vault{
+	autoset_access = 0;
+	req_access = list("ACCESS_VAULT")
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/ship/endeavour/command/vault)
@@ -2540,10 +2540,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
-	},
-/obj/structure/bed/chair{
-	dir = 1;
-	icon_state = "chair_preview"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/recharge_station,
