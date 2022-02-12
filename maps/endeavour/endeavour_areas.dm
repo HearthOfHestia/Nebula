@@ -327,23 +327,23 @@
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/cmo
-	name = "\improper CMO's Office"
+	name = "\improper Chief Medical Officer's Office"
 	req_access = list(access_heads, access_cmo)
 
 /area/ship/endeavour/command/office/cmo/bedroom
-	name = "\improper CMO's Quarters"
+	name = "\improper Chief Medical Officer's Quarters"
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/maa
-	name = "\improper Ship Security Commander's Office"
+	name = "\improper Chief of Security's Office"
 	req_access = list(access_heads, access_hos)
 
 /area/ship/endeavour/command/office/maa/bedroom
-	name = "\improper Ship Security Commander's Quarters"
+	name = "\improper Chief of Security's Quarters"
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/xo/bedroom
-	name = "\improper First Officer's Quarters"
+	name = "\improper Executive Officer's Quarters"
 	icon_state = "combed"
 
 /area/ship/endeavour/command/office/bosun
@@ -356,12 +356,12 @@
 	icon_state = "bosunbed"
 
 /area/ship/endeavour/command/office/rd
-	name = "\improper Technology Director's Office"
+	name = "\improper Chief Science Officer's Office"
 	icon_state = "rdoffice"
 	req_access = list(access_heads, access_rd)
 
 /area/ship/endeavour/command/office/rd/bed
-	name = "\improper Technology Director's Quarters"
+	name = "\improper Chief Science Officer's Quarters"
 	icon_state = "rdoffice"
 
 /area/ship/endeavour/command/bathroom
@@ -378,21 +378,25 @@
 	name = "\improper Vault"
 	icon_state = "vault"
 	req_access = list(access_heads_vault)
+	secure = TRUE
 
 /area/ship/endeavour/command/sensitive_storage
 	name = "\improper Sensitive Storage"
 	icon_state = "selfdestruct"
 	req_access = list(access_heads_vault)
+	secure = TRUE
 
 /area/ship/endeavour/command/ofd
 	name = "\improper OFD Bay"
 	icon_state = "ofd"
 	req_access = list(access_bridge)
+	secure = TRUE
 
 /area/ship/endeavour/command/ofdstorage
 	name = "\improper OFD Charge Storage"
 	icon_state = "ofdammo"
 	req_access = list(access_bridge)
+	secure = TRUE
 
 
 
