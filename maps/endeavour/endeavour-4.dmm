@@ -946,7 +946,8 @@
 "cn" = (
 /obj/effect/floor_decal/corner/yellow/half,
 /obj/structure/bed/chair/comfy/captain{
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /obj/random_multi/single_item/palmers,
 /turf/simulated/floor/tiled/monotile,
@@ -1448,7 +1449,8 @@
 	dir = 1
 	},
 /obj/structure/bed/chair{
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -1653,7 +1655,8 @@
 "dC" = (
 /obj/effect/floor_decal/corner/b_green/half,
 /obj/structure/bed/chair/comfy/green{
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/ship/endeavour/command/bridge)
@@ -1690,7 +1693,8 @@
 	},
 /obj/machinery/light,
 /obj/structure/bed/chair{
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/carpet/green,
 /area/ship/endeavour/command/office/xo)
@@ -1789,7 +1793,8 @@
 /area/ship/endeavour/command/office/cmo)
 "dP" = (
 /obj/structure/bed/chair/comfy/purple{
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
@@ -2135,7 +2140,8 @@
 	dir = 4
 	},
 /obj/structure/bed/chair{
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -2534,7 +2540,8 @@
 	dir = 5
 	},
 /obj/structure/bed/chair{
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/machinery/recharge_station,
@@ -4084,7 +4091,8 @@
 "oq" = (
 /obj/effect/floor_decal/corner/blue/mono,
 /obj/structure/bed/chair{
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /obj/machinery/camera/network/fourth_deck{
 	dir = 4
@@ -4616,7 +4624,8 @@
 /area/ship/endeavour/command/meetingroom)
 "LI" = (
 /obj/structure/bed/chair/comfy/blue{
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /turf/simulated/floor/wood/walnut,
 /area/ship/endeavour/command/meetingroom)
@@ -4766,7 +4775,8 @@
 /area/ship/endeavour/command/meetingroom)
 "Ug" = (
 /obj/structure/bed/chair/comfy/brown{
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/wood/walnut,

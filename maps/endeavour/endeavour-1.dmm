@@ -1631,7 +1631,8 @@
 /area/ship/endeavour/hallway/first_deck)
 "ee" = (
 /obj/structure/bed/chair/office/comfy/beige{
-	dir = 1
+	dir = 1;
+	icon_state = "officechair_preview"
 	},
 /obj/effect/floor_decal/corner/brown{
 	dir = 5
@@ -2550,6 +2551,10 @@
 	dir = 4
 	},
 /obj/machinery/disposal,
+/obj/machinery/alarm{
+	dir = 4;
+	pixel_x = -24
+	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd)
 "gc" = (
@@ -6971,7 +6976,8 @@
 /area/ship/endeavour/shuttle/perseverance/cargo)
 "pW" = (
 /obj/structure/bed/chair/shuttle/black{
-	dir = 1
+	dir = 1;
+	icon_state = "shuttle_chair_preview"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
@@ -9070,12 +9076,14 @@
 /turf/simulated/floor/reinforced,
 /area/ship/endeavour/science/xenoarch)
 "yR" = (
-/obj/machinery/alarm{
-	dir = 1;
-	pixel_y = -24
+/obj/structure/window/reinforced{
+	dir = 4
 	},
-/obj/machinery/camera/network/research{
-	dir = 1
+/obj/structure/window/reinforced,
+/obj/machinery/design_database,
+/obj/machinery/door/window/brigdoor/northleft{
+	autoset_access = 0;
+	req_access = list("ACCESS_RESEARCH_DIRECTOR", "ACCESS_HEADS")
 	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd)
@@ -9255,14 +9263,15 @@
 /area/ship/endeavour/maintenance/deckone/amidships/port)
 "De" = (
 /obj/structure/rack,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
 /obj/structure/window/reinforced,
-/obj/machinery/door/window{
+/obj/item/rig/hazmat,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/rig/hazmat,
+/obj/machinery/door/window/brigdoor/northright{
+	autoset_access = 0;
+	req_access = list("ACCESS_RESEARCH_DIRECTOR", "ACCESS_HEADS")
+	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd)
 "Dp" = (
@@ -9671,6 +9680,9 @@
 	pixel_x = 24;
 	pixel_y = -30
 	},
+/obj/machinery/camera/network/research{
+	dir = 1
+	},
 /turf/simulated/floor/carpet/purple,
 /area/ship/endeavour/command/office/rd)
 "Lo" = (
@@ -9863,7 +9875,7 @@
 /area/ship/endeavour/hallway/first_deck)
 "PP" = (
 /obj/machinery/network/mainframe{
-	initial_network_id = "wolfnet"
+	initial_network_id = "endeavour_network"
 	},
 /turf/simulated/floor/bluegrid,
 /area/ship/endeavour/science/server_room)
@@ -9917,7 +9929,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/black,
 /obj/machinery/light,
 /obj/machinery/network/router{
-	initial_network_id = "wolfnet"
+	initial_network_id = "endeavour_network"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/science/server_room)
