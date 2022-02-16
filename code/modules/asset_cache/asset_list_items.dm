@@ -385,7 +385,8 @@ var/global/template_file_name = "all_templates.json"
 		"nano/images/",
 		"nano/images/status_icons/",
 		"nano/images/modular_computers/",
-		"nano/js/"
+		"nano/js/",
+		"html/browser/"
 	)
 	var/list/uncommon_dirs = list(
 		"news_articles/images/"
@@ -401,6 +402,7 @@ var/global/template_file_name = "all_templates.json"
 			if(copytext(filename, length(filename)) != "/") // Ignore directories.
 				if(fexists(path + filename))
 					common[filename] = fcopy_rsc(path + filename)
+					log_asset("Registering asset... [filename]")
 					register_asset(filename, common[filename])
 	for (var/path in uncommon_dirs)
 		var/list/filenames = flist(path)

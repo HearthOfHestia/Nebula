@@ -31,10 +31,10 @@
 
 	if(ntitle)
 		set_title(ntitle)
-	
+
 	if(nwidth)
 		width = nwidth
-	
+
 	if(nheight)
 		height = nheight
 
@@ -62,6 +62,11 @@
 
 /datum/browser/proc/add_stylesheet(name, file)
 	stylesheets[name] = file
+
+	var/asset_name = "[name].css"
+
+	if (!SSassets.cache[asset_name])
+		register_asset(asset_name, file)
 
 /datum/browser/proc/add_script(name, file)
 	scripts[name] = file
@@ -120,6 +125,7 @@
 	var/window_size = ""
 	if(width && height)
 		window_size = "size=[width||0]x[height||0];"
+	send_asset_list(user, stylesheets)
 
 	show_browser(user, get_content(), "window=[window_id];[window_size][window_options]")
 
@@ -151,9 +157,9 @@
  * Otherwise, the user mob's machine var will be reset directly.
  */
 /proc/onclose(mob/user, windowid, atom/ref)
-	if(!user || !user.client) 
+	if(!user || !user.client)
 		return
-	
+
 	var/param = ref ? "\ref[ref]" : "null"
 	addtimer(CALLBACK(user, /mob/proc/post_onclose, windowid, param), 2)
 
@@ -162,9 +168,9 @@
 		winset(src, windowid, "on-close=\".windowclose [param]\"")
 
 
-/** 
+/**
  * the on-close client verb
- * 
+ *
  * called when a browser popup window is closed after registering with proc/onclose()
  * if a valid atom reference is supplied, call the atom's Topic() with "close=1"
  * otherwise, just reset the client mob's machine var.
