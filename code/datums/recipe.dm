@@ -197,19 +197,19 @@
 
 	//Find fruits
 	if (LAZYLEN(fruit))
-		var/list/checklist = list()
-		checklist = fruit.Copy()
-
-		for(var/obj/item/chems/food/grown/G in container_contents)
-			if(!G.seed || !G.seed.kitchen_tag || isnull(checklist[G.seed.kitchen_tag]))
+		var/list/needed_fruits = fruit.Copy()
+		for(var/obj/item/chems/food/S in container_contents)
+			var/list/tags = S.get_kitchen_tags()
+			if(!LAZYLEN(tags))
 				continue
-
-			if (checklist[G.seed.kitchen_tag] > 0)
-				//We found a thing we need
-				checklist[G.seed.kitchen_tag]--
-				if (G && G.reagents)
-					G.reagents.trans_to_holder(buffer,G.reagents.total_volume)
-				qdel(G)
+			var/use_tag = tags.Join(" ")
+			if(isnull(needed_fruits[use_tag]))
+				continue
+			if(check_coating(S))
+				needed_fruits[use_tag]--
+				if(S.reagents)
+					S.reagents.trans_to_holder(buffer,S.reagents.total_volume)
+				qdel(S)
 
 	//And lastly deduct necessary quantities of reagents
 	if (LAZYLEN(reagents))
