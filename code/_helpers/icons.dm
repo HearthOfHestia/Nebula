@@ -706,7 +706,7 @@ The _flatIcons list is a cache for generated icon files.
 	var/flatX2= flat.Width()
 	var/flatY1= 1
 	var/flatY2= flat.Height()
-	
+
 	// Dimensions of overlay being added
 	var/addX1
 	var/addX2
@@ -785,7 +785,7 @@ The _flatIcons list is a cache for generated icon files.
 			flat.MapColors(arglist(A.color))
 
 		// Probably a valid color, could check length_char(A.color) == 7 if color normalization becomes etc etc etc.
-		else if(istext(A.color)) 
+		else if(istext(A.color))
 			flat.Blend(A.color, ICON_MULTIPLY)
 
 	// Colour matrices track/apply alpha changes in MapColors() above, so only apply if color isn't a matrix.
@@ -922,3 +922,15 @@ lighting determines lighting capturing (optional), suppress_errors suppreses err
 
 	return cap
 
+
+var/global/list/icon_state_lists = list()
+/proc/cached_icon_states(var/icon/I)
+	if(!I)
+		return list()
+	var/key = I
+	var/returnlist = global.icon_state_lists[key]
+	if(!returnlist)
+		returnlist = icon_states(I)
+		if(isfile(I)) // It's something that will stick around
+			global.icon_state_lists[key] = returnlist
+	return returnlist

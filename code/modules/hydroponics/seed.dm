@@ -832,28 +832,14 @@
 	return 0
 
 /datum/seed/proc/get_icon(growth_stage)
-	var/plant_icon = get_trait(TRAIT_PLANT_ICON)
-	var/image/res = image('icons/obj/hydroponics/hydroponics_growing.dmi', "[plant_icon]-[growth_stage]")
+	if(!SSplants?.initialized)
+		return null
+	var/plant_state = get_trait(TRAIT_PLANT_ICON)
+	var/plant_icon = 'icons/obj/hydroponics/hydroponics_growing.dmi'
 	if(get_growth_type())
-		res.icon_state = "[get_growth_type()]-[growth_stage]"
-	else
-		res.icon_state = "[plant_icon]-[growth_stage]"
-
-	if(get_growth_type())
-		res.icon = 'icons/obj/hydroponics/hydroponics_vines.dmi'
-
-	res.color = get_trait(TRAIT_PLANT_COLOUR)
-
-	if(get_trait(TRAIT_LARGE))
-		res.icon = 'icons/obj/hydroponics/hydroponics_large.dmi'
-		res.pixel_x = -8
-		res.pixel_y = -16
-
-	var/leaves = get_trait(TRAIT_LEAVES_COLOUR)
-	if(leaves)
-		var/image/I = image(res.icon, "[plant_icon]-[growth_stage]-leaves")
-		I.color = leaves
-		I.appearance_flags = RESET_COLOR
-		res.overlays += I
-
-	return res
+		plant_state = get_growth_type()
+		plant_icon = 'icons/obj/hydroponics/hydroponics_vines.dmi'
+	var/large = get_trait(TRAIT_LARGE)
+	if(large)
+		plant_icon = 'icons/obj/hydroponics/hydroponics_large.dmi'
+	return SSplants.get_plant_icon(plant_icon, plant_state, growth_stage, get_trait(TRAIT_PLANT_COLOUR), large, get_trait(TRAIT_LEAVES_COLOUR))

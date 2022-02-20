@@ -12,8 +12,8 @@ PROCESSING_SUBSYSTEM_DEF(plants)
 	var/list/seeds = list()                 // All seed data stored here.
 	var/list/gene_tag_masks = list()        // Gene obfuscation for delicious trial and error goodness.
 	var/list/plant_icon_cache = list()      // Stores images of growth, fruits and seeds.
-	var/list/plant_sprites = list()         // List of all harvested product sprites.
-	var/list/plant_product_sprites = list() // List of all growth sprites plus number of growth stages.
+	var/list/plant_sprites = list()         // List of all harvested product icon state names.
+	var/list/plant_product_sprites = list() // List of all growth icon state names plus number of growth stages.
 	var/list/gene_masked_list = list()		// Stored gene masked list, rather than recreating it when needed.
 	var/list/plant_gene_datums = list()		// Stored datum versions of the gene masked list.
 
@@ -89,3 +89,88 @@ PROCESSING_SUBSYSTEM_DEF(plants)
 		seed.set_trait(TRAIT_LOWKPA_TOLERANCE,25)
 		seed.set_trait(TRAIT_HIGHKPA_TOLERANCE,200)
 	return seed
+
+/datum/controller/subsystem/processing/plants/proc/add_product_icon(var/icon_path, var/icon_state, var/fruit_color, var/leaf_color)
+	var/icon_key = "fruit-[icon_state]-[fruit_color]-[leaf_color]"
+	var/image/plant_icon = image(icon_path,"blank")
+	var/image/fruit_base = image(icon_path,"[icon_state]-product")
+	fruit_base.color = "[fruit_color]"
+	plant_icon.add_overlay(fruit_base)
+	if("[icon_state]-leaf" in cached_icon_states(icon_path))
+		var/image/fruit_leaves = image(icon_path,"[icon_state]-leaf")
+		fruit_leaves.color = "[leaf_color]"
+		plant_icon.add_overlay(fruit_leaves)
+	plant_icon_cache[icon_key] = plant_icon
+	return plant_icon_cache[icon_key]
+
+/datum/controller/subsystem/processing/plants/proc/get_fruit_icon(var/icon_path, var/icon_state, var/fruit_color, var/leaf_color)
+	var/icon_key = "fruit-[icon_state]-[fruit_color]-[leaf_color]"
+	return plant_icon_cache[icon_key] || add_product_icon(icon_path, icon_state, fruit_color, leaf_color)
+
+/datum/controller/subsystem/processing/plants/proc/add_plant_icon(var/icon_path, var/icon_state, var/growth_stage, var/plant_color, var/large, var/leaf_color = FALSE)
+	var/icon_key = "plant-[icon_state]-[growth_stage]-[leaf_color]-[large]"
+	var/image/res = image(icon_path, "[icon_state]-[growth_stage]")
+
+	res.color = plant_color
+
+	if(large)
+		res.pixel_x = -8
+		res.pixel_y = -16
+
+	if(leaf_color)
+		var/image/I = image(res.icon, "[icon_state]-[growth_stage]-leaves")
+		I.color = leaf_color
+		I.appearance_flags = RESET_COLOR
+		res.add_overlay(I)
+
+	plant_icon_cache[icon_key] = res
+	return res
+
+/datum/controller/subsystem/processing/plants/proc/get_plant_icon(var/icon_path, var/icon_state, var/growth_stage, var/plant_color, var/large, var/leaf_color = FALSE)
+	var/icon_key = "plant-[icon_state]-[growth_stage]-[leaf_color]-[large]"
+	return plant_icon_cache[icon_key] || add_plant_icon(icon_path, icon_state, growth_stage, plant_color, large, leaf_color)
+
+/datum/controller/subsystem/processing/plants/proc/add_product_overlay(var/icon_path, var/icon_state, var/product_color)
+	var/icon_key = "product-[icon_state]-[product_color]"
+	var/image/harvest_overlay = image(icon_path, icon_state)
+	harvest_overlay.color = product_color
+	plant_icon_cache[icon_key] = harvest_overlay
+	return harvest_overlay
+
+/datum/controller/subsystem/processing/plants/proc/get_product_overlay(var/icon_path, var/icon_state, var/product_color)
+	var/icon_key = "product-[icon_state]-[product_color]"
+	return plant_icon_cache[icon_key] || add_product_overlay(icon_path, icon_state, product_color)
+
+/datum/controller/subsystem/processing/plants/proc/add_dead_overlay(var/icon_path, var/icon_state)
+	var/icon_key = "dead-[icon_state]"
+	var/image/dead_overlay = image(icon_path, "[icon_state]-dead")
+	dead_overlay.color = DEAD_PLANT_COLOUR
+	plant_icon_cache[icon_key] = dead_overlay
+	return dead_overlay
+
+/datum/controller/subsystem/processing/plants/proc/get_dead_overlay(var/icon_path, var/icon_state)
+	var/icon_key = "dead-[icon_state]"
+	return plant_icon_cache[icon_key] || add_dead_overlay(icon_path, icon_state)
+
+/datum/controller/subsystem/processing/plants/proc/add_seed_mask(var/icon_path, var/mask_color, var/is_seeds)
+	var/icon_key = "seed-mask-[is_seeds ? mask_color : "spores"]"
+	var/image/seed_mask = image(icon_path, "[is_seeds ? "seed" : "spore"]-mask")
+	if(is_seeds) // Spore glass bits aren't coloured.
+		seed_mask.color = mask_color
+	plant_icon_cache[icon_key] = seed_mask
+	return seed_mask
+
+/datum/controller/subsystem/processing/plants/proc/get_seed_mask(var/icon_path, var/mask_color, var/is_seeds)
+	var/icon_key = "seed-mask-[is_seeds ? mask_color : "spores"]"
+	return plant_icon_cache[icon_key] || add_seed_mask(icon_path, mask_color, is_seeds)
+
+/datum/controller/subsystem/processing/plants/proc/add_seed_overlay(var/icon_path, var/icon_state, var/seed_color)
+	var/icon_key = "seed-[icon_state]-[seed_color]"
+	var/image/seed_overlay = image(icon_path,"[icon_state]")
+	seed_overlay.color = seed_color
+	plant_icon_cache[icon_key] = seed_overlay
+	return seed_overlay
+
+/datum/controller/subsystem/processing/plants/proc/get_seed_overlay(var/icon_path, var/icon_state, var/seed_color)
+	var/icon_key = "seed-[icon_state]-[seed_color]"
+	return plant_icon_cache[icon_key] || add_seed_overlay(icon_path, icon_state, seed_color)
