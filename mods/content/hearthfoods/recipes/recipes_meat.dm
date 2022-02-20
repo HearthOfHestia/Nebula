@@ -75,7 +75,7 @@
 	result = /obj/item/chems/food/baconburger
 
 /decl/recipe/blt
-	fruit = list("tomato" = 1, "lettuce" = 1)
+	fruit = list("tomato" = 2, "lettuce" = 1)
 	items = list(
 		/obj/item/chems/food/slice/bread = 2,
 		/obj/item/chems/food/bacon = 2

@@ -22,7 +22,7 @@
 
 /decl/recipe/keylimepie
 	appliance = APPLIANCE_OVEN
-	fruit = list("lime" = 2)
+	fruit = list("lime slice" = 2)
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/sugar = 5, /decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/nutriment/flour = 10)
 	result = /obj/item/chems/food/sliceable/keylimepie
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise

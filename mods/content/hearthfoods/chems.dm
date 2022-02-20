@@ -15,6 +15,7 @@
 	lore_text = "Grape juice from green grapes."
 	taste_description = "green grapes"
 	color = "#42ed2f"
+	uid = "chem_drink_grape_green"
 
 	glass_name = "green grape juice"
 	glass_desc = "Grape juice from green grapes."
@@ -24,6 +25,7 @@
 	lore_text = "Grape juice from white grapes."
 	taste_description = "white grapes"
 	color = "#42ed2f"
+	uid = "chem_drink_grape_white"
 
 	glass_name = "white grape juice"
 	glass_desc = "Grape juice from white grapes."

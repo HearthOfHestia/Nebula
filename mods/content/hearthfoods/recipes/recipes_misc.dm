@@ -49,7 +49,7 @@
 
 /decl/recipe/fish_taco
 	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
-	fruit = list("chili" = 1, "lemon" = 1)
+	fruit = list("chili" = 1, "lemon slice" = 1)
 	items = list(
 		/obj/item/chems/food/fish = 1,
 		/obj/item/chems/food/tortilla = 1
@@ -98,7 +98,7 @@
 
 /decl/recipe/fruitsalad
 	appliance = APPLIANCE_MIX
-	fruit = list("orange" = 1, "apple" = 1, "grapes" = 1, "watermelon" = 1)
+	fruit = list("orange slice" = 2, "apple slice" = 2, "grape" = 1, "watermelon slice" = 1)
 	result = /obj/item/chems/food/fruitsalad
 
 /decl/recipe/benedict
