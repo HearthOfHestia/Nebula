@@ -231,16 +231,16 @@
 	desc = "A chicken nugget vaguely shaped like a [shape]."
 	icon_state = "nugget_[shape]"
 
-/obj/item/chems/food/hatchling_suprise
-	name = "hatchling suprise"
+/obj/item/chems/food/hatchling_surprise
+	name = "hatchling surprise"
 	desc = "A poached egg on top of three slices of bacon. A typical breakfast for hungry Unathi children."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
-	icon_state = "hatchling_suprise"
+	icon_state = "hatchling_surprise"
 	trash = /obj/item/trash/snack_bowl
 	nutriment_type = /decl/material/liquid/nutriment/protein
 	nutriment_amt = 4
 
-/obj/item/chems/food/hatchling_suprise/Initialize()
+/obj/item/chems/food/hatchling_surprise/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein/egg, 2)
 

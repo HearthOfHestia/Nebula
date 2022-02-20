@@ -22,12 +22,28 @@
 	filling_color = "#eddd00"
 	nutriment_amt = 8
 	nutriment_desc = list("hearty, cheesy fries" = 8)
-	bitesize = 4
+	bitesize = 3
 
 /obj/item/chems/food/chilicheesefries/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 2)
 	reagents.add_reagent(/decl/material/liquid/capsaicin, 2)
+
+/obj/item/chems/food/carrotfries
+	name = "carrot fries"
+	desc = "Tasty fries from fresh carrots."
+	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
+	icon_state = "carrotfries"
+	trash = /obj/item/trash/plate
+	filling_color = "#FAA005"
+	nutriment_amt = 3
+	nutriment_desc = list("carrot" = 3)
+	bitesize = 2
+
+/obj/item/chems/food/carrotfries/Initialize()
+	. = ..()
+	reagents.add_reagent(/decl/material/liquid/eyedrops, 1)
+	reagents.add_reagent(/decl/material/solid/sodiumchloride, 1)
 
 /obj/item/chems/food/friedmushroom
 	name = "fried mushroom"
@@ -37,7 +53,7 @@
 	filling_color = "#eddd00"
 	nutriment_amt = 4
 	nutriment_desc = list("alcoholic mushrooms" = 4)
-	bitesize = 5
+	bitesize = 6
 
 /obj/item/chems/food/friedmushroom/Initialize()
 	. = ..()
@@ -66,7 +82,7 @@
 	icon_state = "batteredsausage"
 	filling_color = "#db0000"
 	do_coating_prefix = FALSE
-	bitesize = 2
+	bitesize = 3
 
 /obj/item/chems/food/sausage/battered/Initialize()
 	. = ..()
@@ -76,7 +92,7 @@
 
 /obj/item/chems/food/jalapeno_poppers
 	name = "jalapeno popper"
-	desc = "A battered, deep-fried chili pepper."
+	desc = "A battered, deep-fried chili pepper stuffed with melted cheese."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "popper"
 	filling_color = "#00aa00"
@@ -106,28 +122,31 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/batter/beerbatter, 2)
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride/oil, 1)
 
+/obj/item/chems/food/fries
+	name = "fries" // NOT CHIPS
+
 /obj/item/chems/food/fries/Initialize()
 	. = ..()
 	reagents.add_reagent(/decl/material/liquid/nutriment/triglyceride/oil, 1.2)
 
 // i'm putting these here because they're fries
 // even though they're not actually fried
-/obj/item/chems/food/microchips
+/obj/item/chems/food/microfries
 	name = "micro chips"
 	desc = "Soft and rubbery, should have fried them. Good for smaller crewmembers, maybe?"
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
-	icon_state = "microchips"
+	icon_state = "microfries"
 	trash = /obj/item/trash/plate
 	filling_color = "#eddd00"
 	nutriment_amt = 4
-	nutriment_desc = list("soggy fries" = 4)
+	nutriment_desc = list("soggy potato slices" = 4)
 	bitesize = 2
 
-/obj/item/chems/food/ovenchips
-	name = "oven chips"
+/obj/item/chems/food/ovenfries
+	name = "baked fries"
 	desc = "Dark and crispy, but a bit dry."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
-	icon_state = "ovenchips"
+	icon_state = "bakedfries"
 	trash = /obj/item/trash/plate
 	filling_color = "#eddd00"
 	nutriment_amt = 4
@@ -187,12 +206,15 @@
 
 /obj/item/chems/food/corn_dog
 	name = "corn dog"
-	desc = "A cornbread covered sausage deepfried in oil."
+	desc = "A batter-covered sausage deep-fried in oil."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "corndog"
+	trash = /obj/item/trash/stick
+	nutriment_type = /decl/material/liquid/nutriment/bread
 	nutriment_desc = list("corn batter" = 4)
 	nutriment_amt = 4
+	bitesize = 2
 
 /obj/item/chems/food/corn_dog/Initialize()
 	. = ..()
-	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 3)
+	reagents.add_reagent(/decl/material/liquid/nutriment/protein, 4)

@@ -1,8 +1,12 @@
 /decl/recipe/jpoppers
 	appliance = APPLIANCE_FRYER
-	fruit = list("chili" = 1)
+	fruit = list("chili" = 4)
 	coating = /decl/material/liquid/nutriment/batter
+	items = list(
+		/obj/item/chems/food/cheesewedge = 1
+	)
 	result = /obj/item/chems/food/jalapeno_poppers
+	result_quantity = 4
 
 /decl/recipe/risottoballs
 	appliance = APPLIANCE_FRYER

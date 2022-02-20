@@ -5,9 +5,8 @@
 	icon_state = "spacespicebottle"
 	possible_transfer_amounts = @"[1,40]"
 	volume = 40
-	center_of_mass = @"{'x':16,'y':9}"
 	starting_reagents = list(/decl/material/solid/spacespice = 40)
-	var/has_done_jank = FALSE
+	var/static/has_done_jank = FALSE
 
 /obj/item/chems/condiment/small/spacespice/Initialize()
 	. = ..()

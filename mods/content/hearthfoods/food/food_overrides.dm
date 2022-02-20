@@ -51,10 +51,10 @@ FOOD_OVERRIDE(/obj/item/chems/food/dionaroast)
 FOOD_OVERRIDE(/obj/item/chems/food/sausage)
 FOOD_OVERRIDE(/obj/item/chems/condiment/ketchup)
 FOOD_OVERRIDE(/obj/item/chems/condiment)
+FOOD_OVERRIDE(/obj/item/chems/food/enchiladas)
 
 // un-override these until they get new sprites
-/obj/item/chems/condiment/vinegar/icon = 'icons/obj/food.dmi'
-/obj/item/chems/condiment/small/icon = 'icons/obj/food.dmi'
+/obj/item/chems/condiment/small/packet/icon = 'icons/obj/food.dmi'
 
 #undef FOOD_OVERRIDE
 #undef INGREDIENTS_OVERRIDE

@@ -58,7 +58,6 @@
 	icon_state = "bibimbap"
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#4f2100"
-	center_of_mass = @"{'x':15,'y':9}"
 	nutriment_amt = 6
 	nutriment_desc = list("rice" = 2, "mushroom" = 2, "carrot" = 2)
 	bitesize = 4
@@ -78,7 +77,6 @@
 	icon_state = "friedrice"
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#fffbdb"
-	center_of_mass = @"{'x':17,'y':11}"
 	nutriment_amt = 4
 	nutriment_desc = list("soy" = 2, "cabbage" = 2)
 	bitesize = 2
