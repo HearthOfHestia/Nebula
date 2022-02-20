@@ -15,8 +15,8 @@
 	set_trait(TRAIT_YIELD,6)
 	set_trait(TRAIT_POTENCY,8)
 	set_trait(TRAIT_PRODUCT_ICON,"cabbage")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#A8D0A7")
-	set_trait(TRAIT_PLANT_COLOUR,"#6D9C6B")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#a8d0a7")
+	set_trait(TRAIT_PLANT_COLOUR,"#6d9c6b")
 	set_trait(TRAIT_PLANT_ICON,"vine2")
 	set_trait(TRAIT_IDEAL_LIGHT, 6)
 	set_trait(TRAIT_WATER_CONSUMPTION, 8)
@@ -37,7 +37,7 @@
 	set_trait(TRAIT_YIELD,5)
 	set_trait(TRAIT_POTENCY,6)
 	set_trait(TRAIT_PRODUCT_ICON,"stalk")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#FD5656")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#fd5656")
 	set_trait(TRAIT_PLANT_ICON,"stalk3")
 
 // Wurmwoad, produces space spice.
@@ -79,7 +79,7 @@
 	set_trait(TRAIT_YIELD,3)
 	set_trait(TRAIT_POTENCY,8)
 	set_trait(TRAIT_PRODUCT_ICON,"stalk")
-	set_trait(TRAIT_PRODUCT_COLOUR,"#56FD56")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#56fd56")
 	set_trait(TRAIT_PLANT_ICON,"stalk3")
 
 /datum/seed/grapes

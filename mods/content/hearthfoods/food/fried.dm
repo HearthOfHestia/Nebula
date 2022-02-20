@@ -35,7 +35,7 @@
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "carrotfries"
 	trash = /obj/item/trash/plate
-	filling_color = "#FAA005"
+	filling_color = "#faa005"
 	nutriment_amt = 3
 	nutriment_desc = list("carrot" = 3)
 	bitesize = 2

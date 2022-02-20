@@ -1,7 +1,7 @@
 /obj/item/chems/food/benedict
 	name = "eggs benedict"
 	desc = "Hey, there's only one egg in this!"
-	filling_color = "#FFDF78"
+	filling_color = "#ffdf78"
 	icon_state = "benedict"
 	nutriment_type = /decl/material/liquid/nutriment/bread
 	nutriment_amt = 2
@@ -16,14 +16,14 @@
 /obj/item/chems/food/beans
 	name = "baked beans"
 	desc = "Musical fruit in a slightly less musical container."
-	filling_color = "#FC6F28"
+	filling_color = "#fc6f28"
 	icon_state = "bakedbeans"
 	bitesize = 2
 
 /obj/item/chems/food/sugarcookie
 	name = "sugar cookie"
 	desc = "Just like your little sister used to make."
-	filling_color = "#DBC94F"
+	filling_color = "#dbc94f"
 	icon_state = "sugarcookie"
 	nutriment_type = /decl/material/liquid/nutriment/bread
 	nutriment_amt = 2
@@ -38,7 +38,7 @@
 	name = "fruit salad"
 	desc = "Your standard fruit salad."
 	icon_state = "fruitsalad"
-	filling_color = "#FF3867"
+	filling_color = "#ff3867"
 	nutriment_amt = 10
 	nutriment_desc = list("fruit" = 10)
 	bitesize = 4
@@ -48,7 +48,7 @@
 	desc = "A bowl of fried rice with egg mixed in."
 	icon_state = "eggbowl"
 	trash = /obj/item/trash/snack_bowl
-	filling_color = "#FFFBDB"
+	filling_color = "#fffbdb"
 	nutriment_type = /decl/material/liquid/nutriment/rice
 	nutriment_amt = 6
 	nutriment_desc = list("rice" = 6)
