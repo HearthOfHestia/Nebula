@@ -46,7 +46,7 @@
 			I.appearance_flags |= RESET_COLOR
 			I.color = reinf_material.color
 		add_overlay(I)
-	if(has_special_overlay && buckled_mob)
+	if(has_special_overlay)
 		I = image(icon, "[icon_state]_special")
 		I.layer = buckled_mob ? ABOVE_HUMAN_LAYER : FLOAT_LAYER
 		if(material_alteration & MAT_FLAG_ALTERATION_COLOR)
@@ -218,6 +218,32 @@
 /obj/structure/bed/chair/office/comfy/lime
 	reinf_material = /decl/material/solid/cloth/lime
 /obj/structure/bed/chair/office/comfy/yellow
+	reinf_material = /decl/material/solid/cloth/yellow
+
+/obj/structure/bed/chair/rounded
+	name = "rounded chair"
+	desc = "It's a rounded chair. It looks comfy."
+	icon_state = "roundedchair"
+
+/obj/structure/bed/chair/rounded/brown
+	reinf_material = /decl/material/solid/leather
+/obj/structure/bed/chair/rounded/red
+	reinf_material = /decl/material/solid/carpet
+/obj/structure/bed/chair/rounded/teal
+	reinf_material = /decl/material/solid/cloth/teal
+/obj/structure/bed/chair/rounded/black
+	reinf_material = /decl/material/solid/cloth/black
+/obj/structure/bed/chair/rounded/green
+	reinf_material = /decl/material/solid/cloth/green
+/obj/structure/bed/chair/rounded/purple
+	reinf_material = /decl/material/solid/cloth/purple
+/obj/structure/bed/chair/rounded/blue
+	reinf_material = /decl/material/solid/cloth/blue
+/obj/structure/bed/chair/rounded/beige
+	reinf_material = /decl/material/solid/cloth/beige
+/obj/structure/bed/chair/rounded/lime
+	reinf_material = /decl/material/solid/cloth/lime
+/obj/structure/bed/chair/rounded/yellow
 	reinf_material = /decl/material/solid/cloth/yellow
 
 /obj/structure/bed/chair/shuttle
