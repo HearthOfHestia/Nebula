@@ -20,6 +20,7 @@
 	#include "../away/unishi/unishi.dm"
 	#include "../away/yacht/yacht.dm"
 	#include "../away/liberia/liberia.dm"
+	#include "../away/particle_accelerator/particle_accelerator.dm"
 
 	#define USING_MAP_DATUM /datum/map/away_sites_testing
 
