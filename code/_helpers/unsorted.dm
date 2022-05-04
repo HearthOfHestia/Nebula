@@ -790,6 +790,13 @@ var/global/list/WALLITEMS = list(
 			colour += temp_col
 	return "#[colour]"
 
+//gives us the stack trace from CRASH() without ending the current proc
+/proc/stack_trace(msg)
+	CRASH(msg)
+
+/datum/proc/stack_trace(msg)
+	CRASH(msg)
+
 // call to generate a stack trace and print to runtime logs
 /proc/get_stack_trace(msg, file, line)
 	CRASH("%% [file],[line] %% [msg]")

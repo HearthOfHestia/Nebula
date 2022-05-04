@@ -6,6 +6,6 @@ SUBSYSTEM_DEF(misc_late)
 
 /datum/controller/subsystem/misc_late/Initialize()
 	global.using_map.build_exoplanets()
-	var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache)
-	asset_cache.load()
+	//var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache) //TODO: Migrate
+	//asset_cache.load()
 	. = ..()

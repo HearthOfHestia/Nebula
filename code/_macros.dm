@@ -103,7 +103,7 @@
 #define show_browser(target, browser_content, browser_name) target << browse(place_meta_charset(browser_content), browser_name)
 #define close_browser(target, browser_name)                 target << browse(null, browser_name)
 #define show_image(target, image)                           target << (image)
-#define send_rsc(target, rsc_content, rsc_name)             target << browse_rsc(rsc_content, rsc_name)
+#define send_rsc(target, rsc_content, rsc_name)             log_asset("Legacy [rsc_name]") //world.log << (rsc_name) //target << browse_rsc(rsc_content, rsc_name)
 #define open_link(target, url)                              target << link(url)
 #define to_savefile(target, key, value)                     target[(key)] << (value)
 #define from_savefile(target, key, value)                   target[(key)] >> (value)

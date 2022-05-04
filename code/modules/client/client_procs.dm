@@ -405,15 +405,21 @@ var/global/list/localhost_addresses = list(
 		'html/search.js',
 		'html/panels.css',
 		'html/spacemag.css',
+		'html/browser/common.css',
 		'html/images/loading.gif',
 		'html/images/talisman.png',
 		'html/images/iseo.png'
 		)
 
-	var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache)
+	//var/decl/asset_cache/asset_cache = GET_DECL(/decl/asset_cache) //TODO: Migrate
 	spawn (10) //removing this spawn causes all clients to not get verbs.
 		//Precache the client with all other assets slowly, so as to not block other browse() calls
-		getFilesSlow(src, asset_cache.cache, register_asset = FALSE)
+		//getFilesSlow(src, asset_cache.cache, register_asset = FALSE)
+
+		src << browse('code/modules/asset_cache/validate_assets.html', "window=asset_cache_browser")
+
+		addtimer(CALLBACK(GLOBAL_PROC, /proc/getFilesSlow, src, SSassets.preload, FALSE), 5 SECONDS)
+		return
 
 /mob/proc/MayRespawn()
 	return 0

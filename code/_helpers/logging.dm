@@ -101,6 +101,9 @@ var/global/log_end= world.system_type == UNIX ? ascii2text(13) : ""
 	if (config.log_pda)
 		game_log("PDA", text)
 
+/proc/log_asset(text)
+	game_log("ASSET", text)
+
 /proc/log_misc(text)
 	game_log("MISC", text)
 
