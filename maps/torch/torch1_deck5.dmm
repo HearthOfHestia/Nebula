@@ -9710,7 +9710,8 @@
 /area/quartermaster/expedition/eva)
 "Dr" = (
 /obj/machinery/power/port_gen/pacman{
-	anchored = 1
+	anchored = 1;
+	sheets = 25
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/cable/yellow,
@@ -10781,7 +10782,8 @@
 "Ko" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/power/port_gen/pacman{
-	anchored = 1
+	anchored = 1;
+	sheets = 10
 	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
