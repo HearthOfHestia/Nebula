@@ -16,7 +16,7 @@
 
 /datum/tgs_chat_command/tgscheck/Run(datum/tgs_chat_user/sender, params)
 	var/server = config.server
-	return "[game_id ? "Round #[game_id]: " : ""][global.clients.len] players on [global.using_map.full_name], Mode: [SSticker.mode ? SSticker.mode.name : "Not started"]; Round [Master.current_runlevel >= RUNLEVEL_GAME ? (Master.current_runlevel == RUNLEVEL_GAME ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
+	return "[game_id ? "Round #[game_id]: " : ""][global.clients.len] players on [global.using_map.full_name], Mode: [SSticker.mode ? PUBLIC_GAME_MODE : "Not started"]; Round [GAME_STATE >= RUNLEVEL_GAME ? (GAME_STATE == RUNLEVEL_GAME ? "Active" : "Finishing") : "Starting"] -- [server ? server : "[world.internet_address]:[world.port]"]"
 
 /datum/tgs_chat_command/tgs_manifest_webhook
 	name = "manifest"
