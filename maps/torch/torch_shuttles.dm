@@ -16,7 +16,7 @@
 	name = "Escaped"
 
 //Pods
-#define TORCH_ESCAPE_POD(NUMBER) \
+#define ENDEAVOUR_ESCAPE_POD(NUMBER) \
 /datum/shuttle/autodock/ferry/escape_pod/torchpod/escape_pod##NUMBER { \
 	shuttle_area = /area/shuttle/escape_pod##NUMBER/station; \
 	name = "Escape Pod " + #NUMBER; \
@@ -37,19 +37,19 @@
 	landmark_tag = "escape_pod_"+ #NUMBER +"_out"; \
 }
 
-TORCH_ESCAPE_POD(6)
-TORCH_ESCAPE_POD(7)
-TORCH_ESCAPE_POD(8)
-TORCH_ESCAPE_POD(9)
-TORCH_ESCAPE_POD(10)
-TORCH_ESCAPE_POD(11)
-TORCH_ESCAPE_POD(12)
-TORCH_ESCAPE_POD(13)
-TORCH_ESCAPE_POD(15)
-TORCH_ESCAPE_POD(16)
-TORCH_ESCAPE_POD(17)
-TORCH_ESCAPE_POD(18)
-TORCH_ESCAPE_POD(19)
+ENDEAVOUR_ESCAPE_POD(6)
+ENDEAVOUR_ESCAPE_POD(7)
+ENDEAVOUR_ESCAPE_POD(8)
+ENDEAVOUR_ESCAPE_POD(9)
+ENDEAVOUR_ESCAPE_POD(10)
+ENDEAVOUR_ESCAPE_POD(11)
+ENDEAVOUR_ESCAPE_POD(12)
+ENDEAVOUR_ESCAPE_POD(13)
+ENDEAVOUR_ESCAPE_POD(15)
+ENDEAVOUR_ESCAPE_POD(16)
+ENDEAVOUR_ESCAPE_POD(17)
+ENDEAVOUR_ESCAPE_POD(18)
+ENDEAVOUR_ESCAPE_POD(19)
 
 //Ninja Shuttle.
 /datum/shuttle/autodock/multi/antag/ninja
@@ -444,3 +444,16 @@ TORCH_ESCAPE_POD(19)
 	name = "Space near Third Deck"
 	landmark_tag = "nav_deck2_perseverance"
 
+// Shuttle APCs
+
+/obj/machinery/power/apc/shuttle/spirit
+	req_access = list(list(access_engine_equip, access_expedition_shuttle_helm))
+
+/obj/machinery/power/apc/high/shuttle/spirit
+	req_access = list(list(access_engine_equip, access_expedition_shuttle_helm))
+
+/obj/machinery/power/apc/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))
+
+/obj/machinery/power/apc/hyper/shuttle/perseverance
+	req_access = list(list(access_engine_equip, access_perseverance_helm))

@@ -32,9 +32,9 @@
 
 	access = list(
 		access_maint_tunnels, access_bridge, access_emergency_storage, access_tech_storage,  access_cargo, access_opportunity_helm,
-		access_cargo_bot, access_qm, access_mailsorting, access_solgov_crew, access_expedition_shuttle, access_opportunity, access_hangar,
-		access_mining, access_mining_office, access_mining_station, access_commissary, access_teleporter, access_eva, access_torch_fax,
-		access_radio_sup, access_radio_exp, access_radio_comm, access_hydroponics, access_kitchen, access_solgov_crew, access_bar,
+		access_cargo_bot, access_qm, access_mailsorting, access_iseo_crew, access_expedition_shuttle, access_opportunity, access_hangar,
+		access_mining, access_mining_office, access_mining_station, access_commissary, access_teleporter, access_eva, access_endeavour_fax,
+		access_radio_sup, access_radio_exp, access_radio_comm, access_hydroponics, access_kitchen, access_iseo_crew, access_bar,
 		access_commissary, access_radio_serv, access_bar
 	)
 
@@ -79,7 +79,7 @@
 
 	access = list(
 		access_maint_tunnels, access_emergency_storage, access_cargo, access_opportunity_helm,
-		access_cargo_bot, access_mailsorting, access_solgov_crew, access_expedition_shuttle,
+		access_cargo_bot, access_mailsorting, access_iseo_crew, access_expedition_shuttle,
 		access_opportunity, access_hangar, access_commissary, access_radio_sup
 	)
 
@@ -116,7 +116,7 @@
 	access = list(
 		access_mining, access_mining_office, access_mining_station,
 		access_expedition_shuttle, access_opportunity, access_hangar,
-		access_opportunity_helm, access_solgov_crew, access_eva,
+		access_opportunity_helm, access_iseo_crew, access_eva,
 		access_radio_exp, access_radio_sup
 	)
 

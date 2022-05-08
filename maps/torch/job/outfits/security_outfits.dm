@@ -12,7 +12,7 @@
 	name = "Job - Brig Chief"
 	uniform = /obj/item/clothing/under/iseo/utility/security
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/security/brigchief
+	id_type = /obj/item/card/id/endeavour/crew/security/brigchief
 	pda_type = /obj/item/modular_computer/pda/security
 	head = /obj/item/clothing/head/iseo/beret/security
 
@@ -23,10 +23,10 @@
 	head = /obj/item/clothing/head/espatier/beret/security
 
 /decl/hierarchy/outfit/job/torch/crew/security/forensic_tech
-	name = "Job - Forensic Technician - Torch"
+	name = "Job - Forensic Technician - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/security
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/security/forensic
+	id_type = /obj/item/card/id/endeavour/crew/security/forensic
 	pda_type = /obj/item/modular_computer/pda/forensics
 	head = /obj/item/clothing/head/iseo/beret/security
 
@@ -40,7 +40,7 @@
 	name = "Job - Master at Arms"
 	uniform = /obj/item/clothing/under/iseo/utility/security
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/security
+	id_type = /obj/item/card/id/endeavour/crew/security
 	pda_type = /obj/item/modular_computer/pda/security
 	head = /obj/item/clothing/head/iseo/beret/security
 

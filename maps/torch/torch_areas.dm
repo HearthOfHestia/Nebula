@@ -387,11 +387,11 @@
 
 /area/perseverance/maintenance
 	name = "\improper ISEO Perseverance - Maintenance"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_iseo_crew)
 
 /area/perseverance/storage
 	name = "\improper ISEO Perseverance - Storage"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_iseo_crew)
 
 /area/perseverance/secure_storage
 	name = "\improper ISEO Perseverance - Secure Storage"
@@ -411,7 +411,7 @@
 
 /area/perseverance/airlock
 	name = "\improper ISEO Perseverance - Airlock Compartment"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_iseo_crew)
 
 //Opportunity
 
@@ -784,7 +784,7 @@
 /area/quartermaster/expedition
 	name = "\improper Expedition Preparation"
 	icon_state = "mining"
-	req_access = list(list(access_mining, access_nanotrasen, access_xenoarch))
+	req_access = list(list(access_mining, access_corporate, access_xenoarch))
 
 /area/quartermaster/expedition/eva
 	name = "\improper Expedition EVA"
@@ -1181,7 +1181,7 @@
 /area/bridge/hallway
 	name = "\improper Bridge Access Hallway"
 	icon_state = "bridge_hallway"
-	req_access = list(access_solgov_crew)
+	req_access = list(access_iseo_crew)
 
 /area/bridge/hallway/port
 	name = "\improper Bridge Port Access Hallway"

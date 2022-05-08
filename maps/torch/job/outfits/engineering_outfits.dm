@@ -11,7 +11,7 @@
 	name = "Job - Senior Engineer"
 	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/engineering/senior
+	id_type = /obj/item/card/id/endeavour/crew/engineering/senior
 	pda_type = /obj/item/modular_computer/pda/heads/ce
 	head = /obj/item/clothing/head/iseo/beret/engineering
 	gloves = /obj/item/clothing/gloves/duty/eng
@@ -23,10 +23,10 @@
 	head = /obj/item/clothing/head/espatier/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/engineer
-	name = "Job - Engineer - Torch"
+	name = "Job - Engineer - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/crew/engineering
+	id_type = /obj/item/card/id/endeavour/crew/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 	head = /obj/item/clothing/head/iseo/beret/engineering
 	gloves = /obj/item/clothing/gloves/duty/eng
@@ -46,7 +46,7 @@
 	name = "Job - Engineering Assistant"
 	uniform = /obj/item/clothing/under/engineer
 	shoes = /obj/item/clothing/shoes/workboots
-	id_type = /obj/item/card/id/torch/contractor/engineering
+	id_type = /obj/item/card/id/endeavour/contractor/engineering
 	pda_type = /obj/item/modular_computer/pda/engineering
 	head = /obj/item/clothing/head/iseo/beret/engineering
 
@@ -54,22 +54,22 @@
 	name = "Job - Roboticist - Contractor"
 	uniform = /obj/item/clothing/under/roboticist
 	shoes = /obj/item/clothing/shoes/color/black
-	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
+	id_type = /obj/item/card/id/endeavour/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
 	gloves = /obj/item/clothing/gloves/duty/eng
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/iseo
-	name = "Job - Roboticist - Torch"
+	name = "Job - Roboticist - Endeavour"
 	uniform = /obj/item/clothing/under/iseo/utility/engineering
 	shoes = /obj/item/clothing/shoes/jackboots/duty
-	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
+	id_type = /obj/item/card/id/endeavour/contractor/engineering/roboticist
 	pda_type = /obj/item/modular_computer/pda/roboticist
 	head = /obj/item/clothing/head/iseo/beret/engineering
 
 /decl/hierarchy/outfit/job/torch/crew/engineering/roboticist/espatier
 	name = "Job - Roboticist - Espatier"
 	uniform = /obj/item/clothing/under/espatier/utility/engineering
-	id_type = /obj/item/card/id/torch/contractor/engineering/roboticist
+	id_type = /obj/item/card/id/endeavour/contractor/engineering/roboticist
 	shoes = /obj/item/clothing/shoes/jackboots/duty
 	pda_type = /obj/item/modular_computer/pda/roboticist
 	head = /obj/item/clothing/head/espatier/beret/engineering

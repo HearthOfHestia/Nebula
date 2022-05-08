@@ -98,11 +98,13 @@
 		var/obj/item/chems/condiment/special_bottle = special_bottles[reagent]
 		name = initial(special_bottle.name)
 		desc = initial(special_bottle.desc)
+		icon = initial(special_bottle.icon)
 		icon_state = initial(special_bottle.icon_state)
 		center_of_mass = initial(special_bottle.center_of_mass)
 	else
 		name = initial(name)
 		desc = initial(desc)
+		icon = initial(icon)
 		center_of_mass = initial(center_of_mass)
 		if(LAZYLEN(reagents.reagent_volumes))
 			icon_state = "mixedcondiments"

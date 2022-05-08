@@ -184,8 +184,8 @@
 /decl/security_level/default
 	icon = 'icons/misc/security_state.dmi'
 
-	var/static/datum/announcement/priority/security/security_announcement_up = new(do_log = 0, do_newscast = 1, new_sound = sound('maps/torch/sounds/minor_alert.ogg'))
-	var/static/datum/announcement/priority/security/security_announcement_down = new(do_log = 0, do_newscast = 1, new_sound = sound('maps/torch/sounds/minor_alert.ogg'))
+	var/static/datum/announcement/priority/security/security_announcement_up = new(do_log = 0, do_newscast = 1, new_sound = sound('mods/content/hearth_maps/sounds/minor_alert.ogg'))
+	var/static/datum/announcement/priority/security/security_announcement_down = new(do_log = 0, do_newscast = 1, new_sound = sound('mods/content/hearth_maps/sounds/minor_alert.ogg'))
 
 /decl/security_level/default/switching_up_to()
 	if(up_description)

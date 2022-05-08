@@ -10,7 +10,7 @@
 /decl/flooring/hangar_door
 	name = "hangar door"
 	desc = "A thick, retractable blast door."
-	icon = 'maps/torch/icons/hangar_door_turf.dmi'
+	icon = 'mods/content/hearth_maps/icons/hangar_door_turf.dmi'
 	icon_base = "hangardoor"
 	damage_temperature = T0C+2500
 	flags = TURF_HAS_CORNERS
@@ -24,7 +24,7 @@
 	z_flags = ZM_MIMIC_BELOW
 
 /turf/simulated/floor/hangar
-	icon = 'maps/torch/icons/hangar_door_turf.dmi'
+	icon = 'mods/content/hearth_maps/icons/hangar_door_turf.dmi'
 	icon_state = "hangardoor"
 	initial_flooring = /decl/flooring/hangar_door
 

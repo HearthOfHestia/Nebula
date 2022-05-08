@@ -23,8 +23,8 @@
 	skill_points = 20
 
 	access = list(
-		access_liaison, access_bridge, access_solgov_crew,
-		access_nanotrasen, access_commissary, access_torch_fax,
+		access_liaison, access_bridge, access_iseo_crew,
+		access_corporate, access_commissary, access_endeavour_fax,
 		access_radio_comm, access_radio_serv
 	)
 
@@ -71,9 +71,9 @@
 	skill_points = 20
 
 	access = list(
-		access_liaison, access_bridge, access_solgov_crew,
-		access_nanotrasen, access_commissary,
-		access_sec_guard, access_torch_fax, access_radio_serv
+		access_liaison, access_bridge, access_iseo_crew,
+		access_corporate, access_commissary,
+		access_sec_guard, access_endeavour_fax, access_radio_serv
 	)
 
 	defer_roundstart_spawn = TRUE
