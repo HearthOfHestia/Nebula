@@ -35,6 +35,7 @@
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise
 
 /decl/recipe/muffin/berry
+	display_name = null // autoset
 	fruit = list("berries" = 1)
 	result = /obj/item/chems/food/berrymuffin
 
