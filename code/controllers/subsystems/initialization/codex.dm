@@ -48,10 +48,10 @@ SUBSYSTEM_DEF(codex)
 		if(linkRegex.group[2])
 			linked_entry = get_entry_by_string(linkRegex.group[3])
 		else
-			linked_entries = retrieve_entries_for_string(linkRegex.group[4])
+			linked_entries = retrieve_entries_for_name(linkRegex.group[4])
 			linked_entry = LAZYACCESS(linked_entries, 1)
 		var/replacement = linkRegex.group[4]
-		if (LAZYLEN(linked_entries))
+		if (LAZYLEN(linked_entries) > 1)
 			replacement = "<a href='?src=\ref[SScodex];show_disambiguation=[replacement];show_to=\ref[viewer]'>[replacement]</a>"
 		else if(linked_entry)
 		// HEARTH MODIFICATION END
@@ -109,7 +109,7 @@ SUBSYSTEM_DEF(codex)
 
 // HEARTH ADDITION START
 /// Like retrieve_entries_for_string, but it only searches for matches in names and other associated strings.
-/datum/controller/subsystem/codex/proc/retrieve_entries_for_name(var/name)
+/datum/controller/subsystem/codex/proc/retrieve_entries_for_name(var/name, var/ignore_categories = TRUE, var/exact_word = TRUE)
 	if(!initialized)
 		return list()
 
@@ -124,12 +124,23 @@ SUBSYSTEM_DEF(codex)
 			results = list()
 			for(var/entry_title in entries_by_string)
 				var/datum/codex_entry/entry = entries_by_string[entry_title]
-				if(findtext(entry_title, name))
-					results |= entry
+				var/check_string = entry_title
+				if(ignore_categories)
+					check_string = replacetext(check_string, regex(@" \([^)]+\)$"), "")
+				if (check_string == name)
+					results = list(entry)
+					break
+				if (exact_word)
+					if(findtext(check_string, regex("\\b[name]\\b"))) // take into account word boundaries
+						results |= entry
+				else
+					if(findtext(check_string, name))
+						results |= entry
 		name_cache[name] = dd_sortedObjectList(results)
 	return name_cache[name]
 // HEARTH ADDITION END
 
+// HEARTH MODIFICATION START
 /datum/controller/subsystem/codex/Topic(href, href_list)
 	. = ..()
 	if(.)
@@ -179,3 +190,4 @@ SUBSYSTEM_DEF(codex)
 					var/datum/browser/popup = new(showing_mob, "codex-disambig", "Codex Disambiguation")
 					popup.set_content(jointext(codex_data, null))
 					popup.open()
+// HEARTH MODIFICATION END
