@@ -30,7 +30,7 @@
 	name = "Dough"
 	required_reagents = list(/decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/water = 10)
 	mix_message = "The solution folds and thickens into a large ball of dough."
-	obj_result = /obj/item/chems/food/dough
+	obj_result = /obj/item/chems/food/sliceable/mediumdough
 
 /decl/chemical_reaction/recipe/food/soydough
 	name = "Soy dough"

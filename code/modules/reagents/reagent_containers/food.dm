@@ -257,26 +257,7 @@
 					qdel(src)
 			return
 
-	if (is_sliceable())
-		//these are used to allow hiding edge items in food that is not on a table/tray
-		var/can_slice_here = isturf(src.loc) && ((locate(/obj/structure/table) in src.loc) || (locate(/obj/machinery/optable) in src.loc) || (locate(/obj/item/storage/tray) in src.loc))
-		var/hide_item = !has_edge(W) || !can_slice_here
-
-		if (hide_item)
-			if (W.w_class >= src.w_class || is_robot_module(W) || istype(W,/obj/item/chems/condiment))
-				return
-			if(!user.unEquip(W, src))
-				return
-
-			to_chat(user, "<span class='warning'>You slip \the [W] inside \the [src].</span>")
-			add_fingerprint(user)
-			W.forceMove(src)
-			return
-
-		if (has_edge(W))
-			if (!can_slice_here)
-				to_chat(user, "<span class='warning'>You cannot slice \the [src] here! You need a table or at least a tray to do it.</span>")
-				return
+		if (is_sliceable() && has_edge(W))
 
 			var/slices_lost = 0
 			if (W.w_class > ITEM_SIZE_NORMAL)
