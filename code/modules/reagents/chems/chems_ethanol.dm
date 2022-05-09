@@ -99,7 +99,7 @@
 	uid = "chem_ethanol_absinthe"
 
 /decl/material/liquid/ethanol/ale
-	name = "ale"
+	name = "brown ale"
 	lore_text = "A dark alchoholic beverage made by malted barley and yeast."
 	taste_description = "hearty barley ale"
 	color = "#4c3100"
@@ -162,7 +162,7 @@
 	glass_desc = "Damn, you feel like some kind of French aristocrat just by holding this."
 
 /decl/material/liquid/ethanol/gin
-	name = "gin"
+	name = "plain gin"
 	lore_text = "It's gin. In space. I say, good sir."
 	taste_description = "an alcoholic christmas tree"
 	color = "#0064c6"
@@ -439,7 +439,7 @@
 			else
 				L.take_internal_damage(100, 0)
 
-/decl/material/liquid/ethanol/aged_whiskey // I have no idea what this is and where it comes from.  //It comes from Dinnlan now 
+/decl/material/liquid/ethanol/aged_whiskey // I have no idea what this is and where it comes from.  //It comes from Dinnlan now
 	name = "aged whiskey"
 	lore_text = "A well-aged whiskey of high quality. Probably imported. Just a sip'll do it, but that burn will leave you wanting more."
 	color = "#523600"

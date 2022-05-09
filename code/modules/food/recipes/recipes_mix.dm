@@ -208,6 +208,7 @@
 	result = /obj/item/chems/food/boiledrice/chazuke
 
 /decl/recipe/taco
+	display_name = "meat taco"
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
 		/obj/item/chems/food/doughslice,

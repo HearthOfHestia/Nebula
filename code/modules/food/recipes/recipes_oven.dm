@@ -75,6 +75,7 @@
 	result = /obj/item/chems/food/sliceable/bananabread
 
 /decl/recipe/muffin
+	display_name = "plain muffin"
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 10)
 	reagent_mix = REAGENT_REPLACE // simplify end product
@@ -282,6 +283,7 @@
 	result = /obj/item/chems/food/bun
 
 /decl/recipe/flatbread
+	display_name = "plain flatbread"
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/sliceable/flatdough
