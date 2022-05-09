@@ -46,7 +46,7 @@
 				if(!islist(src.write_access[access_group]))
 					src.write_access[access_group] = list(src.write_access[access_group])
 			else
-				src.write_access[access_group] += write_access
+				src.write_access += list(write_access)
 
 // Analogous to get_file_perms on reports. Read access is required to have write access.
 /datum/report_field/proc/get_perms(accesses, mob/user)
@@ -54,7 +54,7 @@
 		return (OS_READ_ACCESS | OS_WRITE_ACCESS)
 	if(!LAZYLEN(read_access) || has_access(read_access, accesses))
 		. |= OS_READ_ACCESS
-		
+
 		if(!LAZYLEN(write_access) || has_access(write_access, accesses))
 			. |= OS_WRITE_ACCESS
 
