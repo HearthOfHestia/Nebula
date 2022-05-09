@@ -234,6 +234,7 @@
 	result = /obj/item/chems/food/pancakes
 
 /decl/recipe/pancakes/blu
+	display_name = null // autoset
 	fruit = list("blueberries" = 2)
 	result = /obj/item/chems/food/pancakesblu
 

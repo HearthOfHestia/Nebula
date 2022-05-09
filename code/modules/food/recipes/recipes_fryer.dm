@@ -51,7 +51,7 @@
 	result = /obj/item/chems/food/onionrings
 
 /decl/recipe/jellydonut
-	display_name = "jelly donut"
+	display_name = "berry jelly donut"
 	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/drink/juice/berry = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(

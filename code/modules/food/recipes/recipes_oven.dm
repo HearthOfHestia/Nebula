@@ -318,6 +318,7 @@
 	result = /obj/item/chems/food/sliceable/pumpkinpie
 
 /decl/recipe/plumphelmetbiscuit
+	display_name = "plain plump helmet biscuit"
 	appliance = APPLIANCE_OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/batter = 10)
