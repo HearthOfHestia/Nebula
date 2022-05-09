@@ -3731,7 +3731,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "aiZ" = (
-/obj/machinery/power/port_gen/pacman,
+/obj/machinery/port_gen/pacman,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
@@ -5339,7 +5339,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
 "atC" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/long/west,
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
@@ -7920,7 +7920,7 @@
 /obj/structure/cable/green{
 	icon_state = "4-8"
 	},
-/obj/machinery/power/emitter/anchored,
+/obj/machinery/emitter/anchored,
 /obj/structure/cable/green{
 	icon_state = "0-4"
 	},
@@ -13933,7 +13933,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/medical/exam_room)
 "gab" = (
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1;
 	sheets = 25
 	},
@@ -24099,7 +24099,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/brig)
 "tTS" = (
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -25998,7 +25998,7 @@
 /area/security/wing)
 "ylp" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,

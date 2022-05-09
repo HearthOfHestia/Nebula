@@ -68,13 +68,14 @@
 	)
 	result = /obj/item/chems/food/classichotdog
 
-/decl/recipe/meatburger
+/decl/recipe/plainburger
+	display_name = "plain burger"
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
 		/obj/item/chems/food/bun,
 		/obj/item/chems/food/cutlet
 	)
-	result = /obj/item/chems/food/meatburger
+	result = /obj/item/chems/food/burger
 
 /decl/recipe/brainburger
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
@@ -148,6 +149,7 @@
 	result = /obj/item/chems/food/bunbun
 
 /decl/recipe/hotdog
+	display_name = "plain hotdog"
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
 		/obj/item/chems/food/bun,
@@ -174,7 +176,7 @@
 /decl/recipe/spellburger
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
-		/obj/item/chems/food/meatburger,
+		/obj/item/chems/food/burger,
 		/obj/item/clothing/head/wizard,
 	)
 	result = /obj/item/chems/food/spellburger
@@ -182,7 +184,7 @@
 /decl/recipe/bigbiteburger
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
-		/obj/item/chems/food/meatburger,
+		/obj/item/chems/food/burger,
 		/obj/item/chems/food/meat = 2,
 		/obj/item/chems/food/egg,
 	)
@@ -190,6 +192,7 @@
 	result = /obj/item/chems/food/bigbiteburger
 
 /decl/recipe/sandwich
+	display_name = "plain sandwich"
 	appliance = APPLIANCE_MICROWAVE|APPLIANCE_MIX
 	items = list(
 		/obj/item/chems/food/meatsteak,

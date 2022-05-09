@@ -303,13 +303,13 @@
 	var/overlay_state = "box-donut1"
 	var/donut_state = "donut"
 
-/obj/item/chems/food/donut/Initialize()
+/obj/item/chems/food/donut/normal/Initialize()
 	. = ..()
 	if(prob(30))
 		icon_state = "[donut_state]2"
 		overlay_state = "box-donut2"
 		SetName("frosted [name]]")
-		reagents.add_reagent(/decl/material/liquid/nutriment/sprinkles, 2)
+		reagents.add_reagent(/decl/material/liquid/nutriment/sprinkles, 3)
 
 /obj/item/chems/food/donut/chaos
 	name = "chaos donut"
@@ -337,19 +337,27 @@
 	reagents.add_reagent(pick(get_random_fillings()), 3)
 
 /obj/item/chems/food/donut/jelly
-	name = "jelly donut"
+	name = "berry jelly donut"
 	desc = "You jelly?"
 	icon_state = "jdonut1"
-	filling_color = "#ed1169"
+	filling_color = "#990066"
 	center_of_mass = @"{'x':16,'y':11}"
 	nutriment_amt = 3
 	bitesize = 5
 	nutriment_type = /decl/material/liquid/nutriment/bread
 	donut_state = "jdonut"
+	var/jelly_type = /decl/material/liquid/drink/juice/berry
 
 /obj/item/chems/food/donut/jelly/Initialize()
 	. = ..()
-	reagents.add_reagent(/decl/material/liquid/nutriment/cherryjelly, 5)
+	reagents.add_reagent(jelly_type, 5)
+
+/obj/item/chems/food/donut/jelly/cherry
+	name = "cherry jelly donut"
+	desc = "You jelly?"
+	icon_state = "jdonut1"
+	filling_color = "#801e28"
+	jelly_type = /decl/material/liquid/nutriment/cherryjelly
 
 //Sol Vendor
 /obj/item/chems/food/lunacake

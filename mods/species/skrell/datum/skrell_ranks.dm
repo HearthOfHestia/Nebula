@@ -1,7 +1,8 @@
 /datum/mil_branch/skrell_fleet
 	name = "Skrellian Defense Task Force"
 	name_short = "SDTF"
-	email_domain = "sdtf.qb"
+	// See todo in torch_ranks.dm
+	// email_domain = "sdtf.qb"
 	rank_types = list(
 		/datum/mil_rank/skrell_fleet/zuumqix,
 		/datum/mil_rank/skrell_fleet/vuxix

@@ -10,10 +10,13 @@ SUBSYSTEM_DEF(codex)
 	var/list/index_file =        list()
 	var/list/search_cache =      list()
 	var/list/categories =        list()
+	// HEARTH ADDITION
+	var/list/name_cache =        list()
+	// END HEARTH ADDITION
 
 /datum/controller/subsystem/codex/Initialize()
-	// Codex link syntax is such: 
-	// <l>keyword</l> when keyword is mentioned verbatim, 
+	// Codex link syntax is such:
+	// <l>keyword</l> when keyword is mentioned verbatim,
 	// <span codexlink='keyword'>whatever</span> when shit gets tricky
 	linkRegex = regex(@"<(span|l)(\s+codexlink='([^>]*)'|)>([^<]+)</(span|l)>","g")
 
@@ -39,13 +42,19 @@ SUBSYSTEM_DEF(codex)
 
 /datum/controller/subsystem/codex/proc/parse_links(string, viewer)
 	while(linkRegex.Find(string))
-		var/key = linkRegex.group[4]
+		// HEARTH MODIFICATION START
+		var/list/linked_entries
+		var/datum/codex_entry/linked_entry
 		if(linkRegex.group[2])
-			key = linkRegex.group[3]
-		key = lowertext(trim(key))
-		var/datum/codex_entry/linked_entry = get_entry_by_string(key)
+			linked_entry = get_entry_by_string(linkRegex.group[3])
+		else
+			linked_entries = retrieve_entries_for_string(linkRegex.group[4])
+			linked_entry = LAZYACCESS(linked_entries, 1)
 		var/replacement = linkRegex.group[4]
-		if(linked_entry)
+		if (LAZYLEN(linked_entries))
+			replacement = "<a href='?src=\ref[SScodex];show_disambiguation=[replacement];show_to=\ref[viewer]'>[replacement]</a>"
+		else if(linked_entry)
+		// HEARTH MODIFICATION END
 			replacement = "<a href='?src=\ref[SScodex];show_examined_info=\ref[linked_entry];show_to=\ref[viewer]'>[replacement]</a>"
 		string = replacetextEx(string, linkRegex.match, replacement)
 	return string
@@ -98,22 +107,75 @@ SUBSYSTEM_DEF(codex)
 		search_cache[searching] = dd_sortedObjectList(results)
 	return search_cache[searching]
 
+// HEARTH ADDITION START
+/// Like retrieve_entries_for_string, but it only searches for matches in names and other associated strings.
+/datum/controller/subsystem/codex/proc/retrieve_entries_for_name(var/name)
+	if(!initialized)
+		return list()
+
+	name = sanitize(lowertext(trim(name)))
+	if(!name)
+		return list()
+	if(!name_cache[name])
+		var/list/results
+		if(entries_by_string[name])
+			results = list(entries_by_string[name])
+		else
+			results = list()
+			for(var/entry_title in entries_by_string)
+				var/datum/codex_entry/entry = entries_by_string[entry_title]
+				if(findtext(entry_title, name))
+					results |= entry
+		name_cache[name] = dd_sortedObjectList(results)
+	return name_cache[name]
+// HEARTH ADDITION END
+
 /datum/controller/subsystem/codex/Topic(href, href_list)
 	. = ..()
-	if(!. && href_list["show_examined_info"] && href_list["show_to"])
+	if(.)
+		return .
+	if (href_list["show_to"])
 		var/mob/showing_mob =   locate(href_list["show_to"])
 		if(!istype(showing_mob) || !showing_mob.can_use_codex())
-			return 
+			return
+		if (href_list["show_examined_info"])
+			var/atom/showing_atom = locate(href_list["show_examined_info"])
+			var/entry
+			if(istype(showing_atom, /datum/codex_entry))
+				entry = showing_atom
+			else if(istype(showing_atom))
+				entry = get_codex_entry(showing_atom.get_codex_value())
+			else
+				entry = get_codex_entry(href_list["show_examined_info"])
 
-		var/atom/showing_atom = locate(href_list["show_examined_info"])
-		var/entry
-		if(istype(showing_atom, /datum/codex_entry))
-			entry = showing_atom
-		else if(istype(showing_atom))
-			entry = get_codex_entry(showing_atom.get_codex_value())
-		else
-			entry = get_codex_entry(href_list["show_examined_info"])
-
-		if(entry)
-			present_codex_entry(showing_mob, entry)
-			return TRUE
+			if(entry)
+				present_codex_entry(showing_mob, entry)
+				return TRUE
+		else if (href_list["show_disambiguation"])
+			var/search_string = href_list["show_disambiguation"]
+			var/list/all_entries = SScodex.retrieve_entries_for_name(search_string)
+			if(showing_mob && showing_mob.mind && !player_is_antag(showing_mob.mind))
+				all_entries = all_entries.Copy() // So we aren't messing with the codex search cache.
+				for(var/datum/codex_entry/entry in all_entries)
+					if(entry.antag_text && !entry.mechanics_text && !entry.lore_text)
+						all_entries -= entry
+			switch(LAZYLEN(all_entries))
+				if(0)
+					to_chat(src, SPAN_NOTICE("The codex reports <b>no matches</b> for '[search_string]'. Please report this on Github, along with what link you clicked!"))
+				if(1)
+					SScodex.present_codex_entry(showing_mob, all_entries[1])
+				else
+					var/list/codex_data = list()
+					var/datum/codex_entry/linked_entry = SScodex.get_entry_by_string("nexus")
+					codex_data += "<a href='?src=\ref[SScodex];show_examined_info=\ref[linked_entry];show_to=\ref[showing_mob]'>Home</a>"
+					codex_data += "<a href='?src=\ref[showing_mob.client];codex_search=1'>Search Codex</a>"
+					codex_data += "<a href='?src=\ref[showing_mob.client];codex_index=1'>List All Entries</a>"
+					codex_data += "<hr><h2>[search_string] (Disambiguation)</h2>"
+					codex_data += "<table width = 100%>"
+					for(var/i = 1 to all_entries.len)
+						var/datum/codex_entry/entry = all_entries[i]
+						codex_data += "<tr><td>[entry.name]</td><td><a href='?src=\ref[SScodex];show_examined_info=\ref[entry];show_to=\ref[showing_mob]'>View</a></td></tr>"
+					codex_data += "</table>"
+					var/datum/browser/popup = new(showing_mob, "codex-disambig", "Codex Disambiguation")
+					popup.set_content(jointext(codex_data, null))
+					popup.open()

@@ -15,12 +15,14 @@
 		warm_up(being_cooked)
 
 /decl/recipe/donkpocket/rawmeat
+	display_name = "Raw Donk-Pocket"
 	items = list(
 		/obj/item/chems/food/doughslice,
 		/obj/item/chems/food/rawmeatball
 	)
 
 /decl/recipe/donkpocket/warm
+	display_name = "Warm Donk-Pocket"
 	appliance = APPLIANCE_OVEN | APPLIANCE_MICROWAVE
 	reagents = list() //This is necessary since this is a child object of the above recipe and we don't want donk pockets to need flour
 	items = list(
@@ -44,6 +46,7 @@
 			return list(being_cooked)
 
 /decl/recipe/meatbread
+	display_name = "plain meatbread loaf"
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/dough = 2,
@@ -129,6 +132,7 @@
 	result = /obj/item/chems/food/spacylibertyduff
 
 /decl/recipe/cookie
+	display_name = "plain cookie"
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 5, /decl/material/liquid/nutriment/coco = 5)
 	reagent_mix = REAGENT_REPLACE // Don't include the cakebatter
@@ -270,6 +274,7 @@
 	result = /obj/item/chems/food/baguette
 
 /decl/recipe/bun
+	display_name = "plain bun"
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/dough
@@ -284,6 +289,7 @@
 	result = /obj/item/chems/food/flatbread
 
 /decl/recipe/bread
+	display_name = "loaf of bread"
 	appliance = APPLIANCE_OVEN
 	items = list(
 		/obj/item/chems/food/dough = 4
@@ -319,6 +325,7 @@
 	result = /obj/item/chems/food/plumphelmetbiscuit
 
 /decl/recipe/plumphelmetbiscuitvegan
+	display_name = "vegan plump helmet biscuit"
 	appliance = APPLIANCE_OVEN
 	fruit = list("plumphelmet" = 1)
 	reagents = list(/decl/material/liquid/nutriment/flour = 10, /decl/material/liquid/water = 10)

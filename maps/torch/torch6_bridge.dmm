@@ -799,7 +799,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/bridge/hallway/starboard)
 "cb" = (
-/obj/machinery/power/port_gen/pacman,
+/obj/machinery/port_gen/pacman,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/bridge/aftstarboard)
@@ -6218,7 +6218,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/space)
 "sp" = (
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1;
 	sheets = 25
 	},

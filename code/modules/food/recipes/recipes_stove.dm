@@ -15,6 +15,7 @@
 	result = /obj/item/chems/food/chocolateegg
 
 /decl/recipe/sausage
+	display_name = "plain sausage"
 	appliance = APPLIANCE_SKILLET
 	items = list(
 		/obj/item/chems/food/rawmeatball,
@@ -53,6 +54,7 @@
 	reagents = list(/decl/material/liquid/blood = 30)
 	reagent_mix = REAGENT_REPLACE // simplify end product
 	result = /obj/item/chems/food/bloodsoup
+	hidden_from_codex = TRUE
 
 /decl/recipe/mysterysoup
 	appliance = APPLIANCE_MICROWAVE|APPLIANCE_SAUCEPAN|APPLIANCE_POT
@@ -225,6 +227,7 @@
 	result = /obj/item/chems/food/waffles
 
 /decl/recipe/pancakes
+	display_name = "plain pancakes"
 	appliance = APPLIANCE_SKILLET
 	reagents = list(/decl/material/liquid/nutriment/batter = 20)
 	reagent_mix = REAGENT_REPLACE // the batter should be cooked
