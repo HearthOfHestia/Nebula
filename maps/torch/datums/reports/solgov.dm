@@ -17,8 +17,7 @@
 	add_field(/datum/report_field/pencode_text, "Other Notes")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(write_access = access_representative, override = 0)
-	set_access(write_access = access_nanotrasen, override = 0)
+	set_access(write_access = write_access | list(access_representative, access_nanotrasen))
 	..()
 
 /datum/computer_file/report/recipient/sol/crewman_incident

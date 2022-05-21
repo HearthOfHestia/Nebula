@@ -306,7 +306,7 @@
 	pump = !pump
 
 /obj/machinery/sleeper/proc/go_in(var/mob/M, var/mob/user)
-	if(!M)
+	if(!M || M.anchored)
 		return
 	if(stat & (BROKEN|NOPOWER))
 		return

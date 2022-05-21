@@ -4,8 +4,7 @@
 
 /datum/computer_file/report/recipient/sec/New()
 	..()
-	set_access(access_security)
-	set_access(access_heads, override = 0)
+	set_access(list(access_security, access_heads))
 
 /datum/computer_file/report/recipient/sec/incident
 	form_name = "SCG-SEC-01"
