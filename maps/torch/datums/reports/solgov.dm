@@ -17,7 +17,7 @@
 	add_field(/datum/report_field/pencode_text, "Other Notes")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(write_access = write_access | list(access_representative, access_nanotrasen))
+	set_access(write_access = write_access | list(list(access_representative, access_nanotrasen)))
 	..()
 
 /datum/computer_file/report/recipient/sol/crewman_incident
@@ -33,7 +33,7 @@
 	add_field(/datum/report_field/pencode_text, "Description of incident")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(write_access = list(access_heads, access_solgov_crew))
+	set_access(write_access = list(list(access_heads, access_solgov_crew)))
 	..()
 
 /datum/computer_file/report/recipient/sol/work_visa

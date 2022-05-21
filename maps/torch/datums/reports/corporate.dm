@@ -80,7 +80,7 @@
 
 /datum/computer_file/report/recipient/corp/fire/New()
 	..()
-	set_access(list(access_heads, access_nanotrasen), access_heads)
+	set_access(list(list(access_heads, access_nanotrasen)), access_heads)
 
 /datum/computer_file/report/recipient/corp/fire/generate_fields()
 	..()
