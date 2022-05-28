@@ -70,18 +70,19 @@
 	if(!given_dna)
 		if(dna)
 			given_dna = dna //Use existing if possible
-		else if(owner) 
-			if(owner.dna) 
+		else if(owner)
+			if(owner.dna)
 				given_dna = owner.dna //Grab our owner's dna if we don't have any, and they have
 			else
 				//The owner having no DNA can be a valid reason to keep our dna null in some cases
-				dna = null
+				log_debug("obj/item/organ/setup_as_organic(): [src] had null dna, with a owner with null dna!")
+				dna = null //#TODO: Not sure that's really legal
 				return
 		else
 			//If we have NO OWNER and given_dna, just make one up for consistency
 			given_dna = new/datum/dna()
 			given_dna.check_integrity() //Defaults everything
-	
+
 	set_dna(given_dna)
 	setup_reagents()
 	return TRUE
@@ -97,7 +98,7 @@
 
 	if(istype(material))
 		robotize(forced_model, apply_material = material.type)
-	else 
+	else
 		robotize(forced_model)
 	return TRUE
 
@@ -109,8 +110,7 @@
 	reagents.add_reagent(/decl/material/liquid/nutriment/protein, reagents.maximum_volume)
 
 /obj/item/organ/proc/set_dna(var/datum/dna/new_dna)
-	if(!new_dna)
-		return
+	QDEL_NULL(dna)
 	dna = new_dna.Clone()
 	if(!blood_DNA)
 		blood_DNA = list()
@@ -122,7 +122,7 @@
 	if(istext(specie_name))
 		species = get_species_by_key(specie_name)
 	else
-		species = specie_name 
+		species = specie_name
 	if(!species)
 		species = get_species_by_key(global.using_map.default_species)
 		PRINT_STACK_TRACE("Invalid species. Expected a valid species name as string, was: [log_info_line(specie_name)]")
@@ -132,7 +132,12 @@
 
 	// Adjust limb health proportinate to total species health.
 	var/total_health_coefficient = scale_max_damage_to_species_health ? (species.total_health / DEFAULT_SPECIES_HEALTH) : 1
+
+	//Use initial value to prevent scaling down each times we change the species during init
 	absolute_max_damage = initial(absolute_max_damage)
+	min_broken_damage = initial(min_broken_damage)
+	max_damage = initial(max_damage)
+
 	if(absolute_max_damage)
 		absolute_max_damage = max(1, FLOOR(absolute_max_damage * total_health_coefficient))
 		min_broken_damage = max(1, FLOOR(absolute_max_damage * 0.5))
@@ -492,7 +497,7 @@ var/global/list/ailment_reference_cache = list()
 /obj/item/organ/proc/do_install(var/mob/living/carbon/human/target, var/obj/item/organ/external/affected, var/in_place = FALSE, var/update_icon = TRUE, var/detached = FALSE)
 	//Make sure to force the flag accordingly
 	set_detached(detached)
-	
+
 	owner = target
 	action_button_name = initial(action_button_name)
 	if(owner)
@@ -506,10 +511,10 @@ var/global/list/ailment_reference_cache = list()
 
 //Handles uninstalling the organ from its owner and parent limb, without triggering effects or deep updates
 //CASES:
-// 1. Before deletion to clear our references. 
+// 1. Before deletion to clear our references.
 // 2. Called through removal on surgery or dismemberement
 // 3. Called when we're changing a mob's species.
-//detach: If detach is true, we're going to set the organ to detached, and add it to the detached organs list, and remove it from processing lists. 
+//detach: If detach is true, we're going to set the organ to detached, and add it to the detached organs list, and remove it from processing lists.
 //        If its false, we just remove the organ from all lists
 /obj/item/organ/proc/do_uninstall(var/in_place = FALSE, var/detach = FALSE, var/ignore_children = FALSE, var/update_icon = TRUE)
 	action_button_name = null
@@ -520,7 +525,7 @@ var/global/list/ailment_reference_cache = list()
 		if(ailment.timer_id)
 			deltimer(ailment.timer_id)
 			ailment.timer_id = null
-	
+
 	//When we detach, we set the ORGAN_CUT_AWAY flag on, depending on whether the organ supports it or not
 	if(detach)
 		set_detached(TRUE)
