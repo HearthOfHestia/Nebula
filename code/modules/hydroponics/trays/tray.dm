@@ -192,9 +192,9 @@
 /obj/machinery/portable_atmospherics/hydroponics/proc/check_health()
 	if(seed && !dead && health <= 0)
 		die()
-		return
 	check_level_sanity()
 	update_icon()
+	update_name()
 
 /obj/machinery/portable_atmospherics/hydroponics/proc/die()
 	dead = 1
