@@ -3575,7 +3575,7 @@
 	},
 /area/space)
 "axp" = (
-/obj/machinery/power/emitter,
+/obj/machinery/emitter,
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "vault"

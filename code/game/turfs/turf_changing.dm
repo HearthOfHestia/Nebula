@@ -104,7 +104,7 @@
 
 	// end of lighting stuff
 
-	// Outside/weather stuff. set_outside() updates weather already 
+	// Outside/weather stuff. set_outside() updates weather already
 	// so only call it again if it doesn't already handle it.
 	if(!keep_outside || !W.set_outside(old_outside))
 		W.update_weather()
@@ -159,10 +159,16 @@
 	floor_type = other.floor_type
 	construction_stage = other.construction_stage
 
+	damage = other.damage
+	
+	// Do not set directly to other.can_open since it may be in the WALL_OPENING state.
+	if(other.can_open)
+		can_open = WALL_CAN_OPEN
+
 	update_material()
 	return TRUE
 
-//No idea why resetting the base appearence from New() isn't enough, but without this it doesn't work
+//No idea why resetting the base appearance from New() isn't enough, but without this it doesn't work
 /turf/simulated/shuttle/wall/corner/transport_properties_from(turf/simulated/other)
 	. = ..()
 	reset_base_appearance()

@@ -1,3 +1,6 @@
+// TODO:
+// - Find some way to reimplement branch-specific email TLDs
+
 /datum/job/submap
 	branch = /datum/mil_branch/civilian
 	rank =   /datum/mil_rank/civ/civ
@@ -133,7 +136,7 @@
 /datum/mil_branch/iseo_issc
 	name = "International Stellar Surveyor Corps"
 	name_short = "ISSC"
-	email_domain = "issc.iseo"
+	// email_domain = "issc.iseo"
 
 	rank_types = list(
 		/datum/mil_rank/sc/t1,
@@ -168,7 +171,7 @@
 /datum/mil_branch/espatier_corps
 	name = "Espatier Corps"
 	name_short = "EC"
-	email_domain = "espatier.mil"
+	// email_domain = "espatier.mil"
 
 	rank_types = list(
 		/datum/mil_rank/espatier/e1,
@@ -222,7 +225,7 @@
 /datum/mil_branch/civilian
 	name = "Civilian"
 	name_short = "Civ"
-	email_domain = "freemail.net"
+	// email_domain = "freemail.net"
 //	allow_custom_email = TRUE
 
 	rank_types = list(
@@ -240,7 +243,7 @@
 /datum/mil_branch/government
 	name = "ISEO Employee"
 	name_short = "ISEO"
-	email_domain = "gov.iseo"
+	// email_domain = "gov.iseo"
 
 	rank_types = list(
 		/datum/mil_rank/government/gov,

@@ -9,7 +9,8 @@
 	admin_levels = list(7)
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
 	overmap_ids = list(OVERMAP_ID_SPACE = /datum/overmap/torch)
-	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
+	// TODO: REIMPLEMENT
+	//usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
 	allowed_spawns = list(/decl/spawnpoint/cryo)
 	default_spawn = /decl/spawnpoint/cryo

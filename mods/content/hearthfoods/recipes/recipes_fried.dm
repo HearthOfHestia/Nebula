@@ -48,6 +48,7 @@
 	coating = /decl/material/liquid/nutriment/batter/beerbatter
 
 /decl/recipe/pizzacrunch_1
+	display_name = "premade pizza crunch"
 	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/sliceable/pizza = 1
@@ -57,6 +58,7 @@
 
 //Alternate pizza crunch recipe for combination pizzas made in oven
 /decl/recipe/pizzacrunch_2
+	display_name = "custom pizza crunch"
 	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/variable/pizza = 1
