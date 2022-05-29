@@ -1228,7 +1228,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "db" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/long/west,
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fifthdeck/fore)
@@ -2528,7 +2528,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/expedition/storage)
 "gq" = (
-/obj/structure/stairs/east,
+/obj/structure/stairs/long/east,
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/storage)
 "gr" = (
@@ -8694,7 +8694,7 @@
 	dir = 4;
 	pixel_x = -24
 	},
-/obj/structure/stairs/south,
+/obj/structure/stairs/long,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
 "wA" = (
@@ -9709,7 +9709,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/quartermaster/expedition/eva)
 "Dr" = (
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -10780,7 +10780,7 @@
 /area/crew_quarters/observation)
 "Ko" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	anchored = 1
 	},
 /obj/structure/cable/yellow{
@@ -12258,7 +12258,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/bridge/ai/ai)
 "Vz" = (
-/obj/structure/stairs/south,
+/obj/structure/stairs/long,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fifthdeck/aft)
 "VA" = (

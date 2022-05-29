@@ -33,28 +33,26 @@
 	return ..()
 
 /mob/proc/remove_screen_obj_references()
-	hands = null
-	purged = null
-	internals = null
-	oxygen = null
-	i_select = null
-	m_select = null
-	toxin = null
-	fire = null
-	bodytemp = null
-	healths = null
-	throw_icon = null
-	nutrition_icon = null
-	hydration_icon = null
-	pressure = null
-	pain = null
-	up_hint = null
-	item_use_icon = null
-	radio_use_icon = null
-	gun_move_icon = null
-	gun_setting_icon = null
-	ability_master = null
-	zone_sel = null
+	QDEL_NULL_SCREEN(hands)
+	QDEL_NULL_SCREEN(purged)
+	QDEL_NULL_SCREEN(internals)
+	QDEL_NULL_SCREEN(oxygen)
+	QDEL_NULL_SCREEN(toxin)
+	QDEL_NULL_SCREEN(fire)
+	QDEL_NULL_SCREEN(bodytemp)
+	QDEL_NULL_SCREEN(healths)
+	QDEL_NULL_SCREEN(throw_icon)
+	QDEL_NULL_SCREEN(nutrition_icon)
+	QDEL_NULL_SCREEN(hydration_icon)
+	QDEL_NULL_SCREEN(pressure)
+	QDEL_NULL_SCREEN(pain)
+	QDEL_NULL_SCREEN(up_hint)
+	QDEL_NULL_SCREEN(item_use_icon)
+	QDEL_NULL_SCREEN(radio_use_icon)
+	QDEL_NULL_SCREEN(gun_move_icon)
+	QDEL_NULL_SCREEN(gun_setting_icon)
+	QDEL_NULL_SCREEN(ability_master)
+	QDEL_NULL_SCREEN(zone_sel)
 
 /mob/Initialize()
 	. = ..()
@@ -512,7 +510,7 @@
 	if(over == user && user != src && !istype(user, /mob/living/silicon/ai))
 		show_inv(user)
 		return TRUE
-	if(istype(over, /obj/vehicle/train))
+	if(!anchored && istype(over, /obj/vehicle/train))
 		var/obj/vehicle/train/beep = over
 		if(!beep.load(src))
 			to_chat(user, SPAN_WARNING("You were unable to load \the [src] onto \the [over]."))
@@ -560,8 +558,10 @@
 
 	if(client.holder)
 		if(statpanel("MC"))
-			stat("CPU:","[world.cpu]")
+			stat("CPU:", "[Master.format_color_cpu()]")
+			stat("Map CPU:", "[Master.format_color_cpu_map()]")
 			stat("Instances:","[world.contents.len]")
+			stat("World Time:", "[world.time]")
 			stat(null)
 			if(Master)
 				Master.stat_entry()
@@ -1103,3 +1103,36 @@
 
 	// We're inside, and more than one z-level below the roof, so ignore it.
 	return WEATHER_IGNORE
+
+/mob/proc/IsMultiZAdjacent(var/atom/neighbor)
+
+	var/turf/T = get_turf(src)
+	var/turf/N = get_turf(neighbor)
+
+	// Not on valid turfs.
+	if(QDELETED(src) || QDELETED(neighbor) || !istype(T) || !istype(N))
+		return FALSE
+
+	// On the same z-level, we don't need to care about multiz.
+	if(N.z == T.z)
+		return Adjacent(neighbor)
+
+	// More than one z-level away from each other.
+	if(abs(N.x - T.x) > 1 || abs(N.y - T.y) > 1 || abs(N.z - T.z) > 1)
+		return FALSE
+
+	// Not in a connected z-volume.
+	if(!(N.z in GetConnectedZlevels(T.z)))
+		return FALSE
+
+	// Are they below us?
+	if(N.z < T.z && HasBelow(T.z))
+		var/turf/B = GetBelow(T)
+		return T.is_open() && neighbor.Adjacent(B)
+
+	// Are they above us?
+	if(HasAbove(T.z))
+		var/turf/A = GetAbove(T)
+		return A.is_open() && neighbor.Adjacent(A)
+
+	return FALSE
