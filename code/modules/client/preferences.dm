@@ -342,7 +342,7 @@ var/global/list/time_prefs_fixed = list()
 	// Sanitizing rather than saving as someone might still be editing when copy_to occurs.
 	player_setup.sanitize_setup()
 	character.personal_aspects = list()
-	character.set_species(species)
+	character.change_species(species)
 	character.set_bodytype((character.species.get_bodytype_by_name(bodytype) || character.species.default_bodytype), FALSE)
 
 	if(be_random_name)
@@ -375,8 +375,6 @@ var/global/list/time_prefs_fixed = list()
 
 	character.h_style = h_style
 	character.f_style = f_style
-
-	character.species.handle_limbs_setup(character)
 
 	QDEL_NULL_LIST(character.worn_underwear)
 	character.worn_underwear = list()

@@ -28,7 +28,7 @@
 		var/mob/living/carbon/human/H = M
 		H.update_eyes()
 
-/decl/material/liquid/glowsap/on_leaving_metabolism(mob/parent, metabolism_class)
+/decl/material/liquid/glowsap/on_leaving_metabolism(atom/parent, metabolism_class)
 	if(ishuman(parent))
 		var/mob/living/carbon/human/H = parent
 		addtimer(CALLBACK(H, /mob/living/carbon/human/proc/update_eyes), 5 SECONDS)
@@ -379,6 +379,7 @@
 	color = "#c8a5dc"
 	touch_met = 5
 	dirtiness = DIRTINESS_STERILE
+	turf_touch_threshold = 0.1
 	uid = "chem_antiseptic"
 
 /decl/material/liquid/crystal_agent

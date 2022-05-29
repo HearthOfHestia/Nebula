@@ -62,6 +62,7 @@
 	result = /obj/item/chems/food/enchiladas
 
 /decl/recipe/burrito
+	display_name = "plain meat burrito"
 	appliance = APPLIANCE_MIX|APPLIANCE_MICROWAVE
 	items = list(
 		/obj/item/chems/food/tortilla = 1,

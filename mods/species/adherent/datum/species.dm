@@ -59,7 +59,7 @@
 	heat_level_2 = SYNTH_HEAT_LEVEL_2
 	heat_level_3 = SYNTH_HEAT_LEVEL_3
 
-	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_MINOR_CUT
+	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_MINOR_CUT | SPECIES_FLAG_CRYSTALLINE
 	spawn_flags =   SPECIES_CAN_JOIN
 
 	appearance_flags = HAS_EYE_COLOR
@@ -106,11 +106,6 @@
 		BP_COOLING_FINS = /obj/item/organ/internal/powered/cooling_fins
 		)
 
-	vital_organs = list(
-		BP_BRAIN = list("path" = /obj/item/organ/internal/brain/adherent),
-		BP_GROIN = list("path" = /obj/item/organ/external/groin/crystal),
-		BP_CHEST = list("path" = /obj/item/organ/external/chest/crystal),
-	)
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/snake
 	max_players = 3
 

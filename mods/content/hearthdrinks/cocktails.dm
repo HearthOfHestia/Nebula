@@ -107,7 +107,7 @@
 	description = "A blend of coffee and kahula."
 	ratios = list(
 		/decl/material/liquid/drink/coffee = 0.4,
-		/decl/material/liquid/ethanol/coffee/kahlua =    0.2
+		/decl/material/liquid/ethanol/coffee =    0.2
 	)
 
 /decl/cocktail/qiiboxi

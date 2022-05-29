@@ -1,4 +1,5 @@
 /decl/recipe/slimetoast
+	display_name = "Slime Toast"
 	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
@@ -7,6 +8,7 @@
 	result = /obj/item/chems/food/jelliedtoast/slime
 
 /decl/recipe/jellydonut/slime
+	display_name = "Slime Jelly Donut"
 	appliance = APPLIANCE_FRYER
 	reagents = list(/decl/material/liquid/slimejelly = 5, /decl/material/liquid/nutriment/sugar = 5)
 	items = list(
@@ -15,6 +17,7 @@
 	result = /obj/item/chems/food/donut/slimejelly
 
 /decl/recipe/slimeburger
+	display_name = "Slime Burger"
 	appliance = APPLIANCE_MIX
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
@@ -23,6 +26,7 @@
 	result = /obj/item/chems/food/jellyburger/slime
 
 /decl/recipe/slimesandwich
+	display_name = "Slime Sandwich"
 	appliance = APPLIANCE_MIX
 	reagents = list(/decl/material/liquid/slimejelly = 5)
 	items = list(
@@ -48,7 +52,6 @@
 	.=..()
 	reagents.add_reagent(/decl/material/liquid/slimejelly, 5)
 
-
 /obj/item/chems/food/slimesoup
 	name = "slime soup"
 	desc = "If no water is available, you may substitute tears."
@@ -70,16 +73,11 @@
 	center_of_mass = @"{'x':16,'y':11}"
 	nutriment_amt = 3
 	bitesize = 5
+	donut_state = "jdonut"
 
 /obj/item/chems/food/donut/slimejelly/Initialize()
 	.=..()
-	reagents.add_reagent(/decl/material/liquid/nutriment/sprinkles, 1)
 	reagents.add_reagent(/decl/material/liquid/slimejelly, 5)
-	if(prob(30))
-		src.icon_state = "jdonut2"
-		src.overlay_state = "box-donut2"
-		src.SetName("frosted jelly donut")
-	reagents.add_reagent(/decl/material/liquid/nutriment/sprinkles, 2)
 
 /obj/item/chems/food/mysterysoup/get_random_fillings()
 	. = ..() + list(list(

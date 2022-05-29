@@ -152,7 +152,7 @@
 	batter_coating = /decl/material/liquid/nutriment/batter
 
 /obj/item/chems/food/pizzacrunchslice
-	name = "pizza crunch"
+	name = "pizza crunch slice"
 	desc = "A little piece of a heart attack. Its toppings are a mystery, hidden under batter."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "pizzacrunchslice"

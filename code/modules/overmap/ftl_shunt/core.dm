@@ -95,7 +95,7 @@
 	power_channel = EQUIP
 	idle_power_usage = 1600
 	light_color = COLOR_BLUE
-
+	stock_part_presets = list(/decl/stock_part_preset/terminal_setup)
 //Base procs
 
 /obj/machinery/ftl_shunt/core/Initialize(mapload, d, populate_parts)
@@ -111,7 +111,7 @@
 	conduits.icon_state = "conduits"
 	portal = new
 	portal.icon_state = "loop-base"
-	charge_indicator = new 
+	charge_indicator = new
 	charge_indicator.icon_state = null
 	pumps = new
 	pumps.icon_state = "coolant_pumps_composite_off"
@@ -154,11 +154,11 @@
 	if(chargepercent == 0 || isnull(chargepercent))
 		new_charge_color ="#fa0a0a"
 	else
-	#if DM_VERSION > 513 
+	#if DM_VERSION > 513
 		new_charge_color = gradient("#fa0a0a", "#0de405", clamp(chargepercent/100, 0, 100))
 	#endif
 	#if DM_VERSION < 514
-		new_charge_color = HSVtoRGB(RotateHue(hsv(0, 255, 255), 120 * (1 - chargepercent/100))) 
+		new_charge_color = HSVtoRGB(RotateHue(hsv(0, 255, 255), 120 * (1 - chargepercent/100)))
 	#endif
 	animate(charge_indicator, color = new_charge_color, 1 SECOND)
 
@@ -359,9 +359,9 @@
 				continue
 			if(H.skill_check(SKILL_ENGINES, SKILL_EXPERT))
 				to_chat(H, SPAN_DANGER("The deck vibrates with a harmonic that sets your teeth on edge and fills you with dread."))
-	
+
 	var/announcetxt = replacetext(shunt_start_text, "%%TIME%%", "[round(jump_delay/600)] minutes.")
-	
+
 	ftl_announcement.Announce(announcetxt, "FTL Shunt Management System", new_sound = sound('sound/misc/notice2.ogg'))
 
 	cached_security_level = security_state.current_security_level
@@ -645,7 +645,7 @@
 	if(!use_power_oneoff(input,EQUIP))
 		last_power_drawn = input
 		accumulated_charge += input * CELLRATE
-	
+
 		return TRUE
 	else
 		return FALSE
@@ -671,9 +671,9 @@
 				shake_camera(M, rand(1,2), rand(1,2))
 			last_stress_sound = world.time
 
-// 
+//
 // Construction MacGuffins down here.
-// 
+//
 
 /obj/item/stock_parts/circuitboard/ftl_shunt
 	name = "circuit board (superluminal shunt)"
