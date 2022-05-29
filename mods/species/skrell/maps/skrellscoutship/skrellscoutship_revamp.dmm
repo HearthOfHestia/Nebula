@@ -3302,7 +3302,7 @@
 /turf/simulated/floor/plating,
 /area/ship/skrellscoutship/command/brig)
 "va" = (
-/obj/machinery/power/shield_generator,
+/obj/machinery/shield_generator,
 /obj/structure/cable/yellow{
 	icon_state = "0-2"
 	},

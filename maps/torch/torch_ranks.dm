@@ -1,3 +1,6 @@
+// TODO:
+// - Find some way to reimplement branch-specific email TLDs
+
 /datum/job/submap
 	branch = /datum/mil_branch/civilian
 	rank =   /datum/mil_rank/civ/civ

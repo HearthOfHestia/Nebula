@@ -1,4 +1,5 @@
 /decl/recipe/brownies
+	display_name = "chocolate brownies"
 	appliance = APPLIANCE_OVEN
 	reagents = list(/decl/material/liquid/nutriment/browniemix = 10, /decl/material/liquid/nutriment/protein/egg = 3)
 	reagent_mix = REAGENT_REPLACE //No egg or mix in final recipe
@@ -34,6 +35,7 @@
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise
 
 /decl/recipe/muffin/berry
+	display_name = null // autoset
 	fruit = list("berries" = 1)
 	result = /obj/item/chems/food/berrymuffin
 

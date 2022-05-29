@@ -5745,7 +5745,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hydroponics)
 "oa" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/long/west,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/fore)
 "ob" = (
@@ -11894,7 +11894,7 @@
 /turf/simulated/floor/carpet/purple,
 /area/chapel/main)
 "Fm" = (
-/obj/machinery/power/port_gen/pacman,
+/obj/machinery/port_gen/pacman,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftport)
@@ -12050,7 +12050,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/vacant/cabin)
 "FO" = (
-/obj/machinery/power/rad_collector,
+/obj/machinery/rad_collector,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/thirddeck/aftport)
@@ -12063,7 +12063,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/machinery/power/emitter,
+/obj/machinery/emitter,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -15060,7 +15060,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/galley)
 "Pr" = (
-/obj/structure/stairs/south,
+/obj/structure/stairs/long,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/thirddeck/aft)
 "Ps" = (
@@ -15739,7 +15739,7 @@
 	dir = 4;
 	pixel_x = -23
 	},
-/obj/structure/stairs/south,
+/obj/structure/stairs/long,
 /obj/effect/floor_decal/corner/green{
 	dir = 9
 	},
@@ -16851,7 +16851,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/engineering/hardstorage)
 "Ve" = (
-/obj/machinery/power/port_gen/pacman{
+/obj/machinery/port_gen/pacman{
 	sheets = 25
 	},
 /obj/effect/floor_decal/corner/yellow/half{
@@ -17174,7 +17174,7 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/hallway/primary/thirddeck/center)
 "VY" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/long/west,
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8
 	},

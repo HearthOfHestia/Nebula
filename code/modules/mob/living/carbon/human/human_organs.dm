@@ -18,33 +18,36 @@
 	last_dam = damage_this_tick
 
 /mob/living/carbon/human/proc/recheck_bad_external_organs()
-	bad_external_organs.Cut()
+	LAZYCLEARLIST(bad_external_organs)
 	for(var/obj/item/organ/external/E in get_external_organs())
-		if(!E || !E.need_process())
-			continue
-		bad_external_organs |= E
+		if(E.need_process())
+			LAZYDISTINCTADD(bad_external_organs, E)
 
 // Takes care of organ related updates, such as broken and missing limbs
 /mob/living/carbon/human/proc/handle_organs()
-	var/force_process = should_recheck_bad_external_organs()
-	if(force_process)
-		recheck_bad_external_organs()
 
 	//processing internal organs is pretty cheap, do that first.
-	for(var/obj/item/organ/I in get_internal_organs())
+	for(var/obj/item/organ/I in internal_organs)
 		I.Process()
+
+	var/force_process = should_recheck_bad_external_organs()
+
+	if(force_process)
+		recheck_bad_external_organs()
+		for(var/obj/item/organ/external/Ex in get_external_organs())
+			LAZYDISTINCTADD(bad_external_organs, Ex)
 
 	handle_stance()
 	handle_grasp()
 
-	if(!force_process && !length(bad_external_organs))
+	if(!force_process && !LAZYLEN(bad_external_organs))
 		return
 
 	for(var/obj/item/organ/external/E in bad_external_organs)
 		if(!E)
 			continue
 		if(!E.need_process())
-			bad_external_organs -= E
+			LAZYREMOVE(bad_external_organs, E)
 			continue
 		else
 			E.Process()
@@ -221,7 +224,10 @@
 
 /mob/living/carbon/human/proc/sync_organ_dna()
 	for(var/obj/item/organ/O in get_organs())
-		O.set_dna(dna)
+		if(!BP_IS_PROSTHETIC(O))
+			O.setup_as_organic(dna)
+		else
+			O.setup_as_prosthetic()
 
 /mob/living/proc/is_asystole()
 	return FALSE
@@ -250,7 +256,7 @@
 //Registers an organ and setup the organ hierachy properly.
 //affected  : Parent organ if applicable.
 //in_place  : If true, we're performing an in-place replacement, without triggering anything related to adding the organ in-game as part of surgery or else.
-/mob/living/carbon/human/add_organ(var/obj/item/organ/O, var/obj/item/organ/external/affected = null, var/in_place = FALSE, var/update_icon = TRUE)
+/mob/living/carbon/human/add_organ(obj/item/organ/O, obj/item/organ/external/affected, in_place, update_icon, detached)
 	if(!(. = ..()))
 		return
 	if(!O.is_internal())
@@ -271,11 +277,12 @@
 //ignore_children: Skips recursively removing this organ's child organs.
 //in_place       : If true we remove only the organ (no children items or implants) and avoid triggering mob changes and parent organs changes as much as possible.
 //  Meant to be used for init and species transforms, without triggering any updates to mob state or anything related to losing a limb as part of surgery or combat.
-/mob/living/carbon/human/remove_organ(var/obj/item/organ/O, var/drop_organ = TRUE, var/detach = TRUE, var/ignore_children = FALSE,  var/in_place = FALSE, var/update_icon = TRUE)
+/mob/living/carbon/human/remove_organ(obj/item/organ/O, drop_organ, detach, ignore_children,  in_place, update_icon)
 	if(!(. = ..()))
 		return
 	if(!O.is_internal())
 		refresh_modular_limb_verbs()
+		LAZYREMOVE(bad_external_organs, O)
 
 	//#TODO: wish we could invalidate the human icons to trigger a single update when the organ state changes multiple times in a row
 	if(update_icon)
@@ -288,11 +295,11 @@
 
 /mob/living/carbon/human/on_lost_organ(var/obj/item/organ/O)
 	if(!(. = ..()))
-		return 
+		return
 	//Move some blood over to the organ
 	if(!BP_IS_PROSTHETIC(O) && O.species && O.reagents?.total_volume < 5)
 		vessel.trans_to(O, 5 - O.reagents.total_volume, 1, 1)
 
 /mob/living/carbon/human/delete_organs()
 	. = ..()
-	bad_external_organs?.Cut()
+	LAZYCLEARLIST(bad_external_organs)

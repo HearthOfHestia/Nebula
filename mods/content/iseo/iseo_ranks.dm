@@ -6,7 +6,7 @@
 /datum/mil_branch/iseo_issc
 	name = "International Stellar Surveyor Corps"
 	name_short = "ISSC"
-	email_domain = "issc.iseo"
+	// email_domain = "issc.iseo" // TODO - Find some way to reimplement branch-specific email TLDs
 
 	rank_types = list(
 		/datum/mil_rank/sc/t1,
@@ -41,7 +41,7 @@
 /datum/mil_branch/espatier_corps
 	name = "Espatier Corps"
 	name_short = "EC"
-	email_domain = "espatier.mil"
+	// email_domain = "espatier.mil" // TODO - Find some way to reimplement branch-specific email TLDs
 
 	rank_types = list(
 		/datum/mil_rank/espatier/e1,
@@ -95,7 +95,7 @@
 /datum/mil_branch/government
 	name = "ISEO Employee"
 	name_short = "ISEO"
-	email_domain = "gov.iseo"
+	// email_domain = "gov.iseo" // TODO - Find some way to reimplement branch-specific email TLDs
 
 	rank_types = list(
 		/datum/mil_rank/government/gov,

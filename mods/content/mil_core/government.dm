@@ -1,7 +1,7 @@
 /datum/mil_branch/government
 	name = "Government Employee"
 	name_short = "GOVT"
-	email_domain = "space.gov"
+	// email_domain = "space.gov" // TODO - Find some way to reimplement branch-specific email TLDs
 
 	rank_types = list(
 		/datum/mil_rank/government/gov,

@@ -369,7 +369,7 @@
 /turf/simulated/wall/r_wall/prepainted,
 /area/ship/endeavour/maintenance/deckone/fore/starboard)
 "bb" = (
-/obj/structure/stairs/west,
+/obj/structure/stairs/long/west,
 /obj/structure/railing/mapped,
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/first_deck)
@@ -9160,7 +9160,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/machinery/power/emitter/anchored{
+/obj/machinery/emitter/anchored{
 	dir = 8
 	},
 /turf/simulated/floor/plating,

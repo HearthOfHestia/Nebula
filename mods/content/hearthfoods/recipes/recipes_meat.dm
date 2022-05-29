@@ -1,5 +1,6 @@
 //Bacon
 /decl/recipe/bacon
+	display_name = "deep-fried bacon"
 	appliance = APPLIANCE_FRYER
 	items = list(
 		/obj/item/chems/food/rawbacon = 1

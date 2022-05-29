@@ -66,6 +66,8 @@
 	return
 
 /atom/Destroy()
+	UNQUEUE_TEMPERATURE_ATOM(src)
+
 	QDEL_NULL(reagents)
 
 	LAZYCLEARLIST(our_overlays)
@@ -87,24 +89,19 @@
 	if (!follow_repository.excluded_subtypes[type] && follow_repository.followed_subtypes_tcache[type])
 		follow_repository.add_subject(src)
 
-	if (virtual_mob && ispath(initial(virtual_mob)))
+	if(ispath(virtual_mob))
 		virtual_mob = new virtual_mob(get_turf(src), src)
 
 	// Fire Entered events for freshly created movables.
+	// Changing this behavior will almost certainly break power; update accordingly.
 	if (!ml && loc)
 		loc.Entered(src, null)
 
 /atom/movable/Destroy()
-	// These must be done before event cleanup in the parent call
-	if(LAZYLEN(movement_handlers) && !ispath(movement_handlers[1]))
-		QDEL_NULL_LIST(movement_handlers)
 
-	if (bound_overlay)
-		QDEL_NULL(bound_overlay)
+	unregister_all_movement(loc, src) // unregister events before destroy to avoid expensive checking
 
-	if(virtual_mob && !ispath(virtual_mob))
-		qdel(virtual_mob)
-		virtual_mob = null
+	. = ..()
 
 #ifdef DISABLE_DEBUG_CRASH
 	// meh do nothing. we know what we're doing. pro engineers.
@@ -121,4 +118,11 @@
 	vis_locs = null //clears this atom out of all vis_contents
 	vis_contents.Cut()
 
-	. = ..() // called last so that events are unregistered before the parent call
+	if (bound_overlay)
+		QDEL_NULL(bound_overlay)
+
+	if(ismob(virtual_mob))
+		QDEL_NULL(virtual_mob)
+
+	vis_locs = null //clears this atom out of all vis_contents
+	clear_vis_contents(src)

@@ -1019,7 +1019,7 @@
 				status += "MISSING"
 			if(org.status & ORGAN_MUTATED)
 				status += "misshapen"
-			if(org.dislocated == 2)
+			if(org.is_dislocated())
 				status += "dislocated"
 			if(org.status & ORGAN_BROKEN)
 				status += "hurts when touched"
@@ -1328,14 +1328,16 @@
 		dna.ready_dna(src) //regen dna filler only if we haven't forced the dna already
 
 	species.handle_pre_spawn(src)
-	apply_species_cultural_info()
-	apply_species_appearance()
 	if(!LAZYLEN(get_external_organs()))
 		species.create_missing_organs(src) //Syncs DNA when adding organs
+	apply_species_cultural_info()
+	apply_species_appearance()
 	species.handle_post_spawn(src)
 
 	UpdateAppearance() //Apply dna appearance to mob, causes DNA to change because filler values are regenerated
-	reset_blood()
+	//Prevent attempting to create blood container if its already setup
+	if(!vessel)
+		reset_blood()
 
 //If the mob has its default name it'll try to generate /obtain a proper one
 /mob/living/carbon/human/proc/try_generate_default_name()
