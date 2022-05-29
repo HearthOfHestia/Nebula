@@ -31,8 +31,33 @@
 	var/last_successful_breath
 	var/breath_fail_ratio // How badly they failed a breath. Higher is worse.
 
+	var/datum/reagents/metabolism/inhaled
+
+/obj/item/organ/internal/lungs/Destroy()
+	QDEL_NULL(inhaled)
+	. = ..()
+
+/obj/item/organ/internal/lungs/setup_reagents()
+	. = ..()
+	if(!inhaled)
+		inhaled = new/datum/reagents/metabolism(240, (owner || src), CHEM_INHALE)
+	if(!inhaled.my_atom)
+		inhaled.my_atom = src
+
+/obj/item/organ/internal/lungs/do_install(mob/living/carbon/human/target, obj/item/organ/external/affected, in_place)
+	if(!(. = ..()))
+		return
+	inhaled.my_atom = owner
+	inhaled.parent = owner
+
+/obj/item/organ/internal/lungs/do_uninstall(in_place, detach, ignore_children)
+	. = ..()
+	if(inhaled)
+		inhaled.my_atom = src
+		inhaled.parent = null
+
 /obj/item/organ/internal/lungs/proc/can_drown()
-	return (is_broken() || !has_gills)
+	return !has_gills || !is_usable()
 
 /obj/item/organ/internal/lungs/proc/remove_oxygen_deprivation(var/amount)
 	var/last_suffocation = oxygen_deprivation
@@ -54,6 +79,12 @@
 	. = ..()
 	sync_breath_types()
 
+// This call needs to be split out to make sure that all the ingested things are metabolised
+// before the process call is made on any of the other organs
+/obj/item/organ/internal/lungs/proc/metabolize()
+	if(is_usable())
+		inhaled.metabolize()
+
 /**
  *  Set these lungs' breath types based on the lungs' species
  */
@@ -71,6 +102,7 @@
 		poison_types =        list(/decl/material/gas/chlorine = TRUE)
 		exhale_type =         /decl/material/gas/carbon_dioxide
 
+
 /obj/item/organ/internal/lungs/Process()
 	..()
 	if(!owner)
@@ -78,7 +110,7 @@
 
 	if (germ_level > INFECTION_LEVEL_ONE && active_breathing)
 		if(prob(5))
-			owner.emote("cough")		//respitory tract infection
+			owner.cough()		//respitory tract infection
 
 	if(is_bruised() && !owner.is_asystole())
 		if(prob(2))
@@ -155,7 +187,7 @@
 	var/breatheffect = GET_CHEMICAL_EFFECT(owner, CE_BREATHLOSS)
 	if(!forced && breatheffect && !GET_CHEMICAL_EFFECT(owner, CE_STABLE)) //opiates are bad mmkay
 		safe_pressure_min *= 1 + breatheffect
-	
+
 	if(owner.lying)
 		safe_pressure_min *= 0.8
 
@@ -204,9 +236,9 @@
 			continue
 		// Little bit of sanity so we aren't trying to add 0.0000000001 units of CO2, and so we don't end up with 99999 units of CO2.
 		var/reagent_amount = breath.gas[gasname] * REAGENT_UNITS_PER_GAS_MOLE * ratio
-		if(reagent_amount < 0.05)
+		if(reagent_amount < MINIMUM_CHEMICAL_VOLUME)
 			continue
-		owner.reagents.add_reagent(gasname, reagent_amount)
+		inhaled.add_reagent(gasname, reagent_amount)
 		breath.adjust_gas(gasname, -breath.gas[gasname], update = 0) //update after
 
 	// Moved after reagent injection so we don't instantly poison ourselves with CO2 or whatever.
@@ -335,3 +367,26 @@
 /obj/item/organ/internal/lungs/gills
 	name = "lungs and gills"
 	has_gills = TRUE
+
+/mob/living/carbon/var/lastcough
+/mob/living/carbon/proc/cough(var/deliberate = FALSE)
+	var/obj/item/organ/internal/lungs/lung = get_organ(BP_LUNGS)
+	if(!lung || !lung.active_breathing || isSynthetic() || stat == DEAD || (deliberate && lastcough + 3 SECONDS > world.time))
+		return
+
+	if(lung.breath_fail_ratio > 0.9 && world.time > lung.last_successful_breath + 2 MINUTES)
+		if(deliberate)
+			to_chat(src, SPAN_WARNING("You try to cough, but no air comes out!"))
+		return
+
+	if(deliberate && incapacitated())
+		to_chat(src, SPAN_WARNING("You cannot do that right now."))
+		return
+
+	audible_message("<b>[src]</b> coughs!", "You cough!", radio_message = "coughs!") // styled like an emote
+
+	lastcough = world.time
+
+	// Coughing clears out 1-2 reagents from the lungs.
+	if(lung.inhaled.total_volume > 0 && loc)
+		lung.inhaled.splash(loc, rand(1, 2))
