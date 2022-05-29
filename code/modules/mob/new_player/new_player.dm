@@ -27,7 +27,7 @@
 	verbs += /mob/proc/toggle_antag_pool
 
 /mob/new_player/Destroy()
-	panel = null
+	QDEL_NULL(panel)
 	. = ..()
 
 /mob/new_player/proc/show_lobby_menu(force = FALSE)

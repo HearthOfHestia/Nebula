@@ -5,7 +5,8 @@
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
 	welcome_sound = 'mods/content/hearth_maps/sounds/cryorevival.ogg'
 
-	usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
+	// TODO - reimplement
+	// usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
 	station_name  = "ISEO Endeavour"
 	station_short = "Endeavour"

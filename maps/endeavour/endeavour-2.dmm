@@ -4596,7 +4596,7 @@
 /area/ship/endeavour/engineering/fuel_bay/co2)
 "jH" = (
 /obj/structure/cable/yellow,
-/obj/machinery/power/generator{
+/obj/machinery/generator{
 	anchored = 1;
 	dir = 8
 	},
@@ -5139,7 +5139,7 @@
 "kI" = (
 /obj/structure/cable/green,
 /obj/machinery/atmospherics/pipe/simple/visible/fuel,
-/obj/machinery/power/emitter/anchored,
+/obj/machinery/emitter/anchored,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/engineering/reactor)
 "kJ" = (
@@ -5402,7 +5402,7 @@
 	dir = 9
 	},
 /obj/machinery/newscaster/bump/west,
-/obj/structure/stairs/north,
+/obj/structure/stairs/long/north,
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering)
 "lg" = (
@@ -6434,7 +6434,7 @@
 	dir = 1;
 	pixel_y = -24
 	},
-/obj/structure/stairs/east,
+/obj/structure/stairs/long/east,
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/hallway/second_deck)
 "nv" = (
@@ -8721,7 +8721,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/engineering/fuel_bay/co2)
 "sZ" = (
-/obj/machinery/power/emitter,
+/obj/machinery/emitter,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/engineering/secure_storage)
 "ta" = (
@@ -8747,7 +8747,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/ship/endeavour/engineering/atmospherics)
 "td" = (
-/obj/machinery/power/port_gen/pacman,
+/obj/machinery/port_gen/pacman,
 /turf/simulated/floor/tiled/techfloor,
 /area/ship/endeavour/engineering/secure_storage)
 "te" = (

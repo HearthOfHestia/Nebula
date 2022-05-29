@@ -1,7 +1,7 @@
 /datum/mil_branch/civilian
 	name = "Civilian"
 	name_short = "Civ"
-	email_domain = "freemail.net"
+	// email_domain = "freemail.net" // TODO - Find some way to reimplement branch-specific email TLDs
 
 	rank_types = list(
 		/datum/mil_rank/civ/civ,

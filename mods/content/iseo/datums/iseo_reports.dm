@@ -17,8 +17,7 @@
 	add_field(/datum/report_field/pencode_text, "Other Notes")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(access_edit = access_representative, override = 0)
-	set_access(access_edit = access_corporate, override = 0)
+	set_access(write_access = write_access | list(list(access_representative, access_corporate)))
 	..()
 
 /datum/computer_file/report/recipient/iseo/crewman_incident
@@ -34,7 +33,7 @@
 	add_field(/datum/report_field/pencode_text, "Description of incident")
 	add_field(/datum/report_field/signature, "Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	set_access(access_edit = list(access_heads, access_iseo_crew))
+	set_access(write_access = list(list(access_heads, access_iseo_crew)))
 	..()
 
 /datum/computer_file/report/recipient/iseo/work_visa
@@ -51,5 +50,5 @@
 	temp_field = add_field(/datum/report_field/signature, "Issuer of Work Visa Signature")
 	add_field(/datum/report_field/signature, "Recipient of Work Visa Signature")
 	add_field(/datum/report_field/options/yes_no, "Approved")
-	temp_field.set_access(access_edit = access_representative)
+	temp_field.set_access(write_access = access_representative)
 	..()

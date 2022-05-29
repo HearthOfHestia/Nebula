@@ -8,20 +8,20 @@
 
 /decl/cultural_info/faction/lizard/sstrak
 	name = "Sstrak-Yuk'har-V'vrenskan"
-	description = "You are part of the Sstrak-Yuk’har-V’vrenskan, the interstellar navy of the Coalition. They are the only branch of the military to have never fought in a single war, \
-	and many Unathi consider their role to be purely ceremonial, or serving as ‘space police’. This lack of interstellar combat is a testament to the Unathi’s determination for mutual peace, \
+	description = "You are part of the Sstrak-Yukï¿½har-Vï¿½vrenskan, the interstellar navy of the Coalition. They are the only branch of the military to have never fought in a single war, \
+	and many Unathi consider their role to be purely ceremonial, or serving as ï¿½space policeï¿½. This lack of interstellar combat is a testament to the Unathiï¿½s determination for mutual peace, \
 	but a concern to its military staff. Many members of the Sstrak are considered reserves, and have recently found themselves loaned out to civilian branches of the Coalition, serving as \
 	security attachments, such as onboard the Endeavour, protecting the Unathi personnel and their human counterparts."
 
 /decl/cultural_info/faction/lizard/kruz
 	name = "Kruz Institute"
 	description = "You are from the Kruz Institute, the scientific powerhouse of Moghes. Either from the Institute itself, with its home in the Tizegi Mountains, or from its colonial holdings \
-	on Oe’erg, you are likely dedicated to the pursuit of science. The Kruz Institute maintains a significant presence in Unathi space, dedicating resources to interstellar exploration and research. \
+	on Oeï¿½erg, you are likely dedicated to the pursuit of science. The Kruz Institute maintains a significant presence in Unathi space, dedicating resources to interstellar exploration and research. \
 	While they have ties to the Vasakkad, they are a largely independent body, and have negotiated separate contracts to work alongside the Human ISEO. They are extremely picky when it comes to students, \
-	and those that graduate from the Kruz Institute are considered some of the Unathi’s brightest minds."
+	and those that graduate from the Kruz Institute are considered some of the Unathiï¿½s brightest minds."
 
 /decl/cultural_info/faction/lizard/other
-	name = "Other Faction"
+	name = "Unathi - Other Faction"
 	description = "You do not consider yourself a part of any of the major factions of the Unathi. Wherever you are from, there are many reasons for an unaligned Unathi to travel to space, \
 	either for trade, employment, or adventure.  It's likely you were born on Moghes, or Off-World as part of the new Spacer generation of Unathi, and you decided to leave the Vasakkad in search \
 	of something new. It is not unheard of for Unathi to seek employment in Human space, in a wide variety of roles and places, mostly serving contractor and civilian niches."

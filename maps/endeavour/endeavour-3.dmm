@@ -302,7 +302,7 @@
 /turf/simulated/open,
 /area/ship/endeavour/engineering/utility_shaft)
 "aT" = (
-/obj/structure/stairs/east,
+/obj/structure/stairs/long/east,
 /turf/simulated/floor/tiled,
 /area/ship/endeavour/command/hallway)
 "aU" = (
@@ -7727,7 +7727,7 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/shield_generator{
+/obj/machinery/shield_generator{
 	dir = 4
 	},
 /turf/simulated/floor/plating,
@@ -9008,7 +9008,7 @@
 	pixel_y = -24
 	},
 /obj/structure/cable,
-/obj/machinery/power/shield_generator{
+/obj/machinery/shield_generator{
 	dir = 4
 	},
 /turf/simulated/floor/plating,

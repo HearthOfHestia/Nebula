@@ -2783,7 +2783,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/stairs/north,
+/obj/structure/stairs/long/north,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "kZ" = (
@@ -4119,7 +4119,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
 "pV" = (
-/obj/structure/stairs/east,
+/obj/structure/stairs/long/east,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/fore)
 "pW" = (
@@ -8096,7 +8096,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/storage/upper)
 "Er" = (
-/obj/structure/stairs/north,
+/obj/structure/stairs/long/north,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/fourthdeck/aft)
 "Et" = (
@@ -8943,7 +8943,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/shuttle/escape_pod9/station)
 "Hv" = (
-/obj/structure/stairs/north,
+/obj/structure/stairs/long/north,
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1"
@@ -13451,7 +13451,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/eva)
 "Vq" = (
-/obj/structure/stairs/north,
+/obj/structure/stairs/long/north,
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "Vr" = (
