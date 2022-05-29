@@ -1,3 +1,6 @@
+/datum/map/torch
+	overmap_ids = list(OVERMAP_ID_SPACE = /datum/overmap/torch) // must be here, not in torch_define.dm
+
 /datum/overmap/torch
 	event_areas = 34
 	map_size_x = 35
@@ -7,7 +10,6 @@
 	name = "ISEO Endeavour"
 	desc = "A converted ex-military ship broadcasting the codes, \"ISEO Endeavour, HSC-4-13-X\"."
 	fore_dir = WEST
-	vessel_mass = 100000
 	burn_delay = 2 SECONDS
 	sector_flags = OVERMAP_SECTOR_BASE | OVERMAP_SECTOR_IN_SPACE
 	//base = TRUE
@@ -79,7 +81,6 @@
 	shuttle = "Spirit"
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 1 SECONDS
-	vessel_mass = 5000
 	fore_dir = NORTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_SMALL
@@ -88,7 +89,6 @@
 	name = "Perseverance"
 	desc = "A PM-24 modular transport, broadcasting ISEO codes and the callsign \"Endeavour-1 Perseverance\"."
 	shuttle = "Perseverance"
-	vessel_mass = 20000
 	max_speed = 1/(1 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
 	fore_dir = NORTH
@@ -100,7 +100,6 @@
 	shuttle = "Opportunity"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
-	vessel_mass = 3000 //very inefficient pod
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
@@ -111,7 +110,6 @@
 	shuttle = "Curiosity"
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
-	vessel_mass = 3000 //very inefficient pod
 	fore_dir = SOUTH
 	skill_needed = SKILL_BASIC
 	vessel_size = SHIP_SIZE_TINY
@@ -135,20 +133,3 @@
 	name = "Curiosity control console"
 	shuttle_tag = "Curiosity"
 	req_access = list(access_curiosity_helm)
-
-/*
-/obj/effect/overmap/visitable/ship/torch/Initialize()
-	. = ..()
-
-	var/obj/effect/overmap/visitable/sector/residue/R = new()
-	R.forceMove(locate(src.x, src.y, global.using_map.overmap_z))
-
-	for(var/obj/machinery/computer/ship/helm/H in SSmachines.machinery)
-		H.add_known_sector(R)
-*/
-
-/obj/effect/overmap/visitable/sector/residue
-	name = "Space-time Distortion"
-	desc = "Trace radiation emanating from this sector is consistent with the aftermath of a superluminal jump."
-	icon_state = "event"
-	sector_flags = OVERMAP_SECTOR_KNOWN

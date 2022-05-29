@@ -298,7 +298,7 @@
 	id_tag = "admin_shuttle_dock_airlock";
 	pixel_x = -24;
 	pixel_y = 32;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_ENDEAVOUR_CREW"));
 	tag_airpump = "admin_shuttle_dock_pump";
 	tag_chamber_sensor = "admin_shuttle_dock_sensor";
 	tag_exterior_door = "admin_shuttle_dock_outer";
@@ -466,7 +466,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/maintenance/fourthdeck/forestarboard)
 "bT" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled,
 /area/maintenance/fourthdeck/forestarboard)
 "bU" = (
@@ -770,7 +770,7 @@
 /area/janitor)
 "cR" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/closet/jcloset_torch,
+/obj/structure/closet/jcloset_endeavour,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/chems/spray/cleaner,
@@ -1140,7 +1140,7 @@
 /turf/simulated/wall/map_preset/tan,
 /area/storage/auxillary/starboard)
 "ek" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -1157,7 +1157,7 @@
 	id_tag = "merchant_shuttle_station_dock";
 	pixel_x = 24;
 	pixel_y = 24;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_ENDEAVOUR_CREW"));
 	tag_airpump = "merchant_shuttle_station_pump";
 	tag_chamber_sensor = "merchant_shuttle_station_sensor";
 	tag_exterior_door = "merchant_shuttle_station_exterior";
@@ -2577,8 +2577,8 @@
 	pixel_y = -6
 	},
 /obj/structure/table,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Pathfinder"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Pathfinder"
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/command/pathfinder)
@@ -3069,7 +3069,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -3242,7 +3242,7 @@
 	icon_state = "2-8"
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
@@ -3956,7 +3956,7 @@
 /area/maintenance/fourthdeck/aft)
 "pr" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
 "pu" = (
@@ -5544,7 +5544,7 @@
 /area/quartermaster/office)
 "up" = (
 /obj/effect/floor_decal/corner/brown/half,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/fourthdeck/center)
@@ -5578,7 +5578,7 @@
 /turf/simulated/floor/wood/walnut,
 /area/crew_quarters/lounge)
 "uA" = (
-/obj/structure/closet/jcloset_torch,
+/obj/structure/closet/jcloset_endeavour,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/grenade/chem_grenade/cleaner,
 /obj/item/chems/spray/cleaner,
@@ -6365,7 +6365,7 @@
 /turf/simulated/floor/tiled,
 /area/quartermaster/deckchief)
 "xo" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
@@ -6408,7 +6408,7 @@
 	icon_state = "2-8"
 	},
 /obj/structure/catwalk,
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
@@ -6434,7 +6434,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/maintenance/solgov/clean,
 /obj/random/maintenance/solgov/clean,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/random/maintenance/solgov/clean,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/hallway/primary/fourthdeck/aft)
@@ -6858,7 +6858,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -7007,7 +7007,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -8742,7 +8742,7 @@
 	display_name = "Port Dock A";
 	id_tag = "skipjack_shuttle_dock_airlock";
 	pixel_x = 24;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_ENDEAVOUR_CREW"));
 	tag_airpump = "skipjack_shuttle_dock_pump";
 	tag_chamber_sensor = "skipjack_shuttle_dock_sensor";
 	tag_exterior_door = "skipjack_shuttle_dock_outer";
@@ -9627,7 +9627,7 @@
 	id_tag = "rescue_shuttle_dock_airlock";
 	pixel_x = -24;
 	pixel_y = -32;
-	req_access = list(list("ACCESS_EXTERNAL","ACCESS_TORCH_CREW"));
+	req_access = list(list("ACCESS_EXTERNAL","ACCESS_ENDEAVOUR_CREW"));
 	tag_airpump = "rescue_shuttle_dock_pump";
 	tag_chamber_sensor = "rescue_shuttle_dock_sensor";
 	tag_exterior_door = "rescue_shuttle_dock_outer";
@@ -11199,7 +11199,7 @@
 	id_tag = "shop_shutters";
 	name = "Counter Shutters";
 	pixel_y = 24;
-	req_access = list(list("ACCESS_HEADS","ACCESS_TORCH_SHOP"))
+	req_access = list(list("ACCESS_HEADS","ACCESS_ENDEAVOUR_SHOP"))
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -11492,7 +11492,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/quartermaster/sorting)
 "PH" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/plating,
 /area/maintenance/fourthdeck/foreport)
 "PI" = (
@@ -12826,7 +12826,7 @@
 /turf/simulated/floor/tiled,
 /area/command/pathfinder)
 "Tt" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/random/single/lighter,
 /turf/simulated/floor/tiled/techfloor,
@@ -14091,7 +14091,7 @@
 /turf/simulated/wall/map_preset/tan,
 /area/hallway/primary/fourthdeck/aft)
 "Xo" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/mauve/half{
 	dir = 1
 	},

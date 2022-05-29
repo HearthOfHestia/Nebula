@@ -33,6 +33,24 @@
 	. += new/datum/atom_creator/simple(/obj/item/storage/firstaid/regular, 25)
 
 /*
+ * Wall-Mounted Emergency Closet
+ */
+/obj/structure/closet/walllocker/emerglocker
+	name = "emergency locker"
+	desc = "A wall mounted locker with emergency supplies."
+	closet_appearance = /decl/closet_appearance/wall/emergency
+
+/obj/structure/closet/walllocker/emerglocker/WillContain()
+	//Guaranteed kit - two tanks, two masks, two O2 pouches, and a softsuit
+	. = list(/obj/item/tank/emergency/oxygen/engi = 2,
+			/obj/item/clothing/mask/breath = 2,
+			/obj/item/storage/med_pouch/oxyloss = 2)
+
+	. += new/datum/atom_creator/simple(list(/obj/item/storage/toolbox/emergency, /obj/item/inflatable/wall = 2), 75)
+	. += new/datum/atom_creator/simple(/obj/item/oxycandle, 75)
+	. += new/datum/atom_creator/simple(/obj/item/storage/firstaid/regular, 25)
+
+/*
  * Fire Closet
  */
 /obj/structure/closet/firecloset

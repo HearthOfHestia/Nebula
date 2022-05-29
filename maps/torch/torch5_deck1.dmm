@@ -1640,7 +1640,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "aes" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/random/maintenance/solgov,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -1953,7 +1953,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
 "aeP" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
@@ -1963,7 +1963,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
 	},
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "aeS" = (
@@ -2508,7 +2508,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "afY" = (
-/obj/machinery/vending/medical/torch{
+/obj/machinery/vending/medical/endeavour{
 	dir = 1
 	},
 /obj/effect/floor_decal/corner/paleblue/mono,
@@ -5768,7 +5768,7 @@
 	dir = 4;
 	pixel_x = -21
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/fore)
@@ -5864,7 +5864,7 @@
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "awd" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/monotile,
@@ -6751,7 +6751,7 @@
 /area/rnd/xenoarch/analysis)
 "aBJ" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/scientist_torch,
+/obj/structure/closet/secure_closet/scientist_endeavour,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -6794,7 +6794,7 @@
 /area/hallway/primary/firstdeck/aft)
 "aCr" = (
 /obj/effect/floor_decal/corner/blue/mono,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/monotile,
@@ -6802,7 +6802,7 @@
 "aCu" = (
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/security_torch,
+/obj/structure/closet/secure_closet/security_endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/security/locker)
 "aCv" = (
@@ -7617,7 +7617,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/machinery/computer/atmoscontrol/laptop{
 	monitored_alarm_ids = list("curiosity1","curiosity2","curiosity3");
-	req_access = list("ACCESS_TORCH_CURIOSITY_MAINT")
+	req_access = list("ACCESS_ENDEAVOUR_CURIOSITY_MAINT")
 	},
 /obj/item/radio/intercom{
 	dir = 4;
@@ -9156,7 +9156,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/coin,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -9502,7 +9502,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "aPT" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/centralport)
@@ -10416,7 +10416,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "aTF" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/item/storage/box/lights/mixed,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
@@ -10465,7 +10465,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "aTN" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
@@ -11287,8 +11287,8 @@
 	pixel_x = -32
 	},
 /obj/effect/floor_decal/corner/research/mono,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Research Paperwork Office"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Research Paperwork Office"
 	},
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/office)
@@ -11830,7 +11830,7 @@
 /turf/simulated/floor/tiled/dark/monotile,
 /area/security/lobby)
 "cEb" = (
-/obj/structure/closet/secure_closet/medical_torch,
+/obj/structure/closet/secure_closet/medical_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/light{
 	dir = 8
@@ -11909,7 +11909,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralstarboard)
 "cMb" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/random/maintenance/solgov,
 /obj/machinery/light/small{
 	dir = 8
@@ -12052,7 +12052,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
 "cWb" = (
-/obj/structure/closet/wardrobe/medic_torch,
+/obj/structure/closet/wardrobe/medic_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/machinery/alarm{
 	pixel_y = 24
@@ -12524,7 +12524,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "dEb" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)
 "dFb" = (
@@ -12631,7 +12631,7 @@
 	dir = 1
 	},
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/structure/cable/green{
 	icon_state = "2-8"
@@ -13166,7 +13166,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "exb" = (
@@ -13506,7 +13506,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/firstdeck/aft)
 "fmb" = (
-/obj/structure/closet/secure_closet/medical_torch,
+/obj/structure/closet/secure_closet/medical_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/dark/monotile,
 /area/medical/foyer/storeroom)
@@ -14955,7 +14955,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/aftstarboard)
 "hDV" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/forestarboard)
@@ -16384,7 +16384,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 24
 	},
-/obj/structure/closet/secure_closet/hydroponics_torch,
+/obj/structure/closet/secure_closet/hydroponics_endeavour,
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
 "jHb" = (
@@ -16675,7 +16675,7 @@
 /turf/simulated/floor/tiled/white,
 /area/assembly/robotics/laboratory)
 "kdd" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light,
@@ -16787,7 +16787,7 @@
 /area/assembly/robotics/office)
 "knu" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/scientist_torch,
+/obj/structure/closet/secure_closet/scientist_endeavour,
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenoarch/equipment)
 "kny" = (
@@ -16826,7 +16826,7 @@
 /obj/effect/floor_decal/corner/red{
 	dir = 9
 	},
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = -24
 	},
 /obj/machinery/camera/network/security{
@@ -18187,7 +18187,7 @@
 /turf/simulated/floor/tiled,
 /area/security/processing)
 "mrW" = (
-/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/structure/closet/secure_closet/medical_endeavoursenior,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
@@ -18433,7 +18433,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = -28
 	},
 /turf/simulated/floor/blackgrid,
@@ -18667,7 +18667,7 @@
 /turf/simulated/floor/tiled,
 /area/security/locker)
 "naO" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
 "nbb" = (
@@ -18885,7 +18885,7 @@
 /area/security/wing)
 "nnb" = (
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/keycard_auth/torch{
+/obj/machinery/keycard_auth/endeavour{
 	pixel_x = -28
 	},
 /turf/simulated/floor/blackgrid,
@@ -19114,8 +19114,8 @@
 /area/teleporter/firstdeck)
 "nFh" = (
 /obj/structure/table/steel,
-/obj/machinery/photocopier/faxmachine/torch{
-	department = "Torch - Brig Chief"
+/obj/machinery/photocopier/faxmachine/endeavour{
+	department = "Endeavour - Brig Chief"
 	},
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Brig Chief";
@@ -19699,7 +19699,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/storage/emergency)
 "ovZ" = (
-/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/structure/closet/secure_closet/medical_endeavoursenior,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/sign/warning/nosmoking_1{
@@ -19862,7 +19862,7 @@
 /area/security/detectives_office)
 "oIq" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
 "oJb" = (
@@ -20433,11 +20433,11 @@
 	pixel_y = -22
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/scientist_torch,
+/obj/structure/closet/secure_closet/scientist_endeavour,
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
 "psb" = (
-/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch,
+/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_endeavour,
 /obj/effect/floor_decal/corner/research{
 	dir = 10
 	},
@@ -20449,7 +20449,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/locker)
 "ptb" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -32
 	},
@@ -21361,7 +21361,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/firstdeck/centralport)
 "qwk" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/red/mono,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/fore)
@@ -22326,7 +22326,7 @@
 "ruS" = (
 /obj/effect/floor_decal/corner/green/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled/monotile,
 /area/hallway/primary/firstdeck/center)
 "rvb" = (
@@ -22423,7 +22423,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology/xenoflora)
 "rCp" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/structure/table/frame,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/forestarboard)
@@ -22832,7 +22832,7 @@
 "saS" = (
 /obj/effect/floor_decal/corner/red/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/security_torch,
+/obj/structure/closet/secure_closet/security_endeavour,
 /obj/machinery/camera/network/security{
 	c_tag = "Security Wing - Locker Room";
 	dir = 8
@@ -22981,7 +22981,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftport)
 "shq" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/foreport)
@@ -23101,7 +23101,7 @@
 	dir = 1
 	},
 /obj/machinery/pointdefense{
-	initial_id_tag = "torch_primary_pd"
+	initial_id_tag = "endeavour_primary_pd"
 	},
 /obj/structure/cable/green,
 /turf/simulated/floor/reinforced/airless,
@@ -23267,7 +23267,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/rnd/xenobiology/xenoflora)
 "sub" = (
-/obj/structure/closet/secure_closet/hydroponics_torch,
+/obj/structure/closet/secure_closet/hydroponics_endeavour,
 /obj/effect/floor_decal/corner/research/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
@@ -23498,7 +23498,7 @@
 /turf/simulated/floor/reinforced,
 /area/rnd/xenoarch/cell1)
 "sHb" = (
-/obj/structure/closet/secure_closet/medical_torchsenior,
+/obj/structure/closet/secure_closet/medical_endeavoursenior,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/power/apc{
@@ -24669,7 +24669,7 @@
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/sleep/cryo/aux)
 "vii" = (
-/obj/structure/closet/secure_closet/medical_torch,
+/obj/structure/closet/secure_closet/medical_endeavour,
 /obj/effect/floor_decal/corner/paleblue/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/white/monotile,
@@ -25911,7 +25911,7 @@
 /area/maintenance/firstdeck/centralstarboard)
 "xTT" = (
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/random/maintenance/solgov,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/firstdeck/aftstarboard)

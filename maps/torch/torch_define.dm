@@ -1,23 +1,22 @@
 /datum/map/torch
-	name = "\improper Endeavour"
-	full_name = "\improper ISEO Endeavour"
+	name = "Endeavour"
+	full_name = "ISEO Endeavour"
 	path = "torch"
 	flags = MAP_HAS_BRANCH | MAP_HAS_RANK
-	welcome_sound = 'maps/torch/sounds/cryorevival.ogg'
+	welcome_sound = 'mods/content/hearth_maps/sounds/cryorevival.ogg'
 	//config_path = "config/torch_config.txt"
 
 	admin_levels = list(7)
 	accessible_z_levels = list("1"=1,"2"=3,"3"=1,"4"=1,"5"=1,"6"=1,"9"=30)
-	overmap_ids = list(OVERMAP_ID_SPACE = /datum/overmap/torch)
+
 	// TODO: REIMPLEMENT
 	//usable_email_tlds = list("endeavour.issc.iseo", "endeavour.espatier.mil", "freemail.net")
 
 	allowed_spawns = list(/decl/spawnpoint/cryo)
 	default_spawn = /decl/spawnpoint/cryo
-	default_job_type = /datum/job/assistant
 
-	station_name  = "\improper ISEO Endeavour"
-	station_short = "\improper Endeavour"
+	station_name  = "ISEO Endeavour"
+	station_short = "Endeavour"
 	dock_name     = "TBD"
 	boss_name     = "ISEO Command"
 	boss_short    = "Command"
@@ -42,8 +41,10 @@
 
 	evac_controller_type = /datum/evacuation_controller/starship
 
-	default_law_type = /datum/ai_laws/solgov
 	num_exoplanets = 1
 
 	away_site_budget = 3
-	id_hud_icons = 'maps/torch/icons/assignment_hud.dmi'
+	id_hud_icons = 'mods/content/hearth_maps/icons/assignment_hud.dmi'
+
+/datum/map/torch/preferences_key() // for compatibility with the Endeavour
+	return "iseo"

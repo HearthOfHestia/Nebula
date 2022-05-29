@@ -6,7 +6,7 @@
 		/decl/music_track/human,
 		/decl/music_track/marhaba,
 		/decl/music_track/treacherous_voyage,
-		/decl/music_track/comet_haley,
+		/decl/music_track/comet_halley,
 		/decl/music_track/lysendraa,
 		/decl/music_track/lasers,
 		/decl/music_track/monument,

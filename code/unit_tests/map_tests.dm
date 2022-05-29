@@ -27,14 +27,16 @@
 			log_bad("[bad_msg] lacks an APC.")
 			area_good = 0
 		else if(A.apc && (exemptions & global.using_map.NO_APC))
-			log_bad("[bad_msg] is not supposed to have an APC.")
+			log_bad("[bad_msg] is not supposed to have an APC, but has one: [log_info_line(A.apc)].")
 			area_good = 0
 
 		if(!A.air_scrub_names.len && !(exemptions & global.using_map.NO_SCRUBBER))
 			log_bad("[bad_msg] lacks an air scrubber.")
 			area_good = 0
 		else if(A.air_scrub_names.len && (exemptions & global.using_map.NO_SCRUBBER))
-			log_bad("[bad_msg] is not supposed to have an air scrubber.")
+			log_bad("[bad_msg] is not supposed to have an air scrubber, but has [A.air_scrub_names.len]:")
+			for(var/obj/machinery/atmospherics/unary/vent_scrubber/scrubber in A)
+				log_bad("\t[log_info_line(scrubber)]")
 			area_good = 0
 
 		if(!A.air_vent_names.len && !(exemptions & global.using_map.NO_VENT))
@@ -42,6 +44,8 @@
 			area_good = 0
 		else if(A.air_vent_names.len && (exemptions & global.using_map.NO_VENT))
 			log_bad("[bad_msg] is not supposed to have an air vent.")
+			for(var/obj/machinery/atmospherics/unary/vent_pump/vent in A)
+				log_bad("\t[log_info_line(vent)]")
 			area_good = 0
 
 		if(!area_good)

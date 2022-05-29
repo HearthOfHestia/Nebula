@@ -479,7 +479,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
 "bj" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/central)
@@ -662,7 +662,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/medical/morgue)
 "bC" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftstarboard)
 "bD" = (
@@ -2018,7 +2018,7 @@
 /turf/simulated/floor/reinforced/airless,
 /area/vacant/prototype/engine)
 "ex" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "ey" = (
@@ -2897,7 +2897,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/maintenance/seconddeck/aftstarboard)
 "gy" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/random/maintenance/solgov,
 /obj/random/junk,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -3827,7 +3827,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/seconddeck/forestarboard)
 "iS" = (
-/obj/machinery/drone_fabricator/torch,
+/obj/machinery/drone_fabricator/endeavour,
 /obj/machinery/alarm{
 	alarm_id = "xenobio4_alarm";
 	pixel_y = 24
@@ -4458,7 +4458,7 @@
 /area/teleporter/seconddeck)
 "kH" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
 "kJ" = (
@@ -4590,7 +4590,7 @@
 /turf/space,
 /area/space)
 "kW" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/yellow/half{
 	dir = 8
 	},
@@ -5503,7 +5503,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/assembly/robotics)
 "nr" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/corner/yellow/mono,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{
@@ -7306,7 +7306,7 @@
 /obj/effect/floor_decal/corner/purple{
 	dir = 9
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
 "rM" = (
@@ -7320,7 +7320,7 @@
 /turf/simulated/floor/tiled/white,
 /area/rnd/xenobiology)
 "rO" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck)
@@ -8017,7 +8017,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos)
 "tL" = (
-/obj/structure/closet/secure_closet/atmos_torch,
+/obj/structure/closet/secure_closet/atmos_endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -8269,7 +8269,7 @@
 /turf/simulated/floor/tiled,
 /area/engineering/foyer)
 "us" = (
-/obj/structure/closet/secure_closet/atmos_torch,
+/obj/structure/closet/secure_closet/atmos_endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -9563,7 +9563,7 @@
 /turf/simulated/floor/tiled/white/monotile,
 /area/shuttle/escape_pod10/station)
 "ya" = (
-/obj/random/torchcloset,
+/obj/random/endeavourcloset,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/foreport)
@@ -11619,7 +11619,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
 "DW" = (
-/obj/structure/closet/secure_closet/scientist_torch,
+/obj/structure/closet/secure_closet/scientist_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
@@ -11628,7 +11628,7 @@
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
 "DY" = (
-/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_torch,
+/obj/structure/closet/secure_closet/secure_closet/xenoarchaeologist_endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/storage/research)
@@ -11694,7 +11694,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engineering_bay)
 "Ee" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/aftport)
@@ -13170,7 +13170,7 @@
 /area/vacant/prototype/control)
 "Ik" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/locker_room)
@@ -15228,7 +15228,7 @@
 /area/hallway/primary/seconddeck/fore)
 "Ot" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /obj/structure/noticeboard{
 	pixel_y = 32
 	},
@@ -16065,7 +16065,7 @@
 /area/engineering/fuelbay/aux)
 "QH" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /obj/machinery/firealarm{
 	pixel_y = 21
 	},
@@ -16477,7 +16477,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/alarm{
 	alarm_id = "misc_research";
@@ -16496,7 +16496,7 @@
 /area/engineering/fuelbay)
 "RV" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -16994,7 +16994,7 @@
 /area/engineering/engine_room)
 "Tq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/closet/secure_closet/engineering_torch,
+/obj/structure/closet/secure_closet/engineering_endeavour,
 /obj/machinery/camera/network/engineering{
 	c_tag = "Engineering - Locker Room"
 	},
@@ -18306,7 +18306,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/primary/seconddeck/fore)
 "XB" = (
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/simulated/floor/tiled/techfloor,
 /area/maintenance/seconddeck/forestarboard)
@@ -18816,7 +18816,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 5
 	},
-/obj/structure/closet/emcloset/torch,
+/obj/structure/closet/emcloset/endeavour,
 /obj/machinery/power/apc{
 	dir = 4;
 	name = "east bump";
