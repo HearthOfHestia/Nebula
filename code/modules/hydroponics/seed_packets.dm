@@ -30,7 +30,7 @@
 	var/is_seeds = ((seed.seed_noun in list(SEED_NOUN_SEEDS, SEED_NOUN_PITS, SEED_NOUN_NODES)) ? 1 : 0)
 	var/image/seed_mask = SSplants.get_seed_mask('icons/obj/seeds.dmi', seed.get_trait(TRAIT_PLANT_COLOUR), is_seeds)
 	var/image/seed_overlay = SSplants.get_seed_overlay('icons/obj/seeds.dmi', seed.get_trait(TRAIT_PRODUCT_ICON), seed.get_trait(TRAIT_PRODUCT_COLOUR))
-	set_overlays(seed_mask, seed_overlay)
+	set_overlays(list(seed_mask, seed_overlay))
 
 	if(is_seeds)
 		src.SetName("packet of [seed.seed_name] [seed.seed_noun]")
