@@ -40,14 +40,14 @@
 	)
 	result = /obj/item/chems/food/bacon_stick
 
-/decl/recipe/hatchling_suprise
+/decl/recipe/hatchling_surprise
 	appliance = APPLIANCE_SKILLET | APPLIANCE_SAUCEPAN
 	items = list(
 		/obj/item/chems/food/poachedegg = 1,
 		/obj/item/chems/food/bacon = 3
 
 	)
-	result = /obj/item/chems/food/hatchling_suprise
+	result = /obj/item/chems/food/hatchling_surprise
 
 /decl/recipe/bacon_and_eggs
 	appliance = APPLIANCE_SKILLET
@@ -76,12 +76,16 @@
 	result = /obj/item/chems/food/baconburger
 
 /decl/recipe/blt
-	fruit = list("tomato" = 1, "cabbage" = 1)
+	fruit = list("tomato" = 2, "lettuce" = 1)
 	items = list(
 		/obj/item/chems/food/slice/bread = 2,
 		/obj/item/chems/food/bacon = 2
 	)
 	result = /obj/item/chems/food/blt
+
+/decl/recipe/blt/cbt
+	fruit = list("tomato" = 1, "cabbage" = 1)
+	result = /obj/item/chems/food/blt/cbt
 
 // Chicken
 /decl/recipe/nugget

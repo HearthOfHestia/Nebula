@@ -51,11 +51,11 @@
 
 /decl/cocktail/pinacolada
 	name = "Pina Colada"
-	description = "Ariba~!"
+	description = "Arriba~!"
 	ratios = list(
-		/decl/material/liquid/drink/juice/coconut = 0.3,
-		/decl/material/liquid/ethanol/rum  =        0.2,
-		/decl/material/liquid/drink/juice/pineapple =     0.2
+		/decl/material/liquid/drink/juice/coconut =   0.3,
+		/decl/material/liquid/ethanol/rum  =          0.2,
+		/decl/material/liquid/drink/juice/pineapple = 0.2
 	)
 
 /decl/cocktail/sidecar

@@ -147,6 +147,7 @@
 	if(mechanical)
 		connect()
 	update_icon()
+	update_name()
 	STOP_PROCESSING_MACHINE(src, MACHINERY_PROCESS_ALL)
 	START_PROCESSING(SSplants, src)
 	return INITIALIZE_HINT_LATELOAD
@@ -188,12 +189,12 @@
 	else
 		return !density
 
-/obj/machinery/portable_atmospherics/hydroponics/proc/check_health(var/icon_update = 1)
+/obj/machinery/portable_atmospherics/hydroponics/proc/check_health()
 	if(seed && !dead && health <= 0)
 		die()
 	check_level_sanity()
-	if(icon_update)
-		update_icon()
+	update_icon()
+	update_name()
 
 /obj/machinery/portable_atmospherics/hydroponics/proc/die()
 	dead = 1
@@ -201,6 +202,8 @@
 	harvest = 0
 	weedlevel += 1 * HYDRO_SPEED_MULTIPLIER
 	pestlevel = 0
+	update_icon()
+	update_name()
 
 //Process reagents being input into the tray.
 /obj/machinery/portable_atmospherics/hydroponics/proc/process_reagents()
@@ -322,6 +325,7 @@
 	pestlevel = 0
 	sampled = 0
 	update_icon()
+	update_name()
 	visible_message("<span class='notice'>[src] has been overtaken by [seed.display_name].</span>")
 
 	return
@@ -393,6 +397,7 @@
 	weedlevel = 0
 
 	update_icon()
+	update_name()
 	visible_message("<span class='danger'>The </span><span class='notice'>[previous_plant]</span><span class='danger'> has suddenly mutated into </span><span class='notice'>[seed.display_name]!</span>")
 
 	return
@@ -465,7 +470,7 @@
 				var/needed_skill = seed.mysterious ? SKILL_ADEPT : SKILL_BASIC
 				if(!user.skill_check(SKILL_BOTANY, needed_skill))
 					health -= rand(40,60)
-					check_health(1)
+					check_health()
 		else
 			to_chat(user, "<span class='notice'>This plot is completely devoid of weeds. It doesn't need uprooting.</span>")
 
@@ -634,3 +639,13 @@
 		harvest()
 	return TRUE
 
+/obj/machinery/portable_atmospherics/hydroponics/proc/update_name()
+	var/new_name
+	if(seed)
+		if(mechanical)
+			new_name = "[base_name] ([seed.seed_name])"
+		else
+			new_name = "[seed.display_name]"
+	else
+		new_name = initial(name)
+	SetName(new_name)

@@ -49,7 +49,7 @@
 
 /decl/recipe/fish_taco
 	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
-	fruit = list("chili" = 1, "lemon" = 1)
+	fruit = list("chili" = 1, "lemon slice" = 1)
 	items = list(
 		/obj/item/chems/food/fish = 1,
 		/obj/item/chems/food/tortilla = 1
@@ -95,3 +95,38 @@
 	reagent_mix = REAGENT_REPLACE
 	result = /obj/item/chems/food/truffle
 	result_quantity = 4
+
+/decl/recipe/fruitsalad
+	appliance = APPLIANCE_MIX
+	fruit = list("orange slice" = 2, "apple slice" = 2, "grape" = 1, "watermelon slice" = 1)
+	result = /obj/item/chems/food/fruitsalad
+
+/decl/recipe/benedict
+	appliance = APPLIANCE_MIX | APPLIANCE_SKILLET
+	items = list(
+		/obj/item/chems/food/cutlet = 1,
+		/obj/item/chems/food/friedegg = 1,
+		/obj/item/chems/food/slice/bread = 1,
+		/obj/item/chems/food/spreads/butter = 1
+	)
+	reagents = list(/decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/drink/juice/lemon = 5)
+	result = /obj/item/chems/food/benedict
+
+/decl/recipe/bakedbeans
+	appliance = APPLIANCE_OVEN
+	fruit = list("soybeans" = 2)
+	reagents = list(/decl/material/liquid/nutriment/barbecue = 5)
+	result = /obj/item/chems/food/beans
+
+/decl/recipe/curryrice
+	fruit = list("chili" = 1)
+	reagents = list(/decl/material/liquid/nutriment/rice = 10)
+	result = /obj/item/chems/food/curryrice
+
+/decl/recipe/piginblanket
+	appliance = APPLIANCE_OVEN
+	items = list(
+		/obj/item/chems/food/doughslice,
+		/obj/item/chems/food/sausage
+	)
+	result = /obj/item/chems/food/piginblanket

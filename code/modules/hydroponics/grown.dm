@@ -112,15 +112,9 @@
 	desc += ". Delicious! Probably."
 
 /obj/item/chems/food/grown/on_update_icon()
-	if(!seed)
+	if(!seed || !SSplants?.initialized)
 		return
-	overlays.Cut()
-	icon_state = "[seed.get_trait(TRAIT_PRODUCT_ICON)]-product"
-	color = seed.get_trait(TRAIT_PRODUCT_COLOUR)
-	if("[seed.get_trait(TRAIT_PRODUCT_ICON)]-leaf" in icon_states('icons/obj/hydroponics/hydroponics_products.dmi'))
-		var/image/fruit_leaves = image('icons/obj/hydroponics/hydroponics_products.dmi',"[seed.get_trait(TRAIT_PRODUCT_ICON)]-leaf")
-		fruit_leaves.color = seed.get_trait(TRAIT_PLANT_COLOUR)
-		overlays |= fruit_leaves
+	set_overlays(SSplants.get_fruit_icon('icons/obj/hydroponics/hydroponics_products.dmi', seed.get_trait(TRAIT_PRODUCT_ICON), seed.get_trait(TRAIT_PRODUCT_COLOUR), seed.get_trait(TRAIT_PLANT_COLOUR)))
 
 /obj/item/chems/food/grown/Crossed(var/mob/living/M)
 	set waitfor = FALSE

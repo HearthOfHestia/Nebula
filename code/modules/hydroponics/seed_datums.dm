@@ -1024,6 +1024,7 @@
 	seed_name = "watermelon"
 	display_name = "watermelon vine"
 	chems = list(/decl/material/liquid/nutriment = list(1,6), /decl/material/liquid/drink/juice/watermelon = list(10,6))
+	kitchen_tag = "watermelon"
 
 /datum/seed/watermelon/New()
 	..()

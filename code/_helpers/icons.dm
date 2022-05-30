@@ -706,7 +706,7 @@ The _flatIcons list is a cache for generated icon files.
 	var/flatX2= flat.Width()
 	var/flatY1= 1
 	var/flatY2= flat.Height()
-	
+
 	// Dimensions of overlay being added
 	var/addX1
 	var/addX2
@@ -785,7 +785,7 @@ The _flatIcons list is a cache for generated icon files.
 			flat.MapColors(arglist(A.color))
 
 		// Probably a valid color, could check length_char(A.color) == 7 if color normalization becomes etc etc etc.
-		else if(istext(A.color)) 
+		else if(istext(A.color))
 			flat.Blend(A.color, ICON_MULTIPLY)
 
 	// Colour matrices track/apply alpha changes in MapColors() above, so only apply if color isn't a matrix.
@@ -908,7 +908,7 @@ The _flatIcons list is a cache for generated icon files.
 			if(istype(A, /atom/movable/lighting_overlay) && show_lighting)
 				render_atoms.Add(A)
 				continue
-			
+
 			if(!A.alpha || A.invisibility)
 				continue
 
@@ -922,7 +922,7 @@ The _flatIcons list is a cache for generated icon files.
 	capture.Blend(COLOR_BLACK, ICON_OVERLAY)
 	for(var/atom/A as anything in render_atoms)
 		var/icon/atom_icon = getFlatIcon(A)
-	
+
 		if(ismob(A))
 			var/mob/M = A
 			if(M.lying)
@@ -933,3 +933,15 @@ The _flatIcons list is a cache for generated icon files.
 		capture.Blend(atom_icon, blendMode2iconMode(A.blend_mode), A.pixel_x + x_offset, A.pixel_y + y_offset)
 
 	return capture
+
+var/global/list/icon_state_lists = list()
+/proc/cached_icon_states(var/icon/I)
+	if(!I)
+		return list()
+	var/key = I
+	var/returnlist = global.icon_state_lists[key]
+	if(!returnlist)
+		returnlist = icon_states(I)
+		if(isfile(I)) // It's something that will stick around
+			global.icon_state_lists[key] = returnlist
+	return returnlist

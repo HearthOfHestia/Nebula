@@ -1,12 +1,10 @@
 /obj/item/chems/food/lomein
 	name = "lo mein"
-	gender = PLURAL
 	desc = "A popular Chinese noodle dish. Chopsticks optional."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "lomein"
 	trash = /obj/item/trash/plate
 	filling_color = "#fcee81"
-	center_of_mass = @"{'x':16,'y':10}"
 	nutriment_amt = 4
 	nutriment_desc = list("mushroom" = 2, "cabbage" = 2)
 	bitesize = 2
@@ -30,15 +28,13 @@
 
 /obj/item/chems/food/chickennoodlesoup // could also go in soup...
 	name = "chicken noodle soup"
-	gender = PLURAL
 	desc = "A bright bowl of yellow broth with cuts of meat, noodles and carrots. Just like Mom used to make..."
 	icon = 'mods/content/hearthfoods/icons/obj/food.dmi'
 	icon_state = "chickennoodlesoup"
 	filling_color = "#ead90c"
 	nutriment_amt = 6
 	nutriment_desc = list("warm soup" = 4, "carrots" = 2, "noodles" = 2)
-	center_of_mass = @"{'x':16,'y':5}"
-	bitesize = 6
+	bitesize = 3
 
 /obj/item/chems/food/chickennoodlesoup/Initialize()
 	. = ..()

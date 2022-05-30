@@ -1,12 +1,11 @@
 #ifndef CONTENT_PACK_HEARTHFOODS
 #define CONTENT_PACK_HEARTHFOODS
-// BEGIN_INCLUDE
+#include "chems.dm"
 #include "hearthfoods.dm"
 #include "reactions.dm"
 #include "trash.dm"
-#include "food\chems.dm"
-#include "food\condiments.dm"
 #include "food\baked_goods.dm"
+#include "food\condiments.dm"
 #include "food\food_overrides.dm"
 #include "food\fried.dm"
 #include "food\meat.dm"
@@ -15,6 +14,9 @@
 #include "food\soup.dm"
 #include "food\tortillas_chips.dm"
 #include "food\unsorted_aurora.dm"
+#include "food\unsorted_virgo.dm"
+#include "plants\seed_datums.dm"
+#include "plants\seed_packets.dm"
 #include "recipes\recipes_baked.dm"
 #include "recipes\recipes_fried.dm"
 #include "recipes\recipes_meat.dm"
@@ -24,4 +26,3 @@
 #include "recipes\recipes_soup.dm"
 #include "recipes\recipes_tortillas_chips.dm"
 #endif
-// END_INCLUDE

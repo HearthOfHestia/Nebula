@@ -19,17 +19,18 @@
 	)
 	reagents = list(/decl/material/liquid/nutriment/honey = 5)
 	result = /obj/item/chems/food/honeybun
+	result_quantity = 4
 
 /decl/recipe/keylimepie
 	appliance = APPLIANCE_OVEN
-	fruit = list("lime" = 2)
+	fruit = list("lime slice" = 2)
 	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/sugar = 5, /decl/material/liquid/nutriment/protein/egg = 3, /decl/material/liquid/nutriment/flour = 10)
 	result = /obj/item/chems/food/sliceable/keylimepie
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise
 
 /decl/recipe/quiche
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/liquid/drink/milk = 5, /decl/material/liquid/nutriment/protein/egg = 9, /decl/material/liquid/nutriment/flour = 10)
+	reagents = list(/decl/material/liquid/nutriment/batter = 15)
 	items = list(/obj/item/chems/food/cheesewedge)
 	result = /obj/item/chems/food/sliceable/quiche
 	reagent_mix = REAGENT_REPLACE //No raw egg in finished product, protein after cooking causes magic meatballs otherwise
@@ -41,9 +42,8 @@
 
 /decl/recipe/croissant
 	appliance = APPLIANCE_OVEN
-	reagents = list(/decl/material/solid/sodiumchloride = 1, /decl/material/liquid/water = 5, /decl/material/liquid/drink/milk = 5)
+	reagents = list(/decl/material/liquid/nutriment/batter = 5, /decl/material/solid/sodiumchloride = 1, /decl/material/liquid/water = 5, /decl/material/liquid/drink/milk = 5)
 	reagent_mix = REAGENT_REPLACE
-	items = list(/obj/item/chems/food/dough)
 	result = /obj/item/chems/food/croissant
 
 /decl/recipe/cinnamonbun
@@ -54,3 +54,10 @@
 		)
 	result = /obj/item/chems/food/cinnamonbun
 	result_quantity = 4
+
+/decl/recipe/sugarcookie
+	appliance = APPLIANCE_OVEN
+	reagents = list(/decl/material/liquid/nutriment/batter/cakebatter = 5, /decl/material/liquid/nutriment/sugar = 5, /decl/material/liquid/nutriment/protein/egg = 3)
+	reagent_mix = REAGENT_REPLACE // Don't include the cakebatter
+	result = /obj/item/chems/food/sugarcookie
+	result_quantity = 4 // so that it's economically feasible to make a batch

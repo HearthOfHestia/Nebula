@@ -49,7 +49,7 @@
 	glass_desc = "A glass of iridast juice."
 
 /decl/material/liquid/drink/rootbeer
-	name = "Root Beer"
+	name = "root beer"
 	lore_text = "A hearty non-alcoholic drink popular all over human space."
 	taste_description = "carbonated ginger"
 	color = "#44371f"
